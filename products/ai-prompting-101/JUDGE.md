@@ -1,36 +1,37 @@
-# Judge Report v2 — How to Talk to AI (ai-prompting-101)
-Judged: 2026-09-01 · against docs/JUDGE.md v2 (gated) · screenshots in dist/review/
+# Judge Report v3 — How to Talk to AI (ai-prompting-101, post-redo)
+Judged: 2026-09-01 · against docs/JUDGE.md v2 (gated) · fresh screenshots in dist/review/
+Redo scope: corpus-grounded rewrite (Human→AI→Human framing, "editor not ghostwriter"
+policy line), named-character scenarios (Amara / Mateo / Yuki), unplugged exit-ticket fix.
 
-## First-pass defect hunt (found 3)
-1. **ALIGNMENT-WASHING (Gate 1 fail):** ISTE 1.6.a claimed but students never choose
-   platforms/tools; ISTE 1.1.c's "technology feedback" only occurs in the optional
-   with-devices step and is never assessed. → Both CUT. Replaced with ISTE 1.3.b
-   (evaluate accuracy/credibility), which survives: taught in trickster-genie discussion,
-   assessed by Exit Ticket #2.
-2. **Missing ELL differentiation (Gate 2 fail):** support/extension/unplugged existed, no
-   ELL note. → Added: sentence starters as language frames + home-language drafting.
-3. Adding fixes re-overflowed lesson p2 by 7px (Gate 0 #6). → Global h2 rhythm tightened;
-   all documents re-verified clean.
+## First-pass defect hunt
+Hunted: cross-document consistency of the three named scenarios (worksheet ↔ teacher-guide
+exemplars ↔ lesson activity text); Mateo's savings math ($15/wk × 10 wks = $150 ≥ $120 ✓);
+timing sum (8+10+22+5 = 45 ✓ vs cover/listing); standards chips ↔ teacher-guide full text ↔
+product.yaml (3 codes, identical everywhere); read-aloud of every student-facing sentence;
+all 7 screenshots for layout, art collisions, typos. **Defects found: 0.**
 
-## Gate results (post-fix)
+## Gate results
 | Gate | Item | Result | Evidence |
 |---|---|---|---|
-| 0 | Facts, typos, layout, promises, copyright, harm, keys | clean | All 7 screenshots re-checked post-fix; render gate green |
-| 0 | Timing sums | clean | 8+10+22+5 = 45 (lesson p1–p2) matches cover/listing |
-| 1 | Alignment per code | meets | 1.5.c taught P.R.O./assessed checklist; 1.3.b taught discussion/assessed ET#2; W.6.4 taught clauses/assessed repairs+ET#1 — taught/assessed now printed beside each code in teacher guide p2 |
-| 1 | Depth (DOK) | meets | Repairs = DOK 2–3 (apply/create); Break-it = DOK 3 evaluate, assessed via checklist + "sneakiest twist" written response (worksheet p2) |
-| 1 | Assessment ↔ objectives | meets | Obj1→Genie-test row + twist response; Obj2→ET#1; Obj3→ET#2 |
-| 2 | Sub-teacher runnable | meets | Scripted lines, timed blocks, Worst-Genie improv moves (TG p1) |
-| 2 | Differentiation | meets | Support/extension/ELL/unplugged, all named (lesson p2) |
-| 2 | Print reality | meets | Line art + single accent; write-in boxes ≥80px |
-| 3 | Thumbnail test | meets | Title, grade chip, FREE, lamp read at small size |
-| 3 | Value density | meets | Framework + adversarial mechanic + improv script + keys — not 10-minute DIY |
-| 3 | Representation | partial | No named people anywhere: nothing harmful, but scenarios could feature a wider world (logged) |
-| 3 | Voice / listing | meets | No AI-tell phrasing found on read-aloud; title 78 chars |
+| 0 | All 9 auto-fail checks | clean | Hunt above; render layout gate green across all docs |
+| 1 | Alignment per code | meets | 1.5.c taught P.R.O. (lesson p2)/assessed checklist rows (ws p2); 1.3.b taught trickster discussion (TG p2)/assessed ET#2; W.6.4 taught clauses/assessed repairs+ET#1 — taught/assessed printed beside each code (TG p2) |
+| 1 | Depth (DOK) | meets | Scenario repairs = DOK 2–3 with context to mine (richer than v2's bare prompts); Break-it = DOK 3 evaluate, assessed via checklist + "sneakiest twist" written response |
+| 1 | Assessment ↔ objectives | meets | Obj1→Genie-test row + twist response; Obj2→ET#1; Obj3→ET#2 (now works unplugged: "imagine the answer you'd expect back") |
+| 2 | Sub-teacher runnable | meets | Scripted warm-up ruins, Bridge + Say-it-plainly quotable verbatim, Worst-Genie improv moves, Why This Lesson orientation (TG p1) |
+| 2 | Differentiation | meets | Support / extension / ELL / unplugged, all four named (lesson p2) |
+| 2 | Print reality | meets | Line-art lamps and sparkles, single accent, write-in boxes ≥80px |
+| 3 | Thumbnail test | meets | Unchanged cover: title, grade chip, FREE, lamp at 200px |
+| 3 | Value density | meets | Framework + adversarial mechanic + named scenario world + improv script + exemplar keys + taught/assessed map |
+| 3 | Representation | meets | Was partial in v2. Amara (science), Mateo (money goal), Yuki (artist) — varied names and interests, each the competent hero of their scenario, none tokenized |
+| 3 | Voice / listing | meets | Warm, contracted, direct ("Rewrite her wish so the genie can't miss"); no AI-tell phrasing on read-aloud; title 78 chars |
 
-**Fails: 0 · Partials: 1 → VERDICT: PASS (v2)**
+**Fails: 0 · Partials: 0 → VERDICT: PASS (v2 rubric, clean sweep)**
+
+## Version comparison
+| | v1 rubric | v2 rubric (pre-redo) | v2 rubric (post-redo) |
+|---|---|---|---|
+| Result | 4.8/5 "PASS" | PASS w/ 3 defects fixed + 1 partial | PASS, 0 defects, 0 partials |
 
 ## Would improve (non-blocking)
-- Representation: introduce named, varied characters in scenario text in future revisions
-- Exit Ticket #2 could add "(or imagine one)" for fully unplugged rooms
+- A projected/slide version of the warm-up wishes would help large rooms (candidate add-on)
 - If ever re-priced above free, remove the cover FREE badge
