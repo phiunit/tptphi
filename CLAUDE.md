@@ -19,7 +19,10 @@ When Phi asks you to "build the next product," follow this manual exactly.
 4. `npm run render -- <slug>` then `npm run validate -- <slug>`. Fix until green.
    Render now HARD-FAILS on page overflow / footer collisions. Visually check the
    cover PNG and EVERY page screenshot against `docs/ANTI_SLOP.md` before moving on.
-5. Update the product's `status` in catalog.yaml (idea → rendered), commit, push.
+5. `npm run judge -- <slug>`, then review every dist/review/*.png against `docs/JUDGE.md`
+   and write `products/<slug>/JUDGE.md`. Fix everything on the "Fix now" list and
+   re-judge until verdict is PASS. No product ships without a passing judge report.
+6. Update the product's `status` in catalog.yaml (idea → rendered), commit, push.
 
 ## Quality bar (non-negotiable)
 - **No-prep:** a teacher can print and teach the same morning. Say so explicitly.
@@ -57,5 +60,6 @@ Default grades 6–8. Reading level ~6th grade on student-facing pages.
 
 ## Key docs
 `docs/ANTI_SLOP.md` (what "done" means — read before rendering) ·
+`docs/JUDGE.md` (pre-upload quality gauntlet) ·
 `docs/STRATEGY.md` (store/pricing/SEO) · `docs/STANDARDS.md` (which frameworks per line) ·
 `docs/PIPELINE.md` (end-to-end flow) · `brand/BRAND.md` (voice + visual system)
