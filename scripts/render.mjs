@@ -22,6 +22,37 @@ for (const p of products) {
     await page.goto(url, { waitUntil: 'networkidle' });
     const base = f.replace(/\.html$/, '');
     const asImage = /\.cover$|\.preview/.test(base);
+    if (!asImage) {
+      // Layout QA gate (see docs/ANTI_SLOP.md): a document page must fit US Letter
+      // exactly and keep clear of its footer, or the render FAILS.
+      const problems = await page.evaluate(() => {
+        const PAGE = 1056, FOOTER_GAP = 8; // 11in @ 96dpi
+        return [...document.querySelectorAll('.page')].flatMap((pg, i) => {
+          const out = [];
+          const pgTop = pg.getBoundingClientRect().top;
+          const h = pg.getBoundingClientRect().height;
+          const footer = pg.querySelector('.footer');
+          let maxBottom = 0, culprit = '';
+          pg.querySelectorAll('*').forEach(el => {
+            if (footer && (el === footer || footer.contains(el))) return;
+            const bb = el.getBoundingClientRect();
+            if (bb.bottom - pgTop > maxBottom) { maxBottom = bb.bottom - pgTop; culprit = el.tagName.toLowerCase() + (el.className ? '.' + el.className : ''); }
+          });
+          if (h > PAGE + 0.5) out.push(`page ${i + 1}: overflows US Letter by ${Math.round(h - PAGE)}px (lowest element: ${culprit})`);
+          if (footer) {
+            const fTop = footer.getBoundingClientRect().top - pgTop;
+            if (maxBottom > fTop - FOOTER_GAP) out.push(`page ${i + 1}: content (${culprit}) runs into the footer zone (${Math.round(maxBottom)}px vs footer at ${Math.round(fTop)}px)`);
+          } else out.push(`page ${i + 1}: missing .footer`);
+          return out;
+        });
+      });
+      if (problems.length) {
+        console.error(`LAYOUT FAIL ${p.slug}/src/${f}:`);
+        for (const bad of problems) console.error('  - ' + bad);
+        process.exitCode = 1;
+        continue; // do not emit a broken PDF
+      }
+    }
     if (asImage) {
       const out = path.join(distDir, base + '.png');
       await page.setViewportSize({ width: 850, height: 1100 });

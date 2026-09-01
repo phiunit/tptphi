@@ -32,7 +32,7 @@ h1 { font-size: 25pt; font-weight: 700; letter-spacing: -0.03em; margin: 0 0 4px
 .titleblock h1 { margin: 0; }
 .titleblock .kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9pt;
   letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin: 0 0 2px; }
-h2 { font-size: 12.5pt; font-weight: 700; margin: 18px 0 6px; color: var(--line); text-transform: uppercase; letter-spacing: 1px;
+h2 { font-size: 12.5pt; font-weight: 700; margin: 14px 0 6px; color: var(--line); text-transform: uppercase; letter-spacing: 1px;
   display: flex; align-items: center; gap: 8px; }
 h2::after { content: ""; flex: 1; height: 2px; border-radius: 2px;
   background: linear-gradient(to right, var(--line), transparent 70%); opacity: 0.35; }
@@ -40,20 +40,20 @@ h3 { font-size: 11.5pt; font-weight: 700; margin: 12px 0 4px; }
 p { margin: 0 0 8px; }
 .sub { font-size: 11pt; color: #55556B; margin-bottom: 14px; }
 
-.panel { background: var(--panel); border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
-.callout { border-left: 4px solid var(--gold); background: #FFF8EA; padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 10px 0; }
+.panel { background: var(--panel); border-radius: 10px; padding: 10px 13px; margin: 8px 0; }
+.callout { border-left: 4px solid var(--gold); background: #FFF8EA; padding: 9px 13px; border-radius: 0 8px 8px 0; margin: 8px 0; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
-table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 10pt; }
+table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10pt; }
 th { text-align: left; background: var(--ink); color: #fff; padding: 6px 9px; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.5px; }
 td { padding: 6px 9px; border-bottom: 1px solid #DDDDE6; vertical-align: top; }
 
-ul, ol { margin: 4px 0 10px; padding-left: 20px; }
-li { margin-bottom: 3px; }
+ul, ol { margin: 3px 0 8px; padding-left: 20px; }
+li { margin-bottom: 2px; }
 
 /* Student write-in lines */
 .lines .l { border-bottom: 1.5px solid #B9B9C9; height: 26px; }
-.writebox { border: 1.5px solid #B9B9C9; border-radius: 8px; min-height: 90px; padding: 8px; }
+.writebox { border: 1.5px solid #B9B9C9; border-radius: 8px; min-height: 80px; padding: 8px; }
 
 .footer { position: absolute; bottom: 0.35in; left: 0.7in; right: 0.7in;
   display: flex; justify-content: space-between; font-size: 8pt; color: #8A8AA0;

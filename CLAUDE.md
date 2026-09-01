@@ -17,7 +17,8 @@ When Phi asks you to "build the next product," follow this manual exactly.
    Minimum set: `lesson-plan.html`, `worksheet.html`, `teacher-guide.html`, `product.cover.html`.
    Use `products/ai-prompting-101/src/` as the reference for structure and quality bar.
 4. `npm run render -- <slug>` then `npm run validate -- <slug>`. Fix until green.
-   Visually check the cover PNG and at least one page screenshot.
+   Render now HARD-FAILS on page overflow / footer collisions. Visually check the
+   cover PNG and EVERY page screenshot against `docs/ANTI_SLOP.md` before moving on.
 5. Update the product's `status` in catalog.yaml (idea → rendered), commit, push.
 
 ## Quality bar (non-negotiable)
@@ -55,5 +56,6 @@ Default grades 6–8. Reading level ~6th grade on student-facing pages.
 | `npm run upload -- <slug>` | local-only attended TPT form pre-fill |
 
 ## Key docs
+`docs/ANTI_SLOP.md` (what "done" means — read before rendering) ·
 `docs/STRATEGY.md` (store/pricing/SEO) · `docs/STANDARDS.md` (which frameworks per line) ·
 `docs/PIPELINE.md` (end-to-end flow) · `brand/BRAND.md` (voice + visual system)
