@@ -65,6 +65,38 @@ for (const p of products) {
       }
     }
     if (asImage) {
+      // Cover QA gate: absolutely-positioned motif art must not overlap text (ANTI_SLOP rule 5)
+      const clash = await page.evaluate(() => {
+        const wrappers = [...document.querySelectorAll('body > svg')].filter(el => getComputedStyle(el).position === 'absolute');
+        if (!wrappers.length) return null;
+        // Compare the DRAWN SHAPES, not the svg's bounding box — sparse art often
+        // has a huge box but clears the text visually.
+        // Shapes clipped to their svg viewport (geometry outside the viewBox is not visible)
+        const art = wrappers.flatMap(w => { const wb = w.getBoundingClientRect();
+          return [...w.querySelectorAll('path,rect,circle,ellipse,line,polygon')].map(el => {
+            const r = el.getBoundingClientRect();
+            return { left: Math.max(r.left, wb.left), right: Math.min(r.right, wb.right),
+                     top: Math.max(r.top, wb.top), bottom: Math.min(r.bottom, wb.bottom) };
+          }).filter(r => r.right > r.left && r.bottom > r.top); });
+        // Per-LINE text boxes (Range rects), so ragged right edges don't false-positive
+        const lines = [];
+        const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+        for (let n = walk.nextNode(); n; n = walk.nextNode()) {
+          if (!n.nodeValue.trim() || n.parentElement.closest('svg')) continue;
+          const rg = document.createRange(); rg.selectNodeContents(n);
+          for (const r of rg.getClientRects()) if (r.width > 1 && r.height > 1)
+            lines.push({ r, owner: n.parentElement });
+        }
+        for (const ab of art) {
+          for (const { r: tb, owner } of lines) {
+            if (ab.left < tb.right - 4 && ab.right > tb.left + 4 && ab.top < tb.bottom - 4 && ab.bottom > tb.top + 4)
+              return `motif art overlaps text in <${owner.tagName.toLowerCase()}${owner.className ? '.' + owner.className : ''}>`;
+          } }
+        return null;
+      });
+      if (clash) { console.error(`LAYOUT FAIL ${p.slug}/src/${f}:\n  - ${clash}`); process.exitCode = 1; continue; }
+    }
+    if (asImage) {
       const out = path.join(distDir, outName(p.meta, base) + '.png');
       await page.setViewportSize({ width: 850, height: 1100 });
       await page.screenshot({ path: out, clip: { x: 0, y: 0, width: 850, height: 1100 } });
