@@ -31,3 +31,21 @@ One slop moment kills trust in the whole store. These rules are enforced, not as
 14. `npm run render` and `npm run validate` both green before a product's status moves
     to `rendered` — no exceptions, including "tiny" copy edits (they reflow pages).
 15. Visually inspect the cover PNG and every document page screenshot after ANY change.
+
+## Why this matters commercially (researched Sep 2026)
+TPT has **no AI detector and no disclosure requirement at upload** — but enforcement is
+real and store-level: IXL's CEO confirmed TPT runs "algorithmic tools to identify and
+demote STORES associated with low-quality, AI-generated content." Demotion hits the whole
+store's search rank, not just one listing. After Chalkbeat's Aug 2026 "AI slop" expose
+(alphabet posters missing letters, nonsense graphics), scrutiny is rising and policies may
+tighten further.
+
+Operating posture:
+- One sloppy product can bury every product in search. The gates in this file are the moat.
+- TPT's Content Guidelines require original authorship and truthful, accurate content.
+  Phi directs, curates, and approves everything; facts and standards are verified; nothing
+  ships unreviewed. Wholesale unedited AI dumps are what gets stores demoted.
+- Never market products as AI-generated in listings; the value proposition is the
+  pedagogy, the standards alignment, and the no-prep design.
+- Quality over cadence: a slower drumbeat of excellent products beats daily slop, both
+  with the algorithm and with reviews.
