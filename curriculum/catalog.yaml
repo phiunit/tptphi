@@ -1,0 +1,45 @@
+# Phi Unit — master product roadmap. Status: idea → outlined → built → rendered → listed
+# Priority 1 = launch wave. Each line launches with 1 freebie + 2 paid products.
+
+lines:
+  ai:           { name: "AI Literacy & Vibe Coding",        standards: [ISTE, CSTA, CCSS-ELA] }
+  finance:      { name: "Personal Finance & Risk",          standards: [Jumpstart, CCSS-Math, CEE] }
+  entrepreneur: { name: "21st-Century Entrepreneurship",    standards: [CTE-Business, CCSS-ELA, ISTE] }
+  games:        { name: "Game Building & Creative Tech",    standards: [CSTA, ISTE, NCAS-Arts] }
+
+products:
+  # ---- WAVE 1: launch (freebies build followers, paid converts) ----
+  - { slug: ai-prompting-101,        line: ai,           priority: 1, status: rendered, price: 0,
+      title: "Prompt Like a Producer: AI Basics (Grades 6-8)" }
+  - { slug: ai-fact-check-lab,       line: ai,           priority: 1, status: idea, price: 4,
+      title: "Hallucination Hunters: Fact-Checking AI Like a Journalist" }
+  - { slug: vibe-coding-first-app,   line: ai,           priority: 1, status: idea, price: 6,
+      title: "Vibe Coding 101: Build Your First App With AI (3-Day Mini Unit)" }
+  - { slug: finance-first-check,     line: finance,      priority: 1, status: idea, price: 0,
+      title: "Your First Check: Reading a Pay Stub Like a Pro (Freebie)" }
+  - { slug: finance-risk-boss,       line: finance,      priority: 1, status: idea, price: 5,
+      title: "Risk Like a Boss: Decision-Making & Expected Value for Middle School" }
+  - { slug: finance-streamer-budget, line: finance,      priority: 1, status: idea, price: 5,
+      title: "The Streamer Budget Project: Income, Expenses & Saving (PBL)" }
+
+  # ---- WAVE 2 ----
+  - { slug: ent-one-page-startup,    line: entrepreneur, priority: 2, status: idea, price: 6,
+      title: "The One-Page Startup: Lean Canvas for Middle School (PBL Unit)" }
+  - { slug: ent-copywriting-bars,    line: entrepreneur, priority: 2, status: idea, price: 4,
+      title: "Bars That Sell: Copywriting & Hooks (Hip-Hop Themed ELA)" }
+  - { slug: ent-personal-brand,      line: entrepreneur, priority: 2, status: idea, price: 4,
+      title: "Your Name Is a Brand: Digital Identity & Career Thinking" }
+  - { slug: games-paper-prototype,   line: games,        priority: 2, status: idea, price: 0,
+      title: "Paper Boss Battle: Design a Game Level With Zero Tech (Freebie)" }
+  - { slug: games-design-doc,        line: games,        priority: 2, status: idea, price: 6,
+      title: "From Anime to Game Deck: Write a Game Design Document (3-Day Unit)" }
+  - { slug: games-balance-math,      line: games,        priority: 2, status: idea, price: 5,
+      title: "Nerf This! Game Balance Is Just Math (Ratios & Stats)" }
+
+  # ---- WAVE 3: bundles + mental models ----
+  - { slug: mental-models-starter,   line: entrepreneur, priority: 3, status: idea, price: 7,
+      title: "Think in Models: 10 Mental Models Every Teen Should Know" }
+  - { slug: bundle-ai-line,          line: ai,           priority: 3, status: idea, price: 12,
+      title: "AI Literacy Complete Bundle (Grades 6-8)" }
+  - { slug: bundle-finance-line,     line: finance,      priority: 3, status: idea, price: 12,
+      title: "Future Money Complete Bundle (Grades 6-8)" }

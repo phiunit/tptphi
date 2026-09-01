@@ -1,0 +1,32 @@
+title: "Prompt Like a Producer: Hip-Hop Themed AI Literacy Lesson (Grades 6-8) FREE"
+line: ai
+grades: "6-8"
+price_usd: 0            # launch freebie — builds followers + reviews
+status: draft
+resource_types: [Lesson, Worksheets, Activities, Printables]
+tags:
+  - AI literacy
+  - artificial intelligence
+  - prompt engineering
+  - ChatGPT
+  - digital citizenship
+  - hip hop
+  - technology
+  - computer science
+standards:
+  - { framework: ISTE, code: "1.5.c", text: "Students break problems into component parts and develop descriptions of solutions." }
+  - { framework: ISTE, code: "1.6.a", text: "Students choose appropriate platforms and tools to meet the desired objectives of their creation or communication." }
+  - { framework: ISTE, code: "1.1.c", text: "Students use technology to seek feedback that informs and improves their practice." }
+  - { framework: CCSS, code: "W.6.4", text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience." }
+description: |
+  Your students already use AI. This no-prep, 45-minute lesson teaches them to use it WELL — and to think critically about what comes back.
+
+  Built on a hook they'll instantly get: a great music producer doesn't tell the artist "make it good" — they give direction. Genre, mood, tempo, reference tracks. Prompting an AI works exactly the same way. Students learn the P.R.O. framework (Purpose, Requirements, Output) and use it to remix weak prompts into strong ones in the "Prompt Remix Studio" activity.
+
+  INCLUDES: full scripted lesson plan (45 min), Prompt Remix Studio student worksheet, teacher answer guide with sample strong prompts, exit ticket, and discussion prompts on AI accuracy and academic honesty. Works with ANY AI tool (ChatGPT, Claude, Gemini) — or completely unplugged with no devices at all.
+
+  Aligned to ISTE Standards for Students and CCSS ELA W.6.4. Zero prep: print and teach.
+includes:
+  - lesson-plan.pdf (scripted 45-minute lesson)
+  - worksheet.pdf (Prompt Remix Studio, 2 pages)
+  - teacher-guide.pdf (answer key + sample prompts + AI honesty discussion guide)

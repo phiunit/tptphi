@@ -1,0 +1,51 @@
+# Phi Unit TPT Factory — Agent Operating Manual
+
+This repo is a product factory for the "Phi Unit Teaches the Future" TeachersPayTeachers store.
+When Phi asks you to "build the next product," follow this manual exactly.
+
+## The loop
+1. Read `curriculum/catalog.yaml`, pick the highest-priority product with `status: idea`
+   (or the one Phi names).
+2. Create `products/<slug>/product.yaml` — copy the shape of
+   `products/ai-prompting-101/product.yaml`. Description 400+ chars, keyword-front-loaded,
+   standards named. Verify standard codes against `docs/STANDARDS.md` — NEVER invent codes.
+3. Write `products/<slug>/src/*.html` pages using `brand/templates/print.css`
+   (`<body class="line-ai|line-finance|line-entrepreneur|line-games">`).
+   Minimum set: `lesson-plan.html`, `worksheet.html`, `teacher-guide.html`, `product.cover.html`.
+   Use `products/ai-prompting-101/src/` as the reference for structure and quality bar.
+4. `npm run render -- <slug>` then `npm run validate -- <slug>`. Fix until green.
+   Visually check the cover PNG and at least one page screenshot.
+5. Update the product's `status` in catalog.yaml (idea → rendered), commit, push.
+
+## Quality bar (non-negotiable)
+- **No-prep:** a teacher can print and teach the same morning. Say so explicitly.
+- **Unplugged mode:** every tech lesson includes a no-device variant.
+- **Culture is load-bearing:** hip-hop/anime/gaming references must carry the concept
+  (producer = prompter; game balance = ratios), never decoration.
+- **Timed, scripted lessons:** every activity block has minutes; teacher lines are quotable.
+- **Assessment included:** exit ticket or rubric in every product.
+- **Voice:** cool teacher, not textbook. Students addressed directly on worksheets;
+  teacher pages efficient and professional.
+- 3–5 real standards per product, cited in description + lesson chips + teacher guide full text.
+
+## Grade band
+Default grades 6–8. Reading level ~6th grade on student-facing pages.
+
+## Never
+- Never invent standards codes, research citations, or statistics.
+- Never auto-publish to TPT — the uploader is attended-only by design (Phi's decision,
+  see docs/PIPELINE.md risk note).
+- Never use copyrighted characters/lyrics/logos (no real anime characters, no real artist
+  lyrics). Archetypes and originals only — "an anime-style story," not Naruto.
+
+## Commands
+| | |
+|---|---|
+| `npm run new -- <slug> "<Title>" <line>` | scaffold a product |
+| `npm run render [-- <slug>]` | HTML → PDF/PNG (Chromium at /opt/pw-browsers/chromium in cloud sessions) |
+| `npm run validate [-- <slug>]` | upload-readiness check |
+| `npm run upload -- <slug>` | local-only attended TPT form pre-fill |
+
+## Key docs
+`docs/STRATEGY.md` (store/pricing/SEO) · `docs/STANDARDS.md` (which frameworks per line) ·
+`docs/PIPELINE.md` (end-to-end flow) · `brand/BRAND.md` (voice + visual system)
