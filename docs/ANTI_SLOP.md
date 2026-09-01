@@ -26,6 +26,12 @@ One slop moment kills trust in the whole store. These rules are enforced, not as
     carried through lesson, worksheet, guide, and cover. No mixed metaphors.
 12. Timing must sum: activity minutes add up to the advertised lesson length.
 13. Read every page aloud once. If a sentence sounds like a press release, rewrite it.
+13b. **Kid-world vocabulary on student pages.** Business/office jargon is an adult's mental
+    model — most 12-year-olds have never met an intern. Banned on student-facing pages:
+    intern, boss, manager, deliverable, stakeholder, workflow, efficiency, brief (noun),
+    career options, negotiate. Translate to their world: party leader / captain, squad,
+    quest card, what done looks like, who it affects, agreeing on a price. Teacher pages
+    may use professional terms (and translating for the adult is a selling point).
 
 ## Process
 14. `npm run render` and `npm run validate` both green before a product's status moves

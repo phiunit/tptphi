@@ -1,0 +1,36 @@
+title: "AI as Editor: Revision + Feedback Lesson, Teach AI Your Taste (Grades 6-8)"
+short_name: "Teach AI Your Taste"
+line: ai
+grades: "6-8"
+price_usd: 4
+status: idea
+resource_types: [Lesson, Worksheets, Activities, Printables]
+tags:
+  - AI literacy
+  - artificial intelligence
+  - revision
+  - writing feedback
+  - peer editing
+  - writing process
+  - digital citizenship
+  - critical thinking
+  - technology
+  - computer science
+standards:
+  - { framework: CCSS, code: "W.6.5", text: "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach." }
+  - { framework: ISTE, code: "1.6.b", text: "Students create original works or responsibly repurpose or remix digital resources into new creations." }
+  - { framework: ISTE, code: "1.1.c", text: "Students use technology to seek feedback that informs and improves their practice." }
+description: |
+  AI as editor, not ghostwriter: a no-prep, 45-minute revision and feedback lesson where students teach AI (or a partner playing AI) their personal taste — then use it to make their OWN writing better.
+
+  The hook: your For-You Page didn't guess your taste. You taught it, one like at a time — and the more precisely you signal what you like, the better the feed serves you. AI works the same way. Generic in, generic out.
+
+  So students build a one-page TASTE FILE — a personal style guide: tone words, favorite formats, pet peeves, and a "so me" vs. "not me" writing sample. Then they take the Editor's Chair and run the revision loop the right way around: draft it YOURSELF, hand your taste file to your editor (a partner playing the AI, or a real AI tool) for exactly two specific notes, and revise it YOURSELF, marking every change. The human does the writing at both ends. That one habit is the classroom AI policy your students will actually remember.
+
+  INCLUDES: full scripted lesson plan (45 min, every block timed), 2-page student worksheet (Taste File builder + The Editor's Chair with revision checklist and exit ticket), and a teacher guide with exemplar taste-file entries, coaching moves for the "AI editor" role, a copy-ready AI feedback prompt for device classrooms, and full standards text with taught/assessed mapping.
+
+  Aligned to CCSS ELA W.6.5 (revising and strengthening writing with peer support) and ISTE Standards for Students 1.6.b and 1.1.c. Lesson 4 of 6 in the Future Skills: AI Literacy unit — each lesson stands alone. Works with ANY AI tool, or completely unplugged with zero devices. Print and teach the same morning.
+includes:
+  - lesson-plan.pdf (scripted 45-minute lesson)
+  - worksheet.pdf (Taste File builder + The Editor's Chair, 2 pages)
+  - teacher-guide.pdf (exemplar taste files + AI-editor coaching + copy-ready feedback prompt + standards)

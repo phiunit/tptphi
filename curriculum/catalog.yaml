@@ -20,7 +20,7 @@ products:
   - { slug: ai-boring-work,          line: ai,           priority: 1, status: idea, price: 4, unit: ai-literacy-1, lesson: 5,
       title: "Robots Do the Boring Work: AI & Future Jobs" }
   - { slug: ai-agent-intern,         line: ai,           priority: 1, status: idea, price: 4, unit: ai-literacy-1, lesson: 6,
-      title: "Manage AI Like an Intern: Delegation Capstone" }
+      title: "Lead Your AI Squad: Team Roles + Checking Work (Capstone)" }
   - { slug: vibe-coding-first-app,   line: ai,           priority: 1, status: idea, price: 6,
       title: "Vibe Coding 101: Build Your First App With AI (3-Day Mini Unit)" }
   - { slug: finance-first-check,     line: finance,      priority: 1, status: idea, price: 0,

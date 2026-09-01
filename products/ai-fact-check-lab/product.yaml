@@ -1,0 +1,34 @@
+title: "AI Fact-Checking Lesson: Hallucination Hunters + Lateral Reading (Grades 6-8)"
+short_name: "Hallucination Hunters"
+line: ai
+grades: "6-8"
+price_usd: 4
+status: idea
+resource_types: [Lesson, Worksheets, Activities, Printables]
+tags:
+  - AI literacy
+  - fact checking
+  - media literacy
+  - lateral reading
+  - misinformation
+  - critical thinking
+  - artificial intelligence
+  - digital citizenship
+standards:
+  - { framework: CCSS, code: "RI.6.8", text: "Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not." }
+  - { framework: ISTE, code: "1.3.b", text: "Students evaluate the accuracy, perspective, credibility and relevance of information, media, data or other resources." }
+  - { framework: ISTE, code: "1.3.d", text: "Students build knowledge by actively exploring real-world issues and problems, developing ideas and theories and pursuing answers and solutions." }
+description: |
+  AI fact-checking made concrete: your students get hired at a newsroom fact desk, and nothing runs until they clear it. This no-prep, 45-minute lesson teaches WHY AI "hallucinates" — it predicts likely words, so it can be confidently wrong — and gives students a four-step fact-desk method they'll use for life: underline the checkable claims (names, dates, numbers, places, quotes), rank them by risk, lateral-read the riskiest ones against a second independent source, then stamp a verdict: RUN, FIX, or KILL.
+
+  The hook: you read a smooth, confident paragraph aloud, the class votes to print it — then you reveal the planted errors nobody caught. Smooth is not the same as true.
+
+  In the main activity, students staff The Fact Desk at The Comet, a fictional school paper, and work three short AI-style draft passages with errors planted in verifiable territory (astronomy, geography, invention history). They underline claims, mark each CHECK or SAFE, name where they'd verify, and deliver a verdict with evidence — including catching a fabricated quote that sounds completely real.
+
+  INCLUDES: scripted 45-minute lesson plan, The Fact Desk student worksheet (2 pages, 3 passages), teacher guide with a complete answer key (every planted error + the true fact), verdict guidance, exit ticket, and discussion questions. Fully unplugged by design — passages are printed — and if you DO have devices, students lateral-read the top claims live.
+
+  Aligned to CCSS ELA RI.6.8 and ISTE Standards for Students 1.3.b and 1.3.d, with a taught/assessed map for every code in the teacher guide. Lesson 3 of 6 in the Future Skills AI Literacy unit. Zero prep: print and teach.
+includes:
+  - lesson-plan.pdf (scripted 45-minute lesson)
+  - worksheet.pdf (The Fact Desk, 2 pages, 3 AI-style passages + exit ticket)
+  - teacher-guide.pdf (complete answer key with every planted error + verdict guidance + standards map)

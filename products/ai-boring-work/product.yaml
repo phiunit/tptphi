@@ -1,0 +1,33 @@
+title: "AI and Future Jobs Lesson: Robots Do the Boring Work (Grades 6-8 No Prep)"
+short_name: "Robots Do the Boring Work"
+line: ai
+grades: "6-8"
+price_usd: 4
+status: rendered
+resource_types: [Lesson, Worksheets, Activities, Printables]
+tags:
+  - AI literacy
+  - artificial intelligence
+  - future jobs
+  - automation
+  - career exploration
+  - critical thinking
+  - technology
+  - computer science
+  - digital citizenship
+standards:
+  - { framework: CSTA, code: "2-IC-20", text: "Compare tradeoffs associated with computing technologies that affect people's everyday activities and career options." }
+  - { framework: CCSS, code: "SL.6.4", text: "Present claims and findings, sequencing ideas logically and using pertinent descriptions, facts, and details to accentuate main ideas or themes; use appropriate eye contact, adequate volume, and clear pronunciation." }
+  - { framework: ISTE, code: "1.3.d", text: "Students build knowledge by actively exploring real-world issues and problems, developing ideas and theories and pursuing answers and solutions." }
+description: |
+  "Will AI take all the jobs?" Your students are already asking. This no-prep, 45-minute lesson gives them an answer they can actually use: AI changes jobs more than it deletes them — and every automation choice has a winner, a loser, and a maybe.
+
+  The hook: students run Big Dream Studio, a small recording studio with too much to do. On The Studio Task Board, pairs sort 12 real studio tasks — booking reminder texts, mixing a demo, coaching a nervous first-time artist, negotiating a fee — into three columns: AUTOMATE (boring and repeating — hand it to AI), AUGMENT (the human decides, AI assists), and KEEP HUMAN (mentorship, taste, live connection). Then they write the tradeoff behind two of their calls (who wins, who loses, what could go wrong) and defend one choice out loud. Exit ticket: run the same three columns on a job someone in their life actually has.
+
+  INCLUDES: full scripted lesson plan (45 min), Studio Task Board student worksheet (2 pages), teacher guide with suggested sorts and the honest note on grading them, discussion moves for the hard questions, a share-out rubric, exit ticket exemplar, and full standards text. Completely unplugged — no devices needed at any point.
+
+  Aligned to CSTA 2-IC-20 (comparing tradeoffs of computing technologies), CCSS ELA SL.6.4, and ISTE Standards for Students 1.3.d. Zero prep: print and teach the same morning.
+includes:
+  - lesson-plan.pdf (scripted 45-minute lesson)
+  - worksheet.pdf (The Studio Task Board, 2 pages)
+  - teacher-guide.pdf (suggested sorts + discussion moves + Defense Rubric + full standards text)

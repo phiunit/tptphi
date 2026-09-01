@@ -1,0 +1,137 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../../brand/templates/print.css">
+<style>
+  .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  h2 svg { flex: 0 0 auto; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; margin: 6px 0 2px; }
+  .card { border: 1.5px dashed #9A9AB2; border-radius: 8px; padding: 5px 7px 4px; }
+  .card .t { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9.5pt; }
+  .card .g { font-size: 8pt; color: #55556B; }
+  .flow { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+  .flow .step { flex: 1; background: var(--panel); border-radius: 8px; padding: 6px 9px; font-size: 9.5pt; }
+  .flow .step b { font-family: 'Space Grotesk', sans-serif; }
+  .flow .arrow { font-weight: 700; color: var(--line); font-size: 13pt; }
+  .addcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 4px 0; }
+  .addcard { border: 1.5px solid #B9B9C9; border-radius: 8px; min-height: 62px; padding: 5px 8px; font-size: 8pt; color: #8A8AA0; }
+  td.fit { text-align: center; }
+</style>
+</head>
+<body class="line-ai">
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="crate">
+      <circle cx="44" cy="40" r="17" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
+      <circle cx="44" cy="40" r="3.2" fill="#14141F"/>
+      <circle cx="90" cy="42" r="15" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
+      <circle cx="90" cy="42" r="3" fill="#14141F"/>
+      <circle cx="66" cy="34" r="18" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
+      <circle cx="66" cy="34" r="3.4" fill="#14141F"/>
+      <path d="M 22 52 L 104 52 L 98 86 L 28 86 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M 18 46 L 108 46 L 106 58 L 20 58 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+      <rect x="50" y="66" width="26" height="9" rx="4.5" fill="#14141F"/>
+    </g>
+    <g id="vinyl">
+      <circle cx="12" cy="12" r="10.5" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+      <circle cx="12" cy="12" r="5" fill="none" stroke="#14141F" stroke-width="1.3"/>
+      <circle cx="12" cy="12" r="2.2" fill="#14141F"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="page">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
+  <div class="headrow">
+    <div>
+      <div class="titleblock"><div class="kicker">Student Session</div><h1>Crate Check</h1></div>
+      <p class="sub">Names: ________________________ &amp; ________________________  Class: ________  Date: ________</p>
+    </div>
+    <svg width="116" height="84" viewBox="10 12 112 80"><use href="#crate"/></svg>
+  </div>
+
+  <div class="panel">
+    <strong>You are the AI.</strong> The crate below is your training data — every song you have ever "heard." House rules:
+    <ul>
+      <li><strong>Rule 1:</strong> You can ONLY serve cards from the crate. No inventing songs mid-game.</li>
+      <li><strong>Rule 2:</strong> You never refuse a request — serve the closest card you've got, the way a recommendation feed always serves you <em>something</em>.</li>
+      <li><strong>Rule 3:</strong> Rate every serve honestly. The ratings are the data.</li>
+    </ul>
+  </div>
+
+  <div class="flow">
+    <div class="step"><b>INPUT</b> — the crate: every example the AI studied</div>
+    <div class="arrow">&#8594;</div>
+    <div class="step"><b>PATTERNS</b> — training: what usually goes with what</div>
+    <div class="arrow">&#8594;</div>
+    <div class="step"><b>OUTPUT</b> — the mix: its best prediction from those patterns</div>
+  </div>
+
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#vinyl"/></svg> The Crate — All 12 Songs You Know</h2>
+  <div class="cards">
+    <div class="card"><div class="t">Thunder Mode</div><div class="g">Hype Trap · Fast · Party</div></div>
+    <div class="card"><div class="t">Bass Quake</div><div class="g">Electro Party · Fast · Party</div></div>
+    <div class="card"><div class="t">Level Up Anthem</div><div class="g">Hype Trap · Fast · Gym</div></div>
+    <div class="card"><div class="t">Full Court Press</div><div class="g">Stadium Hype · Fast · Sports</div></div>
+    <div class="card"><div class="t">Neon Stampede</div><div class="g">Electro Party · Fast · Party</div></div>
+    <div class="card"><div class="t">Turbo Turbo</div><div class="g">Electro Party · Fast · Gym</div></div>
+    <div class="card"><div class="t">Crowd Goes Wild</div><div class="g">Stadium Hype · Fast · Sports</div></div>
+    <div class="card"><div class="t">Volume War</div><div class="g">Hype Trap · Fast · Party</div></div>
+    <div class="card"><div class="t">Midnight Sprint</div><div class="g">Electro Party · Fast · Gym</div></div>
+    <div class="card"><div class="t">Glow Up Tonight</div><div class="g">Party Pop · Fast · Party</div></div>
+    <div class="card"><div class="t">Confetti Cannon</div><div class="g">Party Pop · Fast · Party</div></div>
+    <div class="card"><div class="t">Cool Down (Kinda)</div><div class="g">Party Pop · Medium · Party</div></div>
+  </div>
+  <p style="font-size:9pt; color:#55556B; margin-top:4px;">All 12 tracks: English lyrics, loud, and built for parties, gyms, and games. (Cut the cards apart, or just point — DJ's choice.) Notice anything about this crate yet? Hold that thought.</p>
+
+  <div class="footer"><span>What's in the Crate — Crate Check</span><span>© Future Skills Series</span><span>1</span></div>
+</div>
+
+<div class="page">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
+
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#vinyl"/></svg> Serve the Request Line</h2>
+  <p style="margin-bottom:4px;">DJ: pick your best card. Both partners rate the fit: <strong>&#10003; Nailed it · ~ Close-ish · &#10007; Crate can't do it</strong></p>
+  <table>
+    <tr><th>Request</th><th>Best card in your crate</th><th style="width:52px;">Fit</th></tr>
+    <tr><td>Keisha needs a hype anthem for the basketball team's tunnel walk.</td><td></td><td class="fit"></td></tr>
+    <tr><td>Nia wants something calm to study to before the math test.</td><td></td><td class="fit"></td></tr>
+    <tr><td>Tomás wants a song in Spanish for his abuela's birthday dinner.</td><td></td><td class="fit"></td></tr>
+    <tr><td>Priya needs a slow song for the last dance at the 8th-grade dance.</td><td></td><td class="fit"></td></tr>
+    <tr><td>Malik wants an opener that makes the whole party jump at once.</td><td></td><td class="fit"></td></tr>
+    <tr><td>Jordan wants a quiet acoustic track to rehearse for the talent-show sing-along.</td><td></td><td class="fit"></td></tr>
+    <tr><td>Live request from another pair: ______________________________</td><td></td><td class="fit"></td></tr>
+  </table>
+
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#vinyl"/></svg> Crate Gap Report</h2>
+  <div class="grid2">
+    <div>
+      <p style="margin-bottom:2px;"><strong>Who does this crate serve really well?</strong></p>
+      <div class="lines"><div class="l"></div><div class="l"></div></div>
+    </div>
+    <div>
+      <p style="margin-bottom:2px;"><strong>Who does it leave out — and what do they get served instead?</strong></p>
+      <div class="lines"><div class="l"></div><div class="l"></div></div>
+    </div>
+  </div>
+  <p style="margin:6px 0 2px;"><strong>Say back + build:</strong> One gap my partner noticed (in their words): </p>
+  <div class="lines"><div class="l"></div></div>
+  <p style="margin:4px 0 2px;">What I'd add to their idea:</p>
+  <div class="lines"><div class="l"></div></div>
+
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#vinyl"/></svg> Doctor the Crate</h2>
+  <p style="margin-bottom:4px;">Invent 3 new cards that fix the biggest gaps. Title + genre + vibe — make them up!</p>
+  <div class="addcards">
+    <div class="addcard">Title / genre / vibe</div>
+    <div class="addcard">Title / genre / vibe</div>
+    <div class="addcard">Title / genre / vibe</div>
+  </div>
+
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#vinyl"/></svg> Exit Ticket</h2>
+  <p style="margin-bottom:2px;"><strong>1.</strong> Finish the chain: <strong>INPUT &#8594; ______________ &#8594; OUTPUT.</strong> In your own words, what does an AI actually do with its crate (training data)?</p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <p style="margin:6px 0 2px;"><strong>2.</strong> A school tries a new AI homework helper. Every example it gives is about football — never anything else. Using the word <em>crate</em>, explain what probably happened, and name one group of students it doesn't serve well.</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+
+  <div class="footer"><span>What's in the Crate — Crate Check</span><span>© Future Skills Series</span><span>2</span></div>
+</div>
+</body></html>

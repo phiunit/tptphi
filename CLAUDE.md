@@ -38,7 +38,8 @@ When Phi asks you to "build the next product," follow this manual exactly.
 - **Branding on materials:** generic only — masthead "Future Skills · <Line>", footer
   "© Future Skills Series". Never put the store name inside lesson pages or covers.
 - **Voice:** cool teacher, not textbook. Students addressed directly on worksheets;
-  teacher pages efficient and professional.
+  teacher pages efficient and professional. Kid-world vocabulary on student pages —
+  no business jargon (intern, deliverable, stakeholder...); see ANTI_SLOP.md rule 13b.
 - 3–5 real standards per product, cited in description + lesson chips + teacher guide full text.
 
 ## Grade band
