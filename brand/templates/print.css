@@ -32,7 +32,7 @@ h1 { font-size: 25pt; font-weight: 700; letter-spacing: -0.03em; margin: 0 0 4px
 .titleblock h1 { margin: 0; }
 .titleblock .kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9pt;
   letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin: 0 0 2px; }
-h2 { font-size: 12.5pt; font-weight: 700; margin: 14px 0 6px; color: var(--line); text-transform: uppercase; letter-spacing: 1px;
+h2 { font-size: 12.5pt; font-weight: 700; margin: 12px 0 5px; color: var(--line); text-transform: uppercase; letter-spacing: 1px;
   display: flex; align-items: center; gap: 8px; }
 h2::after { content: ""; flex: 1; height: 2px; border-radius: 2px;
   background: linear-gradient(to right, var(--line), transparent 70%); opacity: 0.35; }

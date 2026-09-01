@@ -1,28 +1,36 @@
-# Judge Report — How to Talk to AI (ai-prompting-101)
-Judged: 2026-09-01 · against docs/JUDGE.md · screenshots in dist/review/
+# Judge Report v2 — How to Talk to AI (ai-prompting-101)
+Judged: 2026-09-01 · against docs/JUDGE.md v2 (gated) · screenshots in dist/review/
 
-## Scorecard
-| # | Dimension | Score | Notes |
+## First-pass defect hunt (found 3)
+1. **ALIGNMENT-WASHING (Gate 1 fail):** ISTE 1.6.a claimed but students never choose
+   platforms/tools; ISTE 1.1.c's "technology feedback" only occurs in the optional
+   with-devices step and is never assessed. → Both CUT. Replaced with ISTE 1.3.b
+   (evaluate accuracy/credibility), which survives: taught in trickster-genie discussion,
+   assessed by Exit Ticket #2.
+2. **Missing ELL differentiation (Gate 2 fail):** support/extension/unplugged existed, no
+   ELL note. → Added: sentence starters as language frames + home-language drafting.
+3. Adding fixes re-overflowed lesson p2 by 7px (Gate 0 #6). → Global h2 rhythm tightened;
+   all documents re-verified clean.
+
+## Gate results (post-fix)
+| Gate | Item | Result | Evidence |
 |---|---|---|---|
-| 1 | Thumbnail test | 5 | Title + grade chip + FREE badge + lamp read clearly at thumbnail size |
-| 2 | Teach-tomorrow clarity | 5 | Fully scripted incl. Worst-Genie improv moves; materials = one worksheet |
-| 3 | Pedagogy | 5 | Objectives ↔ P.R.O. ↔ activity ↔ exit ticket align; adversarial "break it" step teaches real prompt-testing |
-| 4 | Standards integrity | 4 | Codes real, verbatim, cited in all 3 places. ISTE 1.5.c (decomposition) mapping defensible, not airtight |
-| 5 | Engagement hook | 5 | Genie carries literalism, hallucination, AND honesty — one analogy, three concepts |
-| 6 | Student-page quality | 5 | Photocopy-safe spot art, honest write-in space, ~6th-grade reading level |
-| 7 | Timing honesty | 5 | WAS 2: blocks summed to 40 vs advertised 45. FIXED: 8+10+22+5 = 45 |
-| 8 | Differentiation | 4 | Support/extension/unplugged all real; no explicit ELL note |
-| 9 | Completeness | 5 | WAS 3: no TOU/license or review-follow CTA. FIXED: added to teacher guide p2 |
-| 10 | Listing quality | 5 | 78-char keyword-front-loaded title; 400+ char honest description |
+| 0 | Facts, typos, layout, promises, copyright, harm, keys | clean | All 7 screenshots re-checked post-fix; render gate green |
+| 0 | Timing sums | clean | 8+10+22+5 = 45 (lesson p1–p2) matches cover/listing |
+| 1 | Alignment per code | meets | 1.5.c taught P.R.O./assessed checklist; 1.3.b taught discussion/assessed ET#2; W.6.4 taught clauses/assessed repairs+ET#1 — taught/assessed now printed beside each code in teacher guide p2 |
+| 1 | Depth (DOK) | meets | Repairs = DOK 2–3 (apply/create); Break-it = DOK 3 evaluate, assessed via checklist + "sneakiest twist" written response (worksheet p2) |
+| 1 | Assessment ↔ objectives | meets | Obj1→Genie-test row + twist response; Obj2→ET#1; Obj3→ET#2 |
+| 2 | Sub-teacher runnable | meets | Scripted lines, timed blocks, Worst-Genie improv moves (TG p1) |
+| 2 | Differentiation | meets | Support/extension/ELL/unplugged, all named (lesson p2) |
+| 2 | Print reality | meets | Line art + single accent; write-in boxes ≥80px |
+| 3 | Thumbnail test | meets | Title, grade chip, FREE, lamp read at small size |
+| 3 | Value density | meets | Framework + adversarial mechanic + improv script + keys — not 10-minute DIY |
+| 3 | Representation | partial | No named people anywhere: nothing harmful, but scenarios could feature a wider world (logged) |
+| 3 | Voice / listing | meets | No AI-tell phrasing found on read-aloud; title 78 chars |
 
-**Average 4.8 · minimum 4 → VERDICT: PASS**
+**Fails: 0 · Partials: 1 → VERDICT: PASS (v2)**
 
-## Fixed during this judging round
-- Timing mismatch (40 min of blocks sold as a 45-min lesson) — the single worst review-bait
-- Missing Terms of Use / license + review & follow CTA (TPT convention) — now on teacher guide p2
-- Judge harness itself: page-2 screenshots were blank (viewport clipping bug in judge.mjs)
-
-## Would improve (non-blocking, logged)
-- Add one ELL support line (sentence frames exist; name them for ELL explicitly)
-- Exit ticket Q2 assumes students have seen an AI answer; fine as hypothetical, could add "(or imagine one)"
-- If this product is ever re-priced above free, the cover FREE badge must be removed
+## Would improve (non-blocking)
+- Representation: introduce named, varied characters in scenario text in future revisions
+- Exit Ticket #2 could add "(or imagine one)" for fully unplugged rooms
+- If ever re-priced above free, remove the cover FREE badge
