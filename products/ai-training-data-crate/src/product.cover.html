@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: 'Space Grotesk'; font-weight: 500; src: url('../../../brand/fonts/SpaceGrotesk-500.ttf') format('truetype'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('../../../brand/fonts/SpaceGrotesk-700.ttf') format('truetype'); }
+* { box-sizing: border-box; margin: 0; }
+html { overflow: hidden; height: 100%; background: #14141F; }
+body { min-height: 100%; }
+body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(ellipse at 75% 85%, #3B2F8F 0%, #232345 45%, #14141F 100%); color: #fff;
+  display: flex; flex-direction: column; padding: 60px; position: relative; overflow: hidden; }
+/* stars */
+.star { position: absolute; background: #fff; border-radius: 50%; opacity: 0.8; }
+.star.g { background: #FFB020; }
+/* content */
+.brand { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
+.chipline { margin-top: 26px; display: flex; gap: 12px; position: relative; z-index: 2; }
+.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 20px; padding: 8px 22px; border-radius: 99px; }
+.chip.solid { background: #FFB020; color: #14141F; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
+h1 span { color: #FFB020; }
+.sub { font-size: 30px; margin-top: 28px; line-height: 1.45; color: #E8E8F5; max-width: 620px; position: relative; z-index: 2; }
+.sub em { color: #FFB020; font-style: normal; font-weight: 700; }
+.lessonchip { position: absolute; top: 52px; right: 52px; border: 2px solid #FFB020; color: #FFB020; font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 20px; padding: 8px 22px; border-radius: 99px; z-index: 3; }
+</style></head><body>
+<div class="star g" style="width:10px;height:10px;left:700px;top:180px"></div>
+<div class="star" style="width:4px;height:4px;left:520px;top:120px"></div>
+<div class="star g" style="width:8px;height:8px;left:160px;top:560px"></div>
+<div class="star g" style="width:6px;height:6px;left:780px;top:460px"></div>
+<svg width="560" height="660" viewBox="0 0 560 660" style="position:absolute; right:-20px; bottom:-30px; z-index:1;">
+  <defs>
+    <linearGradient id="wave" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFB020" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#FFB020" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFB020" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- sound waves rising off the crate -->
+  <path d="M 225 395 Q 280 345 335 395" fill="none" stroke="url(#wave)" stroke-width="20" stroke-linecap="round"/>
+  <path d="M 190 340 Q 280 255 370 340" fill="none" stroke="url(#wave)" stroke-width="20" stroke-linecap="round"/>
+  <path d="M 155 285 Q 280 165 405 285" fill="none" stroke="url(#wave)" stroke-width="20" stroke-linecap="round"/>
+  <!-- records peeking out of the crate -->
+  <g>
+    <circle cx="190" cy="450" r="82" fill="#FFB020"/>
+    <circle cx="190" cy="450" r="30" fill="#232345"/>
+    <circle cx="190" cy="450" r="11" fill="#FFB020"/>
+    <circle cx="378" cy="458" r="72" fill="#FFB020"/>
+    <circle cx="378" cy="458" r="26" fill="#232345"/>
+    <circle cx="378" cy="458" r="10" fill="#FFB020"/>
+    <circle cx="285" cy="432" r="88" fill="#FFB020"/>
+    <circle cx="285" cy="432" r="32" fill="#14141F"/>
+    <circle cx="285" cy="432" r="12" fill="#FFB020"/>
+  </g>
+  <!-- crate -->
+  <g fill="#FFB020">
+    <path d="M 118 498 L 448 498 L 424 636 L 142 636 Z"/>
+    <path d="M 106 484 L 460 484 L 454 516 L 112 516 Z"/>
+  </g>
+  <rect x="243" y="556" width="80" height="26" rx="13" fill="#14141F"/>
+</svg>
+<div class="lessonchip">AI Literacy · Lesson 2 of 6</div>
+<div class="brand">Future Skills Series</div>
+<div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; letter-spacing:3px; text-transform:uppercase; color:#E8E8F5; opacity:0.85; margin-top:120px; position:relative; z-index:2;">The DJ Crate Lesson</div>
+<h1>What's in<br><span>the Crate?</span></h1>
+<p class="sub">How AI learns, for grades 6–8: training data is a DJ's crate — AI can only mix <em>what's in it</em>. Students play a one-genre AI, find who the crate fails, and meet real bias.</p>
+<div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">45-min lesson</span><span class="chip">No prep · No devices needed</span></div>
+</body></html>
