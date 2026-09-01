@@ -36,6 +36,18 @@ products:
   - { slug: games-balance-math,      line: games,        priority: 2, status: idea, price: 5,
       title: "Nerf This! Game Balance Is Just Math (Ratios & Stats)" }
 
+  # ---- WAVE 2.5: format expansion (see docs/FORMATS.md) ----
+  - { slug: ai-task-cards-prompt-powerups, line: ai, priority: 2, status: idea, price: 4,
+      title: "Prompt Power-Ups: 32 AI Literacy Task Cards + Recording Sheet (Grades 6-8)" }
+  - { slug: ai-escape-literal-genie,       line: ai, priority: 2, status: idea, price: 9,
+      title: "Escape the Literal Genie: AI Prompting Escape Room (Print, Grades 6-8)" }
+  - { slug: bellringers-future-skills,     line: entrepreneur, priority: 2, status: idea, price: 6,
+      title: "Future Skills Bell Ringers: 4 Weeks of Daily Warm-Ups (AI, Money, Startup)" }
+  - { slug: mental-models-posters,         line: entrepreneur, priority: 2, status: idea, price: 5,
+      title: "10 Mental Models Poster Set + Doodle Notes (Middle School Decor)" }
+  - { slug: sub-kit-future-skills,         line: entrepreneur, priority: 3, status: idea, price: 8,
+      title: "Emergency Sub Plans: Future Skills Kit (No Tech, No Prep, 50 Minutes)" }
+
   # ---- WAVE 3: bundles + mental models ----
   - { slug: mental-models-starter,   line: entrepreneur, priority: 3, status: idea, price: 7,
       title: "Think in Models: 10 Mental Models Every Teen Should Know" }
