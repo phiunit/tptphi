@@ -27,6 +27,9 @@ When Phi asks you to "build the next product," follow this manual exactly.
   (literal genie = literal AI; game balance = ratios), never decoration.
 - **Timed, scripted lessons:** every activity block has minutes; teacher lines are quotable.
 - **Assessment included:** exit ticket or rubric in every product.
+- **Spot art:** student-facing pages get simple inline-SVG spot illustrations tied to the
+  lesson's analogy (see ai-prompting-101 worksheet: lamp/sparkle defs + <use>). Style is
+  photocopy-safe: dark line-art outlines with one accent fill, never photos or clip-art.
 - **Voice:** cool teacher, not textbook. Students addressed directly on worksheets;
   teacher pages efficient and professional.
 - 3–5 real standards per product, cited in description + lesson chips + teacher guide full text.

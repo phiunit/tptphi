@@ -1,11 +1,49 @@
 <!doctype html><html><head><meta charset="utf-8">
-<link rel="stylesheet" href="../../../brand/templates/print.css"></head>
+<link rel="stylesheet" href="../../../brand/templates/print.css">
+<style>
+  .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  .wishhead { display: flex; align-items: center; gap: 10px; }
+  .wishbadge { width: 34px; height: 34px; flex: 0 0 34px; }
+  h2 svg { flex: 0 0 auto; }
+</style>
+</head>
 <body class="line-ai">
+
+<!-- Shared art: line-art lamp, smoke wisp, sparkle -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="lamp">
+      <!-- body -->
+      <path d="M 34 62 Q 60 49 86 62 Q 79 78 60 78 Q 41 78 34 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+      <!-- spout -->
+      <path d="M 38 59 Q 26 51 20 41 Q 29 38 37 43 Q 44 48 49 55 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+      <!-- lid + knob -->
+      <path d="M 51 56 Q 60 52 69 56 L 66 61 Q 60 58 54 61 Z" fill="#14141F"/>
+      <circle cx="60" cy="49" r="3.5" fill="#14141F"/>
+      <!-- handle -->
+      <path d="M 86 62 Q 99 55 96 45 Q 94 39 88 40" fill="none" stroke="#14141F" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- smoke -->
+      <path d="M 22 38 C 18 30, 28 27, 26 19 C 24 12, 32 8, 36 12" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="39" cy="9" r="2.5" fill="#FFB020" stroke="#14141F" stroke-width="1.5"/>
+    </g>
+    <g id="sparkle">
+      <path d="M 12 0 Q 14 9 24 12 Q 14 15 12 24 Q 10 15 0 12 Q 10 9 12 0 Z" fill="#FFB020" stroke="#14141F" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+    <g id="wisp">
+      <path d="M 8 74 C 0 60, 20 54, 16 40 C 12 27, 28 22, 26 10 C 25 4, 30 0, 35 2" fill="none" stroke="#5B4DFF" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+</svg>
 
 <div class="page">
   <div class="masthead"><span class="unit">Phi Unit · AI Literacy</span><span class="grade">Grades 6–8</span></div>
-  <div class="titleblock"><div class="kicker">Student Session</div><h1>Cursed Wish Repair Shop</h1></div>
-  <p class="sub">Name: ______________________________  Class: ____________  Date: ____________</p>
+  <div class="headrow">
+    <div>
+      <div class="titleblock"><div class="kicker">Student Session</div><h1>Cursed Wish Repair Shop</h1></div>
+      <p class="sub">Name: ________________________  Class: ________  Date: ________</p>
+    </div>
+    <svg width="120" height="90" viewBox="0 0 120 90"><use href="#lamp" transform="translate(8,4) scale(1.05)"/></svg>
+  </div>
 
   <div class="panel">
     <strong>The genie's one rule:</strong> it grants exactly what you SAY — never what you MEANT.
@@ -17,17 +55,17 @@
     </ul>
   </div>
 
-  <h2>Cursed Wish #1 — Repair It</h2>
+  <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #1 — Repair It</h2>
   <p>Cursed wish: <em>"tell me about space"</em></p>
   <p>Your genie-proof rewrite:</p>
   <div class="writebox"></div>
 
-  <h2>Cursed Wish #2 — Repair It</h2>
+  <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #2 — Repair It</h2>
   <p>Cursed wish: <em>"help me save money"</em></p>
   <p>Your genie-proof rewrite:</p>
   <div class="writebox"></div>
 
-  <h2>Cursed Wish #3 — Repair It</h2>
+  <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #3 — Repair It</h2>
   <p>Cursed wish: <em>"make a story about a hero"</em></p>
   <p>Your genie-proof rewrite:</p>
   <div class="writebox"></div>
@@ -38,19 +76,19 @@
 <div class="page">
   <div class="masthead"><span class="unit">Phi Unit · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2>Be the Worst Genie Ever — Break Your Partner's Wishes</h2>
+  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#sparkle"/></svg> Be the Worst Genie Ever — Break Your Partner's Wishes</h2>
   <p>Swap sheets. Read each repaired wish like a literal genie looking for a loophole, then score it:</p>
   <table>
     <tr><th>Genie-Proof Checklist</th><th>Wish 1</th><th>Wish 2</th><th>Wish 3</th></tr>
     <tr><td><strong>P</strong> — Clear purpose and audience?</td><td></td><td></td><td></td></tr>
     <tr><td><strong>R</strong> — At least 2 pieces of fine print (length, tone, format, include/avoid)?</td><td></td><td></td><td></td></tr>
     <tr><td><strong>O</strong> — Says what the output should look like?</td><td></td><td></td><td></td></tr>
-    <tr><td>🧞 Genie test — Can you still twist this wish? (✗ = genie-proof!)</td><td></td><td></td><td></td></tr>
+    <tr><td><svg width="15" height="15" viewBox="0 0 24 24" style="vertical-align:-2px"><use href="#sparkle"/></svg> <strong>Genie test</strong> — Can you still twist this wish? (✗ = genie-proof!)</td><td></td><td></td><td></td></tr>
   </table>
   <p>The sneakiest way you could twist one of their wishes (be specific — which wish, and how?):</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
-  <h2>Exit Ticket</h2>
+  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#sparkle"/></svg> Exit Ticket</h2>
   <p><strong>1.</strong> Write one genie-proof prompt you could really use this week for another class:</p>
   <div class="writebox"></div>
   <p><strong>2.</strong> Genies are tricksters: AI can grant your wish with facts it made up — and sound totally confident. What is ONE thing from an AI answer you would double-check, and where would you check it?</p>
