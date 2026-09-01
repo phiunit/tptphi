@@ -34,6 +34,7 @@ When Phi asks you to "build the next product," follow this manual exactly.
 - **Spot art:** student-facing pages get simple inline-SVG spot illustrations tied to the
   lesson's analogy (see ai-prompting-101 worksheet: lamp/sparkle defs + <use>). Style is
   photocopy-safe: dark line-art outlines with one accent fill, never photos or clip-art.
+  Teacher pages get a lighter touch: title lamp in the header row + small accents on key h2s.
 - **Branding on materials:** generic only — masthead "Future Skills · <Line>", footer
   "© Future Skills Series". Never put the store name inside lesson pages or covers.
 - **Voice:** cool teacher, not textbook. Students addressed directly on worksheets;

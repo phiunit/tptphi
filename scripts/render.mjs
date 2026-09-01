@@ -12,10 +12,21 @@ if (!products.length) { console.error('No products found' + (slug ? ` for slug "
 const browser = await launch();
 const page = await browser.newPage();
 
+// Teachers organize downloads by filename: name outputs "<Lesson Name> - <Doc>.pdf"
+const DOC_NAMES = { 'lesson-plan': 'Lesson Plan', 'worksheet': 'Worksheet',
+  'teacher-guide': 'Teacher Guide', 'product.cover': 'Cover', 'product.preview': 'Preview' };
+function outName(meta, base) {
+  const lesson = (meta.short_name || String(meta.title).split(':')[0]).trim().replace(/[\/:*?"<>|]/g, '');
+  const doc = DOC_NAMES[base] || base.replace(/\b\w/g, c => c.toUpperCase()).replace(/-/g, ' ');
+  return `${lesson} - ${doc}`;
+}
+
 for (const p of products) {
   const srcDir = path.join(p.dir, 'src');
   const distDir = path.join(p.dir, 'dist');
   fs.mkdirSync(distDir, { recursive: true });
+  // clear stale outputs (review/ screenshots are managed by judge.mjs)
+  for (const f of fs.readdirSync(distDir)) if (/\.(pdf|png)$/.test(f)) fs.rmSync(path.join(distDir, f));
   const files = fs.readdirSync(srcDir).filter(f => f.endsWith('.html'));
   for (const f of files) {
     const url = 'file://' + path.join(srcDir, f);
@@ -54,12 +65,12 @@ for (const p of products) {
       }
     }
     if (asImage) {
-      const out = path.join(distDir, base + '.png');
+      const out = path.join(distDir, outName(p.meta, base) + '.png');
       await page.setViewportSize({ width: 850, height: 1100 });
       await page.screenshot({ path: out, clip: { x: 0, y: 0, width: 850, height: 1100 } });
       console.log('PNG ', path.relative(process.cwd(), out));
     } else {
-      const out = path.join(distDir, base + '.pdf');
+      const out = path.join(distDir, outName(p.meta, base) + '.pdf');
       await page.pdf({ path: out, width: '8.5in', height: '11in', printBackground: true, margin: { top: 0, bottom: 0, left: 0, right: 0 } });
       console.log('PDF ', path.relative(process.cwd(), out));
     }

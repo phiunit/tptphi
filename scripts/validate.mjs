@@ -15,7 +15,7 @@ for (const p of listProducts(process.argv[2])) {
   const dist = path.join(p.dir, 'dist');
   const distFiles = fs.existsSync(dist) ? fs.readdirSync(dist) : [];
   if (!distFiles.some(f => f.endsWith('.pdf'))) errs.push('no rendered PDF in dist/ (run npm run render)');
-  if (!distFiles.some(f => f.includes('cover') && f.endsWith('.png'))) errs.push('no cover PNG in dist/');
+  if (!distFiles.some(f => f.toLowerCase().includes('cover') && f.endsWith('.png'))) errs.push('no cover PNG in dist/');
   if (errs.length) { fail++; console.log(`✗ ${p.slug}\n   - ` + errs.join('\n   - ')); }
   else console.log(`✓ ${p.slug} — upload-ready (${distFiles.length} assets)`);
 }

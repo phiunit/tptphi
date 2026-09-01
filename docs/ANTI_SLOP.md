@@ -49,3 +49,9 @@ Operating posture:
   pedagogy, the standards alignment, and the no-prep design.
 - Quality over cadence: a slower drumbeat of excellent products beats daily slop, both
   with the algorithm and with reviews.
+
+## File naming (teachers live in their Downloads folder)
+Rendered files carry the lesson name: `<Lesson Name> - <Doc>.pdf`
+(e.g. "How to Talk to AI - Lesson Plan.pdf"). Never generic `lesson-plan.pdf` —
+a teacher downloading five stores' resources in one sitting must be able to tell
+ours apart without opening them. `short_name` in product.yaml controls the prefix.
