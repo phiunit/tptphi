@@ -4,6 +4,9 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
+  h2 { margin: 10px 0 4px; }
+  .panel p, .callout p { margin-bottom: 5px; }
+  .panel p:last-child, .callout p:last-child { margin-bottom: 0; }
 </style>
 </head>
 <body class="line-ai">
@@ -36,7 +39,7 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">The DJ Crate Lesson · AI Literacy</div><h1>What's in the Crate?</h1></div>
-      <p class="sub">A 45-minute lesson on how AI learns — and where bias comes from. The hook: an AI is a DJ, and its training data is the crate. It can remix what's in the crate in clever ways, but it can't serve a song it's never heard. A one-genre crate means one-genre answers, no matter who's asking.</p>
+      <p class="sub">A 45-minute lesson on how AI learns — and where bias comes from. The hook: an AI is a DJ, and training data is the crate. It can only mix what's in the crate, so a one-genre crate means one-genre answers, no matter who's asking.</p>
     </div>
     <svg class="art" width="116" height="84" viewBox="10 12 112 80"><use href="#crate"/></svg>
   </div>
@@ -49,9 +52,9 @@
 
   <h2>Objectives</h2>
   <ul>
-    <li>Students can explain how an AI learns: <strong>input → patterns → output</strong> — pattern prediction from training data, not magic or understanding.</li>
-    <li>Students can identify who a limited dataset serves well and who it leaves out, and connect that gap to bias in real AI tools.</li>
-    <li>Students can discuss data gaps collaboratively — restating a partner's idea and building on it before adding their own.</li>
+    <li>Explain how an AI learns: <strong>input → patterns → output</strong> — prediction from data, not magic.</li>
+    <li>Identify who a dataset serves well, who it leaves out, and connect that gap to real AI bias.</li>
+    <li>Discuss data gaps collaboratively: say back a partner's idea and build on it.</li>
   </ul>
 
   <h2>Standards Alignment</h2>
@@ -61,14 +64,14 @@
   <p>Full standards text in the Teacher Guide.</p>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#vinyl"/></svg> Warm-Up — The One-Genre DJ (7 min)</h2>
-  <p>Announce that you are <strong>DJ One-Note</strong>, the school's new music-recommendation AI. Your crate is your whole world, and your crate holds exactly one kind of song: loud, fast party tracks. Take 3–4 requests and serve every single one, with total confidence:</p>
+  <p>Announce that you are <strong>DJ One-Note</strong>, the school's new music-recommendation AI. Your crate holds one kind of song: loud, fast party tracks. Take 3–4 requests and serve every one with total confidence:</p>
   <div class="panel">
-    <p><em>"Something chill to study to?"</em> → "Great choice. Here's 'TURBO TURBO.' It is not chill. It's what I've got."</p>
-    <p><em>"A song for my grandma's birthday dinner?"</em> → "Say less. 'VOLUME WAR.' Grandma loves bass drops, probably."</p>
-    <p><em>"A slow song for the last dance?"</em> → "Slow, got it. Here's 'NEON STAMPEDE' played at... the exact same speed."</p>
+    <p><em>"Something chill to study to?"</em> → "Here's 'TURBO TURBO.' It is not chill. It's what I've got."</p>
+    <p><em>"A song for grandma's birthday dinner?"</em> → "Say less. 'VOLUME WAR.' Grandma loves bass drops, probably."</p>
+    <p><em>"A slow song for the last dance?"</em> → "'NEON STAMPEDE,' played at... the exact same speed."</p>
   </div>
   <p>Then ask: <strong>is DJ One-Note bad at DJing — or is something else broken?</strong> Fish for it: the DJ is doing its job perfectly. The <em>crate</em> is the problem.</p>
-  <div class="callout"><strong>Bridge:</strong> "Last lesson, the genie granted what you SAID, not what you meant. Today: where the genie's answers even come from. Every AI learned everything it 'knows' from a crate of examples — its training data. It can remix that crate in clever ways, but it can't serve what was never in it. Today you'll BE the DJ, and you'll find out what a lopsided crate does to the people making requests."</div>
+  <div class="callout"><strong>Bridge:</strong> "Last lesson, the genie granted what you SAID. Today: where its answers even come from. Everything an AI 'knows' comes from a crate of examples — its training data. It can remix the crate, but it can't serve what was never in it. Today you'll BE the DJ."</div>
 
   <div class="footer"><span>What's in the Crate — Lesson Plan</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -79,32 +82,32 @@
   <h2>Direct Instruction — No Magic in the Machine (8 min)</h2>
   <p>Write the chain on the board: <strong>INPUT → PATTERNS → OUTPUT.</strong></p>
   <div class="panel">
-    <p><strong>INPUT — the crate.</strong> Training data: the giant pile of examples an AI studies before you ever meet it. For a music AI, songs and playlists. For a chatbot, mountains of text people wrote. Nobody types "knowledge" into an AI — it studies examples.</p>
-    <p><strong>PATTERNS — the training.</strong> The AI works through the crate and gets good at one thing: guessing what usually goes with what. Which word tends to come next. Which songs sit on the same playlists. It doesn't understand any of it — it finds patterns.</p>
-    <p><strong>OUTPUT — the mix.</strong> When you ask for something, it predicts the response that best matches the patterns in its crate. A prediction, not a lookup — that's why it can sound confident and still be off.</p>
+    <p><strong>INPUT — the crate.</strong> Training data: the giant pile of examples an AI studies before you ever meet it — songs for a music AI, mountains of human writing for a chatbot. Nobody types "knowledge" in. It studies examples.</p>
+    <p><strong>PATTERNS — the training.</strong> The AI works through the crate and gets good at ONE thing: guessing what usually goes with what. It doesn't understand any of it — it finds patterns.</p>
+    <p><strong>OUTPUT — the mix.</strong> Ask for something and it predicts what best matches its crate's patterns. A prediction, not a lookup — which is why it can sound confident and still be off.</p>
   </div>
-  <div class="callout"><strong>Say it plainly:</strong> "No magic in the machine. An AI doesn't know things — it predicts things, from its crate. So two rules run everything: a GAP in the crate is a gap in the AI, and a LEAN in the crate is a lean in every answer. That lean has a name: bias."</div>
-  <p>Quick check before the activity — ask: "Imagine a photo AI whose crate is almost all golden retrievers. A husky walks in. What's it going to say?" (Its best guess from the patterns it has: some kind of golden retriever. Gap in, gap out.)</p>
+  <div class="callout"><strong>Say it plainly:</strong> "No magic in the machine. An AI doesn't KNOW things — it predicts things, from its crate. So two rules run everything: a GAP in the crate is a gap in the AI, and a LEAN in the crate leans every answer. That lean has a name: bias."</div>
+  <p><strong>Quick check:</strong> "A photo AI's crate is almost all golden retrievers. A husky walks in — what's it going to call it?" (Its best guess from its patterns: golden retriever. Gap in, gap out.)</p>
 
   <h2>Activity — Crate Check (20 min)</h2>
   <ol>
-    <li><strong>Setup (3 min):</strong> Pairs. One partner is the <strong>AI DJ</strong>, the other runs the <strong>Request Line</strong>. The 12 song cards printed on the worksheet are the DJ's entire training data. House rules: the DJ can only serve cards from the crate, and the DJ never refuses — it serves the closest thing it's got, just like a recommendation feed always serves you <em>something</em>.</li>
-    <li><strong>Serve the Request Line (9 min):</strong> Work through the six printed requests — Keisha, Nia, Tomás, Priya, Malik, Jordan — swapping roles after three. For each: DJ picks the best card, both partners rate the fit (Nailed it / Close-ish / Crate can't do it). Then take one live request from a neighboring pair and log it.</li>
-    <li><strong>Crate Gap Report (5 min):</strong> Pairs fill in who the crate serves well and who it leaves out. Discussion rule (say it and hold them to it): <em>before you add your own idea, say back your partner's and build on it.</em></li>
-    <li><strong>Doctor the Crate (3 min):</strong> Pairs invent 3 new cards that fix the biggest gaps. Push past "add one slow song" — which requests still have nothing?</li>
+    <li><strong>Setup (3 min):</strong> Pairs — one partner is the <strong>AI DJ</strong>, one runs the <strong>Request Line</strong>. The 12 song cards ARE the DJ's training data. House rules: serve only from the crate, and never refuse — serve the closest thing you've got.</li>
+    <li><strong>Serve the Request Line (9 min):</strong> Work the six printed requests (Keisha, Nia, Tomás, Priya, Malik, Jordan), swapping roles after three. DJ picks the best card; both rate the fit. End with one live request from a neighboring pair.</li>
+    <li><strong>Crate Gap Report (5 min):</strong> Pairs record who the crate serves well and who it leaves out. Discussion rule, enforced out loud: <em>before you add your idea, say back your partner's and build on it.</em></li>
+    <li><strong>Doctor the Crate (3 min):</strong> Invent 3 new cards that fix the biggest gaps. Push past "add one slow song" — which requests still have nothing?</li>
   </ol>
 
   <h2>Debrief — The Real Crates (5 min)</h2>
-  <p>Ask pairs to call out one gap they found, then connect: "Your crate failed Tomás and Priya. Real crates fail real people the exact same way." Walk the three examples in the Teacher Guide (voice assistants and accents, photo tools and skin tones, one-track feeds), then land the big question: <strong>"Nobody put bad songs in your crate — so where did the bias come from?"</strong> (From what got collected and what didn't. That's why real AI teams audit their crates.)</p>
+  <p>Pairs call out one gap they found. Connect: "Your crate failed Tomás and Priya. Real crates fail real people the same way." Walk the three examples in the Teacher Guide, then land the big question: <strong>"Nobody put bad songs in your crate — so where did the bias come from?"</strong> (From what got collected and what didn't.)</p>
 
   <h2>Exit Ticket (5 min)</h2>
-  <p>Bottom of worksheet: students complete the <strong>input → patterns → output</strong> chain in their own words, then diagnose a lopsided homework-helper AI using the word "crate."</p>
+  <p>Bottom of worksheet: complete the <strong>input → patterns → output</strong> chain, then diagnose a lopsided homework-helper AI using the word "crate."</p>
 
   <h2>Differentiation</h2>
   <ul>
-    <li><strong>Support:</strong> Discussion sentence frames + a pre-sorted crate note (Teacher Guide, p.2).</li>
-    <li><strong>Extension:</strong> Design a replacement 12-card crate that can serve every request on the sheet — then defend the trade-offs (what did you have to leave out to fit everyone in?).</li>
-    <li><strong>ELL:</strong> Fit ratings are check-marks, not sentences; students may write their invented crate cards in any language — which fixes one of this crate's actual gaps.</li>
+    <li><strong>Support:</strong> Sentence frames + pre-sorted crate note (Teacher Guide, p.2).</li>
+    <li><strong>Extension:</strong> Design a 12-card crate that serves every request on the sheet — then defend the trade-offs.</li>
+    <li><strong>ELL:</strong> Ratings are check-marks, not sentences; invented cards may be in any language (which fixes a real gap).</li>
     <li><strong>No-device classrooms:</strong> Built in — the whole lesson is paper, pairs, and one loud imaginary DJ.</li>
   </ul>
 

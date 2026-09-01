@@ -3,28 +3,27 @@
 <style>
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
-  .brief td .write { min-height: 46px; }
+  .brief td .write { min-height: 42px; }
   .rolecards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
   .rolecards .panel { margin: 0; font-size: 9.5pt; }
   .rolecards .rolename { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 10.5pt;
     text-transform: uppercase; letter-spacing: 1px; color: var(--line); margin-bottom: 4px; }
   .checkrubric td:nth-child(2) { width: 2.6in; }
-  .checkrubric td:nth-child(3) { width: 1.1in; }
-  .checkrubric .write { min-height: 42px; }
+  .checkrubric td:nth-child(3) { width: 1.15in; }
+  .checkrubric .write { min-height: 36px; }
 </style>
 </head>
 <body class="line-ai">
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <g id="clipboard">
-      <rect x="24" y="16" width="72" height="96" rx="10" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
-      <rect x="34" y="30" width="52" height="70" rx="6" fill="#fff" stroke="#14141F" stroke-width="2.5"/>
-      <rect x="46" y="8" width="28" height="16" rx="6" fill="#14141F"/>
-      <circle cx="60" cy="13" r="3" fill="#FFB020"/>
-      <line x1="42" y1="46" x2="78" y2="46" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <line x1="42" y1="58" x2="70" y2="58" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <path d="M 44 82 L 54 92 L 78 64" fill="none" stroke="#14141F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="banner">
+      <line x1="24" y1="14" x2="96" y2="14" stroke="#14141F" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="24" cy="14" r="4.5" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+      <circle cx="96" cy="14" r="4.5" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+      <path d="M 32 18 L 88 18 L 88 96 L 60 82 L 32 96 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+      <line x1="42" y1="32" x2="78" y2="32" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 46 58 L 56 68 L 76 42" fill="none" stroke="#14141F" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <g id="checkbadge">
       <circle cx="12" cy="12" r="10" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
@@ -37,73 +36,71 @@
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
   <div class="headrow">
     <div>
-      <div class="titleblock"><div class="kicker">Student Session · You're the Boss</div><h1>Run the Project</h1></div>
+      <div class="titleblock"><div class="kicker">Student Session · You're the Party Leader</div><h1>Run the Quest</h1></div>
       <p class="sub">Name: ________________________  Class: ________  Date: ________</p>
     </div>
-    <svg width="100" height="100" viewBox="0 0 120 120"><use href="#clipboard"/></svg>
+    <svg width="96" height="90" viewBox="10 2 100 100"><use href="#banner"/></svg>
   </div>
 
   <div class="panel">
-    <strong>You're the boss now.</strong> An AI agent is a capable, tireless, EXTREMELY literal intern —
-    it does exactly what the brief says, never what you meant. Bosses don't do the work twice.
-    They run <strong>the manager's loop:</strong>
-    <strong>BRIEF</strong> it → split the <strong>ROLES</strong> → <strong>CHECK</strong> the work → <strong>SHIP or SEND BACK.</strong>
+    <strong>You're the party leader now.</strong> An AI agent is a party member — capable, tireless,
+    EXTREMELY literal. It does what the quest card SAYS, never what you meant. Leaders don't redo the
+    squad's work; they review it: <strong>QUEST CARD → ROLES → CHECK THE LOOT → SHIP IT or RUN IT BACK.</strong>
   </div>
 
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 1 — Pick Your Mission (team of 3)</h2>
-  <p>Circle one: &nbsp;<strong>GAME NIGHT PAGE</strong> — a one-page flyer that gets grades 6–8 to show up &nbsp;·&nbsp; <strong>ZINE ISSUE #1</strong> — the plan for your class zine's first issue</p>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 1 — Pick Your Quest (team of 3)</h2>
+  <p>Circle one: &nbsp;<strong>GAME NIGHT PAGE</strong> — a one-page flyer that gets grades 6–8 to show up &nbsp;·&nbsp; <strong>ZINE ISSUE #1</strong> — the plan for your zine's first issue</p>
 
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 2 — Write the Brief (ONE per team — everyone copies it)</h2>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 2 — Write the Quest Card (ONE per team — everyone copies it)</h2>
   <table class="brief">
-    <tr><th style="width:1.35in">Part</th><th>Your team's brief</th></tr>
-    <tr><td><strong>GOAL</strong><br>What does done look like?</td><td><div class="write"></div></td></tr>
-    <tr><td><strong>CONTEXT</strong><br>Who is it for? What already exists?</td><td><div class="write"></div></td></tr>
-    <tr><td><strong>CONSTRAINTS</strong><br>Limits: length, tone, rules, deadline</td><td><div class="write"></div></td></tr>
-    <tr><td><strong>DELIVERABLE</strong><br>The exact thing handed back</td><td><div class="write"></div></td></tr>
+    <tr><td style="width:1.5in"><strong>GOAL</strong><br>What does winning mean?</td><td><div class="write"></div></td></tr>
+    <tr><td><strong>WHAT WE KNOW</strong><br>Who is it for? What do we already have?</td><td><div class="write"></div></td></tr>
+    <tr><td><strong>RULES OF THE RUN</strong><br>Limits: length, tone, deadline</td><td><div class="write"></div></td></tr>
+    <tr><td><strong>DONE LOOKS LIKE</strong><br>The exact thing handed back</td><td><div class="write"></div></td></tr>
   </table>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 3 — Role Cards (take one each)</h2>
   <div class="rolecards">
-    <div class="panel"><div class="rolename">Planner</div>Turn the brief into a numbered step list, with a time guess for each step. If the brief doesn't answer something, don't guess — write <strong>"NOT IN BRIEF"</strong> and flag it.</div>
-    <div class="panel"><div class="rolename">Researcher</div>List every fact the project needs (times, places, names, rules). Mark each one <strong>✓ verified</strong> (say where) or <strong>? needs checking</strong>. No guesses dressed up as facts.</div>
-    <div class="panel"><div class="rolename">Critic</div>Write 3 specific upgrades tied to the audience the brief names. <strong>"Make it better" is banned</strong> — name the exact change and why the audience would care.</div>
+    <div class="panel"><div class="rolename">Planner</div>Turn the quest card into a numbered step list with a time guess per step. If the card doesn't answer something, don't guess — write <strong>"NOT ON THE CARD."</strong></div>
+    <div class="panel"><div class="rolename">Scout</div>List every fact the quest needs (times, places, names, rules). Mark each <strong>✓ verified</strong> (say where) or <strong>? needs checking</strong>. No guesses dressed as facts.</div>
+    <div class="panel"><div class="rolename">Critic</div>Write 3 specific upgrades tied to the audience on the card. <strong>"Make it better" is banned</strong> — name the exact change and why.</div>
   </div>
-  <p style="margin-top:8px"><strong>Agent rules:</strong> work SILENTLY, from the brief alone — no questions, agents can't read minds. Write your output on your own paper and hand it to your boss.</p>
+  <p style="margin-top:8px"><strong>Squad rules:</strong> work SILENTLY, from the card alone — agents can't read minds. Write your output on your own paper and hand it to your leader.</p>
 
-  <div class="footer"><span>Manage AI Like an Intern — Run the Project</span><span>© Future Skills Series</span><span>1</span></div>
+  <div class="footer"><span>Lead Your AI Squad — Run the Quest</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
 
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 4 — Boss Review: the CHECK Rubric</h2>
-  <p>Rotate: each teammate is the boss for ONE other agent's output. Read it like it ships with your name on it — because it does.</p>
-  <p><strong>Agent I'm reviewing:</strong> ______________________  <strong>Their role:</strong> ______________________</p>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 4 — Leader Review: Check the Loot</h2>
+  <p>Rotate: each teammate reviews ONE other player's output. Read it like it ships with your name on it — because it does.</p>
+  <p><strong>Party member I'm reviewing:</strong> ______________________  <strong>Their role:</strong> ______________________</p>
   <table class="checkrubric">
     <tr><th>Check</th><th>Evidence (quote it or point to it)</th><th>Verdict</th></tr>
-    <tr><td><strong>ACCURACY</strong><br>Is every stated fact verified? Would it survive a fact desk?</td><td><div class="write"></div></td><td>SHIP<br>SEND BACK<br><em>(circle one)</em></td></tr>
-    <tr><td><strong>TASTE</strong><br>Does it fit the audience and vibe the brief named — or is it generic?</td><td><div class="write"></div></td><td>SHIP<br>SEND BACK<br><em>(circle one)</em></td></tr>
-    <tr><td><strong>DONE-NESS</strong><br>Is every deliverable in the brief actually here?</td><td><div class="write"></div></td><td>SHIP<br>SEND BACK<br><em>(circle one)</em></td></tr>
+    <tr><td><strong>ACCURACY</strong><br>Is every stated fact verified?</td><td><div class="write"></div></td><td>SHIP IT<br>RUN IT BACK<br><em>(circle one)</em></td></tr>
+    <tr><td><strong>TASTE</strong><br>Does it fit the audience and vibe on the card — or is it generic?</td><td><div class="write"></div></td><td>SHIP IT<br>RUN IT BACK<br><em>(circle one)</em></td></tr>
+    <tr><td><strong>DONE-NESS</strong><br>Is everything the card asked for actually here?</td><td><div class="write"></div></td><td>SHIP IT<br>RUN IT BACK<br><em>(circle one)</em></td></tr>
   </table>
 
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> The Send-Back Note</h2>
-  <p>Every boss writes one — even for great work, name what to polish. Be specific enough that the agent never has to guess.</p>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> The Run-It-Back Note</h2>
+  <p>Even great work gets one — name what to polish. Be specific; your party member should never have to guess.</p>
   <p><strong>KEEP</strong> (what's working and why):</p>
   <div class="lines"><div class="l"></div></div>
   <p><strong>FIX</strong> (the exact change + why it matters):</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Exit Ticket — Brief a Real Task</h2>
-  <p>Think of one real task in YOUR life you could hand to an AI agent this week — a study plan, a chore schedule, a flyer for your team. Write the complete brief:</p>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Exit Ticket — Quest Card for a Real Task</h2>
+  <p>Pick one real task in YOUR life to hand an AI agent this week — a study plan, a chore schedule, a team flyer. Write the full quest card:</p>
   <table class="brief">
-    <tr><td style="width:1.35in"><strong>GOAL</strong></td><td><div class="write" style="min-height:30px"></div></td></tr>
-    <tr><td><strong>CONTEXT</strong></td><td><div class="write" style="min-height:30px"></div></td></tr>
-    <tr><td><strong>CONSTRAINTS</strong></td><td><div class="write" style="min-height:30px"></div></td></tr>
-    <tr><td><strong>DELIVERABLE</strong></td><td><div class="write" style="min-height:30px"></div></td></tr>
+    <tr><td style="width:1.5in"><strong>GOAL</strong></td><td><div class="write" style="min-height:28px"></div></td></tr>
+    <tr><td><strong>WHAT WE KNOW</strong></td><td><div class="write" style="min-height:28px"></div></td></tr>
+    <tr><td><strong>RULES OF THE RUN</strong></td><td><div class="write" style="min-height:28px"></div></td></tr>
+    <tr><td><strong>DONE LOOKS LIKE</strong></td><td><div class="write" style="min-height:28px"></div></td></tr>
   </table>
 
-  <div class="callout"><strong>The boss rule:</strong> the intern is tireless, but the NAME on the work is yours. If wrong facts ship, that's not the intern's fault — the boss signed off. Check like it matters.</div>
+  <div class="callout"><strong>The leader rule:</strong> your squad is tireless, but the name on the quest is YOURS. If wrong facts ship, the leader signed off. Check like it matters.</div>
 
-  <div class="footer"><span>Manage AI Like an Intern — Run the Project</span><span>© Future Skills Series</span><span>2</span></div>
+  <div class="footer"><span>Lead Your AI Squad — Run the Quest</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
 </body></html>

@@ -7,9 +7,10 @@
   .tasks p { margin: 0 0 4px; }
   .board td { height: 175px; }
   .tcard p { margin: 0 0 4px; }
-  .tcard .lines .l { height: 24px; }
   .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 90px; }
   .blank.wide { min-width: 200px; }
+  p.q { display: flex; gap: 8px; align-items: flex-end; margin: 0 0 10px; }
+  p.q .wline { flex: 1; border-bottom: 1.5px solid #B9B9C9; height: 24px; }
 </style>
 </head>
 <body class="line-ai">
@@ -45,30 +46,30 @@
   </div>
 
   <div class="panel">
-    <p><strong>You run Big Dream Studio</strong> — a small recording studio. <strong>Nia</strong> owns the place and coaches artists. <strong>Ravi</strong> runs the mixing boards. <strong>Jaylen</strong> runs the front desk. There's too much to do, so the crew just got an AI assistant. Your job: decide what it does — and what it never touches.</p>
+    <p><strong>You run Big Dream Studio</strong> — a small recording studio. <strong>Nia</strong> owns the place and coaches the artists. <strong>Ravi</strong> runs the mixing boards. <strong>Jaylen</strong> runs the front desk. There's too much to do, so the crew just got an AI assistant. Your job: decide what it does — and what it never touches.</p>
     <ul>
       <li><strong>AUTOMATE</strong> — boring and repeating. Hand it to AI.</li>
-      <li><strong>AUGMENT</strong> — the human decides, AI assists.</li>
-      <li><strong>KEEP HUMAN</strong> — mentorship, taste, live connection. Humans only.</li>
+      <li><strong>AUGMENT</strong> — a human makes the call, AI helps out.</li>
+      <li><strong>KEEP HUMAN</strong> — coaching, taste, being there for someone. Humans only.</li>
     </ul>
   </div>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#fader"/></svg> This Week at Big Dream Studio</h2>
   <div class="tasks grid2">
     <div>
-      <p><strong>A.</strong> Text this week's clients their session reminders <em>(Jaylen)</em></p>
+      <p><strong>A.</strong> Send the "don't forget your session" texts to this week's artists <em>(Jaylen)</em></p>
       <p><strong>B.</strong> Rename and back up 300 audio files from last night <em>(Ravi)</em></p>
-      <p><strong>C.</strong> Draft this week's social media captions <em>(Jaylen)</em></p>
+      <p><strong>C.</strong> Write the first draft of this week's social media captions <em>(Jaylen)</em></p>
       <p><strong>D.</strong> Mix a rough first version of a new artist's demo <em>(Ravi)</em></p>
       <p><strong>E.</strong> Coach a nervous first-time artist through her first take <em>(Nia)</em></p>
-      <p><strong>F.</strong> Send polite reminder emails for three unpaid invoices <em>(Jaylen)</em></p>
+      <p><strong>F.</strong> Politely remind three people who still haven't paid the studio <em>(Jaylen)</em></p>
     </div>
     <div>
       <p><strong>G.</strong> Pick which of an artist's five new songs is the single <em>(Nia)</em></p>
-      <p><strong>H.</strong> Tune the room and set the mics for a live band session <em>(Ravi)</em></p>
-      <p><strong>I.</strong> Negotiate the fee for a big three-day booking <em>(Nia)</em></p>
+      <p><strong>H.</strong> Make the room sound less echoey and set the mics for a live band <em>(Ravi)</em></p>
+      <p><strong>I.</strong> Agree on a price with a group that wants the studio for three days <em>(Nia)</em></p>
       <p><strong>J.</strong> Type up the lyrics from yesterday's freestyle session <em>(Ravi)</em></p>
-      <p><strong>K.</strong> Answer the same five questions every new client emails <em>(Jaylen)</em></p>
+      <p><strong>K.</strong> Answer the same five questions everyone emails (price, hours, parking) <em>(Jaylen)</em></p>
       <p><strong>L.</strong> Plan the set order and vibe for showcase night <em>(Nia)</em></p>
     </div>
   </div>
@@ -76,7 +77,7 @@
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#fader"/></svg> Sort the Board</h2>
   <p>Write each letter where you'd put it. <strong>House rule:</strong> every column needs at least two tasks. Disagree with your partner? Good — talk it out. That's the lesson.</p>
   <table class="board">
-    <tr><th>Automate — hand it to AI</th><th>Augment — AI assists</th><th>Keep Human — humans only</th></tr>
+    <tr><th>Automate — hand it to AI</th><th>Augment — AI helps out</th><th>Keep Human — humans only</th></tr>
     <tr><td></td><td></td><td></td></tr>
   </table>
 
@@ -86,37 +87,38 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#fader"/></svg> The Tradeoff — Every Call Has a Cost</h2>
-  <p>Pick <strong>TWO</strong> of your calls from the board. For each one, write the tradeoff. "Because robots" is not a reason.</p>
+  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#fader"/></svg> The Trade — Every Call Has a Cost</h2>
+  <p>Every choice helps someone, costs someone, and could backfire. (Grown-ups call this a <strong>tradeoff</strong> — now you know the word.) Pick <strong>TWO</strong> of your calls from the board and write the trade. "Because robots" is not a reason.</p>
 
   <div class="panel tcard">
     <p><strong>Call #1</strong> — Task letter: <span class="blank" style="min-width:40px"></span>  My column (circle one):  <strong>AUTOMATE&nbsp;&nbsp;/&nbsp;&nbsp;AUGMENT&nbsp;&nbsp;/&nbsp;&nbsp;KEEP HUMAN</strong></p>
-    <p>Who wins?</p><div class="lines"><div class="l"></div></div>
-    <p>Who loses, or loses something?</p><div class="lines"><div class="l"></div></div>
-    <p>What could go wrong?</p><div class="lines"><div class="l"></div></div>
+    <p class="q">Who wins? <span class="wline"></span></p>
+    <p class="q">Who loses, or loses something? <span class="wline"></span></p>
+    <p class="q">What could go wrong? <span class="wline"></span></p>
   </div>
 
   <div class="panel tcard">
     <p><strong>Call #2</strong> — Task letter: <span class="blank" style="min-width:40px"></span>  My column (circle one):  <strong>AUTOMATE&nbsp;&nbsp;/&nbsp;&nbsp;AUGMENT&nbsp;&nbsp;/&nbsp;&nbsp;KEEP HUMAN</strong></p>
-    <p>Who wins?</p><div class="lines"><div class="l"></div></div>
-    <p>Who loses, or loses something?</p><div class="lines"><div class="l"></div></div>
-    <p>What could go wrong?</p><div class="lines"><div class="l"></div></div>
+    <p class="q">Who wins? <span class="wline"></span></p>
+    <p class="q">Who loses, or loses something? <span class="wline"></span></p>
+    <p class="q">What could go wrong? <span class="wline"></span></p>
   </div>
 
   <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#fader"/></svg> Defend It — Say It Out Loud</h2>
-  <p>Get ready to defend ONE choice to the class. Look up, speak up, and land the tradeoff:</p>
+  <p>Get ready to defend ONE choice to the class. Look up, speak up, and land the trade:</p>
   <div class="panel">
     <p>Task <span class="blank" style="min-width:40px"></span> belongs in <span class="blank"></span> because <span class="blank wide"></span></p>
     <p><span class="blank wide" style="min-width:100%"></span></p>
-    <p>— and the tradeoff is <span class="blank wide" style="min-width:340px"></span></p>
+    <p>— and the trade is <span class="blank wide" style="min-width:340px"></span></p>
   </div>
 
   <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#fader"/></svg> Exit Ticket — Take It Home</h2>
   <p>Think of a job someone in your life actually has — family, neighbor, coach, teacher. Run their task board.</p>
-  <p>The job: <span class="blank wide"></span></p>
-  <p><strong>AUTOMATE</strong> — one boring, repeating task AI should take: </p><div class="lines"><div class="l"></div></div>
-  <p><strong>AUGMENT</strong> — one task where the human decides and AI assists: </p><div class="lines"><div class="l"></div></div>
-  <p><strong>KEEP HUMAN</strong> — one task that should stay fully human, and why: </p><div class="lines"><div class="l"></div></div>
+  <p class="q">The job: <span class="wline" style="max-width:300px"></span></p>
+  <p class="q"><strong>AUTOMATE</strong> — one boring, repeating task AI should take: <span class="wline"></span></p>
+  <p class="q"><strong>AUGMENT</strong> — one task where the human makes the call and AI helps out: <span class="wline"></span></p>
+  <p class="q"><strong>KEEP HUMAN</strong> — one task that should stay fully human, and why: <span class="wline"></span></p>
+  <div class="lines"><div class="l"></div></div>
 
   <div class="callout"><strong>The move to remember:</strong> let the robots do the boring work. Leave the humans to do the human things. The people who win with AI aren't the ones who fear it — they're the ones who decide what it does.</div>
 

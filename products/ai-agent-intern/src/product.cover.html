@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: 'Space Grotesk'; font-weight: 500; src: url('../../../brand/fonts/SpaceGrotesk-500.ttf') format('truetype'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('../../../brand/fonts/SpaceGrotesk-700.ttf') format('truetype'); }
+* { box-sizing: border-box; margin: 0; }
+html { overflow: hidden; height: 100%; background: #14141F; }
+body { min-height: 100%; }
+body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(ellipse at 75% 85%, #3B2F8F 0%, #232345 45%, #14141F 100%); color: #fff;
+  display: flex; flex-direction: column; padding: 60px; position: relative; overflow: hidden; }
+/* stars */
+.star { position: absolute; background: #fff; border-radius: 50%; opacity: 0.8; }
+.star.g { background: #FFB020; }
+/* content */
+.brand { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
+.chipline { margin-top: 26px; display: flex; gap: 12px; position: relative; z-index: 2; }
+.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 20px; padding: 8px 22px; border-radius: 99px; }
+.chip.solid { background: #FFB020; color: #14141F; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
+h1 span { color: #FFB020; }
+.sub { font-size: 30px; margin-top: 28px; line-height: 1.45; color: #E8E8F5; max-width: 620px; position: relative; z-index: 2; }
+.sub em { color: #FFB020; font-style: normal; font-weight: 700; }
+</style></head><body>
+<div class="star g" style="width:10px;height:10px;left:700px;top:180px"></div>
+<div class="star" style="width:4px;height:4px;left:520px;top:120px"></div>
+<div class="star g" style="width:8px;height:8px;left:160px;top:560px"></div>
+<div class="star g" style="width:6px;height:6px;left:780px;top:460px"></div>
+<svg width="520" height="640" viewBox="0 0 520 640" style="position:absolute; right:-20px; bottom:-30px; z-index:1;">
+  <!-- squad banner: rod, cords, swallow-tail cloth, check emblem -->
+  <g>
+    <!-- rod -->
+    <line x1="80" y1="110" x2="470" y2="110" stroke="#FFB020" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="80" cy="110" r="20" fill="#FFB020"/>
+    <circle cx="470" cy="110" r="20" fill="#FFB020"/>
+    <!-- cords -->
+    <line x1="150" y1="118" x2="150" y2="152" stroke="#FFB020" stroke-width="10"/>
+    <line x1="400" y1="118" x2="400" y2="152" stroke="#FFB020" stroke-width="10"/>
+    <!-- cloth -->
+    <path d="M 118 152 L 432 152 L 432 560 L 275 486 L 118 560 Z" fill="#FFB020"/>
+    <!-- emblem stripe -->
+    <line x1="160" y1="205" x2="390" y2="205" stroke="#232345" stroke-width="14" stroke-linecap="round"/>
+    <!-- big check -->
+    <path d="M 195 340 L 258 404 L 368 258" fill="none" stroke="#232345" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+<div class="brand">Future Skills Series</div>
+<div class="chipline" style="margin-top:20px"><span class="chip">AI Literacy · Lesson 6 of 6</span></div>
+<div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; letter-spacing:3px; text-transform:uppercase; color:#E8E8F5; opacity:0.85; margin-top:74px; position:relative; z-index:2;">The Party Leader Lesson</div>
+<h1>Lead Your<br><span>AI Squad</span></h1>
+<p class="sub">The capstone for grades 6–8: an AI agent is a party member — capable, tireless, <em>extremely literal</em>. Students write the quest card, assign the roles, and check the work before it ships.</p>
+<div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">45-min lesson</span><span class="chip">No prep · No devices needed</span></div>
+</body></html>

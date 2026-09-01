@@ -1,5 +1,5 @@
-title: "AI Agents Lesson: Manage AI Like an Intern, Delegation Capstone (Grades 6-8)"
-short_name: "Manage AI Like an Intern"
+title: "AI Agents Lesson: Lead Your AI Squad, Team Roles + Checking Work (Grades 6-8)"
+short_name: "Lead Your AI Squad"
 line: ai
 grades: "6-8"
 price_usd: 4
@@ -11,25 +11,26 @@ tags:
   - AI agents
   - project based learning
   - collaboration
+  - teamwork
   - critical thinking
   - technology
   - computer science
-  - digital citizenship
+  - game based learning
 standards:
   - { framework: ISTE, code: "1.5.c", text: "Students break problems into component parts and develop descriptions of solutions." }
   - { framework: ISTE, code: "1.7.c", text: "Students contribute constructively to project teams, assuming various roles and responsibilities to work effectively toward a common goal." }
   - { framework: CCSS, code: "W.6.4", text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience." }
 description: |
-  AI agents are here, and your students will manage them — not the other way around. This no-prep, 45-minute capstone teaches delegation as a life skill, with zero devices required.
+  AI agents are here, and your students will lead them — not the other way around. This no-prep, 45-minute capstone teaches the skill adults call delegation, in the language every middle schooler already speaks: leading a game squad. Zero devices required.
 
-  The hook: an AI agent is a capable, tireless, EXTREMELY literal intern. Good bosses don't do the work twice — they write a clear BRIEF (goal, context, constraints, deliverable), split the job into ROLES (planner, researcher, critic), and CHECK the work (accuracy, taste, done-ness) before it ships. In the main activity, Run the Project, teams of three plan a real-feeling class project — a Game Night page or a class zine issue. Each teammate plays one agent role and executes ONLY the brief, silently. Then the rotating boss reviews each output against a printed CHECK rubric and writes a send-back note. Vague briefs fail in front of everyone — and that failure is the lesson.
+  The hook: an AI agent is a party member — capable, tireless, and EXTREMELY literal. Party leaders don't redo the squad's work, they review it. They write a clear QUEST CARD (the goal, what the team knows, the rules of the run, what done looks like), assign ROLES (planner, scout, critic), and CHECK THE LOOT (accuracy, taste, done-ness) before anything ships. In the main activity, Run the Quest, teams of three plan a real-feeling class project — a Game Night page or a class zine issue. Each teammate plays one agent role and works ONLY from the quest card, silently. Then the rotating party leader reviews each output against a printed CHECK rubric and writes a run-it-back note. Vague quest cards fail in front of everyone — and that failure is the lesson.
 
-  This is Lesson 6 of 6 in the Future Skills AI Literacy unit, and it deliberately pulls the whole unit together: prompting becomes the brief, fact-checking becomes the accuracy check, feedback-and-taste becomes the taste check. It also stands 100% alone — everything a first-time class needs is on the page.
+  This is Lesson 6 of 6 in the Future Skills AI Literacy unit, and it deliberately pulls the whole unit together: prompting becomes the quest card, fact-checking becomes the accuracy check, feedback-and-taste becomes the taste check. It also stands 100% alone — everything a first-time class needs is on the page.
 
-  INCLUDES: full scripted lesson plan (45 min), Run the Project student worksheet (brief builder, role cards, CHECK rubric, send-back note), teacher guide with exemplar brief, role coaching, exemplar send-back note, and exit-ticket scoring, plus a with-devices variant that runs the team's brief against a real AI tool.
+  INCLUDES: full scripted lesson plan (45 min), Run the Quest student worksheet (quest card builder, role cards, CHECK rubric, run-it-back note, exit ticket), teacher guide with exemplar quest card, role coaching, exemplar run-it-back note, and exit-ticket scoring, plus a with-devices variant that runs the team's quest card against a real AI tool.
 
   Aligned to ISTE Standards for Students (1.5.c, 1.7.c) and CCSS ELA W.6.4, each taught in a named activity and assessed by a named item. Zero prep: print and teach the same morning.
 includes:
   - lesson-plan.pdf (scripted 45-minute capstone lesson)
-  - worksheet.pdf (Run the Project — brief builder, role cards, CHECK rubric, exit ticket, 2 pages)
-  - teacher-guide.pdf (exemplar brief + role coaching + send-back exemplar + taught/assessed standards map)
+  - worksheet.pdf (Run the Quest — quest card builder, role cards, CHECK rubric, exit ticket, 2 pages)
+  - teacher-guide.pdf (exemplar quest card + role coaching + run-it-back exemplar + taught/assessed standards map)

@@ -1,0 +1,71 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: 'Space Grotesk'; font-weight: 500; src: url('../../../brand/fonts/SpaceGrotesk-500.ttf') format('truetype'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('../../../brand/fonts/SpaceGrotesk-700.ttf') format('truetype'); }
+* { box-sizing: border-box; margin: 0; }
+html { overflow: hidden; height: 100%; background: #14141F; }
+body { min-height: 100%; }
+body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(ellipse at 75% 85%, #3B2F8F 0%, #232345 45%, #14141F 100%); color: #fff;
+  display: flex; flex-direction: column; padding: 60px; position: relative; overflow: hidden; }
+/* stars */
+.star { position: absolute; background: #fff; border-radius: 50%; opacity: 0.8; }
+.star.g { background: #FFB020; }
+/* content */
+.brand { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
+.chipline { margin-top: 26px; display: flex; gap: 12px; position: relative; z-index: 2; }
+.chipline.top { margin-top: 20px; }
+.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 20px; padding: 8px 22px; border-radius: 99px; }
+.chip.solid { background: #FFB020; color: #14141F; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
+h1 span { color: #FFB020; }
+.sub { font-size: 30px; margin-top: 28px; line-height: 1.45; color: #E8E8F5; max-width: 600px; position: relative; z-index: 2; }
+.sub em { color: #FFB020; font-style: normal; font-weight: 700; }
+</style></head><body>
+<div class="star g" style="width:10px;height:10px;left:700px;top:180px"></div>
+<div class="star" style="width:4px;height:4px;left:520px;top:120px"></div>
+<div class="star g" style="width:8px;height:8px;left:120px;top:600px"></div>
+<div class="star g" style="width:6px;height:6px;left:790px;top:420px"></div>
+<div class="star" style="width:4px;height:4px;left:640px;top:520px"></div>
+<svg width="520" height="640" viewBox="0 0 520 640" style="position:absolute; right:-20px; bottom:-40px; z-index:1;">
+  <defs>
+    <linearGradient id="rise" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFB020" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#FFB020" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- mixing-desk: three big faders on a console strip -->
+  <!-- glow rising off the tallest fader -->
+  <rect x="238" y="20" width="44" height="130" rx="22" fill="url(#rise)"/>
+  <!-- tracks -->
+  <line x1="140" y1="140" x2="140" y2="548" stroke="#FFB020" stroke-opacity="0.35" stroke-width="14" stroke-linecap="round"/>
+  <line x1="260" y1="140" x2="260" y2="548" stroke="#FFB020" stroke-opacity="0.35" stroke-width="14" stroke-linecap="round"/>
+  <line x1="380" y1="140" x2="380" y2="548" stroke="#FFB020" stroke-opacity="0.35" stroke-width="14" stroke-linecap="round"/>
+  <!-- tick marks -->
+  <g stroke="#FFB020" stroke-opacity="0.28" stroke-width="6" stroke-linecap="round">
+    <line x1="108" y1="200" x2="124" y2="200"/><line x1="108" y1="290" x2="124" y2="290"/><line x1="108" y1="380" x2="124" y2="380"/><line x1="108" y1="470" x2="124" y2="470"/>
+    <line x1="228" y1="200" x2="244" y2="200"/><line x1="228" y1="290" x2="244" y2="290"/><line x1="228" y1="380" x2="244" y2="380"/><line x1="228" y1="470" x2="244" y2="470"/>
+    <line x1="348" y1="200" x2="364" y2="200"/><line x1="348" y1="290" x2="364" y2="290"/><line x1="348" y1="380" x2="364" y2="380"/><line x1="348" y1="470" x2="364" y2="470"/>
+  </g>
+  <!-- fader caps -->
+  <g fill="#FFB020">
+    <rect x="85" y="352" width="110" height="56" rx="14"/>
+    <rect x="205" y="168" width="110" height="56" rx="14"/>
+    <rect x="325" y="268" width="110" height="56" rx="14"/>
+  </g>
+  <g stroke="#14141F" stroke-width="7" stroke-linecap="round">
+    <line x1="100" y1="380" x2="180" y2="380"/>
+    <line x1="220" y1="196" x2="300" y2="196"/>
+    <line x1="340" y1="296" x2="420" y2="296"/>
+  </g>
+  <!-- console base -->
+  <rect x="66" y="548" width="388" height="48" rx="18" fill="#FFB020"/>
+  <circle cx="100" cy="572" r="9" fill="#14141F"/>
+  <circle cx="132" cy="572" r="9" fill="#14141F"/>
+</svg>
+<div class="brand">Future Skills Series</div>
+<div class="chipline top"><span class="chip">AI Literacy · Lesson 5 of 6</span></div>
+<div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; letter-spacing:3px; text-transform:uppercase; color:#E8E8F5; opacity:0.85; margin-top:64px; position:relative; z-index:2;">The Studio Task Board</div>
+<h1>Robots Do the<br><span>Boring Work</span></h1>
+<p class="sub">AI and future jobs for grades 6–8: your class runs a small recording studio and makes the calls — <em>automate it</em>, <em>assist it</em>, or <em>keep it human</em>.</p>
+<div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">45-min lesson</span><span class="chip">No prep · Fully unplugged</span></div>
+</body></html>

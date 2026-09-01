@@ -4,6 +4,18 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
+  .page h2 { margin: 8px 0 4px; }
+  .page p { margin: 0 0 6px; }
+  .page .panel { padding: 8px 12px; margin: 6px 0; }
+  .page .panel p { margin: 0 0 4px; }
+  .page .panel p:last-child { margin: 0; }
+  .page .callout { margin: 6px 0; }
+  .page ul { margin: 2px 0 6px; }
+  .keytable { font-size: 9.5pt; margin: 4px 0; }
+  .keytable td { padding: 5px 8px; }
+  .smallnote { font-size: 9.5pt; color: #3A3A4E; }
+  .standards { font-size: 10pt; }
+  .standards li { margin-bottom: 4px; }
 </style>
 </head>
 <body class="line-ai">
@@ -45,18 +57,18 @@
 
   <h2>Running the Fact Desk</h2>
   <div class="panel">
-    <p><strong>Play the managing editor,</strong> not the answer key. When a desk asks "is this one true?", answer "that's a checkable claim — where's your second source?" Keep a deadline energy: "Presses roll in five!"</p>
-    <p><strong>Watch for the two failure modes.</strong> The trusting desk clears everything ("it sounded right") — send them back to step 1: did you underline the dates and names? The paranoid desk kills everything ("it's all sus") — that's what RANK is for: you can't check every claim before deadline, so you check the ones that would hurt most. The goal is calibrated skepticism, not panic.</p>
-    <p><strong>The fabricated quote in Draft #3 is the boss level.</strong> Many students treat quotation marks as proof. Rule for the desk: a quote is a claim — no traceable source, no print.</p>
+    <p><strong>Play the managing editor,</strong> not the answer key. When a desk asks "is this one true?", answer "that's a checkable claim — where's your second source?" Keep deadline energy: "Presses roll in five!"</p>
+    <p><strong>Watch for the two failure modes.</strong> The trusting desk clears everything ("it sounded right") — send them back to step 1: did you underline the dates and names? The paranoid desk kills everything ("it's all sus") — that's what RANK is for: check what would hurt most. The goal is calibrated skepticism, not panic.</p>
+    <p><strong>The fabricated quote in Draft #3 is the boss level.</strong> Many students treat quotation marks as proof. Desk rule: a quote is a claim — no traceable source, no print.</p>
   </div>
 
   <h2>Answer Key — Warm-Up Paragraph (read-aloud)</h2>
-  <table>
-    <tr><th style="width:45%">Planted error</th><th>The true fact</th></tr>
-    <tr><td>"The closest planet to the Sun is Venus, which is also the hottest."</td><td><strong>Mercury</strong> is the closest planet to the Sun. (Venus really is the hottest — its thick atmosphere traps heat. The half-truth is what makes this one slippery.)</td></tr>
+  <table class="keytable">
+    <tr><th style="width:44%">Planted error</th><th>The true fact</th></tr>
+    <tr><td>"The closest planet to the Sun is Venus, which is also the hottest."</td><td><strong>Mercury</strong> is closest to the Sun. Venus really is the hottest (its thick atmosphere traps heat) — the half-truth is what makes this one slippery.</td></tr>
     <tr><td>"Saturn… is the only planet in our solar system that has [rings]."</td><td>Jupiter, Uranus, and Neptune also have rings — faint ones. Saturn's are just the most visible.</td></tr>
   </table>
-  <p><em>True claims a desk should mark SAFE or confirm:</em> eight planets; Mars is red from rusty iron dust on its surface; sunlight takes about eight minutes to reach Earth.</p>
+  <p class="smallnote"><em>True claims a desk should mark SAFE or confirm:</em> eight planets; Mars is red from rusty iron dust on its surface; sunlight takes about eight minutes to reach Earth.</p>
 
   <div class="footer"><span>Hallucination Hunters — Teacher Guide</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -65,34 +77,29 @@
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
   <h2>Answer Key — The Three Drafts (every planted error)</h2>
-  <table>
-    <tr><th style="width:12%">Draft</th><th style="width:40%">Planted error</th><th>The true fact</th></tr>
-    <tr><td>#1 Priya</td><td>"Astronauts first landed on the Moon in 1959"</td><td>The first crewed Moon landing was Apollo 11 in <strong>1969</strong>.</td></tr>
+  <table class="keytable">
+    <tr><th style="width:11%">Draft</th><th style="width:40%">Planted error</th><th>The true fact</th></tr>
+    <tr><td>#1 Priya</td><td>"Astronauts first landed on the Moon in 1959"</td><td>The first crewed Moon landing was Apollo 11, in <strong>1969</strong>.</td></tr>
     <tr><td>#1 Priya</td><td>"the Moon… produces its own light"</td><td>The Moon makes no light of its own — it <strong>reflects sunlight</strong>.</td></tr>
-    <tr><td>#2 Theo</td><td>"Mount Everest… rises in the Andes range in South America"</td><td>Everest is in the <strong>Himalayas, in Asia</strong> (on the Nepal–China border). The Andes are in South America.</td></tr>
-    <tr><td>#2 Theo</td><td>"Australia's capital city is Sydney"</td><td>Australia's capital is <strong>Canberra</strong>. Sydney is its largest city — a classic mix-up.</td></tr>
-    <tr><td>#3 Marcus</td><td>"Thomas Edison invented the telephone in 1876"</td><td><strong>Alexander Graham Bell</strong> patented the telephone in 1876. Edison is known for the phonograph and practical electric lighting.</td></tr>
-    <tr><td>#3 Marcus</td><td>Quote: "The telephone is the finest of all my inventions."</td><td><strong>Fabricated</strong> — we invented this quote for the exercise; it has no source. AI does the same thing: it can generate real-sounding quotes nobody said. No traceable source = no print.</td></tr>
+    <tr><td>#2 Theo</td><td>"Mount Everest… rises in the Andes range in South America"</td><td>Everest is in the <strong>Himalayas, in Asia</strong>. The Andes are in South America.</td></tr>
+    <tr><td>#2 Theo</td><td>"Australia's capital city is Sydney"</td><td>The capital is <strong>Canberra</strong>; Sydney is the largest city. A classic mix-up.</td></tr>
+    <tr><td>#3 Marcus</td><td>"Thomas Edison invented the telephone in 1876"</td><td><strong>Alexander Graham Bell</strong> patented the telephone in 1876. Edison's fame: the phonograph and practical electric lighting.</td></tr>
+    <tr><td>#3 Marcus</td><td>Quote: "The telephone is the finest of all my inventions."</td><td><strong>Fabricated</strong> — written for this exercise; it has no source. AI generates real-sounding quotes nobody said. No traceable source = no print.</td></tr>
   </table>
-  <p><em>True claims, safe to confirm:</em> Draft #1 — the Moon is Earth's only natural satellite; Neil Armstrong walked first; twelve people have walked on the Moon. Draft #2 — Pacific is the largest ocean; the Nile flows north through Egypt and is one of the world's longest rivers; seven continents; Asia is the largest. Draft #3 — Edison invented the phonograph in 1877, the first machine to both record and play back sound; the Wright brothers flew in 1903 near Kitty Hawk, North Carolina.</p>
+  <p class="smallnote"><em>True claims, safe to confirm:</em> #1 — the Moon is Earth's only natural satellite; Neil Armstrong walked first; twelve people have walked on the Moon. #2 — Pacific is the largest ocean; the Nile flows north through Egypt, one of the world's longest rivers; seven continents; Asia is the largest. #3 — the phonograph (1877) was the first machine to both record and play back sound; the Wright brothers flew in 1903 near Kitty Hawk, North Carolina.</p>
 
-  <h2>Verdict Guidance</h2>
-  <div class="panel">
-    <p><strong>Expected verdicts:</strong> Draft #1 — <strong>FIX</strong> (topic holds; correct the date and the light claim). Draft #2 — <strong>FIX</strong> (correct Everest's range and the capital). Draft #3 — <strong>KILL</strong> (the headline claim is false and its supporting quote is fabricated; there's no story left to fix). No draft earns RUN today — tell the class that's realistic. Accept a well-argued FIX on #3 ("rewrite it about Bell"), then push: if the lead claim and the quote both fail, is that a fix or a brand-new story?</p>
-    <p><strong>Score the evidence, not just the stamp:</strong> proficient desks name the specific claim, the correction, and a second source; developing desks stamp verdicts on vibes.</p>
-  </div>
+  <div class="callout"><strong>Verdict guidance:</strong> Draft #1 — <strong>FIX</strong> (topic holds; correct the date and the light claim). Draft #2 — <strong>FIX</strong> (correct the range and the capital). Draft #3 — <strong>KILL</strong> (headline claim false, supporting quote fabricated — no story left to fix). No draft earns RUN today; tell the class that's realistic. A well-argued FIX on #3 ("rewrite it about Bell") earns credit for evidence — then ask: is that a fix, or a new story? Score the evidence, not the stamp: proficient desks name the claim, the correction, and a second source.</div>
 
   <h2>Full Standards Text</h2>
-  <ul>
-    <li><strong>CCSS ELA RI.6.8</strong> — Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not. <em>Taught: fact-desk method steps 1–2, modeled on the warm-up paragraph. Assessed: underlined claims, C/S marks, and verdict notes on all three drafts.</em></li>
-    <li><strong>ISTE 1.3.b</strong> — Students evaluate the accuracy, perspective, credibility and relevance of information, media, data or other resources. <em>Taught: lateral reading, step 3 ("don't ask the suspect"). Assessed: "Second source" columns on each draft + Exit Ticket #2.</em></li>
-    <li><strong>ISTE 1.3.d</strong> — Students build knowledge by actively exploring real-world issues and problems, developing ideas and theories and pursuing answers and solutions. <em>Taught: The Fact Desk activity — desks pursue verification and defend verdicts in the stand-up. Assessed: Exit Ticket #2 (a real claim from their own week) + verdict stand-up evidence.</em></li>
+  <ul class="standards">
+    <li><strong>CCSS ELA RI.6.8</strong> — Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not. <em>Taught: fact-desk method steps 1–2, modeled on the warm-up. Assessed: underlines, C/S marks, and verdict notes on all three drafts.</em></li>
+    <li><strong>ISTE 1.3.b</strong> — Students evaluate the accuracy, perspective, credibility and relevance of information, media, data or other resources. <em>Taught: lateral reading, step 3. Assessed: "Second source" columns + Exit Ticket #2.</em></li>
+    <li><strong>ISTE 1.3.d</strong> — Students build knowledge by actively exploring real-world issues and problems, developing ideas and theories and pursuing answers and solutions. <em>Taught: The Fact Desk activity — desks pursue verification, defend verdicts in the stand-up. Assessed: Exit Ticket #2 (a real claim from their week) + stand-up evidence.</em></li>
   </ul>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Thank You &amp; Terms of Use</h2>
   <div class="panel">
-    <p><strong>License:</strong> Your purchase grants ONE teacher a license for their own classroom. Please don't post this file online or share it school-wide — point colleagues to the listing so they can grab their own copy.</p>
-    <p><strong>Loved it? Tell somebody.</strong> A quick review helps other teachers find this lesson, and following the store gets you new Future Skills lessons the day they drop. <strong>Something off?</strong> Leave a question on the listing before leaving a review — we fix fast.</p>
+    <p><strong>License:</strong> Your purchase grants ONE teacher a license for their own classroom. Please don't post this file online or share it school-wide — point colleagues to the listing instead. <strong>Loved it?</strong> A quick review helps other teachers find this lesson, and following the store gets you new Future Skills lessons the day they drop. <strong>Something off?</strong> Ask on the listing before reviewing — we fix fast.</p>
   </div>
   <div class="footer"><span>Hallucination Hunters — Teacher Guide</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
