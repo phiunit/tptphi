@@ -30,5 +30,5 @@ CLAUDE.md                 the agent's operating manual
 ```
 
 ## First product (rendered, upload-ready)
-**Wish Carefully: The Literal Genie AI Prompting Lesson (Grades 6–8)** — free launch lesson.
+**How to Talk to AI: Prompt Writing Lesson + Activity (Grades 6–8)** — free launch lesson (The Literal Genie).
 See `products/ai-prompting-101/dist/`.

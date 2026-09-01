@@ -10,7 +10,7 @@ lines:
 products:
   # ---- WAVE 1: launch (freebies build followers, paid converts) ----
   - { slug: ai-prompting-101,        line: ai,           priority: 1, status: rendered, price: 0,
-      title: "Wish Carefully: The Literal Genie AI Prompting Lesson (Grades 6-8)" }
+      title: "How to Talk to AI: Prompt Writing Lesson + Activity (Grades 6-8)" }
   - { slug: ai-fact-check-lab,       line: ai,           priority: 1, status: idea, price: 4,
       title: "Hallucination Hunters: Fact-Checking AI Like a Journalist" }
   - { slug: vibe-coding-first-app,   line: ai,           priority: 1, status: idea, price: 6,
