@@ -4,6 +4,9 @@ This repo is a product factory for the "Phi Unit Teaches the Future" TeachersPay
 When Phi asks you to "build the next product," follow this manual exactly.
 
 ## The loop
+0. Read `corpus/` (VOICE.md, FRAMEWORKS.md, SEEDS.md) if populated — it carries Phi's
+   distilled slipbox: his voice, frameworks, and mined product ideas. Ground new products
+   in it. (Refresh instructions: corpus/DISTILL_PROMPT.md, runs on Phi's machine.)
 1. Read `curriculum/catalog.yaml`, pick the highest-priority product with `status: idea`
    (or the one Phi names).
 2. Create `products/<slug>/product.yaml` — copy the shape of
