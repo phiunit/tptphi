@@ -69,3 +69,20 @@ body.line-ai { --line: var(--violet); }
 body.line-finance { --line: var(--teal); }
 body.line-entrepreneur { --line: var(--gold); }
 body.line-games { --line: var(--red); }
+
+/* Density option for content-dense documents: add class="... compact" on <body>.
+   Tightens vertical rhythm ~15% without shrinking body text below 10.5pt. */
+body.compact { font-size: 10.5pt; line-height: 1.36; }
+body.compact .page { padding: 0.55in 0.65in 0.85in; }
+body.compact h2 { margin: 9px 0 4px; font-size: 12pt; }
+body.compact h3 { margin: 8px 0 3px; }
+body.compact p { margin: 0 0 6px; }
+body.compact .panel { padding: 8px 11px; margin: 6px 0; }
+body.compact .callout { padding: 7px 11px; margin: 6px 0; }
+body.compact table { margin: 5px 0; font-size: 9.5pt; }
+body.compact th, body.compact td { padding: 4px 7px; }
+body.compact ul, body.compact ol { margin: 2px 0 6px; }
+body.compact li { margin-bottom: 1px; }
+body.compact .sub { margin-bottom: 9px; }
+body.compact .writebox { min-height: 72px; }
+body.compact .lines .l { height: 24px; }
