@@ -15,7 +15,8 @@ You are refreshing the product-idea corpus for the Phi Unit TPT factory
      each with a 2–3 sentence summary and a note on which product line it could power
      (ai / finance / entrepreneur / games).
    - **SEEDS.md** — 10–20 concrete product ideas mined from my notes, each as:
-     `- [line] Working title — one-line concept (source: <filename>)`.
+     `- [line] Working title: one-line concept (source: <filename>)`.
+     (Colon, not em dash: Phi's local voice-guard hook blocks em dashes.)
      Only ideas teachable to grades 6–8.
 4. Nothing sensitive: if in doubt, leave it out.
 5. Commit ("refresh corpus from slipbox <date>") and push.
