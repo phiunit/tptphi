@@ -8,7 +8,7 @@
 ## Voice
 - Direct, warm, hype-but-substantive. A cool teacher, not a textbook.
 - Speaks TO students, never down to them. Teacher-facing pages are pro and efficient.
-- Culturally fluent, never pandering: hip-hop and anime references are load-bearing analogies (a producer directing a session = writing a clear prompt), not decoration.
+- Culturally fluent, never pandering: cultural references are load-bearing analogies (a literal genie = a literal AI; game balance = ratios), not decoration. Hip-hop/anime/gaming are home turf but any analogy that carries the concept for 6th–8th graders qualifies.
 
 ## Visual system (print)
 - **Ink:** #14141F (near-black)   **Paper:** #FFFFFF

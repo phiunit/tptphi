@@ -25,7 +25,7 @@ for (const p of products) {
     if (asImage) {
       const out = path.join(distDir, base + '.png');
       await page.setViewportSize({ width: 850, height: 1100 });
-      await page.screenshot({ path: out, fullPage: true });
+      await page.screenshot({ path: out, clip: { x: 0, y: 0, width: 850, height: 1100 } });
       console.log('PNG ', path.relative(process.cwd(), out));
     } else {
       const out = path.join(distDir, base + '.pdf');

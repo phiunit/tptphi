@@ -24,7 +24,7 @@ When Phi asks you to "build the next product," follow this manual exactly.
 - **No-prep:** a teacher can print and teach the same morning. Say so explicitly.
 - **Unplugged mode:** every tech lesson includes a no-device variant.
 - **Culture is load-bearing:** hip-hop/anime/gaming references must carry the concept
-  (producer = prompter; game balance = ratios), never decoration.
+  (literal genie = literal AI; game balance = ratios), never decoration.
 - **Timed, scripted lessons:** every activity block has minutes; teacher lines are quotable.
 - **Assessment included:** exit ticket or rubric in every product.
 - **Voice:** cool teacher, not textbook. Students addressed directly on worksheets;

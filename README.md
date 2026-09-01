@@ -30,5 +30,5 @@ CLAUDE.md                 the agent's operating manual
 ```
 
 ## First product (rendered, upload-ready)
-**Prompt Like a Producer: AI Basics for Grades 6–8** — free launch lesson.
+**Wish Carefully: The Literal Genie AI Prompting Lesson (Grades 6–8)** — free launch lesson.
 See `products/ai-prompting-101/dist/`.
