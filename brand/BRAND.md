@@ -1,7 +1,11 @@
 # Phi Unit Teaches the Future — Brand Guide
 
 ## Store identity
-- **Store name (working):** Phi Unit Teaches the Future
+- **Store name (working):** Phi Unit Teaches the Future — appears ONLY on the TPT store page
+  and listings, never inside the materials themselves.
+- **On-material branding:** generic series label — masthead "Future Skills · <Line>",
+  footer "© Future Skills Series", cover brand line "Future Skills Series".
+  One string, easy to rebrand later.
 - **Tagline:** Future-ready lessons for the culture.
 - **Promise:** Standards-aligned lessons about the world students are actually walking into — AI, money, entrepreneurship, games — taught through culture they already love (hip-hop, anime, gaming).
 
