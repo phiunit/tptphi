@@ -14,7 +14,7 @@ products:
   - { slug: ai-fact-check-lab,       line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 3,
       title: "Hallucination Hunters: Fact-Checking AI Like a Journalist" }
   - { slug: ai-training-data-crate,  line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 2,
-      title: "What's in the Crate? How AI Learns + Bias Lesson" }
+      title: "What's in the Playlist? How AI Learns + Bias Lesson" }
   - { slug: ai-taste-file,           line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 4,
       title: "Teach AI Your Taste: Feedback & Revision With AI as Editor" }
   - { slug: ai-boring-work,          line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 5,

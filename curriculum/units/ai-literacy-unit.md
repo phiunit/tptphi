@@ -6,7 +6,7 @@ prompting → how models learn → accuracy → iteration/taste → impacts/jobs
 | # | Slug | Title theme | Load-bearing analogy | Anchor standards |
 |---|---|---|---|---|
 | 1 | ai-prompting-101 | How to Talk to AI (prompting + the check) | Literal genie | ISTE 1.5.c, 1.3.b, W.6.4 |
-| 2 | ai-training-data-crate | What's in the Crate? How AI learns + bias | DJ crate = training data (AI can only mix what's in its crate) | CSTA 2-IC-21, ISTE 1.1.d, SL.6.1 |
+| 2 | ai-training-data-crate | What's in the Playlist? How AI learns + bias | Playlist = training data (AI can only play what someone put in it) | CSTA 2-IC-21, ISTE 1.1.d, SL.6.1 |
 | 3 | ai-fact-check-lab | Hallucination Hunters: fact-checking AI | Newsroom fact desk | RI.6.8, ISTE 1.3.b, 1.3.d |
 | 4 | ai-taste-file | Teach AI Your Taste: feedback & revision | FYP/DJ crate curation; AI as editor | W.6.5, ISTE 1.6.b, 1.1.c |
 | 5 | ai-boring-work | Robots Do the Boring Work: AI & future jobs | Recording-studio task board | CSTA 2-IC-20, SL.6.4, ISTE 1.3.d |

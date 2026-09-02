@@ -1,4 +1,4 @@
-# Judge Report — What's in the Crate (Lesson 2 of 6)
+# Judge Report — What's in the Playlist (Lesson 2 of 6)
 Judged: 2026-09-01 · docs/JUDGE.md v2 (gated) · 8 page screenshots in dist/review/
 
 ## Defect hunt (found and fixed this round)
@@ -29,5 +29,5 @@ Judged: 2026-09-01 · docs/JUDGE.md v2 (gated) · 8 page screenshots in dist/rev
 **Fails: 0 · Partials: 0 → VERDICT: PASS**
 
 ## Notes
-- Analogy: DJ crate = training data. Unit through-line (Human -> AI -> Human) carried from Lesson 1.
+- Analogy: Playlist = training data. Unit through-line (Human -> AI -> Human) carried from Lesson 1.
 - Non-blocking: a projectable slide version of the warm-up would help large rooms.

@@ -1,5 +1,5 @@
-title: "How AI Works: Training Data + Bias Lesson, What's in the Crate (Grades 6-8)"
-short_name: "What's in the Crate"
+title: "How AI Works: Training Data + Bias Lesson, What's in the Playlist (Grades 6-8)"
+short_name: "What's in the Playlist"
 line: ai
 grades: "6-8"
 price_usd: 4
@@ -20,16 +20,16 @@ standards:
   - { framework: ISTE, code: "1.1.d", text: "Students understand the fundamental concepts of technology operations, demonstrate the ability to choose, use and troubleshoot current technologies and are able to transfer their knowledge to explore emerging technologies." }
   - { framework: CCSS, code: "SL.6.1", text: "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 6 topics, texts, and issues, building on others' ideas and expressing their own clearly." }
 description: |
-  How does AI actually learn — and where does AI bias come from? This no-prep, 45-minute lesson answers both with one analogy your students will never forget: a DJ's crate. An AI can only mix what's in its crate. Training data IS the crate — and a crate with only one genre serves some requests great and fails everyone else.
+  How does AI actually learn — and where does AI bias come from? This no-prep, 45-minute lesson answers both with one analogy your students will never forget: a playlist. An AI can only mix what's in its playlist. Training data IS the playlist — and a playlist with only one genre serves some requests great and fails everyone else.
 
-  The hook: you play The One-Genre DJ, a recommendation AI whose crate holds nothing but loud, fast party tracks. Study music? Party track. A song in Spanish for a grandmother's birthday? Party track. Then the real question: is the DJ broken — or is the crate?
+  The hook: you play The One-Playlist App, a recommendation AI whose playlist holds nothing but loud, fast party tracks. Study music? Party track. A song in Spanish for a grandmother's birthday? Party track. Then the real question: is the app broken — or is the playlist?
 
-  Direct instruction breaks AI learning into INPUT (the crate) → PATTERNS (training) → OUTPUT (prediction). No magic, no understanding — pattern prediction from data. In the main activity, Crate Check, student pairs BECOME a recommendation AI limited to a printed crate of 12 song cards, serve six classmates' requests, log who the crate fails, then "doctor the crate" to fix it — discovering for themselves that AI bias usually comes from gaps in the data, not a villain in the code. Debrief maps their crate gaps to real AI examples (voice assistants and accents, photo tools and skin tones, one-track recommendation feeds).
+  Direct instruction breaks AI learning into INPUT (the playlist) → PATTERNS (training) → OUTPUT (prediction). No magic, no understanding — pattern prediction from data. In the main activity, Playlist Check, student pairs BECOME a recommendation AI limited to a printed playlist of 12 song cards, serve six classmates' requests, log who the playlist fails, then "doctor the playlist" to fix it — discovering for themselves that AI bias usually comes from gaps in the data, not a villain in the code. Debrief maps their playlist gaps to real AI examples (voice assistants and accents, photo tools and skin tones, one-track recommendation feeds).
 
-  INCLUDES: full scripted lesson plan (45 min), Crate Check student worksheet (2 pages, crate cards built in), teacher guide with answer key, One-Genre DJ improv tips, real-world debrief guide and exit ticket exemplars. Lesson 2 of the Future Skills AI Literacy unit — works completely standalone. Fully unplugged: no devices needed at all.
+  INCLUDES: full scripted lesson plan (45 min), Playlist Check student worksheet (2 pages, playlist cards built in), teacher guide with answer key, AutoMix improv tips, real-world debrief guide and exit ticket exemplars. Lesson 2 of the Future Skills AI Literacy unit — works completely standalone. Fully unplugged: no devices needed at all.
 
   Aligned to CSTA 2-IC-21, ISTE Standards for Students 1.1.d, and CCSS ELA SL.6.1. Zero prep: print and teach.
 includes:
   - lesson-plan.pdf (scripted 45-minute lesson)
-  - worksheet.pdf (Crate Check simulation + crate cards + exit ticket, 2 pages)
-  - teacher-guide.pdf (answer key + One-Genre DJ improv tips + real-world bias debrief guide)
+  - worksheet.pdf (Playlist Check simulation + playlist cards + exit ticket, 2 pages)
+  - teacher-guide.pdf (answer key + AutoMix improv tips + real-world bias debrief guide)
