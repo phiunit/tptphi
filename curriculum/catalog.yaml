@@ -23,7 +23,7 @@ products:
       title: "Lead Your AI Squad: Team Roles + Checking Work (Capstone)" }
   - { slug: vibe-coding-first-app,   line: ai,           priority: 1, status: idea, price: 6,
       title: "Vibe Coding 101: Build Your First App With AI (3-Day Mini Unit)" }
-  - { slug: finance-first-check,     line: finance,      priority: 1, status: idea, price: 0,
+  - { slug: finance-first-check,     line: finance,      priority: 1, status: idea, price: 4,
       title: "Your First Check: Reading a Pay Stub Like a Pro (Freebie)" }
   - { slug: finance-risk-boss,       line: finance,      priority: 1, status: idea, price: 5,
       title: "Risk Like a Boss: Decision-Making & Expected Value for Middle School" }
@@ -37,7 +37,7 @@ products:
       title: "Bars That Sell: Copywriting & Hooks (Hip-Hop Themed ELA)" }
   - { slug: ent-personal-brand,      line: entrepreneur, priority: 2, status: idea, price: 4,
       title: "Your Name Is a Brand: Digital Identity & Career Thinking" }
-  - { slug: games-paper-prototype,   line: games,        priority: 2, status: idea, price: 0,
+  - { slug: games-paper-prototype,   line: games,        priority: 2, status: idea, price: 4,
       title: "Paper Boss Battle: Design a Game Level With Zero Tech (Freebie)" }
   - { slug: games-design-doc,        line: games,        priority: 2, status: idea, price: 6,
       title: "From Anime to Game Deck: Write a Game Design Document (3-Day Unit)" }
@@ -61,8 +61,12 @@ products:
       title: "Think in Models: 10 Mental Models Every Teen Should Know" }
   - { slug: bundle-ai-line,          line: ai,           priority: 1, status: rendered, price: 14, unit: ai-literacy-1, lesson: 0,
       title: "AI Literacy Unit Bundle: 6 Lessons (Grades 6-8)" }
-  - { slug: bundle-finance-line,     line: finance,      priority: 3, status: idea, price: 12,
-      title: "Future Money Complete Bundle (Grades 6-8)" }
+  - { slug: bundle-finance-line,     line: finance,      priority: 2, status: idea, price: 14, unit: finance-risk-1, lesson: 0,
+      title: "Future Money Unit Bundle: 6 Lessons on Money + Risk (Grades 6-8)" }
+  - { slug: bundle-entrepreneur-line, line: entrepreneur, priority: 3, status: idea, price: 14, unit: entrepreneur-1, lesson: 0,
+      title: "Future Builders Unit Bundle: 6 Lessons on Building + Reach (6-8)" }
+  - { slug: bundle-games-line,       line: games,        priority: 3, status: idea, price: 14, unit: games-build-1, lesson: 0,
+      title: "Future Play Unit Bundle: 6 Game Design Lessons (Grades 6-8)" }
 
   # ---- WAVE 2: Personal Finance & Risk unit (see curriculum/units/finance-unit.md) ----
   - { slug: finance-money-battery,   line: finance,      priority: 2, status: idea, price: 0, unit: finance-risk-1, lesson: 1,
