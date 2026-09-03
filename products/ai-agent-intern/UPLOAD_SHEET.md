@@ -30,7 +30,7 @@ AI literacy, artificial intelligence, AI agents, project based learning, collabo
 ```
 
 **Description** — paste the `description:` block from `products/ai-agent-intern/product.yaml`
-(1861 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(2144 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
 
 
 ## Before you hit Publish

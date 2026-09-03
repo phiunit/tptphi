@@ -1,0 +1,1731 @@
+# Verified Standards Registry — Phi Unit TPT Factory
+# ---------------------------------------------------------------------------
+# SOURCE OF TRUTH for every standards code this store may cite.
+# docs/STANDARDS.md explains WHICH framework to use per product line;
+# this file is the only place the CODES and their VERBATIM TEXT live.
+#
+# Never hand-edit a code's `text`. Never add a code without doing the
+# verification described in `verification_policy` below and recording it.
+# ---------------------------------------------------------------------------
+registry_version: 1
+generated: "2026-09-03"
+grade_band: "6-8 (middle school)"
+
+verification_policy:
+  what_verified_true_means: >-
+    The exact wording in `text` was retrieved from a machine-readable or
+    published copy of the framework and then matched CHARACTER-FOR-CHARACTER
+    against at least one INDEPENDENT second copy with different provenance.
+    Whitespace, curly-vs-straight quotes and PDF extraction artifacts were
+    normalized before comparison; wording, punctuation and word order were not.
+  what_verified_false_means: >-
+    The code or structure is real and correctly identified, but this session
+    could not obtain the publisher's exact benchmark wording. Do NOT print
+    quoted standard text for these. See each entry's `note`.
+  retrieval_constraint: >-
+    The session that built this file could not reach iste.org, csteachers.org,
+    corestandards.org, jumpstart.org, councilforeconed.org,
+    nationalartsstandards.org or any state DOE host — all were blocked by the
+    egress proxy. Verification therefore used (a) publisher-authored copies
+    (e.g. an ISTE Press book appendix carrying the ISTE copyright notice),
+    (b) exports that carry the publisher's own URIs (corestandards.org URIs),
+    and (c) independent curriculum-organization datasets (Code.org, Berkeley
+    BJC, state regulation text). Every framework below names its copies.
+  re_verify_when_unblocked: >-
+    When the official hosts are reachable, re-check every framework against
+    the primary PDF and bump `registry_version`. Frameworks with
+    `primary_source_confirmed: false` are the priority.
+  taught_and_assessed_rule: >-
+    A code being present here does NOT license citing it. Per docs/JUDGE.md
+    Gate 1, a product may cite a code only if the product both TEACHES it in
+    a named activity and ASSESSES it in a named item. Otherwise cut the code.
+
+frameworks:
+
+  ISTE:
+    name: "ISTE Standards for Students (2016; renumbered 1.1-1.7 in the 2021 ISTE code scheme)"
+    publisher: "International Society for Technology in Education"
+    source: "https://iste.org/standards/students"
+    primary_source_confirmed: false
+    verification_copies:
+      - label: "Appendix A of *No Fear Coding* (ISTE Press, 2017) — reproduced under the notice \"(c) 2016 International Society for Technology in Education\", i.e. the publisher's own verbatim reprint of the full standard set"
+        url: "https://raw.githubusercontent.com/standardgalactic/codex/master/stylus/No%20Fear%20Coding_%20Computational%20Thinking%20Across%20the%20K-5%20Curriculum.txt"
+      - label: "TeachTechTaskForce/edumap ISTE_codes.csv (independent seed dataset)"
+        url: "https://raw.githubusercontent.com/TeachTechTaskForce/edumap/master/data/standards/iste/ISTE_codes.csv"
+      - label: "pvndpkai2050/k12-learning-interfaceV3 standards.js and Johnny-Pena/teacher-website ISTEStandards.jsx (strand statements)"
+        url: "https://raw.githubusercontent.com/pvndpkai2050/k12-learning-interfaceV3/main/html-version/js/standards.js"
+    numbering_note: >-
+      ISTE's 2021 code scheme prefixes the student standards with "1." (students),
+      so 2016 "Standard 5, indicator c" is written 1.5.c today. Both the strand
+      code (1.5) and the indicator code (1.5.c) are citable; the indicator is
+      the tighter alignment claim and is what a judge will ask you to defend.
+    all_28_indicators_matched_character_for_character: true
+    codes:
+      "1.1":
+        text: "Students leverage technology to take an active role in choosing, achieving and demonstrating competency in their learning goals, informed by the learning sciences."
+        label: "Empowered Learner"
+        verified: true
+        level: strand
+      "1.1.a":
+        text: "Students articulate and set personal learning goals, develop strategies leveraging technology to achieve them and reflect on the learning process itself to improve learning outcomes."
+        strand: "1.1 Empowered Learner"
+        verified: true
+        level: indicator
+      "1.1.b":
+        text: "Students build networks and customize their learning environments in ways that support the learning process."
+        strand: "1.1 Empowered Learner"
+        verified: true
+        level: indicator
+      "1.1.c":
+        text: "Students use technology to seek feedback that informs and improves their practice and to demonstrate their learning in a variety of ways."
+        strand: "1.1 Empowered Learner"
+        verified: true
+        level: indicator
+      "1.1.d":
+        text: "Students understand the fundamental concepts of technology operations, demonstrate the ability to choose, use and troubleshoot current technologies and are able to transfer their knowledge to explore emerging technologies."
+        strand: "1.1 Empowered Learner"
+        verified: true
+        level: indicator
+      "1.2":
+        text: "Students recognize the rights, responsibilities and opportunities of living, learning and working in an interconnected digital world, and they act and model in ways that are safe, legal and ethical."
+        label: "Digital Citizen"
+        verified: true
+        level: strand
+      "1.2.a":
+        text: "Students cultivate and manage their digital identity and reputation and are aware of the permanence of their actions in the digital world."
+        strand: "1.2 Digital Citizen"
+        verified: true
+        level: indicator
+      "1.2.b":
+        text: "Students engage in positive, safe, legal and ethical behavior when using technology, including social interactions online or when using networked devices."
+        strand: "1.2 Digital Citizen"
+        verified: true
+        level: indicator
+      "1.2.c":
+        text: "Students demonstrate an understanding of and respect for the rights and obligations of using and sharing intellectual property."
+        strand: "1.2 Digital Citizen"
+        verified: true
+        level: indicator
+      "1.2.d":
+        text: "Students manage their personal data to maintain digital privacy and security and are aware of data-collection technology used to track their navigation online."
+        strand: "1.2 Digital Citizen"
+        verified: true
+        level: indicator
+      "1.3":
+        text: "Students critically curate a variety of resources using digital tools to construct knowledge, produce creative artifacts and make meaningful learning experiences for themselves and others."
+        label: "Knowledge Constructor"
+        verified: true
+        level: strand
+      "1.3.a":
+        text: "Students plan and employ effective research strategies to locate information and other resources for their intellectual or creative pursuits."
+        strand: "1.3 Knowledge Constructor"
+        verified: true
+        level: indicator
+      "1.3.b":
+        text: "Students evaluate the accuracy, perspective, credibility and relevance of information, media, data or other resources."
+        strand: "1.3 Knowledge Constructor"
+        verified: true
+        level: indicator
+      "1.3.c":
+        text: "Students curate information from digital resources using a variety of tools and methods to create collections of artifacts that demonstrate meaningful connections or conclusions."
+        strand: "1.3 Knowledge Constructor"
+        verified: true
+        level: indicator
+      "1.3.d":
+        text: "Students build knowledge by actively exploring real-world issues and problems, developing ideas and theories and pursuing answers and solutions."
+        strand: "1.3 Knowledge Constructor"
+        verified: true
+        level: indicator
+      "1.4":
+        text: "Students use a variety of technologies within a design process to identify and solve problems by creating new, useful or imaginative solutions."
+        label: "Innovative Designer"
+        verified: true
+        level: strand
+      "1.4.a":
+        text: "Students know and use a deliberate design process for generating ideas, testing theories, creating innovative artifacts or solving authentic problems."
+        strand: "1.4 Innovative Designer"
+        verified: true
+        level: indicator
+      "1.4.b":
+        text: "Students select and use digital tools to plan and manage a design process that considers design constraints and calculated risks."
+        strand: "1.4 Innovative Designer"
+        verified: true
+        level: indicator
+      "1.4.c":
+        text: "Students develop, test and refine prototypes as part of a cyclical design process."
+        strand: "1.4 Innovative Designer"
+        verified: true
+        level: indicator
+      "1.4.d":
+        text: "Students exhibit a tolerance for ambiguity, perseverance and the capacity to work with open-ended problems."
+        strand: "1.4 Innovative Designer"
+        verified: true
+        level: indicator
+      "1.5":
+        text: "Students develop and employ strategies for understanding and solving problems in ways that leverage the power of technological methods to develop and test solutions."
+        label: "Computational Thinker"
+        verified: true
+        level: strand
+      "1.5.a":
+        text: "Students formulate problem definitions suited for technology-assisted methods such as data analysis, abstract models and algorithmic thinking in exploring and finding solutions."
+        strand: "1.5 Computational Thinker"
+        verified: true
+        level: indicator
+      "1.5.b":
+        text: "Students collect data or identify relevant data sets, use digital tools to analyze them, and represent data in various ways to facilitate problem-solving and decision-making."
+        strand: "1.5 Computational Thinker"
+        verified: true
+        level: indicator
+      "1.5.c":
+        text: "Students break problems into component parts, extract key information, and develop descriptive models to understand complex systems or facilitate problem-solving."
+        strand: "1.5 Computational Thinker"
+        verified: true
+        level: indicator
+      "1.5.d":
+        text: "Students understand how automation works and use algorithmic thinking to develop a sequence of steps to create and test automated solutions."
+        strand: "1.5 Computational Thinker"
+        verified: true
+        level: indicator
+      "1.6":
+        text: "Students communicate clearly and express themselves creatively for a variety of purposes using the platforms, tools, styles, formats and digital media appropriate to their goals."
+        label: "Creative Communicator"
+        verified: true
+        level: strand
+      "1.6.a":
+        text: "Students choose the appropriate platforms and tools for meeting the desired objectives of their creation or communication."
+        strand: "1.6 Creative Communicator"
+        verified: true
+        level: indicator
+      "1.6.b":
+        text: "Students create original works or responsibly repurpose or remix digital resources into new creations."
+        strand: "1.6 Creative Communicator"
+        verified: true
+        level: indicator
+      "1.6.c":
+        text: "Students communicate complex ideas clearly and effectively by creating or using a variety of digital objects such as visualizations, models or simulations."
+        strand: "1.6 Creative Communicator"
+        verified: true
+        level: indicator
+      "1.6.d":
+        text: "Students publish or present content that customizes the message and medium for their intended audiences."
+        strand: "1.6 Creative Communicator"
+        verified: true
+        level: indicator
+      "1.7":
+        text: "Students use digital tools to broaden their perspectives and enrich their learning by collaborating with others and working effectively in teams locally and globally."
+        label: "Global Collaborator"
+        verified: true
+        level: strand
+      "1.7.a":
+        text: "Students use digital tools to connect with learners from a variety of backgrounds and cultures, engaging with them in ways that broaden mutual understanding and learning."
+        strand: "1.7 Global Collaborator"
+        verified: true
+        level: indicator
+      "1.7.b":
+        text: "Students use collaborative technologies to work with others, including peers, experts or community members, to examine issues and problems from multiple viewpoints."
+        strand: "1.7 Global Collaborator"
+        verified: true
+        level: indicator
+      "1.7.c":
+        text: "Students contribute constructively to project teams, assuming various roles and responsibilities to work effectively toward a common goal."
+        strand: "1.7 Global Collaborator"
+        verified: true
+        level: indicator
+      "1.7.d":
+        text: "Students explore local and global issues and use collaborative technologies to work with others to investigate solutions."
+        strand: "1.7 Global Collaborator"
+        verified: true
+        level: indicator
+
+  CSTA:
+    name: "CSTA K-12 Computer Science Standards (revised 2017), Level 2 = grades 6-8 (ages 11-14)"
+    publisher: "Computer Science Teachers Association"
+    source: "https://csteachers.org/wp-content/uploads/2025/03/csta-k-12-computer-science-standards-revised.pdf"
+    primary_source_confirmed: false
+    status: "current for citation — this is the version state CS standards are derived from"
+    verification_copies:
+      - label: "Code.org production standards data (csta_standards.csv)"
+        url: "https://raw.githubusercontent.com/code-dot-org/code-dot-org/staging/dashboard/config/standards/csta_standards.csv"
+      - label: "dcpetty/google-colaboratory 'State Standards - CSTA Standards.csv' (independent transcription incl. clarifications)"
+        url: "https://raw.githubusercontent.com/dcpetty/google-colaboratory/main/state-standards/State%20Standards%20-%20CSTA%20Standards.csv"
+    completeness: "all 23 Level 2 codes (2-CS-01..03, 2-NI-04..06, 2-DA-07..09, 2-AP-10..19, 2-IC-20..23)"
+    all_23_matched_character_for_character: true
+    codes:
+      "2-CS-01":
+        text: "Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices."
+        concept: "Computing Systems"
+        verified: true
+      "2-CS-02":
+        text: "Design projects that combine hardware and software components to collect and exchange data."
+        concept: "Computing Systems"
+        verified: true
+      "2-CS-03":
+        text: "Systematically identify and fix problems with computing devices and their components."
+        concept: "Computing Systems"
+        verified: true
+      "2-NI-04":
+        text: "Model the role of protocols in transmitting data across networks and the Internet."
+        concept: "Networks and the Internet"
+        verified: true
+      "2-NI-05":
+        text: "Explain how physical and digital security measures protect electronic information."
+        concept: "Networks and the Internet"
+        verified: true
+      "2-NI-06":
+        text: "Apply multiple methods of encryption to model the secure transmission of information."
+        concept: "Networks and the Internet"
+        verified: true
+      "2-DA-07":
+        text: "Represent data using multiple encoding schemes."
+        concept: "Data and Analysis"
+        verified: true
+      "2-DA-08":
+        text: "Collect data using computational tools and transform the data to make it more useful and reliable."
+        concept: "Data and Analysis"
+        verified: true
+      "2-DA-09":
+        text: "Refine computational models based on the data they have generated."
+        concept: "Data and Analysis"
+        verified: true
+      "2-AP-10":
+        text: "Use flowcharts and/or pseudocode to address complex problems as algorithms."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-11":
+        text: "Create clearly named variables that represent different data types and perform operations on their values."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-12":
+        text: "Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-13":
+        text: "Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-14":
+        text: "Create procedures with parameters to organize code and make it easier to reuse."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-15":
+        text: "Seek and incorporate feedback from team members and users to refine a solution that meets user needs."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-16":
+        text: "Incorporate existing code, media, and libraries into original programs, and give attribution."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-17":
+        text: "Systematically test and refine programs using a range of test cases."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-18":
+        text: "Distribute tasks and maintain a project timeline when collaboratively developing computational artifacts."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-AP-19":
+        text: "Document programs in order to make them easier to follow, test, and debug."
+        concept: "Algorithms and Programming"
+        verified: true
+      "2-IC-20":
+        text: "Compare tradeoffs associated with computing technologies that affect people's everyday activities and career options."
+        concept: "Impacts of Computing"
+        verified: true
+      "2-IC-21":
+        text: "Discuss issues of bias and accessibility in the design of existing technologies."
+        concept: "Impacts of Computing"
+        verified: true
+      "2-IC-22":
+        text: "Collaborate with many contributors through strategies such as crowdsourcing or surveys when creating a computational artifact."
+        concept: "Impacts of Computing"
+        verified: true
+      "2-IC-23":
+        text: "Describe tradeoffs between allowing information to be public and keeping information private and secure."
+        concept: "Impacts of Computing"
+        verified: true
+
+  CSTA-2026:
+    name: "2026 CSTA PK-12 Computer Science Standards, MS band (middle school)"
+    publisher: "Computer Science Teachers Association"
+    source: "https://csteachers.org/wp-content/uploads/2026/07/2026-CSTA-PK%E2%80%9312-Computer-Science-Standards.pdf"
+    primary_source_confirmed: false
+    released: "July 2026 (CSTA Annual Conference)"
+    status: >-
+      NEW. Verbatim text is verified, but almost no state has adopted it yet, so a
+      teacher searching TPT is still searching 2017-era language. CITE CSTA (2017)
+      AS PRIMARY and add a 2026 code only as a secondary "also aligns to" line.
+      Revisit this rule in 2027-2028 as state adoptions land.
+    structure_note: >-
+      Five concepts replace the 2017 five: Algorithms & Design, Programming,
+      Data & Analysis, Systems & Security, Computing & Society. Algorithms is now
+      separate from Programming, and AI content is distributed across all five
+      concepts rather than sitting in one — which is why this set matters a lot
+      to the AI-literacy line (see MS-ALG-PS-05, MS-ALG-ML-06..08, MS-PRO-RD-18,
+      MS-SOC-ET-40).
+    verification_copies:
+      - label: "Code.org production standards data (csta2026_standards.csv)"
+        url: "https://raw.githubusercontent.com/code-dot-org/code-dot-org/staging/dashboard/config/standards/csta2026_standards.csv"
+      - label: "Berkeley BJC (Beauty and Joy of Computing) 2026 CSTA crosswalk"
+        url: "https://raw.githubusercontent.com/bjc-edc/bjc-r/main/docs/csta2026.html"
+    all_45_matched_character_for_character: true
+    codes:
+      "MS-ALG-PS-01":
+        text: "Design an algorithm that includes variables of multiple data types to solve a problem or express an idea."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-PS-02":
+        text: "Model a given algorithm with a flowchart or pseudocode that includes a combination of control structures and procedures."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-PS-03":
+        text: "Verify the accuracy of an algorithm for given inputs."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-PS-04":
+        text: "Justify whether a problem is best solved using procedural instructions, rule-based logic, data-driven methods, or a combination of these approaches."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-PS-05":
+        text: "Use an AI tool to generate outputs that assist in solving a computational problem."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-ML-06":
+        text: "Hypothesize how a machine learning model generates classifications or predictions."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-ML-07":
+        text: "Investigate ways to improve the accuracy of a machine learning model and reduce bias by refining the quality of examples and nonexamples in the training data."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-ML-08":
+        text: "Evaluate the features and limitations of a machine learning model."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-IM-09":
+        text: "Evaluate which human-centered design principles are present or missing in an existing computing technology."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-IM-10":
+        text: "Examine evidence of beneficial and harmful impacts, ethical issues, and biases of algorithms encountered in daily life."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-ALG-IM-11":
+        text: "Modify an algorithm to address a specific societal impact, ethical issue, or bias."
+        concept: "Algorithms & Design"
+        verified: true
+      "MS-PRO-PD-12":
+        text: "Use a procedure to structure code for clarity and reusability."
+        concept: "Programming"
+        verified: true
+      "MS-PRO-PD-13":
+        text: "Use reference documentation in program development."
+        concept: "Programming"
+        verified: true
+      "MS-PRO-PD-14":
+        text: "Justify the importance of attribution and intellectual property when developing computing technologies."
+        concept: "Programming"
+        verified: true
+      "MS-PRO-PD-15":
+        text: "Develop a program utilizing inclusive collaboration practices."
+        concept: "Programming"
+        verified: true
+      "MS-PRO-VD-16":
+        text: "Use variables of multiple data types to store, access, and manipulate data within a program."
+        concept: "Programming"
+        verified: true
+      "MS-PRO-RD-17":
+        text: "Analyze the roles of iteration, selection, variables, and procedures in a segment of code."
+        concept: "Programming"
+        verified: true
+      "MS-PRO-RD-18":
+        text: "Analyze AI-generated code for accuracy and usability in a programming project."
+        concept: "Programming"
+        verified: true
+      "MS-PRO-TR-19":
+        text: "Use systematic strategies to test, refine, and document changes to a computing technology to meet the intended purpose."
+        concept: "Programming"
+        verified: true
+      "MS-PRO-TR-20":
+        text: "Refine a computing technology based on user feedback to improve its usability and accessibility."
+        concept: "Programming"
+        verified: true
+      "MS-DAT-DC-21":
+        text: "Evaluate how different levels of precision and granularity in data collection affect accuracy, storage, and analysis."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-DAT-DC-22":
+        text: "Explain how data and its associated metadata can be used to answer questions."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-DAT-DC-23":
+        text: "Use a computational tool to sort, filter, group, and summarize structured data."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-DAT-DC-24":
+        text: "Analyze options to address a data quality issue."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-DAT-DI-25":
+        text: "Use a computational tool to identify relationships among variables in a dataset and make a classification or prediction."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-DAT-DI-26":
+        text: "Create data visualizations to show how different design choices can impact the interpretation of the same data."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-DAT-DI-27":
+        text: "Summarize a data investigation process, including potential biases, limitations, and supporting evidence."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-DAT-IM-28":
+        text: "Explain the benefits and risks of allowing personal data and metadata to be collected and used in datasets, including issues of data ownership, privacy, and sovereignty."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-DAT-IM-29":
+        text: "Analyze how decisions made at different stages of working with data can lead to biased data, misleading conclusions, and compromised AI models."
+        concept: "Data & Analysis"
+        verified: true
+      "MS-SYS-HW-30":
+        text: "Examine differences between computing systems based on user needs, system requirements, and potential societal, environmental, and ethical impacts."
+        concept: "Systems & Security"
+        verified: true
+      "MS-SYS-HW-31":
+        text: "Describe computing devices used in various industries, their basic functions, and how they are used to accomplish tasks or solve problems."
+        concept: "Systems & Security"
+        verified: true
+      "MS-SYS-SE-32":
+        text: "Explain the effects of not using the CIA triad when working with data."
+        concept: "Systems & Security"
+        verified: true
+      "MS-SYS-SE-33":
+        text: "Evaluate common types of cyber attacks and preventions."
+        concept: "Systems & Security"
+        verified: true
+      "MS-SYS-NT-34":
+        text: "Model how information in a network is broken down into packets, transmitted between devices, and reassembled."
+        concept: "Systems & Security"
+        verified: true
+      "MS-SYS-NT-35":
+        text: "Explain how the resilience of the internet depends on interconnected devices and their roles and functions within the network."
+        concept: "Systems & Security"
+        verified: true
+      "MS-SYS-IM-36":
+        text: "Collaborate to improve the design of a computing system to meet the needs of diverse users."
+        concept: "Systems & Security"
+        verified: true
+      "MS-SYS-IM-37":
+        text: "Examine how access to computing systems can vary based on personal and social factors, such as physical ability, geographic location, socioeconomic status, and age."
+        concept: "Systems & Security"
+        verified: true
+      "MS-SOC-HI-38":
+        text: "Compare the roles of individuals, communities, organizations, and governments in shaping computing technologies across major eras in computing history."
+        concept: "Computing & Society"
+        verified: true
+      "MS-SOC-HI-39":
+        text: "Analyze intended and unintended impacts of a historical computing technology on society and the environment."
+        concept: "Computing & Society"
+        verified: true
+      "MS-SOC-ET-40":
+        text: "Evaluate when it is appropriate to use AI and other emerging technologies to solve a problem based on their capabilities, limitations, and environmental impacts."
+        concept: "Computing & Society"
+        verified: true
+      "MS-SOC-ET-41":
+        text: "Evaluate how the decisions made while designing an emerging technology influence user experiences differently across different communities."
+        concept: "Computing & Society"
+        verified: true
+      "MS-SOC-ET-42":
+        text: "Debate ways an emerging technology impacts the social, cultural, and environmental issues in local communities."
+        concept: "Computing & Society"
+        verified: true
+      "MS-SOC-HU-43":
+        text: "Analyze how the decisions humans make when using computing technologies have ethical and social consequences."
+        concept: "Computing & Society"
+        verified: true
+      "MS-SOC-CE-44":
+        text: "Analyze how workers in different careers use computational thinking to solve real-world problems."
+        concept: "Computing & Society"
+        verified: true
+      "MS-SOC-CE-45":
+        text: "Evaluate how automation in technology can create or replace jobs and change how people work."
+        concept: "Computing & Society"
+        verified: true
+
+  CCSS-ELA:
+    name: "Common Core State Standards for English Language Arts & Literacy, grades 6-8 — Reading Informational Text (RI), Writing (W), Speaking & Listening (SL)"
+    publisher: "NGA Center for Best Practices / Council of Chief State School Officers"
+    source: "https://www.thecorestandards.org/ELA-Literacy/"
+    primary_source_confirmed: false
+    key_format: >-
+      Keys here are the short form teachers recognize (W.7.1, SL.6.4, RI.8.8).
+      `full` gives the fully-qualified code. Both are acceptable in a listing;
+      use the short form in lesson chips and the full form in the teacher guide.
+    do_not_write: >-
+      "W.6-8.1" and "SL.6-8.4" are NOT real codes — there is no grade-banded CCSS
+      ELA code. Pick the actual grade (W.6.1 / W.7.1 / W.8.1) or list all three.
+    verification_copies:
+      - label: "corestandards.org competency-framework export (each row carries its own http://corestandards.org/ELA-Literacy/... URI)"
+        url: "https://raw.githubusercontent.com/eldoomCBE/moodlenet_repo/master/assets/729_CCSS.ELA_Literacy_httpcorestandards.orgELA_Literacy_20170106_0445_comma_separated.csv"
+      - label: "ArgLab/writing_observer ccss.json (independent full-text dataset)"
+        url: "https://raw.githubusercontent.com/ArgLab/writing_observer/master/modules/ccss/ccss/ccss.json"
+      - label: "Code.org ccela_standards.csv (third check, prefix match only — Code.org truncates long text)"
+        url: "https://raw.githubusercontent.com/code-dot-org/code-dot-org/staging/dashboard/config/standards/ccela_standards.csv"
+    transcription_note: >-
+      On corestandards.org three standards (SL.*.6, W.*.5) contain an inline
+      hyperlink on the word "here"; the link markup was removed and the word
+      "here" kept, so the sentence reads exactly as it does on the page.
+    all_144_corroborated_by_two_or_more_copies: true
+    codes:
+      "RI.6.1":
+        text: "Cite textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text."
+        full: "CCSS.ELA-LITERACY.RI.6.1"
+        verified: true
+      "RI.6.2":
+        text: "Determine a central idea of a text and how it is conveyed through particular details; provide a summary of the text distinct from personal opinions or judgments."
+        full: "CCSS.ELA-LITERACY.RI.6.2"
+        verified: true
+      "RI.6.3":
+        text: "Analyze in detail how a key individual, event, or idea is introduced, illustrated, and elaborated in a text (e.g., through examples or anecdotes)."
+        full: "CCSS.ELA-LITERACY.RI.6.3"
+        verified: true
+      "RI.6.4":
+        text: "Determine the meaning of words and phrases as they are used in a text, including figurative, connotative, and technical meanings."
+        full: "CCSS.ELA-LITERACY.RI.6.4"
+        verified: true
+      "RI.6.5":
+        text: "Analyze how a particular sentence, paragraph, chapter, or section fits into the overall structure of a text and contributes to the development of the ideas."
+        full: "CCSS.ELA-LITERACY.RI.6.5"
+        verified: true
+      "RI.6.6":
+        text: "Determine an author's point of view or purpose in a text and explain how it is conveyed in the text."
+        full: "CCSS.ELA-LITERACY.RI.6.6"
+        verified: true
+      "RI.6.7":
+        text: "Integrate information presented in different media or formats (e.g., visually, quantitatively) as well as in words to develop a coherent understanding of a topic or issue."
+        full: "CCSS.ELA-LITERACY.RI.6.7"
+        verified: true
+      "RI.6.8":
+        text: "Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not."
+        full: "CCSS.ELA-LITERACY.RI.6.8"
+        verified: true
+      "RI.6.9":
+        text: "Compare and contrast one author's presentation of events with that of another (e.g., a memoir written by and a biography on the same person)."
+        full: "CCSS.ELA-LITERACY.RI.6.9"
+        verified: true
+      "RI.6.10":
+        text: "By the end of the year, read and comprehend literary nonfiction in the grades 6-8 text complexity band proficiently, with scaffolding as needed at the high end of the range."
+        full: "CCSS.ELA-LITERACY.RI.6.10"
+        verified: true
+      "RI.7.1":
+        text: "Cite several pieces of textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text."
+        full: "CCSS.ELA-LITERACY.RI.7.1"
+        verified: true
+      "RI.7.2":
+        text: "Determine two or more central ideas in a text and analyze their development over the course of the text; provide an objective summary of the text."
+        full: "CCSS.ELA-LITERACY.RI.7.2"
+        verified: true
+      "RI.7.3":
+        text: "Analyze the interactions between individuals, events, and ideas in a text (e.g., how ideas influence individuals or events, or how individuals influence ideas or events)."
+        full: "CCSS.ELA-LITERACY.RI.7.3"
+        verified: true
+      "RI.7.4":
+        text: "Determine the meaning of words and phrases as they are used in a text, including figurative, connotative, and technical meanings; analyze the impact of a specific word choice on meaning and tone."
+        full: "CCSS.ELA-LITERACY.RI.7.4"
+        verified: true
+      "RI.7.5":
+        text: "Analyze the structure an author uses to organize a text, including how the major sections contribute to the whole and to the development of the ideas."
+        full: "CCSS.ELA-LITERACY.RI.7.5"
+        verified: true
+      "RI.7.6":
+        text: "Determine an author's point of view or purpose in a text and analyze how the author distinguishes his or her position from that of others."
+        full: "CCSS.ELA-LITERACY.RI.7.6"
+        verified: true
+      "RI.7.7":
+        text: "Compare and contrast a text to an audio, video, or multimedia version of the text, analyzing each medium's portrayal of the subject (e.g., how the delivery of a speech affects the impact of the words)."
+        full: "CCSS.ELA-LITERACY.RI.7.7"
+        verified: true
+      "RI.7.8":
+        text: "Trace and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient to support the claims."
+        full: "CCSS.ELA-LITERACY.RI.7.8"
+        verified: true
+      "RI.7.9":
+        text: "Analyze how two or more authors writing about the same topic shape their presentations of key information by emphasizing different evidence or advancing different interpretations of facts."
+        full: "CCSS.ELA-LITERACY.RI.7.9"
+        verified: true
+      "RI.7.10":
+        text: "By the end of the year, read and comprehend literary nonfiction in the grades 6-8 text complexity band proficiently, with scaffolding as needed at the high end of the range."
+        full: "CCSS.ELA-LITERACY.RI.7.10"
+        verified: true
+      "RI.8.1":
+        text: "Cite the textual evidence that most strongly supports an analysis of what the text says explicitly as well as inferences drawn from the text."
+        full: "CCSS.ELA-LITERACY.RI.8.1"
+        verified: true
+      "RI.8.2":
+        text: "Determine a central idea of a text and analyze its development over the course of the text, including its relationship to supporting ideas; provide an objective summary of the text."
+        full: "CCSS.ELA-LITERACY.RI.8.2"
+        verified: true
+      "RI.8.3":
+        text: "Analyze how a text makes connections among and distinctions between individuals, ideas, or events (e.g., through comparisons, analogies, or categories)."
+        full: "CCSS.ELA-LITERACY.RI.8.3"
+        verified: true
+      "RI.8.4":
+        text: "Determine the meaning of words and phrases as they are used in a text, including figurative, connotative, and technical meanings; analyze the impact of specific word choices on meaning and tone, including analogies or allusions to other texts."
+        full: "CCSS.ELA-LITERACY.RI.8.4"
+        verified: true
+      "RI.8.5":
+        text: "Analyze in detail the structure of a specific paragraph in a text, including the role of particular sentences in developing and refining a key concept."
+        full: "CCSS.ELA-LITERACY.RI.8.5"
+        verified: true
+      "RI.8.6":
+        text: "Determine an author's point of view or purpose in a text and analyze how the author acknowledges and responds to conflicting evidence or viewpoints."
+        full: "CCSS.ELA-LITERACY.RI.8.6"
+        verified: true
+      "RI.8.7":
+        text: "Evaluate the advantages and disadvantages of using different mediums (e.g., print or digital text, video, multimedia) to present a particular topic or idea."
+        full: "CCSS.ELA-LITERACY.RI.8.7"
+        verified: true
+      "RI.8.8":
+        text: "Delineate and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient; recognize when irrelevant evidence is introduced."
+        full: "CCSS.ELA-LITERACY.RI.8.8"
+        verified: true
+      "RI.8.9":
+        text: "Analyze a case in which two or more texts provide conflicting information on the same topic and identify where the texts disagree on matters of fact or interpretation."
+        full: "CCSS.ELA-LITERACY.RI.8.9"
+        verified: true
+      "RI.8.10":
+        text: "By the end of the year, read and comprehend literary nonfiction at the high end of the grades 6-8 text complexity band independently and proficiently."
+        full: "CCSS.ELA-LITERACY.RI.8.10"
+        verified: true
+      "W.6.1":
+        text: "Write arguments to support claims with clear reasons and relevant evidence."
+        full: "CCSS.ELA-LITERACY.W.6.1"
+        verified: true
+      "W.6.1a":
+        text: "Introduce claim(s) and organize the reasons and evidence clearly."
+        full: "CCSS.ELA-LITERACY.W.6.1a"
+        verified: true
+      "W.6.1b":
+        text: "Support claim(s) with clear reasons and relevant evidence, using credible sources and demonstrating an understanding of the topic or text."
+        full: "CCSS.ELA-LITERACY.W.6.1b"
+        verified: true
+      "W.6.1c":
+        text: "Use words, phrases, and clauses to clarify the relationships among claim(s) and reasons."
+        full: "CCSS.ELA-LITERACY.W.6.1c"
+        verified: true
+      "W.6.1d":
+        text: "Establish and maintain a formal style."
+        full: "CCSS.ELA-LITERACY.W.6.1d"
+        verified: true
+      "W.6.1e":
+        text: "Provide a concluding statement or section that follows from the argument presented."
+        full: "CCSS.ELA-LITERACY.W.6.1e"
+        verified: true
+      "W.6.2":
+        text: "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+        full: "CCSS.ELA-LITERACY.W.6.2"
+        verified: true
+      "W.6.2a":
+        text: "Introduce a topic; organize ideas, concepts, and information, using strategies such as definition, classification, comparison/contrast, and cause/effect; include formatting (e.g., headings), graphics (e.g., charts, tables), and multimedia when useful to aiding comprehension."
+        full: "CCSS.ELA-LITERACY.W.6.2a"
+        verified: true
+      "W.6.2b":
+        text: "Develop the topic with relevant facts, definitions, concrete details, quotations, or other information and examples."
+        full: "CCSS.ELA-LITERACY.W.6.2b"
+        verified: true
+      "W.6.2c":
+        text: "Use appropriate transitions to clarify the relationships among ideas and concepts."
+        full: "CCSS.ELA-LITERACY.W.6.2c"
+        verified: true
+      "W.6.2d":
+        text: "Use precise language and domain-specific vocabulary to inform about or explain the topic."
+        full: "CCSS.ELA-LITERACY.W.6.2d"
+        verified: true
+      "W.6.2e":
+        text: "Establish and maintain a formal style."
+        full: "CCSS.ELA-LITERACY.W.6.2e"
+        verified: true
+      "W.6.2f":
+        text: "Provide a concluding statement or section that follows from the information or explanation presented."
+        full: "CCSS.ELA-LITERACY.W.6.2f"
+        verified: true
+      "W.6.3":
+        text: "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences."
+        full: "CCSS.ELA-LITERACY.W.6.3"
+        verified: true
+      "W.6.3a":
+        text: "Engage and orient the reader by establishing a context and introducing a narrator and/or characters; organize an event sequence that unfolds naturally and logically."
+        full: "CCSS.ELA-LITERACY.W.6.3a"
+        verified: true
+      "W.6.3b":
+        text: "Use narrative techniques, such as dialogue, pacing, and description, to develop experiences, events, and/or characters."
+        full: "CCSS.ELA-LITERACY.W.6.3b"
+        verified: true
+      "W.6.3c":
+        text: "Use a variety of transition words, phrases, and clauses to convey sequence and signal shifts from one time frame or setting to another."
+        full: "CCSS.ELA-LITERACY.W.6.3c"
+        verified: true
+      "W.6.3d":
+        text: "Use precise words and phrases, relevant descriptive details, and sensory language to convey experiences and events."
+        full: "CCSS.ELA-LITERACY.W.6.3d"
+        verified: true
+      "W.6.3e":
+        text: "Provide a conclusion that follows from the narrated experiences or events."
+        full: "CCSS.ELA-LITERACY.W.6.3e"
+        verified: true
+      "W.6.4":
+        text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)"
+        full: "CCSS.ELA-LITERACY.W.6.4"
+        verified: true
+      "W.6.5":
+        text: "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 6 here.)"
+        full: "CCSS.ELA-LITERACY.W.6.5"
+        verified: true
+      "W.6.6":
+        text: "Use technology, including the Internet, to produce and publish writing as well as to interact and collaborate with others; demonstrate sufficient command of keyboarding skills to type a minimum of three pages in a single sitting."
+        full: "CCSS.ELA-LITERACY.W.6.6"
+        verified: true
+      "W.6.7":
+        text: "Conduct short research projects to answer a question, drawing on several sources and refocusing the inquiry when appropriate."
+        full: "CCSS.ELA-LITERACY.W.6.7"
+        verified: true
+      "W.6.8":
+        text: "Gather relevant information from multiple print and digital sources; assess the credibility of each source; and quote or paraphrase the data and conclusions of others while avoiding plagiarism and providing basic bibliographic information for sources."
+        full: "CCSS.ELA-LITERACY.W.6.8"
+        verified: true
+      "W.6.9":
+        text: "Draw evidence from literary or informational texts to support analysis, reflection, and research."
+        full: "CCSS.ELA-LITERACY.W.6.9"
+        verified: true
+      "W.6.9a":
+        text: "Apply grade 6 Reading standards to literature (e.g., \"Compare and contrast texts in different forms or genres [e.g., stories and poems; historical novels and fantasy stories] in terms of their approaches to similar themes and topics\")."
+        full: "CCSS.ELA-LITERACY.W.6.9a"
+        verified: true
+      "W.6.9b":
+        text: "Apply grade 6 Reading standards to literary nonfiction (e.g., \"Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not\")."
+        full: "CCSS.ELA-LITERACY.W.6.9b"
+        verified: true
+      "W.6.10":
+        text: "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences."
+        full: "CCSS.ELA-LITERACY.W.6.10"
+        verified: true
+      "W.7.1":
+        text: "Write arguments to support claims with clear reasons and relevant evidence."
+        full: "CCSS.ELA-LITERACY.W.7.1"
+        verified: true
+      "W.7.1a":
+        text: "Introduce claim(s), acknowledge alternate or opposing claims, and organize the reasons and evidence logically."
+        full: "CCSS.ELA-LITERACY.W.7.1a"
+        verified: true
+      "W.7.1b":
+        text: "Support claim(s) with logical reasoning and relevant evidence, using accurate, credible sources and demonstrating an understanding of the topic or text."
+        full: "CCSS.ELA-LITERACY.W.7.1b"
+        verified: true
+      "W.7.1c":
+        text: "Use words, phrases, and clauses to create cohesion and clarify the relationships among claim(s), reasons, and evidence."
+        full: "CCSS.ELA-LITERACY.W.7.1c"
+        verified: true
+      "W.7.1d":
+        text: "Establish and maintain a formal style."
+        full: "CCSS.ELA-LITERACY.W.7.1d"
+        verified: true
+      "W.7.1e":
+        text: "Provide a concluding statement or section that follows from and supports the argument presented."
+        full: "CCSS.ELA-LITERACY.W.7.1e"
+        verified: true
+      "W.7.2":
+        text: "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+        full: "CCSS.ELA-LITERACY.W.7.2"
+        verified: true
+      "W.7.2a":
+        text: "Introduce a topic clearly, previewing what is to follow; organize ideas, concepts, and information, using strategies such as definition, classification, comparison/contrast, and cause/effect; include formatting (e.g., headings), graphics (e.g., charts, tables), and multimedia when useful to aiding comprehension."
+        full: "CCSS.ELA-LITERACY.W.7.2a"
+        verified: true
+      "W.7.2b":
+        text: "Develop the topic with relevant facts, definitions, concrete details, quotations, or other information and examples."
+        full: "CCSS.ELA-LITERACY.W.7.2b"
+        verified: true
+      "W.7.2c":
+        text: "Use appropriate transitions to create cohesion and clarify the relationships among ideas and concepts."
+        full: "CCSS.ELA-LITERACY.W.7.2c"
+        verified: true
+      "W.7.2d":
+        text: "Use precise language and domain-specific vocabulary to inform about or explain the topic."
+        full: "CCSS.ELA-LITERACY.W.7.2d"
+        verified: true
+      "W.7.2e":
+        text: "Establish and maintain a formal style."
+        full: "CCSS.ELA-LITERACY.W.7.2e"
+        verified: true
+      "W.7.2f":
+        text: "Provide a concluding statement or section that follows from and supports the information or explanation presented."
+        full: "CCSS.ELA-LITERACY.W.7.2f"
+        verified: true
+      "W.7.3":
+        text: "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences."
+        full: "CCSS.ELA-LITERACY.W.7.3"
+        verified: true
+      "W.7.3a":
+        text: "Engage and orient the reader by establishing a context and point of view and introducing a narrator and/or characters; organize an event sequence that unfolds naturally and logically."
+        full: "CCSS.ELA-LITERACY.W.7.3a"
+        verified: true
+      "W.7.3b":
+        text: "Use narrative techniques, such as dialogue, pacing, and description, to develop experiences, events, and/or characters."
+        full: "CCSS.ELA-LITERACY.W.7.3b"
+        verified: true
+      "W.7.3c":
+        text: "Use a variety of transition words, phrases, and clauses to convey sequence and signal shifts from one time frame or setting to another."
+        full: "CCSS.ELA-LITERACY.W.7.3c"
+        verified: true
+      "W.7.3d":
+        text: "Use precise words and phrases, relevant descriptive details, and sensory language to capture the action and convey experiences and events."
+        full: "CCSS.ELA-LITERACY.W.7.3d"
+        verified: true
+      "W.7.3e":
+        text: "Provide a conclusion that follows from and reflects on the narrated experiences or events."
+        full: "CCSS.ELA-LITERACY.W.7.3e"
+        verified: true
+      "W.7.4":
+        text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)"
+        full: "CCSS.ELA-LITERACY.W.7.4"
+        verified: true
+      "W.7.5":
+        text: "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on how well purpose and audience have been addressed. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 7 here.)"
+        full: "CCSS.ELA-LITERACY.W.7.5"
+        verified: true
+      "W.7.6":
+        text: "Use technology, including the Internet, to produce and publish writing and link to and cite sources as well as to interact and collaborate with others, including linking to and citing sources."
+        full: "CCSS.ELA-LITERACY.W.7.6"
+        verified: true
+      "W.7.7":
+        text: "Conduct short research projects to answer a question, drawing on several sources and generating additional related, focused questions for further research and investigation."
+        full: "CCSS.ELA-LITERACY.W.7.7"
+        verified: true
+      "W.7.8":
+        text: "Gather relevant information from multiple print and digital sources, using search terms effectively; assess the credibility and accuracy of each source; and quote or paraphrase the data and conclusions of others while avoiding plagiarism and following a standard format for citation."
+        full: "CCSS.ELA-LITERACY.W.7.8"
+        verified: true
+      "W.7.9":
+        text: "Draw evidence from literary or informational texts to support analysis, reflection, and research."
+        full: "CCSS.ELA-LITERACY.W.7.9"
+        verified: true
+      "W.7.9a":
+        text: "Apply grade 7 Reading standards to literature (e.g., \"Compare and contrast a fictional portrayal of a time, place, or character and a historical account of the same period as a means of understanding how authors of fiction use or alter history\")."
+        full: "CCSS.ELA-LITERACY.W.7.9a"
+        verified: true
+      "W.7.9b":
+        text: "Apply grade 7 Reading standards to literary nonfiction (e.g. \"Trace and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient to support the claims\")."
+        full: "CCSS.ELA-LITERACY.W.7.9b"
+        verified: true
+      "W.7.10":
+        text: "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences."
+        full: "CCSS.ELA-LITERACY.W.7.10"
+        verified: true
+      "W.8.1":
+        text: "Write arguments to support claims with clear reasons and relevant evidence"
+        full: "CCSS.ELA-LITERACY.W.8.1"
+        verified: true
+      "W.8.1a":
+        text: "Introduce claim(s), acknowledge and distinguish the claim(s) from alternate or opposing claims, and organize the reasons and evidence logically."
+        full: "CCSS.ELA-LITERACY.W.8.1a"
+        verified: true
+      "W.8.1b":
+        text: "Support claim(s) with logical reasoning and relevant evidence, using accurate, credible sources and demonstrating an understanding of the topic or text."
+        full: "CCSS.ELA-LITERACY.W.8.1b"
+        verified: true
+      "W.8.1c":
+        text: "Use words, phrases, and clauses to create cohesion and clarify the relationships among claim(s), counterclaims, reasons, and evidence."
+        full: "CCSS.ELA-LITERACY.W.8.1c"
+        verified: true
+      "W.8.1d":
+        text: "Establish and maintain a formal style."
+        full: "CCSS.ELA-LITERACY.W.8.1d"
+        verified: true
+      "W.8.1e":
+        text: "Provide a concluding statement or section that follows from and supports the argument presented."
+        full: "CCSS.ELA-LITERACY.W.8.1e"
+        verified: true
+      "W.8.2":
+        text: "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+        full: "CCSS.ELA-LITERACY.W.8.2"
+        verified: true
+      "W.8.2a":
+        text: "Introduce a topic clearly, previewing what is to follow; organize ideas, concepts, and information into broader categories; include formatting (e.g., headings), graphics (e.g., charts, tables), and multimedia when useful to aiding comprehension."
+        full: "CCSS.ELA-LITERACY.W.8.2a"
+        verified: true
+      "W.8.2b":
+        text: "Develop the topic with relevant, well-chosen facts, definitions, concrete details, quotations, or other information and examples."
+        full: "CCSS.ELA-LITERACY.W.8.2b"
+        verified: true
+      "W.8.2c":
+        text: "Use appropriate and varied transitions to create cohesion and clarify the relationships among ideas and concepts."
+        full: "CCSS.ELA-LITERACY.W.8.2c"
+        verified: true
+      "W.8.2d":
+        text: "Use precise language and domain-specific vocabulary to inform about or explain the topic."
+        full: "CCSS.ELA-LITERACY.W.8.2d"
+        verified: true
+      "W.8.2e":
+        text: "Establish and maintain a formal style."
+        full: "CCSS.ELA-LITERACY.W.8.2e"
+        verified: true
+      "W.8.2f":
+        text: "Provide a concluding statement or section that follows from and supports the information or explanation presented."
+        full: "CCSS.ELA-LITERACY.W.8.2f"
+        verified: true
+      "W.8.3":
+        text: "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences."
+        full: "CCSS.ELA-LITERACY.W.8.3"
+        verified: true
+      "W.8.3a":
+        text: "Engage and orient the reader by establishing a context and point of view and introducing a narrator and/or characters; organize an event sequence that unfolds naturally and logically."
+        full: "CCSS.ELA-LITERACY.W.8.3a"
+        verified: true
+      "W.8.3b":
+        text: "Use narrative techniques, such as dialogue, pacing, description, and reflection, to develop experiences, events, and/or characters."
+        full: "CCSS.ELA-LITERACY.W.8.3b"
+        verified: true
+      "W.8.3c":
+        text: "Use a variety of transition words, phrases, and clauses to convey sequence, signal shifts from one time frame or setting to another, and show the relationships among experiences and events."
+        full: "CCSS.ELA-LITERACY.W.8.3c"
+        verified: true
+      "W.8.3d":
+        text: "Use precise words and phrases, relevant descriptive details, and sensory language to capture the action and convey experiences and events."
+        full: "CCSS.ELA-LITERACY.W.8.3d"
+        verified: true
+      "W.8.3e":
+        text: "Provide a conclusion that follows from and reflects on the narrated experiences or events."
+        full: "CCSS.ELA-LITERACY.W.8.3e"
+        verified: true
+      "W.8.4":
+        text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)"
+        full: "CCSS.ELA-LITERACY.W.8.4"
+        verified: true
+      "W.8.5":
+        text: "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on how well purpose and audience have been addressed. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 8 here.)"
+        full: "CCSS.ELA-LITERACY.W.8.5"
+        verified: true
+      "W.8.6":
+        text: "Use technology, including the Internet, to produce and publish writing and present the relationships between information and ideas efficiently as well as to interact and collaborate with others."
+        full: "CCSS.ELA-LITERACY.W.8.6"
+        verified: true
+      "W.8.7":
+        text: "Conduct short research projects to answer a question (including a self-generated question), drawing on several sources and generating additional related, focused questions that allow for multiple avenues of exploration."
+        full: "CCSS.ELA-LITERACY.W.8.7"
+        verified: true
+      "W.8.8":
+        text: "Gather relevant information from multiple print and digital sources, using search terms effectively; assess the credibility and accuracy of each source; and quote or paraphrase the data and conclusions of others while avoiding plagiarism and following a standard format for citation."
+        full: "CCSS.ELA-LITERACY.W.8.8"
+        verified: true
+      "W.8.9":
+        text: "Draw evidence from literary or informational texts to support analysis, reflection, and research."
+        full: "CCSS.ELA-LITERACY.W.8.9"
+        verified: true
+      "W.8.9a":
+        text: "Apply grade 8 Reading standards to literature (e.g., \"Analyze how a modern work of fiction draws on themes, patterns of events, or character types from myths, traditional stories, or religious works such as the Bible, including describing how the material is rendered new\")."
+        full: "CCSS.ELA-LITERACY.W.8.9a"
+        verified: true
+      "W.8.9b":
+        text: "Apply grade 8 Reading standards to literary nonfiction (e.g., \"Delineate and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient; recognize when irrelevant evidence is introduced\")."
+        full: "CCSS.ELA-LITERACY.W.8.9b"
+        verified: true
+      "W.8.10":
+        text: "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences."
+        full: "CCSS.ELA-LITERACY.W.8.10"
+        verified: true
+      "SL.6.1":
+        text: "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 6 topics, texts, and issues, building on others' ideas and expressing their own clearly."
+        full: "CCSS.ELA-LITERACY.SL.6.1"
+        verified: true
+      "SL.6.1a":
+        text: "Come to discussions prepared, having read or studied required material; explicitly draw on that preparation by referring to evidence on the topic, text, or issue to probe and reflect on ideas under discussion."
+        full: "CCSS.ELA-LITERACY.SL.6.1a"
+        verified: true
+      "SL.6.1b":
+        text: "Follow rules for collegial discussions, set specific goals and deadlines, and define individual roles as needed."
+        full: "CCSS.ELA-LITERACY.SL.6.1b"
+        verified: true
+      "SL.6.1c":
+        text: "Pose and respond to specific questions with elaboration and detail by making comments that contribute to the topic, text, or issue under discussion."
+        full: "CCSS.ELA-LITERACY.SL.6.1c"
+        verified: true
+      "SL.6.1d":
+        text: "Review the key ideas expressed and demonstrate understanding of multiple perspectives through reflection and paraphrasing."
+        full: "CCSS.ELA-LITERACY.SL.6.1d"
+        verified: true
+      "SL.6.2":
+        text: "Interpret information presented in diverse media and formats (e.g., visually, quantitatively, orally) and explain how it contributes to a topic, text, or issue under study."
+        full: "CCSS.ELA-LITERACY.SL.6.2"
+        verified: true
+      "SL.6.3":
+        text: "Delineate a speaker's argument and specific claims, distinguishing claims that are supported by reasons and evidence from claims that are not."
+        full: "CCSS.ELA-LITERACY.SL.6.3"
+        verified: true
+      "SL.6.4":
+        text: "Present claims and findings, sequencing ideas logically and using pertinent descriptions, facts, and details to accentuate main ideas or themes; use appropriate eye contact, adequate volume, and clear pronunciation."
+        full: "CCSS.ELA-LITERACY.SL.6.4"
+        verified: true
+      "SL.6.5":
+        text: "Include multimedia components (e.g., graphics, images, music, sound) and visual displays in presentations to clarify information."
+        full: "CCSS.ELA-LITERACY.SL.6.5"
+        verified: true
+      "SL.6.6":
+        text: "Adapt speech to a variety of contexts and tasks, demonstrating command of formal English when indicated or appropriate. (See grade 6 Language standards 1 and 3 here for specific expectations.)"
+        full: "CCSS.ELA-LITERACY.SL.6.6"
+        verified: true
+      "SL.7.1":
+        text: "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 7 topics, texts, and issues, building on others' ideas and expressing their own clearly."
+        full: "CCSS.ELA-LITERACY.SL.7.1"
+        verified: true
+      "SL.7.1a":
+        text: "Come to discussions prepared, having read or researched material under study; explicitly draw on that preparation by referring to evidence on the topic, text, or issue to probe and reflect on ideas under discussion."
+        full: "CCSS.ELA-LITERACY.SL.7.1a"
+        verified: true
+      "SL.7.1b":
+        text: "Follow rules for collegial discussions, track progress toward specific goals and deadlines, and define individual roles as needed."
+        full: "CCSS.ELA-LITERACY.SL.7.1b"
+        verified: true
+      "SL.7.1c":
+        text: "Pose questions that elicit elaboration and respond to others' questions and comments with relevant observations and ideas that bring the discussion back on topic as needed."
+        full: "CCSS.ELA-LITERACY.SL.7.1c"
+        verified: true
+      "SL.7.1d":
+        text: "Acknowledge new information expressed by others and, when warranted, modify their own views."
+        full: "CCSS.ELA-LITERACY.SL.7.1d"
+        verified: true
+      "SL.7.2":
+        text: "Analyze the main ideas and supporting details presented in diverse media and formats (e.g., visually, quantitatively, orally) and explain how the ideas clarify a topic, text, or issue under study."
+        full: "CCSS.ELA-LITERACY.SL.7.2"
+        verified: true
+      "SL.7.3":
+        text: "Delineate a speaker's argument and specific claims, evaluating the soundness of the reasoning and the relevance and sufficiency of the evidence."
+        full: "CCSS.ELA-LITERACY.SL.7.3"
+        verified: true
+      "SL.7.4":
+        text: "Present claims and findings, emphasizing salient points in a focused, coherent manner with pertinent descriptions, facts, details, and examples; use appropriate eye contact, adequate volume, and clear pronunciation."
+        full: "CCSS.ELA-LITERACY.SL.7.4"
+        verified: true
+      "SL.7.5":
+        text: "Include multimedia components and visual displays in presentations to clarify claims and findings and emphasize salient points."
+        full: "CCSS.ELA-LITERACY.SL.7.5"
+        verified: true
+      "SL.7.6":
+        text: "Adapt speech to a variety of contexts and tasks, demonstrating command of formal English when indicated or appropriate. (See grade 7 Language standards 1 and 3 here for specific expectations.)"
+        full: "CCSS.ELA-LITERACY.SL.7.6"
+        verified: true
+      "SL.8.1":
+        text: "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 8 topics, texts, and issues, building on others' ideas and expressing their own clearly."
+        full: "CCSS.ELA-LITERACY.SL.8.1"
+        verified: true
+      "SL.8.1a":
+        text: "Come to discussions prepared, having read or researched material under study; explicitly draw on that preparation by referring to evidence on the topic, text, or issue to probe and reflect on ideas under discussion."
+        full: "CCSS.ELA-LITERACY.SL.8.1a"
+        verified: true
+      "SL.8.1b":
+        text: "Follow rules for collegial discussions and decision-making, track progress toward specific goals and deadlines, and define individual roles as needed."
+        full: "CCSS.ELA-LITERACY.SL.8.1b"
+        verified: true
+      "SL.8.1c":
+        text: "Pose questions that connect the ideas of several speakers and respond to others' questions and comments with relevant evidence, observations, and ideas."
+        full: "CCSS.ELA-LITERACY.SL.8.1c"
+        verified: true
+      "SL.8.1d":
+        text: "Acknowledge new information expressed by others, and, when warranted, qualify or justify their own views in light of the evidence presented."
+        full: "CCSS.ELA-LITERACY.SL.8.1d"
+        verified: true
+      "SL.8.2":
+        text: "Analyze the purpose of information presented in diverse media and formats (e.g., visually, quantitatively, orally) and evaluate the motives (e.g., social, commercial, political) behind its presentation."
+        full: "CCSS.ELA-LITERACY.SL.8.2"
+        verified: true
+      "SL.8.3":
+        text: "Delineate a speaker's argument and specific claims, evaluating the soundness of the reasoning and relevance and sufficiency of the evidence and identifying when irrelevant evidence is introduced."
+        full: "CCSS.ELA-LITERACY.SL.8.3"
+        verified: true
+      "SL.8.4":
+        text: "Present claims and findings, emphasizing salient points in a focused, coherent manner with relevant evidence, sound valid reasoning, and well-chosen details; use appropriate eye contact, adequate volume, and clear pronunciation."
+        full: "CCSS.ELA-LITERACY.SL.8.4"
+        verified: true
+      "SL.8.5":
+        text: "Integrate multimedia and visual displays into presentations to clarify information, strengthen claims and evidence, and add interest."
+        full: "CCSS.ELA-LITERACY.SL.8.5"
+        verified: true
+      "SL.8.6":
+        text: "Adapt speech to a variety of contexts and tasks, demonstrating command of formal English when indicated or appropriate. (See grade 8 Language standards 1 and 3 here for specific expectations.)"
+        full: "CCSS.ELA-LITERACY.SL.8.6"
+        verified: true
+
+  CCSS-MATH:
+    name: "Common Core State Standards for Mathematics, grades 6-7 — Ratios & Proportional Relationships (RP), Expressions & Equations (EE), Statistics & Probability (SP)"
+    publisher: "NGA Center for Best Practices / Council of Chief State School Officers"
+    source: "https://www.thecorestandards.org/Math/"
+    primary_source_confirmed: false
+    key_format: >-
+      Keys include the cluster letter (6.RP.A.3), which is the canonical CCSS form.
+      Many teachers and some state crosswalks drop it (6.RP.3); `alt` records that
+      spelling so the validator accepts either. Prefer the canonical form.
+    scope_note: >-
+      Grade 8 has no RP domain (proportional reasoning moves into 8.EE/8.F), so
+      6-7 is the correct band for ratio, unit-rate, percent and probability work —
+      which is where the finance line and the game-balance lessons live.
+    verification_copies:
+      - label: "corestandards.org competency-framework export (rows carry http://corestandards.org/Math/Content/... URIs)"
+        url: "https://raw.githubusercontent.com/eldoomCBE/moodlenet_repo/master/assets/529_CCSS.Math_httpcorestandards.orgMath_20170106_0445_comma_separated.csv"
+      - label: "ASN/CASE framework export of CCSS Math grades 6 and 7 (independent, ASN identifiers + exactMatch URIs)"
+        url: "https://raw.githubusercontent.com/artpromedia/AIVO-LMS/main/packages/content-pack/data/sources/ccss/math-grade-6.json"
+      - label: "Code.org ccmath_standards.csv (third check, prefix match only)"
+        url: "https://raw.githubusercontent.com/code-dot-org/code-dot-org/staging/dashboard/config/standards/ccmath_standards.csv"
+    transcription_note: >-
+      Both exports render math typography in ASCII: en-dashes in subtraction
+      examples appear as "-" and curly quotes as straight quotes. Wording is
+      verbatim; those two glyphs may differ cosmetically from the PDF. The
+      italicised "For example ..." illustrations ARE part of the standard and are
+      kept here — the CASE copy stores them separately, which is the only reason
+      the two copies differ in length.
+    all_54_corroborated_by_two_or_more_copies: true
+    clusters:
+      "6.EE.A": "Grade 6 » Expressions & Equations » Apply and extend previous understandings of arithmetic to algebraic expressions."
+      "6.EE.B": "Grade 6 » Expressions & Equations » Reason about and solve one-variable equations and inequalities."
+      "6.EE.C": "Grade 6 » Expressions & Equations » Represent and analyze quantitative relationships between dependent and independent variables."
+      "6.RP.A": "Grade 6 » Ratios & Proportional Relationships » Understand ratio concepts and use ratio reasoning to solve problems."
+      "6.SP.A": "Grade 6 » Statistics & Probability » Develop understanding of statistical variability."
+      "6.SP.B": "Grade 6 » Statistics & Probability » Summarize and describe distributions."
+      "7.EE.A": "Grade 7 » Expressions & Equations » Use properties of operations to generate equivalent expressions."
+      "7.EE.B": "Grade 7 » Expressions & Equations » Solve real-life and mathematical problems using numerical and algebraic expressions and equations."
+      "7.RP.A": "Grade 7 » Ratios & Proportional Relationships » Analyze proportional relationships and use them to solve real-world and mathematical problems."
+      "7.SP.A": "Grade 7 » Statistics & Probability » Use random sampling to draw inferences about a population."
+      "7.SP.B": "Grade 7 » Statistics & Probability » Draw informal comparative inferences about two populations."
+      "7.SP.C": "Grade 7 » Statistics & Probability » Investigate chance processes and develop, use, and evaluate probability models."
+    codes:
+      "6.RP.A.1":
+        text: "Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities. For example, \"The ratio of wings to beaks in the bird house at the zoo was 2:1, because for every 2 wings there was 1 beak.\" \"For every vote candidate A received, candidate C received nearly three votes.\""
+        full: "CCSS.MATH.CONTENT.6.RP.A.1"
+        alt: "6.RP.1"
+        verified: true
+      "6.RP.A.2":
+        text: "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language in the context of a ratio relationship. For example, \"This recipe has a ratio of 3 cups of flour to 4 cups of sugar, so there is 3/4 cup of flour for each cup of sugar.\" \"We paid $75 for 15 hamburgers, which is a rate of $5 per hamburger.\"1"
+        full: "CCSS.MATH.CONTENT.6.RP.A.2"
+        alt: "6.RP.2"
+        verified: true
+      "6.RP.A.3":
+        text: "Use ratio and rate reasoning to solve real-world and mathematical problems, e.g., by reasoning about tables of equivalent ratios, tape diagrams, double number line diagrams, or equations."
+        full: "CCSS.MATH.CONTENT.6.RP.A.3"
+        alt: "6.RP.3"
+        verified: true
+      "6.RP.A.3a":
+        text: "Make tables of equivalent ratios relating quantities with whole-number measurements, find missing values in the tables, and plot the pairs of values on the coordinate plane. Use tables to compare ratios."
+        full: "CCSS.MATH.CONTENT.6.RP.A.3a"
+        alt: "6.RP.3.a"
+        verified: true
+      "6.RP.A.3b":
+        text: "Solve unit rate problems including those involving unit pricing and constant speed. For example, if it took 7 hours to mow 4 lawns, then at that rate, how many lawns could be mowed in 35 hours? At what rate were lawns being mowed?"
+        full: "CCSS.MATH.CONTENT.6.RP.A.3b"
+        alt: "6.RP.3.b"
+        verified: true
+      "6.RP.A.3c":
+        text: "Find a percent of a quantity as a rate per 100 (e.g., 30% of a quantity means 30/100 times the quantity); solve problems involving finding the whole, given a part and the percent."
+        full: "CCSS.MATH.CONTENT.6.RP.A.3c"
+        alt: "6.RP.3.c"
+        verified: true
+      "6.RP.A.3d":
+        text: "Use ratio reasoning to convert measurement units; manipulate and transform units appropriately when multiplying or dividing quantities."
+        full: "CCSS.MATH.CONTENT.6.RP.A.3d"
+        alt: "6.RP.3.d"
+        verified: true
+      "6.EE.A.1":
+        text: "Write and evaluate numerical expressions involving whole-number exponents."
+        full: "CCSS.MATH.CONTENT.6.EE.A.1"
+        alt: "6.EE.1"
+        verified: true
+      "6.EE.A.2":
+        text: "Write, read, and evaluate expressions in which letters stand for numbers."
+        full: "CCSS.MATH.CONTENT.6.EE.A.2"
+        alt: "6.EE.2"
+        verified: true
+      "6.EE.A.2a":
+        text: "Write expressions that record operations with numbers and with letters standing for numbers. For example, express the calculation \"Subtract y from 5\" as 5 - y."
+        full: "CCSS.MATH.CONTENT.6.EE.A.2a"
+        alt: "6.EE.2.a"
+        verified: true
+      "6.EE.A.2b":
+        text: "Identify parts of an expression using mathematical terms (sum, term, product, factor, quotient, coefficient); view one or more parts of an expression as a single entity. For example, describe the expression 2 (8 + 7) as a product of two factors; view (8 + 7) as both a single entity and a sum of two terms."
+        full: "CCSS.MATH.CONTENT.6.EE.A.2b"
+        alt: "6.EE.2.b"
+        verified: true
+      "6.EE.A.2c":
+        text: "Evaluate expressions at specific values of their variables. Include expressions that arise from formulas used in real-world problems. Perform arithmetic operations, including those involving whole-number exponents, in the conventional order when there are no parentheses to specify a particular order (Order of Operations). For example, use the formulas V = s3 and A = 6 s2 to find the volume and surface area of a cube with sides of length s = 1/2."
+        full: "CCSS.MATH.CONTENT.6.EE.A.2c"
+        alt: "6.EE.2.c"
+        verified: true
+      "6.EE.A.3":
+        text: "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y."
+        full: "CCSS.MATH.CONTENT.6.EE.A.3"
+        alt: "6.EE.3"
+        verified: true
+      "6.EE.A.4":
+        text: "Identify when two expressions are equivalent (i.e., when the two expressions name the same number regardless of which value is substituted into them). For example, the expressions y + y + y and 3y are equivalent because they name the same number regardless of which number y stands for.."
+        full: "CCSS.MATH.CONTENT.6.EE.A.4"
+        alt: "6.EE.4"
+        verified: true
+      "6.EE.B.5":
+        text: "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true."
+        full: "CCSS.MATH.CONTENT.6.EE.B.5"
+        alt: "6.EE.5"
+        verified: true
+      "6.EE.B.6":
+        text: "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set."
+        full: "CCSS.MATH.CONTENT.6.EE.B.6"
+        alt: "6.EE.6"
+        verified: true
+      "6.EE.B.7":
+        text: "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative rational numbers."
+        full: "CCSS.MATH.CONTENT.6.EE.B.7"
+        alt: "6.EE.7"
+        verified: true
+      "6.EE.B.8":
+        text: "Write an inequality of the form x > c or x < c to represent a constraint or condition in a real-world or mathematical problem. Recognize that inequalities of the form x > c or x < c have infinitely many solutions; represent solutions of such inequalities on number line diagrams."
+        full: "CCSS.MATH.CONTENT.6.EE.B.8"
+        alt: "6.EE.8"
+        verified: true
+      "6.EE.C.9":
+        text: "Use variables to represent two quantities in a real-world problem that change in relationship to one another; write an equation to express one quantity, thought of as the dependent variable, in terms of the other quantity, thought of as the independent variable. Analyze the relationship between the dependent and independent variables using graphs and tables, and relate these to the equation. For example, in a problem involving motion at constant speed, list and graph ordered pairs of distances and times, and write the equation d = 65t to represent the relationship between distance and time."
+        full: "CCSS.MATH.CONTENT.6.EE.C.9"
+        alt: "6.EE.9"
+        verified: true
+      "6.SP.A.1":
+        text: "Recognize a statistical question as one that anticipates variability in the data related to the question and accounts for it in the answers. For example, \"How old am I?\" is not a statistical question, but \"How old are the students in my school?\" is a statistical question because one anticipates variability in students' ages."
+        full: "CCSS.MATH.CONTENT.6.SP.A.1"
+        alt: "6.SP.1"
+        verified: true
+      "6.SP.A.2":
+        text: "Understand that a set of data collected to answer a statistical question has a distribution which can be described by its center, spread, and overall shape."
+        full: "CCSS.MATH.CONTENT.6.SP.A.2"
+        alt: "6.SP.2"
+        verified: true
+      "6.SP.A.3":
+        text: "Recognize that a measure of center for a numerical data set summarizes all of its values with a single number, while a measure of variation describes how its values vary with a single number."
+        full: "CCSS.MATH.CONTENT.6.SP.A.3"
+        alt: "6.SP.3"
+        verified: true
+      "6.SP.B.4":
+        text: "Display numerical data in plots on a number line, including dot plots, histograms, and box plots."
+        full: "CCSS.MATH.CONTENT.6.SP.B.4"
+        alt: "6.SP.4"
+        verified: true
+      "6.SP.B.5":
+        text: "Summarize numerical data sets in relation to their context, such as by:"
+        full: "CCSS.MATH.CONTENT.6.SP.B.5"
+        alt: "6.SP.5"
+        verified: true
+      "6.SP.B.5a":
+        text: "Reporting the number of observations."
+        full: "CCSS.MATH.CONTENT.6.SP.B.5a"
+        alt: "6.SP.5.a"
+        verified: true
+      "6.SP.B.5b":
+        text: "Describing the nature of the attribute under investigation, including how it was measured and its units of measurement."
+        full: "CCSS.MATH.CONTENT.6.SP.B.5b"
+        alt: "6.SP.5.b"
+        verified: true
+      "6.SP.B.5c":
+        text: "Giving quantitative measures of center (median and/or mean) and variability (interquartile range and/or mean absolute deviation), as well as describing any overall pattern and any striking deviations from the overall pattern with reference to the context in which the data were gathered."
+        full: "CCSS.MATH.CONTENT.6.SP.B.5c"
+        alt: "6.SP.5.c"
+        verified: true
+      "6.SP.B.5d":
+        text: "Relating the choice of measures of center and variability to the shape of the data distribution and the context in which the data were gathered."
+        full: "CCSS.MATH.CONTENT.6.SP.B.5d"
+        alt: "6.SP.5.d"
+        verified: true
+      "7.RP.A.1":
+        text: "Compute unit rates associated with ratios of fractions, including ratios of lengths, areas and other quantities measured in like or different units. For example, if a person walks 1/2 mile in each 1/4 hour, compute the unit rate as the complex fraction 1/2/1/4 miles per hour, equivalently 2 miles per hour."
+        full: "CCSS.MATH.CONTENT.7.RP.A.1"
+        alt: "7.RP.1"
+        verified: true
+      "7.RP.A.2":
+        text: "Recognize and represent proportional relationships between quantities."
+        full: "CCSS.MATH.CONTENT.7.RP.A.2"
+        alt: "7.RP.2"
+        verified: true
+      "7.RP.A.2a":
+        text: "Decide whether two quantities are in a proportional relationship, e.g., by testing for equivalent ratios in a table or graphing on a coordinate plane and observing whether the graph is a straight line through the origin."
+        full: "CCSS.MATH.CONTENT.7.RP.A.2a"
+        alt: "7.RP.2.a"
+        verified: true
+      "7.RP.A.2b":
+        text: "Identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions of proportional relationships."
+        full: "CCSS.MATH.CONTENT.7.RP.A.2b"
+        alt: "7.RP.2.b"
+        verified: true
+      "7.RP.A.2c":
+        text: "Represent proportional relationships by equations. For example, if total cost t is proportional to the number n of items purchased at a constant price p, the relationship between the total cost and the number of items can be expressed as t = pn."
+        full: "CCSS.MATH.CONTENT.7.RP.A.2c"
+        alt: "7.RP.2.c"
+        verified: true
+      "7.RP.A.2d":
+        text: "Explain what a point (x, y) on the graph of a proportional relationship means in terms of the situation, with special attention to the points (0, 0) and (1, r) where r is the unit rate."
+        full: "CCSS.MATH.CONTENT.7.RP.A.2d"
+        alt: "7.RP.2.d"
+        verified: true
+      "7.RP.A.3":
+        text: "Use proportional relationships to solve multistep ratio and percent problems. Examples: simple interest, tax, markups and markdowns, gratuities and commissions, fees, percent increase and decrease, percent error."
+        full: "CCSS.MATH.CONTENT.7.RP.A.3"
+        alt: "7.RP.3"
+        verified: true
+      "7.EE.A.1":
+        text: "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients."
+        full: "CCSS.MATH.CONTENT.7.EE.A.1"
+        alt: "7.EE.1"
+        verified: true
+      "7.EE.A.2":
+        text: "Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related. For example, a + 0.05a = 1.05a means that \"increase by 5%\" is the same as \"multiply by 1.05.\""
+        full: "CCSS.MATH.CONTENT.7.EE.A.2"
+        alt: "7.EE.2"
+        verified: true
+      "7.EE.B.3":
+        text: "Solve multi-step real-life and mathematical problems posed with positive and negative rational numbers in any form (whole numbers, fractions, and decimals), using tools strategically. Apply properties of operations to calculate with numbers in any form; convert between forms as appropriate; and assess the reasonableness of answers using mental computation and estimation strategies. For example: If a woman making $25 an hour gets a 10% raise, she will make an additional 1/10 of her salary an hour, or $2.50, for a new salary of $27.50. If you want to place a towel bar 9 3/4 inches long in the center of a door that is 27 1/2 inches wide, you will need to place the bar about 9 inches from each edge; this estimate can be used as a check on the exact computation."
+        full: "CCSS.MATH.CONTENT.7.EE.B.3"
+        alt: "7.EE.3"
+        verified: true
+      "7.EE.B.4":
+        text: "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities."
+        full: "CCSS.MATH.CONTENT.7.EE.B.4"
+        alt: "7.EE.4"
+        verified: true
+      "7.EE.B.4a":
+        text: "Solve word problems leading to equations of the form px + q = r and p(x + q) = r, where p, q, and r are specific rational numbers. Solve equations of these forms fluently. Compare an algebraic solution to an arithmetic solution, identifying the sequence of the operations used in each approach. For example, the perimeter of a rectangle is 54 cm. Its length is 6 cm. What is its width?"
+        full: "CCSS.MATH.CONTENT.7.EE.B.4a"
+        alt: "7.EE.4.a"
+        verified: true
+      "7.EE.B.4b":
+        text: "Solve word problems leading to inequalities of the form px + q > r or px + q < r, where p, q, and r are specific rational numbers. Graph the solution set of the inequality and interpret it in the context of the problem. For example: As a salesperson, you are paid $50 per week plus $3 per sale. This week you want your pay to be at least $100. Write an inequality for the number of sales you need to make, and describe the solutions."
+        full: "CCSS.MATH.CONTENT.7.EE.B.4b"
+        alt: "7.EE.4.b"
+        verified: true
+      "7.SP.A.1":
+        text: "Understand that statistics can be used to gain information about a population by examining a sample of the population; generalizations about a population from a sample are valid only if the sample is representative of that population. Understand that random sampling tends to produce representative samples and support valid inferences."
+        full: "CCSS.MATH.CONTENT.7.SP.A.1"
+        alt: "7.SP.1"
+        verified: true
+      "7.SP.A.2":
+        text: "Use data from a random sample to draw inferences about a population with an unknown characteristic of interest. Generate multiple samples (or simulated samples) of the same size to gauge the variation in estimates or predictions. For example, estimate the mean word length in a book by randomly sampling words from the book; predict the winner of a school election based on randomly sampled survey data. Gauge how far off the estimate or prediction might be."
+        full: "CCSS.MATH.CONTENT.7.SP.A.2"
+        alt: "7.SP.2"
+        verified: true
+      "7.SP.B.3":
+        text: "Informally assess the degree of visual overlap of two numerical data distributions with similar variabilities, measuring the difference between the centers by expressing it as a multiple of a measure of variability. For example, the mean height of players on the basketball team is 10 cm greater than the mean height of players on the soccer team, about twice the variability (mean absolute deviation) on either team; on a dot plot, the separation between the two distributions of heights is noticeable."
+        full: "CCSS.MATH.CONTENT.7.SP.B.3"
+        alt: "7.SP.3"
+        verified: true
+      "7.SP.B.4":
+        text: "Use measures of center and measures of variability for numerical data from random samples to draw informal comparative inferences about two populations. For example, decide whether the words in a chapter of a seventh-grade science book are generally longer than the words in a chapter of a fourth-grade science book."
+        full: "CCSS.MATH.CONTENT.7.SP.B.4"
+        alt: "7.SP.4"
+        verified: true
+      "7.SP.C.5":
+        text: "Understand that the probability of a chance event is a number between 0 and 1 that expresses the likelihood of the event occurring. Larger numbers indicate greater likelihood. A probability near 0 indicates an unlikely event, a probability around 1/2 indicates an event that is neither unlikely nor likely, and a probability near 1 indicates a likely event."
+        full: "CCSS.MATH.CONTENT.7.SP.C.5"
+        alt: "7.SP.5"
+        verified: true
+      "7.SP.C.6":
+        text: "Approximate the probability of a chance event by collecting data on the chance process that produces it and observing its long-run relative frequency, and predict the approximate relative frequency given the probability. For example, when rolling a number cube 600 times, predict that a 3 or 6 would be rolled roughly 200 times, but probably not exactly 200 times."
+        full: "CCSS.MATH.CONTENT.7.SP.C.6"
+        alt: "7.SP.6"
+        verified: true
+      "7.SP.C.7":
+        text: "Develop a probability model and use it to find probabilities of events. Compare probabilities from a model to observed frequencies; if the agreement is not good, explain possible sources of the discrepancy."
+        full: "CCSS.MATH.CONTENT.7.SP.C.7"
+        alt: "7.SP.7"
+        verified: true
+      "7.SP.C.7a":
+        text: "Develop a uniform probability model by assigning equal probability to all outcomes, and use the model to determine probabilities of events. For example, if a student is selected at random from a class, find the probability that Jane will be selected and the probability that a girl will be selected."
+        full: "CCSS.MATH.CONTENT.7.SP.C.7a"
+        alt: "7.SP.7.a"
+        verified: true
+      "7.SP.C.7b":
+        text: "Develop a probability model (which may not be uniform) by observing frequencies in data generated from a chance process. For example, find the approximate probability that a spinning penny will land heads up or that a tossed paper cup will land open-end down. Do the outcomes for the spinning penny appear to be equally likely based on the observed frequencies?"
+        full: "CCSS.MATH.CONTENT.7.SP.C.7b"
+        alt: "7.SP.7.b"
+        verified: true
+      "7.SP.C.8":
+        text: "Find probabilities of compound events using organized lists, tables, tree diagrams, and simulation."
+        full: "CCSS.MATH.CONTENT.7.SP.C.8"
+        alt: "7.SP.8"
+        verified: true
+      "7.SP.C.8a":
+        text: "Understand that, just as with simple events, the probability of a compound event is the fraction of outcomes in the sample space for which the compound event occurs."
+        full: "CCSS.MATH.CONTENT.7.SP.C.8a"
+        alt: "7.SP.8.a"
+        verified: true
+      "7.SP.C.8b":
+        text: "Represent sample spaces for compound events using methods such as organized lists, tables and tree diagrams. For an event described in everyday language (e.g., \"rolling double sixes\"), identify the outcomes in the sample space which compose the event."
+        full: "CCSS.MATH.CONTENT.7.SP.C.8b"
+        alt: "7.SP.8.b"
+        verified: true
+      "7.SP.C.8c":
+        text: "Design and use a simulation to generate frequencies for compound events. For example, use random digits as a simulation tool to approximate the answer to the question: If 40% of donors have type A blood, what is the probability that it will take at least 4 donors to find one with type A blood?"
+        full: "CCSS.MATH.CONTENT.7.SP.C.8c"
+        alt: "7.SP.8.c"
+        verified: true
+
+  NSPFE:
+    name: "National Standards for Personal Financial Education (2021)"
+    publisher: "Council for Economic Education and Jump$tart Coalition for Personal Financial Literacy (JOINT publication)"
+    source: "https://www.councilforeconed.org/wp-content/uploads/2021/10/2021-National-Standards-for-Personal-Financial-Education.pdf"
+    mirror: "https://www.jumpstart.org/education/national-standards/"
+    primary_source_confirmed: false
+    important_correction: >-
+      Jump$tart and CEE are NOT two separate frameworks any more. In October 2021
+      they jointly replaced Jump$tart's "National Standards in K-12 Personal
+      Finance Education" (4th ed., 2015) and CEE's "National Standards for
+      Financial Literacy" with ONE document. Citing "Jump$tart standards" and
+      "CEE standards" as if they were two alignments is double-counting one
+      framework, and a reviewer who knows the field will spot it.
+    structure:
+      topics_verified: true
+      topics:
+        - "Earning Income"
+        - "Spending"
+        - "Saving"
+        - "Investing"
+        - "Managing Credit"
+        - "Managing Risk"
+      benchmark_grades: "Standards and Learning Outcomes are set for the end of grade 4, grade 8, and grade 12"
+      our_band: "grade 8 — the correct benchmark set for a 6-8 product"
+    codes:
+      "Earning Income":
+        text: "Earning Income"
+        level: topic
+        verified: true
+        benchmark_text_verified: false
+        note: "Topic name verified. Grade-8 Learning Outcome wording NOT publicly verified in this session — cite content area only."
+      "Spending":
+        text: "Spending"
+        level: topic
+        verified: true
+        benchmark_text_verified: false
+        note: "Topic name verified. Grade-8 Learning Outcome wording NOT publicly verified in this session — cite content area only."
+      "Saving":
+        text: "Saving"
+        level: topic
+        verified: true
+        benchmark_text_verified: false
+        note: "Topic name verified. Grade-8 Learning Outcome wording NOT publicly verified in this session — cite content area only."
+      "Investing":
+        text: "Investing"
+        level: topic
+        verified: true
+        benchmark_text_verified: false
+        note: "Topic name verified. Grade-8 Learning Outcome wording NOT publicly verified in this session — cite content area only."
+      "Managing Credit":
+        text: "Managing Credit"
+        level: topic
+        verified: true
+        benchmark_text_verified: false
+        note: "Topic name verified. Grade-8 Learning Outcome wording NOT publicly verified in this session — cite content area only."
+      "Managing Risk":
+        text: "Managing Risk"
+        level: topic
+        verified: true
+        benchmark_text_verified: false
+        note: "Topic name verified. Grade-8 Learning Outcome wording NOT publicly verified in this session — cite content area only."
+    benchmark_codes: {}
+    benchmark_code_note: >-
+      Individual grade-8 benchmarks appear in the wild as "<Topic> 8-<n>"
+      (e.g. "Spending 8-3"), by analogy with the grade-4 form "Spending 4-1"
+      seen in third-party crosswalks. NEITHER the numbering nor the wording was
+      verifiable in this session, so NO benchmark codes are listed and none may
+      be printed. Until someone downloads the PDF and fills this map in, write
+      alignment as: "National Standards for Personal Financial Education (2021),
+      Topic: Spending (grade 8 benchmarks)" — content area, no number, no quote.
+    how_to_cite_safely: >-
+      Content-area-only citation is honest, is what most state frameworks
+      themselves do, and still earns the search terms teachers use
+      ("personal financial literacy standards", "financial literacy standards
+      middle school"). Do not invent a benchmark number to look more precise.
+    verification_copies:
+      - label: "Publisher landing pages and the October 2021 joint release confirm the six topics and the grade 4/8/12 benchmark structure; the benchmark text itself sits inside the PDF, which this session could not fetch."
+        url: "https://www.jumpstart.org/education/national-standards/"
+
+  JUMPSTART:
+    name: "Jump$tart Coalition — see NSPFE"
+    same_as: "NSPFE"
+    source: "https://www.jumpstart.org/education/national-standards/"
+    primary_source_confirmed: false
+    codes: {}
+    note: >-
+      Alias record, kept because older product copy and docs/STANDARDS.md used to
+      say "Jump$tart National Standards in Personal Financial Education (2021)".
+      That 2021 document IS the joint CEE/Jump$tart NSPFE — use the NSPFE entry.
+      The genuinely Jump$tart-only framework is the retired 4th edition (2015),
+      whose six content areas were Financial Responsibility and Decision Making;
+      Income and Careers; Planning and Money Management; Credit and Debt; Risk
+      Management and Insurance; Saving and Investing. Do not cite the 2015 areas
+      as current; not verified here and superseded.
+    superseded_edition_verified: false
+
+  CEE:
+    name: "Council for Economic Education — see NSPFE"
+    same_as: "NSPFE"
+    source: "https://www.councilforeconed.org/"
+    primary_source_confirmed: false
+    codes: {}
+    note: >-
+      Alias record. CEE's personal-finance standards are the joint NSPFE (2021).
+      CEE separately maintains the "Voluntary National Content Standards in
+      Economics" (20 numbered standards, benchmarks at grades 4, 8 and 12) —
+      a DIFFERENT framework, genuinely useful for the entrepreneurship line
+      (opportunity cost, incentives, markets, entrepreneurship). It is NOT
+      captured here because its verbatim text was not retrievable in this
+      session. Add it as its own framework block after verifying against
+      the CEE PDF; do not cite "CEE Standard N" from memory.
+    economics_standards_captured: false
+
+  NCAS:
+    name: "National Core Arts Standards — the 11 discipline-neutral Anchor Standards (2014), as applied to Media Arts"
+    publisher: "National Coalition for Core Arts Standards"
+    source: "https://www.nationalartsstandards.org/"
+    primary_source_confirmed: false
+    why_this_line: >-
+      Media Arts is the arts discipline that actually covers game building —
+      interactive media, systems, audience, iteration. The 11 anchor standards
+      are shared by all five arts disciplines (dance, media arts, music,
+      theatre, visual art), so an anchor-standard citation is portable and
+      defensible even where a district has its own arts framework.
+    verification_copies:
+      - label: "COMAR 13A.04.16 (Maryland state regulation) Content Standards, adopted 'in alignment with the National Core Arts Standards' — state law text"
+        url: "https://raw.githubusercontent.com/maryland-dsd/law-xml/main/us/md/exec/comar/13A/04/16.xml"
+      - label: "psbrau-tech/teacher-planning-platform standards_alabama_arts.py anchor-text table (independent, derived from the Alabama arts course of study)"
+        url: "https://raw.githubusercontent.com/psbrau-tech/teacher-planning-platform/main/backend/app/standards_alabama_arts.py"
+      - label: "halestar/FormativeLMS SkillCategorySeeder.php (independent third copy)"
+        url: "https://raw.githubusercontent.com/halestar/FormativeLMS/main/database/seeders/SimpleSeeder/SkillCategorySeeder.php"
+    verification_note: >-
+      All 11 anchor standards match character-for-character between the Alabama-derived
+      table and FormativeLMS. Maryland's regulation agrees on 9 of 11 verbatim; it
+      rewords #4 ("Analyze, interpret, and select ...") and #5 (drops "techniques"),
+      which is Maryland editing its own regulation, not a different national text.
+      Two independent copies agree on #4 and #5 as written below.
+    codes:
+      "Anchor Standard 1":
+        text: "Generate and conceptualize artistic ideas and work."
+        process: "Creating"
+        verified: true
+      "Anchor Standard 2":
+        text: "Organize and develop artistic ideas and work."
+        process: "Creating"
+        verified: true
+      "Anchor Standard 3":
+        text: "Refine and complete artistic work."
+        process: "Creating"
+        verified: true
+      "Anchor Standard 4":
+        text: "Select, analyze, and interpret artistic work for presentation."
+        process: "Performing / Presenting / Producing"
+        verified: true
+      "Anchor Standard 5":
+        text: "Develop and refine artistic techniques and work for presentation."
+        process: "Performing / Presenting / Producing"
+        verified: true
+      "Anchor Standard 6":
+        text: "Convey meaning through the presentation of artistic work."
+        process: "Performing / Presenting / Producing"
+        verified: true
+      "Anchor Standard 7":
+        text: "Perceive and analyze artistic work."
+        process: "Responding"
+        verified: true
+      "Anchor Standard 8":
+        text: "Interpret intent and meaning in artistic work."
+        process: "Responding"
+        verified: true
+      "Anchor Standard 9":
+        text: "Apply criteria to evaluate artistic work."
+        process: "Responding"
+        verified: true
+      "Anchor Standard 10":
+        text: "Synthesize and relate knowledge and personal experiences to make art."
+        process: "Connecting"
+        verified: true
+      "Anchor Standard 11":
+        text: "Relate artistic ideas and works with societal, cultural, and historical context to deepen understanding."
+        process: "Connecting"
+        verified: true
+    media_arts_performance_codes: {}
+    media_arts_note: >-
+      Discipline- and grade-specific Media Arts performance standards are written
+      MA:Cr1.1.6a / MA:Pr5.1.7a / MA:Re7.1.8a and so on (discipline : process
+      component . anchor . grade . letter). NONE of them are recorded here — no
+      copy of their verbatim text was reachable in this session, and the
+      process-component labels for Media Arts specifically were not verifiable.
+      Do NOT write an "MA:" code into a product until someone verifies it against
+      nationalartsstandards.org and adds it to this map. Cite the anchor standard
+      instead: "National Core Arts Standards, Media Arts — Anchor Standard 2:
+      Organize and develop artistic ideas and work." That is verbatim-true today.
+
+# ---------------------------------------------------------------------------
+# Frameworks deliberately NOT in this registry (and why)
+# ---------------------------------------------------------------------------
+not_captured:
+  - framework: "State CTE Business / Marketing / Entrepreneurship clusters"
+    reason: >-
+      Codes are set state by state and change on state revision cycles. A code
+      that is real in Texas is invented everywhere else. See the portable-CTE
+      section of docs/STANDARDS.md — cite the national Career Cluster by NAME
+      (no code) plus CCSS ELA, never a state code the product cannot honour.
+  - framework: "CEE Voluntary National Content Standards in Economics (20 standards)"
+    reason: "Real and useful for the entrepreneurship line, but verbatim text was not retrievable in this session."
+  - framework: "AI4K12 national guidelines (Five Big Ideas in AI)"
+    reason: >-
+      A guideline framework, not adopted standards; teachers do not search it.
+      If it is ever wanted, Code.org carries 2021 and 2023 datasets at
+      dashboard/config/standards/ai4k12-2021_standards.csv and
+      ai4k12-2023_standards.csv — verify against a second copy first.
+  - framework: "NGSS, C3 Social Studies"
+    reason: "Out of scope for the four current product lines."
+
+# ---------------------------------------------------------------------------
+# Counts, so drift is obvious at a glance
+# ---------------------------------------------------------------------------
+counts:
+  ISTE: { codes: 35, verified: 35, detail: "7 strand statements + 28 indicators" }
+  CSTA: { codes: 23, verified: 23, detail: "complete Level 2 set" }
+  CSTA-2026: { codes: 45, verified: 45, detail: "complete MS band; do not cite as primary yet" }
+  CCSS-ELA: { codes: 144, verified: 144, detail: "RI/W/SL grades 6, 7, 8 incl. lettered sub-standards" }
+  CCSS-MATH: { codes: 54, verified: 54, detail: "6.RP 6.EE 6.SP 7.RP 7.EE 7.SP incl. lettered sub-standards; 12 cluster headings also recorded" }
+  NSPFE: { codes: 6, verified: 6, detail: "six topic names verified; ZERO benchmark texts verified" }
+  NCAS: { codes: 11, verified: 11, detail: "11 anchor standards; ZERO Media Arts MA: performance codes verified" }
+  JUMPSTART: { codes: 0, verified: 0, detail: "alias of NSPFE" }
+  CEE: { codes: 0, verified: 0, detail: "alias of NSPFE" }
+  total_codes: 318
+  total_verified: 318
+
+# ---------------------------------------------------------------------------
+# Key migration — read this before running `npm run validate`
+# ---------------------------------------------------------------------------
+# scripts/validate.mjs looks up frameworks[<product.yaml framework>] EXACTLY.
+# The keys below are the ones this registry defines; older product.yaml files
+# and curriculum/catalog.yaml use some different spellings. Rename in the
+# product/catalog file — do NOT add duplicate framework blocks here.
+framework_aliases:
+  "CCSS":         "CCSS-ELA or CCSS-MATH — split deliberately; pick the right one"
+  "CCSS-Math":    "CCSS-MATH"
+  "CCSS-Ela":     "CCSS-ELA"
+  "Jumpstart":    "NSPFE"
+  "Jump$tart":    "NSPFE"
+  "NCAS-Arts":    "NCAS"
+  "CTE-Business": "no registry framework — cite the Career Cluster by name plus CCSS-ELA (see docs/STANDARDS.md)"
+
+known_open_defects:
+  - where: "products/{ai-prompting-101, ai-agent-intern, bundle-ai-line}/product.yaml"
+    code: "ISTE 1.5.c"
+    problem: >-
+      Ships the paraphrase "Students break problems into component parts and
+      develop descriptions of solutions." The real standard is longer and names
+      "extract key information" and "descriptive models". This is exactly the
+      alignment-washing docs/JUDGE.md Gate 0 #4 auto-fails on. Replace with the
+      registry text, or drop the code if the lesson does not teach and assess it.
+  - where: "products/ai-taste-file/product.yaml"
+    code: "ISTE 1.1.c"
+    problem: >-
+      Ships a truncated version that stops after "improves their practice",
+      dropping "and to demonstrate their learning in a variety of ways".
+  - where: "every product.yaml citing CCSS"
+    code: "framework key"
+    problem: "framework: CCSS must become CCSS-ELA (or CCSS-MATH). See framework_aliases."

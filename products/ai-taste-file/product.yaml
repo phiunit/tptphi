@@ -17,10 +17,11 @@ tags:
   - technology
   - computer science
 standards:
-  - { framework: CCSS, code: "W.6.5", text: "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach." }
+  - { framework: CCSS-ELA, code: "W.6.5", text: "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 6 here.)" }
   - { framework: ISTE, code: "1.6.b", text: "Students create original works or responsibly repurpose or remix digital resources into new creations." }
-  - { framework: ISTE, code: "1.1.c", text: "Students use technology to seek feedback that informs and improves their practice." }
+  - { framework: ISTE, code: "1.1.c", text: "Students use technology to seek feedback that informs and improves their practice and to demonstrate their learning in a variety of ways." }
 description: |
+  NO STUDENT AI ACCOUNTS NEEDED. Every lesson in this unit runs fully unplugged — on paper, with partners — so it works in districts that restrict student AI use or devices, and in any classroom without reliable tech. Where devices are available, each plan says exactly what they add.
   AI as editor, not ghostwriter: a no-prep, 45-minute revision and feedback lesson where students teach AI (or a partner playing AI) their personal taste — then use it to make their OWN writing better.
 
   The hook: your For-You Page didn't guess your taste. You taught it, one like at a time — and the more precisely you signal what you like, the better the feed serves you. AI works the same way. Generic in, generic out.

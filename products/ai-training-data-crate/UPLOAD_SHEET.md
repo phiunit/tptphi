@@ -30,7 +30,7 @@ AI literacy, artificial intelligence, machine learning, training data, algorithm
 ```
 
 **Description** — paste the `description:` block from `products/ai-training-data-crate/product.yaml`
-(1697 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(1980 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
 
 
 ## Before you hit Publish

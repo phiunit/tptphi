@@ -97,11 +97,11 @@ products:
       title: "Entrepreneurship Capstone: One Friend to Ten Thousand - The Reach Ladder" }
 
   # ---- WAVE 2: Game Building & Creative Tech unit (see curriculum/units/games-unit.md) ----
-  - { slug: games-fun-audit,         line: games,        priority: 2, status: idea, price: 0, unit: games-build-1, lesson: 1,
+  - { slug: games-fun-audit,         line: games,        priority: 1, status: idea, price: 0, unit: games-build-1, lesson: 1,
       title: "Game Design Lesson: Why You Deleted That Game - The Fun Audit (Free)" }
-  - { slug: games-core-loop,         line: games,        priority: 2, status: idea, price: 4, unit: games-build-1, lesson: 2,
+  - { slug: games-core-loop,         line: games,        priority: 1, status: idea, price: 4, unit: games-build-1, lesson: 2,
       title: "Core Loop Lesson: The Thing You Do a Thousand Times (Game Design, No Tech)" }
-  - { slug: games-skill-tree,        line: games,        priority: 2, status: idea, price: 4, unit: games-build-1, lesson: 3,
+  - { slug: games-skill-tree,        line: games,        priority: 1, status: idea, price: 4, unit: games-build-1, lesson: 3,
       title: "Level Up: Design a Skill Tree - Game Progression + Variables (Grades 6-8)" }
   - { slug: games-same-rules-new-skin, line: games,      priority: 3, status: idea, price: 5, unit: games-build-1, lesson: 4,
       title: "Same Rules, New Skin: Remix a Game + Write the Spec (Game Design Writing)" }

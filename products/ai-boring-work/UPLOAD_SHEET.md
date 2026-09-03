@@ -30,7 +30,7 @@ AI literacy, artificial intelligence, future jobs, automation, career exploratio
 ```
 
 **Description** — paste the `description:` block from `products/ai-boring-work/product.yaml`
-(1373 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(1656 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
 
 
 ## Before you hit Publish

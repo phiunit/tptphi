@@ -15,10 +15,11 @@ tags:
   - technology
   - computer science
 standards:
-  - { framework: ISTE, code: "1.5.c", text: "Students break problems into component parts and develop descriptions of solutions." }
+  - { framework: ISTE, code: "1.5.c", text: "Students break problems into component parts, extract key information, and develop descriptive models to understand complex systems or facilitate problem-solving." }
   - { framework: ISTE, code: "1.3.b", text: "Students evaluate the accuracy, perspective, credibility and relevance of information, media, data or other resources." }
-  - { framework: CCSS, code: "W.6.4", text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience." }
+  - { framework: CCSS-ELA, code: "W.6.4", text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)" }
 description: |
+  NO STUDENT AI ACCOUNTS NEEDED. Every lesson in this unit runs fully unplugged — on paper, with partners — so it works in districts that restrict student AI use or devices, and in any classroom without reliable tech. Where devices are available, each plan says exactly what they add.
   Your students already use AI. This no-prep, 45-minute lesson teaches them to use it WELL — and to think critically about what comes back.
 
   The hook: AI is a literal genie. It grants exactly what your words ask for — not what your brain meant. The lesson opens with "The Worst Genie Ever" (you, cheerfully ruining vague wishes), then teaches the P.R.O. framework (Purpose, Requirements, Output) — the three clauses of a genie-proof wish. In the Cursed Wish Repair Shop, students rewrite broken prompts, then try to BREAK each other's prompts by misreading them like a literal genie — adversarial thinking that's the real skill behind prompt writing.

@@ -18,8 +18,9 @@ tags:
 standards:
   - { framework: CSTA, code: "2-IC-21", text: "Discuss issues of bias and accessibility in the design of existing technologies." }
   - { framework: ISTE, code: "1.1.d", text: "Students understand the fundamental concepts of technology operations, demonstrate the ability to choose, use and troubleshoot current technologies and are able to transfer their knowledge to explore emerging technologies." }
-  - { framework: CCSS, code: "SL.6.1", text: "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 6 topics, texts, and issues, building on others' ideas and expressing their own clearly." }
+  - { framework: CCSS-ELA, code: "SL.6.1", text: "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 6 topics, texts, and issues, building on others' ideas and expressing their own clearly." }
 description: |
+  NO STUDENT AI ACCOUNTS NEEDED. Every lesson in this unit runs fully unplugged — on paper, with partners — so it works in districts that restrict student AI use or devices, and in any classroom without reliable tech. Where devices are available, each plan says exactly what they add.
   How does AI actually learn — and where does AI bias come from? This no-prep, 45-minute lesson answers both with one analogy your students will never forget: a playlist. An AI can only mix what's in its playlist. Training data IS the playlist — and a playlist with only one genre serves some requests great and fails everyone else.
 
   The hook: you play The One-Playlist App, a recommendation AI whose playlist holds nothing but loud, fast party tracks. Study music? Party track. A song in Spanish for a grandmother's birthday? Party track. Then the real question: is the app broken — or is the playlist?

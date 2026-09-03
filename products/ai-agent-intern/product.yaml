@@ -17,10 +17,11 @@ tags:
   - computer science
   - game based learning
 standards:
-  - { framework: ISTE, code: "1.5.c", text: "Students break problems into component parts and develop descriptions of solutions." }
+  - { framework: ISTE, code: "1.5.c", text: "Students break problems into component parts, extract key information, and develop descriptive models to understand complex systems or facilitate problem-solving." }
   - { framework: ISTE, code: "1.7.c", text: "Students contribute constructively to project teams, assuming various roles and responsibilities to work effectively toward a common goal." }
-  - { framework: CCSS, code: "W.6.4", text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience." }
+  - { framework: CCSS-ELA, code: "W.6.4", text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)" }
 description: |
+  NO STUDENT AI ACCOUNTS NEEDED. Every lesson in this unit runs fully unplugged — on paper, with partners — so it works in districts that restrict student AI use or devices, and in any classroom without reliable tech. Where devices are available, each plan says exactly what they add.
   AI agents are here, and your students will lead them — not the other way around. This no-prep, 45-minute capstone teaches the skill adults call delegation, in the language every middle schooler already speaks: leading a game squad. Zero devices required.
 
   The hook: an AI agent is a party member — capable, tireless, and EXTREMELY literal. Party leaders don't redo the squad's work, they review it. They write a clear QUEST CARD (the goal, what the team knows, the rules of the run, what done looks like), assign ROLES (planner, scout, critic), and CHECK THE LOOT (accuracy, taste, done-ness) before anything ships. In the main activity, Run the Quest, teams of three plan a real-feeling class project — a Game Night page or a class zine issue. Each teammate plays one agent role and works ONLY from the quest card, silently. Then the rotating party leader reviews each output against a printed CHECK rubric and writes a run-it-back note. Vague quest cards fail in front of everyone — and that failure is the lesson.
