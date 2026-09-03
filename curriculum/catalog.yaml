@@ -63,3 +63,45 @@ products:
       title: "AI Literacy Unit Bundle: 6 Lessons (Grades 6-8)" }
   - { slug: bundle-finance-line,     line: finance,      priority: 3, status: idea, price: 12,
       title: "Future Money Complete Bundle (Grades 6-8)" }
+
+  # ---- WAVE 2: Personal Finance & Risk unit (see curriculum/units/finance-unit.md) ----
+  - { slug: finance-money-battery,   line: finance,      priority: 2, status: idea, price: 0, unit: finance-risk-1, lesson: 1,
+      title: "Budgeting Lesson: The Money Battery - Where Did It All Go? (Free, Grades 6-8)" }
+  - { slug: finance-owns-the-ball,   line: finance,      priority: 2, status: idea, price: 4, unit: finance-risk-1, lesson: 2,
+      title: "Financial Literacy Lesson: Who Owns the Ball? Earning Hours vs. Owning Assets" }
+  - { slug: finance-inventory-check, line: finance,      priority: 2, status: idea, price: 5, unit: finance-risk-1, lesson: 3,
+      title: "Check Your Inventory: The Kinds of Wealth That Aren't Cash (Financial Literacy)" }
+  - { slug: finance-cupcakes-stickers, line: finance,    priority: 2, status: idea, price: 5, unit: finance-risk-1, lesson: 4,
+      title: "Cupcakes vs. Stickers: Unit Rate & Pricing Project (What One More Costs)" }
+  - { slug: finance-extra-lives,     line: finance,      priority: 2, status: idea, price: 5, unit: finance-risk-1, lesson: 5,
+      title: "Risk & Probability Lesson: How Many Lives Do You Have? Sizing a Risk" }
+  - { slug: finance-find-the-gap,    line: finance,      priority: 2, status: idea, price: 6, unit: finance-risk-1, lesson: 6,
+      title: "Financial Literacy Capstone: Find the Gap - Buy Low, Sell High Sim + Pitch" }
+
+  # ---- WAVE 2: 21st-Century Entrepreneurship unit (see curriculum/units/entrepreneur-unit.md) ----
+  - { slug: ent-cook-or-chef,        line: entrepreneur, priority: 2, status: idea, price: 0, unit: entrepreneur-1, lesson: 1,
+      title: "Entrepreneurship Lesson: Cook or Chef? First Principles Problem Solving (Free)" }
+  - { slug: ent-skateboard-first,    line: entrepreneur, priority: 2, status: idea, price: 4, unit: entrepreneur-1, lesson: 2,
+      title: "Skateboard First: MVP Lesson - Build the Smallest Thing That Actually Works" }
+  - { slug: ent-who-pays-who-plays,  line: entrepreneur, priority: 2, status: idea, price: 5, unit: entrepreneur-1, lesson: 3,
+      title: "Who Pays, Who Plays: Customer Thinking for Middle School Entrepreneurs" }
+  - { slug: ent-nobody-came,         line: entrepreneur, priority: 2, status: idea, price: 5, unit: entrepreneur-1, lesson: 4,
+      title: "Nobody Came: Launch Plan Project (Marketing & Distribution, Grades 6-8)" }
+  - { slug: ent-shots-on-goal,       line: entrepreneur, priority: 3, status: idea, price: 4, unit: entrepreneur-1, lesson: 5,
+      title: "Shots on Goal: Ten Tries Beat One Perfect Plan (Iteration & Persistence)" }
+  - { slug: ent-reach-ladder,        line: entrepreneur, priority: 3, status: idea, price: 6, unit: entrepreneur-1, lesson: 6,
+      title: "Entrepreneurship Capstone: One Friend to Ten Thousand - The Reach Ladder" }
+
+  # ---- WAVE 2: Game Building & Creative Tech unit (see curriculum/units/games-unit.md) ----
+  - { slug: games-fun-audit,         line: games,        priority: 2, status: idea, price: 0, unit: games-build-1, lesson: 1,
+      title: "Game Design Lesson: Why You Deleted That Game - The Fun Audit (Free)" }
+  - { slug: games-core-loop,         line: games,        priority: 2, status: idea, price: 4, unit: games-build-1, lesson: 2,
+      title: "Core Loop Lesson: The Thing You Do a Thousand Times (Game Design, No Tech)" }
+  - { slug: games-skill-tree,        line: games,        priority: 2, status: idea, price: 4, unit: games-build-1, lesson: 3,
+      title: "Level Up: Design a Skill Tree - Game Progression + Variables (Grades 6-8)" }
+  - { slug: games-same-rules-new-skin, line: games,      priority: 3, status: idea, price: 5, unit: games-build-1, lesson: 4,
+      title: "Same Rules, New Skin: Remix a Game + Write the Spec (Game Design Writing)" }
+  - { slug: games-hands-off-controller, line: games,     priority: 3, status: idea, price: 5, unit: games-build-1, lesson: 5,
+      title: "Playtesting Lesson: Hands Off the Controller - Feedback & Iteration" }
+  - { slug: games-fun-first-jam,     line: games,        priority: 3, status: idea, price: 6, unit: games-build-1, lesson: 6,
+      title: "Game Jam Capstone: Ship a Playable Game in One Class Period (Print, No Tech)" }
