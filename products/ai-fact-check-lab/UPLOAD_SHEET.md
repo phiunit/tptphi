@@ -11,9 +11,7 @@ AI Fact Checking Lesson: Spot Fake Facts Activity | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Hallucination Hunters - Lesson Plan.pdf`
-- `dist/Hallucination Hunters - Teacher Guide.pdf`
-- `dist/Hallucination Hunters - Worksheet.pdf`
+- `dist/Hallucination Hunters (Future Skills).zip`  (single zip — use for free listings)
 
 **Custom cover (optional):** `dist/Hallucination Hunters - Cover.png`
 

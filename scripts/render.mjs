@@ -109,4 +109,18 @@ for (const p of products) {
   }
 }
 await browser.close();
+
+// Package each product's PDFs into one zip (TPT free listings accept a single file;
+// regenerating here means the zip can never go stale behind the PDFs).
+import { execFileSync } from 'node:child_process';
+for (const p of listProducts(slug)) {
+  const distDir = path.join(p.dir, 'dist');
+  const pdfs = fs.readdirSync(distDir).filter(f => f.endsWith('.pdf')).map(f => path.join(distDir, f));
+  if (!pdfs.length) continue;
+  for (const z of fs.readdirSync(distDir).filter(f => f.endsWith('.zip'))) fs.rmSync(path.join(distDir, z));
+  const lesson = (p.meta.short_name || String(p.meta.title).split(':')[0]).trim().replace(/[\\/:*?"<>|]/g, '');
+  const zipPath = path.join(distDir, `${lesson} (Future Skills).zip`);
+  try { execFileSync('zip', ['-q', '-j', zipPath, ...pdfs]); console.log('ZIP ', path.relative(process.cwd(), zipPath)); }
+  catch (e) { console.warn('zip skipped (is `zip` installed?):', e.message.split('\n')[0]); }
+}
 console.log('Render complete.');

@@ -11,7 +11,7 @@ AI Literacy Lesson: Prompt Writing Activity | Middle School 6-8 | FREE No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/How to Talk to AI (Free AI Literacy Lesson).zip`  (single zip — use for free listings)
+- `dist/How to Talk to AI (Future Skills).zip`  (single zip — use for free listings)
 
 **Custom cover (optional):** `dist/How to Talk to AI - Cover.png`
 

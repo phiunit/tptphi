@@ -11,9 +11,7 @@ How AI Works Lesson: Training Data & Bias Activity | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/What's in the Playlist - Lesson Plan.pdf`
-- `dist/What's in the Playlist - Teacher Guide.pdf`
-- `dist/What's in the Playlist - Worksheet.pdf`
+- `dist/What's in the Playlist (Future Skills).zip`  (single zip — use for free listings)
 
 **Custom cover (optional):** `dist/What's in the Playlist - Cover.png`
 

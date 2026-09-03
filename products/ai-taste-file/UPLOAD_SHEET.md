@@ -11,9 +11,7 @@ AI Writing Feedback Lesson: Revision Activity | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Teach AI Your Taste - Lesson Plan.pdf`
-- `dist/Teach AI Your Taste - Teacher Guide.pdf`
-- `dist/Teach AI Your Taste - Worksheet.pdf`
+- `dist/Teach AI Your Taste (Future Skills).zip`  (single zip — use for free listings)
 
 **Custom cover (optional):** `dist/Teach AI Your Taste - Cover.png`
 

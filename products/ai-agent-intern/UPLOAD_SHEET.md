@@ -11,9 +11,7 @@ AI Agents Lesson: Team Roles & Project Planning Activity | Grades 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Lead Your AI Squad - Lesson Plan.pdf`
-- `dist/Lead Your AI Squad - Teacher Guide.pdf`
-- `dist/Lead Your AI Squad - Worksheet.pdf`
+- `dist/Lead Your AI Squad (Future Skills).zip`  (single zip — use for free listings)
 
 **Custom cover (optional):** `dist/Lead Your AI Squad - Cover.png`
 

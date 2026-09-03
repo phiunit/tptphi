@@ -11,9 +11,7 @@ AI and Future Jobs Lesson: Career Exploration Activity | Grades 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Robots Do the Boring Work - Lesson Plan.pdf`
-- `dist/Robots Do the Boring Work - Teacher Guide.pdf`
-- `dist/Robots Do the Boring Work - Worksheet.pdf`
+- `dist/Robots Do the Boring Work (Future Skills).zip`  (single zip — use for free listings)
 
 **Custom cover (optional):** `dist/Robots Do the Boring Work - Cover.png`
 

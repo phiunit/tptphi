@@ -11,7 +11,7 @@ AI Literacy Unit Bundle: 6 No Prep Lessons | Middle School 6-8 | Future Skills
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/AI Literacy Unit - Unit Overview.pdf`
+- `dist/AI Literacy Unit (Future Skills).zip`  (single zip — use for free listings)
 
 **Custom cover (optional):** `dist/AI Literacy Unit - Cover.png`
 
