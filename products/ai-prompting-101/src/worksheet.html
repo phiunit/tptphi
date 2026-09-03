@@ -1,6 +1,8 @@
 <!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="../../../brand/templates/print.css">
 <style>
+  .writebox { min-height: 100px; }
+  td.tick { text-align:center; } td.tick::before { content:""; display:inline-block; width:14px; height:14px; border:1.5px solid #14141F; border-radius:3px; }
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .wishhead { display: flex; align-items: center; gap: 10px; }
   .wishbadge { width: 34px; height: 34px; flex: 0 0 34px; }
@@ -77,10 +79,10 @@
   <p>Swap sheets. Read each repaired wish like a literal genie looking for a loophole, then score it:</p>
   <table>
     <tr><th>Genie-Proof Checklist</th><th>Wish 1</th><th>Wish 2</th><th>Wish 3</th></tr>
-    <tr><td><strong>P</strong> — Clear purpose and audience?</td><td></td><td></td><td></td></tr>
-    <tr><td><strong>R</strong> — At least 2 pieces of fine print (length, tone, format, include/avoid)?</td><td></td><td></td><td></td></tr>
-    <tr><td><strong>O</strong> — Says what the output should look like?</td><td></td><td></td><td></td></tr>
-    <tr><td><svg width="15" height="15" viewBox="0 0 24 24" style="vertical-align:-2px"><use href="#sparkle"/></svg> <strong>Genie test</strong> — Can you still twist this wish? (✗ = genie-proof!)</td><td></td><td></td><td></td></tr>
+    <tr><td><strong>P</strong> — Clear purpose and audience?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td><strong>R</strong> — At least 2 pieces of fine print (length, tone, format, include/avoid)?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td><strong>O</strong> — Says what the output should look like?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td><svg width="15" height="15" viewBox="0 0 24 24" style="vertical-align:-2px"><use href="#sparkle"/></svg> <strong>Genie test</strong> — Genie-proof? (✓ only if the genie can't twist it)</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
   </table>
   <p>The sneakiest way you could twist one of their wishes (be specific — which wish, and how?):</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>

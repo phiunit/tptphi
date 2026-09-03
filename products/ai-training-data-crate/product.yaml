@@ -3,7 +3,7 @@ short_name: "What's in the Playlist"
 line: ai
 grades: "6-8"
 price_usd: 4
-status: idea
+status: rendered
 resource_types: [Lesson, Worksheets, Activities, Printables]
 tags:
   - AI literacy

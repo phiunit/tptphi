@@ -89,8 +89,8 @@ for (const p of products) {
         }
         for (const ab of art) {
           for (const { r: tb, owner } of lines) {
-            if (ab.left < tb.right - 4 && ab.right > tb.left + 4 && ab.top < tb.bottom - 4 && ab.bottom > tb.top + 4)
-              return `motif art overlaps text in <${owner.tagName.toLowerCase()}${owner.className ? '.' + owner.className : ''}>`;
+            if (ab.left < tb.right + 12 && ab.right > tb.left - 12 && ab.top < tb.bottom + 12 && ab.bottom > tb.top - 12) // 12px clearance, not mere non-overlap
+              return `motif art within 12px of text in <${owner.tagName.toLowerCase()}${owner.className ? '.' + owner.className : ''}>`;
           } }
         return null;
       });
@@ -115,7 +115,7 @@ await browser.close();
 import { execFileSync } from 'node:child_process';
 for (const p of listProducts(slug)) {
   const distDir = path.join(p.dir, 'dist');
-  const pdfs = fs.readdirSync(distDir).filter(f => f.endsWith('.pdf')).map(f => path.join(distDir, f));
+  const pdfs = fs.readdirSync(distDir).filter(f => f.endsWith('.pdf') && !/ - Preview\.pdf$/.test(f)).map(f => path.join(distDir, f));
   if (!pdfs.length) continue;
   for (const z of fs.readdirSync(distDir).filter(f => f.endsWith('.zip'))) fs.rmSync(path.join(distDir, z));
   const lesson = (p.meta.short_name || String(p.meta.title).split(':')[0]).trim().replace(/[\\/:*?"<>|]/g, '');

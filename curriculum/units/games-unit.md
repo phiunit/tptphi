@@ -16,7 +16,7 @@ four-card cycle and fix the card that makes rep fifty a chore; build a progressi
 next unlock is the thing the player already wants; separate a game's rules from its skin well enough
 to remix a familiar game into a new one that a stranger can play from the spec alone; watch someone
 play their game without saying a single word and log where the player hesitated; and then ship a
-finished, played, fun-scored game inside one timed jam. The deliverable is not a design document. It
+finished, played, fun-scored game inside one timed jam. The result is not a design document. It
 is a game somebody played.
 
 ## Unit through-line

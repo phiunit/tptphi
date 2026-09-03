@@ -19,6 +19,7 @@ const browser = await launch();
 const page = await browser.newPage({ viewport: { width: 850, height: 1100 } });
 const srcDir = path.join(product.dir, 'src');
 for (const f of fs.readdirSync(srcDir).filter(f => f.endsWith('.html'))) {
+  await page.setViewportSize({ width: 850, height: 1100 }); // reset: a grown viewport from the previous doc re-lays-out covers and hides bottom-anchored art
   await page.goto('file://' + path.join(srcDir, f), { waitUntil: 'networkidle' });
   const base = f.replace(/\.html$/, '');
   const boxes = await page.evaluate(() =>

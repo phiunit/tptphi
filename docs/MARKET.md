@@ -434,7 +434,7 @@ $10–30 unit-bundle band, and below the ~$46 AI mega-bundle signal. See §7.
 
 ### 1. Re-headline the AI line as **"no-device / unplugged AI literacy."** (Highest impact, most urgent)
 The NYC 2K–8 AI ban is **one day old**, covers ~600k students, disables 38+ AI-enabled programs, and
-caps grade 6–8 screen time at 45 min/day — while 73% of districts still teach AI literacy in 6–8.
+caps grade 6–8 screen time at 45 min/day — while 73% of surveyed educators still teach AI literacy in 6–8.
 Competitor flagships assume live model access. Rewrite the six AI product descriptions and the
 bundle so "**no student AI accounts required · no devices · print and teach**" is in the **first
 180 characters** and in the cover. Add "unplugged," "no devices," "no tech required," "screen-free"

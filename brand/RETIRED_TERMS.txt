@@ -1,0 +1,16 @@
+# One term per line. Case-insensitive, whole-word. validate FAILS if any appears in a product's
+# src/*.html or product.yaml (slugs/filenames excluded). Add a product-specific list with
+# `retired_terms: [...]` in product.yaml. Why: a global grep found "DJ crate" surviving in a
+# different lesson after four visual reviews missed it. Retired analogies and banned jargon go here.
+crate
+DJ
+DJs
+intern
+stakeholder
+deliverable
+workflow
+career options
+Wish Carefully
+Prompt Like a Producer
+Phi Unit
+Teaches the Future

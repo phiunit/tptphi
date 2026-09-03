@@ -12,7 +12,8 @@
     "judge": "node scripts/judge.mjs",
     "readability": "node scripts/readability.mjs",
     "sheet": "node scripts/upload_sheet.mjs",
-    "storefront": "node scripts/storefront.mjs"
+    "storefront": "node scripts/storefront.mjs",
+    "preview": "node scripts/preview.mjs"
   },
   "dependencies": {
     "playwright-core": "^1.49.0",

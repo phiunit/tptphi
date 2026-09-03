@@ -39,7 +39,7 @@ so teachers can justify the purchase to admin.
 ## Positioning shift (Sep 2026)
 NYC — the largest US district — banned student-facing generative AI and companion chatbots for
 pre-K through grade 8 for the 2026-27 year, with a 45-min/day screen cap for grades 6–8, while
-~73% of educators say grades 6–8 already get AI-literacy lessons. Competitor AI products assume
+~73% of educators surveyed say grades 6–8 already get AI-literacy lessons. Competitor AI products assume
 live model access. Our unplugged-by-design mandate is therefore the **headline**, not a feature:
 lead every AI listing with "no student AI accounts needed."
 

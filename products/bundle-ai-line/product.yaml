@@ -2,8 +2,8 @@ title: "AI Literacy Unit Bundle: 6 No Prep Lessons | Middle School 6-8 | Future 
 short_name: "AI Literacy Unit"
 line: ai
 grades: "6-8"
-price_usd: 14.00        # 6 lessons; ~35% off buying separately ($0 + 5 x $4)
-status: draft
+price_usd: 14.00        # 6 lessons; 30% off buying separately ($0 + 5 x $4 = $20)
+status: rendered
 resource_types: [Unit Plans, Lesson, Worksheets, Activities, Printables]
 bundle_of: [ai-prompting-101, ai-training-data-crate, ai-fact-check-lab, ai-taste-file, ai-boring-work, ai-agent-intern]
 tags:
@@ -27,7 +27,7 @@ description: |
 
   THE ARC: students learn to write prompts that can't be twisted (Lesson 1), discover how AI learns and where bias comes from (2), fact-check AI output like a newsroom (3), teach AI their own taste and revise their own writing (4), argue the tradeoffs of automation and future jobs (5), then run a team of AI helpers in a capstone that reuses every skill (6).
 
-  EVERY LESSON INCLUDES: a scripted 45-minute plan with timed blocks, a 2-page student worksheet with real write-in space, a teacher guide with answer key and exemplars, an exit ticket, support/extension/ELL variants, and a fully unplugged version — because no lesson here requires a single device. Print and teach.
+  EVERY LESSON INCLUDES: a scripted 45-minute plan with timed blocks, a 2- to 3-page student worksheet with real write-in space, a teacher guide with answer key and exemplars, an exit ticket, support/extension/ELL variants, and a fully unplugged version — because no lesson here requires a single device. Print and teach.
 
   THE THROUGH-LINE: every AI job runs human to AI to human. A person starts it with the prompt; a person ends it with the check. That transfers to every AI tool your students will ever touch. And the honesty policy is one sentence they remember: AI is your editor, not your ghostwriter.
 

@@ -1,6 +1,6 @@
 # Unit: Personal Finance & Risk — "Future Money" (6 lessons, grades 6–8)
 Bundle target: bundle-finance-line ($12–15). Every lesson: 45 min, no-prep, unplugged variant,
-$4–6 (L1 free). Scope matches Jump$tart / CEE personal-finance topic areas and double-dips into
+$4–6 (L1 free). Scope matches NSPFE (Jump$tart/CEE) / NSPFE personal-finance topic areas and double-dips into
 CCSS Math (6.RP ratios, 6.EE relationships, 7.SP probability):
 track it → earn it → count what isn't cash → price it → size the risk → find the gap (capstone).
 
@@ -21,12 +21,12 @@ a bank account, a device, or a job — which is exactly why a sixth grader can d
 ## The six lessons
 | # | Slug | Title theme | Load-bearing analogy | Anchor standards |
 |---|---|---|---|---|
-| 1 | finance-money-battery | The Money Battery: where did it all go? (tracking + swaps) | Phone battery: you start the day at 100%, apps drain it at different rates, and if you don't know which app is eating it you're dead by lunch | Jump$tart Spending & Saving, 8th-grade benchmarks (verify code); CEE Spending, Grade 8 (verify code); CCSS.MATH.6.RP.A.3.C |
-| 2 | finance-owns-the-ball | Who Owns the Ball? (hours vs. owning something) | The kid who owns the ball never has to run to get picked — the ball earns while he stands there | CEE Earning Income, Grade 8 (verify code); CCSS.MATH.6.EE.C.9; CCSS.ELA-LITERACY.SL.6.1 |
-| 3 | finance-inventory-check | Check Your Inventory (the wealth that isn't cash) | Game inventory: coins are one slot; the map, the key, and the faction you're trusted by are other slots — and slots can be crafted into each other | Jump$tart Employment & Income, 8th-grade benchmarks (verify code); CCSS.ELA-LITERACY.W.6.4; CCSS.ELA-LITERACY.SL.6.1 |
-| 4 | finance-cupcakes-stickers | Cupcakes vs. Stickers (what it costs to make one more) | Every cupcake costs flour again; the sticker you drew once prints 300 times for pennies | CCSS.MATH.6.RP.A.3.B; CCSS.MATH.7.RP.A.2; CEE Spending + Earning Income, Grade 8 (verify code) |
-| 5 | finance-extra-lives | How Many Lives Do You Have? (sizing a risk) | Extra lives: you take the big jump on life 5 and play safe on life 1 — the risk didn't change, your cushion did | Jump$tart Risk Management & Insurance, 8th-grade benchmarks (verify code); CCSS.MATH.7.SP.C.5; CCSS.ELA-LITERACY.SL.6.1 |
-| 6 | finance-find-the-gap | Find the Gap (capstone: buy low, sell high, and the version that isn't money) | The kid who buys snacks for $1 and sells them for $2.50 at the game — he found a price gap and paid to get there | Jump$tart Financial Decision Making, 8th-grade benchmarks (verify code); CCSS.MATH.7.RP.A.3; CCSS.ELA-LITERACY.SL.6.4 |
+| 1 | finance-money-battery | The Money Battery: where did it all go? (tracking + swaps) | Phone battery: you start the day at 100%, apps drain it at different rates, and if you don't know which app is eating it you're dead by lunch | NSPFE (Jump$tart/CEE) Spending & Saving, 8th-grade benchmarks (verify code); NSPFE Spending, Grade 8 (verify code); CCSS.MATH.6.RP.A.3.C |
+| 2 | finance-owns-the-ball | Who Owns the Ball? (hours vs. owning something) | The kid who owns the ball never has to run to get picked — the ball earns while he stands there | NSPFE Earning Income, Grade 8 (verify code); CCSS.MATH.6.EE.C.9; CCSS.ELA-LITERACY.SL.6.1 |
+| 3 | finance-inventory-check | Check Your Inventory (the wealth that isn't cash) | Game inventory: coins are one slot; the map, the key, and the faction you're trusted by are other slots — and slots can be crafted into each other | NSPFE (Jump$tart/CEE) Employment & Income, 8th-grade benchmarks (verify code); CCSS.ELA-LITERACY.W.6.4; CCSS.ELA-LITERACY.SL.6.1 |
+| 4 | finance-cupcakes-stickers | Cupcakes vs. Stickers (what it costs to make one more) | Every cupcake costs flour again; the sticker you drew once prints 300 times for pennies | CCSS.MATH.6.RP.A.3.B; CCSS.MATH.7.RP.A.2; NSPFE Spending + Earning Income, Grade 8 (verify code) |
+| 5 | finance-extra-lives | How Many Lives Do You Have? (sizing a risk) | Extra lives: you take the big jump on life 5 and play safe on life 1 — the risk didn't change, your cushion did | NSPFE (Jump$tart/CEE) Risk Management & Insurance, 8th-grade benchmarks (verify code); CCSS.MATH.7.SP.C.5; CCSS.ELA-LITERACY.SL.6.1 |
+| 6 | finance-find-the-gap | Find the Gap (capstone: buy low, sell high, and the version that isn't money) | The kid who buys snacks for $1 and sells them for $2.50 at the game — he found a price gap and paid to get there | NSPFE (Jump$tart/CEE) Financial Decision Making, 8th-grade benchmarks (verify code); CCSS.MATH.7.RP.A.3; CCSS.ELA-LITERACY.SL.6.4 |
 
 ## Unit through-line
 **Cost → Value → What You Can Lose.** Every lesson asks the same three questions in the same order:
