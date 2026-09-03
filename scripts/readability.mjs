@@ -34,9 +34,9 @@ for (const p of listProducts(process.argv[2])) {
     await page.goto('file://' + path.join(srcDir, f), { waitUntil: 'networkidle' });
     const text = await page.evaluate(() => {
       // student prose only: paragraphs and list items, not tables/chips/mastheads/footers
-      const skip = 'table, .chips, .masthead, .footer, .kicker, svg';
+      const skip = '.chips, .masthead, .footer, .kicker, svg'; // everything a student reads, tables included
       document.querySelectorAll(skip).forEach(el => el.remove());
-      return [...document.querySelectorAll('p, li')].map(el => el.textContent.trim())
+      return [...document.querySelectorAll('.page')].map(el => el.innerText.replace(/\s+/g, ' ').trim())
         .filter(t => t.split(/\s+/).length > 4).join(' ');
     });
     const r = fk(text);

@@ -18,7 +18,7 @@ listing.
 ## Gate results
 | Gate | Item | Result | Evidence |
 |---|---|---|---|
-| 0 | Listing ↔ files | meets | Description names 6 lessons, pacing guide, unplugged-by-design; all present |
+| 0 | Listing ↔ files | meets (after 2nd audit) | Description names 6 lessons, pacing guide, unplugged-by-design; all present. Unit Overview standards row and page count were stale — fixed, see below |
 | 2 | Usability | meets | Unit Overview: sequence, per-lesson minutes, through-line (Human → AI → Human), when to run each |
 | 3 | Thumbnail | meets | Cover verified: unit title, "6 lessons," grade chip, No AI Accounts chip |
 | 3 | Listing | meets | Title 78 chars keyword-first; description 400+; price note honest |
@@ -27,3 +27,14 @@ listing.
 
 ## Would improve (non-blocking)
 - Add a one-page unit assessment (cumulative exit ticket) as a bundle-exclusive.
+
+## Second independent audit — 2026-09-03 (post-fix re-verification)
+A second adversarial judge re-read all 46 screenshots and every source file after the fixes above.
+It found defects the first pass and this report had missed; every one is now fixed and re-rendered.
+The bundle cover was already clean (its stars sit off the text).
+
+Product-specific findings, fixed:
+- **The "Listing ↔ files: meets" row above was false.** The Unit Overview's standards table still listed
+  ISTE 1.1.c for Lesson 4 (cut in favour of SL.6.1), and "What's in every lesson" said "2-page
+  worksheet" when Lesson 3's is 3 pages. Both corrected ("2- to 3-page").
+Verdict after re-audit: **PASS** (0 fails, 0 partials).

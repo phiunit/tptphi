@@ -4,6 +4,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { launch, listProducts } from './lib.mjs';
+import { makeFillable } from './fillable.mjs';
+import { buildSlides } from './slides.mjs';
 
 const slug = process.argv[2];
 const products = listProducts(slug);
@@ -14,7 +16,7 @@ const page = await browser.newPage();
 
 // Teachers organize downloads by filename: name outputs "<Lesson Name> - <Doc>.pdf"
 const DOC_NAMES = { 'lesson-plan': 'Lesson Plan', 'worksheet': 'Worksheet',
-  'teacher-guide': 'Teacher Guide', 'product.cover': 'Cover', 'product.preview': 'Preview' };
+  'teacher-guide': 'Teacher Guide', 'product.cover': 'Cover', 'product.preview': 'Preview', 'slides': 'Slides' };
 function outName(meta, base) {
   const lesson = (meta.short_name || String(meta.title).split(':')[0]).trim().replace(/[\/:*?"<>|]/g, '');
   const doc = DOC_NAMES[base] || base.replace(/\b\w/g, c => c.toUpperCase()).replace(/-/g, ' ');
@@ -68,7 +70,6 @@ for (const p of products) {
       // Cover QA gate: absolutely-positioned motif art must not overlap text (ANTI_SLOP rule 5)
       const clash = await page.evaluate(() => {
         const wrappers = [...document.querySelectorAll('body > svg')].filter(el => getComputedStyle(el).position === 'absolute');
-        if (!wrappers.length) return null;
         // Compare the DRAWN SHAPES, not the svg's bounding box — sparse art often
         // has a huge box but clears the text visually.
         // Shapes clipped to their svg viewport (geometry outside the viewBox is not visible)
@@ -77,7 +78,10 @@ for (const p of products) {
             const r = el.getBoundingClientRect();
             return { left: Math.max(r.left, wb.left), right: Math.min(r.right, wb.right),
                      top: Math.max(r.top, wb.top), bottom: Math.min(r.bottom, wb.bottom) };
-          }).filter(r => r.right > r.left && r.bottom > r.top); });
+          }).filter(r => r.right > r.left && r.bottom > r.top); })
+          // Decorative star dots are art too (a dot on a subtitle reads as a stray period)
+          .concat([...document.querySelectorAll('.star')].map(el => { const r = el.getBoundingClientRect(); return { left: r.left, right: r.right, top: r.top, bottom: r.bottom }; }));
+        if (!art.length) return null;
         // Per-LINE text boxes (Range rects), so ragged right edges don't false-positive
         const lines = [];
         const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -104,18 +108,27 @@ for (const p of products) {
     } else {
       const out = path.join(distDir, outName(p.meta, base) + '.pdf');
       await page.pdf({ path: out, width: '8.5in', height: '11in', printBackground: true, margin: { top: 0, bottom: 0, left: 0, right: 0 } });
+      // Digital companion: typeable copy of every worksheet (same layout, real form fields)
+      if (/^worksheet/.test(base)) {
+        const fill = out.replace(/\.pdf$/, ' (Fillable).pdf');
+        const n = await makeFillable(page, path.join(srcDir, f), out, fill);
+        if (n) console.log('FORM', path.relative(process.cwd(), fill), '(' + n + ' fields)');
+      }
       console.log('PDF ', path.relative(process.cwd(), out));
     }
   }
 }
-await browser.close();
 
 // Package each product's PDFs into one zip (TPT free listings accept a single file;
 // regenerating here means the zip can never go stale behind the PDFs).
 import { execFileSync } from 'node:child_process';
 for (const p of listProducts(slug)) {
   const distDir = path.join(p.dir, 'dist');
-  const pdfs = fs.readdirSync(distDir).filter(f => f.endsWith('.pdf') && !/ - Preview\.pdf$/.test(f)).map(f => path.join(distDir, f));
+  // Digital companion: projectable deck, built from src/slides.yaml when present
+  for (const old of fs.readdirSync(distDir).filter(f => f.endsWith('.pptx'))) fs.rmSync(path.join(distDir, old));
+  const deck = await buildSlides(p, distDir, path.join(distDir, outName(p.meta, 'slides') + '.pptx'), page);
+  if (deck) console.log('DECK', path.relative(process.cwd(), deck.file), '(' + deck.count + ' slides)');
+  const pdfs = fs.readdirSync(distDir).filter(f => /\.(pdf|pptx)$/.test(f) && !/ - Preview\.pdf$/.test(f)).map(f => path.join(distDir, f));
   if (!pdfs.length) continue;
   for (const z of fs.readdirSync(distDir).filter(f => f.endsWith('.zip'))) fs.rmSync(path.join(distDir, z));
   const lesson = (p.meta.short_name || String(p.meta.title).split(':')[0]).trim().replace(/[\\/:*?"<>|]/g, '');
@@ -123,4 +136,5 @@ for (const p of listProducts(slug)) {
   try { execFileSync('zip', ['-q', '-j', zipPath, ...pdfs]); console.log('ZIP ', path.relative(process.cwd(), zipPath)); }
   catch (e) { console.warn('zip skipped (is `zip` installed?):', e.message.split('\n')[0]); }
 }
+await browser.close();
 console.log('Render complete.');

@@ -12,7 +12,8 @@ const [product] = listProducts(slug);
 if (!product) { console.error(`No product "${slug}"`); process.exit(1); }
 
 const reviewDir = path.join(product.dir, 'dist', 'review');
-fs.rmSync(reviewDir, { recursive: true, force: true });
+// clear our own page shots; slide-NN.png belongs to slides.mjs (rebuilt by render)
+if (fs.existsSync(reviewDir)) for (const f of fs.readdirSync(reviewDir)) if (!/^slide-\d+\.png$/.test(f)) fs.rmSync(path.join(reviewDir, f), { recursive: true, force: true });
 fs.mkdirSync(reviewDir, { recursive: true });
 
 const browser = await launch();

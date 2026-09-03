@@ -10,7 +10,7 @@ const page = await browser.newPage();
 for (const p of listProducts(process.argv[2])) {
   const rev = path.join(p.dir, 'dist', 'review');
   if (!fs.existsSync(rev)) { console.log('skip (no dist/review — run judge):', p.slug); continue; }
-  const pngs = fs.readdirSync(rev).filter(f => f.endsWith('.png'));
+  const pngs = fs.readdirSync(rev).filter(f => f.endsWith('.png') && !/^slide-/.test(f)); // deck shots are not print pages
   const cover = pngs.find(f => /cover/i.test(f));
   const order = ['worksheet-p1', 'lesson-plan-p1', 'worksheet-p2', 'unit-overview-p1', 'teacher-guide-p1'];
   const samples = order.map(b => pngs.find(f => f.startsWith(b))).filter(Boolean).slice(0, 3);

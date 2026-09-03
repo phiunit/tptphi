@@ -14,9 +14,12 @@ When Phi asks you to "build the next product," follow this manual exactly.
    standards named. Verify standard codes against `docs/STANDARDS.md` — NEVER invent codes.
 3. Write `products/<slug>/src/*.html` pages using `brand/templates/print.css`
    (`<body class="line-ai|line-finance|line-entrepreneur|line-games">`).
-   Minimum set: `lesson-plan.html`, `worksheet.html`, `teacher-guide.html`, `product.cover.html`.
+   Minimum set: `lesson-plan.html`, `worksheet.html`, `teacher-guide.html`, `product.cover.html`,
+   plus `slides.yaml` (the projectable deck — one slide per lesson moment, teacher script in notes;
+   schema at the top of scripts/slides.mjs, reference: ai-prompting-101/src/slides.yaml).
    Use `products/ai-prompting-101/src/` as the reference for structure and quality bar.
-4. `npm run render -- <slug>` then `npm run validate -- <slug>`. Fix until green.
+4. `npm run render -- <slug>` then `npm run validate -- <slug>`. Fix until green. Render also
+   emits the fillable worksheet PDF and the .pptx deck; open the deck's slide PNGs if you changed slides.yaml.
    Render now HARD-FAILS on page overflow / footer collisions. Visually check the
    cover PNG and EVERY page screenshot against `docs/ANTI_SLOP.md` before moving on.
 5. `npm run readability -- <slug>` (student pages must score ≤ grade 8.5), then `npm run judge -- <slug>`, then review every dist/review/*.png against `docs/JUDGE.md`
@@ -56,10 +59,13 @@ Default grades 6–8. Reading level ~6th grade on student-facing pages.
 | | |
 |---|---|
 | `npm run new -- <slug> "<Title>" <line>` | scaffold a product |
-| `npm run render [-- <slug>]` | HTML → PDF/PNG (Chromium at /opt/pw-browsers/chromium in cloud sessions) |
+| `npm run render [-- <slug>]` | HTML → PDF/PNG + fillable worksheet PDF + slide deck (.pptx, from src/slides.yaml) + zip (Chromium at /opt/pw-browsers/chromium in cloud sessions) |
 | `npm run validate [-- <slug>]` | upload-readiness check |
 | `npm run judge -- <slug>` | screenshot every page to dist/review/ for the JUDGE.md gauntlet |
 | `npm run readability [-- <slug>]` | Flesch-Kincaid gate on student pages (ceiling: grade 8.5) |
+| `npm run preview [-- <slug>]` | watermarked TPT preview PDF (cover + sample pages) from the judge screenshots |
+| `npm run fillable [-- <slug>]` / `npm run slides [-- <slug>]` | rebuild just the digital companions (both also run inside render) |
+| `npm run audit [-- <slug>]` | the whole gauntlet in order (render → validate → readability → judge → preview); CI runs this |
 | `npm run sheet [-- <slug>]` | generate the paste-ready TPT upload sheet from product.yaml |
 | `npm run storefront` | render brand/storefront/*.html to TPT-spec PNGs |
 | `npm run upload -- <slug>` | local-only attended TPT form pre-fill |

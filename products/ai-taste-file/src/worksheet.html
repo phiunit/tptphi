@@ -8,6 +8,7 @@
   .pairgrid .writebox { min-height: 54px; }
   table.compact td { padding: 4px 9px; }
   .boxlabel { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--line); margin: 0 0 3px; }
+  td.tick { text-align:center; } td.tick::before { content:""; display:inline-block; width:14px; height:14px; border:1.5px solid #14141F; border-radius:3px; }
 </style>
 </head>
 <body class="line-ai compact">
@@ -96,9 +97,9 @@
 
   <table class="compact">
     <tr><th>Editor's Loop Checklist — the loop, done right</th><th>✓</th></tr>
-    <tr><td>I wrote the first draft myself — no AI, no copying.</td><td></td></tr>
-    <tr><td>Each note points at a real taste-file section and is specific enough to act on — not "make it better."</td><td></td></tr>
-    <tr><td>I rewrote it myself and starred what changed.</td><td></td></tr>
+    <tr><td>I wrote the first draft myself — no AI, no copying.</td><td class="tick"></td></tr>
+    <tr><td>Each note points at a real taste-file section and is specific enough to act on — not "make it better."</td><td class="tick"></td></tr>
+    <tr><td>I rewrote it myself and starred what changed.</td><td class="tick"></td></tr>
   </table>
 
   <h2>Exit Ticket</h2>

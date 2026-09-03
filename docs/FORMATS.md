@@ -22,11 +22,13 @@ TPT seller blog, gold-city/accio market surveys, teacher-author blogs.
 | **Choice boards / menus** | Cheap to make from existing activities; differentiation keyword sells. |
 | **Exit ticket packs** | We already ship exit tickets inside lessons — repackage standalone 40-ticket packs. |
 
-## Tier 3 — digital / interactive (new pipeline needed, phase 2)
-- **Self-checking digital (Boom Cards, Google Slides, Easel):** big and still growing; teachers
-  split evenly between Boom and Slides. Requires per-platform authoring, not our HTML→PDF
-  pipeline. Revisit after 10+ print products. Watch: TPT's Easel can auto-layer digital onto PDFs —
-  cheap first step into digital without new tooling.
+## Tier 3 — digital / interactive
+- **BUILT (Sep 2026) — platform-agnostic companions in every zip:** a fillable PDF worksheet
+  (typeable in any viewer) and a projectable .pptx deck per lesson (opens in PowerPoint, Keynote,
+  Google Slides). See docs/PIPELINE.md "Digital companion". Listings should say both.
+- **Self-checking digital (Boom Cards, Google Slides add-ons, Easel):** big and still growing; teachers
+  split evenly between Boom and Slides. Boom needs per-platform authoring — skipped on purpose.
+  TPT's Easel can auto-layer digital onto our PDFs at upload — enable it on each listing.
 - **Interactive notebooks:** foldables/glue-ins; strong in middle school but high production fiddliness.
 
 ## Format rules (extend ANTI_SLOP)

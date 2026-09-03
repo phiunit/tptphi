@@ -86,3 +86,15 @@ Practical rules that follow:
    entirely high-school course requirements; saying it about a 6-8 resource is a false claim.
 7. CSTA **2017** codes stay primary (that's what states adopted). The 2026 codes
    (new scheme, e.g. MS-ALG-PS-01) are in the registry as **secondary** until adoptions land.
+
+## Slide decks and fillable PDFs (added Sep 2026)
+- **Decks are slides, not documents.** One moment per slide; a list slide holds ≤ 6 items; card text ≤ 140
+  chars (≤ 90 with four cards). Teacher script lives in speaker notes — students see only what's on the slide.
+- **No text box may overflow its frame.** `scripts/slides.mjs` renders an HTML twin and fails the build if any
+  box overflows; review `dist/review/slide-NN.png` for the things a gate can't see (orphan words, ragged
+  wraps, a quote that reads worse big).
+- **Facts on slides are held to Gate 0.** A lesson that plants errors in passages never repeats one on a
+  student-visible slide; answer keys go in notes only.
+- **Fillable = same page, typeable.** Fields sit exactly on the printed boxes with no border or fill of their own.
+  New write-in CSS idiom → add its selector to `WRITE_IN` in `scripts/fillable.mjs`, then rasterise the PDF
+  with test values before shipping.

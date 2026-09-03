@@ -42,3 +42,33 @@ introduced on the student page before it is used (WS p2).
 
 ## Would improve (non-blocking)
 - A cut-out card version of tasks A–L for kinesthetic sorting.
+
+## Second independent audit — 2026-09-03 (post-fix re-verification)
+A second adversarial judge re-read all 46 screenshots and every source file after the fixes above.
+It found defects the first pass and this report had missed; every one is now fixed and re-rendered.
+Two were tooling blind spots, closed at the root:
+- **Cover gate ignored decorative star dots.** An 8px dot sat on the subtitle of every lesson cover
+  (it read as a stray period). The render gate only tested motif SVGs. Fixed: `.star` elements are
+  now art for the 12px clearance test; the dot moved to the right margin on all six covers.
+- **Readability gate under-sampled.** It scored only `p`/`li` text and stripped tables, so role cards
+  and table prompts students actually read were never measured. Fixed: it now scores everything on
+  the page except mastheads, chips, footers and art (scores re-run, all still ≤ 8.5).
+
+Product-specific findings, fixed:
+- **Share-out did not fit its 8 minutes** (1 min + 15 pairs × 30 s > 8). Restructured: 1 min delivery
+  coaching → 4 min pairs-of-pairs (every pair still speaks and is scored) → 3 min whole-class round.
+- Cover said "automate it, assist it, or keep it human" while every page says AUGMENT; fixed.
+- Kicker "The Studio Task Board" broke the unit pattern; now "The Task Board Lesson".
+- Second star dot (640/520) read as a stray period after "your class"; moved.
+- Stale UPLOAD_SHEET.md carried the retired title; regenerated.
+Verdict after re-audit: **PASS** (0 fails, 0 partials).
+
+## Digital companions — added 2026-09-03
+- **Fillable worksheet** (`… - Worksheet (Fillable).pdf`): 26 transparent form fields laid over the printed
+  write-in boxes (checklist rows are real checkboxes). Verified by rasterising the PDF with typed test values:
+  fields sit inside their boxes, no border or fill covers the print design.
+- **Slide deck** (`… - Slides.pptx`, 12 slides): one slide per lesson moment, minutes on each block, teacher
+  script in speaker notes, cover art on the title slide. Reviewed via `dist/review/slide-NN.png` (HTML twin of
+  the same geometry); the deck builder's text-overflow gate is green. Not yet opened in PowerPoint itself —
+  LibreOffice is unavailable in this sandbox — so the first real-PowerPoint open is on the pre-upload checklist.
+- Listing INCLUDES line updated to name both; both ship inside the product zip.

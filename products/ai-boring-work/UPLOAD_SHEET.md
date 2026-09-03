@@ -1,9 +1,9 @@
 # Upload Sheet — Robots Do the Boring Work
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (77 chars — TPT max ~80)
+**Title** (75 chars — TPT max ~80)
 ```
-AI and Future Jobs Lesson: Career Exploration Activity | Grades 6-8 | No Prep
+AI and Future Jobs Lesson: Automation Tradeoffs Sort | Grades 6-8 | No Prep
 ```
 
 **Price:** $4.00
@@ -28,7 +28,7 @@ AI literacy, artificial intelligence, future jobs, automation, career exploratio
 ```
 
 **Description** — paste the `description:` block from `products/ai-boring-work/product.yaml`
-(1656 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(1889 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
 
 
 ## Before you hit Publish

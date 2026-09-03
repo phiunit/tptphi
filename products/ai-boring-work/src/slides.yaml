@@ -1,0 +1,87 @@
+# Projectable deck for the lesson plan — every slide is a moment in the 45 minutes.
+# Teacher script lives in the speaker notes; students see only what's on the slide.
+kicker: The Task Board Lesson
+subtitle: "Your class runs Big Dream Studio, a recording studio with too much to do. You decide what the AI does, what it helps with, and what it never touches — and you own the trade behind every call."
+notes: "Open on this slide while students settle. Worksheet: The Studio Task Board, one per student. Fully unplugged — no devices at any point."
+slides:
+  - type: hook
+    minutes: 7
+    title: "Warm-Up — The Most Boring Job Ever"
+    headline: "What's the most boring job you can think of?"
+    lines:
+      - "Is it boring because it REPEATS — same thing, over and over, no decisions?"
+      - "Or is it \"boring\" but secretly full of people stuff — helping, noticing, talking someone down?"
+      - "Repeats  →  robot bait.     People stuff  →  hold on to it."
+    notes: "Take 4–5 answers and write them on the board. Pick two or three and ask the follow-up on the slide. Sort them as a class: repeats → robot bait, people stuff → hold on to it. A toll booth job repeats — but the toll collector also waves at every regular. Let students argue; the arguing is the point."
+  - type: question
+    title: "Will AI take all the jobs?"
+    question: "Nobody knows exactly which jobs change. So what CAN we see already?"
+    sub: "The boring, repeating parts get automated. The human parts become the job. And every time a business automates something: somebody wins, somebody loses, something could go wrong."
+    notes: "Bridge, verbatim: \"Here's the honest version, no robot apocalypse: nobody knows exactly which jobs change. What we can see already: The boring, repeating parts get automated; the human parts become the job. But every time a business automates something, somebody wins, somebody loses, and something could go wrong. Today YOU make those calls — for a recording studio.\""
+  - type: cards
+    minutes: 10
+    title: "Three Columns, One Lens"
+    items:
+      - { label: 1, name: AUTOMATE, text: "Boring and repeating. No judgment calls. Hand it to AI." }
+      - { label: 2, name: AUGMENT, text: "A human makes the call, AI helps out." }
+      - { label: 3, name: KEEP HUMAN, text: "Coaching, taste, being there for someone. The human IS the product." }
+    notes: "Draw the three columns on the board as you define them — students will sort into the same three on the worksheet. Then advance to model the tradeoff lens on one studio task. With students, call it \"the trade.\""
+  - type: compare
+    title: "Model it live — the column, then the trade"
+    left: { heading: "THE COLUMN (EASY PART)", text: "Task: \"Send the 'don't forget your session' texts.\"\n\nColumn: AUTOMATE.\n\nDone? No. Don't stop there." }
+    right: { heading: "THE TRADE (REAL THINKING)", text: "Who wins?  Jaylen — gets hours back for the artists in the building.\n\nWho loses something?  Jaylen, a little — sending those texts is how he learned every artist's name.\n\nWhat could go wrong?  A cheerful reminder lands after a canceled session." }
+    notes: "Walk the three questions out loud, one at a time, before revealing the answers if you can. Jaylen runs the front desk at Big Dream Studio; students meet him on the worksheet. The point: the same person can win AND lose from one call."
+  - type: quote
+    quote: "\"Because robots\" is not a reason."
+    sub: "\"Who wins, who loses, what could go wrong\" — that's a reason. The column is the easy part. The trade is the real thinking."
+    notes: "Say it plainly: \"The column is the easy part. The trade is the real thinking. In this room, 'because robots' is not a reason. 'Who wins, who loses, what could go wrong' — that's a reason.\" The worksheet repeats the line on p.2."
+  - type: steps
+    minutes: 15
+    title: "Main Activity — The Studio Task Board"
+    items:
+      - { minutes: 8, name: "Sort", text: "Pairs. Sort tasks A–L into the three columns. House rule: every column gets at least two tasks. Disagree? Talk it out — either can be right." }
+      - { minutes: 7, name: "Trade cards", text: "Pick TWO of your calls. On worksheet p.2, write the trade for each: who wins, who loses, what could go wrong." }
+    notes: "Hand out worksheets if you haven't. Nia owns the studio and coaches the artists, Ravi runs the mixing boards, Jaylen runs the front desk. Leave the next two slides (the task list) up during the Sort. Support: sort 8 tasks instead of 12 — skip B, F, J, L."
+  - type: list
+    title: "This Week at Big Dream Studio — Tasks A to F"
+    items:
+      - "A —  Send the \"don't forget your session\" texts to this week's artists  (Jaylen)"
+      - "B —  Rename and back up 300 audio files from last night  (Ravi)"
+      - "C —  Write the first draft of this week's social media captions  (Jaylen)"
+      - "D —  Mix a rough first version of a new artist's demo  (Ravi)"
+      - "E —  Coach a nervous first-time artist through her first take  (Nia)"
+      - "F —  Politely remind three people who still haven't paid the studio  (Jaylen)"
+    notes: "Same twelve tasks as the worksheet. Circulate during the Sort; when a pair is stuck, ask \"Does it repeat, or is it people stuff?\" Most tasks are defensibly AUGMENT — the column matters far less than the defense."
+  - type: list
+    title: "This Week at Big Dream Studio — Tasks G to L"
+    items:
+      - "G —  Pick which of an artist's five new songs is the single  (Nia)"
+      - "H —  Make the room sound less echoey and set the mics for a live band  (Ravi)"
+      - "I —  Agree on a price with a group that wants the studio for three days  (Nia)"
+      - "J —  Type up the lyrics from yesterday's freestyle session  (Ravi)"
+      - "K —  Answer the same five questions everyone emails (price, hours, parking)  (Jaylen)"
+      - "L —  Plan the set order and vibe for showcase night  (Nia)"
+    notes: "Flip between this slide and the last one during the Sort. If the class splits three ways on one task, nobody's right — say so, and save it for the share-out: \"Convince me. Who wins? Who loses? What breaks?\""
+  - type: list
+    minutes: 8
+    title: "Share-Out — Defend the Board"
+    items:
+      - "1.  Eyes up off the page."
+      - "2.  Voice to the back wall."
+      - "3.  Slow down on your claim."
+      - "Claim frame:  \"Task ___ belongs in ___ because ___ — and the trade is ___.\""
+      - "30 seconds per pair. The listening pair answers with one keep and one fix."
+    notes: "Teach the delivery first (1 min): \"Three moves: eyes up off the page, voice to the back wall, slow down on your claim.\" Pairs of pairs (4 min): two pairs face each other; each defends ONE choice in 30 seconds with the claim frame; the listening pair gives one keep and one fix. Circulate with the Defense Rubric (Teacher Guide p.2). Whole class (3 min): four or five pairs bring their most-argued call to the room. Gallery-walk variant: post the boards and tour for 2 minutes instead."
+  - type: list
+    minutes: 5
+    title: "Exit Ticket — Take It Home"
+    items:
+      - "The job: one somebody in your life actually has — family, neighbor, coach, teacher."
+      - "AUTOMATE — one boring, repeating task AI should take."
+      - "AUGMENT — one task where the human makes the call and AI helps out."
+      - "KEEP HUMAN — one task that should stay fully human — and why."
+    notes: "Bottom of worksheet p.2. One line per column, plus a why for the human one. Collect; the Teacher Guide has an exemplar (an uncle's food truck) and the standards each line assesses."
+  - type: closer
+    statement: "Let the robots do the boring work. Leave the humans to do the human things."
+    sub: "The people who win with AI aren't the ones who fear it — they're the ones who decide what it does."
+    notes: "Close on this. Next in the unit: Lead Your AI Squad — Lesson 6, where students run a team of AI helpers on a real project."
