@@ -6,7 +6,7 @@ and game design to grades 6–8 through hip-hop, anime, and gaming — with real
 so teachers can justify the purchase to admin.
 
 ## Why teachers will buy (the compulsion levers)
-1. **Standards on the cover.** Every product leads with ISTE / CCSS / Jump$tart / CSTA codes.
+1. **Standards on the cover.** Every product leads with ISTE / CCSS / CSTA / NSPFE codes. (Note: Jump$tart and CEE jointly publish the National Standards for Personal Financial Education since 2021 — they are ONE framework, not two. Citing both is double-counting one document.)
    Personal finance is required far more widely than commonly cited: CEE's 2026 survey reports
    **39 states** requiring a personal finance course (standalone or embedded); NEFE's 2025 review
    counted 29 graduation requirements, and the standalone-only count is reported as both 26 and 30

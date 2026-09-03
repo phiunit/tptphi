@@ -61,3 +61,28 @@ Rendered files carry the lesson name: `<Lesson Name> - <Doc>.pdf`
 (e.g. "How to Talk to AI - Lesson Plan.pdf"). Never generic `lesson-plan.pdf` —
 a teacher downloading five stores' resources in one sitting must be able to tell
 ours apart without opening them. `short_name` in product.yaml controls the prefix.
+
+
+## What "verified" means in our standards registry (read before citing a standard)
+`curriculum/standards-registry.yaml` marks 318 codes `verified: true`. That flag means
+**dual-source corroborated** — retrieved from two independent copies of different provenance and
+diffed character-for-character — **not publisher-PDF confirmed.** Every official host (iste.org,
+csteachers.org, thecorestandards.org, jumpstart.org, councilforeconed.org, nationalartsstandards.org,
+and every state DOE tried) is blocked by this environment's egress proxy, so no code in the registry
+has been checked against its publisher's own PDF from here.
+
+Practical rules that follow:
+1. The registry is good enough to ship against and far safer than memory — but if a buyer or admin
+   ever disputes a code, re-check it against the publisher PDF from an unblocked machine first.
+2. **Never write an NCAS `MA:` grade code.** No verbatim copy was reachable; only the 11 anchor
+   standards are captured. Cite the anchor in words instead.
+3. **Never write a Jump$tart/CEE/NSPFE benchmark number.** Only the six topic names are captured;
+   the benchmark text lives solely in a blocked PDF. Cite the content area with no number.
+4. **Jump$tart and CEE are ONE framework** (National Standards for Personal Financial Education,
+   2021). Citing both for the same product is double-counting one document.
+5. **There is no grade-banded CCSS ELA code.** `W.6-8.1` and `SL.6-8.4` do not exist — pick the
+   specific grade (W.6.1, W.7.1...).
+6. **Never claim a product "meets financial literacy requirements."** Those mandates are almost
+   entirely high-school course requirements; saying it about a 6-8 resource is a false claim.
+7. CSTA **2017** codes stay primary (that's what states adopted). The 2026 codes
+   (new scheme, e.g. MS-ALG-PS-01) are in the registry as **secondary** until adoptions land.

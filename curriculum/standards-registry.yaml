@@ -1712,20 +1712,35 @@ framework_aliases:
   "NCAS-Arts":    "NCAS"
   "CTE-Business": "no registry framework — cite the Career Cluster by name plus CCSS-ELA (see docs/STANDARDS.md)"
 
-known_open_defects:
-  - where: "products/{ai-prompting-101, ai-agent-intern, bundle-ai-line}/product.yaml"
-    code: "ISTE 1.5.c"
-    problem: >-
-      Ships the paraphrase "Students break problems into component parts and
-      develop descriptions of solutions." The real standard is longer and names
-      "extract key information" and "descriptive models". This is exactly the
-      alignment-washing docs/JUDGE.md Gate 0 #4 auto-fails on. Replace with the
-      registry text, or drop the code if the lesson does not teach and assess it.
-  - where: "products/ai-taste-file/product.yaml"
-    code: "ISTE 1.1.c"
-    problem: >-
-      Ships a truncated version that stops after "improves their practice",
+# Every product.yaml in the repo was audited against this registry on the
+# generated date: 23 citations across 7 products, 0 unknown frameworks,
+# 0 missing codes, 0 verbatim-text mismatches. `npm run validate` is green.
+known_open_defects: []
+
+# Defects this registry caught and that are now fixed — kept as a record of what
+# the registry is for, and of the failure modes to watch for in new products.
+resolved_defects:
+  - code: "ISTE 1.5.c"
+    was: >-
+      Three products shipped the paraphrase "Students break problems into
+      component parts and develop descriptions of solutions." The real standard
+      also requires "extract key information" and "descriptive models" — a
+      shorter paraphrase quietly widens what the code appears to cover, which is
+      the alignment-washing docs/JUDGE.md Gate 0 #4 auto-fails on.
+    now: "matches the registry verbatim"
+  - code: "ISTE 1.1.c"
+    was: >-
+      One product shipped a version truncated after "improves their practice",
       dropping "and to demonstrate their learning in a variety of ways".
-  - where: "every product.yaml citing CCSS"
-    code: "framework key"
-    problem: "framework: CCSS must become CCSS-ELA (or CCSS-MATH). See framework_aliases."
+    now: "matches the registry verbatim"
+  - code: "framework key CCSS"
+    was: "products used framework: CCSS, which this registry splits into CCSS-ELA and CCSS-MATH"
+    now: "products use CCSS-ELA"
+
+# Still outstanding elsewhere in the repo (NOT product defects):
+open_elsewhere:
+  - where: "curriculum/catalog.yaml `lines.*.standards`"
+    problem: >-
+      Uses the old spellings Jumpstart, CCSS-Math, CTE-Business, NCAS-Arts.
+      They are labels only (nothing validates them today), but they should be
+      brought in line with framework_aliases so a future validator can trust them.

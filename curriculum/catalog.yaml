@@ -3,9 +3,9 @@
 
 lines:
   ai:           { name: "AI Literacy & Vibe Coding",        standards: [ISTE, CSTA, CCSS-ELA] }
-  finance:      { name: "Personal Finance & Risk",          standards: [Jumpstart, CCSS-Math, CEE] }
-  entrepreneur: { name: "21st-Century Entrepreneurship",    standards: [CTE-Business, CCSS-ELA, ISTE] }
-  games:        { name: "Game Building & Creative Tech",    standards: [CSTA, ISTE, NCAS-Arts] }
+  finance:      { name: "Personal Finance & Risk",          standards: [NSPFE, CCSS-MATH] }
+  entrepreneur: { name: "21st-Century Entrepreneurship",    standards: [CCSS-ELA, ISTE] }   # state CTE codes vary; portable substitute in docs/STANDARDS.md
+  games:        { name: "Game Building & Creative Tech",    standards: [CSTA, ISTE, NCAS] }
 
 products:
   # ---- WAVE 1: launch (freebies build followers, paid converts) ----
