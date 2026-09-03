@@ -508,3 +508,10 @@ Product: ____________________  Slug: ____________  Line: ai / finance / entrepre
    not that anyone searches it much. Keyword Finder is the only real answer.
 6. **TPT's 2026 sitewide sale dates** beyond the reported Aug 25–26 back-to-school sale. TPT
    announces these itself — subscribe rather than plan on secondhand dates.
+
+
+## Applied Sep 2026 — house titles now live in catalog.yaml
+Pattern in force for every listing: `<Primary keyword phrase>: <Hook or descriptor> | Middle School 6-8 (or Grades 6-8) | <Differentiator>`.
+Differentiators are searchable terms only: `No Prep`, `No Tech`, `FREE`, `Future Skills`, `Capstone`.
+The lesson hook (Literal Genie, Money Battery, Fun Audit) stays in the back half of the title and
+on the cover/kicker — it never leads. Hard cap 80 chars, enforced in `npm run validate`.
