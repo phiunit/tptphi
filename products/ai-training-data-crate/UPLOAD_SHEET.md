@@ -1,9 +1,9 @@
 # Upload Sheet — What's in the Playlist
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (78 chars — TPT max ~80)
+**Title** (80 chars — TPT max ~80)
 ```
-How AI Works: Training Data + Bias Lesson, What's in the Playlist (Grades 6-8)
+How AI Works Lesson: Training Data & Bias Activity | Middle School 6-8 | No Prep
 ```
 
 **Price:** $4.00

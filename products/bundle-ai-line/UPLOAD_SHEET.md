@@ -1,9 +1,9 @@
 # Upload Sheet — AI Literacy Unit
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (75 chars — TPT max ~80)
+**Title** (78 chars — TPT max ~80)
 ```
-AI Literacy Unit Bundle: 6 Lessons on Prompting, Bias + Fact-Checking (6-8)
+AI Literacy Unit Bundle: 6 No Prep Lessons | Middle School 6-8 | Future Skills
 ```
 
 **Price:** $14.00

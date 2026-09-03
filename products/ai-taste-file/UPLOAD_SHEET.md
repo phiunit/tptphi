@@ -1,9 +1,9 @@
 # Upload Sheet — Teach AI Your Taste
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (74 chars — TPT max ~80)
+**Title** (75 chars — TPT max ~80)
 ```
-AI as Editor: Revision + Feedback Lesson, Teach AI Your Taste (Grades 6-8)
+AI Writing Feedback Lesson: Revision Activity | Middle School 6-8 | No Prep
 ```
 
 **Price:** $4.00

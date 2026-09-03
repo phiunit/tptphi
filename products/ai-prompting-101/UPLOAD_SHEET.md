@@ -3,7 +3,7 @@ Generated from product.yaml. Fields in TPT "Add new product" order.
 
 **Title** (78 chars — TPT max ~80)
 ```
-How to Talk to AI: Prompt Writing Lesson + Activity, Grades 6-8 (FREE No Prep)
+AI Literacy Lesson: Prompt Writing Activity | Middle School 6-8 | FREE No Prep
 ```
 
 **Price:** FREE

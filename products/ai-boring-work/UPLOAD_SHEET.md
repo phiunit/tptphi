@@ -1,9 +1,9 @@
 # Upload Sheet — Robots Do the Boring Work
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (73 chars — TPT max ~80)
+**Title** (77 chars — TPT max ~80)
 ```
-AI and Future Jobs Lesson: Robots Do the Boring Work (Grades 6-8 No Prep)
+AI and Future Jobs Lesson: Career Exploration Activity | Grades 6-8 | No Prep
 ```
 
 **Price:** $4.00

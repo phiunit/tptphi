@@ -1,9 +1,9 @@
 # Upload Sheet — Lead Your AI Squad
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (77 chars — TPT max ~80)
+**Title** (79 chars — TPT max ~80)
 ```
-AI Agents Lesson: Lead Your AI Squad, Team Roles + Checking Work (Grades 6-8)
+AI Agents Lesson: Team Roles & Project Planning Activity | Grades 6-8 | No Prep
 ```
 
 **Price:** $4.00
