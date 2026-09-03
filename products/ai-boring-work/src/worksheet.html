@@ -1,6 +1,9 @@
 <!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="../../../brand/templates/print.css">
 <style>
+  table.board { table-layout: fixed; }
+  table.board td.slot { height: 34px; border: 1px solid #C9C9D6; }
+  table.board th { font-size: 9pt; }
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
   .tasks { font-size: 10pt; }
@@ -78,7 +81,11 @@
   <p>Write each letter where you'd put it. <strong>House rule:</strong> every column needs at least two tasks. Disagree with your partner? Good — talk it out. That's the lesson.</p>
   <table class="board">
     <tr><th>Automate — hand it to AI</th><th>Augment — AI helps out</th><th>Keep Human — humans only</th></tr>
-    <tr><td></td><td></td><td></td></tr>
+    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
+    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
+    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
+    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
+    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
   </table>
 
   <div class="footer"><span>Robots Do the Boring Work — The Studio Task Board</span><span>© Future Skills Series</span><span>1</span></div>
