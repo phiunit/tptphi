@@ -9,7 +9,10 @@
     "validate": "node scripts/validate.mjs",
     "upload": "node scripts/upload_tpt.mjs",
     "new": "node scripts/new_product.mjs",
-    "judge": "node scripts/judge.mjs"
+    "judge": "node scripts/judge.mjs",
+    "readability": "node scripts/readability.mjs",
+    "sheet": "node scripts/upload_sheet.mjs",
+    "storefront": "node scripts/storefront.mjs"
   },
   "dependencies": {
     "playwright-core": "^1.49.0",

@@ -19,7 +19,7 @@ When Phi asks you to "build the next product," follow this manual exactly.
 4. `npm run render -- <slug>` then `npm run validate -- <slug>`. Fix until green.
    Render now HARD-FAILS on page overflow / footer collisions. Visually check the
    cover PNG and EVERY page screenshot against `docs/ANTI_SLOP.md` before moving on.
-5. `npm run judge -- <slug>`, then review every dist/review/*.png against `docs/JUDGE.md`
+5. `npm run readability -- <slug>` (student pages must score ≤ grade 8.5), then `npm run judge -- <slug>`, then review every dist/review/*.png against `docs/JUDGE.md`
    and write `products/<slug>/JUDGE.md`. Fix everything on the "Fix now" list and
    re-judge until verdict is PASS. No product ships without a passing judge report.
 6. Update the product's `status` in catalog.yaml (idea → rendered), commit, push.
@@ -58,6 +58,10 @@ Default grades 6–8. Reading level ~6th grade on student-facing pages.
 | `npm run new -- <slug> "<Title>" <line>` | scaffold a product |
 | `npm run render [-- <slug>]` | HTML → PDF/PNG (Chromium at /opt/pw-browsers/chromium in cloud sessions) |
 | `npm run validate [-- <slug>]` | upload-readiness check |
+| `npm run judge -- <slug>` | screenshot every page to dist/review/ for the JUDGE.md gauntlet |
+| `npm run readability [-- <slug>]` | Flesch-Kincaid gate on student pages (ceiling: grade 8.5) |
+| `npm run sheet [-- <slug>]` | generate the paste-ready TPT upload sheet from product.yaml |
+| `npm run storefront` | render brand/storefront/*.html to TPT-spec PNGs |
 | `npm run upload -- <slug>` | local-only attended TPT form pre-fill |
 
 ## Key docs

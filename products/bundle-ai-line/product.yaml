@@ -1,0 +1,43 @@
+title: "AI Literacy Unit Bundle: 6 Lessons on Prompting, Bias + Fact-Checking (6-8)"
+short_name: "AI Literacy Unit"
+line: ai
+grades: "6-8"
+price_usd: 14.00        # 6 lessons; ~35% off buying separately ($0 + 5 x $4)
+status: draft
+resource_types: [Unit Plans, Lesson, Worksheets, Activities, Printables]
+bundle_of: [ai-prompting-101, ai-training-data-crate, ai-fact-check-lab, ai-taste-file, ai-boring-work, ai-agent-intern]
+tags:
+  - AI literacy
+  - artificial intelligence unit
+  - prompt engineering
+  - ChatGPT
+  - digital citizenship
+  - critical thinking
+  - media literacy
+  - computer science
+standards:
+  - { framework: ISTE, code: "1.5.c", text: "Students break problems into component parts and develop descriptions of solutions." }
+  - { framework: ISTE, code: "1.3.b", text: "Students evaluate the accuracy, perspective, credibility and relevance of information, media, data or other resources." }
+  - { framework: CSTA, code: "2-IC-20", text: "Compare tradeoffs associated with computing technologies that affect people's everyday activities and career options." }
+  - { framework: CSTA, code: "2-IC-21", text: "Discuss issues of bias and accessibility in the design of existing technologies." }
+  - { framework: CCSS, code: "W.6.4", text: "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience." }
+description: |
+  Six weeks of AI literacy, ready to teach the morning you buy it. Your students already use AI — this unit teaches them to use it well, question what comes back, and understand how it works under the hood.
+
+  THE ARC: students learn to write prompts that can't be twisted (Lesson 1), discover how AI learns and where bias comes from (2), fact-check AI output like a newsroom (3), teach AI their own taste and revise their own writing (4), argue the tradeoffs of automation and future jobs (5), then run a team of AI helpers in a capstone that reuses every skill (6).
+
+  EVERY LESSON INCLUDES: a scripted 45-minute plan with timed blocks, a 2-page student worksheet with real write-in space, a teacher guide with answer key and exemplars, an exit ticket, support/extension/ELL variants, and a fully unplugged version — because no lesson here requires a single device. Print and teach.
+
+  THE THROUGH-LINE: every AI job runs human to AI to human. A person starts it with the prompt; a person ends it with the check. That transfers to every AI tool your students will ever touch. And the honesty policy is one sentence they remember: AI is your editor, not your ghostwriter.
+
+  ALIGNED to ISTE Standards for Students, CSTA (Impacts of Computing, grades 6-8), and CCSS ELA — with where each standard is taught AND assessed printed in every teacher guide, so it survives an admin review.
+
+  Six lessons for less than the price of four. Lesson 1 is also available free if you want to try it first.
+includes:
+  - "Lesson 1: How to Talk to AI (prompting - The Literal Genie)"
+  - "Lesson 2: What's in the Playlist? (how AI learns + bias)"
+  - "Lesson 3: Hallucination Hunters (fact-checking AI)"
+  - "Lesson 4: Teach AI Your Taste (feedback + revision)"
+  - "Lesson 5: Robots Do the Boring Work (AI + future jobs)"
+  - "Lesson 6: Lead Your AI Squad (AI agents capstone)"
+  - "Unit Overview + Pacing Guide (printable)"

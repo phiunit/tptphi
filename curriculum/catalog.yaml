@@ -59,7 +59,7 @@ products:
   # ---- WAVE 3: bundles + mental models ----
   - { slug: mental-models-starter,   line: entrepreneur, priority: 3, status: idea, price: 7,
       title: "Think in Models: 10 Mental Models Every Teen Should Know" }
-  - { slug: bundle-ai-line,          line: ai,           priority: 3, status: idea, price: 12,
-      title: "AI Literacy Complete Bundle (Grades 6-8)" }
+  - { slug: bundle-ai-line,          line: ai,           priority: 1, status: rendered, price: 14, unit: ai-literacy-1, lesson: 0,
+      title: "AI Literacy Unit Bundle: 6 Lessons (Grades 6-8)" }
   - { slug: bundle-finance-line,     line: finance,      priority: 3, status: idea, price: 12,
       title: "Future Money Complete Bundle (Grades 6-8)" }
