@@ -11,7 +11,7 @@ AI Literacy Lesson: Prompt Writing Activity | Middle School 6-8 | FREE No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/How to Talk to AI (Future Skills).zip`  (single zip — use for free listings)
+- `dist/How to Talk to AI (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
 
 **Custom cover (optional):** `dist/How to Talk to AI - Cover.png`
 
@@ -28,7 +28,7 @@ AI literacy, artificial intelligence, prompt engineering, ChatGPT, digital citiz
 ```
 
 **Description** — paste the `description:` block from `products/ai-prompting-101/product.yaml`
-(1592 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(1916 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

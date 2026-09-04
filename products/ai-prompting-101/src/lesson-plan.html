@@ -4,6 +4,19 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
+  .whatif { border-left: 3px solid #5B4DFF; padding: 1px 10px; margin: 2px 0 4px; color: #33334A; font-style: italic; }
+  .whatif strong { color: #5B4DFF; font-style: normal; }
+  .say { margin: 0 0 5px; }
+  .objrow { display: flex; gap: 14px; align-items: flex-start; }
+  .objrow ul { flex: 1; margin-bottom: 4px; }
+  .objrow .chips { flex: 0 0 auto; flex-direction: column; margin-top: 4px; }
+  .grid2 li { margin-bottom: 2px; } ul.grid2 { margin-bottom: 0; }
+  ol li { margin-bottom: 2px; }
+  body.compact { line-height: 1.3; }
+  body.compact .panel, body.compact .callout { padding: 6px 11px; margin: 5px 0; }
+  body.compact h2 { margin: 8px 0 3px; }
+  h2 .chips { margin: 0; gap: 5px; }
+  h2 .chips .chip { text-transform: none; letter-spacing: 0; font-size: 8pt; padding: 1px 8px; }
 </style>
 </head>
 <body class="line-ai compact">
@@ -30,7 +43,7 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">The Literal Genie Lesson · Lesson 1 of 6</div><h1>How to Talk to AI</h1></div>
-      <p class="sub">A 45-minute prompt-writing lesson. The hook: AI is a literal genie — it grants exactly what your words ask for, not what your brain meant. Students learn the two human jobs in every AI task: start it well (the prompt) and end it well (the check).</p>
+      <p class="sub">45 minutes, no prep. The hook: AI is a literal genie — it grants what you SAID, not what you MEANT. Students learn both human jobs in every AI task: the prompt and the check. Stands alone.</p>
     </div>
     <svg class="art" width="110" height="82" viewBox="8 0 104 84"><use href="#lamp"/></svg>
   </div>
@@ -38,31 +51,35 @@
   <h2>At a Glance</h2>
   <table>
     <tr><th>Time</th><th>Materials</th><th>Tech needed</th><th>Prep</th></tr>
-    <tr><td>45 min</td><td>Cursed Wish Repair Shop worksheet (1 per student)</td><td>Optional — works fully unplugged</td><td>Print worksheets. That's it.</td></tr>
+    <tr><td>45 min</td><td>Cursed Wish Repair Shop worksheet (2 pages, 1 per student; typeable PDF included) · Slides (optional) · board for P.R.O. · Teacher Guide (Scoring Guidance, P.R.O. sentence starters) · pens</td><td>None — runs fully unplugged. Optional: a projector for the slides; one AI tool on your screen for the Showcase</td><td>Print worksheets. That's it.</td></tr>
   </table>
 
-  <h2>Objectives</h2>
+  <h2>Objectives <span class="chips"><span class="chip">ISTE 1.5.c</span><span class="chip">ISTE 1.3.b</span><span class="chip">CCSS ELA W.6.4</span></span></h2>
   <ul>
-    <li>Students can explain why the same AI gives different quality answers to different prompts.</li>
-    <li>Students can apply the <strong>P.R.O. framework</strong> (Purpose, Requirements, Output) to write a clear prompt.</li>
-    <li>Students can evaluate an AI response for accuracy and identify when to double-check it.</li>
+    <li>Explain why the same AI answers a vague prompt worse than a clear one. <em>(Exit Ticket #1, part two)</em></li>
+    <li>Apply <strong>P.R.O.</strong> (Purpose, Requirements, Output) to write a clear prompt. <em>(Wish repairs 1–3; Exit Ticket #1)</em></li>
+    <li>Evaluate a sample AI answer: find the checkable claim and where to check it. <em>(Exit Ticket #2)</em></li>
   </ul>
 
-  <h2>Standards Alignment</h2>
-  <div class="chips">
-    <span class="chip">ISTE 1.5.c</span><span class="chip">ISTE 1.3.b</span><span class="chip">CCSS ELA W.6.4</span>
-  </div>
-  <p>Full standards text in the Teacher Guide.</p>
-
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#sparkle"/></svg> Warm-Up — The Worst Genie Ever (8 min)</h2>
-  <p>Announce that you are a genie, and you grant wishes <em>exactly as worded</em>. Take 3–4 wishes from the class and ruin every one, cheerfully:</p>
+  <p>You are a genie who grants wishes <em>exactly as worded</em>. Take 3–4 wishes and ruin every one, cheerfully:</p>
   <div class="panel">
-    <p><em>"I wish I was rich."</em> → "Done. Your name is now Rich."</p>
-    <p><em>"I wish for a million dollars."</em> → "Granted — one million dollars, in play money."</p>
-    <p><em>"I wish school was over."</em> → "Granted. The school building is now over... there."</p>
+    <em>"I wish I was rich."</em> → "Done. Your name is now Rich."<br>
+    <em>"I wish for a million dollars."</em> → "Granted — one million dollars, in play money."<br>
+    <em>"I wish school was over."</em> → "Granted. The school building is now over... there."
   </div>
-  <p>Then ask: <strong>whose fault was that — the genie's, or the wish?</strong></p>
-  <div class="callout"><strong>Bridge:</strong> "AI works like that genie. It doesn't know what you meant — it only knows what you SAID. Every AI job goes human, AI, human: you start it with the wish, the genie does the middle, and you check what comes back. Today you get good at both human parts."</div>
+  <div class="callout">Then ask: <strong>"Whose fault was that — the genie's, or the wish?"</strong> <strong>Bridge:</strong> "AI works like that genie. It doesn't know what you MEANT — it only knows what you SAID. Every AI job goes human, AI, human: you start it with the wish, the genie does the middle, and you check what comes back. Today you get good at both human parts."</div>
+  <p class="whatif"><strong>What if</strong> a wish is inappropriate? Don't play it: "The genie doesn't grant that one. Next wish." Nobody volunteers? Wish first yourself: "I wish for a snack" → "Granted: one grain of rice."</p>
+  <p class="say"><strong>Transition:</strong> "So how do you write a wish a genie can't twist? Lawyers figured this out a long time ago."</p>
+
+  <h2>Direct Instruction — Parts of a Genie-Proof Wish (10 min)</h2>
+  <p>Lawyers make contracts genie-proof with clauses. Strong prompts have three parts — write <strong>P.R.O.</strong> on the board as you go:</p>
+  <div class="panel">
+    <strong>P — Purpose.</strong> What you want + who it's for. <em>"Explain photosynthesis to a 6th grader"</em> beats <em>"explain photosynthesis."</em><br>
+    <strong>R — Requirements.</strong> The rules: length, tone, format, include / leave out. This is what stops the twist.<br>
+    <strong>O — Output.</strong> What should the finished answer look like? A list? A paragraph? A table? A plan?
+  </div>
+  <div class="panel"><strong>Watch one get fixed</strong> — build the repair on the board, naming each part as you add it. <strong>Cursed wish:</strong> <em>"help with my history essay"</em> → <strong>Genie-proof P.R.O. prompt:</strong> <em>"I'm writing a 7th grade history essay on the printing press. Give me 3 thesis statements and 2 pieces of evidence for each, as a bullet list. Don't write it for me."</em></div>
 
   <div class="footer"><span>How to Talk to AI — Lesson Plan</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -70,36 +87,33 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2>Direct Instruction — Clauses of a Genie-Proof Wish (10 min)</h2>
-  <p>Lawyers make contracts genie-proof with clauses. Strong prompts have three — write <strong>P.R.O.</strong> on the board:</p>
-  <div class="panel">
-    <p><strong>P — Purpose.</strong> What you want + who it's for. <em>"Explain photosynthesis to a 6th grader"</em> beats <em>"explain photosynthesis."</em></p>
-    <p><strong>R — Requirements.</strong> The fine print: length, tone, format, include/avoid. This is what stops the genie from twisting your wish.</p>
-    <p><strong>O — Output.</strong> What should the granted wish look like? A list? A paragraph? A table? A plan?</p>
-  </div>
-  <p>Model it live (on the board or with a projected AI tool):</p>
-  <table>
-    <tr><th>Cursed wish</th><th>Genie-proof P.R.O. prompt</th></tr>
-    <tr><td>"help with my history essay"</td><td>"I'm writing a 5-paragraph essay for 7th grade history on why the printing press mattered. Give me 3 possible thesis statements and 2 pieces of evidence for each, as a bullet list. Don't write the essay for me."</td></tr>
-  </table>
-  <div class="callout"><strong>Say it plainly:</strong> "See the last clause — <em>don't write the essay for me.</em> AI is your editor, not your ghostwriter. It gives a second opinion on YOUR work; it doesn't hand in work with your name on it."</div>
+  <div class="callout"><strong>Say it plainly</strong> (Direct Instruction, continued): "See the last sentence — <em>don't write it for me.</em> AI is your editor, not your ghostwriter. It gives a second opinion on YOUR work; it doesn't hand in work with your name on it."</div>
+  <p class="whatif"><strong>What if</strong> someone says the fixed prompt is "too long"? Count it: three sentences. "Three sentences now, or forty pages of NASA history later. Your call."</p>
+  <p class="say"><strong>Hand-out / transition:</strong> "Your turn. Page 1: three kids typed cursed wishes. Fix all three — every part, P, R and O, every time. Solo. Ten minutes."</p>
 
   <h2>Activity — Cursed Wish Repair Shop (22 min)</h2>
   <ol>
-    <li><strong>Repair (9 min):</strong> Solo, students fix three kids' cursed wishes on the worksheet — Amara, Mateo, and Yuki — using all three P.R.O. clauses.</li>
-    <li><strong>Break it (8 min):</strong> Pairs swap sheets and play the Worst Genie Ever: misread each repaired wish as literally as possible, then score it with the Genie-Proof Checklist. Twistable = needs more fine print.</li>
-    <li><strong>Showcase (5 min):</strong> 2–3 students read a "cursed → genie-proof" before-and-after. With devices: run the best one live and critique what comes back.</li>
+    <li><strong>Repair (10 min):</strong> Solo, students fix Amara's, Mateo's and Yuki's cursed wishes on page 1 with all three P.R.O. parts. Circulate; read a stuck student's repair aloud in a genie voice.
+      <div class="whatif"><strong>What if</strong> a student writes nearly the same repair three times? "What does Mateo need that Yuki doesn't?" A plan is not a story — O must change. <strong>Finished early?</strong> Extension below.</div>
+      <span class="say"><strong>Swap:</strong> "Pens down. Swap sheets with your partner. You are now the Worst Genie Ever, and page 2 is where you do your damage."</span></li>
+    <li><strong>Break it (7 min):</strong> Pairs swap sheets and play the Worst Genie Ever on page 2 of their PARTNER's sheet: say a twist out loud for each wish, tick the Genie-Proof Checklist, write the best twist, swap back. Twistable = needs more rules.
+      <div class="whatif"><strong>What if</strong> a partner ticks every box without trying? Make them say the twist out loud. Can't twist it — the ✓ stands. Can twist it — un-tick and write the twist.</div>
+      <span class="say"><strong>Swap back:</strong> "Sheets back with their owners. Genies, point at the ONE wish on your partner's sheet you could NOT twist. That's the one we want to hear."</span></li>
+    <li><strong>Showcase (5 min):</strong> 2–3 pairs read a "cursed → genie-proof" before-and-after. With devices: run the best one live and critique what comes back.
+      <div class="whatif"><strong>What if</strong> the live AI answer is bad anyway? Perfect — "Which part of the wish let it do that?" The class adds a rule and you run it again.</div>
+      <span class="say"><strong>Into the exit ticket:</strong> "Your OWN sheet, bottom of page 2. Before you write, one more rule about genies."</span></li>
   </ol>
 
-  <h2>Exit Ticket (5 min)</h2>
-  <p><strong>Teach the trickster rule first (1 min):</strong> "Genies are tricksters — AI can grant your wish with made-up facts, and sound sure. Anything checkable — a name, a date, a number — gets checked somewhere real before you use it." Then, bottom of worksheet: students write one genie-proof prompt for another class this week, and name <strong>one thing they'd double-check</strong> before trusting the answer.</p>
+  <h2>Exit Ticket — Last Check (5 min: 1 + 4)</h2>
+  <p><strong>First minute — the trickster rule:</strong> "Genies are tricksters. AI can grant your wish with made-up facts, and sound sure. Anything checkable — a name, a date, a number — gets checked somewhere real before you use it." <strong>Four minutes, solo:</strong> #1 a genie-proof prompt for another class + what the genie would have done with the short version; #2 the printed genie answer to Amara's wish — which line to double-check, and where. Collect; key in the Teacher Guide only.</p>
+  <p class="whatif"><strong>What if</strong> a student says "it all sounds right"? "Which line has a number or a date in it? Numbers and dates are checkable. Start there."</p>
 
   <h2>Differentiation</h2>
-  <ul>
-    <li><strong>Support:</strong> Provide the P.R.O. sentence starters (Teacher Guide, p.2).</li>
+  <ul class="grid2">
+    <li><strong>Support:</strong> P.R.O. sentence starters (Teacher Guide); repair two wishes instead of three.</li>
     <li><strong>Extension:</strong> Write a wish that CAN'T be genie-proofed in under 50 words — then explain why.</li>
-    <li><strong>ELL:</strong> The P.R.O. sentence starters double as language frames; students may draft wishes in their strongest language first, then translate.</li>
-    <li><strong>No-device classrooms:</strong> Built in — the teacher and partners ARE the genie.</li>
+    <li><strong>ELL:</strong> The sentence starters double as language frames; draft in the strongest language first, then translate.</li>
+    <li><strong>No-device classrooms:</strong> Built in — the teacher and partners ARE the genie. Skip the "with devices" lines.</li>
   </ul>
 
   <div class="footer"><span>How to Talk to AI — Lesson Plan</span><span>© Future Skills Series</span><span>2</span></div>

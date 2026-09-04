@@ -116,7 +116,7 @@ export async function buildSlides(p, distDir, outPath, page = null) {
     if (deck.kicker) S.text(String(deck.kicker).toUpperCase(), { x: M, y: 1.15, w: tw, h: 0.3, fontSize: 11, bold: true, color: C.muted, charSpacing: 3 });
     S.text(short, { x: M, y: 1.5, w: tw, h: 1.5, fontSize: fit(short, tw, 1.5, 40, 28, true), bold: true, color: 'FFFFFF', valign: 'middle' });
     if (deck.subtitle) S.text(deck.subtitle, { x: M, y: 3.1, w: tw, h: 1.0, fontSize: fit(deck.subtitle, tw, 1.0, 15, 12), color: C.ink });
-    const chips = [`Grades ${meta.grades || '6–8'}`, `${meta.minutes || 45}-min lesson`, 'Works unplugged'];
+    const chips = [`Grades ${meta.grades || '6–8'}`, `${meta.minutes || 45}-min lesson`, 'No prep · No devices needed'];
     let cx = M; for (const c of chips) { const w = Math.max(1.05, c.length * 0.085 + 0.35); pill(S, c, cx, 4.35, w); cx += w + 0.15; }
   }
 

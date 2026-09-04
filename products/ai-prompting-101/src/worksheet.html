@@ -1,8 +1,16 @@
 <!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="../../../brand/templates/print.css">
 <style>
-  .writebox { min-height: 100px; }
-  td.tick { text-align:center; } td.tick::before { content:""; display:inline-block; width:14px; height:14px; border:1.5px solid #14141F; border-radius:3px; }
+  .writebox { min-height: 92px; }
+  .writebox.short { min-height: 72px; }
+  .lines .l { height: 24px; }
+  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 76px; height: 18px; vertical-align: bottom; }
+  .blank.wide { min-width: 170px; }
+  td.tick { text-align:center; } td.tick::before { content:""; display:inline-block; width:16px; height:16px; border:1.5px solid #14141F; border-radius:3px; vertical-align:middle; }
+  table.check td { padding: 8px 9px; } table.check th { padding: 5px 9px; } table.check { margin: 4px 0; }
+  .genie { border-left: 4px solid #5B4DFF; background: #F3F2FF; padding: 6px 11px; margin: 4px 0 6px; border-radius: 0 8px 8px 0; font-style: italic; font-size: 10.5pt; }
+  .exit p { margin-bottom: 4px; } .exit h2 { margin-top: 10px; } .exit .callout { padding: 7px 13px; margin-bottom: 0; }
+  .genie strong { font-style: normal; }
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .wishhead { display: flex; align-items: center; gap: 10px; }
   .wishbadge { width: 34px; height: 34px; flex: 0 0 34px; }
@@ -42,31 +50,32 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">Student Session</div><h1>Cursed Wish Repair Shop</h1></div>
-      <p class="sub">Name: ________________________  Class: ________  Date: ________</p>
+      <p class="sub">Name: <span class="blank wide"></span>&nbsp; Class: <span class="blank"></span>&nbsp; Date: <span class="blank"></span></p>
     </div>
     <svg width="120" height="90" viewBox="0 0 120 90"><use href="#lamp" transform="translate(8,4) scale(1.05)"/></svg>
   </div>
 
   <div class="panel">
     <strong>The genie's one rule:</strong> it grants exactly what you SAY — never what you MEANT.
-    Genie-proof your wish with the three <strong>P.R.O.</strong> clauses:
+    A <strong>cursed wish</strong> is one the genie can twist. A <strong>genie-proof</strong> wish can't be twisted.
+    Genie-proof every wish with all three <strong>P.R.O.</strong> parts:
     <ul>
       <li><strong>P — Purpose:</strong> what you want + who it's for</li>
-      <li><strong>R — Requirements:</strong> the fine print — length, tone, format, include / avoid</li>
-      <li><strong>O — Output:</strong> what the granted wish should look like</li>
+      <li><strong>R — Requirements:</strong> the rules — length, tone, format, what to include or leave out</li>
+      <li><strong>O — Output:</strong> what the finished answer should look like (a list? a table? a paragraph?)</li>
     </ul>
   </div>
 
   <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #1 — Amara's Space Poster</h2>
-  <p>Amara's science poster is due Friday. She typed <em>"tell me about space"</em> — and got 40 pages on the history of NASA. Rewrite her wish so the genie can't miss:</p>
+  <p>Amara's science poster is due Friday. She typed <em>"tell me about space"</em> — and got 40 pages on the history of NASA. Rewrite her wish so the genie can't get it wrong. Use P, R and O:</p>
   <div class="writebox"></div>
 
   <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #2 — Mateo's Headphone Fund</h2>
-  <p>Mateo gets $15 a week and wants $120 headphones. He typed <em>"help me save money"</em> — the genie answered: "Stop buying things." Rewrite his wish:</p>
+  <p>Mateo gets $15 a week and wants $120 headphones. He typed <em>"help me save money"</em> — the genie answered: "Stop buying things." Rewrite his wish. Use P, R and O:</p>
   <div class="writebox"></div>
 
   <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #3 — Yuki's Hero Story</h2>
-  <p>Yuki wants an anime-style story for the class zine. She typed <em>"make a story about a hero"</em> — the genie wrote: "Once there was a hero. The end." Rewrite her wish:</p>
+  <p>Yuki wants an anime-style story for the class magazine. She typed <em>"make a story about a hero"</em> — the genie wrote: "Once there was a hero. The end." Rewrite her wish. Use P, R and O:</p>
   <div class="writebox"></div>
 
   <div class="footer"><span>How to Talk to AI — Cursed Wish Repair Shop</span><span>© Future Skills Series</span><span>1</span></div>
@@ -76,24 +85,30 @@
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
   <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#sparkle"/></svg> Be the Worst Genie Ever — Break Your Partner's Wishes</h2>
-  <p>Swap sheets. Read each repaired wish like a literal genie looking for a loophole, then score it:</p>
-  <table>
+  <p><strong>Swap sheets with your partner.</strong> You are now the genie for THEIR three wishes. Try to twist each repaired wish — grant the exact words, not what they meant. Say your twist out loud to your partner, then tick the boxes. Write your best one below. Then swap back.</p>
+  <table class="check">
     <tr><th>Genie-Proof Checklist</th><th>Wish 1</th><th>Wish 2</th><th>Wish 3</th></tr>
-    <tr><td><strong>P</strong> — Clear purpose and audience?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td><strong>R</strong> — At least 2 pieces of fine print (length, tone, format, include/avoid)?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td><strong>O</strong> — Says what the output should look like?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td><svg width="15" height="15" viewBox="0 0 24 24" style="vertical-align:-2px"><use href="#sparkle"/></svg> <strong>Genie test</strong> — Genie-proof? (✓ only if the genie can't twist it)</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td><strong>P</strong> — Says what they want AND who it's for?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td><strong>R</strong> — Gives at least 2 rules (length, tone, format, include / leave out)?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td><strong>O</strong> — Says what the finished answer should look like?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td><svg width="15" height="15" viewBox="0 0 24 24" style="vertical-align:-2px"><use href="#sparkle"/></svg> <strong>Genie test</strong> — You tried to twist it and couldn't? (✓ = genie-proof)</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
   </table>
-  <p>The sneakiest way you could twist one of their wishes (be specific — which wish, and how?):</p>
+  <p><strong>Your best (sneakiest) twist:</strong> which wish, and exactly what would the genie hand back?</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
-  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#sparkle"/></svg> Exit Ticket</h2>
-  <p><strong>1.</strong> Write one genie-proof prompt you could really use this week for another class:</p>
-  <div class="writebox"></div>
-  <p><strong>2.</strong> Genies are tricksters: AI can grant your wish with facts it made up — and sound totally confident. Name ONE thing in an AI answer you'd double-check, and where you'd check it. (No AI in class today? Imagine the answer you'd expect back.)</p>
-  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  <div class="exit">
+  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#sparkle"/></svg> Exit Ticket — Last Check <span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:10pt; color:#55556B;">(your own sheet)</span></h2>
+  <p><strong>1.</strong> Write one genie-proof prompt you could really use this week for another class. Use all three parts: P, R and O.</p>
+  <div class="writebox short"></div>
+  <p>Then one sentence: what would the genie have done with the short version (just your first five words)?</p>
+  <div class="lines"><div class="l"></div></div>
+  <p><strong>2.</strong> Genies are tricksters: AI can grant your wish with made-up facts — and sound totally sure. Here is the genie's answer to Amara's repaired wish:</p>
+  <div class="genie"><strong>Genie:</strong> Here are facts for your black hole poster, Amara. A black hole is a place in space where gravity pulls so hard that even light can't escape. Scientists took the first-ever photo of a black hole in 2009, and the biggest black holes sit in the middle of galaxies — including ours.</div>
+  <p>Which line would you double-check, and where would you check it? (A real place: a textbook, a science website, a librarian…)</p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
 
-  <div class="callout"><strong>Keep it 100:</strong> If the genie does your homework, your name is on a wish you never earned — and teachers can tell. Use AI to think WITH you, not FOR you.</div>
+  <div class="callout"><strong>Be real with yourself:</strong> If the genie does your homework, your name is on a wish you never earned — and you'd know it. Use AI to think WITH you, not FOR you.</div>
+  </div>
 
   <div class="footer"><span>How to Talk to AI — Cursed Wish Repair Shop</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
