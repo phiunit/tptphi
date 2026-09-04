@@ -28,8 +28,8 @@ A surface SHIPS only when it meets every line below AND wins or ties a blind sid
 against the **reference**: the same surface in `products/ai-prompting-101` (the most-audited
 lesson; for L1 itself the reference is the written exemplar in each line).
 
-**cover** — at 200px tall you can read what it is, for whom, and why care; ≤ 4 words per title
-line; chips: lesson-of-6, grade, minutes, "No prep · No devices needed"; motif and dots ≥ 12px
+**cover** — at 200px tall you can read what it is (title), for whom (grade chip ≥ 24px) and why care (one
+≤ 10-word sub at ≥ 40px bold); ≤ 4 words per title line; art fully inside the frame; chips: lesson-of-6, grade, minutes, "No prep · No devices needed"; motif and dots ≥ 12px
 from every text line (machine gate); nothing said twice; art carries the lesson's analogy.
 **lesson-plan** — ≤ 2 pages; every block has minutes and they sum to 45 (machine gate) and each
 block is doable in its minutes for 30 students; a sub who has never seen it can run it from the
@@ -48,7 +48,7 @@ ticket; taught/assessed line per standard naming a real item; discussion moves +
 **deck** — one moment per slide, in lesson order, minutes match the plan; speaker notes carry the
 script and the answer keys, slides never carry answers or a false claim; ≤ 6 bullets; no text
 overflow (machine gate); title slide reads at the back of a room.
-**listing** — title ≤ 80, keyword-first, ≤ 1 pipe-separated hook; description ≥ 400 chars, opens
+**listing** — title ≤ 80, keyword-first, house formula `<keyword phrase> | Middle School 6-8 | <one differentiator>` (the grade band is a descriptor, not a second hook); description ≥ 400 chars, opens
 "NO STUDENT AI ACCOUNTS NEEDED", every promise (pages, passages, keys, fillable, deck) true;
 standards named exactly as yaml; INCLUDES complete; UPLOAD_SHEET identical to yaml.
 **buyer** — the six covers read as one line at thumbnail size; the free lesson makes the paid

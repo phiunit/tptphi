@@ -18,6 +18,11 @@ async function measureFields(page) {
   return page.evaluate((sels) => {
     const pages = [...document.querySelectorAll('.page')];
     const seen = new Set(); const out = [];
+    const push = (pg, r, top, extra) => {
+      const pr = pg.getBoundingClientRect();
+      out.push({ page: pages.indexOf(pg), x: r.left - pr.left, y: top - pr.top, w: r.width, h: r.bottom - top,
+                 cx: r.left - pr.left + r.width / 2, cy: r.top - pr.top + r.height / 2, check: false, multi: (r.bottom - top) > 34, ...extra });
+    };
     for (const sel of sels) for (const el of document.querySelectorAll(sel)) {
       if (seen.has(el)) continue;
       const pg = el.closest('.page'); if (!pg) continue;
@@ -25,12 +30,25 @@ async function measureFields(page) {
       // Table cells double as labels; only EMPTY cells are write-in targets.
       if (!check && el.tagName === 'TD' && el.textContent.trim() !== '') continue;
       seen.add(el);
-      const r = el.getBoundingClientRect(), pr = pg.getBoundingClientRect();
+      const r = el.getBoundingClientRect();
       let top = r.top;
       // A box may carry a printed label (e.g. .boxlabel) — start the field below it.
       for (const kid of el.children) { const kr = kid.getBoundingClientRect(); if (kid.textContent.trim() && kr.bottom > top && kr.bottom < r.bottom - 12) top = kr.bottom; }
-      out.push({ page: pages.indexOf(pg), x: r.left - pr.left, y: top - pr.top, w: r.width, h: r.bottom - top,
-                 cx: r.left - pr.left + r.width / 2, cy: r.top - pr.top + r.height / 2, check, multi: (r.bottom - top) > 34 });
+      // Empty inline blanks (.blank) have no height — the field sits on the underline.
+      if (r.bottom - top < 8) top = r.bottom - 18;
+      push(pg, r, top, { check });
+    }
+    // Underscore runs in prose ("Name: ________") are write-ins too.
+    for (const pg of pages) {
+      const walker = document.createTreeWalker(pg, NodeFilter.SHOW_TEXT);
+      for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+        if (n.parentElement.closest('svg, .footer, .masthead')) continue;
+        const re = /_{3,}/g; let m;
+        while ((m = re.exec(n.nodeValue))) {
+          const rg = document.createRange(); rg.setStart(n, m.index); rg.setEnd(n, m.index + m[0].length);
+          const rr = rg.getBoundingClientRect(); if (rr.width > 20) push(pg, rr, rr.top, {});
+        }
+      }
     }
     return out.sort((a, b) => a.page - b.page || a.y - b.y || a.x - b.x);
   }, WRITE_IN);

@@ -12,18 +12,29 @@ for (const p of listProducts(process.argv[2])) {
   if (!fs.existsSync(rev)) { console.log('skip (no dist/review — run judge):', p.slug); continue; }
   const pngs = fs.readdirSync(rev).filter(f => f.endsWith('.png') && !/^slide-/.test(f)); // deck shots are not print pages
   const cover = pngs.find(f => /cover/i.test(f));
-  const order = ['worksheet-p1', 'lesson-plan-p1', 'worksheet-p2', 'unit-overview-p1', 'teacher-guide-p1'];
+  // Buyers want to see the student page AND the answer key before paying (gauntlet: buyer critic)
+  const order = ['worksheet-p1', 'teacher-guide-p1', 'lesson-plan-p1', 'unit-overview-p1', 'unit-overview-p2', 'worksheet-p2'];
   const samples = order.map(b => pngs.find(f => f.startsWith(b))).filter(Boolean).slice(0, 3);
-  const total = fs.readdirSync(path.join(p.dir, 'dist')).filter(f => f.endsWith('.pdf')).length;
+  const distFiles = fs.readdirSync(path.join(p.dir, 'dist'));
+  const has = re => distFiles.some(f => re.test(f));
+  const parts = [];
+  if (has(/ - Lesson Plan\.pdf$/)) parts.push('LESSON PLAN');
+  if (has(/ - Worksheet\.pdf$/)) parts.push(has(/Fillable\)\.pdf$/) ? 'WORKSHEET (+ FILLABLE)' : 'WORKSHEET');
+  if (has(/ - Teacher Guide\.pdf$/)) parts.push('TEACHER GUIDE');
+  if (has(/\.pptx$/)) parts.push('SLIDE DECK');
+  if (has(/ - Unit Overview\.pdf$/)) parts.push('UNIT OVERVIEW');
+  const band = p.meta.bundle_of
+    ? `PREVIEW · ${p.meta.bundle_of.length} complete lessons · plans, worksheets (+ fillable), teacher guides, slide decks`
+    : `PREVIEW · full download: ${parts.join(' · ')}`;
   const img = f => `data:image/png;base64,${fs.readFileSync(path.join(rev, f)).toString('base64')}`;
-  const sheet = f => `<div class="pg"><img src="${img(f)}"><div class="band">PREVIEW · full download has ${total} print-ready PDFs</div></div>`;
+  const sheet = f => `<div class="pg"><img src="${img(f)}"><div class="band">${band}</div></div>`;
   const html = `<!doctype html><html><head><meta charset="utf-8"><style>
     @font-face{font-family:'Space Grotesk';font-weight:700;src:url('file://${path.resolve('brand/fonts/SpaceGrotesk-700.ttf')}')}
     *{margin:0;box-sizing:border-box} body{width:8.5in}
     .pg{width:8.5in;height:11in;position:relative;page-break-after:always;overflow:hidden;background:#fff}
     .pg:last-child{page-break-after:auto} .pg img{width:8.5in;height:11in;display:block}
     .band{position:absolute;left:-2in;right:-2in;top:46%;transform:rotate(-24deg);background:rgba(255,176,32,.82);color:#14141F;
-      font:700 30px 'Space Grotesk',sans-serif;letter-spacing:2px;text-align:center;padding:14px 0;text-transform:uppercase}
+      font:700 22px 'Space Grotesk',sans-serif;letter-spacing:1.5px;text-align:center;padding:14px 0;text-transform:uppercase}
   </style></head><body>${cover ? `<div class="pg"><img src="${img(cover)}"></div>` : ''}${samples.map(sheet).join('')}</body></html>`;
   const tmp = path.join(p.dir, 'dist', '.preview.html'); fs.writeFileSync(tmp, html);
   await page.goto('file://' + tmp, { waitUntil: 'networkidle' });

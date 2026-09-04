@@ -18,7 +18,7 @@ products:
   - { slug: ai-taste-file,           line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 4,
       title: "AI Writing Feedback Lesson: Revision Activity | Middle School 6-8 | No Prep" }
   - { slug: ai-boring-work,          line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 5,
-      title: "AI and Future Jobs Lesson: Career Exploration Activity | Grades 6-8 | No Prep" }
+      title: "AI and Future Jobs Lesson: Automation Tradeoffs Sort | Grades 6-8 | No Prep" }
   - { slug: ai-agent-intern,         line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 6,
       title: "AI Agents Lesson: Team Roles & Project Planning Activity | Grades 6-8 | No Prep" }
   - { slug: vibe-coding-first-app,   line: ai,           priority: 1, status: idea, price: 6,

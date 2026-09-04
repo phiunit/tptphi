@@ -120,6 +120,19 @@ export async function buildSlides(p, distDir, outPath, page = null) {
     let cx = M; for (const c of chips) { const w = Math.max(1.05, c.length * 0.085 + 0.35); pill(S, c, cx, 4.35, w); cx += w + 0.15; }
   }
 
+  // Content limits from docs/ANTI_SLOP.md — checked up front so the failure names the slide
+  const tooLong = [];
+  deck.slides.forEach((s, i) => {
+    const n = i + 2, over = (label, t, max) => { if (t && String(t).length > max) tooLong.push(`slide ${n} ${label}: ${String(t).length} chars > ${max}`); };
+    if (s.type === 'cards') { const max = (s.items || []).length >= 4 ? 90 : 140; (s.items || []).forEach((it, j) => { over(`card ${j + 1} text`, it.text, max); over(`card ${j + 1} name`, it.name, 24); }); }
+    if (s.type === 'list') { if ((s.items || []).length > 6) tooLong.push(`slide ${n}: ${s.items.length} bullets > 6`); (s.items || []).forEach((t, j) => over(`item ${j + 1}`, t, 110)); }
+    if (s.type === 'hook') { over('headline', s.headline, 90); (s.lines || []).forEach((t, j) => over(`line ${j + 1}`, t, 110)); }
+    if (s.type === 'quote') over('quote', s.quote, 80);
+    if (s.type === 'steps') (s.items || []).forEach((it, j) => over(`step ${j + 1} text`, it.text, 150));
+    if (s.type === 'compare') { over('left text', s.left && s.left.text, 170); over('right text', s.right && s.right.text, 170); }
+  });
+  if (tooLong.length) throw new Error(`CONTENT FAIL ${p.slug}/src/slides.yaml:\n  - ` + tooLong.join('\n  - '));
+
   for (const s of deck.slides) {
     const S = frame(s);
     const top = s.title ? 1.3 : 0.75, bodyH = H - top - 0.6, bw = W - 2 * M;

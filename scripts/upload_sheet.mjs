@@ -18,6 +18,12 @@ for (const p of listProducts(process.argv[2])) {
   const cover = dist.find(f => f.toLowerCase().includes('cover'));
   const ccss = (m.standards || []).filter(s => /CCSS/i.test(s.framework)).map(s => s.code);
   const other = (m.standards || []).filter(s => !/CCSS/i.test(s.framework)).map(s => `${s.framework} ${s.code}`);
+  // ELA subject follows the strand actually aligned (RI ≠ Writing)
+  const ELA = { RI: 'English Language Arts → Reading (Informational Text)', RL: 'English Language Arts → Reading (Literature)', W: 'English Language Arts → Writing', SL: 'English Language Arts → Oral Communication (Speaking & Listening)', L: 'English Language Arts → Vocabulary' };
+  const strands = [...new Set(ccss.map(c => c.split('.')[0]))].map(k => ELA[k]).filter(Boolean);
+  const subjects = strands.length ? (SUBJECTS[m.line] || '').replace('English Language Arts → Writing', strands.join('; ')) : (SUBJECTS[m.line] || '(set by line)');
+  const zipNote = m.bundle_of ? 'carries the Unit Overview only — the lessons attach as TPT bundle children'
+    : 'one zip with every file; TPT takes a single upload for free and paid listings alike';
   const out = `# Upload Sheet — ${m.short_name || m.title}
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
@@ -31,13 +37,13 @@ ${m.title}
 **Grades:** ${String(m.grades).split('-').join(', ').replace('6, 8', '6, 7, 8')}
 
 **File(s) to upload:**
-${zip ? `- \`dist/${zip}\`  (single zip — use for free listings)` : files.map(f => `- \`dist/${f}\``).join('\n')}
+${zip ? `- \`dist/${zip}\`  (${zipNote})` : files.map(f => `- \`dist/${f}\``).join('\n')}
 
 **Custom cover (optional):** ${cover ? `\`dist/${cover}\`` : '— none rendered —'}
 
 **Resource types:** ${(m.resource_types || []).join(', ')}
 
-**Subjects (TPT picker):** ${SUBJECTS[m.line] || '(set by line)'}
+**Subjects (TPT picker):** ${subjects}
 
 **Standards:** select in TPT's picker → ${ccss.length ? ccss.map(c => 'CCSS ' + c).join(', ') : '(none — CCSS only in picker)'}
 ${other.length ? `Not in TPT's picker (they live in the description + teacher guide, which is normal): ${other.join(', ')}` : ''}
@@ -48,9 +54,9 @@ ${(m.tags || []).join(', ')}
 \`\`\`
 
 **Description** — paste the \`description:\` block from \`products/${p.slug}/product.yaml\`
-(${String(m.description || '').length} chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(${String(m.description || '').length} chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
-${m.bundle_of ? `**Bundle contents** — add these products to the bundle in TPT:\n${m.bundle_of.map((s, i) => `${i + 1}. ${s}`).join('\n')}\n` : ''}
+${m.bundle_of ? `**Bundle contents** — add these products to the bundle in TPT:\n${m.bundle_of.map((s, i) => `${i + 1}. ${s}`).join('\n')}\n\n> HUMAN GATE: TPT's bundle tool has historically refused FREE products as bundle children. If it refuses the free lesson, either add that lesson's PDFs + deck to the bundle zip before upload, or list a $4 twin of it for bundling and keep the freebie separate — otherwise "6 lessons" is false at checkout.\n` : ''}
 ## Before you hit Publish
 - [ ] Title reads clean in the search-results preview
 - [ ] Cover legible at thumbnail size

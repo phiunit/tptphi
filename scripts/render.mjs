@@ -3,7 +3,7 @@
 // Usage: npm run render [-- <product-slug>]
 import fs from 'node:fs';
 import path from 'node:path';
-import { launch, listProducts } from './lib.mjs';
+import { launch, listProducts, PRODUCTS_DIR } from './lib.mjs';
 import { makeFillable } from './fillable.mjs';
 import { buildSlides } from './slides.mjs';
 
@@ -129,6 +129,12 @@ for (const p of listProducts(slug)) {
   const deck = await buildSlides(p, distDir, path.join(distDir, outName(p.meta, 'slides') + '.pptx'), page);
   if (deck) console.log('DECK', path.relative(process.cwd(), deck.file), '(' + deck.count + ' slides)');
   const pdfs = fs.readdirSync(distDir).filter(f => /\.(pdf|pptx)$/.test(f) && !/ - Preview\.pdf$/.test(f)).map(f => path.join(distDir, f));
+  // A bundle's zip carries every child lesson's files too, so "N lessons" is true by file whatever TPT's
+  // bundle-child rules turn out to be (gauntlet R1, buyer critic).
+  for (const child of p.meta.bundle_of || []) {
+    const cd = path.join(PRODUCTS_DIR, child, 'dist');
+    if (fs.existsSync(cd)) pdfs.push(...fs.readdirSync(cd).filter(f => /\.(pdf|pptx)$/.test(f) && !/ - Preview\.pdf$/.test(f)).map(f => path.join(cd, f)));
+  }
   if (!pdfs.length) continue;
   for (const z of fs.readdirSync(distDir).filter(f => f.endsWith('.zip'))) fs.rmSync(path.join(distDir, z));
   const lesson = (p.meta.short_name || String(p.meta.title).split(':')[0]).trim().replace(/[\\/:*?"<>|]/g, '');
