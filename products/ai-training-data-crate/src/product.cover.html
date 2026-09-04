@@ -12,36 +12,46 @@ body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Rob
 .star.g { background: #FFB020; }
 /* content */
 .brand { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
-.chipline { margin-top: 26px; display: flex; gap: 12px; position: relative; z-index: 2; }
-.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 20px; padding: 8px 22px; border-radius: 99px; }
+.chipline { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; position: relative; z-index: 2; }
+.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 24px; padding: 8px 17px; border-radius: 99px; white-space: nowrap; }
 .chip.solid { background: #FFB020; color: #14141F; }
+.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 96px; position: relative; z-index: 2; }
 h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
 h1 span { color: #FFB020; }
-.sub { font-size: 30px; margin-top: 28px; line-height: 1.45; color: #E8E8F5; max-width: 620px; position: relative; z-index: 2; }
-.sub em { color: #FFB020; font-style: normal; font-weight: 700; }
-.lessonchip { position: absolute; top: 52px; right: 52px; border: 2px solid #FFB020; color: #FFB020; font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700; font-size: 20px; padding: 8px 22px; border-radius: 99px; z-index: 3; }
+.sub { font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; line-height: 1.2; margin-top: 30px; color: #E8E8F5; letter-spacing: -0.5px; white-space: nowrap; position: relative; z-index: 2; }
+.sub em { color: #FFB020; font-style: normal; }
 </style></head><body>
 <div class="star g" style="width:10px;height:10px;left:700px;top:180px"></div>
 <div class="star" style="width:4px;height:4px;left:520px;top:120px"></div>
 <div class="star g" style="width:8px;height:8px;left:800px;top:330px"></div>
-<div class="star g" style="width:6px;height:6px;left:780px;top:460px"></div>
-<svg width="380" height="330" viewBox="0 0 380 320" style="position:absolute; right:14px; bottom:-40px; z-index:1;">
-  <rect x="34" y="26" width="248" height="268" rx="24" fill="#FFB020"/>
-  <g stroke="#232345" stroke-width="15" stroke-linecap="round">
-    <line x1="72" y1="80" x2="244" y2="80"/><line x1="72" y1="126" x2="244" y2="126"/>
-    <line x1="72" y1="172" x2="196" y2="172"/><line x1="72" y1="218" x2="244" y2="218"/>
-  </g>
-  <g opacity="0.85">
-    <circle cx="300" cy="150" r="30" fill="#FFB020"/>
-    <path d="M 330 150 V 56 L 372 46 V 132" fill="none" stroke="#FFB020" stroke-width="17" stroke-linecap="round"/>
-    <circle cx="352" cy="132" r="26" fill="#FFB020"/>
+<div class="star g" style="width:6px;height:6px;left:780px;top:440px"></div>
+<!-- art: a playlist card with three tracks and one empty slot (the gap), plus notes — fully inside the frame -->
+<svg width="420" height="340" viewBox="0 0 420 340" style="position:absolute; right:36px; bottom:32px; z-index:1;">
+  <g transform="translate(2,2) scale(1.08)">
+    <rect x="34" y="26" width="248" height="276" rx="24" fill="#FFB020"/>
+    <g stroke="#232345" stroke-width="15" stroke-linecap="round">
+      <line x1="72" y1="82" x2="244" y2="82"/><line x1="72" y1="130" x2="244" y2="130"/>
+      <line x1="72" y1="178" x2="196" y2="178"/>
+    </g>
+    <g stroke="#232345" stroke-width="11" stroke-linecap="round" stroke-dasharray="18 16">
+      <line x1="72" y1="238" x2="244" y2="238"/>
+    </g>
+    <g fill="#FFD27A">
+      <circle cx="30" cy="44" r="12"/>
+      <path d="M 42 44 V 10 L 58 6 V 36" fill="none" stroke="#FFD27A" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="50" cy="36" r="10"/>
+    </g>
+    <g>
+      <circle cx="300" cy="160" r="30" fill="#FFD27A"/>
+      <path d="M 330 160 V 66 L 372 56 V 142" fill="none" stroke="#FFD27A" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="352" cy="142" r="26" fill="#FFD27A"/>
+    </g>
   </g>
 </svg>
 <div class="brand">Future Skills Series</div>
 <div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Lesson 2 of 6</span></div>
-<div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; letter-spacing:3px; text-transform:uppercase; color:#E8E8F5; opacity:0.85; margin-top:120px; position:relative; z-index:2;">The Playlist Lesson</div>
+<div class="kicker">The Playlist Lesson</div>
 <h1>What's in the<br><span>Playlist?</span></h1>
-<p class="sub">How AI learns, for grades 6&ndash;8: training data is a playlist &mdash; AI can only play <em>what someone put in it</em>. Students run a one-playlist music app, find who it fails, and meet real bias.</p>
+<p class="sub">Gap in the playlist, <em>gap in the AI.</em></p>
 <div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">45-min lesson</span><span class="chip">No prep · No devices needed</span></div>
 </body></html>

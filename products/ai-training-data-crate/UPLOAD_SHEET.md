@@ -1,9 +1,9 @@
 # Upload Sheet — What's in the Playlist
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (80 chars — TPT max ~80)
+**Title** (71 chars — TPT max ~80)
 ```
-How AI Works Lesson: Training Data & Bias Activity | Middle School 6-8 | No Prep
+How AI Works Lesson: Training Data & Bias | Middle School 6-8 | No Prep
 ```
 
 **Price:** $4.00
@@ -11,13 +11,13 @@ How AI Works Lesson: Training Data & Bias Activity | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/What's in the Playlist (Future Skills).zip`  (single zip — use for free listings)
+- `dist/What's in the Playlist (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
 
 **Custom cover (optional):** `dist/What's in the Playlist - Cover.png`
 
 **Resource types:** Lesson, Worksheets, Activities, Printables
 
-**Subjects (TPT picker):** Computer Science - Technology → Instructional Technology; Critical Thinking; English Language Arts → Writing
+**Subjects (TPT picker):** Computer Science - Technology → Instructional Technology; Critical Thinking; English Language Arts → Oral Communication (Speaking & Listening)
 
 **Standards:** select in TPT's picker → CCSS SL.6.1
 Not in TPT's picker (they live in the description + teacher guide, which is normal): CSTA 2-IC-21, ISTE 1.1.d
@@ -28,7 +28,7 @@ AI literacy, artificial intelligence, machine learning, training data, algorithm
 ```
 
 **Description** — paste the `description:` block from `products/ai-training-data-crate/product.yaml`
-(2213 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(2459 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

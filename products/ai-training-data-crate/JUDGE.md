@@ -1,4 +1,25 @@
-# Judge Report v2 — What's in the Playlist (Lesson 2 of 6)
+# Judge Report v3 — What's in the Playlist (Lesson 2 of 6)
+Judged: 2026-09-04 · gauntlet round 1 (docs/gauntlet/PLAN.md D1–D9 + L2 decisions) · audit GREEN
+
+## Round-1 gauntlet changes (supersede the v2 notes below where they differ)
+- Worksheet: Name/Partner/Class/Date are fields; App / Request Line roles + "serve" + "hype" glossed in the opening panel;
+  Serve table on p1 (rows 36px) with three Fit tick boxes (Perfect fit / Kind of fits / Nothing fits) replacing the write-in;
+  Fix-the-Playlist cards 76px; say-back frames on the page; Exit #3 added so Objective 3 (SL.6.1) is measured;
+  successes Priya + Malik, failures Tomás / Keisha / Nia / Jordan. Fillable copy: 53 fields, one on every write-in.
+  Blank tails p1 11% / p2 10%.
+- Lesson plan: italic what-if under every block (incl. Exit Ticket), quoted transition at every seam, 7+8+20+5+5 = 45,
+  debrief 1/3/1, materials list the worksheet / Slides (optional) / board, bridge hedged for classes that skipped Lesson 1.
+- Teacher guide: 3 pages (13% / 9% / 32% blank) — key for every Serve row, exemplars for Gap Report 1–2, Repeat-Then-Add,
+  Fix the Playlist and Exit 1–3, four what-ifs, taught/assessed line per standard; feed / face-analysis wording corrected
+  (training data = everyone's behaviour; 2018 face-analysis finding stated without numbers); D7 human → AI → human sentence.
+  A 2-page fold was attempted and measured ~280px over at house type size, so the 3-page layout stands (D3: ≤ 3 pages, no page > 60% blank).
+- Deck: question slides carry no answers (keys in notes); slide 2 "Got it."; card ≤ 90 / compare ≤ 170 gate green; closer carries D7 + next-in-unit.
+- Cover: one-line ≤ 10-word sub, chip row per D1, art enlarged and fully inside the frame, #FFD27A tint notes; 12px clearance gate green.
+- Listing: title 71 chars (no "Activity"), D2 opener + hook, INCLUDES in D2 order, includes = five shipped files; UPLOAD_SHEET regenerated.
+
+Verdict: PASS.
+
+# Judge Report v2 — What's in the Playlist (Lesson 2 of 6)  *(historical)*
 Judged: 2026-09-03 · docs/JUDGE.md v2 (gated) · 8 screenshots in dist/review/ (viewport-reset judge)
 
 ## Process note

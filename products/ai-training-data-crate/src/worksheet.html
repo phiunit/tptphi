@@ -4,19 +4,26 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
   h2 { margin: 8px 0 4px; }
+  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 112px; }
+  .blank.short { min-width: 62px; }
+  .sub { white-space: nowrap; }
+  .blank.wide { min-width: 250px; }
+  .panel ul { margin: 3px 0 0; }
+  .panel li { margin-bottom: 1px; }
   td { padding: 4px 8px; }
-  .lines .l { height: 22px; }
-  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; margin: 6px 0 2px; }
-  .card { border: 1.5px dashed #9A9AB2; border-radius: 8px; padding: 5px 7px 4px; }
+  table.serve td { height: 36px; }
+  table.serve th.tk { width: 62px; text-align: center; font-size: 7.5pt; line-height: 1.15; padding: 4px 3px; }
+  td.tick { text-align: center; vertical-align: middle; }
+  td.tick::before { content: ""; display: inline-block; width: 16px; height: 16px; border: 1.5px solid #14141F; border-radius: 3px; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 5px 0 2px; }
+  .card { border: 1.5px dashed #9A9AB2; border-radius: 8px; padding: 4px 7px 3px; }
   .card .t { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9.5pt; }
   .card .g { font-size: 8pt; color: #55556B; }
-  .flow { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
-  .flow .step { flex: 1; background: var(--panel); border-radius: 8px; padding: 6px 9px; font-size: 9.5pt; }
-  .flow .step b { font-family: 'Space Grotesk', sans-serif; }
-  .flow .arrow { font-weight: 700; color: var(--line); font-size: 13pt; }
   .addcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 4px 0; }
-  .addcard { border: 1.5px solid #B9B9C9; border-radius: 8px; min-height: 52px; padding: 5px 8px; font-size: 8pt; color: #8A8AA0; }
-  td.fit { text-align: center; }
+  .addcard { min-height: 76px; padding: 5px 8px; }
+  .addcard .boxlabel { font-size: 8pt; color: #8A8AA0; }
+  .frame { font-size: 9pt; color: #6E6E85; margin: 0 0 2px; }
+  .q { margin-bottom: 2px; }
 </style>
 </head>
 <body class="line-ai compact">
@@ -45,26 +52,18 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">Student Session</div><h1>Playlist Check</h1></div>
-      <p class="sub">Name: ______________  Partner: ______________  Class: ______  Date: ______</p>
+      <p class="sub">Name: <span class="blank"></span> &nbsp;Partner: <span class="blank"></span> &nbsp;Class: <span class="blank short"></span> &nbsp;Date: <span class="blank short"></span></p>
     </div>
     <svg width="116" height="84" viewBox="10 12 112 80"><use href="#playlist"/></svg>
   </div>
 
   <div class="panel">
-    <strong>You are the AI.</strong> The playlist below is your training data — every song you have ever "heard." House rules:
+    <strong>You are the AI.</strong> The playlist below is your <strong>training data</strong> — every song you have ever "heard." Work in pairs. <strong>Partner A is the App:</strong> you pick the song. <strong>Partner B is the Request Line:</strong> you read each request out loud, like a caller on a radio show. Swap jobs after request #3. To <strong>serve</strong> a song means to pick a card and hand it over. Three rules:
     <ul>
-      <li><strong>Rule 1:</strong> You can ONLY serve cards from the playlist. No inventing songs mid-game.</li>
-      <li><strong>Rule 2:</strong> You never refuse a request — serve the closest card you've got, the way a recommendation feed always serves you <em>something</em>.</li>
-      <li><strong>Rule 3:</strong> Rate every serve honestly. The ratings are the data.</li>
+      <li><strong>Rule 1:</strong> Only serve cards from the playlist. No inventing songs mid-game.</li>
+      <li><strong>Rule 2:</strong> Never say no. Serve the closest card you've got — a music app always gives you <em>something</em>.</li>
+      <li><strong>Rule 3:</strong> Tick the Fit box honestly, on your own sheet. The ticks are the data.</li>
     </ul>
-  </div>
-
-  <div class="flow">
-    <div class="step"><b>INPUT</b> — the playlist: every example the AI studied</div>
-    <div class="arrow">&#8594;</div>
-    <div class="step"><b>PATTERNS</b> — training: what usually goes with what</div>
-    <div class="arrow">&#8594;</div>
-    <div class="step"><b>OUTPUT</b> — the mix: its best prediction from those patterns</div>
   </div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> The Playlist — All 12 Songs You Know</h2>
@@ -82,57 +81,64 @@
     <div class="card"><div class="t">Confetti Cannon</div><div class="g">Party Pop · Fast · Party</div></div>
     <div class="card"><div class="t">Cool Down (Kinda)</div><div class="g">Party Pop · Medium · Party</div></div>
   </div>
-  <p style="font-size:9pt; color:#55556B; margin-top:4px;">All 12 tracks: English lyrics, loud, and built for parties, gyms, and games. (Cut the cards apart, or just point — your choice.) Notice anything about this playlist yet? Hold that thought.</p>
+  <p style="font-size:9pt; color:#55556B; margin:3px 0 0;"><strong>Hype</strong> = loud and exciting. Cut the cards apart, or just point. Notice anything about this playlist yet? Keep that idea for later.</p>
 
-  <div class="footer"><span>What's in the Playlist — Playlist Check</span><span>© Future Skills Series</span><span>1</span></div>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Serve the Request Line</h2>
+  <p class="q" style="font-size:9.5pt;">Request Line reads it. App names the best card. Both of you write the card and tick ONE Fit box on your own sheet.</p>
+  <table class="serve">
+    <tr><th style="width:47%;">Request</th><th>Best card in your playlist</th><th class="tk">Perfect<br>fit</th><th class="tk">Kind of<br>fits</th><th class="tk">Nothing<br>fits</th></tr>
+    <tr><td>1. Priya needs a hype song for when the basketball team runs onto the court.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td>2. Nia wants something calm to study to before the math test.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td>3. Tomás wants a song in Spanish for his abuela's (grandma's) birthday dinner.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td>4. Keisha wants a slow song for the last dance at the 8th-grade dance. <em>(Swap jobs first!)</em></td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td>5. Malik wants a first song for his party — one that makes everyone jump at once.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td>6. Jordan wants a quiet guitar song for the talent-show sing-along.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr><td>7. Live request from another pair: <span class="blank"></span></td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+  </table>
+
+  <div class="footer"><span>What's in the Playlist? — Playlist Check</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
 
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Serve the Request Line</h2>
-  <p style="margin-bottom:4px;">App: pick your best card. Both partners rate the fit: <strong>&#10003; Nailed it · ~ Close-ish · &#10007; Playlist can't do it</strong></p>
-  <table>
-    <tr><th>Request</th><th>Best card in your playlist</th><th style="width:52px;">Fit</th></tr>
-    <tr><td>Keisha needs a hype anthem for the basketball team's tunnel walk.</td><td></td><td class="fit"></td></tr>
-    <tr><td>Nia wants something calm to study to before the math test.</td><td></td><td class="fit"></td></tr>
-    <tr><td>Tomás wants a song in Spanish for his abuela's birthday dinner.</td><td></td><td class="fit"></td></tr>
-    <tr><td>Priya needs a slow song for the last dance at the 8th-grade dance.</td><td></td><td class="fit"></td></tr>
-    <tr><td>Malik wants an opener that makes the whole party jump at once.</td><td></td><td class="fit"></td></tr>
-    <tr><td>Jordan wants a quiet acoustic track for the talent-show sing-along.</td><td></td><td class="fit"></td></tr>
-    <tr><td>Live request from another pair: ______________________________</td><td></td><td class="fit"></td></tr>
-  </table>
-
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Playlist Gap Report</h2>
   <div class="grid2">
     <div>
-      <p style="margin-bottom:2px;"><strong>Who does this playlist serve really well?</strong></p>
-      <div class="lines"><div class="l"></div><div class="l"></div></div>
+      <p class="q"><strong>1. Who does this playlist serve really well?</strong> Name the people, not just the songs.</p>
+      <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
     </div>
     <div>
-      <p style="margin-bottom:2px;"><strong>Who does it leave out — and what do they get served instead?</strong></p>
-      <div class="lines"><div class="l"></div><div class="l"></div></div>
+      <p class="q"><strong>2. Who does it leave out — and what do they get served instead?</strong></p>
+      <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
     </div>
   </div>
-  <p style="margin:6px 0 2px;"><strong>Say back + build:</strong> One gap my partner noticed (in their words): </p>
-  <div class="lines"><div class="l"></div></div>
-  <p style="margin:4px 0 2px;">What I'd add to their idea:</p>
-  <div class="lines"><div class="l"></div></div>
+
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Repeat, Then Add</h2>
+  <p class="q">Before you say your own idea, say your partner's back to them. Then add to it.</p>
+  <p class="q" style="margin-top:4px;"><strong>One gap my partner noticed (in their words):</strong></p>
+  <p class="frame">Start with: "I heard you say…"</p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <p class="q" style="margin-top:6px;"><strong>What I'd add to their idea:</strong></p>
+  <p class="frame">Start with: "Building on that…"</p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Fix the Playlist</h2>
-  <p style="margin-bottom:4px;">Invent 3 new cards that fix the biggest gaps. Title + genre + vibe — make them up!</p>
+  <p class="q">Invent new song cards that fix the biggest gaps — at least 2, all 3 if you can. Title + genre + speed + what it's for, like the cards on page 1. Make them up! Every card should fix a DIFFERENT gap.</p>
   <div class="addcards">
-    <div class="addcard">Title / genre / vibe</div>
-    <div class="addcard">Title / genre / vibe</div>
-    <div class="addcard">Title / genre / vibe</div>
+    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · what it's for</div></div>
+    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · what it's for</div></div>
+    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · what it's for</div></div>
   </div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Exit Ticket</h2>
-  <p style="margin-bottom:2px;"><strong>1.</strong> Finish the chain: <strong>INPUT &#8594; ______________ &#8594; OUTPUT.</strong> In your own words, what does an AI actually do with its playlist (training data)?</p>
+  <p class="q"><strong>1.</strong> Finish the chain: <strong>INPUT &#8594; ________________ &#8594; OUTPUT.</strong> In your own words, what does an AI actually do with its playlist (training data)?</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
-  <p style="margin:6px 0 2px;"><strong>2.</strong> A school's new AI homework helper explains everything with football examples — never anything else. Using the word <em>playlist</em>, explain what probably happened, and who it doesn't serve well.</p>
+  <p class="q" style="margin-top:6px;"><strong>2.</strong> A school's new AI homework helper explains everything with football examples — never anything else. Using the word <em>playlist</em>, explain what probably happened, and who it doesn't serve well.</p>
   <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  <p class="q" style="margin-top:6px;"><strong>3.</strong> One gap your partner spotted before you did — in your own words:</p>
+  <div class="lines"><div class="l"></div></div>
 
-  <div class="footer"><span>What's in the Playlist — Playlist Check</span><span>© Future Skills Series</span><span>2</span></div>
+  <div class="footer"><span>What's in the Playlist? — Playlist Check</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
 </body></html>

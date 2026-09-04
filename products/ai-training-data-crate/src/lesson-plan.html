@@ -4,9 +4,17 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
-  h2 { margin: 10px 0 4px; }
+  h2 { margin: 9px 0 4px; }
   .panel p, .callout p { margin-bottom: 5px; }
   .panel p:last-child, .callout p:last-child { margin-bottom: 0; }
+  .whatif { color: #55556B; font-style: italic; }
+  .say { margin-top: 2px; }
+  .chipnote { font-size: 9pt; color: #55556B; align-self: center; }
+  h2 { margin: 7px 0 4px; }
+  .chain { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 4px 0 6px; }
+  .chain .step { background: var(--panel); border-radius: 8px; padding: 6px 9px; font-size: 9.5pt; line-height: 1.32; }
+  .chain .step b { font-family: 'Space Grotesk', sans-serif; }
+  ol li { margin-bottom: 2px; }
 </style>
 </head>
 <body class="line-ai compact">
@@ -35,7 +43,7 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">The Playlist Lesson · Lesson 2 of 6</div><h1>What's in the Playlist?</h1></div>
-      <p class="sub">A 45-minute lesson on how AI learns — and where bias comes from. The hook: an AI is a music app, and training data is its playlist. It can only mix what's in the playlist, so a one-genre playlist means one-genre answers, no matter who's asking.</p>
+      <p class="sub">A 45-minute lesson on how AI learns — and where bias comes from. The hook: an AI is a music app, its training data is the playlist, and a one-genre playlist means one-genre answers. Stands alone.</p>
     </div>
     <svg class="art" width="116" height="84" viewBox="10 12 112 80"><use href="#playlist"/></svg>
   </div>
@@ -43,70 +51,83 @@
   <h2>At a Glance</h2>
   <table>
     <tr><th>Time</th><th>Materials</th><th>Tech needed</th><th>Prep</th></tr>
-    <tr><td>45 min</td><td>Playlist Check worksheet (1 per student; pairs share one request line; scissors optional)</td><td>None — fully unplugged</td><td>Print worksheets. That's it.</td></tr>
+    <tr><td>45 min</td><td>Playlist Check worksheet, 2 pages, 1 per student — each fills their OWN sheet (typeable PDF copy included) · Slides (optional; script in the notes) · board · scissors optional</td><td>None — runs fully unplugged. Optional: a projector for the deck</td><td>Print worksheets. That's it.</td></tr>
   </table>
 
   <h2>Objectives</h2>
   <ul>
-    <li>Explain how an AI learns: <strong>input → patterns → output</strong> — prediction from data, not magic.</li>
-    <li>Identify who a dataset serves well, who it leaves out, and connect that gap to real AI bias.</li>
-    <li>Discuss data gaps collaboratively: say back a partner's idea and build on it.</li>
+    <li>Explain how an AI learns: <strong>input → patterns → output</strong> — prediction from data, not magic. <em>(Exit Ticket #1)</em></li>
+    <li>Name who a dataset serves well and who it leaves out; link that gap to real AI bias. <em>(Gap Report; Exit #2)</em></li>
+    <li>Discuss data gaps collaboratively: repeat a partner's idea, then add to it. <em>(Repeat, Then Add; Exit Ticket #3)</em></li>
   </ul>
 
   <h2>Standards Alignment</h2>
   <div class="chips">
-    <span class="chip">CSTA 2-IC-21</span><span class="chip">ISTE 1.1.d</span><span class="chip">CCSS ELA SL.6.1</span>
+    <span class="chip">CSTA 2-IC-21</span><span class="chip">ISTE 1.1.d</span><span class="chip">CCSS ELA SL.6.1</span><span class="chipnote">Full text: Teacher Guide, p.3</span>
   </div>
-  <p>Full standards text in the Teacher Guide.</p>
+
+  <h2>Differentiation</h2>
+  <ul>
+    <li><strong>Support:</strong> Grey sentence starters on the worksheet; landmark-card tip in the Teacher Guide, p.2.</li>
+    <li><strong>Extension:</strong> Design a 12-card playlist that serves every request on the sheet, then defend the trade-offs.</li>
+    <li><strong>ELL:</strong> Fit marks are ticks, not sentences; invented cards may be in any language (that fixes a real gap).</li>
+    <li><strong>No-device classrooms:</strong> Built in — the lesson is paper, pairs, and one loud imaginary music app.</li>
+  </ul>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#note"/></svg> Warm-Up — The One-Playlist App (7 min)</h2>
-  <p>Announce that you are <strong>AutoMix</strong>, the school's new music app. Your playlist holds one kind of song: loud, fast party tracks. Take 3–4 requests and serve every one with total confidence:</p>
+  <p>You are <strong>AutoMix</strong>, the school's new music app. Your playlist holds one kind of song: loud, fast party tracks. Take 3–4 requests and serve every one with total confidence:</p>
   <div class="panel">
     <p><em>"Something chill to study to?"</em> → "Here's 'TURBO TURBO.' It is not chill. It's what I've got."</p>
-    <p><em>"A song for grandma's birthday dinner?"</em> → "Say less. 'VOLUME WAR.' Grandma loves bass drops, probably."</p>
+    <p><em>"A song for grandma's birthday dinner?"</em> → "Got it. 'VOLUME WAR.' Grandma loves bass drops, probably."</p>
     <p><em>"A slow song for the last dance?"</em> → "'NEON STAMPEDE,' played at... the exact same speed."</p>
   </div>
-  <p>Then ask: <strong>is AutoMix bad at picking songs — or is something else broken?</strong> Fish for it: the app is doing its job perfectly. The <em>playlist</em> is the problem.</p>
-  <div class="callout"><strong>Bridge:</strong> "If you did the genie lesson: it granted what you SAID. Today: where its answers even come from. Everything an AI 'knows' comes from a playlist of examples — its training data. It can remix the playlist, but it can't serve what was never in it. Today you'll BE the app."</div>
+  <p>Then ask: <strong>"Is AutoMix bad at picking songs — or is something else broken?"</strong> Fish for it: the app is doing its job perfectly. The <em>playlist</em> is the problem.</p>
+  <p class="whatif">If nobody gets there: "Could AutoMix play a slow song if it had one?" Yes — the app works. So what's missing?</p>
+  <div class="callout"><strong>Bridge:</strong> "(If your class did the genie lesson: it granted what you SAID.) Today: where an AI's answers even come from. Everything an AI 'knows' comes from a playlist of examples — its training data. It can remix the playlist, but it can't serve what was never in it. Today you'll BE the app."</div>
+  <p class="say"><strong>Transition:</strong> "So what IS in an AI's playlist, and what does it do with it? Three words on the board."</p>
 
-  <div class="footer"><span>What's in the Playlist — Lesson Plan</span><span>© Future Skills Series</span><span>1</span></div>
+  <div class="footer"><span>What's in the Playlist? — Lesson Plan</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
 
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
   <h2>Direct Instruction — No Magic in the Machine (8 min)</h2>
-  <p>Write the chain on the board: <strong>INPUT → PATTERNS → OUTPUT.</strong></p>
-  <div class="panel">
-    <p><strong>INPUT — the playlist.</strong> Training data: the giant pile of examples an AI studies before you ever meet it — songs for a music app, mountains of human writing for a chatbot. Nobody types "knowledge" in. It studies examples.</p>
-    <p><strong>PATTERNS — the training.</strong> The AI works through the playlist and gets good at ONE thing: guessing what usually goes with what. It doesn't understand any of it — it finds patterns.</p>
-    <p><strong>OUTPUT — the mix.</strong> Ask for something and it predicts what best matches its playlist's patterns. A prediction, not a lookup — which is why it can sound confident and still be off.</p>
+  <div class="chain">
+    <div class="step"><b>INPUT — the playlist.</b> Training data: every example the AI studied before you met it. Nobody types "knowledge" in.</div>
+    <div class="step"><b>PATTERNS — the training.</b> It gets good at ONE thing: guessing what usually goes with what. No understanding — patterns.</div>
+    <div class="step"><b>OUTPUT — the mix.</b> It predicts what best matches those patterns. A prediction, not a lookup — confident and still off.</div>
   </div>
-  <div class="callout"><strong>Say it plainly:</strong> "No magic in the machine. An AI doesn't KNOW things — it predicts things, from its playlist. So two rules run everything: a GAP in the playlist is a gap in the AI, and a LEAN in the playlist leans every answer. That lean has a name: bias."</div>
-  <p><strong>Quick check:</strong> "A photo AI's playlist is almost all golden retrievers. A husky walks in — what's it going to call it?" (Its best guess from its patterns: golden retriever. Gap in, gap out.)</p>
+  <div class="callout"><strong>Say it plainly</strong> (board: INPUT → PATTERNS → OUTPUT, one word per box)<strong>:</strong> "No magic in the machine. An AI doesn't KNOW things — it predicts things, from its playlist. So two rules run everything: a GAP in the playlist is a gap in the AI, and a LEAN in the playlist leans every answer. That lean has a name: bias."</div>
+  <p><strong>Quick check:</strong> "A photo AI's playlist is almost all golden retrievers. A husky walks in — what's it going to call it?" (Golden retriever — its best guess. Gap in, gap out.)</p>
+  <p class="whatif">If a student says "husky": "Has this AI ever seen one? It can only pick from the patterns it has."</p>
+  <p class="say"><strong>Transition:</strong> "Hand out Playlist Check. Pair up. Read the grey box at the top together — it names your two jobs."</p>
 
   <h2>Activity — Playlist Check (20 min)</h2>
   <ol>
-    <li><strong>Setup (3 min):</strong> Pairs — one partner is the <strong>App</strong>, one runs the <strong>Request Line</strong>. The 12 song cards ARE the app's training data. House rules: serve only from the playlist, and never refuse — serve the closest thing you've got.</li>
-    <li><strong>Serve the Request Line (9 min):</strong> Work the six printed requests (Keisha, Nia, Tomás, Priya, Malik, Jordan), swapping roles after three. The App picks the best card; both rate the fit. End with one live request from a neighboring pair.</li>
-    <li><strong>Playlist Gap Report (5 min):</strong> Pairs record who the playlist serves well and who it leaves out. Discussion rule, enforced out loud: <em>before you add your idea, say back your partner's and build on it.</em></li>
-    <li><strong>Fix the Playlist (3 min):</strong> Invent 3 new cards that fix the biggest gaps. Push past "add one slow song" — which requests still have nothing?</li>
+    <li><strong>Setup (3 min):</strong> Partner A is the <strong>App</strong>, Partner B the <strong>Request Line</strong>; the 12 cards ARE the app's training data. Rules: serve only from the playlist, never say no, tick Fit honestly — each on their OWN sheet.
+      <div class="whatif">If there's an odd number: a trio — two Request Lines, one App, swap twice.</div>
+      <em>Transition:</em> "Request Line, read #1 out loud. App — you can't say no."</li>
+    <li><strong>Serve the Request Line (9 min):</strong> Six requests (Priya, Nia, Tomás, Keisha, Malik, Jordan): App names the card, both agree one Fit tick and record it. Swap at #4; end with one live request from a neighboring pair.
+      <div class="whatif">If a pair can't agree on the Fit: each ticks their own — disagreement is data. Save it for the debrief.</div>
+      <em>Transitions:</em> (#3) "Swap jobs: new App, new Request Line. On to #4." (#7) "Pens on page 2. Say who it let down."</li>
+    <li><strong>Playlist Gap Report (5 min):</strong> Each student writes who the playlist serves well and who it leaves out. Rule, enforced out loud: <em>repeat your partner's idea, then add to it</em> — both go on the Repeat, Then Add lines.
+      <div class="whatif">If a pair writes "it needs more songs": ask WHO asked for something that wasn't there.</div>
+      <em>Transition:</em> "Three minutes. Fix the playlist — invent the cards that are missing."</li>
+    <li><strong>Fix the Playlist (3 min):</strong> Invent new cards that fix the biggest gaps — at least 2. Push past "add one slow song": which requests still have nothing?
+      <div class="whatif">If every new card is a slow song: "Tomás still has nothing. What does he need?"</div>
+      <em>Transition:</em> "Pens down. Eyes up. Who did your playlist let down? Hands."</li>
   </ol>
 
   <h2>Debrief — The Real Playlists (5 min)</h2>
-  <p>Pairs call out one gap they found. Connect: "Your playlist failed Tomás and Priya. Real playlists fail real people the same way." Walk the three examples in the Teacher Guide, then land the big question: <strong>"Nobody put bad songs in your playlist — so where did the bias come from?"</strong> (From what got collected and what didn't.)</p>
+  <p><strong>3–4 pairs</strong> name one gap (1 min). Three real playlists, Teacher Guide p.2 (3 min). Big question (1 min): <strong>"Nobody put bad songs in your playlist — so where did the bias come from?"</strong></p>
+  <p class="whatif">Answer: what got collected, and what didn't. "On purpose?" Usually not — teams grab the easiest data to get.</p>
+  <p class="say"><strong>Transition:</strong> "Back to your own sheet. The bottom of page 2 is yours alone — five minutes."</p>
 
   <h2>Exit Ticket (5 min)</h2>
-  <p>Bottom of worksheet: complete the <strong>input → patterns → output</strong> chain, then diagnose a lopsided homework-helper AI using the word "playlist."</p>
+  <p>Worksheet p.2, solo: <strong>#1</strong> finish <strong>input → patterns → output</strong> + what an AI does with its playlist; <strong>#2</strong> diagnose a lopsided homework-helper AI using "playlist"; <strong>#3</strong> one gap a partner spotted first. Key: Teacher Guide p.2.</p>
+  <p class="whatif">If a student writes "the AI learns": "Learns from what? Say where the patterns came from."</p>
 
-  <h2>Differentiation</h2>
-  <ul>
-    <li><strong>Support:</strong> Sentence frames + pre-sorted playlist note (Teacher Guide, p.2).</li>
-    <li><strong>Extension:</strong> Design a 12-card playlist that serves every request on the sheet — then defend the trade-offs.</li>
-    <li><strong>ELL:</strong> Ratings are check-marks, not sentences; invented cards may be in any language (which fixes a real gap).</li>
-    <li><strong>No-device classrooms:</strong> Built in — the whole lesson is paper, pairs, and one loud imaginary music app.</li>
-  </ul>
-
-  <div class="footer"><span>What's in the Playlist — Lesson Plan</span><span>© Future Skills Series</span><span>2</span></div>
+  <div class="footer"><span>What's in the Playlist? — Lesson Plan</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
 </body></html>
