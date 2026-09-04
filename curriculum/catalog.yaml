@@ -14,13 +14,13 @@ products:
   - { slug: ai-fact-check-lab,       line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 3,
       title: "AI Fact Checking Lesson: Spot Fake Facts Activity | Middle School 6-8 | No Prep" }
   - { slug: ai-training-data-crate,  line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 2,
-      title: "How AI Works Lesson: Training Data & Bias Activity | Middle School 6-8 | No Prep" }
+      title: "How AI Works Lesson: Training Data & Bias | Middle School 6-8 | No Prep" }
   - { slug: ai-taste-file,           line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 4,
       title: "AI Writing Feedback Lesson: Revision Activity | Middle School 6-8 | No Prep" }
   - { slug: ai-boring-work,          line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 5,
-      title: "AI and Future Jobs Lesson: Automation Tradeoffs Sort | Grades 6-8 | No Prep" }
+      title: "AI and Future Jobs Lesson: Automation Tradeoffs | Middle School 6-8 | No Prep" }
   - { slug: ai-agent-intern,         line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 6,
-      title: "AI Agents Lesson: Team Roles & Project Planning Activity | Grades 6-8 | No Prep" }
+      title: "AI Agents Lesson: Team Roles & Project Planning | Middle School 6-8 | No Prep" }
   - { slug: vibe-coding-first-app,   line: ai,           priority: 1, status: idea, price: 6,
       title: "Vibe Coding 101: Build Your First App With AI (3-Day Mini Unit)" }
   - { slug: finance-first-check,     line: finance,      priority: 1, status: idea, price: 4,
