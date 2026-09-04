@@ -28,7 +28,7 @@ AI literacy, fact checking, media literacy, lateral reading, misinformation, cri
 ```
 
 **Description** — paste the `description:` block from `products/ai-fact-check-lab/product.yaml`
-(2178 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2220 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

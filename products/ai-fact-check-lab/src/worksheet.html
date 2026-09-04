@@ -5,15 +5,25 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
   .draft p { line-height: 1.8; margin: 0 !important; }
-  .byline { font-size: 9pt; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #55556B; margin: 0 0 4px !important; }
   .worktable td { height: 40px; }
-  .verdict { font-size: 11pt; margin: 5px 0 2px !important; }
-  .verdict strong { letter-spacing: 0.5px; }
   .page h2 { margin: 8px 0 4px; }
   .page p { margin: 0 0 6px; }
   .page .panel { padding: 8px 12px; margin: 6px 0; }
   .page .callout { margin: 6px 0; }
   .page table { margin: 4px 0; }
+  body.compact .lines .l { height: 28px; }
+  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 200px; height: 16px; vertical-align: bottom; }
+  .blank.short { min-width: 90px; }
+  .verdicttable { margin: 6px 0 2px !important; }
+  .verdicttable td { height: 34px; padding: 4px 6px; border: 1px solid #C9C9D6; font-size: 10.5pt; vertical-align: middle; }
+  td.tick { width: 34px; text-align: center; }
+  td.tick::before { content: ""; display: inline-block; width: 16px; height: 16px; border: 1.5px solid #14141F; border-radius: 3px; vertical-align: middle; }
+  .cue { font-size: 10.5pt; margin: 4px 0 0 !important; }
+  .gloss { font-size: 9.5pt; color: #3A3A4E; margin: 2px 0 4px !important; }
+  .helpers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .helpers p { margin: 0 0 3px !important; font-size: 10.5pt; }
+  .helpers ul { margin: 2px 0 0 16px; padding: 0; font-size: 10.5pt; }
+  .helpers li { margin: 0 0 2px; }
 </style>
 </head>
 <body class="line-ai compact">
@@ -45,33 +55,37 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">Student Session · The Comet</div><h1>The Fact Desk</h1></div>
-      <p class="sub">Name: ________________________  Class: ________  Date: ________</p>
+      <p class="sub">Name: <span class="blank"></span> &nbsp;Class: <span class="blank short"></span> &nbsp;Date: <span class="blank short"></span></p>
     </div>
     <svg width="112" height="90" viewBox="2 6 100 78"><use href="#magnifier"/></svg>
   </div>
 
   <div class="panel">
-    <p><strong>MEMO — from Deja, editor-in-chief of The Comet:</strong> "Welcome to the fact desk. You're hired. Three of our writers used an AI helper on their drafts. Heads up: AI predicts <em>likely</em> words — it doesn't check them — so it can be flat-out wrong in a totally confident voice. Nothing runs until your desk clears it."</p>
+    <p><strong>A note from Deja, who runs The Comet, the school paper:</strong> "You're on the fact team. Three writers used an AI helper. Remember: AI guesses the most likely words — it does not check them — so it can be completely wrong and still sound sure. No story gets printed until you check it."</p>
+    <p class="gloss"><strong>Desk words:</strong> run = it gets printed &nbsp;·&nbsp; clear = it passes the check &nbsp;·&nbsp; log = write it down &nbsp;·&nbsp; second source = a place to check that is NOT where you first saw the claim &nbsp;·&nbsp; "the ending still stands" = it is still true once the facts are fixed</p>
     <p style="margin-top:6px"><strong>Your method, every draft:</strong>
     <strong>1. UNDERLINE</strong> every checkable claim (names, dates, numbers, places, quotes).
     <strong>2. RANK</strong> — write <strong>C</strong> above claims to CHECK, <strong>S</strong> above SAFE ones.
-    <strong>3. LATERAL-READ</strong> — log where a second, independent source could confirm each C.
-    <strong>4. VERDICT</strong> — stamp it, back it up, and say whether the writer's big conclusion still stands once the facts are fixed.</p>
+    <strong>3. LATERAL-READ</strong> — leave the draft. Log a second source that could confirm each C.
+    <strong>4. VERDICT</strong> — tick a stamp, give your evidence, and say if the writer's ending still stands.</p>
   </div>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #1 — Priya's Science Column, "Moon Facts"</h2>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #1 — Priya's Science Column, &ldquo;Moon Facts&rdquo;</h2>
   <div class="panel draft">
-    <p>The Moon is Earth's only natural satellite. Astronauts first landed on the Moon in 1959, and Neil Armstrong was the first person to walk on its surface. In total, twelve people have walked on the Moon. On a clear night the Moon seems to shine because it produces its own light — which is why it's the brightest thing in the night sky.</p>
+    <p>The Moon is Earth's only natural satellite. Astronauts first landed on the Moon in 1959, and Neil Armstrong was the first person to walk on its surface. By 1972, twelve people had walked on the Moon. On a clear night the Moon seems to shine because it produces its own light — which is why it's the brightest thing in the night sky.</p>
   </div>
   <table class="worktable">
-    <tr><th style="width:55%">Claim I marked C (check)</th><th>Second source: where I'd verify it</th></tr>
+    <tr><th style="width:55%">Claim I marked C (check)</th><th>Second source: where I'd check it</th></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
   </table>
-  <p class="verdict"><strong>Verdict (circle one):</strong> RUN (clean) &nbsp;·&nbsp; FIX (correct it, then run) &nbsp;·&nbsp; KILL (cut the story) — <strong>Note to Priya (your evidence):</strong></p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <table class="verdicttable">
+    <tr><td class="tick"></td><td><strong>RUN</strong> — clean, print it</td><td class="tick"></td><td><strong>FIX</strong> — correct it, then print</td><td class="tick"></td><td><strong>KILL</strong> — cut the story</td></tr>
+  </table>
+  <p class="cue"><strong>Note to Priya</strong> — what's wrong, your second source, and does her ending still stand?</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
   <div class="footer"><span>Hallucination Hunters — The Fact Desk</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -79,19 +93,45 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #2 — Theo's Quiz Page, "World Records Corner"</h2>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #2 — Theo's Quiz Page, &ldquo;World Records Corner&rdquo;</h2>
+  <p class="gloss"><strong>Same method:</strong> underline the checkable claims · C = check it, S = safe · log a second source (NOT where you first saw it) · tick a stamp and write your note.</p>
   <div class="panel draft">
     <p>The Pacific Ocean is the largest ocean on Earth. The Nile River flows north through Egypt and is one of the longest rivers in the world. The tallest mountain above sea level is Mount Everest, which rises in the Andes range in South America. Earth has seven continents, and the largest is Asia. Australia's capital city is Sydney. Put it together and the record-holders sit on three continents: Africa, South America, and Asia.</p>
   </div>
   <table class="worktable">
-    <tr><th style="width:55%">Claim I marked C (check)</th><th>Second source: where I'd verify it</th></tr>
+    <tr><th style="width:55%">Claim I marked C (check)</th><th>Second source: where I'd check it</th></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
   </table>
-  <p class="verdict"><strong>Verdict (circle one):</strong> RUN &nbsp;·&nbsp; FIX &nbsp;·&nbsp; KILL — <strong>Note to Theo (your evidence):</strong></p>
-  <div class="lines"><div class="l"></div></div>
+  <table class="verdicttable">
+    <tr><td class="tick"></td><td><strong>RUN</strong> — clean, print it</td><td class="tick"></td><td><strong>FIX</strong> — correct it, then print</td><td class="tick"></td><td><strong>KILL</strong> — cut the story</td></tr>
+  </table>
+  <p class="cue"><strong>Note to Theo</strong> — what's wrong, your second source, and does his ending still stand?</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Desk Helpers — use these on Drafts #2 and #3</h2>
+  <div class="panel helpers">
+    <div>
+      <p><strong>RANK: which claims get a C?</strong></p>
+      <ul>
+        <li>Dates, names, numbers, and quotes — easy to get wrong, easy to check.</li>
+        <li>Words like <em>first, only, biggest, tallest</em> — record claims are risky.</li>
+        <li>Anything the ending depends on. If it falls, the story falls.</li>
+        <li>Mark <strong>S</strong> when everybody already knows it. You can't check everything.</li>
+      </ul>
+    </div>
+    <div>
+      <p><strong>Second sources that count</strong></p>
+      <ul>
+        <li>A textbook or an encyclopedia entry on the topic.</li>
+        <li>A museum, space agency, or government website.</li>
+        <li>A different website that did not copy the first one.</li>
+      </ul>
+      <p style="margin-top:4px"><strong>Does NOT count:</strong> asking the same AI again · the draft itself · "I'd Google it" with no source named.</p>
+    </div>
+  </div>
 
   <div class="footer"><span>Hallucination Hunters — The Fact Desk</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
@@ -99,28 +139,31 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-<h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #3 — Marcus's Feature, "The Invention Issue"</h2>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #3 — Marcus's Feature, &ldquo;The Invention Issue&rdquo;</h2>
+  <p class="gloss"><strong>Same method:</strong> underline the checkable claims · C = check it, S = safe · log a second source (NOT where you first saw it) · tick a stamp and write your note. <strong>Watch for this:</strong> a quote is a claim too.</p>
   <div class="panel draft">
     <p>Thomas Edison invented the telephone in 1876. As Edison put it, "The telephone is the finest of all my inventions." The next year, in 1877, Edison invented the phonograph — the first machine that could both record and play back sound. A generation later, the Wright brothers made the first successful powered airplane flights in 1903, near Kitty Hawk, North Carolina. That record makes Edison the most important inventor of the 1800s.</p>
   </div>
   <table class="worktable">
-    <tr><th style="width:55%">Claim I marked C (check)</th><th>Second source: where I'd verify it</th></tr>
+    <tr><th style="width:55%">Claim I marked C (check)</th><th>Second source: where I'd check it</th></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
   </table>
-  <p class="verdict"><strong>Verdict (circle one):</strong> RUN &nbsp;·&nbsp; FIX &nbsp;·&nbsp; KILL — <strong>Note to Marcus (your evidence):</strong></p>
-  <div class="lines"><div class="l"></div></div>
+  <table class="verdicttable">
+    <tr><td class="tick"></td><td><strong>RUN</strong> — clean, print it</td><td class="tick"></td><td><strong>FIX</strong> — correct it, then print</td><td class="tick"></td><td><strong>KILL</strong> — cut the story</td></tr>
+  </table>
+  <p class="cue"><strong>Note to Marcus</strong> — what's wrong, your second source, and does his ending still stand?</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
-
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Exit Ticket — Clock Out</h2>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Exit Ticket — Last Check</h2>
   <p><strong>1.</strong> In your own words: how can AI sound 100% sure and still be wrong?</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
-  <p><strong>2.</strong> Name one claim you saw online this week (or one you expect to see). What exact lateral-reading move would you make — where's your second, independent source?</p>
+  <p><strong>2.</strong> Name one checkable claim (a name, date, number, place, or quote) you saw online this week — or one you expect to see. Where would you check it? Name a second source that is NOT the place you first saw it (a textbook, an encyclopedia, a different website).</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
-  <div class="callout"><strong>Desk rule to keep:</strong> smooth is not the same as true. Before you repeat it, post it, or hand it in — clear it.</div>
+  <div class="callout"><strong>Desk rule to keep:</strong> smooth is not the same as true. Before you repeat it, post it, or hand it in — check it.</div>
 
   <div class="footer"><span>Hallucination Hunters — The Fact Desk</span><span>© Future Skills Series</span><span>3</span></div>
 </div>
