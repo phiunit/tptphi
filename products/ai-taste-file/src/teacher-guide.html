@@ -4,18 +4,37 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
+  .page h2 { margin: 8px 0 4px; }
+  .page p { margin: 0 0 5px; }
+  .page .panel { padding: 8px 12px; margin: 6px 0; }
+  .page .panel p { margin: 0 0 4px; }
+  .page .panel p:last-child { margin: 0; }
+  .page .callout { margin: 6px 0; }
+  .page ul { margin: 2px 0 6px; }
+  .key td:first-child { width: 22%; }
+  .key { font-size: 9.5pt; margin: 4px 0; }
+  body.compact .key td { padding: 3px 7px; }
+  .chain td:first-child { width: 18%; }
+  .chain { font-size: 9.5pt; margin: 4px 0; }
+  body.compact .chain td { padding: 3px 7px; }
+  .standards { font-size: 10pt; }
+  .standards li { margin-bottom: 4px; }
 </style>
 </head>
 <body class="line-ai compact">
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <g id="phones">
-      <path d="M 22 66 C 22 18, 98 18, 98 66 L 88 66 C 88 26, 32 26, 32 66 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
-      <rect x="12" y="56" width="24" height="32" rx="9" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
-      <rect x="84" y="56" width="24" height="32" rx="9" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
-      <rect x="30" y="62" width="5" height="20" rx="2.5" fill="#14141F"/>
-      <rect x="85" y="62" width="5" height="20" rx="2.5" fill="#14141F"/>
+    <g id="feedcard">
+      <rect x="6" y="12" width="74" height="56" rx="10" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+      <rect x="17" y="25" width="30" height="5" rx="2.5" fill="#14141F"/>
+      <rect x="17" y="36" width="40" height="5" rx="2.5" fill="#14141F"/>
+      <path d="M 66 62 C 57 55, 53 50, 53 45 C 53 41, 56 39, 59 39 C 61.5 39, 64 41, 66 44 C 68 41, 70.5 39, 73 39 C 76 39, 79 41, 79 45 C 79 50, 75 55, 66 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
+      <rect x="70" y="30" width="44" height="60" rx="5" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
+      <rect x="79" y="44" width="26" height="4" rx="2" fill="#14141F"/>
+      <rect x="79" y="55" width="26" height="4" rx="2" fill="#14141F"/>
+      <path d="M 76 60 L 108 53" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 87 76 L 92 68 L 97 76" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <g id="heart">
       <path d="M 12 21 C 5 15, 1 10, 1 6 C 1 2.5, 3.5 1, 6 1 C 8.5 1, 11 3, 12 5.5 C 13 3, 15.5 1, 18 1 C 20.5 1, 23 2.5, 23 6 C 23 10, 19 15, 12 21 Z" fill="#FFB020" stroke="#14141F" stroke-width="2" stroke-linejoin="round"/>
@@ -28,38 +47,29 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">For the Teacher</div><h1>Teacher Guide &amp; Answer Key</h1></div>
-      <p class="sub">Teach AI Your Taste — exemplar taste-file entries, coaching the "AI editor" role, the copy-ready AI feedback prompt, scoring, and full standards text.</p>
+      <p class="sub">Teach AI Your Taste — one worked example from taste file to exit answers, a key for every student item, coaching the "AI editor" role and the 1-minute talk, when it goes sideways, the copy-ready AI prompt, and full standards text.</p>
     </div>
-    <svg class="art" width="112" height="82" viewBox="6 14 108 80"><use href="#phones"/></svg>
+    <svg class="art" width="112" height="84" viewBox="2 8 116 86"><use href="#feedcard"/></svg>
   </div>
 
   <h2>Why This Lesson</h2>
-  <div class="callout">When AI can generate anything, the skill that still separates students is <strong>taste</strong> —
-  knowing what's <em>them</em> and saying it precisely. The Taste File makes a student's style visible, and the editor
-  loop (<strong>draft yourself → seek specific feedback → revise yourself</strong>) is W.6.5 in miniature, with the
-  classroom AI policy built in: <em>AI is your editor, not your ghostwriter.</em></div>
+  <div class="callout">When an AI can draft almost anything on request, what still separates students is <strong>taste</strong> — knowing what's <em>them</em> and saying it precisely. The Taste File makes that visible, and the editor loop (<strong>draft yourself → get specific notes → revise yourself</strong>) is W.6.5 in miniature with the classroom AI policy built in: <em>AI is your editor, not your ghostwriter.</em> One honest limit of the analogy, worth saying aloud: the feed remembers what you liked; most AI chats don't keep your taste file between sessions unless the tool saves notes about you. Stands alone.</div>
 
   <h2>Coaching the "AI Editor" Role</h2>
   <div class="panel">
-    <p>The editor has three rules, and holding them IS the rigor: <strong>use only the taste file</strong> (a note that can't point at a section gets cut), <strong>exactly 2 notes</strong> (editors prioritize), and <strong>notes, not rewrites</strong> (the second the editor writes a sentence, they've become a ghostwriter).</p>
-    <p>Watch for the classic slip — partners rewriting. Redirect: "You're the editor. Hand the pen back."</p>
+    <p>Three rules, and holding them IS the rigor: <strong>use only the taste file</strong> (a note that can't name a section gets cut), <strong>exactly 2 notes</strong> (editors prioritize), <strong>notes, not rewrites</strong> (the second the editor writes a sentence, they've become a ghostwriter). <strong>The 1-minute talk</strong> (Step 2, scripted on the sheet) is where SL.6.1 lives: editor reads both notes aloud, writer asks ONE question, editor answers from the taste file only. Sample 3–4 pairs; listen for an answer that cites a section ("Section 3 says no textbook words"), not the editor's own taste ("I'd just make it funnier").</p>
   </div>
 
-  <h2>Exemplar Taste-File Entries</h2>
-  <p>There is no single right taste — score for specificity. This is the target level:</p>
-  <table>
-    <tr><th>Student</th><th>Vibe + pet peeve</th><th>"So me" sentence</th></tr>
-    <tr><td>Jaylen</td><td>funny, blunt, lowkey. "Never use words I'd have to look up to sound smart."</td><td>"Saturday I made the world's saddest pancake and ate it anyway."</td></tr>
-    <tr><td>Priya</td><td>dramatic, poetic, big idea first. "Don't shorten my sentences — they're long on purpose."</td><td>"The weekend arrived like a plot twist nobody asked for, and I loved every second."</td></tr>
-    <tr><td>Tomás</td><td>hype, short + punchy, lists. "No baby-talk. I'm 12, not 5."</td><td>"Game. Winner. Rematch. That was the whole weekend."</td></tr>
+  <h2>One Worked Example — Jaylen, start to finish</h2>
+  <table class="chain">
+    <tr><th>Item</th><th>Jaylen's work <span style="font-weight:400; text-transform:none; letter-spacing:0;">— no single right taste exists; score specificity and movement toward the file</span></th></tr>
+    <tr><td><strong>Taste File</strong> (p.1)</td><td>S1: funny, blunt, quiet (+ "dry"). S2: short and punchy, lists. S3: "Never use words I'd have to look up." / "No exclamation points. I don't shout." S4 So me: "Saturday I made the world's saddest pancake and ate it anyway." Not me: "On Saturday I prepared a breakfast item that did not meet expectations." S5: "fast anime-style battles, quiet songs."</td></tr>
+    <tr><td><strong>Step 1 draft</strong></td><td>"Hello and welcome to my channel! I enjoy various hobbies such as gaming and cooking. I upload content on a regular basis. Please consider subscribing!"</td></tr>
+    <tr><td><strong>Step 2 notes</strong> (editor: Priya)</td><td><strong>Note 1 → Section 3:</strong> "'I enjoy various hobbies' is textbook voice. Which hobby, said your way?" <strong>Note 2 → Section 1:</strong> "Your file says blunt and quiet — two exclamation points is shouting. Say it like you'd text it."</td></tr>
+    <tr><td><strong>The talk</strong></td><td>Priya reads both notes. Jaylen: "Which sentence is the textbook one?" Priya: "Sentence 2. Section 3 says no look-up words — your pancake line is how you actually talk."</td></tr>
+    <tr><td><strong>Step 3 revision</strong></td><td>"Welcome to the channel where I *lose at games and cook worse*. *Mostly fast fights, sometimes pancakes.* *New video every Friday.* *Sub or don't — the pancakes will still be sad.*"</td></tr>
+    <tr><td><strong>Last Check</strong></td><td><strong>#1</strong> "'I enjoy various hobbies such as gaming and cooking' → 'I lose at games and cook worse.'" <strong>#2</strong> "Section 3 says no textbook words; Section 1 says funny and blunt." <strong>#3</strong> "'Make it better' doesn't say what's wrong or what better means for ME. The note that named Section 3 told me which sentence and why."</td></tr>
   </table>
-
-  <h2>Scoring Guidance</h2>
-  <ul>
-    <li><strong>Proficient:</strong> taste file specific enough for a stranger to imitate; the starred revision visibly moves the draft toward the file.</li>
-    <li><strong>Developing:</strong> taste file real but vague ("funny, good"); notes generic; revision changes words, not voice.</li>
-    <li><strong>Beginning:</strong> taste file restates the word bank; the revision is the editor's sentence, not the writer's.</li>
-  </ul>
 
   <div class="footer"><span>Teach AI Your Taste — Teacher Guide</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -67,33 +77,66 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> With Devices — The Copy-Ready AI Feedback Prompt</h2>
+  <h2><svg width="18" height="17" viewBox="0 0 24 22"><use href="#heart"/></svg> Answer Key — every student item</h2>
+  <table class="key">
+    <tr><th>Item</th><th>What counts</th></tr>
+    <tr><td><strong>Sections 1–2</strong> (ticks + own word)</td><td>Exactly 3 tone ticks, at least 1 format tick. The own word is the tell: "dry," "sarcastic," "soft" = specific; "good," "nice" = push for a real one. Any tick pattern is valid — it's data, not a test.</td></tr>
+    <tr><td><strong>Section 3</strong> (pet peeves)</td><td>Two "never do this" lines an editor could obey: "no exclamation points," "don't shorten my sentences." Vague ("don't be mean") → "What would that look like on paper?"</td></tr>
+    <tr><td><strong>Section 4</strong> (So Me / Not Me)</td><td>Proficient: both versions say the same thing and a stranger could tell which is the student. Developing: Not Me is just a shorter So Me. Beginning: two different events.</td></tr>
+    <tr><td><strong>Section 5</strong></td><td>Feel-words, not titles: "fast battles, quiet songs" beats a list of show names. Home-language words welcome.</td></tr>
+    <tr><td><strong>Step 1 draft</strong></td><td>3–4 sentences the student would really post, in their own hand. Already sounds like the file? Fine — the notes target the gap that's left.</td></tr>
+    <tr><td><strong>Step 2 notes</strong> (the DOK-3 item)</td><td>Each note names a section AND the mismatch: "Section 3 says no textbook voice — sentence 2 is textbook voice." Reject: no section number; a rewrite ("Say: 'Welcome to my chaotic channel!'"); the editor's own taste ("I'd make it funnier").</td></tr>
+    <tr><td><strong>The 1-minute talk</strong></td><td>Three parts: notes read aloud, ONE writer question, an answer that cites a section. That earns checklist row 4. A writer who argues back ("but I like it") skipped the question — "Ask which sentence, not whether."</td></tr>
+    <tr><td><strong>Step 3 revision</strong></td><td>Stars on every change; changes land where the notes pointed; the writer's voice, not the editor's. Word swaps with no voice change ("good" → "great") = developing. Unchanged = redo with the note read aloud.</td></tr>
+    <tr><td><strong>Checklist rows 1–4</strong></td><td>Self-report — verify against the page: row 1 vs the draft's handwriting, row 2 vs the section numbers on the notes, row 3 vs the stars, row 4 vs what you heard while circulating.</td></tr>
+    <tr><td><strong>Last Check #1</strong></td><td>Quotes the old words and the new words. "I made it funnier" without the words = redo.</td></tr>
+    <tr><td><strong>Last Check #2</strong></td><td>Names a section (number or content) and the match: "Section 1 says blunt; the new line is blunt." Citing the editor's opinion instead of the file = developing.</td></tr>
+    <tr><td><strong>Last Check #3</strong> (Objective 1)</td><td>Proficient: "make it better" names no sentence and no direction — better for whom? — while the real note named a section and a sentence. Any answer showing vague input → unusable feedback is proficient. "Because it's short" = developing.</td></tr>
+  </table>
+
+  <h2>When It Goes Sideways</h2>
   <div class="panel">
-    <p>For Activity 2, Step 2 with devices — students fill the brackets from their worksheet:</p>
-    <p><em>"Here is my taste file: [your 5 sections]. Here is my draft: [your 3–4 sentences]. You are my editor, not my ghostwriter. Give exactly 2 specific notes on where the draft does not match my taste file, naming the section each note points at. Do not rewrite anything."</em></p>
+    <p><strong>The editor rewrites the draft</strong> → "You're the editor. Hand the pen back." Cross it out; the writer decides what replaces it. <strong>A note has no section number</strong> → "Which section? No section, no note." Can't find one? It's about THEIR taste — cut it.</p>
+    <p><strong>Odd number of students</strong> → one trio: A edits B, B edits C, C edits A; each talk still runs one-to-one, one minute each. <strong>A pair finishes early</strong> → the Extension (anti-taste-file).</p>
+    <p><strong>With devices: the AI returns five notes or a rewrite</strong> → best case. "The prompt said two notes, no rewriting. Which two name a section? The rest is a ghostwriter talking." Keep the two, cut the rest.</p>
+    <p><strong>With devices: a student wants to type their own</strong> → only the teacher's projected account runs today; students never need an account. <strong>"But the AI's version is better than mine"</strong> → "Maybe. Whose name goes on it? Take the note, not the sentence."</p>
   </div>
 
-  <h2>What a Good Note Looks Like</h2>
+  <div class="footer"><span>Teach AI Your Taste — Teacher Guide</span><span>© Future Skills Series</span><span>2</span></div>
+</div>
+
+<div class="page">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
+
+  <h2><svg width="18" height="17" viewBox="0 0 24 22"><use href="#heart"/></svg> With Devices — The Copy-Ready AI Feedback Prompt</h2>
+  <div class="panel">
+    <p>Run once on YOUR projected account with one volunteer's taste file and draft (students never need an account). Fill the brackets from their worksheet:</p>
+    <p><em>"Here is my taste file: [the 5 sections]. Here is my draft: [the 3–4 sentences]. You are my editor, not my ghostwriter. Give exactly 2 specific notes on where the draft does not match my taste file, naming the section each note points at. Do not rewrite anything."</em></p>
+  </div>
+
+  <h2>What a Good Note Looks Like (project during Step 2)</h2>
   <table>
     <tr><th>Ghost-note (reject)</th><th>Editor's note (accept)</th></tr>
     <tr><td>"Make it funnier. Say: 'Welcome to my chaotic channel!'"</td><td>"Section 3 says no textbook voice — 'I enjoy various hobbies' is textbook voice. Which hobby, said your way?"</td></tr>
   </table>
 
   <h2>Full Standards Text</h2>
-  <ul>
-    <li><strong>CCSS ELA W.6.5</strong> — With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 6 here.) <em>Taught: Direct Instruction beat 3 + Activity 2. Assessed: Step 3 starred revision + Exit Ticket.</em></li>
-    <li><strong>ISTE 1.6.b</strong> — Students create original works or responsibly repurpose or remix digital resources into new creations. <em>Taught: Activity 1, Build Your Taste File + Activity 2, Step 1 draft. Assessed: Editor's Loop Checklist rows 1 and 3 (own draft, own revision).</em></li>
-    <li><strong>CCSS ELA SL.6.1</strong> — Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 6 topics, texts, and issues, building on others' ideas and expressing their own clearly. <em>Taught: Editor's Chair partner-note protocol. Assessed: the two written notes + the marked revision.</em></li>
+  <ul class="standards">
+    <li><strong>CCSS ELA W.6.5</strong> — With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 6 here.) <em>Taught: Direct Instruction beat 3 (the editor loop) + Activity 2. Assessed: Step 3 starred revision (revising with peer support) + Last Check #1–2, scored with the key above.</em></li>
+    <li><strong>ISTE 1.6.b</strong> — Students create original works or responsibly repurpose or remix digital resources into new creations. <em>Taught: Activity 1 (the Taste File) + Activity 2 Step 1. Assessed: the Step 1 draft and the Step 3 revision themselves — original work in the student's own hand, verified against checklist rows 1 and 3.</em></li>
+    <li><strong>CCSS ELA SL.6.1</strong> — Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 6 topics, texts, and issues, building on others' ideas and expressing their own clearly. <em>Taught: the Step 2 protocol — two written notes, then the scripted 1-minute talk (notes read aloud, one question, an answer from the taste file). Assessed: the talk itself as you sample pairs (the "1-minute talk" key row) + checklist row 4 + the two written notes.</em></li>
   </ul>
 
-  <h2>Support — Editor Frames &amp; Tone Words</h2>
+  <h2>Support &amp; ELL — Editor Frames &amp; Tone Words</h2>
   <div class="panel">
-    <p><strong>Extra tone words:</strong> honest · goofy · calm · fierce · curious · sharp.
+    <p><strong>Extra tone words:</strong> honest · goofy · calm · fierce · curious · sharp · dry · soft.
     <strong>Note frame:</strong> "Your taste file says ____ (section #), but ____ reads ____. Try ____."
-    <strong>Revision frame:</strong> "I changed ____ to ____ because my taste file says ____."</p>
+    <strong>Question frames for the talk:</strong> "Which sentence?" · "What would fit?"
+    <strong>Revision frame:</strong> "I changed ____ to ____ because my taste file says ____."
+    Support: one pet peeve and one note is fine. ELL: the taste file may start in the student's strongest language; the tone-word table doubles as a vocabulary list.</p>
   </div>
 
-  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Thank You &amp; Terms of Use</h2>
+  <h2><svg width="18" height="17" viewBox="0 0 24 22"><use href="#heart"/></svg> Thank You &amp; Terms of Use</h2>
   <div class="panel">
     <p><strong>License:</strong> Your purchase grants ONE teacher a license for their own classroom. Please don't post
     this file online or share it school-wide — point colleagues to the listing instead.</p>
@@ -102,6 +145,6 @@
     listing before leaving a review — we fix fast.</p>
   </div>
 
-  <div class="footer"><span>Teach AI Your Taste — Teacher Guide</span><span>© Future Skills Series</span><span>2</span></div>
+  <div class="footer"><span>Teach AI Your Taste — Teacher Guide</span><span>© Future Skills Series</span><span>3</span></div>
 </div>
 </body></html>

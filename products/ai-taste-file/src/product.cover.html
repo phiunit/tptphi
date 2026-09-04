@@ -12,28 +12,46 @@ body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Rob
 .star.g { background: #FFB020; }
 /* content */
 .brand { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
-.chipline { margin-top: 26px; display: flex; gap: 12px; position: relative; z-index: 2; }
-.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 20px; padding: 8px 22px; border-radius: 99px; }
+.chipline { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 14px; position: relative; z-index: 2; max-width: 560px; }
+.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 24px; padding: 9px 24px; border-radius: 99px; white-space: nowrap; }
 .chip.solid { background: #FFB020; color: #14141F; }
+.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 96px; position: relative; z-index: 2; }
 h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
 h1 span { color: #FFB020; }
-.sub { font-size: 30px; margin-top: 28px; line-height: 1.45; color: #E8E8F5; max-width: 600px; position: relative; z-index: 2; }
-.sub em { color: #FFB020; font-style: normal; font-weight: 700; }
+.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 40px; margin-top: 30px; line-height: 1.2; color: #E8E8F5; position: relative; z-index: 2; white-space: nowrap; }
+.sub em { color: #FFB020; font-style: normal; }
 </style></head><body>
-<div class="star g" style="width:10px;height:10px;left:700px;top:180px"></div>
-<div class="star" style="width:4px;height:4px;left:520px;top:120px"></div>
-<div class="star g" style="width:8px;height:8px;left:800px;top:330px"></div>
-<div class="star g" style="width:6px;height:6px;left:780px;top:440px"></div>
-<svg width="390" height="330" viewBox="0 0 380 320" style="position:absolute; right:-10px; bottom:-64px; z-index:1;">
-  <path d="M 62 236 V 186 A 128 128 0 0 1 318 186 V 236" fill="none" stroke="#FFB020" stroke-width="24" stroke-linecap="round"/>
-  <rect x="30" y="222" width="76" height="112" rx="30" fill="#FFB020"/>
-  <rect x="274" y="222" width="76" height="112" rx="30" fill="#FFB020"/>
-  <path d="M 190 62 q 19 -30 45 -11 q 23 18 -4 46 l -41 40 l -41 -40 q -27 -28 -4 -46 q 26 -19 45 11 z" fill="#FFB020" opacity="0.45"/>
+<div class="star g" style="width:10px;height:10px;left:690px;top:230px"></div>
+<div class="star" style="width:4px;height:4px;left:560px;top:140px"></div>
+<div class="star g" style="width:8px;height:8px;left:790px;top:400px"></div>
+<div class="star" style="width:5px;height:5px;left:760px;top:560px"></div>
+<div class="star g" style="width:6px;height:6px;left:560px;top:980px"></div>
+<!-- Art: a feed card (two text bars + a solid gold "like" heart) behind a page carrying an editor's mark
+     (one line struck through, a caret where the new words go). Fully inside the frame; top sits below the chip row. -->
+<svg width="392" height="330" viewBox="0 0 380 320" style="position:absolute; right:44px; bottom:40px; z-index:1;">
+  <!-- feed card -->
+  <rect x="14" y="34" width="238" height="182" rx="26" fill="#fff" opacity="0.16"/>
+  <rect x="14" y="34" width="238" height="182" rx="26" fill="none" stroke="#FFB020" stroke-width="12"/>
+  <rect x="50" y="74" width="158" height="20" rx="10" fill="#FFD27A"/>
+  <rect x="50" y="104" width="104" height="20" rx="10" fill="#FFD27A"/>
+  <!-- the like: a solid gold heart under the two bars -->
+  <path d="M 112 208 C 80 186, 64 170, 64 154 C 64 139, 75 130, 87 130 C 98 130, 107 136, 112 145 C 117 136, 126 130, 137 130 C 149 130, 160 139, 160 154 C 160 170, 144 186, 112 208 Z" fill="#FFB020"/>
+  <!-- the page, tilted, in front -->
+  <g transform="rotate(7 300 230)">
+    <rect x="212" y="96" width="172" height="228" rx="14" fill="#FFD27A"/>
+    <rect x="240" y="136" width="116" height="13" rx="6.5" fill="#232345"/>
+    <rect x="240" y="168" width="88" height="13" rx="6.5" fill="#8C7A9E"/>
+    <rect x="240" y="200" width="116" height="13" rx="6.5" fill="#232345"/>
+    <!-- editor's mark: the faded middle line struck through, a caret for the new words -->
+    <path d="M 226 186 L 344 162" fill="none" stroke="#14141F" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 282 258 L 298 232 L 314 258" fill="none" stroke="#14141F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="240" y="278" width="70" height="13" rx="6.5" fill="#232345"/>
+  </g>
 </svg>
 <div class="brand">Future Skills Series</div>
 <div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Lesson 4 of 6</span></div>
-<div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; letter-spacing:3px; text-transform:uppercase; color:#E8E8F5; opacity:0.85; margin-top:120px; position:relative; z-index:2;">The Editor's Chair Lesson</div>
+<div class="kicker">The Revision Lesson</div>
 <h1>Teach AI<br><span>Your Taste</span></h1>
-<p class="sub">Revision + feedback for grades 6–8: your feed learned your taste one like at a time — now teach it to AI. Students build a Taste File, then draft, get notes, and revise. <em>AI is your editor, not your ghostwriter.</em></p>
+<p class="sub">Generic in, <em>generic out</em>.</p>
 <div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">45-min lesson</span><span class="chip">No prep · No devices needed</span></div>
 </body></html>

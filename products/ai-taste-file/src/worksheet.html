@@ -3,109 +3,166 @@
 <style>
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
-  .tonewords { font-size: 11.5pt; letter-spacing: 0.3px; line-height: 1.9; }
+  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 150px; }
+  .blank.short { min-width: 56px; }
+  body.compact .lines .l { height: 26px; }
+  body.compact .page1 .lines .l { height: 24px; }
+  body.compact .page1 .masthead { margin-bottom: 12px; }
+  body.compact .page1 .sub { margin-bottom: 6px; }
+  body.compact .page1 h2 { margin: 6px 0 3px; }
+  body.compact .page1 .panel { padding: 7px 12px; }
+  body.compact .writebox { min-height: 84px; }
+  body.compact .writebox.tall { min-height: 132px; }
   .pairgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .pairgrid .writebox { min-height: 54px; }
-  table.compact td { padding: 4px 9px; }
+  body.compact .pairgrid .writebox { min-height: 72px; }
+  .grid2 { gap: 14px; align-items: start; }
   .boxlabel { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--line); margin: 0 0 3px; }
-  td.tick { text-align:center; } td.tick::before { content:""; display:inline-block; width:14px; height:14px; border:1.5px solid #14141F; border-radius:3px; }
+  table.check td, table.check th { padding: 7px 8px; }
+  table.check td.tick { width: 34px; }
+  td.tick { text-align:center; } td.tick::before { content:""; display:inline-block; width:16px; height:16px; border:1.5px solid #14141F; border-radius:3px; vertical-align:-3px; }
+  table.list td { padding: 9px 9px; }
+  .page h2 { margin: 8px 0 4px; }
+  .page p { margin: 0 0 5px; }
+  .page .panel { padding: 8px 12px; margin: 6px 0; }
+  .page table { margin: 4px 0; }
+  .grid2 p { margin: 0 0 3px; }
+  .talk { border-left: 4px solid var(--line); background: #F3F2FF; padding: 7px 11px; margin: 6px 0 8px; border-radius: 0 8px 8px 0; }
 </style>
 </head>
 <body class="line-ai compact">
 
-<!-- Shared art: line-art headphones + like-heart -->
+<!-- Shared art: line-art feed card with a like-heart, a page with an editor's mark, a star -->
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <g id="phones">
-      <!-- headband -->
-      <path d="M 22 66 C 22 18, 98 18, 98 66 L 88 66 C 88 26, 32 26, 32 66 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
-      <!-- cups -->
-      <rect x="12" y="56" width="24" height="32" rx="9" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
-      <rect x="84" y="56" width="24" height="32" rx="9" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
-      <!-- ear pads -->
-      <rect x="30" y="62" width="5" height="20" rx="2.5" fill="#14141F"/>
-      <rect x="85" y="62" width="5" height="20" rx="2.5" fill="#14141F"/>
+    <g id="feedcard">
+      <!-- feed card -->
+      <rect x="6" y="12" width="74" height="56" rx="10" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+      <rect x="17" y="25" width="30" height="5" rx="2.5" fill="#14141F"/>
+      <rect x="17" y="36" width="40" height="5" rx="2.5" fill="#14141F"/>
+      <path d="M 66 62 C 57 55, 53 50, 53 45 C 53 41, 56 39, 59 39 C 61.5 39, 64 41, 66 44 C 68 41, 70.5 39, 73 39 C 76 39, 79 41, 79 45 C 79 50, 75 55, 66 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
+      <!-- page with an editor's mark -->
+      <rect x="70" y="30" width="44" height="60" rx="5" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
+      <rect x="79" y="44" width="26" height="4" rx="2" fill="#14141F"/>
+      <rect x="79" y="55" width="26" height="4" rx="2" fill="#14141F"/>
+      <path d="M 76 60 L 108 53" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 87 76 L 92 68 L 97 76" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <g id="heart">
       <path d="M 12 21 C 5 15, 1 10, 1 6 C 1 2.5, 3.5 1, 6 1 C 8.5 1, 11 3, 12 5.5 C 13 3, 15.5 1, 18 1 C 20.5 1, 23 2.5, 23 6 C 23 10, 19 15, 12 21 Z" fill="#FFB020" stroke="#14141F" stroke-width="2" stroke-linejoin="round"/>
     </g>
+    <g id="star">
+      <path d="M 12 1 L 14.9 8.6 L 23 9 L 16.6 14.2 L 18.8 22 L 12 17.6 L 5.2 22 L 7.4 14.2 L 1 9 L 9.1 8.6 Z" fill="#FFB020" stroke="#14141F" stroke-width="2" stroke-linejoin="round"/>
+    </g>
   </defs>
 </svg>
 
-<div class="page">
+<div class="page page1">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
   <div class="headrow">
     <div>
-      <div class="titleblock"><div class="kicker">Student Session · Page 1 of 2</div><h1>My Taste File</h1></div>
-      <p class="sub">Name: ________________________  Class: ________  Date: ________</p>
+      <div class="titleblock"><div class="kicker">Student Session · Page 1 of 3</div><h1>My Taste File</h1></div>
+      <p class="sub">Name: <span class="blank"></span>&nbsp; Class: <span class="blank short"></span>&nbsp; Date: <span class="blank short"></span></p>
     </div>
-    <svg width="116" height="86" viewBox="6 14 108 80"><use href="#phones"/></svg>
+    <svg width="116" height="86" viewBox="2 8 116 86"><use href="#feedcard"/></svg>
   </div>
 
   <div class="panel">
-    <strong>Your For-You Page didn't guess your taste — you taught it,</strong> one like at a time.
-    An editor works the same way: it can only match your style if it can SEE your style.
-    This page is your style, written down. Your editor (a partner or an AI) gets to use ONLY what's here.
+    <strong>Your For-You Page (the feed an app builds for you) didn't guess your taste — you taught it,</strong> one like at a time.
+    <strong>Taste</strong> = what you like and how you like it. Unless you tell it — or it has saved notes about you — an AI doesn't know your taste.
+    So you write yours down here in five numbered <strong>sections</strong>, and your <strong>editor</strong> uses it. An editor (your partner playing the AI, or a real AI) reads your writing and gives <strong>notes</strong> — short tips on what to change — but never rewrites for you. Your editor may know ONLY what's on this page.
   </div>
 
-  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 1 — The Vibe</h2>
-  <p>Circle the 3 tone words that sound most like you:</p>
-  <p class="tonewords">funny&nbsp;&nbsp;·&nbsp;&nbsp;chill&nbsp;&nbsp;·&nbsp;&nbsp;hype&nbsp;&nbsp;·&nbsp;&nbsp;dreamy&nbsp;&nbsp;·&nbsp;&nbsp;blunt&nbsp;&nbsp;·&nbsp;&nbsp;dramatic&nbsp;&nbsp;·&nbsp;&nbsp;lowkey&nbsp;&nbsp;·&nbsp;&nbsp;poetic&nbsp;&nbsp;·&nbsp;&nbsp;bold&nbsp;&nbsp;·&nbsp;&nbsp;mysterious</p>
-  <p>One tone word of your own: ________________________________________</p>
-
-  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 2 — How I Like It Served</h2>
-  <p>Check every format you actually enjoy reading:</p>
-  <p class="tonewords">[&nbsp;] short + punchy&nbsp;&nbsp;&nbsp;[&nbsp;] story mode&nbsp;&nbsp;&nbsp;[&nbsp;] lists&nbsp;&nbsp;&nbsp;[&nbsp;] step-by-step&nbsp;&nbsp;&nbsp;[&nbsp;] big idea first, details after</p>
+  <div class="grid2">
+    <div>
+      <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 1 — The Vibe</h2>
+      <p>Tick the 3 tone words (the mood your words give off) that sound most like you:</p>
+      <table class="check">
+        <tr><td class="tick"></td><td>funny</td><td class="tick"></td><td>chill</td></tr>
+        <tr><td class="tick"></td><td>loud and excited</td><td class="tick"></td><td>dreamy</td></tr>
+        <tr><td class="tick"></td><td>blunt</td><td class="tick"></td><td>dramatic</td></tr>
+        <tr><td class="tick"></td><td>quiet</td><td class="tick"></td><td>poetic</td></tr>
+        <tr><td class="tick"></td><td>bold</td><td class="tick"></td><td>mysterious</td></tr>
+      </table>
+      <p>One tone word of your own: <span class="blank"></span></p>
+    </div>
+    <div>
+      <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 2 — How I Like It Served</h2>
+      <p>Tick every format you actually enjoy reading:</p>
+      <table class="check">
+        <tr><td class="tick"></td><td>short and punchy</td></tr>
+        <tr><td class="tick"></td><td>story mode</td></tr>
+        <tr><td class="tick"></td><td>lists</td></tr>
+        <tr><td class="tick"></td><td>step-by-step</td></tr>
+        <tr><td class="tick"></td><td>big idea first, details after</td></tr>
+      </table>
+    </div>
+  </div>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 3 — Pet Peeves</h2>
-  <p>Finish the sentence: <em>"Editor, never do this to my writing..."</em> (Example: "Don't make me sound like a textbook.")</p>
+  <p>Finish it two ways: <em>"Editor, never do this to my writing..."</em> (Example: "Don't make me sound like a textbook.")</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 4 — So Me / Not Me</h2>
-  <p>Write one sentence about your weekend that sounds <strong>exactly like you</strong>. Then write the same sentence in a voice that is <strong>not you at all</strong>.</p>
+  <p>Write one sentence about your weekend that sounds <strong>exactly like you</strong>. Then say the same thing in a voice that is <strong>NOT you</strong> — a robot, a textbook, a fancy poet.</p>
   <div class="pairgrid">
     <div><div class="boxlabel">So me</div><div class="writebox"></div></div>
     <div><div class="boxlabel">Not me</div><div class="writebox"></div></div>
   </div>
 
-  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 5 — Into Right Now</h2>
-  <p>Describe the <em>vibe</em> of what you're into — music, shows, games ("fast anime-style battles," "sad songs that still slap"):</p>
-  <div class="lines"><div class="l"></div></div>
+  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 5 — What I'm Into Right Now</h2>
+  <p>Music, shows, games — the feel of what you like right now ("fast anime-style battles," "sad songs on repeat"):</p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <div class="footer"><span>Teach AI Your Taste — My Taste File</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
 
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
-  <div class="titleblock"><div class="kicker">Student Session · Page 2 of 2</div><h1>The Editor's Chair</h1></div>
-  <p class="sub">The loop: <strong>YOU draft → your editor gives notes → YOU revise.</strong> The editor never touches your writing.</p>
+  <div class="titleblock"><div class="kicker">Student Session · Page 2 of 3</div><h1>The Editor's Chair</h1></div>
+  <p class="sub">The loop: <strong>YOU draft → your editor gives notes → YOU revise.</strong> Two roles: the <strong>Writer</strong> is you, on your own sheet. The <strong>Editor</strong> is your partner playing the AI (or a real AI): reads your taste file, gives 2 notes, never rewrites.</p>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Step 1 — Draft It Yourself</h2>
-  <p>Write 3–4 sentences: the <strong>About Me</strong> for a channel or profile page you'd actually make. Target = your taste file. No AI, no partner.</p>
-  <div class="writebox" style="min-height:112px"></div>
+  <p>Write 3–4 sentences: the <strong>About Me</strong> for a channel or profile page you would really make. Make it match your taste file. No AI, no partner.</p>
+  <div class="writebox tall"></div>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Step 2 — The Editor's Notes</h2>
-  <p>Give your editor — a partner playing the AI, or a real AI — your draft AND taste file. Rules: ONLY the taste file, exactly 2 notes, no rewriting.</p>
-  <p><strong>Note 1</strong> — points at Taste File section # _____ :</p>
-  <div class="lines"><div class="l"></div></div>
-  <p><strong>Note 2</strong> — points at Taste File section # _____ :</p>
-  <div class="lines"><div class="l"></div></div>
-
-  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Step 3 — Revise It Yourself</h2>
-  <p>Rewrite your draft. Star (*) every change you made.</p>
-  <div class="writebox" style="min-height:112px"></div>
-
-  <table class="compact">
-    <tr><th>Editor's Loop Checklist — the loop, done right</th><th>✓</th></tr>
-    <tr><td>I wrote the first draft myself — no AI, no copying.</td><td class="tick"></td></tr>
-    <tr><td>Each note points at a real taste-file section and is specific enough to act on — not "make it better."</td><td class="tick"></td></tr>
-    <tr><td>I rewrote it myself and starred what changed.</td><td class="tick"></td></tr>
-  </table>
-
-  <h2>Exit Ticket</h2>
-  <p><strong>1.</strong> One revision I made: _________________________________________________________________</p>
-  <p><strong>2.</strong> It fits my taste file because: ______________________________________________________</p>
+  <p><strong>Swap sheets with your partner — all pages.</strong> You are now the EDITOR for their draft. Read THEIR taste file (page 1). Read THEIR draft. Then write 2 notes on THEIR sheet, in the boxes below. Each note names a taste-file section (1–5) and says what doesn't match it. Notes, not rewrites — never write their sentence for them. <em>With devices:</em> your teacher types one taste file and draft into an AI on the big screen, and the class checks its 2 notes.</p>
+  <div class="talk"><strong>Then talk — 1 minute.</strong> Editor: read both notes out loud. Writer: ask ONE question ("Which sentence?" or "What would fit?"). Editor: answer using only the taste file. Then swap back.</div>
+  <p><strong>Note 1</strong> — points at Taste File section # <span class="blank short"></span></p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <p><strong>Note 2</strong> — points at Taste File section # <span class="blank short"></span></p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <div class="footer"><span>Teach AI Your Taste — The Editor's Chair</span><span>© Future Skills Series</span><span>2</span></div>
+</div>
+
+<div class="page">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
+  <div class="titleblock"><div class="kicker">Student Session · Page 3 of 3</div><h1>Revise &amp; Last Check</h1></div>
+  <p class="sub">Sheets swapped back? Good. From here on, this page is yours — your draft, your pen.</p>
+
+  <h2><svg width="20" height="19" viewBox="0 0 24 24"><use href="#star"/></svg> Step 3 — Revise It Yourself</h2>
+  <p>Rewrite your draft below, using your editor's two notes. Star (*) every change you made. Your editor's pen stays down.</p>
+  <div class="writebox tall"></div>
+
+  <table class="check list">
+    <tr><th>Editor's Loop Checklist — the loop, done right</th><th>✓</th></tr>
+    <tr><td>I wrote the first draft myself — no AI, no copying.</td><td class="tick"></td></tr>
+    <tr><td>Each note names a taste-file section and says what to change — not "make it better."</td><td class="tick"></td></tr>
+    <tr><td>I rewrote it myself and starred every change.</td><td class="tick"></td></tr>
+    <tr><td>We talked it through: my editor read both notes out loud, I asked one question, they answered from my taste file.</td><td class="tick"></td></tr>
+  </table>
+
+  <h2><svg width="20" height="19" viewBox="0 0 24 24"><use href="#star"/></svg> Last Check</h2>
+  <p><strong>1.</strong> One change I made (the old words → the new words):</p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <p><strong>2.</strong> It fits my taste file because (name the section):</p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <p><strong>3.</strong> Why would the note "make it better" NOT have helped you?</p>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
+
+  <div class="callout"><strong>Be real with yourself:</strong> if the editor writes your sentence, your name is on words you never wrote — and you'd know it. Your draft, your pen, your taste.</div>
+
+  <div class="footer"><span>Teach AI Your Taste — Revise &amp; Last Check</span><span>© Future Skills Series</span><span>3</span></div>
 </div>
 </body></html>
