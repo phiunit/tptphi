@@ -162,3 +162,47 @@ Blank tails: ws p1 xx% … tg p1 xx% …
 Checks JSON: {…}
 Notes to lead (≤ 5 lines): variations from the brief; new write-in idioms needing script support
 ```
+
+# ROUND 2 FIXES (lead decisions from the round-2 critic reports, 2026-09-04)
+Same hard rules, verification and report format as above. Scope per product is ONLY the items below plus
+keeping every gate green. The render gate now measures PRINT media and asserts PDF page count = .page count
+(a 1px print-side spill made a 4-page teacher guide out of a 3-page layout); trim to fit, never drop a required
+item. US spelling and "check the box", never "tick", on every student page and in every listing.
+
+## L1 ai-prompting-101
+- Timing: Showcase 5 → 3 min, Exit Ticket 5 → 7 (1 + 6); mirror in the plan header, deck chips (8+10+20+1+6), TG.
+- Lesson plan p2 opens with a floating callout: give it an h2 "Direct Instruction (cont.)" or pull it onto p1.
+- Worksheet Exit #1 part two → "Now cover everything after your first five words. If that was the whole wish,
+  what would the genie hand back? One sentence:" · "the genie's answer to one class's repaired wish (about black
+  holes)" · "Which sentence would you double-check" (plan, TG, deck too) · tick → check everywhere.
+- Teacher guide: trim ~2 lines on p1 so the PDF is 3 pages (gate) · "So far it mostly replaces tasks inside jobs,
+  not whole jobs."
+- Listing: "spot the checkable claims in a confident-sounding sample AI answer — one of them is false"; page
+  counts re-verified from the PDFs.
+## L2 ai-training-data-crate
+- "one-genre playlist" → "one-vibe playlist (all loud, all fast, all party)" in product.yaml (both places), the
+  lesson-plan sub, and the deck subtitle.
+- Deck slide 9 left panel → questions ("Who asked for Spanish and got English? Who asked for slow and got
+  medium?"); the declarations move to notes. Slide 9 right: "have misheard … more often". Add `title: "What's in
+  the Playlist?"` at the top of slides.yaml (display title; short_name stays).
+- Kicker (cover + plan) → "The Training Data Lesson".
+- Plan: debrief "2–3 pairs (1 min)"; add the live-request transition line ("Turn to the pair beside you. Make up
+  ONE request for their app — they can't say no.").
+- Worksheet: Exit #3 → "One gap your partner spotted, and the idea YOU added to it." · Rule 3 → "Check ONE Fit
+  box (Perfect / Kind of / Nothing) honestly." · row 7 → "Ask the pair next to you for ONE request. Write it:" ·
+  "say your partner's idea back to them" · row-7 write-in same height as rows 1–6.
+- TG: "some companies have since rebuilt their datasets, citing exactly that gap" · "behavior".
+- Listing: tick → check.
+## L3 ai-fact-check-lab
+- Plan "Verdicts out loud (4 min)": one desk per draft per stamp (5–6 desks speak); everyone else adds a tally
+  mark. Materials add pens/pencils. Objectives map to items ("(Exit #1)", "(drafts 1–3, C/S)", "(second-source
+  column + stamp)").
+- Worksheet: Desk words add "stamp = your verdict box (RUN, FIX, or KILL) — check one" · Draft #3 ending →
+  "Edison's record makes him the most important inventor of the 1800s." (TG key wording follows) · method steps
+  1–4 as four short bullets if they fit, else keep · Desk Helpers title → "use these on Draft #3 (and to check
+  #2)" · drop the "a quote is a claim too" hint · wrap each RUN/FIX/KILL row in `class="oneof"` (the fillable
+  copy then makes it one radio group) · ELL frame under the note lines: "Two things are wrong: ___ and ___.
+  I would check ___. Your ending [still stands / does not stand] because ___."
+- TG: "seven continents" → "(seven in the model US schools use)" in the safe-to-confirm line · Verdict Guidance
+  for #3 adopts the key's framing ("KILL the ending, keep the true facts").
+- Deck: slide 11 Exit #2 adds "— or one you expect to see" · slide 7 "he's" → "they're".

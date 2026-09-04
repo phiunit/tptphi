@@ -36,7 +36,10 @@ async function measureFields(page) {
       for (const kid of el.children) { const kr = kid.getBoundingClientRect(); if (kid.textContent.trim() && kr.bottom > top && kr.bottom < r.bottom - 12) top = kr.bottom; }
       // Empty inline blanks (.blank) have no height — the field sits on the underline.
       if (r.bottom - top < 8) top = r.bottom - 18;
-      push(pg, r, top, { check });
+      // td.tick cells inside a .oneof wrapper are mutually exclusive (one radio group per wrapper)
+      const wrap = check ? el.closest('.oneof') : null;
+      const group = wrap ? 'oneof' + [...document.querySelectorAll('.oneof')].indexOf(wrap) : null;
+      push(pg, r, top, { check, group });
     }
     // Underscore runs in prose ("Name: ________") are write-ins too.
     for (const pg of pages) {
@@ -61,11 +64,16 @@ export async function makeFillable(page, htmlPath, pdfIn, pdfOut) {
   const pdf = await PDFDocument.load(fs.readFileSync(pdfIn));
   const form = pdf.getForm();
   const font = await pdf.embedFont(StandardFonts.Helvetica);
-  let n = 0;
+  let n = 0; const radios = new Map();
   for (const f of fields) {
     const pg = pdf.getPage(f.page); const H = pg.getSize().height; const S = PX_TO_PT;
     const name = `p${f.page + 1}_${String(n + 1).padStart(2, '0')}`;
-    if (f.check) {
+    if (f.check && f.group) {
+      const gname = `p${f.page + 1}_${f.group}`;
+      const rg = radios.get(gname) || (radios.set(gname, form.createRadioGroup(gname)), radios.get(gname));
+      rg.addOptionToPage(name, pg, { x: f.cx * S - 6, y: H - f.cy * S - 6, width: 12, height: 12, borderWidth: 0 });
+      rg.acroField.getWidgets().at(-1).dict.delete(PDFName.of('MK'));
+    } else if (f.check) {
       const cb = form.createCheckBox(name);
       cb.addToPage(pg, { x: f.cx * S - 6, y: H - f.cy * S - 6, width: 12, height: 12, borderWidth: 0 });
       cb.acroField.getWidgets().at(-1).dict.delete(PDFName.of('MK'));
@@ -86,6 +94,7 @@ export async function makeFillable(page, htmlPath, pdfIn, pdfOut) {
     }
     n++;
   }
+  for (const rg of radios.values()) rg.defaultUpdateAppearances();
   form.updateFieldAppearances(font);
   pdf.setTitle(path.basename(pdfOut, '.pdf'));
   fs.writeFileSync(pdfOut, await pdf.save());

@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { launch, listProducts, PRODUCTS_DIR } from './lib.mjs';
 import { makeFillable } from './fillable.mjs';
+import { PDFDocument } from 'pdf-lib';
 import { buildSlides } from './slides.mjs';
 
 const slug = process.argv[2];
@@ -13,6 +14,8 @@ if (!products.length) { console.error('No products found' + (slug ? ` for slug "
 
 const browser = await launch();
 const page = await browser.newPage();
+// Gates must see what the buyer prints: page.pdf() renders print media, so measure print media too.
+await page.emulateMedia({ media: 'print' });
 
 // Teachers organize downloads by filename: name outputs "<Lesson Name> - <Doc>.pdf"
 const DOC_NAMES = { 'lesson-plan': 'Lesson Plan', 'worksheet': 'Worksheet',
@@ -108,6 +111,16 @@ for (const p of products) {
     } else {
       const out = path.join(distDir, outName(p.meta, base) + '.pdf');
       await page.pdf({ path: out, width: '8.5in', height: '11in', printBackground: true, margin: { top: 0, bottom: 0, left: 0, right: 0 } });
+      // The PDF is the artifact: its page count must equal the .page count (a 1px print-side spill
+      // produces a near-blank extra page the screenshots never show — ANTI_SLOP rule 1).
+      {
+        const expected = await page.evaluate(() => document.querySelectorAll('.page').length);
+        const actual = (await PDFDocument.load(fs.readFileSync(out))).getPageCount();
+        if (actual !== expected) {
+          console.error(`LAYOUT FAIL ${p.slug}/src/${f}:\n  - PDF has ${actual} pages but the document has ${expected} .page divs (print-side spill)`);
+          fs.rmSync(out); process.exitCode = 1; continue;
+        }
+      }
       // Digital companion: typeable copy of every worksheet (same layout, real form fields)
       if (/^worksheet/.test(base)) {
         const fill = out.replace(/\.pdf$/, ' (Fillable).pdf');

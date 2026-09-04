@@ -10,6 +10,7 @@
 //
 // slides.yaml shape:
 //   kicker: "The Literal Genie Lesson"      subtitle: "one sentence"     notes: "title-slide script"
+//   title: "What's in the Playlist?"        (optional display title; default short_name)
 //   slides:
 //     - { type: hook,     title, headline, lines: [..], minutes, notes }
 //     - { type: question, title, question, sub, minutes, notes }
@@ -88,7 +89,7 @@ export async function buildSlides(p, distDir, outPath, page = null) {
   const meta = p.meta;
   const lineName = LINE[meta.line] || 'Future Skills';
   const caption = `FUTURE SKILLS · ${lineName.toUpperCase()}`;
-  const short = meta.short_name || String(meta.title).split(':')[0].trim();
+  const short = deck.title || meta.short_name || String(meta.title).split(':')[0].trim(); // deck.title: display form (e.g. keeps a "?" the filename drops)
   const pres = new pptxgen();
   pres.layout = 'LAYOUT_16x9';
   pres.author = 'Future Skills Series'; pres.company = 'Future Skills Series'; pres.title = `${short} — Slides`;
@@ -116,7 +117,7 @@ export async function buildSlides(p, distDir, outPath, page = null) {
     if (deck.kicker) S.text(String(deck.kicker).toUpperCase(), { x: M, y: 1.15, w: tw, h: 0.3, fontSize: 11, bold: true, color: C.muted, charSpacing: 3 });
     S.text(short, { x: M, y: 1.5, w: tw, h: 1.5, fontSize: fit(short, tw, 1.5, 40, 28, true), bold: true, color: 'FFFFFF', valign: 'middle' });
     if (deck.subtitle) S.text(deck.subtitle, { x: M, y: 3.1, w: tw, h: 1.0, fontSize: fit(deck.subtitle, tw, 1.0, 15, 12), color: C.ink });
-    const chips = [`Grades ${meta.grades || '6–8'}`, `${meta.minutes || 45}-min lesson`, 'No prep · No devices needed'];
+    const chips = [`Grades ${String(meta.grades || '6–8').replace('-', '–')}`, `${meta.minutes || 45}-min lesson`, 'No prep · No devices needed'];
     let cx = M; for (const c of chips) { const w = Math.max(1.05, c.length * 0.085 + 0.35); pill(S, c, cx, 4.35, w); cx += w + 0.15; }
   }
 
