@@ -4,26 +4,47 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
+  body.compact { font-size: 10pt; line-height: 1.3; }
+  body.compact .page .masthead { margin-bottom: 12px; }
+  body.compact .page p { margin: 0 0 4px; }
+  body.compact .page h2 { margin: 6px 0 2px; }
+  body.compact .page .panel { padding: 6px 10px; margin: 4px 0; }
+  body.compact .page .callout { padding: 6px 11px; margin: 4px 0; }
+  body.compact .page ul, body.compact .page ol { margin: 2px 0 4px; }
+  body.compact .page table { margin: 4px 0; }
+  body.compact .page .sub { margin-bottom: 8px; }
+  .whatif { border-left: 3px solid #5B4DFF; padding: 0 10px; margin: 2px 0 3px; color: #33334A; font-style: italic; font-size: 9.5pt; }
+  .whatif strong { color: #5B4DFF; font-style: normal; }
+  .say { margin: 0 0 5px; }
+  .objrow { display: flex; gap: 14px; align-items: flex-start; }
+  .objrow ul { flex: 1; margin-bottom: 3px; }
+  .objrow .chips { flex: 0 0 auto; flex-direction: column; margin-top: 4px; }
+  ol li { margin-bottom: 2px; }
+  ol li .whatif { margin: 2px 0 3px; }
+  .panel br + strong { display: inline-block; margin-top: 2px; }
 </style>
 </head>
 <body class="line-ai compact">
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <g id="desk">
+    <g id="board">
       <rect x="10" y="20" width="100" height="58" rx="9" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
-      <line x1="34" y1="32" x2="34" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <line x1="60" y1="32" x2="60" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <line x1="86" y1="32" x2="86" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <rect x="26" y="50" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <rect x="52" y="34" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <rect x="78" y="43" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <path d="M 16 12 Q 22 4 28 12 Q 34 20 40 12" fill="none" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="98" cy="10" r="4" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+      <line x1="43" y1="26" x2="43" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <line x1="77" y1="26" x2="77" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <rect x="19" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="19" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="52" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="60" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="20" y="3" width="26" height="14" rx="5" fill="#fff" stroke="#14141F" stroke-width="2.5"/>
+      <circle cx="28" cy="10" r="2" fill="#14141F"/><circle cx="38" cy="10" r="2" fill="#14141F"/>
+      <circle cx="98" cy="8" r="4" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
     </g>
-    <g id="fader">
-      <line x1="12" y1="2" x2="12" y2="22" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
-      <rect x="4" y="9" width="16" height="8" rx="2.5" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+    <g id="card">
+      <rect x="3" y="5" width="18" height="14" rx="4" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <line x1="8" y1="12" x2="16" y2="12" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
     </g>
   </defs>
 </svg>
@@ -33,37 +54,43 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">The Task Board Lesson · Lesson 5 of 6</div><h1>Robots Do the Boring Work</h1></div>
-      <p class="sub">A 45-minute AI-and-future-jobs lesson. The hook: your class runs Big Dream Studio, a small recording studio with too much to do. They decide which tasks go to AI, which get AI's help, and which stay fully human — and they own the tradeoff behind every call.</p>
+      <p class="sub">A 45-minute AI-and-future-jobs lesson: your class runs a busy recording studio, decides which tasks go to AI, which get AI's help, and which stay human — and owns the tradeoff behind each choice. Stands alone.</p>
     </div>
-    <svg class="art" width="118" height="86" viewBox="0 0 120 88"><use href="#desk"/></svg>
+    <svg class="art" width="118" height="86" viewBox="0 0 120 88"><use href="#board"/></svg>
   </div>
 
   <h2>At a Glance</h2>
   <table>
     <tr><th>Time</th><th>Materials</th><th>Tech needed</th><th>Prep</th></tr>
-    <tr><td>45 min</td><td>Studio Task Board worksheet (1 per student)</td><td>None — fully unplugged by design</td><td>Print worksheets. That's it.</td></tr>
+    <tr><td>45 min</td><td>Studio Task Board worksheet (2 pages, 1 per student; fillable PDF copy included) · Slides (optional; script and keys in the notes) · board + marker for the three columns · Defense Rubric (Teacher Guide p.3) · pens</td><td>None — fully unplugged. Optional: a projector for the slides</td><td>Print worksheets. That's it.</td></tr>
   </table>
 
-  <h2>Objectives</h2>
-  <ul>
-    <li>Students can sort real job tasks into <strong>automate</strong>, <strong>augment</strong>, and <strong>keep human</strong> — and explain the difference.</li>
-    <li>Students can compare the tradeoffs of an automation choice: who wins, who loses, what could go wrong.</li>
-    <li>Students can defend a sorting decision aloud with a clear claim and specific supporting details.</li>
-  </ul>
-
-  <h2>Standards Alignment</h2>
-  <div class="chips">
-    <span class="chip">CSTA 2-IC-20</span><span class="chip">CCSS ELA SL.6.4</span><span class="chip">ISTE 1.3.d</span>
+  <h2>Objectives &amp; Standards</h2>
+  <div class="objrow">
+    <ul>
+      <li>Sort real job tasks into <strong>automate</strong> / <strong>augment</strong> / <strong>keep human</strong> and explain the difference. <em>(Sort the Board; Exit Ticket)</em></li>
+      <li>Compare the tradeoffs of an automation choice — who wins, who loses something, what could go wrong. <em>(Trade Cards; Exit Ticket AUTOMATE line)</em></li>
+      <li>Defend a sorting decision aloud: a clear claim, a specific detail, eyes up, voice to the back. <em>(Defend It — listener strip + Defense Rubric)</em></li>
+    </ul>
+    <div class="chips"><span class="chip">CSTA 2-IC-20</span><span class="chip">CCSS ELA SL.6.4</span><span class="chip">ISTE 1.3.d</span></div>
   </div>
-  <p>Full standards text, with where each is taught and assessed, in the Teacher Guide.</p>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#fader"/></svg> Warm-Up — The Most Boring Job Ever (7 min)</h2>
-  <p>Ask: <strong>"What's the most boring job you can think of?"</strong> Take 4–5 answers and write them on the board. Then pick two or three and ask the follow-up:</p>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#card"/></svg> Warm-Up — The Most Boring Job Ever (7 min)</h2>
+  <p>Ask: <strong>"What's the most boring job you can think of?"</strong> Board 4–5 answers, then push on two or three of them:</p>
   <div class="panel">
-    <p><em>"Is it boring because it REPEATS — same thing, over and over, no decisions? Or is it 'boring' but secretly full of people stuff — helping, noticing, talking someone down?"</em></p>
-    <p>Sort them as a class: repeats → robot bait. People stuff → hold on to it. (A toll booth job repeats — but the toll collector also waves at every regular. Let students argue; the arguing is the point.)</p>
+    <em>"Is it boring because it REPEATS — same thing, over and over, no decisions? Or is it 'boring' but secretly full of people stuff — helping, noticing, calming someone down?"</em> Sort them as a class: repeats → give it to a robot; people stuff → keep it human. (A cafeteria cashier's job repeats — but the cashier also knows which kid forgot lunch money. Let them argue; the arguing is the point.)
   </div>
-  <div class="callout"><strong>Bridge:</strong> "Here's the honest version, no robot apocalypse: nobody knows exactly which jobs change. What we can see already: The boring, repeating parts get automated; the human parts become the job. But every time a business automates something, somebody wins, somebody loses, and something could go wrong. Today YOU make those calls — for a recording studio."</div>
+  <div class="callout"><strong>Bridge:</strong> "Here's the honest version, no robot apocalypse: nobody can promise which jobs change, or how many. So far, it's the boring, repeating parts that get automated — AI takes over tasks, not whole jobs, and nobody can promise the final count. But every time a business automates something, somebody wins, somebody loses something, and something could go wrong. Today YOU make those decisions — for a recording studio."</div>
+  <p class="whatif"><strong>What if</strong> nobody names a people-stuff job? Offer one: "Bus driver — repeats the route, but notices who's crying in row six."</p>
+  <p class="say"><strong>Transition:</strong> "So how do you decide what a robot should take? Three columns. Eyes on the board."</p>
+
+  <h2>Direct Instruction — Three Columns, One Lens (10 min)</h2>
+  <p>Draw three columns on the board (slide 4 if projecting) and define them. Say it out loud once: a "call" is a decision.</p>
+  <div class="panel">
+    <strong>AUTOMATE</strong> — boring and repeating. No decisions to make. Hand it to AI.<br>
+    <strong>AUGMENT</strong> — a human makes the call, AI helps out.<br>
+    <strong>KEEP HUMAN</strong> — coaching, taste, being there for someone. The person is the whole point.
+  </div>
 
   <div class="footer"><span>Robots Do the Boring Work — Lesson Plan</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -71,38 +98,40 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2>Direct Instruction — Three Columns, One Lens (10 min)</h2>
-  <p>Draw three columns on the board and define them:</p>
-  <div class="panel">
-    <p><strong>AUTOMATE</strong> — boring and repeating. No judgment calls. Hand it to AI.</p>
-    <p><strong>AUGMENT</strong> — a human makes the call, AI helps out.</p>
-    <p><strong>KEEP HUMAN</strong> — coaching, taste, being there for someone. The human IS the product.</p>
-  </div>
-  <p>Then model the <strong>tradeoff lens</strong> on one studio task (with students, call it "the trade"). Task: <em>"Send the 'don't forget your session' texts."</em> Column: AUTOMATE — but don't stop there:</p>
+  <p><strong>Watch one get sorted</strong> (Direct Instruction, continued) — model the tradeoff lens ("the trade") on one task. <em>"Send the 'don't forget your session' texts."</em> Column: AUTOMATE — but don't stop there:</p>
   <table>
     <tr><th>Who wins?</th><th>Who loses something?</th><th>What could go wrong?</th></tr>
-    <tr><td>Jaylen — gets hours back for actual clients.</td><td>Jaylen, a little — sending those texts is how he learned every client's name.</td><td>A cheerful reminder lands after a canceled session.</td></tr>
+    <tr><td>Jaylen — gets hours back for the artists in the building.</td><td>Jaylen, a little — sending those texts is how he learned every artist's name.</td><td>A cheerful reminder lands after a canceled session.</td></tr>
   </table>
-  <div class="callout"><strong>Say it plainly:</strong> "The column is the easy part. The trade is the real thinking. In this room, 'because robots' is not a reason. 'Who wins, who loses, what could go wrong' — that's a reason."</div>
+  <div class="callout"><strong>Say it plainly:</strong> "The column is the easy part. The trade is the real thinking. In this room, 'because robots' is not a reason. 'Who wins, who loses something, what could go wrong' — that's a reason."</div>
+  <p class="whatif"><strong>What if</strong> someone says "automate everything, it's all boring"? "Automate E — the nervous singer gets a chatbot coach. Who lost something?"</p>
+  <p class="say"><strong>Hand-out / transition:</strong> "One each, pairs of two. Page 1: meet Nia, Ravi and Jaylen; read tasks A to L. Don't sort yet."</p>
 
   <h2>Main Activity — The Studio Task Board (15 min)</h2>
   <ol>
-    <li><strong>Sort (8 min):</strong> Pairs sort tasks A–L into the three columns. House rule: every column gets at least two tasks. Partners who disagree talk it out; either can be right.</li>
-    <li><strong>Trade cards (7 min):</strong> Each pair picks TWO of their calls and writes the trade — who wins, who loses, what could go wrong (worksheet p.2, which introduces the word "tradeoff" once, kid-plain).</li>
+    <li><strong>Sort (8 min):</strong> Pairs write each letter A–L in one of the three tall columns — as many as belong; every column gets at least two. Disagreeing partners talk it out; either can be right. Keep slides 8–9 (the task list) up.
+      <div class="whatif"><strong>What if</strong> a pair is stuck? "Does it repeat, or is it people stuff?" Ten letters in AUTOMATE? "Which two would you hate to lose a person on?"</div>
+      <span class="say"><strong>Transition:</strong> "Pens down. Page 2. Pick the TWO choices you argued about most — those are your trade cards."</span></li>
+    <li><strong>Trade cards (7 min):</strong> Each pair picks TWO choices; each student writes the trade on their own sheet — who wins, who loses something, what could go wrong.
+      <div class="whatif"><strong>What if</strong> an answer is "nobody loses"? Even Jaylen lost something. "Who used to do this task? What did they get from it?"</div>
+      <span class="say"><strong>Transition:</strong> "Stop there. Now you have to say it out loud — to people who might disagree."</span></li>
   </ol>
 
   <h2>Share-Out — Defend the Board (8 min)</h2>
-  <p><strong>Teach the delivery first (1 min):</strong> "Three moves: eyes up off the page, voice to the back wall, slow down on your claim." <strong>Pairs of pairs (4 min):</strong> two pairs face each other. Each pair defends ONE choice in 30 seconds with the worksheet claim frame — <em>"Task ___ belongs in ___ because ___ — and the trade is ___."</em> — and the listening pair answers with one keep and one fix. You circulate with the Defense Rubric (Teacher Guide p.2). <strong>Whole class (3 min):</strong> four or five pairs bring their most-argued call to the room. <strong>Gallery-walk variant:</strong> post the boards and tour for 2 minutes instead of the whole-class round.</p>
+  <p><strong>Teach the delivery first (1 min):</strong> "Three moves: eyes up off the page, voice to the back wall, slow down on your claim." <strong>Pairs of pairs (4 min):</strong> two pairs face each other — the Speaker pair defends ONE choice in 30 seconds with the claim frame <em>"Task ___ belongs in ___ because ___ — and the trade is ___,"</em> then they switch. Listeners score the strip on the Speaker's sheet (eyes / voice / pace, one keep, one fix), so every student is scored; you sample 3–4 pairs with the Defense Rubric (Teacher Guide p.3). <strong>Whole class (3 min):</strong> three pairs bring their most-argued choice to the room — or post the boards and gallery-walk for 2 minutes.</p>
+  <p class="whatif"><strong>What if</strong> a Speaker reads to the desk? Don't score it: "Eyes on us, one more time." The second try counts.</p>
+  <p class="say"><strong>Transition:</strong> "Swap sheets back — you need your own. Bottom of page 2: a job you actually know."</p>
 
   <h2>Exit Ticket (5 min)</h2>
-  <p>Bottom of worksheet p.2: students run the three columns on <strong>a job someone in their life actually has</strong> — one line per column, plus a why for the human one.</p>
+  <p>Worksheet p.2, bottom, solo: the three columns on <strong>a job someone in their life really has</strong> — AUTOMATE also names who loses something; KEEP HUMAN has a why. Collect; exemplar and scoring in the Teacher Guide, p.2.</p>
+  <p class="whatif"><strong>What if</strong> a student says "I don't know anyone with a job"? "Your teacher has one. Sort mine."</p>
 
   <h2>Differentiation</h2>
   <ul>
-    <li><strong>Support:</strong> Sort 8 tasks instead of 12 (skip B, F, J, L); column definitions and the claim frame are printed on the worksheet.</li>
+    <li><strong>Support:</strong> Sort 8 tasks, not 12 (skip B, F, J, L — every column still gets two); the definitions and claim frame are printed on the sheet.</li>
     <li><strong>Extension:</strong> Find one task where automating saves money now but hurts the studio in a year — explain the chain.</li>
-    <li><strong>ELL:</strong> Sorting letters keeps the writing load low; the claim frame doubles as a language frame; pairs may argue in their strongest language, then present in English.</li>
-    <li><strong>No-device classrooms:</strong> Built in — the entire lesson runs on paper and talk.</li>
+    <li><strong>ELL:</strong> Sorting letters keeps writing low; the claim frame doubles as a language frame; argue in any language, present in English.</li>
+    <li><strong>No-device classrooms:</strong> Built in — the whole lesson runs on paper and talk; the slides are optional.</li>
   </ul>
 
   <div class="footer"><span>Robots Do the Boring Work — Lesson Plan</span><span>© Future Skills Series</span><span>2</span></div>

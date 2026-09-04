@@ -4,27 +4,31 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
-  .sorts td { font-size: 9.5pt; padding: 5px 8px; }
+  .sorts td { font-size: 9.5pt; padding: 5px 8px; white-space: nowrap; }
+  .key td:first-child { width: 26%; }
 </style>
 </head>
 <body class="line-ai compact">
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <g id="desk">
+    <g id="board">
       <rect x="10" y="20" width="100" height="58" rx="9" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
-      <line x1="34" y1="32" x2="34" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <line x1="60" y1="32" x2="60" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <line x1="86" y1="32" x2="86" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <rect x="26" y="50" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <rect x="52" y="34" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <rect x="78" y="43" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <path d="M 16 12 Q 22 4 28 12 Q 34 20 40 12" fill="none" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="98" cy="10" r="4" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+      <line x1="43" y1="26" x2="43" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <line x1="77" y1="26" x2="77" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <rect x="19" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="19" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="52" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="60" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="20" y="3" width="26" height="14" rx="5" fill="#fff" stroke="#14141F" stroke-width="2.5"/>
+      <circle cx="28" cy="10" r="2" fill="#14141F"/><circle cx="38" cy="10" r="2" fill="#14141F"/>
+      <circle cx="98" cy="8" r="4" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
     </g>
-    <g id="fader">
-      <line x1="12" y1="2" x2="12" y2="22" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
-      <rect x="4" y="9" width="16" height="8" rx="2.5" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+    <g id="card">
+      <rect x="3" y="5" width="18" height="14" rx="4" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <line x1="8" y1="12" x2="16" y2="12" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
     </g>
   </defs>
 </svg>
@@ -34,36 +38,37 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">For the Teacher</div><h1>Teacher Guide &amp; Answer Key</h1></div>
-      <p class="sub">Robots Do the Boring Work — suggested sorts, discussion moves, the Defense Rubric, and full standards text.</p>
+      <p class="sub">Robots Do the Boring Work — the sort key for all twelve tasks, a key or exemplar for every student item (trade cards, the claim, the listener strip, the exit ticket), discussion moves, the Defense Rubric, what to do when it goes sideways, and full standards text.</p>
     </div>
-    <svg class="art" width="118" height="86" viewBox="0 0 120 88"><use href="#desk"/></svg>
+    <svg class="art" width="118" height="86" viewBox="0 0 120 88"><use href="#board"/></svg>
   </div>
 
   <h2>Why This Lesson</h2>
-  <div class="callout">Students hear "AI is taking the jobs" everywhere, usually as a scare. This lesson swaps the
-  fear for a decision-making frame: <strong>let the robots do the boring work; leave the humans to do the human
-  things.</strong> The honest middle-school version: AI changes jobs more than it deletes them, and every automation
-  choice carries a tradeoff (CSTA 2-IC-20) — that conversation is the intellectual core; the studio is just a
-  stage cool enough to hold it. Student pages say "the trade."</div>
+  <div class="callout">Students hear "AI is taking the jobs" everywhere, usually as a scare. This lesson swaps the fear for a
+  decision-making frame: <strong>let the robots do the boring work; leave the humans to do the human things.</strong> Every AI job
+  runs <strong>human → AI → human</strong>: a person decides what the AI takes on, the AI does the middle, and a person checks the
+  result and owns the decision. The honest middle-school version, hedged on purpose: AI takes over tasks, not whole jobs — nobody can
+  promise the final count — and every automation choice carries a tradeoff (CSTA 2-IC-20). Student pages say "the trade." Stands
+  alone — nothing here depends on another lesson.</div>
 
   <h2>Suggested Sorts — Read This First</h2>
-  <p><strong>Honest note:</strong> most of these tasks are defensibly AUGMENT. The column matters far less than the
-  defense — a pair that puts D in KEEP HUMAN and names a real tradeoff beats a pair that matches this table with
-  no reason. Grade the trade, not the column.</p>
+  <p><strong>Honest note:</strong> most tasks are defensibly AUGMENT. The column matters far less than the defense — a pair that puts
+  D in KEEP HUMAN and names a real tradeoff beats a pair that matches this table with no reason. Grade the trade, not the column.
+  "Two per column" is satisfiable from this key, including the Support set (skip B, F, J, L).</p>
   <table class="sorts">
-    <tr><th style="width:27%">Task</th><th style="width:17%">Likely column</th><th>The tradeoff worth surfacing</th></tr>
+    <tr><th style="width:27%">Task</th><th style="width:19%">Likely column</th><th>The tradeoff worth surfacing</th></tr>
     <tr><td><strong>A</strong> — Session reminder texts</td><td>Automate</td><td>Wins hours back; a chirpy text after a cancellation stings.</td></tr>
-    <tr><td><strong>B</strong> — Rename + back up files</td><td>Automate</td><td>Nobody misses it; the risk is silent failure, so spot-check.</td></tr>
-    <tr><td><strong>C</strong> — Draft social captions</td><td>Augment</td><td>AI drafts fast, but the studio's voice is Jaylen's.</td></tr>
-    <tr><td><strong>D</strong> — Rough demo mix</td><td>Augment</td><td>AI gets most of the way; Ravi's ears are the product.</td></tr>
-    <tr><td><strong>E</strong> — Coach a nervous artist</td><td>Keep human</td><td>Confidence is the product; outsource it and the artist loses.</td></tr>
+    <tr><td><strong>B</strong> — Rename + back up files</td><td>Automate</td><td>Nobody misses it; the risk is silent failure — spot-check.</td></tr>
+    <tr><td><strong>C</strong> — First-draft social captions</td><td>Augment</td><td>AI drafts fast, but the studio's voice is Jaylen's.</td></tr>
+    <tr><td><strong>D</strong> — Rough first mix of a new song</td><td>Augment</td><td>AI gets most of the way; Ravi's ears decide what ships.</td></tr>
+    <tr><td><strong>E</strong> — Coach a nervous first-time singer</td><td>Keep human</td><td>Confidence is the point; a chatbot coach costs the singer.</td></tr>
     <tr><td><strong>F</strong> — Payment reminders</td><td>Automate</td><td>A job nobody wants; a loyal regular gets a cold nudge.</td></tr>
-    <tr><td><strong>G</strong> — Pick the single</td><td>Keep human / Augment</td><td>Taste is Nia's edge; AI reports what's trending, doesn't decide.</td></tr>
-    <tr><td><strong>H</strong> — Fix the echoey room</td><td>Keep human / Augment</td><td>Craft plus judgment; AI can suggest, hands do the work.</td></tr>
-    <tr><td><strong>I</strong> — Agree on a price</td><td>Keep human</td><td>Trust and reading the room; a bot can cost the client.</td></tr>
-    <tr><td><strong>J</strong> — Type up lyrics</td><td>Automate</td><td>Pure transcription; it can mishear a bar — the artist checks.</td></tr>
-    <tr><td><strong>K</strong> — Same five email questions</td><td>Automate</td><td>Same answers daily; the risk is the sixth question.</td></tr>
-    <tr><td><strong>L</strong> — Plan showcase night</td><td>Keep human / Augment</td><td>The vibe is live connection; AI can draft the checklist.</td></tr>
+    <tr><td><strong>G</strong> — Pick the song to release first</td><td>Keep human / Augment</td><td>Taste is Nia's edge; AI can report trends, not decide.</td></tr>
+    <tr><td><strong>H</strong> — Microphones + echo for a live band</td><td>Keep human / Augment</td><td>Craft plus judgment; AI can suggest, hands do the work.</td></tr>
+    <tr><td><strong>I</strong> — Agree on a price</td><td>Keep human</td><td>Trust and reading the room; a bot can cost the booking.</td></tr>
+    <tr><td><strong>J</strong> — Type up the rap lyrics</td><td>Automate</td><td>Transcription; it can mishear a line — the artist checks.</td></tr>
+    <tr><td><strong>K</strong> — The same five email questions</td><td>Automate</td><td>Same answers daily; the risk is the sixth question.</td></tr>
+    <tr><td><strong>L</strong> — Song order + mood for show night</td><td>Keep human / Augment</td><td>The mood is live connection; AI can draft the checklist.</td></tr>
   </table>
 
   <div class="footer"><span>Robots Do the Boring Work — Teacher Guide</span><span>© Future Skills Series</span><span>1</span></div>
@@ -72,35 +77,51 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#fader"/></svg> Discussion Moves (for the hard questions)</h2>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#card"/></svg> Answer Key — Worksheet p.2 (Trade Cards, Defend It, Exit Ticket)</h2>
+  <table class="key">
+    <tr><th>Item</th><th>What a good answer looks like</th></tr>
+    <tr><td><strong>Trade Cards</strong> (the DOK-3 item — two per student)</td><td>Worked exemplar, Task K in AUTOMATE. <em>Who wins?</em> Jaylen — the same five answers go out instantly and he gets his mornings back. <em>Who loses something?</em> The person with the sixth question, the one the bot can't answer — and Jaylen loses the small hello that used to start a relationship. <em>What could go wrong?</em> The bot says "yes, we have parking" the week the lot is closed. <strong>Score:</strong> a specific winner AND a specific loss plus one realistic failure = proficient; "it's faster" with no loss named = developing; "because robots" = redo. Any column is acceptable if the trade is real.</td></tr>
+    <tr><td><strong>Defend It</strong> — the claim frame</td><td>Exemplar: "Task E belongs in KEEP HUMAN because a nervous first-time singer needs a person who can see she's shaking — and the trade is Nia spends an hour she could have spent booking the studio." A proficient claim has all four slots filled and the trade names a cost, not a repeat of the reason. Weak: "Task E belongs in KEEP HUMAN because it's human — and the trade is nothing."</td></tr>
+    <tr><td><strong>Listener strip</strong> (eyes / voice / pace + keep / fix)</td><td><em>Eyes</em> = the Speaker looked at the Listeners for most of the 30 seconds, not the page. <em>Voice</em> = the Listeners heard every word without leaning in. <em>Pace</em> = the Speaker slowed or paused on "because" and "the trade is." A good <em>keep</em> names a specific thing ("you said who lost something"); a good <em>fix</em> names a specific move ("look up on the trade"). The strip is peer evidence for SL.6.4 for every student; your Defense Rubric samples confirm it. Un-ticked boxes are honest data, not a punishment.</td></tr>
+    <tr><td><strong>Exit Ticket</strong> — a real job</td><td>Exemplar: <em>The job:</em> my uncle's food truck. <em>Automate:</em> posting the truck's daily location — and who loses something: my uncle, a little; the regulars who used to text "where you at?" now just check the post, and that was half his hellos. <em>Augment:</em> planning how much food to buy each week — AI predicts, he decides. <em>Keep human:</em> joking with the regulars at the window, because that's why they come back. <strong>Score:</strong> proficient = a real task from that job in every column + a real loss on the AUTOMATE line + a why on KEEP HUMAN; developing = columns filled but no loss named; redo = "AI should do everything."</td></tr>
+  </table>
+
+  <h2>Discussion Moves (for the hard questions)</h2>
   <div class="panel">
-    <p><strong>Q: "Will AI take my mom's job?"</strong> — Stay honest, no predictions: "Some parts of almost every job will get automated — usually the repeating parts. Jobs mostly change shape instead of disappearing. The real question: which parts are the human parts? That's your exit ticket."</p>
-    <p><strong>Q: The class splits three ways on one task — who's right?</strong> — Nobody, and say so. Push with: "Convince me. Who wins? Who loses? What breaks?" A three-way split is the best share-out material.</p>
-    <p><strong>Q: "Isn't automating a task mean to whoever did it?"</strong> — Sit in that tension; it IS the standard. Jaylen, who loses the boring texts, also loses a way to learn every client's name. Naming both sides out loud is the skill.</p>
+    <p><strong>Q: "Will AI take my mom's job?"</strong> — Stay honest, no predictions: "Some parts of almost every job get automated — usually the repeating parts. AI takes over tasks, not whole jobs — and nobody can promise the final count. The real question: which parts are the human parts? That's your exit ticket."</p>
+    <p><strong>Q: The class splits three ways on one task — who's right?</strong> — Nobody, and say so. Push with: "Convince me. Who wins? Who loses something? What breaks?" A three-way split is the best share-out material.</p>
+    <p><strong>Q: "Isn't automating a task mean to whoever did it?"</strong> — Sit in that tension; it IS the standard. Jaylen, who loses the boring texts, also loses a way to learn every artist's name. Naming both sides out loud is the skill.</p>
+  </div>
+
+  <div class="footer"><span>Robots Do the Boring Work — Teacher Guide</span><span>© Future Skills Series</span><span>2</span></div>
+</div>
+
+<div class="page">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
+
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#card"/></svg> When It Goes Sideways</h2>
+  <div class="panel">
+    <p><strong>A pair puts ten letters in AUTOMATE</strong> → "Which two would you hate to lose a person on?" The rule (two per column) does the rest; make them defend the two.</p>
+    <p><strong>"Nobody loses" on a trade card</strong> → Hand them the model: even Jaylen lost something. "Who used to do this task? What did they get from it?"</p>
+    <p><strong>A Speaker reads to the desk</strong> → Don't score it. "Eyes on us, one more time." The second try counts — and tell the Listeners to tick the second try.</p>
+    <p><strong>A student is upset — a parent's job is on the board</strong> → Don't predict. "Some parts of that job may change; the parts that need a person are the parts your parent is good at. Which parts are those?" Then move the class on; follow up privately if needed.</p>
   </div>
 
   <h2>Defense Rubric — Defend the Board (SL.6.4)</h2>
   <ul>
-    <li><strong>Proficient:</strong> one clear claim, a specific detail from the task, names who wins AND who loses or what breaks; audible, looking at the room.</li>
-    <li><strong>Developing:</strong> claim plus a reason, but the trade is missing or vague ("it's just faster").</li>
+    <li><strong>Proficient:</strong> one clear claim, a specific detail from the task, names who wins AND who loses something or what breaks; eyes up, audible at the back wall — the listener strip shows three ticks.</li>
+    <li><strong>Developing:</strong> claim plus a reason, but the trade is missing or vague ("it's just faster"); one or two ticks.</li>
     <li><strong>Beginning:</strong> restates the column with no because, or reads to the desk.</li>
   </ul>
 
-  <h2>Exit Ticket Exemplar</h2>
-  <div class="panel">
-    <p><strong>The job:</strong> my uncle's food truck. <strong>Automate:</strong> posting the truck's daily location
-    to socials. <strong>Augment:</strong> planning how much food to buy each week — AI predicts, he decides.
-    <strong>Keep human:</strong> joking with the regulars at the window, because that's why they come back.</p>
-  </div>
-
   <h2>Full Standards Text</h2>
   <ul>
-    <li><strong>CSTA 2-IC-20</strong> — Compare tradeoffs associated with computing technologies that affect people's everyday activities and career options. <em>Taught: Direct Instruction, the tradeoff lens worked example. Assessed: Trade Cards (worksheet p.2) and Exit Ticket.</em></li>
-    <li><strong>CCSS ELA SL.6.4</strong> — Present claims and findings, sequencing ideas logically and using pertinent descriptions, facts, and details to accentuate main ideas or themes; use appropriate eye contact, adequate volume, and clear pronunciation. <em>Taught: claim-frame modeling in the Share-Out setup. Assessed: Defend the Board, scored with the Defense Rubric above.</em></li>
-    <li><strong>ISTE 1.3.d</strong> — Students build knowledge by actively exploring real-world issues and problems, developing ideas and theories and pursuing answers and solutions. <em>Taught: The Studio Task Board sort (real tasks, real business). Assessed: Exit Ticket, applying the sort to a real job in their life.</em></li>
+    <li><strong>CSTA 2-IC-20</strong> — Compare tradeoffs associated with computing technologies that affect people's everyday activities and career options. <em>Taught: Direct Instruction, the tradeoff lens modeled on the reminder texts. Assessed: Trade Cards (worksheet p.2 — who wins, who loses something, what could go wrong) and the Exit Ticket AUTOMATE line, which names who loses something when a real job's task is automated.</em></li>
+    <li><strong>CCSS ELA SL.6.4</strong> — Present claims and findings, sequencing ideas logically and using pertinent descriptions, facts, and details to accentuate main ideas or themes; use appropriate eye contact, adequate volume, and clear pronunciation. <em>Taught: the three delivery moves and the claim frame in the Share-Out setup. Assessed: Defend It — every student's 30-second claim is scored on the listener strip (eyes / voice / pace + keep / fix) by the listening pair; you sample 3–4 pairs with the Defense Rubric.</em></li>
+    <li><strong>ISTE 1.3.d</strong> — Students build knowledge by actively exploring real-world issues and problems, developing ideas and theories and pursuing answers and solutions. <em>Taught: The Studio Task Board sort (real tasks, real business). Assessed: the Exit Ticket, applying the three columns to a real job in the student's life.</em></li>
   </ul>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#fader"/></svg> Thank You &amp; Terms of Use</h2>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#card"/></svg> Thank You &amp; Terms of Use</h2>
   <div class="panel">
     <p><strong>License:</strong> Your purchase grants ONE teacher a license for their own classroom. Please don't
     post this file online or share it school-wide — point colleagues to the listing so they can grab their own copy.</p>
@@ -110,6 +131,6 @@
     <p><strong>Something off?</strong> Leave a question on the listing before leaving a review — we fix fast.</p>
   </div>
 
-  <div class="footer"><span>Robots Do the Boring Work — Teacher Guide</span><span>© Future Skills Series</span><span>2</span></div>
+  <div class="footer"><span>Robots Do the Boring Work — Teacher Guide</span><span>© Future Skills Series</span><span>3</span></div>
 </div>
 </body></html>

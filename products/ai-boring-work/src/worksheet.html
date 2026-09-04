@@ -1,39 +1,56 @@
 <!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="../../../brand/templates/print.css">
 <style>
-  table.board { table-layout: fixed; }
-  table.board td.slot { height: 34px; border: 1px solid #C9C9D6; }
-  table.board th { font-size: 9pt; }
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
   .tasks { font-size: 10pt; }
   .tasks p { margin: 0 0 4px; }
-  .board td { height: 175px; }
-  .tcard p { margin: 0 0 4px; }
-  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 90px; }
+  /* Sort board: three tall columns — write as many letters as belong */
+  .cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 6px 0 0; }
+  .cols .colhead { background: #14141F; color: #fff; font-weight: 700; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.5px; padding: 6px 8px; border-radius: 8px 8px 0 0; }
+  .page .cols .writebox { border-radius: 0 0 8px 8px; border-top: none; min-height: 208px; }
+  /* Trade cards */
+  .tcard p { margin: 0 0 3px; }
+  .tcard .lines { margin: 0 0 3px; }
+  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 90px; height: 22px; vertical-align: bottom; }
   .blank.wide { min-width: 200px; }
-  p.q { display: flex; gap: 8px; align-items: flex-end; margin: 0 0 10px; }
+  p.q { display: flex; gap: 8px; align-items: flex-end; margin: 0 0 3px; white-space: nowrap; }
   p.q .wline { flex: 1; border-bottom: 1.5px solid #B9B9C9; height: 24px; }
+  .lines .l { height: 24px; }
+  table.pick { margin: 1px 0 2px; width: auto; }
+  table.pick td { border: none; padding: 3px 3px; height: 34px; font-size: 8.5pt; font-weight: 700; white-space: nowrap; vertical-align: middle; }
+  table.moves td { font-weight: 700; font-size: 9pt; padding: 3px 5px; }
+  .grid2.listen { align-items: start; }
+  td.tick { text-align: center; width: 22px; } td.tick::before { content: ""; display: inline-block; width: 14px; height: 14px; border: 1.5px solid #14141F; border-radius: 3px; vertical-align: middle; }
+  .claim p { margin: 0 0 2px; line-height: 1.6; }
+  .claim p:last-child { margin: 0; }
+  p.listen { margin: 3px 0 2px; }
+  .page h2 { margin: 7px 0 3px; }
+  .exit p { margin: 0 0 1px; }
+  .exit .lines { margin: 0 0 3px; }
 </style>
 </head>
 <body class="line-ai compact">
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <g id="desk">
+    <g id="board">
       <rect x="10" y="20" width="100" height="58" rx="9" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
-      <line x1="34" y1="32" x2="34" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <line x1="60" y1="32" x2="60" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <line x1="86" y1="32" x2="86" y2="66" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <rect x="26" y="50" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <rect x="52" y="34" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <rect x="78" y="43" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
-      <path d="M 16 12 Q 22 4 28 12 Q 34 20 40 12" fill="none" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="98" cy="10" r="4" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+      <line x1="43" y1="26" x2="43" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <line x1="77" y1="26" x2="77" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <rect x="19" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="19" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="52" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="60" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="20" y="3" width="26" height="14" rx="5" fill="#fff" stroke="#14141F" stroke-width="2.5"/>
+      <circle cx="28" cy="10" r="2" fill="#14141F"/><circle cx="38" cy="10" r="2" fill="#14141F"/>
+      <circle cx="98" cy="8" r="4" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
     </g>
-    <g id="fader">
-      <line x1="12" y1="2" x2="12" y2="22" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
-      <rect x="4" y="9" width="16" height="8" rx="2.5" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+    <g id="card">
+      <rect x="3" y="5" width="18" height="14" rx="4" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <line x1="8" y1="12" x2="16" y2="12" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
     </g>
   </defs>
 </svg>
@@ -43,13 +60,13 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">Student Session</div><h1>The Studio Task Board</h1></div>
-      <p class="sub">Name: ________________________  Class: ________  Date: ________</p>
+      <p class="sub">Name: <span class="blank" style="min-width:210px"></span>&nbsp;&nbsp; Class: <span class="blank" style="min-width:80px"></span>&nbsp;&nbsp; Date: <span class="blank" style="min-width:80px"></span></p>
     </div>
-    <svg width="118" height="86" viewBox="0 0 120 88"><use href="#desk"/></svg>
+    <svg width="118" height="86" viewBox="0 0 120 88"><use href="#board"/></svg>
   </div>
 
   <div class="panel">
-    <p><strong>You run Big Dream Studio</strong> — a small recording studio. <strong>Nia</strong> owns the place and coaches the artists. <strong>Ravi</strong> runs the mixing boards. <strong>Jaylen</strong> runs the front desk. There's too much to do, so the crew just got an AI assistant. Your job: decide what it does — and what it never touches.</p>
+    <p><strong>You run Big Dream Studio</strong> — a small recording studio. <strong>Nia</strong> owns the place and coaches the artists. <strong>Ravi</strong> runs the mixing boards. <strong>Jaylen</strong> runs the front desk. There's too much to do, so the crew just got an AI assistant. Your job: decide what it does — and what it never touches. Every decision (grown-ups say "a call") helps someone and costs someone.</p>
     <ul>
       <li><strong>AUTOMATE</strong> — boring and repeating. Hand it to AI.</li>
       <li><strong>AUGMENT</strong> — a human makes the call, AI helps out.</li>
@@ -57,36 +74,33 @@
     </ul>
   </div>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#fader"/></svg> This Week at Big Dream Studio</h2>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#card"/></svg> This Week at Big Dream Studio</h2>
   <div class="tasks grid2">
     <div>
       <p><strong>A.</strong> Send the "don't forget your session" texts to this week's artists <em>(Jaylen)</em></p>
       <p><strong>B.</strong> Rename and back up 300 audio files from last night <em>(Ravi)</em></p>
       <p><strong>C.</strong> Write the first draft of this week's social media captions <em>(Jaylen)</em></p>
-      <p><strong>D.</strong> Mix a rough first version of a new artist's demo <em>(Ravi)</em></p>
-      <p><strong>E.</strong> Coach a nervous first-time artist through her first take <em>(Nia)</em></p>
+      <p><strong>D.</strong> Mix a rough first version of a new artist's song <em>(Ravi)</em></p>
+      <p><strong>E.</strong> Coach a nervous first-time singer through her first recording <em>(Nia)</em></p>
       <p><strong>F.</strong> Politely remind three people who still haven't paid the studio <em>(Jaylen)</em></p>
     </div>
     <div>
-      <p><strong>G.</strong> Pick which of an artist's five new songs is the single <em>(Nia)</em></p>
-      <p><strong>H.</strong> Make the room sound less echoey and set the mics for a live band <em>(Ravi)</em></p>
+      <p><strong>G.</strong> Pick which of an artist's five new songs to release first <em>(Nia)</em></p>
+      <p><strong>H.</strong> Set up the microphones for a live band and fix the echo <em>(Ravi)</em></p>
       <p><strong>I.</strong> Agree on a price with a group that wants the studio for three days <em>(Nia)</em></p>
-      <p><strong>J.</strong> Type up the lyrics from yesterday's freestyle session <em>(Ravi)</em></p>
+      <p><strong>J.</strong> Type up the lyrics from yesterday's made-up-on-the-spot rap session <em>(Ravi)</em></p>
       <p><strong>K.</strong> Answer the same five questions everyone emails (price, hours, parking) <em>(Jaylen)</em></p>
-      <p><strong>L.</strong> Plan the set order and vibe for showcase night <em>(Nia)</em></p>
+      <p><strong>L.</strong> Plan the song order and mood for the big show night <em>(Nia)</em></p>
     </div>
   </div>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#fader"/></svg> Sort the Board</h2>
-  <p>Write each letter where you'd put it. <strong>House rule:</strong> every column needs at least two tasks. Disagree with your partner? Good — talk it out. That's the lesson.</p>
-  <table class="board">
-    <tr><th>Automate — hand it to AI</th><th>Augment — AI helps out</th><th>Keep Human — humans only</th></tr>
-    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
-    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
-    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
-    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
-    <tr><td class="slot"></td><td class="slot"></td><td class="slot"></td></tr>
-  </table>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#card"/></svg> Sort the Board</h2>
+  <p>Write each task's letter in the column where it belongs — as many letters as belong there. <strong>Every column needs at least two.</strong> Disagree with your partner? Good — talk it out. That's the lesson.</p>
+  <div class="cols">
+    <div><div class="colhead">Automate — hand it to AI</div><div class="writebox"></div></div>
+    <div><div class="colhead">Augment — AI helps out</div><div class="writebox"></div></div>
+    <div><div class="colhead">Keep Human — humans only</div><div class="writebox"></div></div>
+  </div>
 
   <div class="footer"><span>Robots Do the Boring Work — The Studio Task Board</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -94,40 +108,57 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#fader"/></svg> The Trade — Every Call Has a Cost</h2>
-  <p>Every choice helps someone, costs someone, and could backfire. (Grown-ups call this a <strong>tradeoff</strong> — now you know the word.) Pick <strong>TWO</strong> of your calls from the board and write the trade. "Because robots" is not a reason.</p>
+  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#card"/></svg> The Trade — Every Choice Has a Cost</h2>
+  <p>Every choice helps someone, costs someone, and could go wrong — grown-ups call that a <strong>tradeoff</strong>; we'll say <strong>the trade</strong>. Pick <strong>TWO</strong> choices from your board and write the trade for each. "Because robots" is not a reason.</p>
 
-  <div class="panel tcard">
-    <p><strong>Call #1</strong> — Task letter: <span class="blank" style="min-width:40px"></span>  My column (circle one):  <strong>AUTOMATE&nbsp;&nbsp;/&nbsp;&nbsp;AUGMENT&nbsp;&nbsp;/&nbsp;&nbsp;KEEP HUMAN</strong></p>
-    <p class="q">Who wins? <span class="wline"></span></p>
-    <p class="q">Who loses, or loses something? <span class="wline"></span></p>
-    <p class="q">What could go wrong? <span class="wline"></span></p>
+  <div class="grid2">
+    <div class="panel tcard">
+      <p><strong>Choice #1</strong> — Task letter: <span class="blank" style="min-width:44px"></span></p>
+      <table class="pick"><tr><td class="tick"></td><td>AUTOMATE</td><td class="tick"></td><td>AUGMENT</td><td class="tick"></td><td>KEEP HUMAN</td></tr></table>
+      <p class="q">Who wins? <span class="wline"></span></p>
+      <div class="lines"><div class="l"></div></div>
+      <p class="q">Who loses something? <span class="wline"></span></p>
+      <div class="lines"><div class="l"></div></div>
+      <p class="q">What could go wrong? <span class="wline"></span></p>
+      <div class="lines"><div class="l"></div></div>
+    </div>
+    <div class="panel tcard">
+      <p><strong>Choice #2</strong> — Task letter: <span class="blank" style="min-width:44px"></span></p>
+      <table class="pick"><tr><td class="tick"></td><td>AUTOMATE</td><td class="tick"></td><td>AUGMENT</td><td class="tick"></td><td>KEEP HUMAN</td></tr></table>
+      <p class="q">Who wins? <span class="wline"></span></p>
+      <div class="lines"><div class="l"></div></div>
+      <p class="q">Who loses something? <span class="wline"></span></p>
+      <div class="lines"><div class="l"></div></div>
+      <p class="q">What could go wrong? <span class="wline"></span></p>
+      <div class="lines"><div class="l"></div></div>
+    </div>
   </div>
 
-  <div class="panel tcard">
-    <p><strong>Call #2</strong> — Task letter: <span class="blank" style="min-width:40px"></span>  My column (circle one):  <strong>AUTOMATE&nbsp;&nbsp;/&nbsp;&nbsp;AUGMENT&nbsp;&nbsp;/&nbsp;&nbsp;KEEP HUMAN</strong></p>
-    <p class="q">Who wins? <span class="wline"></span></p>
-    <p class="q">Who loses, or loses something? <span class="wline"></span></p>
-    <p class="q">What could go wrong? <span class="wline"></span></p>
+  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#card"/></svg> Defend It — Say It Out Loud</h2>
+  <p>Two pairs face each other. The pair talking is the <strong>Speaker</strong>; the pair listening is the <strong>Listener</strong>. Then you switch. Speakers: defend ONE choice in 30 seconds with three moves — <strong>eyes</strong> on the Listeners, not the page; a <strong>voice</strong> that reaches the back of the room; and <strong>pace</strong>: slow down on your claim.</p>
+  <div class="panel claim">
+    <p>Task <span class="blank" style="min-width:44px"></span> belongs in <span class="blank" style="min-width:150px"></span> because <span class="blank wide" style="min-width:230px"></span></p>
+    <p>— and the trade is <span class="blank wide" style="min-width:500px"></span></p>
+  </div>
+  <p class="listen"><strong>Listeners, fill this in on the Speaker's sheet:</strong> tick each move you saw, then write one thing to keep and one thing to fix.</p>
+  <div class="grid2 listen">
+    <table class="pick moves"><tr><td class="tick"></td><td>Eyes up</td><td class="tick"></td><td>Voice reached the back</td><td class="tick"></td><td>Slowed on the claim</td></tr></table>
+    <div>
+      <p class="q">Keep: <span class="wline"></span></p>
+      <p class="q">Fix: <span class="wline"></span></p>
+    </div>
   </div>
 
-  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#fader"/></svg> Defend It — Say It Out Loud</h2>
-  <p>Get ready to defend ONE choice to another pair — and maybe the whole room. Look up, speak up, and land the trade:</p>
-  <div class="panel">
-    <p>Task <span class="blank" style="min-width:40px"></span> belongs in <span class="blank"></span> because <span class="blank wide"></span></p>
-    <p><span class="blank wide" style="min-width:100%"></span></p>
-    <p>— and the trade is <span class="blank wide" style="min-width:340px"></span></p>
+  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#card"/></svg> Exit Ticket — A Real Job You Know</h2>
+  <div class="exit">
+    <p class="q">Sort a real job — one someone in your life really has (family, neighbor, coach, teacher). <strong>The job:</strong> <span class="wline"></span></p>
+    <p><strong>AUTOMATE</strong> — one boring, repeating task AI should take — and who loses something when it does:</p>
+    <div class="lines"><div class="l"></div><div class="l"></div></div>
+    <p><strong>AUGMENT</strong> — one task where the human makes the call and AI helps out:</p>
+    <div class="lines"><div class="l"></div></div>
+    <p><strong>KEEP HUMAN</strong> — one task that should stay fully human, and why:</p>
+    <div class="lines"><div class="l"></div></div>
   </div>
-
-  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#fader"/></svg> Exit Ticket — Take It Home</h2>
-  <p>Think of a job someone in your life actually has — family, neighbor, coach, teacher. Run their task board.</p>
-  <p class="q">The job: <span class="wline" style="max-width:300px"></span></p>
-  <p class="q"><strong>AUTOMATE</strong> — one boring, repeating task AI should take: <span class="wline"></span></p>
-  <p class="q"><strong>AUGMENT</strong> — one task where the human makes the call and AI helps out: <span class="wline"></span></p>
-  <p class="q"><strong>KEEP HUMAN</strong> — one task that should stay fully human, and why: <span class="wline"></span></p>
-  <div class="lines"><div class="l"></div></div>
-
-  <div class="callout"><strong>The move to remember:</strong> let the robots do the boring work. Leave the humans to do the human things. The people who win with AI aren't the ones who fear it — they're the ones who decide what it does.</div>
 
   <div class="footer"><span>Robots Do the Boring Work — The Studio Task Board</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
