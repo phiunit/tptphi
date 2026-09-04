@@ -1,9 +1,9 @@
 # Upload Sheet — Lead Your AI Squad
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (79 chars — TPT max ~80)
+**Title** (77 chars — TPT max ~80)
 ```
-AI Agents Lesson: Team Roles & Project Planning Activity | Grades 6-8 | No Prep
+AI Agents Lesson: Team Roles & Project Planning | Middle School 6-8 | No Prep
 ```
 
 **Price:** $4.00
@@ -11,7 +11,7 @@ AI Agents Lesson: Team Roles & Project Planning Activity | Grades 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Lead Your AI Squad (Future Skills).zip`  (single zip — use for free listings)
+- `dist/Lead Your AI Squad (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
 
 **Custom cover (optional):** `dist/Lead Your AI Squad - Cover.png`
 
@@ -28,7 +28,7 @@ AI literacy, artificial intelligence, AI agents, project based learning, collabo
 ```
 
 **Description** — paste the `description:` block from `products/ai-agent-intern/product.yaml`
-(2377 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(2353 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

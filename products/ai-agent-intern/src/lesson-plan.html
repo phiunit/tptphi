@@ -4,19 +4,32 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
+  .whatif { border-left: 3px solid #5B4DFF; padding: 1px 10px; margin: 3px 0 4px; color: #33334A; font-style: italic; }
+  .whatif strong { color: #5B4DFF; font-style: normal; }
+  .say { margin: 0 0 5px; }
+  .objrow { display: flex; gap: 14px; align-items: flex-start; }
+  .objrow ul { flex: 1; margin-bottom: 4px; }
+  .objrow .chips { flex: 0 0 auto; flex-direction: column; margin-top: 4px; }
+  ol li { margin-bottom: 3px; }
+  .devices ol { margin: 3px 0 0 0; padding-left: 20px; }
+  .devices li { margin-bottom: 1px; }
+  .panel p { margin: 0 0 3px; }
 </style>
 </head>
 <body class="line-ai compact">
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <g id="banner">
-      <line x1="24" y1="14" x2="96" y2="14" stroke="#14141F" stroke-width="4" stroke-linecap="round"/>
-      <circle cx="24" cy="14" r="4.5" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
-      <circle cx="96" cy="14" r="4.5" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
-      <path d="M 32 18 L 88 18 L 88 96 L 60 82 L 32 96 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
-      <line x1="42" y1="32" x2="78" y2="32" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <path d="M 46 58 L 56 68 L 76 42" fill="none" stroke="#14141F" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="squad">
+      <circle cx="18" cy="48" r="9" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+      <path d="M 4 84 Q 4 62 18 62 Q 32 62 32 84 Z" fill="#F6F6FA" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="46" cy="48" r="9" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+      <path d="M 32 84 Q 32 62 46 62 Q 60 62 60 84 Z" fill="#F6F6FA" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="78" cy="34" r="11" fill="#FFB020" stroke="#14141F" stroke-width="3"/>
+      <path d="M 61 84 Q 61 50 78 50 Q 95 50 95 84 Z" fill="#FFB020" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="86" y="56" width="22" height="16" rx="3" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+      <line x1="91" y1="62" x2="103" y2="62" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="91" y1="67" x2="99" y2="67" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
     </g>
     <g id="checkbadge">
       <circle cx="12" cy="12" r="10" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
@@ -29,40 +42,47 @@
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
   <div class="headrow">
     <div>
-      <div class="titleblock"><div class="kicker">The Party Leader Lesson · Lesson 6 of 6 · Capstone</div><h1>Lead Your AI Squad</h1></div>
-      <p class="sub">A 45-minute capstone. The hook: an AI agent is a party member — capable, tireless, extremely literal. Party leaders don't redo the squad's work; they write the quest card, assign the roles, and check the loot. Stands alone; no earlier lesson required.</p>
+      <div class="titleblock"><div class="kicker">The Party Leader Lesson · Lesson 6 of 6</div><h1>Lead Your AI Squad</h1></div>
+      <p class="sub">45 minutes, no prep. The hook: an AI agent does a multi-step job on its own — where your card is vague, it guesses forward. Stands alone.</p>
     </div>
-    <svg class="art" width="96" height="90" viewBox="10 2 100 100"><use href="#banner"/></svg>
+    <svg class="art" width="112" height="90" viewBox="0 20 112 68"><use href="#squad"/></svg>
   </div>
 
   <h2>At a Glance</h2>
   <table>
-    <tr><th>Time</th><th>Materials</th><th>Tech needed</th><th>Prep</th></tr>
-    <tr><td>45 min</td><td>Run the Quest worksheet (1 per student); loose-leaf for squad outputs</td><td>None — fully unplugged by design</td><td>Print worksheets. Plan teams of 3. That's it.</td></tr>
+    <tr><th style="width:0.55in">Time</th><th style="width:3.1in">Materials</th><th style="width:2.2in">Tech needed</th><th>Prep</th></tr>
+    <tr><td>45 min</td><td>Run the Quest worksheet (2 pp; typeable PDF included) · Slides (optional) · scrap paper (1 per student) · board · Teacher Guide</td><td>None — unplugged. Optional: projector; your AI account (with-devices block, p.2)</td><td>Print worksheets. Plan teams of 3. That's it.</td></tr>
   </table>
 
-  <h2>Objectives</h2>
-  <ul>
-    <li>Students can write a complete <strong>quest card</strong> (goal · what we know · rules of the run · done looks like) that a literal-minded agent could follow without guessing.</li>
-    <li>Students can split a project into <strong>squad roles</strong> (planner, scout, critic) and execute a role from the quest card alone.</li>
-    <li>Students can review work against the <strong>CHECK rubric</strong> (accuracy, taste, done-ness) and write a specific run-it-back note.</li>
-  </ul>
-
-  <h2>Standards Alignment</h2>
-  <div class="chips">
-    <span class="chip">ISTE 1.5.c</span><span class="chip">ISTE 1.7.c</span><span class="chip">CCSS ELA W.6.4</span>
+  <h2>Objectives &amp; Standards</h2>
+  <div class="objrow">
+    <ul>
+      <li>Write a four-part <strong>quest card</strong> an agent can't misread. <em>(Step 2; Exit #1)</em></li>
+      <li>Do one <strong>squad role</strong> (planner, scout, critic) from the card alone. <em>(Step 3; Exit #2)</em></li>
+      <li>Review work with the <strong>CHECK rubric</strong>; write a specific run-it-back note. <em>(Step 4; Exit #3)</em></li>
+    </ul>
+    <div class="chips"><span class="chip">ISTE 1.5.c</span><span class="chip">ISTE 1.7.c</span><span class="chip">CCSS ELA W.6.4</span></div>
   </div>
-  <p>Full text, with where each is taught and assessed, in the Teacher Guide.</p>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Warm-Up — It Did EXACTLY What You Said (7 min)</h2>
-  <p>Tell the class about your new party member: maxed-out stats, never sleeps, never complains — and painfully literal. Three orders from last night's run:</p>
+  <p>Your new party member: maxed stats, never sleeps, never complains — painfully literal. Last night's run:</p>
   <div class="panel">
-    <p><em>"Guard the door."</em> → Guarded the door. Only the door. The enemies came in through the window.</p>
-    <p><em>"Grab everything in the chest."</em> → Everything. Including the cursed amulet with the obvious skull on it.</p>
-    <p><em>"Wait here."</em> → Still waiting. It has been three in-game days.</p>
+    <em>"Guard the door."</em> → Guarded the door. Only the door. The enemies came in through the window.<br>
+    <em>"Grab everything in the chest."</em> → Everything. Including the cursed amulet with the obvious skull on it.<br>
+    <em>"Wait here."</em> → Still waiting. It has been three in-game days.
   </div>
-  <p>Then ask: <strong>whose fault was that — the party member's, or the orders?</strong> (Lesson 1 alumni will call it: this party member IS the literal genie — it just joined your squad. New classes need no backstory.)</p>
-  <div class="callout"><strong>Bridge:</strong> "An AI agent is this party member: fast, tireless, never salty — and it does exactly what the quest says. You'll never out-grind it. You CAN out-lead it. Today you learn the leader's loop: quest card, roles, check the loot — then ship it or run it back."</div>
+  <p>Then ask: <strong>whose fault was that — the party member's, or the orders?</strong></p>
+  <div class="callout"><strong>Bridge:</strong> "An AI agent does a multi-step job on its own — and where your card is vague, it guesses forward. That's why the leader checks. You'll never out-work it. You CAN out-lead it."</div>
+  <p class="whatif"><strong>What if</strong> nobody laughs? Take a fourth order from the room and ruin it too: "Heal me" → healed you. Once.</p>
+  <p class="say"><strong>Transition:</strong> "Today you learn the leader's loop: quest card, roles, check the loot — ship it or run it back."</p>
+
+  <h2>Direct Instruction — The Party Leader's Loop (10 min)</h2>
+  <p>Board: <strong>QUEST CARD → ROLES → CHECK THE LOOT → SHIP IT or RUN IT BACK.</strong></p>
+  <div class="panel">
+    <p><strong>QUEST CARD</strong> — four parts, in writing: <strong>goal</strong> (what winning means), <strong>what we know</strong> (who it's for, what the team has), <strong>rules of the run</strong> (length, tone, deadline), <strong>done looks like</strong> (the exact thing handed back). (If your class did the genie lesson: this is P.R.O. grown up.)</p>
+    <p><strong>ROLES</strong> — nobody solos the raid: a <strong>planner</strong>, a <strong>scout</strong>, a <strong>critic</strong> — same card, one slice each.</p>
+    <p><strong>CHECK THE LOOT</strong> — <strong>accuracy</strong> (facts match the card; every ✓ has a "how we know"), <strong>taste</strong> (fits the audience and tone — or could it be for anybody?), <strong>done-ness</strong> (everything the card asked for?). Weak work gets a run-it-back note: keep + fix.</p>
+  </div>
 
   <div class="footer"><span>Lead Your AI Squad — Lesson Plan</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -70,39 +90,39 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2>Direct Instruction — The Party Leader's Loop (10 min)</h2>
-  <p>Write the loop on the board: <strong>QUEST CARD → ROLES → CHECK THE LOOT → SHIP IT or RUN IT BACK.</strong></p>
-  <div class="panel">
-    <p><strong>QUEST CARD.</strong> Four parts, in writing: <strong>goal</strong> (what winning means), <strong>what we know</strong> (who it's for, what the team already has), <strong>rules of the run</strong> (limits — length, tone, deadline), <strong>done looks like</strong> (the exact thing handed back). Prompt-writers: this is P.R.O. grown up.</p>
-    <p><strong>ROLES.</strong> Leaders don't send one member to solo the raid. Split it: a <strong>planner</strong>, a <strong>scout</strong>, a <strong>critic</strong> — same card, one slice each.</p>
-    <p><strong>CHECK THE LOOT.</strong> The leader checks <strong>accuracy</strong> (facts verified?), <strong>taste</strong> (fits the audience and vibe?), <strong>done-ness</strong> (everything the card asked for?).</p>
-    <p><strong>SHIP IT or RUN IT BACK.</strong> Good work ships. Weak work gets a run-it-back note — keep + fix, specific enough that nobody guesses.</p>
-  </div>
-  <p>Model one quest card live on the board:</p>
-  <table>
-    <tr><th>Cursed order</th><th>Party leader's quest card</th></tr>
-    <tr><td>"Plan the game night."</td><td>"GOAL: get 6th graders to actually show up to Game Night. WHAT WE KNOW: Friday, gym, 6–8 pm; we have board games and two TVs. RULES OF THE RUN: school-appropriate, big readable title, 40 words max. DONE LOOKS LIKE: one flyer draft, ready to photocopy."</td></tr>
-  </table>
-  <div class="callout"><strong>Say it plainly:</strong> "Party leaders don't do the quest twice. If you have to redo a party member's work, your quest card failed. Fix the card, not just the work."</div>
+  <div class="panel"><strong>Watch one get fixed</strong> — build it on the board, one labeled part at a time. Cursed order: <em>"Plan the game night."</em> → <strong>Party leader's quest card:</strong> "GOAL: get 6th graders to actually show up to Game Night. WHAT WE KNOW: Friday, gym, 6–8 pm; we have board games and two TVs. RULES OF THE RUN: school-appropriate, big readable title, 40 words max. DONE LOOKS LIKE: one flyer draft, ready to photocopy." Then, plainly: <strong>"Party leaders don't do the quest twice. If you have to redo a party member's work, your quest card failed. Fix the card, not just the work."</strong></div>
+  <p class="whatif"><strong>What if</strong> "too long"? Count it — four lines. "Four lines now, or 'games all night' on the flyer later."</p>
+  <p class="say"><strong>Hand-out:</strong> "Page 1. Teams of 3. Pick your quest, then ONE card per team — everyone copies it. Six minutes."</p>
 
   <h2>Activity — Run the Quest (22 min)</h2>
   <ol>
-    <li><strong>Write the quest card (6 min):</strong> Teams of 3 pick a quest on the worksheet — Game Night page or zine issue #1 — and write ONE card with all four parts.</li>
-    <li><strong>Squad works (8 min):</strong> Each teammate takes a role card — planner, scout, critic — and works ONLY from the quest card, silently, on their own paper. No questions: agents can't read minds. (In Sana's squad: DeShawn plans, Lucia scouts, Sana critiques.)</li>
-    <li><strong>Leader review (8 min):</strong> Rotate — Sana reviews DeShawn, DeShawn reviews Lucia, Lucia reviews Sana. Each leader runs the CHECK rubric (worksheet p.2), rules SHIP IT or RUN IT BACK, and writes one run-it-back note.</li>
+    <li><strong>Write the quest card (6 min):</strong> teams of 3 (30 students = 10 teams) pick a quest on the worksheet — Game Night page or class magazine issue #1 — and write ONE card, all four parts.
+      <div class="whatif"><strong>What if</strong> a team stalls on GOAL? "What would make you say we won?" Done early? A neighbor team tries to twist it.</div>
+      <span class="say"><strong>Switch:</strong> "Cards done. Now switch: for 8 minutes YOU play an AI agent. Take a role card. Silence starts now."</span></li>
+    <li><strong>Squad works (8 min):</strong> each teammate takes a role card and works ONLY from the quest card, silently, on scrap paper. At 4 min: "Planners, slide your list to your Critic." The critic writes 3 upgrades to that plan. No questions — agents can't read minds. (Sana's squad: DeShawn plans, Lucia scouts, Sana critiques.)
+      <div class="whatif"><strong>What if</strong> the class doesn't divide by 3? Team of 4: two critics. Team of 2: no critic — the leader does the taste check. Mid-round question? "It's not on the card."</div>
+      <span class="say"><strong>Swap:</strong> "Time. Pass your paper one seat left. You're the leader again — page 2."</span></li>
+    <li><strong>Leader review (8 min):</strong> each leader runs the CHECK rubric (worksheet p.2) on the work in their hands, ticks SHIP IT or RUN IT BACK per check, and writes one run-it-back note. Leave the rubric slide up.
+      <div class="whatif"><strong>What if</strong> a leader turns harsh? KEEP before FIX, and they read the note aloud to their party member.</div>
+      <span class="say"><strong>Into the exit ticket:</strong> "Loot checked. Last quest: one for your own life. Bottom of page 2, solo."</span></li>
   </ol>
 
   <h2>Exit Ticket (6 min)</h2>
-  <p>Worksheet p.2: one complete quest card for a <strong>real task in their own life</strong> — all four parts labeled — something they'd actually hand an AI agent this week.</p>
+  <p>Worksheet p.2, solo: <strong>#1</strong> a quest card for a <strong>real task in their own life</strong>, all four parts; <strong>#2</strong> which role gets it first, and why; <strong>#3</strong> the check it would most likely fail, and what to look for. Collect; key: Teacher Guide, p.2.</p>
+  <p class="whatif"><strong>What if</strong> a student writes a wish ("help me with math")? "Which part would stop a stranger guessing? Add it."</p>
 
   <h2>Differentiation</h2>
-  <ul>
-    <li><strong>Support:</strong> Quest card sentence starters (Teacher Guide, p.3).</li>
-    <li><strong>Extension:</strong> Write a card so tight the critic can't land a note — or invent a fourth squad role.</li>
-    <li><strong>ELL:</strong> The four card labels double as language frames; draft in the strongest language first, then translate.</li>
-    <li><strong>No-device classrooms:</strong> Built in — the teammates ARE the agents.</li>
-    <li><strong>With devices:</strong> Run the team's card through a real AI tool and review ITS output with the same rubric.</li>
-  </ul>
+  <p><strong>Support:</strong> sentence starters (Teacher Guide, p.3). <strong>ELL:</strong> draft in the strongest language first, then translate. <strong>Extension:</strong> a card so tight the critic can't land a note. <strong>No devices:</strong> built in.</p>
+  <div class="panel devices" style="margin-bottom:0">
+    <strong>With devices (optional — teacher's projected account only; students never log in):</strong>
+    <ol>
+      <li><strong>Paste</strong> a team's card word for word. Add: "Do the planner's job, then the scout's."</li>
+      <li><strong>Review</strong> it as a class with the CHECK rubric — SHIP IT or RUN IT BACK per check.</li>
+      <li><strong>Watch for</strong> an invented fact ("games all night"), a skipped rule, an extra step.</li>
+      <li><strong>Fix the card, not the output:</strong> add the missing rule, run it again, compare.</li>
+      <li><strong>Time:</strong> 6–8 min. Swap in for one team's Leader review, or open day 2 with it.</li>
+    </ol>
+  </div>
 
   <div class="footer"><span>Lead Your AI Squad — Lesson Plan</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
