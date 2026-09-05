@@ -1,0 +1,6 @@
+# Round 2 · critic L6 (fresh) — cover SHIP · listing SHIP · lesson-plan / worksheet / teacher-guide / deck REJECT. A/B: 4 of 6 favour the rebuilt pages; lp-p1 and tg-p1 picks went to the rebuilt pages too (B), ws-p2/tg-p2 A = rebuilt (see map).
+MAJOR LP Step 3 handoff unrunnable: Planner slides list to Critic at 4 min, then "pass your paper one seat left" — Planner has no paper, no job for minutes 4–8.
+MAJOR WS Critic card has no task for minutes 0–4 and contradicts "from the card alone, silently".
+MAJOR TG key contradicts itself: TASTE "never says to 6th graders" while the exemplar Planner step 3 says "pitch to 6th graders"; KEEP "23 minutes exactly like the card asked" — card has no time budget. Deck slide 10 notes repeat it.
+MAJOR "tick" on WS (l.76, l.104), slide 11, listing → "check".
+MINOR: definition "— and where your card is vague" (add "and" in LP); "for your team's card"; exit "Check one, then write what you'd look for:"; gloss "Card silent on something?" / "ships with your name on it"; rubric evidence box 44px → ≥ 72px, KEEP/FIX 3 lines; verdict pairs → one-of radio; rotation so the Step-4 leader sees fresh work; slide 6 exemplar text = LP text; slide 1 title break (generator).

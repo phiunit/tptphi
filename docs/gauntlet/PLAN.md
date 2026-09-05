@@ -229,3 +229,20 @@ item. US spelling and "check the box", never "tick", on every student page and i
   line; AUTOMATE panel adds "No decisions to make."
 - Deck slide 12: "The people who win with AI tend to be the ones who decide what it does." (or drop the line).
 - `npm run sheet -- ai-boring-work` after edits; confirm the Preview PDF exists after the audit.
+## L6 ai-agent-intern (round 2)
+- Step 3 paper logic (plan, worksheet, slide 8 + notes): papers never move mid-round. "At the 4-minute call the
+  Critic reads the Planner's list over their shoulder." Planner's minutes 4–8: "add a time guess to every step
+  and star the one step most likely to go wrong." Swap line: "Every player passes their OWN paper one seat left."
+  Seat order Planner → Scout → Critic, so the Critic never reviews the Planner's list in Step 4 (say so in the TG).
+- Critic role card: minutes 0–4 = "Write 2 things the audience on the card cares about." Then "at the 4-minute
+  call, read the Planner's list and write 3 upgrades." Remove the contradiction with "from the card alone".
+- Teacher guide exemplar: Planner step 3 becomes "Add a 40-word pitch (10 min)" (audience dropped) so the TASTE
+  RUN IT BACK stands; KEEP → "Every step has a time guess and all four card parts are covered." (no "23 minutes").
+  Mirror in slide 10 notes. Rotation note per seat order above.
+- Definition identical everywhere: "— and where your card is vague, it guesses forward." (add "and" in the plan).
+- "tick" → "check" (worksheet l.76/l.104, slide 11, TG, listing). Worksheet: "play an AI agent for your team's
+  card"; exit "Which check would it fail first? Check one, then write what you'd look for:"; gloss "Card silent on
+  something? (the card doesn't say)" and drop "ships with your name on it" for "your name is on it".
+- Rubric evidence boxes ≥ 72px; KEEP / FIX three ruled lines each (rebalance p2; ≤ 45% blank). Wrap each SHIP IT /
+  RUN IT BACK pair in `class="oneof"`.
+- Slide 6 exemplar text = the plan's board card wording. `npm run sheet -- ai-agent-intern` after edits.
