@@ -28,7 +28,7 @@ AI literacy, artificial intelligence, AI agents, project based learning, collabo
 ```
 
 **Description** — paste the `description:` block from `products/ai-agent-intern/product.yaml`
-(2353 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2356 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish
