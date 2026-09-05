@@ -66,13 +66,13 @@ slides:
     minutes: 8
     title: "Share-Out — Defend the Board"
     items:
-      - "Two pairs face each other. Speakers: defend ONE choice in 30 seconds. Then switch."
+      - "Two pairs face each other. Each Speaker says the frame once — 30 seconds each. Then switch."
       - "1.  Eyes up off the page."
       - "2.  Voice to the back wall."
       - "3.  Slow down on your claim."
       - "Claim frame:  Task ___ belongs in ___ because ___ — and the trade is ___"
-      - "Listeners: tick eyes / voice / pace on the Speaker's sheet, then write one keep and one fix."
-    notes: "Transition in: \"Stop there. Now you have to say it out loud — to people who might disagree.\" Teach the delivery first (1 min): \"Three moves: eyes up off the page, voice to the back wall, slow down on your claim.\" Pairs of pairs (4 min): two pairs face each other; each pair defends ONE choice in 30 seconds with the claim frame; the listening pair scores the strip on the Speaker's sheet (eyes / voice / pace + one keep, one fix), then they switch. Every student is scored by a peer; you sample 3–4 pairs with the Defense Rubric (Teacher Guide p.3). What if a Speaker reads to the desk? Don't score — coach: \"Eyes on us, one more time.\" Second try counts. Whole class (3 min): three pairs bring their most-argued choice to the room. Gallery-walk variant: post the boards and tour for 2 minutes instead. Transition out: \"Swap sheets back — you need your own. Bottom of page 2: a job you actually know.\""
+      - "Listener 1 marks Speaker 1's sheet, Listener 2 marks Speaker 2's: eyes / voice / pace, keep, fix."
+    notes: "Transition in: \"Stop there. Now you have to say it out loud — to people who might disagree.\" Teach the delivery first (1 min): \"Three moves: eyes up off the page, voice to the back wall, slow down on your claim.\" Pairs of pairs (5 min): two pairs face each other. Each Speaker says the frame once — 30 seconds each. Listener 1 marks Speaker 1's sheet, Listener 2 marks Speaker 2's (eyes / voice / pace + one keep, one fix); then the pairs switch roles. Each student's claim is scored by a peer; you sample 3–4 pairs with the Defense Rubric (Teacher Guide p.3). What if a Speaker reads to the desk? Don't score — coach: \"Eyes on us, one more time.\" Second try counts. Odd number of pairs → one trio of pairs rotates; sample that group. Whole class (2 min): three pairs bring their most-argued choice to the room. Gallery-walk variant: post the boards and tour for 2 minutes instead. Transition out: \"Swap sheets back — you need your own. Bottom of page 2: a job you actually know.\""
   - type: list
     minutes: 5
     title: "Exit Ticket — A Real Job You Know"
@@ -84,5 +84,5 @@ slides:
     notes: "Bottom of worksheet p.2, solo. What if a student says \"I don't know anyone with a job\"? \"Your teacher has one. Sort mine.\" Exemplar (Teacher Guide p.2): the job — an uncle's food truck. Automate: posting the truck's daily location, and who loses something — the uncle, a little: the regulars who used to text \"where you at?\" now just check the post. Augment: planning how much food to buy — AI predicts, he decides. Keep human: joking with the regulars at the window, because that's why they come back. Proficient = a real task in every column + a real loss on the AUTOMATE line + a why on KEEP HUMAN. Collect."
   - type: closer
     statement: "Let the robots do the boring work. Leave the humans to do the human things."
-    sub: "Every AI job runs human → AI → human: a person starts it, AI does the middle, a person checks and decides. The people who win with AI are the ones who decide what it does."
+    sub: "Every AI job runs human → AI → human: a person starts it, AI does the middle, a person checks and decides. The people who win with AI tend to be the ones who decide what it does."
     notes: "Close on this. Next in the unit: Lead Your AI Squad (Lesson 6, sold separately) — students run a team of AI helpers on a real project."

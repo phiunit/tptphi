@@ -12,7 +12,7 @@
   /* Trade cards */
   .tcard p { margin: 0 0 3px; }
   .tcard .lines { margin: 0 0 3px; }
-  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 90px; height: 22px; vertical-align: bottom; }
+  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 90px; height: 24px; vertical-align: bottom; }
   .blank.wide { min-width: 200px; }
   p.q { display: flex; gap: 8px; align-items: flex-end; margin: 0 0 3px; white-space: nowrap; }
   p.q .wline { flex: 1; border-bottom: 1.5px solid #B9B9C9; height: 24px; }
@@ -22,10 +22,13 @@
   table.moves td { font-weight: 700; font-size: 9pt; padding: 3px 5px; }
   .grid2.listen { align-items: start; }
   td.tick { text-align: center; width: 22px; } td.tick::before { content: ""; display: inline-block; width: 14px; height: 14px; border: 1.5px solid #14141F; border-radius: 3px; vertical-align: middle; }
-  .claim p { margin: 0 0 2px; line-height: 1.6; }
+  .claim p { margin: 0 0 2px; line-height: 1.5; }
   .claim p:last-child { margin: 0; }
   p.listen { margin: 3px 0 2px; }
   .page h2 { margin: 7px 0 3px; }
+  .page.p2 h2 { margin: 4px 0 2px; }
+  .page.p2 .panel { padding: 6px 12px; }
+  .page.p2 .exit p { margin: 0; }
   .exit p { margin: 0 0 1px; }
   .exit .lines { margin: 0 0 3px; }
 </style>
@@ -68,7 +71,7 @@
   <div class="panel">
     <p><strong>You run Big Dream Studio</strong> — a small recording studio. <strong>Nia</strong> owns the place and coaches the artists. <strong>Ravi</strong> runs the mixing boards. <strong>Jaylen</strong> runs the front desk. There's too much to do, so the crew just got an AI assistant. Your job: decide what it does — and what it never touches. Every decision (grown-ups say "a call") helps someone and costs someone.</p>
     <ul>
-      <li><strong>AUTOMATE</strong> — boring and repeating. Hand it to AI.</li>
+      <li><strong>AUTOMATE</strong> — boring and repeating. No decisions to make. Hand it to AI.</li>
       <li><strong>AUGMENT</strong> — a human makes the call, AI helps out.</li>
       <li><strong>KEEP HUMAN</strong> — coaching, taste, being there for someone. Humans only.</li>
     </ul>
@@ -105,11 +108,11 @@
   <div class="footer"><span>Robots Do the Boring Work — The Studio Task Board</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
 
-<div class="page">
+<div class="page p2">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#card"/></svg> The Trade — Every Choice Has a Cost</h2>
-  <p>Every choice helps someone, costs someone, and could go wrong — grown-ups call that a <strong>tradeoff</strong>; we'll say <strong>the trade</strong>. Pick <strong>TWO</strong> choices from your board and write the trade for each. "Because robots" is not a reason.</p>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#card"/></svg> The Trade — Every Choice Has a Cost</h2>
+  <p>Every choice helps someone, costs someone, and could go wrong — grown-ups call that a <strong>tradeoff</strong>; we say <strong>the trade</strong>. Pick <strong>TWO</strong> choices from your board and write the trade for each.</p>
 
   <div class="grid2">
     <div class="panel tcard">
@@ -134,13 +137,14 @@
     </div>
   </div>
 
-  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#card"/></svg> Defend It — Say It Out Loud</h2>
-  <p>Two pairs face each other. The pair talking is the <strong>Speaker</strong>; the pair listening is the <strong>Listener</strong>. Then you switch. Speakers: defend ONE choice in 30 seconds with three moves — <strong>eyes</strong> on the Listeners, not the page; a <strong>voice</strong> that reaches the back of the room; and <strong>pace</strong>: slow down on your claim.</p>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#card"/></svg> Defend It — Say It Out Loud</h2>
+  <p>Two pairs face each other: one pair is the <strong>Speakers</strong>, the other the <strong>Listeners</strong>; then switch. Each Speaker says the frame once — 30 seconds each. Three moves: <strong>eyes</strong> on the Listeners, not the page; <strong>voice</strong> to the back of the room; <strong>pace</strong> — slow down on your claim.</p>
   <div class="panel claim">
-    <p>Task <span class="blank" style="min-width:44px"></span> belongs in <span class="blank" style="min-width:150px"></span> because <span class="blank wide" style="min-width:230px"></span></p>
+    <p>Task <span class="blank" style="min-width:44px"></span> belongs in <span class="blank wide" style="min-width:260px"></span></p>
+    <p class="q">because <span class="wline"></span></p>
     <p>— and the trade is <span class="blank wide" style="min-width:500px"></span></p>
   </div>
-  <p class="listen"><strong>Listeners, fill this in on the Speaker's sheet:</strong> tick each move you saw, then write one thing to keep and one thing to fix.</p>
+  <p class="listen"><strong>Listener 1 marks Speaker 1's sheet, Listener 2 marks Speaker 2's:</strong> check the box for each move you saw, then write one thing to keep and one thing to fix.</p>
   <div class="grid2 listen">
     <table class="pick moves"><tr><td class="tick"></td><td>Eyes up</td><td class="tick"></td><td>Voice reached the back</td><td class="tick"></td><td>Slowed on the claim</td></tr></table>
     <div>
@@ -149,7 +153,7 @@
     </div>
   </div>
 
-  <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#card"/></svg> Exit Ticket — A Real Job You Know</h2>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#card"/></svg> Exit Ticket — A Real Job You Know</h2>
   <div class="exit">
     <p class="q">Sort a real job — one someone in your life really has (family, neighbor, coach, teacher). <strong>The job:</strong> <span class="wline"></span></p>
     <p><strong>AUTOMATE</strong> — one boring, repeating task AI should take — and who loses something when it does:</p>

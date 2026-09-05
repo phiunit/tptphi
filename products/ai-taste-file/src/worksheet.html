@@ -5,6 +5,8 @@
   h2 svg { flex: 0 0 auto; }
   .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 150px; }
   .blank.short { min-width: 56px; }
+  .blank.wide { width: calc(100% - 118px); height: 20px; vertical-align: bottom; }
+  .page p.peeve { margin: 0 0 6px; line-height: 24px; }
   body.compact .lines .l { height: 26px; }
   body.compact .page1 .lines .l { height: 24px; }
   body.compact .page1 .masthead { margin-bottom: 12px; }
@@ -12,7 +14,7 @@
   body.compact .page1 h2 { margin: 6px 0 3px; }
   body.compact .page1 .panel { padding: 7px 12px; }
   body.compact .writebox { min-height: 84px; }
-  body.compact .writebox.tall { min-height: 132px; }
+  body.compact .writebox.tall { min-height: 160px; }
   .pairgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   body.compact .pairgrid .writebox { min-height: 72px; }
   .grid2 { gap: 14px; align-items: start; }
@@ -67,15 +69,14 @@
   </div>
 
   <div class="panel">
-    <strong>Your For-You Page (the feed an app builds for you) didn't guess your taste — you taught it,</strong> one like at a time.
-    <strong>Taste</strong> = what you like and how you like it. Unless you tell it — or it has saved notes about you — an AI doesn't know your taste.
-    So you write yours down here in five numbered <strong>sections</strong>, and your <strong>editor</strong> uses it. An editor (your partner playing the AI, or a real AI) reads your writing and gives <strong>notes</strong> — short tips on what to change — but never rewrites for you. Your editor may know ONLY what's on this page.
+    <strong>Your For-You Page didn't guess your taste</strong> (what you like and how you like it) — <strong>you taught the app, one like at a time.</strong>
+    Unless you tell it, or it has saved notes about you, an AI doesn't know your taste — so write yours down in the five <strong>sections</strong> below, and your <strong>editor</strong>, the partner who will give you notes on your writing, may know ONLY what's on this page.
   </div>
 
   <div class="grid2">
     <div>
       <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 1 — The Vibe</h2>
-      <p>Tick the 3 tone words (the mood your words give off) that sound most like you:</p>
+      <p>Check the 3 tone words (the mood your words give off) that sound most like you:</p>
       <table class="check">
         <tr><td class="tick"></td><td>funny</td><td class="tick"></td><td>chill</td></tr>
         <tr><td class="tick"></td><td>loud and excited</td><td class="tick"></td><td>dreamy</td></tr>
@@ -87,7 +88,7 @@
     </div>
     <div>
       <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 2 — How I Like It Served</h2>
-      <p>Tick every format you actually enjoy reading:</p>
+      <p>Check every format you actually enjoy reading:</p>
       <table class="check">
         <tr><td class="tick"></td><td>short and punchy</td></tr>
         <tr><td class="tick"></td><td>story mode</td></tr>
@@ -98,9 +99,10 @@
     </div>
   </div>
 
-  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 3 — Pet Peeves</h2>
-  <p>Finish it two ways: <em>"Editor, never do this to my writing..."</em> (Example: "Don't make me sound like a textbook.")</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 3 — Pet Peeves (things you hate)</h2>
+  <p>Finish it two ways. (Example: "Editor, never make me sound like a textbook.")</p>
+  <p class="peeve"><strong>1.</strong> Editor, never <span class="blank wide"></span></p>
+  <p class="peeve"><strong>2.</strong> Editor, never <span class="blank wide"></span></p>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 4 — So Me / Not Me</h2>
   <p>Write one sentence about your weekend that sounds <strong>exactly like you</strong>. Then say the same thing in a voice that is <strong>NOT you</strong> — a robot, a textbook, a fancy poet.</p>

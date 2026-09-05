@@ -1,9 +1,9 @@
 # Upload Sheet — Robots Do the Boring Work
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (75 chars — TPT max ~80)
+**Title** (77 chars — TPT max ~80)
 ```
-AI and Future Jobs Lesson: Automation Tradeoffs Sort | Grades 6-8 | No Prep
+AI and Future Jobs Lesson: Automation Tradeoffs | Middle School 6-8 | No Prep
 ```
 
 **Price:** $4.00
@@ -11,13 +11,13 @@ AI and Future Jobs Lesson: Automation Tradeoffs Sort | Grades 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Robots Do the Boring Work (Future Skills).zip`  (single zip — use for free listings)
+- `dist/Robots Do the Boring Work (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
 
 **Custom cover (optional):** `dist/Robots Do the Boring Work - Cover.png`
 
 **Resource types:** Lesson, Worksheets, Activities, Printables
 
-**Subjects (TPT picker):** Computer Science - Technology → Instructional Technology; Critical Thinking; English Language Arts → Writing
+**Subjects (TPT picker):** Computer Science - Technology → Instructional Technology; Critical Thinking; English Language Arts → Oral Communication (Speaking & Listening)
 
 **Standards:** select in TPT's picker → CCSS SL.6.4
 Not in TPT's picker (they live in the description + teacher guide, which is normal): CSTA 2-IC-20, ISTE 1.3.d
@@ -28,7 +28,7 @@ AI literacy, artificial intelligence, future jobs, automation, career exploratio
 ```
 
 **Description** — paste the `description:` block from `products/ai-boring-work/product.yaml`
-(1889 chars; TPT shows the first ~2 lines before "read more", so the hook is already up front.)
+(2085 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

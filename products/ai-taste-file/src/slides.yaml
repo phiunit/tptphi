@@ -33,14 +33,14 @@ slides:
     notes: "Ask: which note could you actually act on? The right-hand note points at the writer's own taste file — that's the whole difference between a note for a generic writer and an editor's note. WHAT IF 'the AI I use already knows me': 'Some tools do save notes about you. A fresh chat usually doesn't — and either way, a taste file is the fastest way to make sure the notes fit.'"
   - type: quote
     quote: "AI is your editor, not your ghostwriter."
-    sub: "An editor gives notes on YOUR writing. A ghostwriter writes it for you and lets you put your name on it. Today, nobody in this room is a ghostwriter — not a partner, not an AI."
-    notes: "Say it plainly and move on. TRANSITION: \"Page 1. Your taste, written down — five sections, twelve minutes, solo. Nobody swaps anything yet.\""
+    sub: "An editor gives notes on YOUR writing. A ghostwriter writes it for you."
+    notes: "Say it plainly: a ghostwriter writes it for you and lets you put your name on it. Today, nobody in this room is a ghostwriter — not a partner, not an AI. Then move on. TRANSITION: \"Page 1. Your taste, written down — five sections, twelve minutes, solo. Nobody swaps anything yet.\""
   - type: list
     minutes: 12
     title: "Activity 1 — Build Your Taste File"
     items:
-      - "Section 1 — The Vibe: tick the 3 tone words that sound like you, add one of your own."
-      - "Section 2 — How I Like It Served: tick every format you actually enjoy reading."
+      - "Section 1 — The Vibe: check the 3 tone words that sound like you, add one of your own."
+      - "Section 2 — How I Like It Served: check every format you actually enjoy reading."
       - "Section 3 — Pet Peeves: \"Editor, never do this to my writing...\" Write two."
       - "Section 4 — So Me / Not Me: your weekend in your voice, then as a robot, a textbook, or a fancy poet."
       - "Section 5 — What I'm Into Right Now: the feel of the music, shows and games you like."
@@ -65,7 +65,7 @@ slides:
       - "Writer: ask ONE question — \"Which sentence?\" or \"What would fit?\""
       - "Editor: answer using only the taste file."
       - "Then swap back."
-    notes: "This is the SL.6.1 moment. Sample 3–4 pairs: listen for the answer to cite a section (\"Section 3 says no textbook words\"), not the editor's own taste (\"I'd just make it funnier\"). WHAT IF the writer argues back: \"Ask which sentence, not whether.\" Both tick checklist row 4 on page 3 afterwards."
+    notes: "This is the SL.6.1 moment. Sample 3–4 pairs: listen for the answer to cite a section (\"Section 3 says no textbook words\"), not the editor's own taste (\"I'd just make it funnier\"). WHAT IF the writer argues back: \"Ask which sentence, not whether.\" Both check checklist row 4 on page 3 afterwards."
   - type: list
     title: "Editor's Loop Checklist"
     items:
@@ -73,14 +73,14 @@ slides:
       - "Each note names a taste-file section and says what to change — not \"make it better.\""
       - "I rewrote it myself and starred every change."
       - "We talked it through: notes read aloud, one question, an answer from my taste file."
-    notes: "Page 3, after the revision. Students tick all four before the Last Check. Rows 1 and 3 verify ISTE 1.6.b (own draft, own revision — check against the handwriting and the stars); row 4 verifies the talk you sampled. WHAT IF a student changed nothing: \"Your editor pointed at section 3. Read that section out loud. Now change one sentence to match it.\" TRANSITION: \"Checklist — four ticks. Then the Last Check at the bottom: three answers, your own words, four minutes.\""
+    notes: "Page 3, after the revision. Students check all four before the Last Check. Rows 1 and 3 verify ISTE 1.6.b (own draft, own revision — check against the handwriting and the stars); row 4 verifies the talk you sampled. WHAT IF a student changed nothing: \"Your editor pointed at section 3. Read that section out loud. Now change one sentence to match it.\" TRANSITION: \"Checklist — four checks. Then the Last Check at the bottom: three answers, your own words, four minutes.\""
   - type: list
     minutes: 4
     title: "Last Check — page 3, your own sheet"
     items:
-      - "1.  One change I made: the old words → the new words."
-      - "2.  It fits my taste file because… (name the section)."
-      - "3.  Why would the note \"make it better\" NOT have helped you?"
+      - "One change I made: the old words → the new words."
+      - "It fits my taste file because… (name the section)."
+      - "Why would the note \"make it better\" NOT have helped you?"
     notes: "Solo, 4 minutes. Collect. KEY — #1: quotes the old words and the new words (\"I made it funnier\" without the words = redo). #2: names a section and the match: \"Section 1 says blunt; the new line is blunt.\" #3 (Objective 1): proficient = \"make it better\" names no sentence and no direction — better for whom? — while the real note named a section and a sentence. Jaylen exemplar: \"'I enjoy various hobbies' → 'I lose at games and cook worse.' Section 3 says no textbook words. 'Make it better' doesn't say what's wrong or what better means for ME.\" WHAT IF \"I made it better\": \"Which word changed? Write the old word and the new one.\""
   - type: closer
     statement: "You draft. The editor gives notes. You revise."

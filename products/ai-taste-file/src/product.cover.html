@@ -25,28 +25,22 @@ h1 span { color: #FFB020; }
 <div class="star" style="width:4px;height:4px;left:560px;top:140px"></div>
 <div class="star g" style="width:8px;height:8px;left:790px;top:400px"></div>
 <div class="star" style="width:5px;height:5px;left:760px;top:560px"></div>
-<div class="star g" style="width:6px;height:6px;left:560px;top:980px"></div>
-<!-- Art: a feed card (two text bars + a solid gold "like" heart) behind a page carrying an editor's mark
-     (one line struck through, a caret where the new words go). Fully inside the frame; top sits below the chip row. -->
-<svg width="392" height="330" viewBox="0 0 380 320" style="position:absolute; right:44px; bottom:40px; z-index:1;">
+<div class="star g" style="width:6px;height:6px;left:380px;top:900px"></div>
+<!-- Art: ONE object — a feed card (rounded rectangle, two text bars, a solid gold "like" heart) carrying the
+     editor's mark on the card itself: the second text bar struck through, a caret where the new words go.
+     Card is 324px wide (38% of the 850px frame), fully inside the frame, below the chip row. -->
+<svg width="340" height="290" viewBox="0 0 340 290" style="position:absolute; right:60px; bottom:52px; z-index:1;">
   <!-- feed card -->
-  <rect x="14" y="34" width="238" height="182" rx="26" fill="#fff" opacity="0.16"/>
-  <rect x="14" y="34" width="238" height="182" rx="26" fill="none" stroke="#FFB020" stroke-width="12"/>
-  <rect x="50" y="74" width="158" height="20" rx="10" fill="#FFD27A"/>
-  <rect x="50" y="104" width="104" height="20" rx="10" fill="#FFD27A"/>
-  <!-- the like: a solid gold heart under the two bars -->
-  <path d="M 112 208 C 80 186, 64 170, 64 154 C 64 139, 75 130, 87 130 C 98 130, 107 136, 112 145 C 117 136, 126 130, 137 130 C 149 130, 160 139, 160 154 C 160 170, 144 186, 112 208 Z" fill="#FFB020"/>
-  <!-- the page, tilted, in front -->
-  <g transform="rotate(7 300 230)">
-    <rect x="212" y="96" width="172" height="228" rx="14" fill="#FFD27A"/>
-    <rect x="240" y="136" width="116" height="13" rx="6.5" fill="#232345"/>
-    <rect x="240" y="168" width="88" height="13" rx="6.5" fill="#8C7A9E"/>
-    <rect x="240" y="200" width="116" height="13" rx="6.5" fill="#232345"/>
-    <!-- editor's mark: the faded middle line struck through, a caret for the new words -->
-    <path d="M 226 186 L 344 162" fill="none" stroke="#14141F" stroke-width="11" stroke-linecap="round"/>
-    <path d="M 282 258 L 298 232 L 314 258" fill="none" stroke="#14141F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="240" y="278" width="70" height="13" rx="6.5" fill="#232345"/>
-  </g>
+  <rect x="8" y="8" width="324" height="250" rx="30" fill="#fff" opacity="0.16"/>
+  <rect x="8" y="8" width="324" height="250" rx="30" fill="none" stroke="#FFB020" stroke-width="12"/>
+  <!-- two text bars -->
+  <rect x="50" y="58" width="204" height="22" rx="11" fill="#FFD27A"/>
+  <rect x="50" y="104" width="140" height="22" rx="11" fill="#FFD27A"/>
+  <!-- editor's mark: the second bar struck through, a caret for the new words -->
+  <path d="M 36 119 L 206 109" fill="none" stroke="#14141F" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 88 186 L 120 146 L 152 186" fill="none" stroke="#FFB020" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- the like: a solid gold heart -->
+  <path transform="translate(158 40)" d="M 112 208 C 80 186, 64 170, 64 154 C 64 139, 75 130, 87 130 C 98 130, 107 136, 112 145 C 117 136, 126 130, 137 130 C 149 130, 160 139, 160 154 C 160 170, 144 186, 112 208 Z" fill="#FFB020"/>
 </svg>
 <div class="brand">Future Skills Series</div>
 <div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Lesson 4 of 6</span></div>
