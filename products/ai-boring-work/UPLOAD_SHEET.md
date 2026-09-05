@@ -33,7 +33,7 @@ AI literacy, artificial intelligence, future jobs, automation, career exploratio
 ```
 
 **Description** — paste the `description:` block from `products/ai-boring-work/product.yaml`
-(2133 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2355 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

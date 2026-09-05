@@ -33,7 +33,7 @@ AI literacy, artificial intelligence, machine learning, training data, algorithm
 ```
 
 **Description** — paste the `description:` block from `products/ai-training-data-crate/product.yaml`
-(2538 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2523 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

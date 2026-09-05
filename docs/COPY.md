@@ -16,7 +16,7 @@ length, better shape.
 1. **Filter line.** `NO STUDENT AI ACCOUNTS NEEDED. This lesson runs on paper.` Nothing else on that line.
 2. **Hook line.** The analogy in one sentence, ≤ 16 words, present tense.
 3. **Do line.** What the kids actually do, naming the activity, ≤ 22 words.
-4. **How it runs.** One paragraph, 3–5 sentences, the 45 minutes in order. Keyword-rich: the lesson's
+4. **How it runs.** One to three short paragraphs, 3–5 sentences each, the 45 minutes in order. Keyword-rich: the lesson's
    search terms live here (AI literacy, prompt writing, fact-checking, middle school…).
 5. **WHAT YOU GET.** One line per file, each starting `• `, each naming the page/slide count and the one
    thing that makes it worth paying for.
@@ -31,7 +31,10 @@ length, better shape.
 - **Verbs over nouns.** "They swap sheets and break each other's wishes", not "an adversarial peer-review
   activity is included".
 - **No colon-stacking.** One colon per paragraph, none in the first three lines.
-- **Say the number.** "2 pages", "11 slides", "three passages", "45 minutes". Numerals, not words.
+- **Say the number, and pick the right form.** Numerals for what a buyer is buying and for 10 or more:
+  "2 pages", "11 slides", "45 minutes", "$14", "30%", "12 studio tasks". Words for a narrative count of
+  one to nine inside a sentence: "three cursed prompts", "one false claim", "two of their choices".
+  Numerals in prose read like a spec sheet, which is the thing we are fixing.
 - **Every claim checkable.** If a page count or a promise changes, the copy changes. Hedge the future
   ("so far", "nobody can promise") — never hedge what's in the file.
 - **Read it aloud.** Any sentence you can't say in one breath is two sentences.

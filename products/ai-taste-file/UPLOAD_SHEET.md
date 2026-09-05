@@ -33,7 +33,7 @@ AI literacy, artificial intelligence, revision, writing feedback, peer editing, 
 ```
 
 **Description** — paste the `description:` block from `products/ai-taste-file/product.yaml`
-(2324 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2345 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish
