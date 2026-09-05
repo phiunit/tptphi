@@ -28,7 +28,7 @@ AI literacy, artificial intelligence unit, prompt engineering, ChatGPT, digital 
 ```
 
 **Description** — paste the `description:` block from `products/bundle-ai-line/product.yaml`
-(2239 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2353 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 **Bundle contents** — add these products to the bundle in TPT:
 1. ai-prompting-101
