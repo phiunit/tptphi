@@ -246,3 +246,28 @@ item. US spelling and "check the box", never "tick", on every student page and i
 - Rubric evidence boxes ≥ 72px; KEEP / FIX three ruled lines each (rebalance p2; ≤ 45% blank). Wrap each SHIP IT /
   RUN IT BACK pair in `class="oneof"`.
 - Slide 6 exemplar text = the plan's board card wording. `npm run sheet -- ai-agent-intern` after edits.
+## Unit + bundle (round 2) — one builder, owns products/bundle-ai-line/** plus the listed cross-lesson lines only
+- Bundle cover: badge → "COMPLETE UNIT"; sub → "Every AI job starts and ends with a human." (one line); chips stay
+  `6 × 45-min lessons` · `Grades 6–8` · `No prep · No devices needed`; delete the unused .list/.row CSS.
+- Bundle listing (product.yaml): add "Standards: ISTE 1.5.c, ISTE 1.3.b, CSTA 2-IC-20, CSTA 2-IC-21, CCSS ELA
+  W.6.4 (plus RI.6.8, W.6.5, SL.6.1, SL.6.4 inside the lessons)."; "one a day for six class periods"; "less than the
+  price of four paid lessons"; INCLUDES adds "Each lesson: Lesson Plan PDF · Worksheet PDF · Fillable Worksheet
+  PDF · Teacher Guide PDF · Slides .pptx"; title slot 3 → "| No Student AI Accounts" (≤ 80). Overview: "discussion
+  guide (three questions with answers)"; "reading level checked to the middle-school range"; sub-tomorrow example →
+  Lesson 3 (read a paragraph, call a vote, hand out the desk). `npm run sheet -- bundle-ai-line`.
+- scripts/preview.mjs: for a product with `bundle_of`, the preview = its cover + up to 3 sample pages taken from the
+  children's dist/review (ai-prompting-101 lesson-plan-p1, ai-fact-check-lab worksheet-p1, ai-prompting-101
+  teacher-guide-p2) + overview p1; band text ≤ 60 chars so it never clips ("PREVIEW · full download: 6 lessons, 31 files").
+- scripts/upload_sheet.mjs: the "(single zip — use for free listings)" note only when price_usd == 0.
+- Cross-lesson uniformity (the ONLY edits allowed outside the bundle folder):
+  · products/ai-taste-file and products/ai-agent-intern: one sentence in TG "Why this lesson" AND in the closer
+    slide `sub`: "Every AI job runs human → AI → human: you draft / write the card, the AI does the middle, you
+    revise / check the loot." (adapt the verbs to the lesson).
+  · products/ai-training-data-crate/src/slides.yaml kicker → "The Training Data Lesson" (no suffix).
+  · every lesson's closer note: "(Lesson N — in the unit bundle, or sold separately)".
+  · every product.cover.html: `.kicker { margin-top: 70px }`, `.sub { color:#FFFFFF; font-weight:600; font-size:40px }`
+    (L1 values). Re-check the 12px clearance gate on all six.
+  · products/ai-boring-work lesson plan No-device block adds "With devices: none needed; optionally project the task board."
+  · Lesson-plan section naming: leave as is (lead: the layouts differ by design; not worth a six-file churn now).
+- Verification: `npm run audit` (whole repo) GREEN; view the bundle cover-200, the bundle preview pages, and one
+  cover per lesson at 200px in a contact sheet.
