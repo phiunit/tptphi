@@ -33,16 +33,16 @@ slides:
   - type: question
     title: "Quick check"
     question: "A photo AI's playlist is almost all golden retrievers. A husky walks in — what's it going to call it?"
-    notes: "ANSWER (not on the slide): golden retriever — its best guess from its patterns. Gap in, gap out. What if a student says \"husky\"? \"Has this AI ever seen one? It can only pick from the patterns it has.\" Transition: \"Hand out Playlist Check; pairs up.\" Point to the grey box at the top of page 1: Partner A is the App, Partner B is the Request Line."
+    notes: "ANSWER (not on the slide): golden retriever — its best guess from its patterns. Gap in, gap out. What if a student says \"husky\"? \"Has this AI ever seen one? It can only pick from the patterns it has.\" Transition: \"Hand out Playlist Check; pairs up.\" Point to the grey box at the top of page 1: Partner A is the App, Partner B is the Caller."
   - type: steps
     minutes: 20
     title: "Activity — Playlist Check"
     items:
-      - { minutes: 3, name: "Setup", text: "Pairs. Partner A = the App. Partner B = the Request Line. The 12 cards are your playlist." }
-      - { minutes: 9, name: "Serve the Request Line", text: "Six requests. App names the card; both write it and check one Fit box. Swap after #3." }
+      - { minutes: 3, name: "Setup", text: "Pairs. Partner A = the App. Partner B = the Caller. The 12 cards are your playlist." }
+      - { minutes: 9, name: "Serve the Caller", text: "Six requests. App names the card; both write it and check one Fit box. Swap after #3." }
       - { minutes: 5, name: "Playlist Gap Report", text: "Who does the playlist serve well? Who does it leave out? Repeat your partner, then add." }
       - { minutes: 3, name: "Fix the Playlist", text: "Invent new cards for the biggest gaps — at least 2. Which request still has nothing?" }
-    notes: "Setup: the 12 song cards ARE the app's training data — cut them apart or just point. Odd number? A trio: two Request Lines, one App, swap twice. Serve: work the six printed requests (Priya, Nia, Tomás, Keisha, Malik, Jordan); end with one live request from a neighboring pair. Can't agree on a Fit? Each writes their own mark — disagreement is data; save it for the debrief. Gap Report: enforce the rule out loud — before you add your idea, repeat your partner's, then add to it. A pair writes \"needs more songs\"? Ask WHO asked for something that wasn't there. Fix: push past \"add one slow song\" — Tomás still has nothing. KEY: Tomás, Keisha and Jordan are the built-in failures — zero Spanish, nothing slow, nothing quiet."
+    notes: "Setup: the 12 song cards ARE the app's training data — cut them apart or just point. Odd number? A trio: two Callers, one App, swap twice. Serve: work the six printed requests (Priya, Nia, Tomás, Keisha, Malik, Jordan); end with one live request from a neighboring pair. Can't agree on a Fit? Each writes their own mark — disagreement is data; save it for the debrief. Gap Report: enforce the rule out loud — before you add your idea, repeat your partner's, then add to it. A pair writes \"needs more songs\"? Ask WHO asked for something that wasn't there. Fix: push past \"add one slow song\" — Tomás still has nothing. KEY: Tomás, Keisha and Jordan are the built-in failures — zero Spanish, nothing slow, nothing quiet."
   - type: list
     title: "House Rules — You Are the AI"
     items:
@@ -50,12 +50,12 @@ slides:
       - "Rule 2 — You never say no. Serve the closest card you've got — a music app always gives you SOMETHING."
       - "Rule 3 — Check ONE Fit box (Perfect / Kind of / Nothing) honestly, on your own sheet."
       - "Fit boxes:  Perfect fit  ·  Kind of fits  ·  Nothing fits  — check ONE per request."
-    notes: "Leave this up during Serve the Request Line. Circulate. Answer key is in the Teacher Guide p.1 — Priya and Malik should be Perfect fit; Nia Kind of fits at best (Cool Down is medium, still a party track); Tomás, Keisha and Jordan Nothing fits."
+    notes: "Leave this up during Serve the Caller. Circulate. Answer key is in the Teacher Guide p.1 — Priya and Malik should be Perfect fit; Nia Kind of fits at best (Cool Down is medium, still a party track); Tomás, Keisha and Jordan Nothing fits."
   - type: compare
     minutes: 5
     title: "Debrief — The Real Playlists"
     left: { heading: "YOUR PLAYLIST", text: "Who asked for Spanish and got English?\nWho asked for slow and got medium?\nWho asked for quiet and got nothing quiet?" }
-    right: { heading: "REAL PLAYLISTS", text: "Voice assistants have misheard uncommon accents and kids more often.\nPhoto tools erred more on darker skin; photos ran lighter.\nYour feed learned from millions of users." }
+    right: { heading: "REAL PLAYLISTS", text: "Voice assistants have misheard uncommon accents and kids more often.\nFace tools got darker skin wrong more often; most of their training photos showed lighter skin.\nYour feed learned from millions of users." }
     notes: "2–3 pairs call out one gap they found (1 min). Left panel is questions only — the answers, for you: Tomás (zero Spanish tracks), Keisha (medium is not slow), Jordan (nothing quiet exists). Nobody put bad songs in; they were never there. Connect: \"Your playlist failed Tomás and Keisha. Real playlists fail real people the same way.\" Walk the three real playlists (Teacher Guide p.2, 3 min): voice assistants understand best the voices that filled their training audio; face-analysis tools have had higher error rates on darker skin when training photos leaned lighter (documented in 2018 research); a recommendation app's playlist is millions of people's viewing behavior — your own history is the request. Handle with care: some students in the room are the people these gaps mishear. Keep the frame \"the playlist failed them, and playlists can be fixed\" — never \"the tech doesn't like you.\""
   - type: question
     title: "The big question"
