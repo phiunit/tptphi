@@ -22,8 +22,11 @@ for (const p of listProducts(process.argv[2])) {
   const ELA = { RI: 'English Language Arts → Reading (Informational Text)', RL: 'English Language Arts → Reading (Literature)', W: 'English Language Arts → Writing', SL: 'English Language Arts → Oral Communication (Speaking & Listening)', L: 'English Language Arts → Vocabulary' };
   const strands = [...new Set(ccss.map(c => c.split('.')[0]))].map(k => ELA[k]).filter(Boolean);
   const subjects = strands.length ? (SUBJECTS[m.line] || '').replace('English Language Arts → Writing', strands.join('; ')) : (SUBJECTS[m.line] || '(set by line)');
-  const zipNote = m.bundle_of ? 'carries the Unit Overview only — the lessons attach as TPT bundle children'
-    : 'one zip with every file; TPT takes a single upload for free and paid listings alike';
+  const uploads = dist.filter(f => /\.(pdf|pptx)$/.test(f) && !/ - Preview\.pdf$/.test(f));
+  // Free listings take exactly one upload (the zip). Paid listings take every file — list them, keep the zip as the fallback.
+  const fileLines = m.bundle_of ? [`- \`dist/${zip}\`  (one zip: every lesson's files plus the Unit Overview — then add the six lessons as TPT bundle children)`]
+    : Number(m.price_usd) === 0 ? [`- \`dist/${zip}\`  (single zip — use for free listings)`]
+    : [...uploads.map(f => `- \`dist/${f}\``), `- or the zip \`dist/${zip}\` if you prefer a single upload`];
   const out = `# Upload Sheet — ${m.short_name || m.title}
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
@@ -37,7 +40,7 @@ ${m.title}
 **Grades:** ${String(m.grades).split('-').join(', ').replace('6, 8', '6, 7, 8')}
 
 **File(s) to upload:**
-${zip ? `- \`dist/${zip}\`  (${zipNote})` : files.map(f => `- \`dist/${f}\``).join('\n')}
+${zip ? fileLines.join('\n') : files.map(f => `- \`dist/${f}\``).join('\n')}
 
 **Custom cover (optional):** ${cover ? `\`dist/${cover}\`` : '— none rendered —'}
 

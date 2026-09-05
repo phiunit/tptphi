@@ -11,7 +11,12 @@ AI Fact Checking Lesson: Spot Fake Facts Activity | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Hallucination Hunters (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
+- `dist/Hallucination Hunters - Lesson Plan.pdf`
+- `dist/Hallucination Hunters - Slides.pptx`
+- `dist/Hallucination Hunters - Teacher Guide.pdf`
+- `dist/Hallucination Hunters - Worksheet (Fillable).pdf`
+- `dist/Hallucination Hunters - Worksheet.pdf`
+- or the zip `dist/Hallucination Hunters (Future Skills).zip` if you prefer a single upload
 
 **Custom cover (optional):** `dist/Hallucination Hunters - Cover.png`
 
@@ -28,7 +33,7 @@ AI literacy, fact checking, media literacy, lateral reading, misinformation, cri
 ```
 
 **Description** — paste the `description:` block from `products/ai-fact-check-lab/product.yaml`
-(2220 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2269 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

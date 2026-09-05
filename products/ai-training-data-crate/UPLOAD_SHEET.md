@@ -1,4 +1,4 @@
-# Upload Sheet — What's in the Playlist
+# Upload Sheet — What's in the Playlist?
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
 **Title** (71 chars — TPT max ~80)
@@ -11,7 +11,12 @@ How AI Works Lesson: Training Data & Bias | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/What's in the Playlist (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
+- `dist/What's in the Playlist - Lesson Plan.pdf`
+- `dist/What's in the Playlist - Slides.pptx`
+- `dist/What's in the Playlist - Teacher Guide.pdf`
+- `dist/What's in the Playlist - Worksheet (Fillable).pdf`
+- `dist/What's in the Playlist - Worksheet.pdf`
+- or the zip `dist/What's in the Playlist (Future Skills).zip` if you prefer a single upload
 
 **Custom cover (optional):** `dist/What's in the Playlist - Cover.png`
 
@@ -28,7 +33,7 @@ AI literacy, artificial intelligence, machine learning, training data, algorithm
 ```
 
 **Description** — paste the `description:` block from `products/ai-training-data-crate/product.yaml`
-(2459 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2538 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

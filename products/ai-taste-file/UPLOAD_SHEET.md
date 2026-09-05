@@ -11,7 +11,12 @@ AI Writing Feedback Lesson: Revision Activity | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Teach AI Your Taste (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
+- `dist/Teach AI Your Taste - Lesson Plan.pdf`
+- `dist/Teach AI Your Taste - Slides.pptx`
+- `dist/Teach AI Your Taste - Teacher Guide.pdf`
+- `dist/Teach AI Your Taste - Worksheet (Fillable).pdf`
+- `dist/Teach AI Your Taste - Worksheet.pdf`
+- or the zip `dist/Teach AI Your Taste (Future Skills).zip` if you prefer a single upload
 
 **Custom cover (optional):** `dist/Teach AI Your Taste - Cover.png`
 
@@ -28,7 +33,7 @@ AI literacy, artificial intelligence, revision, writing feedback, peer editing, 
 ```
 
 **Description** — paste the `description:` block from `products/ai-taste-file/product.yaml`
-(2269 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2324 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

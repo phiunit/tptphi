@@ -1,7 +1,7 @@
 # Projectable deck for the lesson plan — every slide is a moment in the 45 minutes.
 # Teacher script lives in the speaker notes; students see only what's on the slide.
 title: "What's in the Playlist?"
-kicker: The Training Data Lesson · Lesson 2 of 6
+kicker: The Training Data Lesson
 subtitle: "An AI is a music app, and its training data is the playlist. It can only mix what's in the playlist — so today you'll BE the app and find out what a one-vibe playlist (all loud, all fast, all party) does to everyone who asks."
 notes: "Open on this slide while students settle. Worksheet: Playlist Check, one per student — each student fills their OWN sheet. Fully unplugged — no devices needed."
 slides:
@@ -72,4 +72,4 @@ slides:
   - type: closer
     statement: "Before you trust an AI, ask: what's in the playlist?"
     sub: "You → the AI's playlist → you. A human starts it, the AI does the middle, a human checks — and playlists can be fixed."
-    notes: "Close on this: the playlist is the middle of human → AI → human, and a gap in it is why the human at the end has to check. Next in the unit: Hallucination Hunters (Lesson 3, sold separately) — fact-checking what an AI hands you. This lesson stands on its own."
+    notes: "Close on this: the playlist is the middle of human → AI → human, and a gap in it is why the human at the end has to check. Next in the unit: Hallucination Hunters (Lesson 3 — in the unit bundle, or sold separately) — fact-checking what an AI hands you. This lesson stands on its own."

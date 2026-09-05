@@ -11,7 +11,12 @@ AI Agents Lesson: Team Roles & Project Planning | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Lead Your AI Squad (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
+- `dist/Lead Your AI Squad - Lesson Plan.pdf`
+- `dist/Lead Your AI Squad - Slides.pptx`
+- `dist/Lead Your AI Squad - Teacher Guide.pdf`
+- `dist/Lead Your AI Squad - Worksheet (Fillable).pdf`
+- `dist/Lead Your AI Squad - Worksheet.pdf`
+- or the zip `dist/Lead Your AI Squad (Future Skills).zip` if you prefer a single upload
 
 **Custom cover (optional):** `dist/Lead Your AI Squad - Cover.png`
 
@@ -28,7 +33,7 @@ AI literacy, artificial intelligence, AI agents, project based learning, collabo
 ```
 
 **Description** — paste the `description:` block from `products/ai-agent-intern/product.yaml`
-(2356 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2404 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

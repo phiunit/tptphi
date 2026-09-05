@@ -38,3 +38,15 @@ Product-specific findings, fixed:
   ISTE 1.1.c for Lesson 4 (cut in favour of SL.6.1), and "What's in every lesson" said "2-page
   worksheet" when Lesson 3's is 3 pages. Both corrected ("2- to 3-page").
 Verdict after re-audit: **PASS** (0 fails, 0 partials).
+
+## Round 2 addendum (2026-09-05, docs/gauntlet/PLAN.md "Unit + bundle (round 2)")
+- Cover rebuilt on the L1 template: badge "SAVE 30%", one-sentence sub ("Every AI job starts and ends with a human."),
+  chips `Grades 6–8 · 6 × 45-min lessons · No prep · No devices needed`, solid-fill art (no gold-over-violet opacity),
+  unused .list/.row CSS removed. The six lesson titles now live in the listing + Unit Overview, not on the cover.
+- Listing: title "… | Save 30%" (73 chars); price sentence "$14 for all six — the five paid lessons alone are $20. Save 30%.";
+  per-lesson file list (31 files); Standards line names all nine codes across the unit. `standards:` keeps the five anchor
+  codes (validate's 3–5 rule); the four lesson-level ELA codes are cited in the description and the Overview table.
+- Preview: cover + Lesson 3 worksheet p1 + Lesson 1 plan p1 + Lesson 1 guide last page + Overview p1, band
+  "FULL DOWNLOAD: 6 LESSONS · 31 FILES" at ~35% opacity, fitted inside the page width.
+- Overview: sub-tomorrow → Lesson 3; "reading level checked to the middle-school range"; discussion guide (three questions with answers).
+- Verdict: PASS (whole-repo `npm run audit` GREEN).

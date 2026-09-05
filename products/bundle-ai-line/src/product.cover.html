@@ -3,45 +3,49 @@
 @font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('../../../brand/fonts/SpaceGrotesk-700.ttf') format('truetype'); }
 * { box-sizing: border-box; margin: 0; }
 html { overflow: hidden; height: 100%; background: #14141F; }
-body { width: 850px; height: 1100px; min-height: 100%; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: radial-gradient(ellipse at 80% 90%, #3B2F8F 0%, #232345 45%, #14141F 100%); color: #fff;
-  display: flex; flex-direction: column; padding: 58px; position: relative; overflow: hidden; }
-.star { position: absolute; background: #fff; border-radius: 50%; }
-.brand { font-family: 'Space Grotesk', sans-serif; font-size: 21px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
-.count { position: absolute; top: 44px; right: 44px; background: #FFB020; color: #14141F; font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700; font-size: 26px; line-height: 1.05; text-align: center; padding: 14px 20px; border-radius: 18px; transform: rotate(5deg); z-index: 3; }
-.count small { display: block; font-size: 13px; letter-spacing: 1px; }
-.kick { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 110px; position: relative; z-index: 2; }
-h1 { font-family: 'Space Grotesk', sans-serif; font-size: 92px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 12px; position: relative; z-index: 2; }
-h1 span { color: #FFB020; }
-.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 40px; margin-top: 26px; line-height: 1.2; color: #E8E8F5; max-width: 700px; position: relative; z-index: 2; }
-.sub em { color: #FFB020; font-style: normal; font-weight: 700; }
-.chips { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; max-width: 740px; position: relative; z-index: 2; }
-.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 24px; padding: 9px 20px; border-radius: 99px; }
+body { min-height: 100%; }
+body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(ellipse at 75% 85%, #3B2F8F 0%, #232345 45%, #14141F 100%); color: #fff;
+  display: flex; flex-direction: column; padding: 60px; position: relative; overflow: hidden; }
+/* stars */
+.star { position: absolute; background: #fff; border-radius: 50%; opacity: 0.8; }
+.star.g { background: #FFB020; }
+/* content */
+.brand { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
+.chipline { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 14px; position: relative; z-index: 2; max-width: 600px; }
+.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 24px; padding: 9px 24px; border-radius: 99px; white-space: nowrap; }
 .chip.solid { background: #FFB020; color: #14141F; }
-.list { margin-top: 30px; position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; max-width: 700px; }
-.row { display: flex; align-items: baseline; gap: 10px; font-size: 19px; color: #E8E8F5; }
-.row b { font-family: 'Space Grotesk', sans-serif; color: #FFB020; font-size: 19px; }
+.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 70px; position: relative; z-index: 2; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
+h1 span { color: #FFB020; }
+.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; margin-top: 26px; line-height: 1.15; color: #FFFFFF; position: relative; z-index: 2; max-width: 730px; }
+.badge { position: absolute; top: 46px; right: 46px; background: #FFB020; color: #14141F; font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: 30px; padding: 18px 26px; border-radius: 20px; transform: rotate(6deg); z-index: 3; white-space: nowrap; }
 </style></head><body>
-<div class="star" style="width:6px;height:6px;left:700px;top:220px;opacity:.75"></div>
-<div class="star" style="width:9px;height:9px;left:770px;top:400px;background:#FFB020"></div>
-<div class="star" style="width:4px;height:4px;left:640px;top:150px;opacity:.6"></div>
-<div class="count">6<small>LESSONS · NO PREP</small></div>
-<div class="brand">Future Skills Series</div>
-<div class="chips" style="margin-top:14px"><span class="chip">AI Literacy · Complete Unit</span></div>
-<div class="kick">The Whole Course</div>
-<h1>AI Literacy<br><span>Unit</span></h1>
-<p class="sub">Six 45-minute lessons. No prep. No student AI accounts.</p>
-<div class="chips"><span class="chip solid">Grades 6–8</span><span class="chip">6 × 45-min lessons</span><span class="chip">No prep · No devices needed</span></div>
-<svg width="380" height="330" viewBox="0 0 380 330" style="position:absolute; right:22px; bottom:26px; z-index:1;">
-  <g stroke="#232345" stroke-width="8" stroke-linecap="round">
-    <rect x="8"   y="150" width="84" height="120" rx="12" fill="#FFB020" opacity="0.35"/>
-    <rect x="58"  y="130" width="84" height="140" rx="12" fill="#FFB020" opacity="0.5"/>
-    <rect x="108" y="110" width="84" height="160" rx="12" fill="#FFB020" opacity="0.65"/>
-    <rect x="158" y="90"  width="84" height="180" rx="12" fill="#FFB020" opacity="0.8"/>
-    <rect x="208" y="70"  width="84" height="200" rx="12" fill="#FFB020" opacity="0.9"/>
+<div class="star g" style="width:10px;height:10px;left:690px;top:230px"></div>
+<div class="star" style="width:4px;height:4px;left:560px;top:140px"></div>
+<div class="star g" style="width:8px;height:8px;left:790px;top:400px"></div>
+<div class="star" style="width:5px;height:5px;left:760px;top:560px"></div>
+<div class="star g" style="width:6px;height:6px;left:560px;top:980px"></div>
+<!-- Art: six lesson books rising like steps — five in the light tint, the sixth (the capstone) in gold with its
+     title lines in ink. Solid fills only, fully inside the frame (bottom-right). -->
+<svg width="380" height="300" viewBox="0 0 380 300" style="position:absolute; right:48px; bottom:42px; z-index:1;">
+  <g stroke="#14141F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="8"   y="150" width="84" height="120" rx="12" fill="#FFD27A"/>
+    <rect x="58"  y="130" width="84" height="140" rx="12" fill="#FFD27A"/>
+    <rect x="108" y="110" width="84" height="160" rx="12" fill="#FFD27A"/>
+    <rect x="158" y="90"  width="84" height="180" rx="12" fill="#FFD27A"/>
+    <rect x="208" y="70"  width="84" height="200" rx="12" fill="#FFD27A"/>
     <rect x="258" y="50"  width="92" height="220" rx="12" fill="#FFB020"/>
-    <line x1="280" y1="92"  x2="328" y2="92"/><line x1="280" y1="120" x2="328" y2="120"/><line x1="280" y1="148" x2="312" y2="148"/>
+    <line x1="282" y1="92"  x2="326" y2="92"/><line x1="282" y1="120" x2="326" y2="120"/><line x1="282" y1="148" x2="312" y2="148"/>
   </g>
+  <rect x="0" y="270" width="372" height="14" rx="7" fill="#FFB020"/>
 </svg>
+<div class="badge">SAVE 30%</div>
+<div class="brand">Future Skills Series</div>
+<div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Complete Unit</span></div>
+<div class="kicker">The Whole Course</div>
+<h1>AI Literacy<br><span>Unit</span></h1>
+<p class="sub">Every AI job starts<br>and ends with a human.</p>
+<div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">6 × 45-min lessons</span><span class="chip">No prep · No devices needed</span></div>
 </body></html>

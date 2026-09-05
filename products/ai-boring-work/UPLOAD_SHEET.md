@@ -11,7 +11,12 @@ AI and Future Jobs Lesson: Automation Tradeoffs | Middle School 6-8 | No Prep
 **Grades:** 6, 7, 8
 
 **File(s) to upload:**
-- `dist/Robots Do the Boring Work (Future Skills).zip`  (one zip with every file; TPT takes a single upload for free and paid listings alike)
+- `dist/Robots Do the Boring Work - Lesson Plan.pdf`
+- `dist/Robots Do the Boring Work - Slides.pptx`
+- `dist/Robots Do the Boring Work - Teacher Guide.pdf`
+- `dist/Robots Do the Boring Work - Worksheet (Fillable).pdf`
+- `dist/Robots Do the Boring Work - Worksheet.pdf`
+- or the zip `dist/Robots Do the Boring Work (Future Skills).zip` if you prefer a single upload
 
 **Custom cover (optional):** `dist/Robots Do the Boring Work - Cover.png`
 
@@ -28,7 +33,7 @@ AI literacy, artificial intelligence, future jobs, automation, career exploratio
 ```
 
 **Description** — paste the `description:` block from `products/ai-boring-work/product.yaml`
-(2085 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2133 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
 
 
 ## Before you hit Publish

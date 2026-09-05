@@ -15,10 +15,10 @@ body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Rob
 .chipline { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 14px; position: relative; z-index: 2; max-width: 560px; }
 .chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 24px; padding: 9px 24px; border-radius: 99px; white-space: nowrap; }
 .chip.solid { background: #FFB020; color: #14141F; }
-.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 96px; position: relative; z-index: 2; }
+.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 70px; position: relative; z-index: 2; }
 h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
 h1 span { color: #FFB020; }
-.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 40px; margin-top: 30px; line-height: 1.2; color: #E8E8F5; position: relative; z-index: 2; white-space: nowrap; }
+.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; margin-top: 30px; line-height: 1.2; color: #FFFFFF; position: relative; z-index: 2; white-space: nowrap; }
 .sub em { color: #FFB020; font-style: normal; }
 </style></head><body>
 <div class="star g" style="width:10px;height:10px;left:690px;top:230px"></div>
@@ -37,8 +37,10 @@ h1 span { color: #FFB020; }
   <rect x="50" y="58" width="204" height="22" rx="11" fill="#FFD27A"/>
   <rect x="50" y="104" width="140" height="22" rx="11" fill="#FFD27A"/>
   <!-- editor's mark: the second bar struck through, a caret for the new words -->
-  <path d="M 36 119 L 206 109" fill="none" stroke="#14141F" stroke-width="12" stroke-linecap="round"/>
-  <path d="M 88 186 L 120 146 L 152 186" fill="none" stroke="#FFB020" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 30 127 L 210 103" fill="none" stroke="#FFB020" stroke-width="10" stroke-linecap="round"/>
+  <!-- the new words: a short inserted bar above the caret -->
+  <rect x="88" y="152" width="112" height="22" rx="11" fill="#FFB020"/>
+  <path d="M 88 236 L 120 196 L 152 236" fill="none" stroke="#FFB020" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- the like: a solid gold heart -->
   <path transform="translate(158 40)" d="M 112 208 C 80 186, 64 170, 64 154 C 64 139, 75 130, 87 130 C 98 130, 107 136, 112 145 C 117 136, 126 130, 137 130 C 149 130, 160 139, 160 154 C 160 170, 144 186, 112 208 Z" fill="#FFB020"/>
 </svg>

@@ -80,7 +80,8 @@ for (const p of listProducts(process.argv[2])) {
   if (p.meta.title && p.meta.title.length > 80) errs.push(`title ${p.meta.title.length} chars (TPT max ~80)`);
   if (p.meta.description && p.meta.description.length < 400) errs.push('description under 400 chars — thin for TPT SEO');
   if (Array.isArray(p.meta.tags) && p.meta.tags.length < 3) errs.push('fewer than 3 tags');
-  if (Array.isArray(p.meta.standards) && (p.meta.standards.length < 3 || p.meta.standards.length > 5))
+  const maxStd = p.meta.bundle_of ? 12 : 5; // a bundle lists the union of its children's anchors
+  if (Array.isArray(p.meta.standards) && (p.meta.standards.length < 3 || p.meta.standards.length > maxStd))
     errs.push(`${p.meta.standards.length} standards (rule: 3-5 real, taught-and-assessed codes)`);
   errs.push(...checkStandards(p.meta), ...checkGuideText(p), ...checkStatus(p), ...checkRetired(p), ...checkIncludes(p));
   const dist = path.join(p.dir, 'dist');

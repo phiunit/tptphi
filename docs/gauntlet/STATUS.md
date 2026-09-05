@@ -1,5 +1,5 @@
 # STATUS — Gauntlet, AI Literacy line (authority: this file + PLAN.md)
-Updated 2026-09-05 06:30 UTC by the lead.
+Updated 2026-09-05 08:20 UTC by the lead.
 
 ## Done (with commits)
 - Round 1 critics (9, fresh context) — reports in docs/gauntlet/2026-09-03/ — d85fe5e, 30326b4
@@ -23,14 +23,21 @@ Updated 2026-09-05 06:30 UTC by the lead.
   layout gate + PDF page-count assertion, includes-exist gate, one-of radio groups, deck title override — c23759e, 836a3fb
 - Round 2 fixes built and lead-reviewed: L1–L3 c6e3519 · L4–L5 7798238 · L6 (this commit); full audit GREEN
 
+- Round 2 wave 3: bundle+unit and buyer critics (reports r2-critic-bundle-unit, r2-critic-buyer); unit+bundle builder:
+  preview band fits and is translucent + PREVIEW tag, bundle preview shows student pages, bundle title/badge "Save 30%",
+  Standards line + nine codes (validate allows a bundle up to 12), L4 sentence two names the activity, human → AI →
+  human in L4/L6, cover CSS unified, L4/L5/L6 art polish, all seven upload sheets regenerated; full audit GREEN — (this commit)
+
 ## Agreed (decided, being built) — see PLAN.md D1–D9 + per-lesson
 - L2–L6 builders, one per product folder. Two waves (L6, L3, L2 → then L4, L5): six in parallel hit the account
   rate limit twice and died mid-edit; resumed builders finish on top of the dirty tree. Tree is dirty from an interrupted first attempt
   (rate limit); builders treat current content as draft.
 - Lead reviews cover-200 / fill / 2–3 page screenshots + checks JSON per report; commits per product.
 
+- Deferred to round 3 (lead): unify lesson-plan p1 section layout (L1 inline chips / L2–L4 row / L5–L6 float) — two critics flagged it.
+
 ## Open (needs a decision or a human)
 - HUMAN GATE (Phi): TPT bundle with a $0 child — confirm at upload; fallback is the bundle zip (already packs all six).
 - HUMAN GATE (Phi): open each .pptx in real PowerPoint/Keynote once before upload (LibreOffice unavailable here).
-- Round 2 wave 3: bundle+unit, buyer, student critics (fresh) on the rebuilt line. Then Round 3: fresh critics on every surface REJECTed in round 2 (L1 lp/ws/tg/listing · L2 deck/listing · L3 lp/ws · L4 cover/lp/ws/deck/listing · L5 all · L6 lp/ws/tg/deck).
+- Student critic (wave 3, running). Then Round 3: fresh critics on every surface REJECTed in round 2 (L1 lp/ws/tg/listing · L2 deck/listing · L3 lp/ws · L4 cover/lp/ws/deck/listing · L5 all · L6 lp/ws/tg/deck).
 - Idea (lead, not yet agreed): a GLOSS_TERMS gate — idioms allowed on student pages only if glossed in the same panel.
