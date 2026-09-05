@@ -1,7 +1,7 @@
 # Projectable deck for the lesson plan — every slide is a moment in the 45 minutes.
 # Teacher script and answer keys live in the speaker notes; students see only what's on the slide.
 kicker: The Task Board Lesson
-subtitle: "Your class runs Big Dream Studio, a recording studio with too much to do. You decide what the AI does, what it helps with, and what it never touches — and you own the trade behind every choice."
+subtitle: "Your class is the crew at Big Dream Studio, a recording studio with too much to do. You decide what the AI does, what it helps with, and what it never touches — and you own the trade behind every choice."
 notes: "Open on this slide while students settle. Worksheet: The Studio Task Board, 2 pages, one per student — hand it out at the Main Activity, not before. Fully unplugged — no devices at any point; this deck is optional."
 slides:
   - type: hook
@@ -20,7 +20,7 @@ slides:
     notes: "Let pairs talk for 30 seconds, take two answers, then give the bridge verbatim: \"Here's the honest version, no robot apocalypse: nobody can promise which jobs change, or how many. What we can see so far: the boring, repeating parts are the ones getting automated, and the human parts become more of the job. AI takes over tasks, not whole jobs — nobody can promise the final count. But every time a business automates something, somebody wins, somebody loses something, and something could go wrong. Today YOU make those decisions — for a recording studio.\" Transition: \"So how do you decide what a robot should take? Three columns. Eyes on the board.\""
   - type: cards
     minutes: 10
-    title: "Three Columns, One Lens"
+    title: "Three Columns, One Question"
     items:
       - { label: 1, name: AUTOMATE, text: "Boring and repeating — no decisions to make. Hand it to AI." }
       - { label: 2, name: AUGMENT, text: "A human makes the call — the decision — and AI helps out." }
@@ -29,7 +29,7 @@ slides:
   - type: compare
     title: "Watch one get sorted — then the trade"
     left: { heading: "THE COLUMN (EASY PART)", text: "Task: \"Send the 'don't forget your session' texts.\"\n\nColumn: AUTOMATE.\n\nDone? No. Don't stop there." }
-    right: { heading: "THE TRADE (REAL THINKING)", text: "Wins: Jaylen — hours back for the artists.\n\nLoses something: Jaylen — those texts taught him every name.\n\nCould go wrong: a cheery text after a canceled session." }
+    right: { heading: "THE TRADE (REAL THINKING)", text: "Wins: Jaylen — gets hours of his week back.\n\nLoses something: Jaylen — those texts taught him every name.\n\nCould go wrong: a cheery text after a canceled session." }
     notes: "Ask the three questions out loud, one at a time, and take a guess from the room before you read each answer on the right. Jaylen runs the front desk at Big Dream Studio; students meet him on the worksheet. The point: the same person can win AND lose from one decision. Key for the trade you are modeling — Who wins: Jaylen (hours back). Who loses something: Jaylen (the texts were how he learned every artist's name). What could go wrong: a cheerful reminder after a canceled session."
   - type: quote
     quote: "\"Because robots\" is not a reason."
@@ -64,15 +64,15 @@ slides:
     notes: "Likely-column key: G Keep human / Augment — taste is Nia's edge; AI can report what's trending, it doesn't decide. H Keep human / Augment — craft plus judgment; AI can suggest, hands do the work. I Keep human — trust and reading the room; a bot can cost the studio the booking. J Automate — pure transcription; it can mishear a line, so the artist checks. K Automate — same answers daily; the risk is the sixth question. L Keep human / Augment — the mood is live connection; AI can draft the checklist. Flip between this slide and the last one during the Sort. If the class splits three ways on one task, nobody's right — say so, and save it for the share-out: \"Convince me. Who wins? Who loses something? What breaks?\""
   - type: list
     minutes: 8
-    title: "Share-Out — Defend the Board"
+    title: "Defend It — Say It Out Loud"
     items:
-      - "Two pairs face each other. Each Speaker says the frame once — 30 seconds each. Then switch."
+      - "Fill in your claim first. Then two pairs face each other; each Speaker reads it out loud once — 30 seconds."
       - "1.  Eyes up off the page."
       - "2.  Voice to the back wall."
-      - "3.  Slow down on your claim."
-      - "Claim frame:  Task ___ belongs in ___ because ___ — and the trade is ___"
-      - "Listener 1 marks Speaker 1's sheet, Listener 2 marks Speaker 2's: eyes / voice / pace, keep, fix."
-    notes: "Transition in: \"Stop there. Now you have to say it out loud — to people who might disagree.\" Teach the delivery first (1 min): \"Three moves: eyes up off the page, voice to the back wall, slow down on your claim.\" Pairs of pairs (5 min): two pairs face each other. Each Speaker says the frame once — 30 seconds each. Listener 1 marks Speaker 1's sheet, Listener 2 marks Speaker 2's (eyes / voice / pace + one keep, one fix); then the pairs switch roles. Each student's claim is scored by a peer; you sample 3–4 pairs with the Defense Rubric (Teacher Guide p.3). What if a Speaker reads to the desk? Don't score — coach: \"Eyes on us, one more time.\" Second try counts. Odd number of pairs → one trio of pairs rotates; sample that group. Whole class (2 min): three pairs bring their most-argued choice to the room. Gallery-walk variant: post the boards and tour for 2 minutes instead. Transition out: \"Swap sheets back — you need your own. Bottom of page 2: a job you actually know.\""
+      - "3.  Slow down on the word 'because.'"
+      - "Your claim:  Task ___ belongs in ___ because ___ — and the trade is ___"
+      - "Listener 1 marks Speaker 1, Listener 2 marks Speaker 2: eyes / voice / slowed on 'because', keep, fix."
+    notes: "Transition in: \"Stop there. Now you have to say it out loud — to people who might disagree.\" Teach the delivery first (1 min): \"Three moves: eyes up off the page, voice to the back wall, slow down on the word because.\" Pairs of pairs (5 min): two pairs face each other. Each Speaker says the frame once — 30 seconds each. Listener 1 marks Speaker 1's sheet, Listener 2 marks Speaker 2's (eyes / voice / pace + one keep, one fix); then the pairs switch roles. Each student's claim is scored by a peer; you sample 3–4 pairs with the Defense Rubric (Teacher Guide p.3). What if a Speaker reads to the desk? Don't score — coach: \"Eyes on us, one more time.\" Second try counts. Odd number of pairs → one trio of pairs rotates; sample that group. Whole class (2 min): three pairs bring their most-argued choice to the room. Gallery-walk variant: post the boards and tour for 2 minutes instead. Transition out: \"Swap sheets back — you need your own. Bottom of page 2: a job you actually know.\""
   - type: list
     minutes: 5
     title: "Exit Ticket — A Real Job You Know"

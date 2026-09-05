@@ -6,12 +6,16 @@
   .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 90px; height: 18px; vertical-align: bottom; }
   .blank.wide { min-width: 220px; }
   body.compact .brief td { padding-top: 2px; padding-bottom: 2px; }
-  body.compact h2 { margin-top: 7px; }
+  body.compact h2 { margin-top: 5px; }
   .brief td .write { min-height: 72px; border-bottom: 1.5px solid #B9B9C9; }
   .notegrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 2px; }
   .notegrid p { margin: 0 0 2px; }
-  .rolecards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 4px; }
-  body.compact .rolecards .panel { margin: 0; font-size: 9pt; line-height: 1.28; padding: 6px 9px; }
+  .rolecards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 2px; }
+  body.compact .rolecards .panel { margin: 0; font-size: 10pt; line-height: 1.22; padding: 5px 8px; }
+  body.compact .page1 .masthead { margin-bottom: 12px; }
+  body.compact .page1 .panel { padding: 7px 12px; margin: 6px 0; }
+  body.compact .page1 .rolecards .panel { padding: 5px 8px; margin: 0; }
+  body.compact .page1 h2 { margin: 5px 0 3px; }
   .rolecards .rolename { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 10.5pt;
     text-transform: uppercase; letter-spacing: 1px; color: var(--line); margin-bottom: 3px; }
   .checkrubric td:first-child, .checkrubric th:first-child { width: 2.3in; }
@@ -62,7 +66,7 @@
   </defs>
 </svg>
 
-<div class="page">
+<div class="page page1">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
   <div class="headrow">
     <div>
@@ -74,9 +78,9 @@
 
   <div class="panel">
     <strong>Everyone is a party member AND a leader.</strong> Steps 1–2 you're the leader; in Step 3 you switch and play an AI agent for your team's card; in Step 4 you're the leader again.
-    An AI agent does a multi-step job on its own — and where your card is vague, it guesses forward. So the leader checks, using the loop:
+    An AI agent does a whole job, step by step, on its own — and if your card leaves something out, the agent just guesses and keeps going. So the leader checks, using the loop:
     <strong>QUEST CARD → ROLES → CHECK THE LOOT → SHIP IT or RUN IT BACK.</strong>
-    <p style="margin:4px 0 0"><strong>Party</strong> = your team of 3; a <strong>party member</strong> does one job. <strong>Roles</strong> = who does which slice. <strong>Quest card</strong> = the job, written down in four parts. <strong>Loot</strong> = the finished work. <strong>SHIP IT</strong> = good to go. <strong>RUN IT BACK</strong> = do it again.</p>
+    <p style="margin:4px 0 0"><strong>Party</strong> = your team of 3; a <strong>party member</strong> does one job. <strong>Roles</strong> = who does which slice. <strong>Quest card</strong> = the job, written down in four parts. <strong>Loot</strong> = the finished work. <strong>SHIP IT</strong> = finished and correct, send it. <strong>RUN IT BACK</strong> = do it again.</p>
   </div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 1 — Pick Your Quest (team of 3, check one)</h2>
@@ -93,11 +97,11 @@
   </table>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 3 — Role Cards (take one each)</h2>
-  <p><strong>Now switch: for 8 minutes YOU play an AI agent.</strong> Do your role's job SILENTLY on your own paper — no questions. Papers never move mid-round; at the 4-minute call the Critic reads the Planner's list over their shoulder. Time's up: <strong>everyone passes their OWN paper one seat left</strong> — you're the leader again.</p>
+  <p><strong>Now switch: for 8 minutes YOU play an AI agent.</strong> Do your role's job SILENTLY on a blank sheet of paper — <strong>not this worksheet.</strong> No questions. When the teacher calls 4 minutes, the Critic reads the Planner's list. At 8: <strong>pass that blank sheet one seat left; keep this worksheet</strong> — you're the leader again.</p>
   <div class="rolecards">
-    <div class="panel"><div class="rolename">Planner</div>0–4 min: number the steps. Card silent on something (the card doesn't say)? Don't guess — write <strong>"NOT ON THE CARD."</strong> 4–8 min: add a time guess to every step and star the one step most likely to go wrong.</div>
+    <div class="panel"><div class="rolename">Planner</div>0–4 min: number the steps. If the card doesn't say, don't guess — write <strong>"NOT ON THE CARD."</strong> 4–8 min: add a time guess to each step; star the one most likely to go wrong.</div>
     <div class="panel"><div class="rolename">Scout</div>List every fact the quest needs. Mark each <strong>✓</strong> (we know it for sure — say how) or <strong>?</strong> (needs checking — say where).</div>
-    <div class="panel"><div class="rolename">Critic</div>0–4 min: write 2 things the audience on the card cares about. At the 4-minute call, read the Planner's list and write 3 upgrades to it. <strong>"Make it better" is banned.</strong></div>
+    <div class="panel"><div class="rolename">Critic</div>0–4 min: write 2 things the audience on the card cares about. When the teacher calls 4 minutes, read the Planner's list and write 3 upgrades. <strong>"Make it better" is banned.</strong></div>
   </div>
 
   <div class="footer"><span>Lead Your AI Squad — Run the Quest</span><span>© Future Skills Series</span><span>1</span></div>
@@ -107,12 +111,12 @@
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 4 — Leader Review: Check the Loot</h2>
-  <p>You're the leader again; the paper in your hands is the loot. Read it like your name is on it — because it is. For each check, check one box: <strong>SHIP IT</strong> (good to go) or <strong>RUN IT BACK</strong> (do it again).
+  <p>You're the leader again; the paper in your hands is the loot. Read it like your name is on it — because it is. For each row, mark one box: <strong>SHIP IT</strong> (finished and correct — send it) or <strong>RUN IT BACK</strong> (do it again).
     <br><strong>Party member I'm reviewing:</strong> <span class="blank wide"></span> &nbsp; <strong>Their role:</strong> <span class="blank"></span></p>
   <table class="checkrubric">
     <tr><th>Check</th><th>Evidence (quote it or point to it)</th><th>SHIP IT</th><th>RUN IT BACK</th></tr>
     <tr class="oneof"><td><strong>ACCURACY</strong> — facts match the card? Every ✓ says how we know?</td><td><div class="write"></div></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr class="oneof"><td><strong>TASTE</strong> — right audience and tone for the card, or for anybody?</td><td><div class="write"></div></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td><strong>TASTE</strong> — right audience and tone for the card, or could it be for anyone at all?</td><td><div class="write"></div></td><td class="tick"></td><td class="tick"></td></tr>
     <tr class="oneof"><td><strong>DONE-NESS</strong> — everything the card asked for is here?</td><td><div class="write"></div></td><td class="tick"></td><td class="tick"></td></tr>
   </table>
 
@@ -141,7 +145,7 @@
     </div>
   </div>
 
-  <div class="callout" style="margin-bottom:0"><strong>The leader rule:</strong> if wrong facts ship, the leader signed off — the name on the quest is YOURS.</div>
+  <div class="callout" style="margin-bottom:0"><strong>The leader rule:</strong> if wrong facts ship, the leader said yes to it — the name on the quest is YOURS.</div>
 
   <div class="footer"><span>Lead Your AI Squad — Run the Quest</span><span>© Future Skills Series</span><span>2</span></div>
 </div>

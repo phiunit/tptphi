@@ -15,9 +15,9 @@ slides:
       - "The app didn't guess. How did it learn?"
     notes: "Take 2–3 answers. Land on: every like, skip, rewatch and follow is a signal. You taught it your taste — and the more precisely you signal, the better the feed serves you. Your feed is your taste, written down in likes and skips. WHAT IF a student says 'my feed is random': 'Random is a signal too — what do you skip in the first second? That's a like in reverse.' Nobody raises a hand? Name your own feed first."
   - type: question
-    title: "Here's the flip side"
+    title: "Here's the other side"
     question: "Unless you tell it — or it has saved notes about you — an AI doesn't know your taste. So how does it learn?"
-    notes: "ANSWER (say it, don't show it): the same way the feed did — you teach it. Bridge, verbatim: \"Here's the flip side. Unless you tell it — or it has saved notes about you — an AI doesn't know your taste. Today you write your taste down on one page, and then you use it to make YOUR OWN writing better.\" TRANSITION: \"So what happens when the editor knows nothing about you? Watch.\""
+    notes: "ANSWER (say it, don't show it): the same way the feed did — you teach it. Bridge, verbatim: \"Here's the other side. Unless you tell it — or it has saved notes about you — an AI doesn't know your taste. Today you write your taste down on one page, and then you use it to make YOUR OWN writing better.\" TRANSITION: \"So what happens when the editor knows nothing about you? Watch.\""
   - type: cards
     minutes: 8
     title: "Generic In, Generic Out"
@@ -51,11 +51,11 @@ slides:
     items:
       - { minutes: 5, name: "Draft it yourself", text: "Solo, page 2, Step 1. 3–4 sentences: the About Me for a channel or profile you'd really make. No AI, no partner." }
       - { minutes: 5, name: "Editor's notes", text: "Swap ALL pages. Read THEIR taste file, then write 2 notes on THEIR page 2 — each names a section. No rewriting. Then talk for 1 minute." }
-      - { minutes: 5, name: "Revise it yourself", text: "Swap back. Rewrite your own draft on page 3. Star (*) every change. Your editor's pen stays down." }
+      - { minutes: 5, name: "Revise it yourself", text: "Swap back. Rewrite your own draft on page 3. Star (*) every change. Your editor does not write a single word for you." }
     notes: "DRAFT — WHAT IF 'I don't have a channel': \"The one you WOULD make — a game name, a team, a club, a pet's account.\" TRANSITION: \"Pens down. Swap ALL your pages with your partner. You are now their editor — and page 1 is the only thing you're allowed to know about them.\" NOTES (3 min writing): put the next slide up. WHAT IF the editor rewrites: \"You're the editor. Hand the pen back.\" No section number: \"Which section? No section, no note.\" With devices: run Step 2 once on YOUR projected account — one volunteer's taste file and draft in the copy-ready prompt (Teacher Guide) — and the class checks whether each note names a section. Students never need an account. TRANSITION at 3 min: \"Editors, pens down. Read your two notes out loud to your writer. Writers, one question.\" Then: \"Swap back. Page 3 — your draft, your pen. Star every change.\""
   - type: compare
     title: "What a good note looks like"
-    left: { heading: "GHOST-NOTE (REJECT)", text: "\"Make it funnier. Say: 'Welcome to my chaotic channel!'\"" }
+    left: { heading: "WRITES IT FOR YOU (REJECT)", text: "\"Make it funnier. Say: 'Welcome to my chaotic channel!'\"" }
     right: { heading: "EDITOR'S NOTE (ACCEPT)", text: "\"Section 3 says no textbook voice — 'I enjoy various hobbies' is textbook voice. Which hobby, said your way?\"" }
     notes: "Leave this up while editors write. Three rules: use only the taste file, exactly 2 notes, notes not rewrites. The second the editor writes a sentence, they've become a ghostwriter. Second exemplar pair for the board if needed — reject: \"It's good. Maybe add more.\" accept: \"Section 2 says short and punchy — sentence 3 is 22 words. Which half matters?\""
   - type: list

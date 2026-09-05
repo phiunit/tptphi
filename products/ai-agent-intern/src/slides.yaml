@@ -2,7 +2,7 @@
 # Teacher script lives in the speaker notes; students see only what's on the slide.
 # Minute chips: 7 + 10 + 22 + 6 = 45 (match the lesson plan block for block).
 kicker: The Party Leader Lesson
-subtitle: "An AI agent does a multi-step job on its own — and where your card is vague, it guesses forward. Party leaders don't redo the squad's work: they write the quest card, hand out the roles, and check the loot."
+subtitle: "An AI agent does a whole job, step by step, on its own — and if your card leaves something out, the agent just guesses and keeps going. Party leaders don't redo the party's work: they write the quest card, hand out the roles, and check the loot."
 notes: "Open on this slide while students settle. Worksheet: Run the Quest, one per student (2 pages), plus one sheet of scrap paper per student for squad outputs. Plan teams of 3 (30 students = 10 teams; remainder rule is in the Activity notes). Fully unplugged by design. Deck follows the lesson plan block for block; minute chips top-right match it."
 slides:
   - type: hook
@@ -17,17 +17,17 @@ slides:
   - type: question
     title: "Whose fault was that?"
     question: "The party member's — or the orders?"
-    sub: "An AI agent does a multi-step job on its own — and where your card is vague, it guesses forward."
+    sub: "An AI agent does a whole job, step by step, on its own — and if your card leaves something out, the agent just guesses and keeps going."
     notes: "Take two or three answers. Bridge: \"An AI agent doesn't just answer — it does a whole job in steps: makes a plan, looks things up, uses tools, and hands you a finished thing. Where your quest card is vague, it fills the gap with its best guess and keeps going. That's why the leader checks. You'll never out-work it. You CAN out-lead it.\" TRANSITION: \"Today you learn the leader's loop: quest card, roles, check the loot — then ship it or run it back. Four parts. Board.\""
   - type: cards
     minutes: 10
     title: "The Party Leader's Loop"
     items:
-      - { label: 1, name: Quest Card, text: "Write the job down, all four parts. A vague card makes the squad guess — and guess wrong." }
+      - { label: 1, name: Quest Card, text: "Write the job down, all four parts. Leave something out and the party guesses — wrong." }
       - { label: 2, name: Roles, text: "Nobody solos the raid. Split it: a planner, a scout, a critic — same card, one slice each." }
       - { label: 3, name: Check the Loot, text: "The leader checks every output: accuracy, taste, done-ness. Nothing ships unchecked." }
-      - { label: 4, name: The Verdict, text: "SHIP IT (good to go) or RUN IT BACK (do it again) — with a keep + fix note, specific." }
-    notes: "Write the loop on the board as you go: QUEST CARD → ROLES → CHECK THE LOOT → SHIP IT or RUN IT BACK. Gloss the two verdicts out loud the first time: SHIP IT = good to go; RUN IT BACK = do it again. Each part gets its own slide next; this one is the map."
+      - { label: 4, name: The Verdict, text: "SHIP IT (finished and correct — send it) or RUN IT BACK (do it again) + a keep/fix note." }
+    notes: "Write the loop on the board as you go: QUEST CARD → ROLES → CHECK THE LOOT → SHIP IT or RUN IT BACK. Gloss the two verdicts out loud the first time: SHIP IT = finished and correct, send it; RUN IT BACK = do it again. Each part gets its own slide next; this one is the map."
   - type: cards
     title: "The Quest Card — Four Parts, In Writing"
     items:
@@ -49,27 +49,27 @@ slides:
     sub: "If you have to redo a party member's work, your quest card failed. Fix the card, not just the work."
     notes: "Say it plainly: \"Party leaders don't do the quest twice. If you have to redo a party member's work, your quest card failed. Fix the card, not just the work.\" TRANSITION: \"Three roles. Same card, one slice each. Here they are.\""
   - type: cards
-    title: "Squad Roles — Same Card, One Slice Each"
+    title: "Party Roles — Same Card, One Slice Each"
     items:
       - { label: P, name: Planner, text: "Minutes 0–4: a numbered step list. Card silent? Write \"NOT ON THE CARD.\" Minutes 4–8: a time guess per step; star the riskiest." }
       - { label: S, name: Scout, text: "List every fact the quest needs. Mark each ✓ (we know it for sure — say how) or ? (needs checking — say where)." }
-      - { label: C, name: Critic, text: "Minutes 0–4: write 2 things the audience on the card cares about. At the 4-minute call, read the Planner's list; write 3 upgrades." }
+      - { label: C, name: Critic, text: "0–4 min: write 2 things the audience on the card cares about. When the teacher calls 4 min, read the Planner's list; write 3 upgrades." }
     notes: "KEY — what good output looks like (Game Night card): PLANNER: 1. Pick the games and TV set-up (5 min) 2. Write the flyer title and the when/where line (5 min) 3. ★ Add a 40-word pitch (10 min) 4. Count words, check the rules (3 min) 5. NOT ON THE CARD: who photocopies it, and how many? (Minutes 4–8 add the time guesses and the star.) SCOUT: Friday ✓ (on the card) · gym ✓ (on the card) · 6–8 pm ✓ (on the card) · both TVs actually work? ? (ask whoever runs the gym) · how many 6th graders there are ? (the front office). CRITIC: minutes 0–4, what the audience cares about: which games, and whether friends are going. Upgrades: (1) Put the TVs and the games in the title — 6th graders come for the games, not the date. (2) Cut the 40 words to 25; nobody reads a wall of text on a wall. (3) Add one line for parents: pick-up is at 8. Paper logic: papers never move mid-round; at the 4-minute call the Critic reads the Planner's list over their shoulder. Seat Planner → Scout → Critic so the swap (own paper, one seat left) lands each paper on a fresh reader. Coaching: the planner's NOT ON THE CARD flags are gold — they're the next card's fixes. A scout's fact with no \"how we know\" is a guess wearing a costume. Vague praise from a critic doesn't count. TRANSITION: \"Page 1. Pick your quest. One card per team — everyone copies it. Six minutes.\""
   - type: steps
     minutes: 22
     title: "Activity — Run the Quest"
     items:
       - { minutes: 6, name: "Write the quest card", text: "Teams of 3. Pick a quest — Game Night page or class magazine issue #1 — and write ONE card, all four parts. Everyone copies it." }
-      - { minutes: 8, name: "Squad works", text: "Now switch: YOU play an AI agent. Take a role card; work SILENTLY on your own paper. Papers stay put. No questions — agents can't read minds." }
-      - { minutes: 8, name: "Leader review", text: "Everyone passes their OWN paper one seat left — you're the leader again. Run the CHECK rubric: SHIP IT or RUN IT BACK per check, then the note." }
+      - { minutes: 8, name: "Party works", text: "Now switch: YOU play an AI agent. Take a role card; work SILENTLY on a blank sheet — not this worksheet. No questions: agents can't read minds." }
+      - { minutes: 8, name: "Leader review", text: "Pass that blank sheet one seat left; keep this worksheet — you're the leader again. CHECK rubric: SHIP IT or RUN IT BACK per row, then the note." }
     notes: "WRITE THE CARD — WHAT IF a team stalls on GOAL: \"What would make you say we won?\" TRANSITION at 6 min: \"Cards done. Sit Planner → Scout → Critic. Now switch: for 8 minutes YOU play an AI agent. Take a role card. Silence starts now.\" SQUAD WORKS — in Sana's squad: DeShawn plans, Lucia scouts, Sana critiques. Papers never move mid-round. At the 4-minute call: \"Critics, read your Planner's list over their shoulder — 3 upgrades. Planners, add a time guess to every step and star the one most likely to go wrong.\" Enforce the silence — when a party member asks a question mid-round, answer: \"It's not on the card.\" The frustration is the point. Don't rescue a weak card; the review makes the failure visible and fixable. WHAT IF the class doesn't divide by 3: team of 4 = two critics (both read the plan); team of 2 = drop the critic, the leader does the taste check. 30 students = 10 teams. TRANSITION at 8 min: \"Time. Every party member passes their OWN paper one seat left. You're the leader again — page 2.\" LEADER REVIEW — with the Planner → Scout → Critic seating, Lucia reviews DeShawn's plan, Sana reviews Lucia's facts, DeShawn reviews Sana's upgrades: the Critic never re-reviews the Planner's list. WHAT IF a leader turns harsh: KEEP comes before FIX, and they read the note aloud to their party member. Next slide stays up during the review."
   - type: list
     title: "Check the Loot"
     items:
       - "ACCURACY — Does every fact match the card? Is every ✓ backed by a \"how we know\"?"
-      - "TASTE — Does it fit the audience and tone on the card, or could it be for anybody?"
+      - "TASTE — Does it fit the audience and tone on the card, or could it be for anyone at all?"
       - "DONE-NESS — Is everything the card asked for actually here?"
-      - "Each check: SHIP IT (good to go) or RUN IT BACK (do it again). Quote the evidence."
+      - "Each row: SHIP IT (finished and correct — send it) or RUN IT BACK (do it again). Quote the evidence."
       - "Run-it-back note: KEEP (what works and why) → FIX (the exact change + why)"
     notes: "Leave this up during Leader review. \"Read it like your name is on it — because it is.\" KEY — a filled CHECK row (Lucia reviewing DeShawn's planner list): ACCURACY — SHIP IT: \"Steps 1–4 use Friday, gym, 6–8 pm straight off the card.\" TASTE — RUN IT BACK: \"Step 3 says 'write the pitch' but never says to 6th graders — it could be for anybody.\" DONE-NESS — SHIP IT: \"All four card parts are covered, and the NOT ON THE CARD flag is a plus.\" Exemplar note — KEEP: \"Every step has a time guess and all four card parts are covered.\" FIX: \"Step 3 needs the words 'for 6th graders' — the card names the audience and the plan dropped it.\" WHAT IF a leader turns harsh: KEEP before FIX, read aloud. TRANSITION: \"Loot checked. Last quest: one for your own life. Bottom of page 2.\""
   - type: list
@@ -82,6 +82,6 @@ slides:
       - "3.  Which check would it most likely fail — accuracy, taste or done-ness? Check one; say what you'd look for."
     notes: "Worksheet p.2, solo, 6 minutes. Collect. KEY — #1 exemplar (study plan): GOAL: pass Friday's fractions quiz with at least a B. WHAT WE KNOW: 7th grade math; I have the review sheet and 30 minutes a night, Monday to Thursday. RULES OF THE RUN: only fractions with different denominators, no calculators, nothing due before Wednesday. DONE LOOKS LIKE: a four-night plan, 5 practice problems a night with answers on a separate line. Test: could a stranger do it tomorrow from the card alone? Scoring: Proficient = all four parts labeled and specific; Developing = parts present but vague (\"make it good,\" \"soon\"); Beginning = a wish, not a quest card (\"help me with math\"). #2: any role with a reason tied to the task (scout for a fact-heavy flyer; planner for a schedule) — the reason is what scores. #3: any check with something real to look for (\"accuracy — the quiz date\"; \"done-ness — did it give all four nights?\"). WHAT IF a student writes a wish: \"Which part is missing? Add the one that would stop a stranger from guessing.\" Sentence starters for support: Teacher Guide, p.2."
   - type: closer
-    statement: "Your squad is tireless. The name on the quest is YOURS."
-    sub: "Every AI job runs human → AI → human: you write the card, the AI does the middle, you check the loot. If wrong facts ship, the leader signed off."
+    statement: "Your party is tireless. The name on the quest is YOURS."
+    sub: "Every AI job runs human → AI → human: you write the card, the AI does the middle, you check the loot. If wrong facts ship, the leader said yes to it."
     notes: "Close on this — it's the leader rule from the bottom of the worksheet. This is Lesson 6 of 6 (Lesson 6 — in the unit bundle, or sold separately); the unit ends here, and every lesson stands alone. (If your class did the earlier lessons: the quest card is the genie-proof prompt, the accuracy check is the fact desk, the taste check is the feedback eye — they had the skills; today they found out the skills make them a leader.) With devices: the five-line block in the lesson plan runs one team's card on your projected account and the class checks its output with the same rubric. Hedge if asked about jobs: AI agents take over tasks, not whole jobs — nobody can promise the final count."
