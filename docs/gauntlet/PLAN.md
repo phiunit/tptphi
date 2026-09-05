@@ -288,3 +288,11 @@ item. US spelling and "check the box", never "tick", on every student page and i
   two, hand over the third); L6 figures get a ground line/platform so they don't read as cropped; L4 strike in gold
   with a short inserted bar above the caret. Three renders each, 12px gate green, view the 200px thumbnails.
 - `npm run sheet` for all seven at the end; `npm run audit` (whole repo) GREEN.
+## Student-read fixes (round 2, one builder, all six lesson folders — student-facing text only: worksheet.html, slides.yaml, and any plan/TG line that quotes the same sentence)
+Apply every item in docs/gauntlet/2026-09-03/r2-critic-student.md exactly as written there (the fixes are lead-approved
+paste-ready wording). Lead rulings on the choices it leaves open: L6 uses "party" on student pages (rename "Squad Roles"
+slide title to "Party Roles"; the product name "Lead Your AI Squad" stays); "Be honest with yourself" in L1 and L4;
+L2 role renamed "the Caller" on worksheet, slides, plan and TG wherever "Request Line" appears; L2 ruled lines 26px
+only if p2 stays ≤ 45% blank and the print gate stays green. The agent definition sentence on L6 stays identical
+everywhere it appears — update all copies (worksheet panel, plan, slide 3, TG) to the new plain wording.
+Verification: `npm run audit -- <slug>` GREEN per lesson; readability still ≤ 8.5; view only the changed pages.

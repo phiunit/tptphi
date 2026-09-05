@@ -1,0 +1,10 @@
+# Round 2 · critic student (Devon 12 / Mariam 13 ELL; fresh) — L1 SHIP · L2 SHIP · L3 SHIP · L4 REJECT · L5 REJECT · L6 REJECT. All six hooks carry the concept.
+MAJOR L4 Section 1 tone words unglossed (chill, blunt, dreamy, bold, mysterious, poetic) → gloss in parentheses; L4 opening panel = one 47-word sentence → four short sentences.
+MAJOR L5 Defend It: "frame", "claim", "pace" unglossed; nothing says fill the frame before speaking → rewrite given; checkbox "Slowed down on 'because'".
+MAJOR L6 Step 3 "on your own paper" reads as the worksheet → "on a blank sheet of paper — not this worksheet … pass that blank sheet; keep this worksheet".
+MINOR L1: ghostwriter unglossed on slide 6; "cover everything" → "put your hand over"; "Be real with yourself" → "Be honest with yourself" (L4 too); slide 7 "critique" → plain.
+MINOR L2: "Request Line … radio show" → "the Caller"; "Your checks are the data" → "Your check marks are what we count up at the end"; slide 9 "erred … ran lighter" → plain; lines at 24px floor → 26px if room.
+MINOR L3: "Deja, who runs The Comet" → "Deja, the editor of The Comet"; slide 8 "tick" → "check a stamp"; Desk-words gloss line too small → same size as the method list.
+MINOR L4: "punchy (gets to the point fast)"; "pen stays down" → plain; slide 3 "flip side", slide 9 "GHOST-NOTE" → plain.
+MINOR L5: "You run Big Dream Studio" vs "Nia owns" → "You're on the crew at…"; slide 5 "hours back for the artists" → "gets hours of his week back"; KEEP HUMAN exit two lines; slide 4/10 titles → "Three Columns, One Question" / "Say It Out Loud".
+MINOR L6: "For each check, check one box" → "For each row, mark one box"; "SHIP IT = finished and correct, send it"; "vague … guesses forward" → "if your card leaves something out, the agent just guesses and keeps going"; "signed off" → "said yes to it"; "4-minute call" → "when the teacher calls 4 minutes"; "or for anybody?" → "or could it be for anyone at all?"; Squad vs Party → one word on student pages; role cards 9pt → 10pt.
