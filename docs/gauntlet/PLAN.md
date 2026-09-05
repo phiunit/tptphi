@@ -218,3 +218,14 @@ item. US spelling and "check the box", never "tick", on every student page and i
   writing. A ghostwriter writes it for you."), rest to notes.
 - Listing: split the 60-word hook sentence; "works the same way" → "needs the same thing: you telling it";
   `npm run sheet -- ai-taste-file` after edits.
+## L5 ai-boring-work (round 2)
+- Cover sub → "AI takes tasks first, not whole jobs." (7 words, one line).
+- Share-out (plan, worksheet p2, slide 10 + notes, TG): "Each Speaker says the frame once — 30 seconds each.
+  Listener 1 marks Speaker 1's sheet, Listener 2 marks Speaker 2's." What-if: "Odd number of pairs → one trio of
+  pairs rotates; sample that group." Split Pairs-of-pairs 5 min / Whole-class 2 min (block stays 8).
+  Replace "every student is scored" with "each student's claim is scored" wherever it appears (TG, description).
+- "tick" → "check" everywhere (worksheet, slide 10, TG ×10).
+- Worksheet: `.blank` height 24px; "— and the trade is ___" stays, but "because ___" becomes its own full-width
+  line; AUTOMATE panel adds "No decisions to make."
+- Deck slide 12: "The people who win with AI tend to be the ones who decide what it does." (or drop the line).
+- `npm run sheet -- ai-boring-work` after edits; confirm the Preview PDF exists after the audit.
