@@ -271,3 +271,20 @@ item. US spelling and "check the box", never "tick", on every student page and i
   · Lesson-plan section naming: leave as is (lead: the layouts differ by design; not worth a six-file churn now).
 - Verification: `npm run audit` (whole repo) GREEN; view the bundle cover-200, the bundle preview pages, and one
   cover per lesson at 200px in a contact sheet.
+### Additions from the buyer critic (same unit + bundle builder)
+- Bundle: title → "AI Literacy Unit Bundle: 6 No Prep Lessons | Middle School 6-8 | Save 30%"; cover badge →
+  "SAVE 30%" (replaces "COMPLETE UNIT" above); price sentence → "$14 for all six — the five paid lessons alone are
+  $20. Save 30%."; `standards:` adds CCSS ELA RI.6.8, W.6.5, SL.6.1, SL.6.4 (text verbatim from the registry) and the
+  description's Standards line lists all of them.
+- scripts/preview.mjs (all products): band text "FULL DOWNLOAD: PLAN · WORKSHEET + FILLABLE · GUIDE · SLIDES" (bundle:
+  "FULL DOWNLOAD: 6 LESSONS · 31 FILES"), sized to fit inside 612pt with margin, ~35% opacity; sample order = cover,
+  worksheet-p1, lesson-plan-p1, then the teacher guide's LAST page (never a key page).
+- L4 description sentence two names the activity: "…you taught it, one like at a time — so in My Taste File + The
+  Editor's Chair, students write a one-page style guide, draft an About Me, take exactly two notes, and revise it
+  themselves."
+- Every lesson description closing line adds: Search the store for "AI Literacy Unit Bundle".
+- L2 short_name → "What's in the Playlist?" (filenames drop the "?" automatically); bundle references match.
+- Cover art polish: L5 tiles → three tiles reading "AI" / "AI + YOU" / "YOU" (one per column, robot over the first
+  two, hand over the third); L6 figures get a ground line/platform so they don't read as cropped; L4 strike in gold
+  with a short inserted bar above the caret. Three renders each, 12px gate green, view the 200px thumbnails.
+- `npm run sheet` for all seven at the end; `npm run audit` (whole repo) GREEN.
