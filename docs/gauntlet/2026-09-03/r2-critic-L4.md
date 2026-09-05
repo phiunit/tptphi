@@ -1,0 +1,5 @@
+# Round 2 · critic L4 (fresh) — teacher-guide SHIP; cover / lesson-plan / worksheet / deck / listing REJECT. A/B: all 6 picks favour the rebuilt pages.
+BLOCKER lesson-plan PDF + preview missing from dist/zip (print-spill gate removed it) → trim LP to fit print, re-render; validate must check every includes: file exists in dist and zip.
+MAJOR cover art reads as two small objects at 200px (card + note) — one bold glyph that carries the analogy. MINOR sub "Generic in, generic out." is a slogan (lead: keep — it is the lesson's core line).
+MAJOR "tick" on student page (S1, S2), slide 7, plan; → "check". MAJOR Section 3 "Finish it two ways" needs numbered lines "1. Editor, never ___ / 2. …".
+MINOR: LP editor-notes 5 min includes two packet swaps — say "swap = 30 seconds, count it down"; p1 intro panel split into two sentences; "Pet Peeves (things you hate)"; draft box 132 → 160px; deck slide 12 manual "1." double markers; slide 6 sub → one line; slide 1 title one line; listing hook sentence split, "works the same way" → "needs the same thing: you telling it"; UPLOAD_SHEET stale (regen); Preview missing (regen).

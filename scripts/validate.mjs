@@ -82,7 +82,7 @@ for (const p of listProducts(process.argv[2])) {
   if (Array.isArray(p.meta.tags) && p.meta.tags.length < 3) errs.push('fewer than 3 tags');
   if (Array.isArray(p.meta.standards) && (p.meta.standards.length < 3 || p.meta.standards.length > 5))
     errs.push(`${p.meta.standards.length} standards (rule: 3-5 real, taught-and-assessed codes)`);
-  errs.push(...checkStandards(p.meta), ...checkGuideText(p), ...checkStatus(p), ...checkRetired(p));
+  errs.push(...checkStandards(p.meta), ...checkGuideText(p), ...checkStatus(p), ...checkRetired(p), ...checkIncludes(p));
   const dist = path.join(p.dir, 'dist');
   const distFiles = fs.existsSync(dist) ? fs.readdirSync(dist) : [];
   if (!distFiles.some(f => f.endsWith('.pdf'))) errs.push('no rendered PDF in dist/ (run npm run render)');
@@ -91,3 +91,21 @@ for (const p of listProducts(process.argv[2])) {
   else console.log(`✓ ${p.slug} — upload-ready (${distFiles.length} assets)`);
 }
 process.exit(fail ? 1 : 0);
+
+// Every file the listing promises must exist in dist/ and inside the product zip (a print-side spill can
+// delete a PDF at render time; the listing must never promise a file the buyer won't get).
+import { execFileSync as _exec } from 'node:child_process';
+function checkIncludes(p) {
+  const errs = []; const distDir = path.join(p.dir, 'dist');
+  const inc = Array.isArray(p.meta.includes) ? p.meta.includes.map(String) : [];
+  const zip = fs.existsSync(distDir) ? fs.readdirSync(distDir).find(f => f.endsWith('.zip')) : null;
+  let zipList = [];
+  if (zip) { try { zipList = _exec('unzip', ['-Z1', path.join(distDir, zip)]).toString().split('\n'); } catch {} }
+  for (const raw of inc) {
+    const m = String(raw).match(/^\s*([^()]*?\.(pdf|pptx))\b/); if (!m) continue; // items may carry a "(what it is)" gloss
+    const base = path.basename(m[1].trim());
+    if (!fs.existsSync(path.join(distDir, base))) errs.push(`includes: "${base}" is promised but missing from dist/`);
+    else if (zip && !zipList.includes(base)) errs.push(`includes: "${base}" is missing from the zip`);
+  }
+  return errs;
+}

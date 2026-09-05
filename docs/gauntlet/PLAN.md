@@ -206,3 +206,15 @@ item. US spelling and "check the box", never "tick", on every student page and i
 - TG: "seven continents" → "(seven in the model US schools use)" in the safe-to-confirm line · Verdict Guidance
   for #3 adopts the key's framing ("KILL the ending, keep the true facts").
 - Deck: slide 11 Exit #2 adds "— or one you expect to see" · slide 7 "he's" → "they're".
+## L4 ai-taste-file (round 2)
+- Lesson plan overflows in PRINT media (PDF was 3 pages for 2 .page divs) → trim so `npm run audit` is green and
+  the Lesson Plan PDF + Preview exist again. Editor's-notes block: add "swap = 30 seconds, count it down".
+- "tick" → "check" everywhere (worksheet S1/S2, slide 7, plan, TG key row).
+- Worksheet Section 3: number the two lines "1. Editor, never ___" / "2. Editor, never ___". Intro panel → two
+  sentences, one aside max. "Pet Peeves (things you hate)". Draft box 132 → 160px if p2 stays ≤ 45% blank.
+- Cover art → ONE object: the feed card, ≥ 30% of frame width, gold heart, with the editor's mark drawn ON the
+  card (one text bar struck through + a caret). Drop the separate note page. Sub stays "Generic in, generic out."
+- Deck: slide 12 items lose the manual "1." numbers; slide 6 sub → one line ("An editor gives notes on YOUR
+  writing. A ghostwriter writes it for you."), rest to notes.
+- Listing: split the 60-word hook sentence; "works the same way" → "needs the same thing: you telling it";
+  `npm run sheet -- ai-taste-file` after edits.
