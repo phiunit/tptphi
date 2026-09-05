@@ -55,7 +55,7 @@ slides:
     minutes: 5
     title: "Debrief — The Real Playlists"
     left: { heading: "YOUR PLAYLIST", text: "Who asked for Spanish and got English?\nWho asked for slow and got medium?\nWho asked for quiet and got nothing quiet?" }
-    right: { heading: "REAL PLAYLISTS", text: "Voice assistants have misheard uncommon accents and kids more often.\nFace tools got darker skin wrong more often; most of their training photos showed lighter skin.\nYour feed learned from millions of users." }
+    right: { heading: "REAL PLAYLISTS", text: "Voice assistants have misheard rare accents and kids more often.\nPhoto tools got darker skin wrong more; most photos were light.\nYour feed learned from millions of users." }
     notes: "2–3 pairs call out one gap they found (1 min). Left panel is questions only — the answers, for you: Tomás (zero Spanish tracks), Keisha (medium is not slow), Jordan (nothing quiet exists). Nobody put bad songs in; they were never there. Connect: \"Your playlist failed Tomás and Keisha. Real playlists fail real people the same way.\" Walk the three real playlists (Teacher Guide p.2, 3 min): voice assistants understand best the voices that filled their training audio; face-analysis tools have had higher error rates on darker skin when training photos leaned lighter (documented in 2018 research); a recommendation app's playlist is millions of people's viewing behavior — your own history is the request. Handle with care: some students in the room are the people these gaps mishear. Keep the frame \"the playlist failed them, and playlists can be fixed\" — never \"the tech doesn't like you.\""
   - type: question
     title: "The big question"
