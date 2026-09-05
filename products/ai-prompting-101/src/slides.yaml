@@ -33,15 +33,15 @@ slides:
     notes: "Build the right-hand prompt on the board one part at a time, naming each: Purpose (7th grade history essay, printing press), Requirements (3 theses, 2 pieces of evidence each, don't write it), Output (bullet list). With devices: run the right-hand prompt live. WHAT IF someone says it's too long: count it — three sentences. \"Three sentences now, or forty pages of NASA history later. Your call.\""
   - type: quote
     quote: "AI is your editor, not your ghostwriter."
-    sub: "It gives a second opinion on YOUR work. It doesn't hand in work with your name on it. See the last sentence — \"don't write it for me.\""
-    notes: "Say it plainly and move on; the 'Be real with yourself' box on the worksheet repeats it. TRANSITION: \"Your turn. Page 1: three kids typed cursed wishes. Fix all three — every part, P, R and O, every time. Solo. Ten minutes.\""
+    sub: "A ghostwriter writes the whole thing for you and lets you put your name on it. An editor gives a second opinion on YOUR work. See the last sentence — \"don't write it for me.\""
+    notes: "Say it plainly and move on; the 'Be honest with yourself' box on the worksheet repeats it. TRANSITION: \"Your turn. Page 1: three kids typed cursed wishes. Fix all three — every part, P, R and O, every time. Solo. Ten minutes.\""
   - type: steps
     minutes: 20
     title: "Activity — Cursed Wish Repair Shop"
     items:
       - { minutes: 10, name: "Repair", text: "Solo. Fix Amara's, Mateo's and Yuki's cursed wishes on page 1 — all three parts, P, R and O, every time." }
       - { minutes: 7, name: "Break it", text: "Swap sheets. Be the Worst Genie Ever on page 2 of your partner's sheet: say each twist out loud, check the boxes, write your best one. Swap back." }
-      - { minutes: 3, name: "Showcase", text: "Two or three before-and-afters read aloud. With devices: run the best one live and critique what comes back." }
+      - { minutes: 3, name: "Showcase", text: "Two or three before-and-afters read aloud. With devices: run the best one live and say what came out right and what came out wrong." }
     notes: "REPAIR: circulate; read a stuck student's repair aloud in a genie voice. WHAT IF the same repair three times: \"What does Mateo need that Yuki doesn't? A plan is not a story — O has to change.\" Finished early → Extension (a wish that can't be genie-proofed in 50 words). TRANSITION at 10 min: \"Pens down. Swap sheets. You are now the Worst Genie Ever, and page 2 is where you do your damage.\" BREAK IT: put the next slide up. WHAT IF a partner checks every box: make them say the twist out loud — no twist, the ✓ stands. SWAP BACK: \"Sheets back with their owners. Genies, point at the ONE wish you could NOT twist. That's the one we want to hear.\" SHOWCASE: 2–3 pairs. WHAT IF the live AI answer is bad: \"Which part of the wish let it do that?\" Add a rule, run it again. Then: \"Your OWN sheet, bottom of page 2. Before you write, one more rule about genies.\""
   - type: list
     title: "Genie-Proof Checklist"
@@ -67,5 +67,5 @@ slides:
     notes: "Solo, 6 minutes. Collect. KEY — Exit #1: any prompt with P, R and O present and specific; part two is proficient if it shows the short prompt lets the genie choose (\"it would explain what 6th grade math is\"). Exit #2: the planted fact is \"first-ever photo of a black hole in 2009\" — false; the Event Horizon Telescope image of M87's black hole was released in April 2019. Proficient = names that sentence AND a real place to check it (science textbook, NASA's website, a librarian). Accept a student who flags another sentence as checkable — spotting a checkable claim is the skill. Not accepted: \"I'd check it on AI.\" WHAT IF \"it all sounds right\": \"Which sentence has a number or a date in it? Start there.\""
   - type: closer
     statement: "Use AI to think WITH you, not FOR you."
-    sub: "Be real with yourself: if the genie does your homework, your name is on a wish you never earned — and you'd know it."
+    sub: "Be honest with yourself: if the genie does your homework, your name is on a wish you never earned — and you'd know it."
     notes: "Close on this. This lesson stands alone. Next in the unit: What's in the Playlist? (Lesson 2 — in the unit bundle, or sold separately) — where an AI's answers even come from."
