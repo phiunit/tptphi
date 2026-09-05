@@ -39,16 +39,16 @@ slides:
     right: { heading: "LATERAL READING", text: "Leave the answer. Open a second, independent source — encyclopedia, textbook, a new search tab. Does it agree?" }
     notes: "Students' instinct is to ask the AI again. Name it as the trap before the activity. With devices: show a new search tab for one CHECK claim from the warm-up."
   - type: quote
-    quote: "Don't ask the suspect if he's innocent."
+    quote: "Don't ask the suspect if they're innocent."
     sub: "Asking the same AI \"are you sure?\" is not a check. LEAVE the answer, open a second, independent source. That's lateral reading."
     notes: "Say it plainly and move on. This is the line students quote back all year."
   - type: steps
     minutes: 21
     title: "Activity — The Fact Desk at The Comet"
     items:
-      - { minutes: 7, name: "Round 1", text: "Partners work Draft #1 (Priya's Moon column) together: underline, mark C or S, log where you'd check, tick a verdict, write the note." }
+      - { minutes: 7, name: "Round 1", text: "Partners work Draft #1 (Priya's Moon column) together: underline, mark C or S, log where you'd check, check a verdict box, write the note." }
       - { minutes: 10, name: "Round 2", text: "One partner leads Draft #2 (Theo's quiz page), the other Draft #3 (Marcus's invention feature). At \"Swap!\" double-check each other before you tick." }
-      - { minutes: 4, name: "Verdicts out loud", text: "Each desk announces one verdict plus its best evidence. We tally RUN / FIX / KILL on the board and argue out disagreements." }
+      - { minutes: 4, name: "Verdicts out loud", text: "Per draft, one desk per stamp announces its verdict plus its best evidence. Everyone else adds a tally mark on the board." }
     notes: "Deja's note is at the top of the worksheet: no story gets printed until the desk checks it. Play the editor, not the answer key — when a desk asks \"is this one true?\", answer \"that's a checkable claim — where's your second source?\" Keep deadline energy: \"Presses roll in five!\" ANSWER KEY (notes only): #1 — first crewed Moon landing was 1969, not 1959 (pushback to expect: the uncrewed probe Luna 2 reached the Moon in 1959 — credit it, but \"astronauts landed\" is still false); the Moon reflects sunlight, it makes none of its own; its ending (brightest night-sky object) is true for the wrong reason. Verdict FIX. #2 — Everest is in the Himalayas in Asia, not the Andes; Australia's capital is Canberra, not Sydney; the three-continents ending no longer follows. Verdict FIX. #3 — Alexander Graham Bell patented the telephone in 1876, not Edison; the Edison quote is fabricated for this exercise and has no source. Verdict KILL. No draft earns RUN today — tell the class that's realistic. Call \"Swap!\" at the 7-minute mark of Round 2. Early finishers: the Extension — write a smooth passage with one planted error and trade. Support: Drafts #1–2 only, hint \"each draft hides two false facts (plus a shaky ending).\""
   - type: list
     title: "Stamp It — Desk Rules"
@@ -72,7 +72,7 @@ slides:
     title: "Exit Ticket — Last Check"
     items:
       - "1.  In your own words: how can AI sound 100% sure and still be wrong?"
-      - "2.  One claim you saw online this week — and a second source that is NOT where you first saw it."
+      - "2.  A claim you saw online this week — or one you expect to see — and a second source NOT where you saw it."
     notes: "Bottom of the worksheet. Collect; the Teacher Guide has the scoring key. Full credit on #1 names the mechanism (predicts likely words, doesn't check them). Full credit on #2 names a specific second source — \"Google it\" gets the push-back: \"Google shows you ten sources. Which one, and why that one?\""
   - type: closer
     statement: "Smooth is not the same as true."
