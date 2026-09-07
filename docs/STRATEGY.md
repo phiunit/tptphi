@@ -55,3 +55,33 @@ lead every AI listing with "no student AI accounts needed."
 ## The moat
 Speed. This factory can ship a polished, aligned product in one session. TPT sellers average
 one product a month. Publish weekly, own the "future skills" niche before it's crowded.
+
+## News desk — trending stories as fuel, not as products (decided 2026-09-07)
+Research: docs/research/2026-09-07-news-desk-scan.md. The evidence says dated news editions are the commodity floor,
+carry the only real copyright exposure, and fall under TPT's growing-bundle refund rules; the reviews sit on undated,
+reusable template packs. So:
+- **Engine product — "Future Skills News Desk" ($5):** 10 reusable one-page frames, each a method we already own
+  applied to ANY story a teacher brings: Fact Desk (claims → second source → verdict) · The Trade (who wins / loses /
+  what goes wrong) · Write the Rule (tradeoff grid → your 3-rule policy) · Who Pays for Free? · Unit Rate Receipt ·
+  Percent Change Card · Copy, Style, or Person? · Source Check (who paid for this study?) · Permission Slip (what may an
+  AI agent touch) · Risk Grid. Plus: a teacher script per frame, one rubric, a "how to pick a classroom-safe story" page,
+  and 6 dated WORKED EXAMPLES (labelled "Example · September 2026", every fact attributed "as reported by <outlet>,
+  <date>", every number logged in products/<slug>/FACTS.md with the primary source and the date it was re-verified).
+  Zero third-party text or images. Undated title. Examples get refreshed by updating the product (buyers receive
+  updates), never sold as a series.
+- **Free frame ($0):** the Fact Desk frame alone, now — the follower harvest for the fall window.
+- **Calendar unit — "Media Literacy Week" 5-day mini unit ($10, list by Oct 1):** five frames + five worked examples,
+  unplugged, aimed at Digital Citizenship Week (≈ Oct 19–23, verify) → Media Literacy Week (Oct 26–30). We do NOT build
+  an election product: the midterms are partisan by construction and our brand is "safe to teach".
+- **Rules for any story we touch:** two independent reputable sources or it does not exist; every printed number traced
+  to a primary source and re-verified by someone with direct access before render; "alleged" for any lawsuit; name
+  officeholders only as officeholders; if the lesson needs a student to pick a political side, it is out.
+- **Pricing table update:** the current-events shelf bears a $14.99 year-set tier and $25–64 mega-bundles that our
+  bands did not include; revisit after the engine has reviews.
+- **Anti-slop signal:** TPT now algorithmically demotes stores it associates with AI-generated content (Chalkbeat,
+  Aug 3 2026). Our hand-drawn motifs, scripted teacher lines and per-item keys are the visible craft; keep them
+  conspicuous on covers and previews. Open question for Phi: an "about the author" line in teacher guides would be the
+  strongest human signal but conflicts with the generic-branding rule — his call.
+- **Calendar hooks added:** Constitution Day Sept 17 (federal mandate; off-line for us) · Digital Citizenship Week
+  ≈ Oct 19–23 · Global MIL Week Oct 24–31 · U.S. Media Literacy Week Oct 26–30 · midterms Nov 3 (avoid) · CSEdWeek
+  Dec 8–14 · Financial Literacy Month April.
