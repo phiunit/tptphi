@@ -42,7 +42,8 @@ Updated 2026-09-05 08:20 UTC by the lead.
 - L2 critic running (2026-09-09). Next: L3, then L4 + L6.
 
 ### News Desk (PLAN.md "NEWS DESK BUILD")
-- Builder A running: frames.html (10 frames), lesson-plan.html, cover, product.yaml. Builder B queued: teacher-guide, examples + FACTS.md, slides.yaml, then the free Frame 1 product.
+- Builder A DONE 633461a: frames.html (10 frames, 247 fillable fields, FK 2.8), lesson-plan.html (2 pp), cover (3 iterations, lead-approved), product.yaml (title 77 chars). Lead rulings: includes grows to six files (Worked Examples PDF ships); TG exactly 4 pp; examples exactly 4 pp; Frame 5 cites 6.RP.A.3c only (3b not on the list — revisit if a critic flags it).
+- Builder B running: teacher-guide, examples + FACTS.md, slides.yaml, then news-desk-frame-free.
 - Status stays `draft` (catalog + yaml) until every FACTS.md line is verified — validate blocks `rendered` while PENDING.
 
 ## Open (needs a decision or a human)
