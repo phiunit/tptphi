@@ -36,8 +36,18 @@ Updated 2026-09-05 08:20 UTC by the lead.
 
 - Deferred to round 3 (lead): unify lesson-plan p1 section layout (L1 inline chips / L2–L4 row / L5–L6 float) — two critics flagged it.
 
+### Round 3 (started 2026-09-09) — fresh blind critics per lesson, waves of two
+- L1 critic done → r3-critic-L1.md: LP/WS/TG SHIP, listing REJECT (description promise the plan didn't keep). 10 small fixes accepted, title overrule logged. Fix builder running.
+- L5 critic done → r3-critic-L5.md: cover/TG/listing SHIP; LP/WS/deck REJECT on one root cause (Defend It sheet handoff unwritten) + narrow exit-ticket job field. Procedure decided by lead; fix builder running (same builder as L1, disjoint files).
+- Next critic pair: L2 + L3, then L4 + L6.
+
+### News Desk (PLAN.md "NEWS DESK BUILD")
+- Builder A running: frames.html (10 frames), lesson-plan.html, cover, product.yaml. Builder B queued: teacher-guide, examples + FACTS.md, slides.yaml, then the free Frame 1 product.
+- Status stays `draft` (catalog + yaml) until every FACTS.md line is verified — validate blocks `rendered` while PENDING.
+
 ## Open (needs a decision or a human)
 - HUMAN GATE (Phi): TPT bundle with a $0 child — confirm at upload; fallback is the bundle zip (already packs all six).
 - HUMAN GATE (Phi): open each .pptx in real PowerPoint/Keynote once before upload (LibreOffice unavailable here).
-- Student critic (wave 3, running). Then Round 3: fresh critics on every surface REJECTed in round 2 (L1 lp/ws/tg/listing · L2 deck/listing · L3 lp/ws · L4 cover/lp/ws/deck/listing · L5 all · L6 lp/ws/tg/deck).
+- Round 3 in progress (see Agreed). Remaining critics: L2, L3, L4, L6.
+- HUMAN GATE (Phi): FACTS.md verification for news-desk-frames worked examples before status `rendered`; "about the author" line decision (STRATEGY.md News desk).
 - Idea (lead, not yet agreed): a GLOSS_TERMS gate — idioms allowed on student pages only if glossed in the same panel.
