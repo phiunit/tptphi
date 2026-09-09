@@ -39,7 +39,8 @@ Updated 2026-09-05 08:20 UTC by the lead.
 ### Round 3 (started 2026-09-09) — fresh blind critics per lesson, waves of two
 - L1 critic done → r3-critic-L1.md: LP/WS/TG SHIP, listing REJECT (description promise the plan didn't keep). 10 small fixes accepted, title overrule logged. FIXED 77234a3 (audit green).
 - L5 critic done → r3-critic-L5.md: cover/TG/listing SHIP; LP/WS/deck REJECT on one root cause (Defend It sheet handoff unwritten) + narrow exit-ticket job field. Procedure decided by lead. FIXED 77234a3 (audit green; job field 59 → 469 pt).
-- L2 critic running (2026-09-09). Next: L3, then L4 + L6.
+- L2 critic done → r3-critic-L2.md: cover SHIP, everything else REJECT on one root cause (Exit #3 in three phrasings, one line for a two-part item) + Frame block untimed against handwriting speed. All 16 accepted. FIXED (see commit below): retimed 2·8·7·3, .addcard boxes 104px (field 48.8pt), Exit #2/#3 two lines each. Builder flags accepted: slide 8 drops the feed line to fit the compare gate; Exit #2 condensed on slide 11 (list gate).
+- L3 critic running. Next: L4 + L6.
 
 ### News Desk (PLAN.md "NEWS DESK BUILD")
 - Builder A DONE 633461a: frames.html (10 frames, 247 fillable fields, FK 2.8), lesson-plan.html (2 pp), cover (3 iterations, lead-approved), product.yaml (title 77 chars). Lead rulings: includes grows to six files (Worked Examples PDF ships); TG exactly 4 pp; examples exactly 4 pp; Frame 5 cites 6.RP.A.3c only (3b not on the list — revisit if a critic flags it).

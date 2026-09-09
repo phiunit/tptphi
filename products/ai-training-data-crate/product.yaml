@@ -24,11 +24,11 @@ description: |
 
   An AI is a music app and its training data is the playlist. It can only mix what is in the playlist.
 
-  In Playlist Check, your students become a recommendation AI and serve six classmates' requests from one 12-song playlist.
+  In Playlist Check, your students become a recommendation AI and serve six classmates' requests plus one live one from one 12-song playlist.
 
-  You open as AutoMix, the one-playlist music app. Its whole library is 12 songs, all loud, all fast, all party. Ask it for study music, a slow last-dance song, or a song in Spanish for grandma's birthday. It serves a loud party track every time, with total confidence. Is the app broken, or is its playlist?
+  You open as AutoMix, the one-playlist music app. Its whole library is 12 songs, all loud, all fast, all party. Ask it for study music, a slow last-dance song, or a song for grandma's birthday dinner. It serves a loud party track every time, with total confidence. Is the app broken, or is its playlist?
 
-  That question is how students discover where AI bias actually comes from. Direct instruction breaks how AI learns into three moves: INPUT is the playlist, PATTERNS is the training, OUTPUT is the prediction. That is pattern prediction from examples, not magic. Pairs then work the request line and tick a Fit box for every serve. They write a Playlist Gap Report naming who the app serves well and who it leaves out.
+  That question is how students discover where AI bias actually comes from. Direct instruction breaks how AI learns into three moves: INPUT is the playlist, PATTERNS is the training, OUTPUT is the prediction. That is pattern prediction from examples, not magic. Pairs then work the request line and check a Fit box for every serve. They write a Playlist Gap Report naming who the app serves well and who it leaves out.
 
   Next they practice repeat-then-add discussion, then Fix the Playlist by inventing the missing cards. AI bias usually comes from gaps in the data, not a villain in the code, and they find that out for themselves. The debrief maps their playlist gaps to real machine learning examples. Voice assistants and accents, photo tools and skin tone, one-vibe recommendation feeds. The exit ticket asks them to diagnose a brand-new lopsided AI using the word "playlist."
 

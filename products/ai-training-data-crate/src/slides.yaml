@@ -2,7 +2,7 @@
 # Teacher script lives in the speaker notes; students see only what's on the slide.
 title: "What's in the Playlist?"
 kicker: The Training Data Lesson
-subtitle: "An AI is a music app, and its training data is the playlist. It can only mix what's in the playlist — so today you'll BE the app and find out what a one-vibe playlist (all loud, all fast, all party) does to everyone who asks."
+subtitle: "An AI is a music app; its training data is the playlist. Today you'll BE the app."
 notes: "Open on this slide while students settle. Worksheet: Playlist Check, one per student — each student fills their OWN sheet. Fully unplugged — no devices needed."
 slides:
   - type: hook
@@ -38,9 +38,9 @@ slides:
     minutes: 20
     title: "Activity — Playlist Check"
     items:
-      - { minutes: 3, name: "Setup", text: "Pairs. Partner A = the App. Partner B = the Caller. The 12 cards are your playlist." }
-      - { minutes: 9, name: "Serve the Caller", text: "Six requests. App names the card; both write it and check one Fit box. Swap after #3." }
-      - { minutes: 5, name: "Playlist Gap Report", text: "Who does the playlist serve well? Who does it leave out? Repeat your partner, then add." }
+      - { minutes: 2, name: "Setup", text: "Pairs. Partner A = the App. Partner B = the Caller. The 12 cards are your playlist." }
+      - { minutes: 8, name: "Serve the Caller", text: "Six requests. App names the card; both write it and check one Fit box. Swap after #3." }
+      - { minutes: 7, name: "Playlist Gap Report", text: "Who does the playlist serve well? Who does it leave out? Repeat your partner, then add." }
       - { minutes: 3, name: "Fix the Playlist", text: "Invent new cards for the biggest gaps — at least 2. Which request still has nothing?" }
     notes: "Setup: the 12 song cards ARE the app's training data — cut them apart or just point. Odd number? A trio: two Callers, one App, swap twice. Serve: work the six printed requests (Priya, Nia, Tomás, Keisha, Malik, Jordan); end with one live request from a neighboring pair. Can't agree on a Fit? Each writes their own mark — disagreement is data; save it for the debrief. Gap Report: enforce the rule out loud — before you add your idea, repeat your partner's, then add to it. A pair writes \"needs more songs\"? Ask WHO asked for something that wasn't there. Fix: push past \"add one slow song\" — Tomás still has nothing. KEY: Tomás, Keisha and Jordan are the built-in failures — zero Spanish, nothing slow, nothing quiet."
   - type: list
@@ -49,14 +49,13 @@ slides:
       - "Rule 1 — You can ONLY serve cards from the playlist. No inventing songs mid-game."
       - "Rule 2 — You never say no. Serve the closest card you've got — a music app always gives you SOMETHING."
       - "Rule 3 — Check ONE Fit box (Perfect / Kind of / Nothing) honestly, on your own sheet."
-      - "Fit boxes:  Perfect fit  ·  Kind of fits  ·  Nothing fits  — check ONE per request."
     notes: "Leave this up during Serve the Caller. Circulate. Answer key is in the Teacher Guide p.1 — Priya and Malik should be Perfect fit; Nia Kind of fits at best (Cool Down is medium, still a party track); Tomás, Keisha and Jordan Nothing fits."
   - type: compare
     minutes: 5
     title: "Debrief — The Real Playlists"
     left: { heading: "YOUR PLAYLIST", text: "Who asked for Spanish and got English?\nWho asked for slow and got medium?\nWho asked for quiet and got nothing quiet?" }
-    right: { heading: "REAL PLAYLISTS", text: "Voice assistants have misheard rare accents and kids more often.\nPhoto tools got darker skin wrong more; most photos were light.\nYour feed learned from millions of users." }
-    notes: "2–3 pairs call out one gap they found (1 min). Left panel is questions only — the answers, for you: Tomás (zero Spanish tracks), Keisha (medium is not slow), Jordan (nothing quiet exists). Nobody put bad songs in; they were never there. Connect: \"Your playlist failed Tomás and Keisha. Real playlists fail real people the same way.\" Walk the three real playlists (Teacher Guide p.2, 3 min): voice assistants understand best the voices that filled their training audio; face-analysis tools have had higher error rates on darker skin when training photos leaned lighter (documented in 2018 research); a recommendation app's playlist is millions of people's viewing behavior — your own history is the request. Handle with care: some students in the room are the people these gaps mishear. Keep the frame \"the playlist failed them, and playlists can be fixed\" — never \"the tech doesn't like you.\""
+    right: { heading: "REAL PLAYLISTS", text: "Voice assistants misheard rare accents and kids more often.\nPhoto tools got darker skin wrong more — their example photos were mostly light-skinned, researchers found." }
+    notes: "2–3 pairs call out one gap they found (1 min). Left panel is questions only — the answers, for you: Tomás (zero Spanish tracks), Keisha (medium is not slow), Jordan (nothing quiet exists). Nobody put bad songs in; they were never there. Connect: \"Your playlist failed Tomás and Keisha. Real playlists fail real people the same way.\" Walk the three real playlists (Teacher Guide p.2, 3 min): voice assistants understand best the voices that filled their training audio; face-analysis tools have had higher error rates on darker skin (documented in 2018 research), most likely because the example photos leaned lighter; a recommendation app's playlist is millions of people's viewing behavior — your own history is the request. Handle with care: some students in the room are the people these gaps mishear. Keep the frame \"the playlist failed them, and playlists can be fixed\" — never \"the tech doesn't like you.\""
   - type: question
     title: "The big question"
     question: "Nobody put bad songs in your playlist — so where did the bias come from?"
@@ -66,9 +65,9 @@ slides:
     title: "Exit Ticket"
     items:
       - "1.  Finish the chain: INPUT → ______ → OUTPUT. In your own words, what does an AI do with its playlist?"
-      - "2.  A homework-helper AI only knows football examples. Use \"playlist\": what happened, and who does it fail?"
-      - "3.  One gap your partner spotted before you did — in your own words."
-    notes: "Bottom of worksheet p.2. Collect; exemplars are in the Teacher Guide p.2. KEY #1: PATTERNS — the AI studies its playlist, learns what usually goes with what, and predicts. Assesses ISTE 1.1.d. KEY #2: whoever filled its playlist used football examples, so football patterns are all it can serve; students whose interests never made the playlist get worse help. Assesses CSTA 2-IC-21 — look for WHO gets worse help, not just \"needs more songs.\" KEY #3: any real gap in the student's own words that names a person or a request; not \"more songs.\" Assesses SL.6.1 (building on a partner's idea)."
+      - "2.  A homework-helper AI only knows football examples. Use the word playlist: what happened, who's left out?"
+      - "3.  One gap your partner spotted, and the idea YOU added to it."
+    notes: "Bottom of worksheet p.2. Collect; exemplars are in the Teacher Guide p.2. KEY #1: PATTERNS — the AI studies its playlist, learns what usually goes with what, and predicts. Assesses ISTE 1.1.d. KEY #2: whoever filled its playlist used football examples, so football patterns are all it can serve; students whose interests never made the playlist get worse help. Assesses CSTA 2-IC-21 — look for WHO gets worse help, not just \"needs more songs.\" KEY #3: a real gap in the student's own words that names a person or a request, plus the idea they added; not \"more songs,\" and a gap with no add is not accepted. Assesses SL.6.1 (building on a partner's idea)."
   - type: closer
     statement: "Before you trust an AI, ask: what's in the playlist?"
     sub: "You → the AI's playlist → you. A human starts it, the AI does the middle, a human checks — and playlists can be fixed."

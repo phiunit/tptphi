@@ -3,7 +3,7 @@
 <style>
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
-  h2 { margin: 8px 0 4px; }
+  body.compact h2 { margin: 6px 0 3px; }
   .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 112px; }
   .blank.short { min-width: 62px; }
   .sub { white-space: nowrap; }
@@ -22,10 +22,10 @@
   .card .t { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9.5pt; }
   .card .g { font-size: 8pt; color: #55556B; }
   .addcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 2px 0; }
-  .addcard { min-height: 72px; padding: 5px 8px; }
+  body.compact .addcard { min-height: 104px; padding: 5px 8px; }
   .addcard .boxlabel { font-size: 8pt; color: #8A8AA0; }
-  .frame { font-size: 9pt; color: #6E6E85; margin: 0 0 2px; }
-  .q { margin-bottom: 2px; }
+  body.compact .frame { font-size: 9pt; color: #6E6E85; margin: 0 0 1px; }
+  body.compact .q { margin-bottom: 3px; }
 </style>
 </head>
 <body class="line-ai compact">
@@ -64,11 +64,11 @@
     <ul>
       <li><strong>Rule 1:</strong> Only serve cards from the playlist. No inventing songs mid-game.</li>
       <li><strong>Rule 2:</strong> Never say no. Serve the closest card you've got — a music app always gives you <em>something</em>.</li>
-      <li><strong>Rule 3:</strong> Check ONE Fit box (Perfect / Kind of / Nothing) honestly, on your own sheet. Your check marks are what we count up at the end.</li>
+      <li><strong>Rule 3:</strong> Check ONE Fit box (Perfect / Kind of / Nothing) honestly, on your own sheet. Your check marks are your evidence for the Gap Report.</li>
     </ul>
   </div>
 
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> The Playlist — All 12 Songs You Know</h2>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> The Playlist — All 12 Songs You Know (all in English)</h2>
   <div class="cards">
     <div class="card"><div class="t">Thunder Mode</div><div class="g">Hype Trap · Fast · Party</div></div>
     <div class="card"><div class="t">Bass Quake</div><div class="g">Electro Party · Fast · Party</div></div>
@@ -126,20 +126,20 @@
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Fix the Playlist</h2>
-  <p class="q">Invent new song cards that fix the biggest gaps — at least 2, all 3 if you can. Title + genre + speed + what it's for, like the cards on page 1. Make them up! Every card should fix a DIFFERENT gap.</p>
+  <p class="q">Invent new song cards that fix the biggest gaps — at least 2, all 3 if you can. Title · genre · speed · language · what it's for, like the cards on page 1. Make them up! Every card should fix a DIFFERENT gap.</p>
   <div class="addcards">
-    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · what it's for</div></div>
-    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · what it's for</div></div>
-    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · what it's for</div></div>
+    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · language · what it's for</div></div>
+    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · language · what it's for</div></div>
+    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · language · what it's for</div></div>
   </div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Exit Ticket</h2>
   <p class="q"><strong>1.</strong> Finish the chain: <strong>INPUT &#8594; ________________ &#8594; OUTPUT.</strong> In your own words, what does an AI actually do with its playlist (training data)?</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
   <p class="q" style="margin-top:2px;"><strong>2.</strong> A school's new AI homework helper explains everything with football examples — never anything else. Using the word <em>playlist</em>, explain what probably happened, and who it doesn't serve well.</p>
-  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
   <p class="q" style="margin-top:2px;"><strong>3.</strong> One gap your partner spotted, and the idea YOU added to it.</p>
-  <div class="lines"><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <div class="footer"><span>What's in the Playlist? — Playlist Check</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
