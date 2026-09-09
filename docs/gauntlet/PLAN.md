@@ -382,3 +382,16 @@ Verification: gates green; report the three LP/WS/TG line diffs, the description
 - slides.yaml `:87`: "Every AI job runs human → AI → human" → "A good AI job runs human → AI → human".
 - Page counts must stay LP 2 / WS 2 / TG 3; deck 12 slides.
 Verification: gates green incl. `npm run slides -- ai-boring-work` content gate; report `dist/review/lesson-plan-p2.png`, `worksheet-p2.png`, `slide-10.png`, `slide-12.png`, and the fillable job-field width.
+
+## L2 `products/ai-training-data-crate` (files: src/lesson-plan.html, src/worksheet.html, src/teacher-guide.html, src/slides.yaml, product.yaml; then `npm run sheet -- ai-training-data-crate`) — report r3-critic-L2.md, all 16 accepted
+- Exit Ticket #3, one wording everywhere (WS `:141`, LP `:128`, slides.yaml `:70`, TG `:90` exemplar + acceptance): "One gap your partner spotted, and the idea YOU added to it." TG exemplar: "…so Jordan got a stadium track. I'd add that nothing is in Spanish either, so Tomás loses too." Acceptance: a gap with no add is not accepted. Slide 11 item 2 = the worksheet's Exit #2 text verbatim.
+- WS Exit lines: #2 two lines, #3 two lines (take one from #2 if it has three); page 2 stays one page.
+- LP Frame block retimed: Setup 2 · Serve 8 · Gap Report 7 · Fix 3 (= 20); deck sub-step chips `slides.yaml:41–44` mirror it. Block total stays 20; plan total 45.
+- LP `:111` → "App names the card; each checks their OWN Fit box (they may differ)."
+- WS `.addcard` min-height 72 → 90px. Recover the page-2 room by trimming spacing/margins only — no ruled line below 24px, no box below 72px, no cell below 34px. After render, dump the fillable widget rects (pymupdf) and report the `.addcard` field heights in pt (must be ≥ 44).
+- WS `:67` → "Your check marks are your evidence for the Gap Report." WS `:73` header → "The Playlist — All 12 Songs You Know (all in English)". WS `:129` card format → "Title · genre · speed · language · what it's for" (and the same on the `.boxlabel` at `:131` if that is where it prints).
+- TG `:97` → "higher error rates on darker skin (documented in 2018 research), most likely because the example photos leaned lighter." Do not add a citation.
+- slides.yaml `:58` → "Photo tools got darker skin wrong more — their example photos were mostly light-skinned, researchers found." `:52` delete bullet 4. `:5` subtitle → "An AI is a music app; its training data is the playlist. Today you'll BE the app."
+- product.yaml `:29` → "…a slow last-dance song, or a song for grandma's birthday dinner." `:31` "tick a Fit box" → "check a Fit box". `:27` "serve six classmates' requests" → "serve six classmates' requests plus one live one". Description stays ≥ 400 chars and passes COPY.md. Regenerate UPLOAD_SHEET.
+- Page counts stay LP 2 / WS 2 / TG 3; deck 12 slides.
+Verification: `npm run audit -- ai-training-data-crate` GREEN; report `dist/review/worksheet-p2.png`, `lesson-plan-p2.png`, `slide-11.png`, `slide-02.png` (routine chips), and the `.addcard` field heights.
