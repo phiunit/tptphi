@@ -28,7 +28,7 @@ AI literacy, artificial intelligence, prompt engineering, ChatGPT, digital citiz
 ```
 
 **Description** — paste the `description:` block from `products/ai-prompting-101/product.yaml`
-(2045 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2050 chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
 
 
 ## Before you hit Publish

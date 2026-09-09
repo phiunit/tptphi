@@ -57,7 +57,7 @@ ${(m.tags || []).join(', ')}
 \`\`\`
 
 **Description** — paste the \`description:\` block from \`products/${p.slug}/product.yaml\`
-(${String(m.description || '').length} chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(${String(m.description || '').length} chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
 
 ${m.bundle_of ? `**Bundle contents** — add these products to the bundle in TPT:\n${m.bundle_of.map((s, i) => `${i + 1}. ${s}`).join('\n')}\n\n> HUMAN GATE: TPT's bundle tool has historically refused FREE products as bundle children. If it refuses the free lesson, either add that lesson's PDFs + deck to the bundle zip before upload, or list a $4 twin of it for bundling and keep the freebie separate — otherwise "6 lessons" is false at checkout.\n` : ''}
 ## Before you hit Publish
