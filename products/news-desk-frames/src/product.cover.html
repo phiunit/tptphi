@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: 'Space Grotesk'; font-weight: 500; src: url('../../../brand/fonts/SpaceGrotesk-500.ttf') format('truetype'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('../../../brand/fonts/SpaceGrotesk-700.ttf') format('truetype'); }
+* { box-sizing: border-box; margin: 0; }
+html { overflow: hidden; height: 100%; background: #14141F; }
+body { min-height: 100%; }
+body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(ellipse at 75% 85%, #3B2F8F 0%, #232345 45%, #14141F 100%); color: #fff;
+  display: flex; flex-direction: column; padding: 60px; position: relative; overflow: hidden; }
+/* stars */
+.star { position: absolute; background: #fff; border-radius: 50%; opacity: 0.8; }
+.star.g { background: #FFB020; }
+/* content */
+.brand { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
+.chipline { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 14px; position: relative; z-index: 2; max-width: 560px; }
+.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 24px; padding: 9px 24px; border-radius: 99px; white-space: nowrap; }
+.chip.solid { background: #FFB020; color: #14141F; }
+.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 70px; position: relative; z-index: 2; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
+h1 span { color: #FFB020; }
+.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; margin-top: 26px; line-height: 1.15; color: #FFFFFF; position: relative; z-index: 2; max-width: 730px; }
+</style></head><body>
+<div class="star g" style="width:10px;height:10px;left:690px;top:230px"></div>
+<div class="star" style="width:4px;height:4px;left:560px;top:140px"></div>
+<div class="star g" style="width:8px;height:8px;left:790px;top:400px"></div>
+<div class="star" style="width:5px;height:5px;left:760px;top:560px"></div>
+<div class="star g" style="width:6px;height:6px;left:468px;top:990px"></div>
+<!-- Art: one clipboard holding a 2x2 grid of frame glyphs (check, scale, percent, shield); fully inside the frame, bottom-right -->
+<svg width="300" height="380" viewBox="0 0 300 380" style="position:absolute; right:48px; bottom:42px; z-index:1;">
+  <!-- board -->
+  <rect x="20" y="40" width="260" height="320" rx="18" fill="#FFB020"/>
+  <!-- paper -->
+  <rect x="42" y="72" width="216" height="266" rx="8" fill="#FFD27A"/>
+  <!-- clip -->
+  <rect x="105" y="18" width="90" height="52" rx="12" fill="#14141F"/>
+  <rect x="128" y="30" width="44" height="18" rx="9" fill="#FFD27A"/>
+  <rect x="140" y="6" width="20" height="30" rx="8" fill="none" stroke="#14141F" stroke-width="6"/>
+  <!-- 2x2 grid cells -->
+  <rect x="56" y="98" width="88" height="88" rx="10" fill="none" stroke="#14141F" stroke-width="5"/>
+  <rect x="156" y="98" width="88" height="88" rx="10" fill="none" stroke="#14141F" stroke-width="5"/>
+  <rect x="56" y="216" width="88" height="88" rx="10" fill="none" stroke="#14141F" stroke-width="5"/>
+  <rect x="156" y="216" width="88" height="88" rx="10" fill="none" stroke="#14141F" stroke-width="5"/>
+  <!-- check (Fact Desk) -->
+  <path d="M 74 144 L 93 163 L 128 120" fill="none" stroke="#14141F" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- scale (The Trade) -->
+  <line x1="200" y1="110" x2="200" y2="174" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <line x1="168" y1="124" x2="232" y2="124" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 170 124 L 160 146 L 180 146 Z" fill="#14141F"/>
+  <path d="M 230 124 L 220 146 L 240 146 Z" fill="#14141F"/>
+  <line x1="182" y1="174" x2="218" y2="174" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <!-- percent (Percent Change) -->
+  <circle cx="81" cy="239" r="10" fill="none" stroke="#14141F" stroke-width="7"/>
+  <circle cx="119" cy="281" r="10" fill="none" stroke="#14141F" stroke-width="7"/>
+  <line x1="122" y1="230" x2="78" y2="290" stroke="#14141F" stroke-width="8" stroke-linecap="round"/>
+  <!-- shield (Risk Grid) -->
+  <path d="M 200 226 L 232 238 V 262 C 232 280 216 292 200 300 C 184 292 168 280 168 262 V 238 Z" fill="none" stroke="#14141F" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M 188 262 L 197 271 L 213 252" fill="none" stroke="#14141F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<div class="brand">Future Skills Series</div>
+<div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Works With Any Story</span></div>
+<div class="kicker">The News Desk Pack</div>
+<h1>News Desk<br><span>Frames</span></h1>
+<p class="sub">Any story. Ten ways<br>to think it through.</p>
+<div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">10 one-page frames</span><span class="chip">No prep · No devices needed</span></div>
+</body></html>

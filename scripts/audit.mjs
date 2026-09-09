@@ -9,14 +9,17 @@ import { spawnSync } from 'node:child_process';
 const slug = process.argv[2];
 const steps = ['render', 'validate', 'readability', 'judge', 'preview'];
 const t0 = Date.now();
-for (const step of steps) {
-  if (step === 'judge' && !slug) {
-    // judge.mjs takes one slug; fan out over every product
-    const { listProducts } = await import('./lib.mjs');
-    for (const p of listProducts()) run('judge', p.slug);
-    continue;
+if (slug) {
+  for (const step of steps) run(step, slug);
+} else {
+  // No slug: gauntlet every product that is not under construction. `status: draft` means a builder
+  // is still writing pages (its includes/decks may not exist yet); drafts are audited explicitly with
+  // `npm run audit -- <slug>` and can never reach `rendered` without passing the whole gauntlet.
+  const { listProducts } = await import('./lib.mjs');
+  for (const p of listProducts()) {
+    if (p.meta?.status === 'draft') { console.log(`\n── ${p.slug}: SKIPPED (status draft) ──`); continue; }
+    for (const step of steps) run(step, p.slug);
   }
-  run(step, slug);
 }
 console.log(`\nAUDIT GREEN — ${steps.join(' → ')} in ${Math.round((Date.now() - t0) / 1000)}s`);
 
