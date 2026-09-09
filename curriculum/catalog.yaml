@@ -21,9 +21,9 @@ products:
       title: "AI and Future Jobs Lesson: Automation Tradeoffs | Middle School 6-8 | No Prep" }
   - { slug: ai-agent-intern,         line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 6,
       title: "AI Agents Lesson: Team Roles & Project Planning | Middle School 6-8 | No Prep" }
-  - { slug: news-desk-frames,        line: ai,           priority: 1, status: idea, price: 5,
+  - { slug: news-desk-frames,        line: ai,           priority: 1, status: draft, price: 5,
       title: "News Literacy Templates: AI & Media Fact-Check Frames | Middle School 6-8 | Any Story" }
-  - { slug: news-desk-frame-free,    line: ai,           priority: 1, status: idea, price: 0,
+  - { slug: news-desk-frame-free,    line: ai,           priority: 1, status: draft, price: 0,
       title: "Fact Check Any News Story: Free Lateral Reading Template | Middle School 6-8" }
   - { slug: media-literacy-week-unit, line: ai,          priority: 2, status: idea, price: 10,
       title: "Media Literacy Week Unit: 5 Days of AI & News Fact-Checking | Middle School 6-8 | No Prep" }

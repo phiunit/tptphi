@@ -296,3 +296,60 @@ L2 role renamed "the Caller" on worksheet, slides, plan and TG wherever "Request
 only if p2 stays ≤ 45% blank and the print gate stays green. The agent definition sentence on L6 stays identical
 everywhere it appears — update all copies (worksheet panel, plan, slide 3, TG) to the new plain wording.
 Verification: `npm run audit -- <slug>` GREEN per lesson; readability still ≤ 8.5; view only the changed pages.
+
+# NEWS DESK BUILD (lead decisions, 2026-09-09) — products/news-desk-frames and products/news-desk-frame-free
+Why: docs/research/2026-09-07-news-desk-scan.md and docs/STRATEGY.md "News desk". Undated reusable frames carry the
+reviews in this category; dated editions are the commodity floor. Trending stories live inside as worked examples.
+Same hard rules as the top of this file. Reference for structure and polish: products/ai-fact-check-lab (the Fact Desk
+lesson — the frames are that method generalised) and products/ai-prompting-101.
+
+## Product shape — news-desk-frames ($5, line: ai, status stays `draft` until FACTS.md is verified; catalog row exists)
+- `src/frames.html` — TEN one-page student frames, identical skeleton on every page: frame title + one-line purpose ·
+  a story slot (three `.blank` lines: Story · Where I saw it · Date) · the method as numbered steps · write-in space
+  meeting the bar (lines ≥ 24px, boxes ≥ 72px, cells ≥ 34px) · a two-line "So what?" exit. Undated, number-free, no
+  named products or people — the student supplies the story. Frames and their methods (do not rename):
+  1 Fact Desk — underline claims · C/S · second source · verdict RUN / FIX / KILL (`class="oneof"` row)
+  2 The Trade — who wins · who loses something · what could go wrong · my call
+  3 Write the Rule — 4 rules × (helps / hurts / costs) grid → my 3-rule policy → defend one in 3 sentences
+  4 Who Pays for Free? — donations · ads · membership · one sponsor · sell it: one gain + one loss each → pick
+  5 Unit Rate Receipt — 3 options (price, amount) → cost per unit → best option for 3 short profiles
+  6 Percent Change Card — old → new → difference → percent → "hours of work at $__/hr" → 8-week save-up plan
+  7 Copy, Style, or Person? — 8 cards sorted into copying a work / a style / a person → where I draw the line
+  8 Source Check — who made this · who paid · what do they gain · 5 statements: fact from the source / opinion it implies
+  9 Permission Slip — 8 things an AI helper could do: allow / check first / deny + one-line reason → the risky combo
+  10 Risk Grid — 5 things to protect: cost to replace × how bad if gone → spend a fixed budget on 2 protections
+  Every page carries the L3 lens spot art (`#minimag`-style) as the pack's glyph; masthead "Future Skills · News Desk".
+- `src/lesson-plan.html` — "News Desk Day", 2 pages: a 45-minute block (Open 5 · Read 10 · Frame 20 · Share-out 10)
+  with the 25-minute bell-ringer variant stated (2 · 5 · 15 · 3); one what-if per block; quoted transitions; how to
+  pick a frame for a story (a 10-row table: story type → frame); Support / Extension / ELL / No-device.
+- `src/teacher-guide.html` — ≤ 4 pages: p1 why + "How to pick a safe story" (the rules from docs/STRATEGY.md News desk,
+  in teacher words: two sources or it doesn't exist; "alleged" for any lawsuit; officeholders as officeholders; if
+  students must pick a political side, skip it; never a story that shames a family); p2–3 one script paragraph per
+  frame (three quotable lines + what a strong answer looks like); p4 ONE rubric that scores any frame (claim ·
+  evidence · method followed · said plainly) + a "when it goes sideways" panel.
+- `src/examples.html` — "Worked Examples · September 2026", teacher-facing, ONE page per example: an original 5–8
+  sentence passage at grade 6 ("As reported by <outlet>, <date>") + a filled frame exemplar. Four examples, all
+  number-free, from the scan: NYC's grade-8 AI rule → Frame 3 · the musicians' identity lawsuit → Frame 7 ("alleged"
+  throughout, no lyrics, no artist art) · SteamDB sold by its solo owner → Frame 4 · an AI helper that can act on a
+  photo library → Frame 9. NO example with a printed figure until FACTS.md says VERIFIED.
+- `FACTS.md` — one row per factual claim in examples.html: claim · outlet · date · URL · verified-by (PENDING until a
+  person or agent with direct access re-reads the primary; validate refuses status "rendered" while any PENDING).
+- `src/slides.yaml` — 12 slides: title · the routine (minutes) · one slide per frame (its question + ≤ 4 step bullets),
+  notes carry the script paragraph. `src/product.cover.html` — D1 template; kicker "THE NEWS DESK PACK"; h1 "News
+  Desk" / "Frames" (or "Any Story,"/"Ten Frames" — builder picks what fits 2 lines); sub "Any story. Ten ways to
+  think it through." (8 words); chips Grades 6–8 · 10 one-page frames · No prep · No devices needed; art = a
+  clipboard holding a 2×2 grid of small frame glyphs (check, scale, percent, shield), one object, ≥ 30% frame width.
+- `product.yaml` — title from catalog (≤ 80); description per docs/COPY.md (opener, hook, do line, how it runs,
+  WHAT YOU GET one line per file, Standards, unit line pointing to Lesson 3 and the bundle); standards 3–5 codes that
+  exist in the registry — decide from: ISTE 1.3.b, CCSS-ELA RI.6.8, CCSS-ELA W.6.1, CSTA 2-IC-20, CCSS-MATH 6.RP.A.3c
+  (verify each exists; drop any that doesn't). `includes:` = the shipped filenames.
+## news-desk-frame-free ($0) — Frame 1 alone
+`src/frames.html` = Frame 1 page only (identical to the pack's), `src/teacher-guide.html` = 1 page (routine + safe-story
+rules + the Fact Desk script + rubric row), cover with FREE badge (L1 pattern), sub "Any story. Check it before you
+repeat it." Description ends with the funnel to the pack and to Lesson 3.
+## Build order (two builders, sequential, each ≤ one product's files at a time)
+Builder A: news-desk-frames — frames.html, lesson-plan.html, product.cover.html, product.yaml. Gates: `npm run audit --
+news-desk-frames` will fail on missing TG/deck at first; get render + readability green for the pages you own, then hand
+over. Builder B: teacher-guide.html, examples.html + FACTS.md, slides.yaml; then the free product; full audit GREEN for
+both (status `draft`: validate allows PENDING facts only while not "rendered" — leave status `draft` in yaml AND catalog).
+Verification per PLAN top + view every frame page once (10) and the cover-200.

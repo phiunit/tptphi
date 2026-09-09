@@ -122,7 +122,7 @@ for (const p of products) {
         }
       }
       // Digital companion: typeable copy of every worksheet (same layout, real form fields)
-      if (/^worksheet/.test(base)) {
+      if (/^(worksheet|frames)/.test(base)) { // student write-in documents get a typeable twin
         const fill = out.replace(/\.pdf$/, ' (Fillable).pdf');
         const n = await makeFillable(page, path.join(srcDir, f), out, fill);
         if (n) console.log('FORM', path.relative(process.cwd(), fill), '(' + n + ' fields)');

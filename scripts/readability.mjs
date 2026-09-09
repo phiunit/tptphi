@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { launch, listProducts } from './lib.mjs';
 
-const STUDENT_DOCS = /worksheet|student/i;
+const STUDENT_DOCS = /worksheet|student|frames/i; // frames = reusable one-page student templates
 const MAX_GRADE = 8.5; // FK grade level ceiling for student prose
 
 function syllables(w) {

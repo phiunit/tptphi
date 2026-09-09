@@ -83,7 +83,7 @@ for (const p of listProducts(process.argv[2])) {
   const maxStd = p.meta.bundle_of ? 12 : 5; // a bundle lists the union of its children's anchors
   if (Array.isArray(p.meta.standards) && (p.meta.standards.length < 3 || p.meta.standards.length > maxStd))
     errs.push(`${p.meta.standards.length} standards (rule: 3-5 real, taught-and-assessed codes)`);
-  errs.push(...checkStandards(p.meta), ...checkGuideText(p), ...checkStatus(p), ...checkRetired(p), ...checkIncludes(p));
+  errs.push(...checkStandards(p.meta), ...checkGuideText(p), ...checkStatus(p), ...checkRetired(p), ...checkIncludes(p), ...checkFacts(p));
   const dist = path.join(p.dir, 'dist');
   const distFiles = fs.existsSync(dist) ? fs.readdirSync(dist) : [];
   if (!distFiles.some(f => f.endsWith('.pdf'))) errs.push('no rendered PDF in dist/ (run npm run render)');
@@ -109,4 +109,12 @@ function checkIncludes(p) {
     else if (zip && !zipList.includes(base)) errs.push(`includes: "${base}" is missing from the zip`);
   }
   return errs;
+}
+
+// Products that state real-world facts keep a FACTS.md ledger (fact · source · date · verified-by). A product
+// cannot be "rendered" (upload-ready) while any fact is still PENDING verification against its primary source.
+function checkFacts(p) {
+  const f = path.join(p.dir, 'FACTS.md'); if (!fs.existsSync(f)) return [];
+  const pending = (fs.readFileSync(f, 'utf8').match(/PENDING/g) || []).length;
+  return pending && p.meta.status === 'rendered' ? [`FACTS.md: ${pending} fact(s) still PENDING primary-source verification — status may not be "rendered"`] : [];
 }
