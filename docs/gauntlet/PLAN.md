@@ -353,3 +353,32 @@ news-desk-frames` will fail on missing TG/deck at first; get render + readabilit
 over. Builder B: teacher-guide.html, examples.html + FACTS.md, slides.yaml; then the free product; full audit GREEN for
 both (status `draft`: validate allows PENDING facts only while not "rendered" — leave status `draft` in yaml AND catalog).
 Verification per PLAN top + view every frame page once (10) and the cover-200.
+
+# ROUND 3 FIXES (lead decisions, 2026-09-09) — reports: docs/gauntlet/2026-09-03/r3-critic-L1.md, r3-critic-L5.md
+
+Hard rules as above: touch only the files named; never rename files or ids; never commit; never invent content; re-run
+`npm run render -- <slug> && npm run validate -- <slug> && npm run readability -- <slug> && npm run judge -- <slug>` and report.
+
+## L1 `products/ai-prompting-101` (files: src/lesson-plan.html, src/worksheet.html, src/teacher-guide.html, product.yaml; plus scripts/upload_sheet.mjs, then `npm run sheet -- ai-prompting-101`)
+- LP Showcase (3 min): replace the with-devices clause with "With devices: run ONE live instead of the third reading." Keep the what-if; end it "…adds a rule. Run it again only if you have the minute."
+- LP Objective 1: reword to "Show how a vague prompt lets the genie choose (and why that produces a worse answer)." Leave the exit item alone.
+- LP Prep cell: "Print worksheets (and Teacher Guide p.3 if you use the Support/ELL sentence starters). That's it."
+- LP At-a-Glance Tech cell: "None — runs fully unplugged. Optional: a projector for the slides; one AI tool (ChatGPT, Claude or Gemini) on your screen for the Showcase."
+- WS p.1 P.R.O. box R bullet: add "(at least 2)" after "the rules". WS `:105` → "the genie's answer to a repaired wish about black holes:". WS `:107`, LP `:109`, TG `:80`: "a real place" → "a real source".
+- TG `:105`: "So far it mostly replaces tasks inside jobs, not whole jobs" → "So far the clearest cases are tasks inside jobs, not whole jobs".
+- product.yaml description: "the plan says exactly what ChatGPT, Claude or Gemini add" → "the plan marks the two moments a live AI tool (ChatGPT, Claude or Gemini) adds something". Keep the paragraph's length within ±10 chars; description must stay ≥400 and pass COPY.md.
+- scripts/upload_sheet.mjs `:60`: replace the rule text with `the first three lines must be filter line → hook → do line (docs/COPY.md)`. Regenerate this product's sheet only.
+- Title: unchanged (lead overruled).
+Verification: gates green; report the three LP/WS/TG line diffs, the description sentence, `dist/review/lesson-plan-p1.png` and `worksheet-p1.png`.
+
+## L5 `products/ai-boring-work` (files: src/lesson-plan.html, src/worksheet.html, src/teacher-guide.html, src/slides.yaml)
+- Defend It procedure, written once and mirrored in all three surfaces (LP `:121–123`, WS `:141/:147`, slides.yaml slide 10 `:74–75`), teacher register in LP/notes, kid register on WS/slide:
+  "Face the person across from you. Speaker 1 reads their claim out loud (30 seconds), then slides their sheet across. Listener 1 checks the three boxes and writes keep or fix (30 seconds), then slides it back. Switch: Speaker 2 reads, Listener 2 marks. Everyone ends with their own sheet."
+  LP exit transition: replace "Swap sheets back — you need your own" with "You already have your own sheet — bottom of page 2." Trio fallback (`:122`): "Trio: 20 seconds each, listeners mark the boxes only."
+- WS `:158`: move "The job: ______" to its own full-width ruled line (≥24px tall, full column width) above the rest of the exit ticket; the fillable field must be ≥4 in wide after render (check `dist/review/worksheet-p2.png` and the fillable widget rect).
+- KEEP HUMAN tail: WS `:76` "Humans only." → "The person is the whole point." (verify identical string in LP `:92`, slide 4).
+- TG `:92` "share-out material" → "Defend It material"; TG `:120` "in the Share-Out setup" → "in the Defend It setup"; slides.yaml `:64` "save it for the share-out" → "save it for Defend It".
+- slides.yaml `:20`: make the slide-3 notes bridge sentence identical to the plan's bridge sentence (copy from LP; drop "the human parts become more of the job").
+- slides.yaml `:87`: "Every AI job runs human → AI → human" → "A good AI job runs human → AI → human".
+- Page counts must stay LP 2 / WS 2 / TG 3; deck 12 slides.
+Verification: gates green incl. `npm run slides -- ai-boring-work` content gate; report `dist/review/lesson-plan-p2.png`, `worksheet-p2.png`, `slide-10.png`, `slide-12.png`, and the fillable job-field width.

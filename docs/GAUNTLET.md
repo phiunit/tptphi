@@ -48,7 +48,7 @@ ticket; taught/assessed line per standard naming a real item; discussion moves +
 **deck** — one moment per slide, in lesson order, minutes match the plan; speaker notes carry the
 script and the answer keys, slides never carry answers or a false claim; ≤ 6 bullets; no text
 overflow (machine gate); title slide reads at the back of a room.
-**listing** — title ≤ 80, keyword-first, house formula `<keyword phrase> | Middle School 6-8 | <one differentiator>` (the grade band is a descriptor, not a second hook); description ≥ 400 chars, opens
+**listing** — title ≤ 80, keyword-first, house formula `<keyword phrase> | Middle School 6-8 | <differentiator>` (the grade band is a descriptor, not a second hook; the third slot may carry a search keyword plus a badge, e.g. `FREE No Prep` — lead ruling R3); description ≥ 400 chars, opens
 "NO STUDENT AI ACCOUNTS NEEDED", every promise (pages, passages, keys, fillable, deck) true;
 standards named exactly as yaml; INCLUDES complete; UPLOAD_SHEET identical to yaml.
 **buyer** — the six covers read as one line at thumbnail size; the free lesson makes the paid
