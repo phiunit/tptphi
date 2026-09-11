@@ -483,3 +483,19 @@ Verification: `npm run audit -- news-desk-frames` and `npm run audit -- news-des
 ### SWEEP additions (lead rulings on the L6 builder's two flags, 2026-09-11)
 3. `products/ai-agent-intern/src/worksheet.html` Step 1 "Pick Your Quest": wrap the three options in `class="oneof"` so the fillable emits a radio group. The page says "check one"; a typing student must not be able to check all three, assessed item or not.
 4. `products/ai-agent-intern/product.yaml`: "Where your card is vague, it guesses forward" is the same universal claim as the one hedged on every other surface. Make it "Where your card is vague, it usually guesses forward."
+
+## BUNDLE STALENESS (lead finding, 2026-09-11) — run after every other builder has landed
+The bundle packs copies of its children's PDFs into its own zip, and those copies are only refreshed when
+the bundle itself is rendered. Slug-scoped child fixes therefore rot it silently. Verified today: the
+bundle zip carries L6's old 2-page worksheet and 2-page fillable while the shipped standalone is 3 pages.
+A bundle buyer would get materials the standalone buyer does not.
+Two jobs, in this order, one builder, files `scripts/validate.mjs` and `products/bundle-ai-line/**`:
+1. **Gate it.** In `scripts/validate.mjs`, for a product with `bundle_of`, compare every child file inside
+   the bundle's zip against that child's current `dist/` file (byte comparison is fine, or size plus PDF
+   page count). Any difference is a validation error naming the file and both page counts. This is the
+   same class of bug the `includes:` gate already catches, one level up.
+2. **Refresh it.** `npm run render -- bundle-ai-line`, then `npm run audit -- bundle-ai-line` GREEN, and
+   re-check the description's "That is 31 files in the download" against `unzip -Z1 | wc -l`. The worksheet
+   line already reads "2 to 3 pages", so L6 going to three pages needs no copy change — verify, do not assume.
+Report: the gate's error message on a deliberately stale zip, then the passing run, the file count, and the
+per-child page counts inside the refreshed zip next to the standalone ones.

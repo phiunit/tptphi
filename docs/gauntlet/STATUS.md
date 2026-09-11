@@ -57,5 +57,6 @@ Updated 2026-09-05 08:20 UTC by the lead.
 - HUMAN GATE (Phi): open each .pptx in real PowerPoint/Keynote once before upload (LibreOffice unavailable here).
 - Round 3 in progress (see Agreed). Remaining critics: L2, L3, L4, L6.
 - HUMAN GATE (Phi): FACTS.md verification for news-desk-frames worked examples before status `rendered`; "about the author" line decision (STRATEGY.md News desk).
+- BUNDLE STALENESS (found 2026-09-11, brief in PLAN.md): the bundle's zip holds copies of its children's PDFs and is only refreshed when the bundle renders, so every slug-scoped child fix rots it silently. Confirmed: the zip carries L6's old 2-page worksheet against a 3-page standalone. Needs a validate gate plus a re-render, after the running builders land.
 - Sweep owed (lead, after both fix builders land): "Every AI job runs human → AI → human" is a universal claim in six products (ai-agent-intern TG + slides, ai-fact-check-lab TG, ai-prompting-101 TG, ai-taste-file TG + slides, ai-training-data-crate TG). L5 and L4 are being normalized to "A good AI job runs…"; the other four need the same edit plus a re-render.
 - Idea (lead, not yet agreed): a GLOSS_TERMS gate — idioms allowed on student pages only if glossed in the same panel.
