@@ -40,7 +40,9 @@ Updated 2026-09-05 08:20 UTC by the lead.
 - L1 critic done → r3-critic-L1.md: LP/WS/TG SHIP, listing REJECT (description promise the plan didn't keep). 10 small fixes accepted, title overrule logged. FIXED 77234a3 (audit green).
 - L5 critic done → r3-critic-L5.md: cover/TG/listing SHIP; LP/WS/deck REJECT on one root cause (Defend It sheet handoff unwritten) + narrow exit-ticket job field. Procedure decided by lead. FIXED 77234a3 (audit green; job field 59 → 469 pt).
 - L2 critic done → r3-critic-L2.md: cover SHIP, everything else REJECT on one root cause (Exit #3 in three phrasings, one line for a two-part item) + Frame block untimed against handwriting speed. All 16 accepted. FIXED (see commit below): retimed 2·8·7·3, .addcard boxes 104px (field 48.8pt), Exit #2/#3 two lines each. Builder flags accepted: slide 8 drops the feed line to fit the compare gate; Exit #2 condensed on slide 11 (list gate).
-- L3 and L4 critics running (L3 died once on a rate limit, relaunched 2026-09-11). Next: L6.
+- L3 critic done → r3-critic-L3.md: cover SHIP, all five other surfaces REJECT. Found a BLOCKER in the SHARED fillable generator (printed model sentences got typeable fields) and forced two gate corrections. Fix builder running (owns scripts/fillable.mjs, scripts/slides.mjs, L3, and one L2 slide).
+- L4 critic done → r3-critic-L4.md: every surface REJECT, 26 findings, same root cause as L5 (a peer protocol with no turn order). ISTE 1.6.b swapped for 1.1.c. Brief written; builder launches when the L3 builder frees scripts/slides.mjs.
+- L6 critic running. That closes the six-lesson sweep; the News Desk pack still needs its first critic.
 
 ### News Desk (PLAN.md "NEWS DESK BUILD")
 - Builder A DONE 633461a: frames.html (10 frames, 247 fillable fields, FK 2.8), lesson-plan.html (2 pp), cover (3 iterations, lead-approved), product.yaml (title 77 chars). Lead rulings: includes grows to six files (Worked Examples PDF ships); TG exactly 4 pp; examples exactly 4 pp; Frame 5 cites 6.RP.A.3c only (3b not on the list — revisit if a critic flags it).
@@ -53,4 +55,5 @@ Updated 2026-09-05 08:20 UTC by the lead.
 - HUMAN GATE (Phi): open each .pptx in real PowerPoint/Keynote once before upload (LibreOffice unavailable here).
 - Round 3 in progress (see Agreed). Remaining critics: L2, L3, L4, L6.
 - HUMAN GATE (Phi): FACTS.md verification for news-desk-frames worked examples before status `rendered`; "about the author" line decision (STRATEGY.md News desk).
+- Sweep owed (lead, after both fix builders land): "Every AI job runs human → AI → human" is a universal claim in six products (ai-agent-intern TG + slides, ai-fact-check-lab TG, ai-prompting-101 TG, ai-taste-file TG + slides, ai-training-data-crate TG). L5 and L4 are being normalized to "A good AI job runs…"; the other four need the same edit plus a re-render.
 - Idea (lead, not yet agreed): a GLOSS_TERMS gate — idioms allowed on student pages only if glossed in the same panel.
