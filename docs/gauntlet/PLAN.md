@@ -395,3 +395,30 @@ Verification: gates green incl. `npm run slides -- ai-boring-work` content gate;
 - product.yaml `:29` → "…a slow last-dance song, or a song for grandma's birthday dinner." `:31` "tick a Fit box" → "check a Fit box". `:27` "serve six classmates' requests" → "serve six classmates' requests plus one live one". Description stays ≥ 400 chars and passes COPY.md. Regenerate UPLOAD_SHEET.
 - Page counts stay LP 2 / WS 2 / TG 3; deck 12 slides.
 Verification: `npm run audit -- ai-training-data-crate` GREEN; report `dist/review/worksheet-p2.png`, `lesson-plan-p2.png`, `slide-11.png`, `slide-02.png` (routine chips), and the `.addcard` field heights.
+
+## L3 `products/ai-fact-check-lab` + two shared gates — report r3-critic-L3.md, all 20 accepted
+Order matters: do the two script changes FIRST, re-render every product to prove nothing else moved, then the L3 content.
+
+### A. scripts/fillable.mjs — printed examples are not write-ins (BLOCKER)
+An underscore run inside an element that matches `.frame`, or inside any ancestor carrying `data-nofill`, is not a write-in and gets no field. Nothing else about field detection changes. Then `npm run render` for EVERY product and report the per-product field-count before/after: only L3 may change (it should lose 12), and any other product that loses a field is a bug in your selector — report it, do not "fix" that product.
+
+### B. scripts/slides.mjs — two gate corrections
+1. Support `verbatim: true` on a slide: it skips the CONTENT character cap for that slide only and keeps the geometric overflow gate. Document the flag in the schema comment at the top of the file as: allowed only on a slide that reproduces an assessed student item word for word.
+2. Title slide: when the deck has a cover image, do not emit the left-hand chip row (the cover already carries those chips). Keep the kicker, title and sub.
+Then re-render every deck and view `dist/review/slide-01.png` for at least three products; report that no deck lost a non-title slide and no deck newly overflows.
+3. Back-apply to L2: `products/ai-training-data-crate/src/slides.yaml` slide 11 item 2 becomes the worksheet's Exit #2 sentence verbatim, with `verbatim: true` on that slide. Re-audit L2.
+
+### C. products/ai-fact-check-lab (src/lesson-plan.html, src/worksheet.html, src/teacher-guide.html, src/slides.yaml, product.yaml, then `npm run sheet -- ai-fact-check-lab`)
+- Round 1 (7 min): both partners work Draft #1 on their OWN sheets; log the TWO riskiest claims only. Worksheet's Draft #1 log table drops to two rows; the instruction says "your two riskiest claims".
+- Round 2 (10 min), written exactly: "Partner A leads Draft #2, Partner B leads Draft #3 — each on your own sheet. (6 min) Then: 'Swap sheets with your partner. You are now holding their draft. Read their log, add one claim they missed, and hand it back.' (2 min) Owners check their own stamp and write the note. (2 min)" The old "Swap!" line and the "Sheets back to their owner" transition are replaced by this.
+- Share-out (4 min): hands-up count; the teacher writes one tally row per draft on the board. No student walks to the board.
+- `lesson-plan.html:83` Support: keep "Drafts #1–2 only"; the hint becomes the Support line's alone — reword the three printed "Need a start?" frames to "What's wrong: ______. I would check ______." (no error count on the student page).
+- Worksheet p.2 Desk Helpers header → "use these on both drafts". `.helpers` gap 12px → 22px.
+- Note lines 3 → 4 on all three drafts; exit ticket 2 → 3 lines per question. Nothing shrinks below 24px.
+- One line under the method on p.1: "On the typeable PDF you can't underline. Copy each claim you'd CHECK into the table, and put your S-claims in the last row."
+- Gloss "column" in the Desk words line: `column = one writer's regular story`.
+- TG: stamp key for Draft #3 → "Correct stamp: KILL (the headline claim and its quote both fail). A defended FIX earns partial credit." Add a "Mark C" column to the p2 key table naming the 3–4 claims per draft that must be marked C. Column header "Planted error" → "What the desk should catch". Add a ≤130-character exemplar for Theo's and Marcus's notes and rewrite Priya's to ≤130 characters.
+- Deck: slide 11 item 2 = the worksheet's Exit #2 sentence verbatim (`verbatim: true`); "FIX (correct it, then print)"; "Name a second, independent source that could confirm it."; "Marcus's invention feature" in plan and deck; closer ends "check it".
+- product.yaml: "Lesson 3 of 6"; "three AI-helped drafts"; "the first six minutes"; "a four-step fact-desk method that works on feeds and group chats too" (drop "they will use for life"); hook trimmed to one sentence ≤16 words. Description stays ≥400 and passes COPY.md. Regenerate UPLOAD_SHEET.
+- Page counts stay LP 2 / WS 3 / TG 3; deck 12 slides.
+Verification: `npm run audit -- ai-fact-check-lab` and `npm run audit -- ai-training-data-crate` GREEN; report `dist/review/worksheet-p1.png`, `worksheet-p2.png`, `worksheet-p3.png`, `lesson-plan-p2.png`, `slide-01.png`, `slide-11.png`, the field-count table for all products, and the fillable rasters proving no field sits on a printed example.
