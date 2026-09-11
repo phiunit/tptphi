@@ -19,6 +19,7 @@ No figures are printed in the examples, by lead decision.
 - [PENDING] The suit was filed as a (proposed) class action — source: Billboard, Rolling Stone, Variety, The Hollywood Reporter, Aug 31 2026; URL: not in scan doc
 - [PENDING] Suno makes an AI tool that generates songs from a text prompt — source: Billboard, Rolling Stone, Variety, The Hollywood Reporter, Aug 31 2026 (product description in coverage); URL: not in scan doc
 - [PENDING] The complaint alleges the tool copies real artists' identity and style without permission — source: Billboard, Rolling Stone, Variety, The Hollywood Reporter, Aug 31 2026; URL: not in scan doc
+- [PENDING] How a lawsuit works (general, not this case): a lawsuit is a list of claims a court has not yet decided, and the side being sued gets a turn to answer before the court decides — source: general civil-procedure knowledge, not in scan doc; verify against a court system's own public "how a case moves" page
 
 ## Example 3 — SteamDB sold by its solo owner (Frame 4)
 - [PENDING] SteamDB is a free website that tracks information about games on Steam, including price changes and player counts — source: Engadget, PC Gamer, Kotaku, heise, Sep 2 2026 (site description in coverage); URL: not in scan doc
