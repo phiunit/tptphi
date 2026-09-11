@@ -438,3 +438,28 @@ Files: src/lesson-plan.html, src/worksheet.html, src/teacher-guide.html, src/sli
 - Listing: "revise their own draft on Revise & Last Check"; Do line → "…draft an About Me, get exactly two notes from a partner, and revise it themselves."; device path → "Each student hands the taste file to a partner playing the AI. With a projector you can also run one volunteer's file through a real AI on your own screen."; "Lesson 4 of 6"; "…is the classroom AI policy worth repeating all year." Description stays ≥ 400 and passes COPY.md.
 - Page counts stay LP 2 / WS 3 / TG 3; deck 13 slides.
 Verification: `npm run audit -- ai-taste-file` GREEN; report `dist/review/product.cover.png` + a 200px downscale, `worksheet-p2.png`, `lesson-plan-p2.png`, `slide-05.png`, `slide-10.png`, the name-field width in pt, and the new block split.
+
+## L6 `products/ai-agent-intern` — report r3-critic-L6.md, all 21 accepted
+Files: src/lesson-plan.html, src/worksheet.html, src/teacher-guide.html, src/slides.yaml, src/product.cover.html, product.yaml, then `npm run sheet -- ai-agent-intern`. Nothing else.
+- **Rotation**, verbatim in the plan, the guide and slide notes: "Sit in a triangle. The Scout sits on the Planner's left; the Critic sits on the Scout's left. Every paper moves one seat to its owner's left — the Planner's plan goes to the Scout, the Scout's questions go to the Critic, the Critic's list goes to the Planner." Delete every surviving "pass one seat left" that is not part of this sentence.
+- **Return step**, last 60 seconds of Leader review: "Hand the paper back and read your FIX line to its owner." It is inside the 8 minutes, not extra.
+- **Load**: only the card-holder writes all four parts of the quest card; teammates copy GOAL and DONE LOOKS LIKE — say that on the worksheet and in the plan. Leader review requires ONE quoted evidence line, for the row marked RUN IT BACK, plus KEEP and FIX; say that on the page, not only in the guide.
+- **New split**: warm-up 6 · Direct Instruction 9 · Activity 24 (quest card 8 · squad works 8 · leader review 8) · Last Check 6 = 45. Deck chips mirror it exactly.
+- **Write-in idiom** (the `.write` class in this product's own CSS): every substantial answer cell gets real ruled lines at 24px pitch inside a box of at least 72px, not one rule at the bottom of an empty box. Evidence column widened to ≥ 3.4in with two lines per cell; two or three lines per quest-card exit cell; two lines under exit #2 and exit #3. Prefer keeping the worksheet at 2 pages. If the math genuinely does not fit, a third page is allowed — and then product.yaml, the includes gloss, the description and UPLOAD_SHEET all change with it. Report which you did.
+- **Hedge**, one wording in every place the claim appears (plan, worksheet, guide, slides): "the agent usually fills the gap with a guess and keeps going." Add to the guide: "Some tools stop and ask instead; both behaviours are worth naming." Slide 4 card 1 → "Leave something out and the party guesses — and you won't know whether it guessed right."
+- Worksheet `:142` → "Which check would it most likely fail?" (matching plan, guide and deck).
+- Worksheet Scout role card gains "4–8 min: turn every ? into the one question you'd ask, in writing."
+- Role-pick and exit "check one" rows: wrap each group in `class="oneof"` so the fillable build emits radio groups instead of independent checkboxes. After render, confirm in the widget dump that each of those groups is one radio group.
+- Plan p.2 first panel gets the header "Direct Instruction, cont. (9 min)". Plan `:112` → "Leave the rubric slide up (or write the three checks on the board)."
+- Guide: add a three-line Class Magazine quest-card exemplar under the Game Night one, plus one Scout line for it. Add to the Planner exemplar: "the numbers don't have to be right; the habit of guessing them is what scores."
+- Deck: slide 3 loses its `sub:` (it prints the answer to its own question); slide 11 item 1 merged into one string; "Party works" → "Squad works"; one minute format `0–4 min` / `4–8 min`; title subtitle cut to its first sentence. Do NOT touch the title-slide chip row.
+- Cover: drop one pale figure so the party is three, matching every other surface.
+- Listing: "3-part exit ticket" in both places.
+- Deck stays 12 slides; LP stays 2 pages; TG stays 3 pages.
+Verification: `npm run audit -- ai-agent-intern` GREEN; report `dist/review/worksheet-p1.png`, `worksheet-p2.png`, `lesson-plan-p2.png`, `slide-03.png`, `slide-04.png`, the cover at 200px, the radio-group names from the widget dump, and the final block split.
+
+## SWEEP (cross-product, one builder, after the L3/L4/L6 builders have landed)
+Two mechanical edits across the six AI Literacy lessons and the bundle. Touch nothing else; do not "improve" anything you see.
+1. "Every AI job runs human → AI → human" → "A good AI job runs human → AI → human." in: ai-agent-intern (teacher-guide, slides.yaml), ai-fact-check-lab (teacher-guide), ai-prompting-101 (teacher-guide), ai-training-data-crate (teacher-guide). ai-boring-work and ai-taste-file are already done. The claim is false as a universal: plenty of AI tasks have no human on either end.
+2. "Lesson N of six" → "Lesson N of 6" in all six product.yaml descriptions (the same sentence already says "the 6-lesson bundle"), then regenerate each UPLOAD_SHEET with `npm run sheet -- <slug>`. Check the bundle listing for the same pattern.
+Then `npm run audit` with no slug, GREEN. Report the per-file diff count and the new description char counts.
