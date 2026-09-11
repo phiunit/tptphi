@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: 'Space Grotesk'; font-weight: 500; src: url('../../../brand/fonts/SpaceGrotesk-500.ttf') format('truetype'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('../../../brand/fonts/SpaceGrotesk-700.ttf') format('truetype'); }
+* { box-sizing: border-box; margin: 0; }
+html { overflow: hidden; height: 100%; background: #14141F; }
+body { min-height: 100%; }
+body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(ellipse at 75% 85%, #3B2F8F 0%, #232345 45%, #14141F 100%); color: #fff;
+  display: flex; flex-direction: column; padding: 60px; position: relative; overflow: hidden; }
+/* stars */
+.star { position: absolute; background: #fff; border-radius: 50%; opacity: 0.8; }
+.star.g { background: #FFB020; }
+/* content */
+.brand { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FFB020; }
+.chipline { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 14px; position: relative; z-index: 2; max-width: 560px; }
+.chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 24px; padding: 9px 24px; border-radius: 99px; white-space: nowrap; }
+.chip.solid { background: #FFB020; color: #14141F; }
+.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 70px; position: relative; z-index: 2; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
+h1 span { color: #FFB020; }
+.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; margin-top: 26px; line-height: 1.15; color: #FFFFFF; position: relative; z-index: 2; max-width: 730px; }
+.free { position: absolute; top: 46px; right: 46px; background: #FFB020; color: #14141F; font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: 30px; padding: 18px 26px; border-radius: 20px; transform: rotate(6deg); z-index: 3; }
+</style></head><body>
+<div class="star g" style="width:10px;height:10px;left:690px;top:230px"></div>
+<div class="star" style="width:4px;height:4px;left:560px;top:140px"></div>
+<div class="star g" style="width:8px;height:8px;left:790px;top:400px"></div>
+<div class="star" style="width:5px;height:5px;left:760px;top:560px"></div>
+<div class="star g" style="width:6px;height:6px;left:468px;top:990px"></div>
+<!-- Art: one clipboard holding a story (ruled lines) with the Fact Desk lens over it, a check inside the lens; fully inside the frame, bottom-right -->
+<svg width="300" height="380" viewBox="0 0 300 380" style="position:absolute; right:48px; bottom:42px; z-index:1;">
+  <!-- board -->
+  <rect x="20" y="40" width="260" height="320" rx="18" fill="#FFB020"/>
+  <!-- paper -->
+  <rect x="42" y="72" width="216" height="266" rx="8" fill="#FFD27A"/>
+  <!-- clip -->
+  <rect x="105" y="18" width="90" height="52" rx="12" fill="#14141F"/>
+  <rect x="128" y="30" width="44" height="18" rx="9" fill="#FFD27A"/>
+  <rect x="140" y="6" width="20" height="30" rx="8" fill="none" stroke="#14141F" stroke-width="6"/>
+  <!-- the story: ruled lines -->
+  <line x1="66" y1="106" x2="234" y2="106" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <line x1="66" y1="132" x2="196" y2="132" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <line x1="66" y1="158" x2="234" y2="158" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <line x1="66" y1="184" x2="150" y2="184" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <line x1="66" y1="290" x2="120" y2="290" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <line x1="66" y1="316" x2="150" y2="316" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <!-- the lens, over the lines, with the check inside -->
+  <circle cx="176" cy="246" r="58" fill="#FFF8EA" stroke="#14141F" stroke-width="9"/>
+  <path d="M 148 250 L 168 270 L 206 226" fill="none" stroke="#14141F" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- handle -->
+  <path d="M 218 288 L 252 322" stroke="#14141F" stroke-width="20" stroke-linecap="round"/>
+</svg>
+<div class="free">FREE</div>
+<div class="brand">Future Skills Series</div>
+<div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Free Frame · Any Story</span></div>
+<div class="kicker">The News Desk Pack · Frame 1</div>
+<h1>Fact<br><span>Desk</span></h1>
+<p class="sub">Any story. Check it<br>before you repeat it.</p>
+<div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">1 one-page frame</span><span class="chip">No prep · No devices needed</span></div>
+</body></html>
