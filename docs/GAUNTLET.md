@@ -36,6 +36,16 @@ block is doable in its minutes for 30 students; a sub who has never seen it can 
 page: ≥ 3 verbatim teacher lines, every transition written, one what-if per activity; materials
 list complete and true to the worksheet; Support / Extension / ELL / No-device all named;
 standards chips = yaml (machine gate); bridge lines hedged for standalone buyers.
+**Added after Round 3 (2026-09-11), applies to every surface:** a peer step must name who goes
+first and when the paper moves, and a rotation must survive being traced by hand against the
+product's own answer key. Write-in space is measured against the teacher guide's exemplar for
+that item, at about 45 characters per handwritten line. Block minutes are checked against the
+words the block demands at 10-13 words per minute, not against the teacher's script. Universal
+claims about AI are hedged. An assessed item reads identically on worksheet, plan, slide and key
+— if a gate blocks the copy, the gate is wrong (a slide may carry `verbatim: true`, which skips
+the character cap and keeps the geometric overflow gate). Printed model sentences are examples,
+not blanks: they never become fillable fields.
+
 **worksheet** — FK ≤ 8.5 on the whole page (machine gate); every task classifiable, ≥ half at
 DOK 2+, ≥ 1 DOK 3 that is assessed; ≥ 24px per ruled line, ≥ 72px per box, rows/cells ≥ 34px;
 every instruction unambiguous to a 12-year-old on first read; no adult/business vocabulary

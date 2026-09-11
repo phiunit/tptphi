@@ -33,10 +33,37 @@ One slop moment kills trust in the whole store. These rules are enforced, not as
     quest card, what done looks like, who it affects, agreeing on a price. Teacher pages
     may use professional terms (and translating for the adult is a selling point).
 
+14. **Every peer step names who goes first and when the paper moves.** A swap is not a
+    procedure. Round 3 found this in four of six lessons: both partners are each other's
+    editor at the same moment, so the timed talk has no turn order and half the class never
+    gets the thing the speaking standard is assessed on. Write it physically — name Speaker 1
+    by a rule anyone can apply ("the partner whose first name comes first in the alphabet"),
+    say when the sheet crosses the desk and when it comes back, and say who ends holding what.
+    A rotation must survive being traced by hand: a seating plan plus a pass direction that
+    sends the wrong paper to the wrong reader is a broken lesson, and it will contradict your
+    own answer key.
+15. **Write-in space is sized against the teacher guide's own exemplar.** If the key's model
+    answer runs 232 characters and the student gets three ruled lines, the page is telling the
+    student to fail. Count the characters in every exemplar, allow about 45 characters per line
+    of 12-year-old handwriting, and give at least that. One rule at the bottom of an empty box
+    says "one line" however tall the box is — use real ruled lines at 24px pitch.
+16. **Time every block against handwriting speed, not against how long the teacher talks.**
+    A 12-year-old writes 10-13 words per minute. Add up the words the block actually demands,
+    with the exemplars as the target length, divide, and compare that to the minutes printed
+    on the page. Reading, choosing and negotiating all happen before any of it.
+17. **Hedge every universal claim about AI.** "Every AI job runs human to AI to human" and
+    "the agent just guesses and keeps going" both shipped in multiple products, and both are
+    false as written. Write "a good AI job", "usually", "the clearest cases are". The hedge is
+    the accurate sentence, not a weaker one.
+18. **Copy an assessed item between surfaces; never retype it.** It must read identically on
+    the worksheet, the plan, the slide and the key. Round 3 found one exit ticket in three
+    phrasings, and a question the screen and the page asked differently while the student
+    answered only one of them. If a gate stops you copying it, fix the gate.
+
 ## Process
-14. `npm run render` and `npm run validate` both green before a product's status moves
+19. `npm run render` and `npm run validate` both green before a product's status moves
     to `rendered` — no exceptions, including "tiny" copy edits (they reflow pages).
-15. Visually inspect the cover PNG and every document page screenshot after ANY change.
+20. Visually inspect the cover PNG and every document page screenshot after ANY change.
 
 ## Why this matters commercially (researched Sep 2026)
 TPT has **no AI detector and no disclosure requirement at upload** — but enforcement is
