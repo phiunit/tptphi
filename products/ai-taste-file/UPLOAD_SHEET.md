@@ -25,7 +25,7 @@ AI Writing Feedback Lesson: Revision Activity | Middle School 6-8 | No Prep
 **Subjects (TPT picker):** Computer Science - Technology → Instructional Technology; Critical Thinking; English Language Arts → Writing; English Language Arts → Oral Communication (Speaking & Listening)
 
 **Standards:** select in TPT's picker → CCSS W.6.5, CCSS SL.6.1
-Not in TPT's picker (they live in the description + teacher guide, which is normal): ISTE 1.6.b
+Not in TPT's picker (they live in the description + teacher guide, which is normal): ISTE 1.1.c
 
 **Tags / keywords:**
 ```
@@ -33,7 +33,7 @@ AI literacy, artificial intelligence, revision, writing feedback, peer editing, 
 ```
 
 **Description** — paste the `description:` block from `products/ai-taste-file/product.yaml`
-(2345 chars; TPT shows only the first ~2 lines before "read more" — the second sentence must name THIS lesson's activity.)
+(2472 chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
 
 
 ## Before you hit Publish

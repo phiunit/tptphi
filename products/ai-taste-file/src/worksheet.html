@@ -3,7 +3,7 @@
 <style>
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
-  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 150px; }
+  .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 208px; }
   .blank.short { min-width: 56px; }
   .blank.wide { width: calc(100% - 118px); height: 20px; vertical-align: bottom; }
   .page p.peeve { margin: 0 0 6px; line-height: 24px; }
@@ -11,12 +11,12 @@
   body.compact .page1 .lines .l { height: 24px; }
   body.compact .page1 .masthead { margin-bottom: 12px; }
   body.compact .page1 .sub { margin-bottom: 6px; }
-  body.compact .page1 h2 { margin: 6px 0 3px; }
+  body.compact .page1 h2 { margin: 5px 0 2px; }
   body.compact .page1 .panel { padding: 7px 12px; }
   body.compact .writebox { min-height: 84px; }
   body.compact .writebox.tall { min-height: 160px; }
   .pairgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  body.compact .pairgrid .writebox { min-height: 72px; }
+  body.compact .pairgrid .writebox { min-height: 84px; }
   .grid2 { gap: 14px; align-items: start; }
   .boxlabel { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--line); margin: 0 0 3px; }
   table.check td, table.check th { padding: 7px 6px; }
@@ -41,13 +41,14 @@
       <rect x="6" y="12" width="74" height="56" rx="10" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
       <rect x="17" y="25" width="30" height="5" rx="2.5" fill="#14141F"/>
       <rect x="17" y="36" width="40" height="5" rx="2.5" fill="#14141F"/>
-      <path d="M 66 62 C 57 55, 53 50, 53 45 C 53 41, 56 39, 59 39 C 61.5 39, 64 41, 66 44 C 68 41, 70.5 39, 73 39 C 76 39, 79 41, 79 45 C 79 50, 75 55, 66 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
       <!-- page with an editor's mark -->
       <rect x="70" y="30" width="44" height="60" rx="5" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
       <rect x="79" y="44" width="26" height="4" rx="2" fill="#14141F"/>
       <rect x="79" y="55" width="26" height="4" rx="2" fill="#14141F"/>
       <path d="M 76 60 L 108 53" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
       <path d="M 87 76 L 92 68 L 97 76" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- the like-heart, drawn last so nothing clips it -->
+      <path transform="translate(-15 4)" d="M 66 62 C 57 55, 53 50, 53 45 C 53 41, 56 39, 59 39 C 61.5 39, 64 41, 66 44 C 68 41, 70.5 39, 73 39 C 76 39, 79 41, 79 45 C 79 50, 75 55, 66 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
     </g>
     <g id="heart">
       <path d="M 12 21 C 5 15, 1 10, 1 6 C 1 2.5, 3.5 1, 6 1 C 8.5 1, 11 3, 12 5.5 C 13 3, 15.5 1, 18 1 C 20.5 1, 23 2.5, 23 6 C 23 10, 19 15, 12 21 Z" fill="#FFB020" stroke="#14141F" stroke-width="2" stroke-linejoin="round"/>
@@ -87,7 +88,7 @@
       <p>One tone word of your own: <span class="blank"></span></p>
     </div>
     <div>
-      <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 2 — How I Like It Served</h2>
+      <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 2 — How I Like It</h2>
       <p>Check every format you actually enjoy reading:</p>
       <table class="check">
         <tr><td class="tick"></td><td>short and punchy (gets to the point fast)</td></tr>
@@ -129,11 +130,15 @@
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Step 2 — The Editor's Notes</h2>
   <p><strong>Swap sheets with your partner — all pages.</strong> You are now the EDITOR for their draft. Read THEIR taste file (page 1). Read THEIR draft. Then write 2 notes on THEIR sheet, in the boxes below. Each note names a taste-file section (1–5) and says what doesn't match it. Notes, not rewrites — never write their sentence for them. <em>With devices:</em> your teacher types one taste file and draft into an AI on the big screen, and the class checks its 2 notes.</p>
-  <div class="talk"><strong>Then talk — 1 minute.</strong> Editor: read both notes out loud. Writer: ask ONE question ("Which sentence?" or "What would fit?"). Editor: answer using only the taste file. Then swap back.</div>
   <p><strong>Note 1</strong> — points at Taste File section # <span class="blank short"></span></p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
   <p><strong>Note 2</strong> — points at Taste File section # <span class="blank short"></span></p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+
+  <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Then Talk — 2 Minutes</h2>
+  <div class="talk frame"><strong>Take turns. One of you talks first, then the other.</strong>
+  Speaker 1 is the partner whose first name comes first in the alphabet. Speaker 1 is the editor for the first minute: read your two notes out loud. Writer: ask ONE question. Then switch — Speaker 2 runs the same minute. Then swap sheets back.
+  <br><strong>Your one question</strong> is "Which sentence?" or "What would fit?" <strong>Your answer</strong> uses only their taste file — never your own taste.</div>
 
   <div class="footer"><span>Teach AI Your Taste — The Editor's Chair</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
@@ -144,7 +149,7 @@
   <p class="sub">Sheets swapped back? Good. From here on, this page is yours — your draft, your pen.</p>
 
   <h2><svg width="20" height="19" viewBox="0 0 24 24"><use href="#star"/></svg> Step 3 — Revise It Yourself</h2>
-  <p>Rewrite your draft below, using your editor's two notes. Star (*) every change you made. Your editor does not write a single word for you.</p>
+  <p>Rewrite your draft below. <strong>Rewrite only the sentences your notes point at, plus enough around them to make it read.</strong> Star (*) every change you made. Your editor does not write a single word for you.</p>
   <div class="writebox tall"></div>
 
   <table class="check list">
@@ -156,7 +161,7 @@
   </table>
 
   <h2><svg width="20" height="19" viewBox="0 0 24 24"><use href="#star"/></svg> Last Check</h2>
-  <p><strong>1.</strong> One change I made (the old words → the new words):</p>
+  <p><strong>1.</strong> The one word or phrase you changed (old → new):</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
   <p><strong>2.</strong> It fits my taste file because (name the section):</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>

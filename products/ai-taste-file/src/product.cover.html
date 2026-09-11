@@ -15,10 +15,10 @@ body { width: 850px; height: 1100px; font-family: -apple-system, "Segoe UI", Rob
 .chipline { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 14px; position: relative; z-index: 2; max-width: 560px; }
 .chip { font-family: 'Space Grotesk', sans-serif; border: 2px solid #FFB020; color: #FFB020; font-weight: 700; font-size: 24px; padding: 9px 24px; border-radius: 99px; white-space: nowrap; }
 .chip.solid { background: #FFB020; color: #14141F; }
-.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #E8E8F5; opacity: 0.85; margin-top: 70px; position: relative; z-index: 2; }
+.kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 3px; text-transform: uppercase; color: #FFFFFF; opacity: 1; margin-top: 54px; position: relative; z-index: 2; }
 h1 { font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1.0; letter-spacing: -2px; margin-top: 14px; position: relative; z-index: 2; }
 h1 span { color: #FFB020; }
-.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; margin-top: 30px; line-height: 1.2; color: #FFFFFF; position: relative; z-index: 2; white-space: nowrap; }
+.sub { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; margin-top: 26px; line-height: 1.2; color: #FFFFFF; position: relative; z-index: 2; }
 .sub em { color: #FFB020; font-style: normal; }
 </style></head><body>
 <div class="star g" style="width:10px;height:10px;left:690px;top:230px"></div>
@@ -26,28 +26,25 @@ h1 span { color: #FFB020; }
 <div class="star g" style="width:8px;height:8px;left:790px;top:400px"></div>
 <div class="star" style="width:5px;height:5px;left:760px;top:560px"></div>
 <div class="star g" style="width:6px;height:6px;left:380px;top:900px"></div>
-<!-- Art: ONE object — a feed card (rounded rectangle, two text bars, a solid gold "like" heart) carrying the
-     editor's mark on the card itself: the second text bar struck through, a caret where the new words go.
-     Card is 324px wide (38% of the 850px frame), fully inside the frame, below the chip row. -->
-<svg width="340" height="290" viewBox="0 0 340 290" style="position:absolute; right:60px; bottom:52px; z-index:1;">
-  <!-- feed card -->
-  <rect x="8" y="8" width="324" height="250" rx="30" fill="#fff" opacity="0.16"/>
-  <rect x="8" y="8" width="324" height="250" rx="30" fill="none" stroke="#FFB020" stroke-width="12"/>
-  <!-- two text bars -->
-  <rect x="50" y="58" width="204" height="22" rx="11" fill="#FFD27A"/>
-  <rect x="50" y="104" width="140" height="22" rx="11" fill="#FFD27A"/>
-  <!-- editor's mark: the second bar struck through, a caret for the new words -->
-  <path d="M 30 127 L 210 103" fill="none" stroke="#FFB020" stroke-width="10" stroke-linecap="round"/>
-  <!-- the new words: a short inserted bar above the caret -->
-  <rect x="88" y="152" width="112" height="22" rx="11" fill="#FFB020"/>
-  <path d="M 88 236 L 120 196 L 152 236" fill="none" stroke="#FFB020" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- the like: a solid gold heart -->
-  <path transform="translate(158 40)" d="M 112 208 C 80 186, 64 170, 64 154 C 64 139, 75 130, 87 130 C 98 130, 107 136, 112 145 C 117 136, 126 130, 137 130 C 149 130, 160 139, 160 154 C 160 170, 144 186, 112 208 Z" fill="#FFB020"/>
+<!-- Art: ONE object — a page carrying the editor's mark: one line struck through, the replacement
+     written above it, a caret touching the struck line. Page is 300px wide (35% of the 850px frame),
+     fully inside the frame, below the chip row. -->
+<svg width="260" height="330" viewBox="0 0 260 330" style="position:absolute; right:64px; bottom:44px; z-index:1;">
+  <!-- the page -->
+  <rect x="8" y="8" width="244" height="314" rx="20" fill="#fff" opacity="0.16"/>
+  <rect x="8" y="8" width="244" height="314" rx="20" fill="none" stroke="#FFB020" stroke-width="12"/>
+  <!-- the replacement, written above the line -->
+  <rect x="62" y="92" width="136" height="22" rx="11" fill="#FFB020"/>
+  <!-- the old line, struck through -->
+  <rect x="66" y="150" width="128" height="20" rx="10" fill="#FFD27A"/>
+  <path d="M 44 182 L 216 138" fill="none" stroke="#FFB020" stroke-width="9" stroke-linecap="round"/>
+  <!-- the caret, apex touching the struck line -->
+  <path d="M 100 222 L 130 172 L 160 222" fill="none" stroke="#FFB020" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 <div class="brand">Future Skills Series</div>
 <div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Lesson 4 of 6</span></div>
 <div class="kicker">The Revision Lesson</div>
 <h1>Teach AI<br><span>Your Taste</span></h1>
-<p class="sub">Generic in, <em>generic out</em>.</p>
+<p class="sub">The AI gives notes.<br><em>You stay the writer.</em></p>
 <div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">45-min lesson</span><span class="chip">No prep · No devices needed</span></div>
 </body></html>
