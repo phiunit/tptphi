@@ -17,7 +17,7 @@ slides:
   - type: question
     title: "Whose fault was that?"
     question: "The genie's — or the wish?"
-    notes: "Take two or three answers (the answer — the wish — stays off the slide until they say it). Then the bridge: \"AI works like that genie. It doesn't know what you MEANT. It only knows what you SAID. Every AI job goes human, AI, human: you start it with the wish, the genie does the middle, and you check what comes back. Today you get good at both human parts.\" TRANSITION: \"So how do you write a wish a genie can't twist? Lawyers figured this out a long time ago.\""
+    notes: "Take two or three answers (the answer — the wish — stays off the slide until they say it). Then the bridge: \"AI works like that genie. It doesn't know what you MEANT. It only knows what you SAID. A good AI job goes human, AI, human: you start it with the wish, the genie does the middle, and you check what comes back. Today you get good at both human parts.\" TRANSITION: \"So how do you write a wish a genie can't twist? Lawyers figured this out a long time ago.\""
   - type: cards
     minutes: 10
     title: "Parts of a Genie-Proof Wish"
