@@ -7,27 +7,28 @@
   .blank.wide { min-width: 220px; }
   body.compact .brief td { padding-top: 2px; padding-bottom: 2px; }
   body.compact h2 { margin-top: 5px; }
-  .brief td .write { min-height: 72px; border-bottom: 1.5px solid #B9B9C9; }
+  .brief td .write { min-height: 96px; }
+  .write { display: flex; flex-direction: column; }
+  .write .l { flex: 1 1 auto; min-height: 24px; border-bottom: 1.5px solid #B9B9C9; }
   .notegrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 2px; }
   .notegrid p { margin: 0 0 2px; }
   .rolecards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 2px; }
+  body.compact .page1 .masthead, body.compact .page2 .masthead { margin-bottom: 12px; }
+  body.compact .page1 .panel, body.compact .page2 .panel { padding: 7px 12px; margin: 6px 0; }
+  body.compact .page1 h2, body.compact .page2 h2 { margin: 5px 0 3px; }
   body.compact .rolecards .panel { margin: 0; font-size: 10pt; line-height: 1.22; padding: 5px 8px; }
-  body.compact .page1 .masthead { margin-bottom: 12px; }
-  body.compact .page1 .panel { padding: 7px 12px; margin: 6px 0; }
-  body.compact .page1 .rolecards .panel { padding: 5px 8px; margin: 0; }
-  body.compact .page1 h2 { margin: 5px 0 3px; }
   .rolecards .rolename { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 10.5pt;
     text-transform: uppercase; letter-spacing: 1px; color: var(--line); margin-bottom: 3px; }
-  .checkrubric td:first-child, .checkrubric th:first-child { width: 2.3in; }
-  .checkrubric td:nth-child(3), .checkrubric td:nth-child(4), .checkrubric th:nth-child(3), .checkrubric th:nth-child(4) { width: 1in; text-align: center; white-space: nowrap; }
+  .checkrubric td:first-child, .checkrubric th:first-child { width: 1.75in; }
+  .checkrubric td:nth-child(3), .checkrubric td:nth-child(4), .checkrubric th:nth-child(3), .checkrubric th:nth-child(4) { width: 0.9in; text-align: center; white-space: nowrap; }
   body.compact .checkrubric td { padding-top: 2px; padding-bottom: 2px; }
-  .checkrubric .write { min-height: 72px; border-bottom: 1.5px solid #B9B9C9; }
+  .checkrubric .write { min-height: 72px; }
   td.tick { text-align: center; vertical-align: middle; }
   td.tick::before { content: ""; display: inline-block; width: 16px; height: 16px; border: 1.5px solid #14141F; border-radius: 3px; }
   .pick td.tick { width: 0.42in; }
   body.compact table.exitcard { width: 100%; table-layout: fixed; }
   body.compact .exitcard td { width: 50%; padding-top: 2px; padding-bottom: 2px; }
-  .exitcard td .write { min-height: 72px; border-bottom: 1.5px solid #B9B9C9; }
+  .exitcard td .write { min-height: 144px; }
   .exitcard td strong { display: block; margin-bottom: 1px; }
   .exitpick { margin: 0; }
   body.compact .exitpick td { padding: 2px 6px; border-bottom: none; }
@@ -36,6 +37,7 @@
   .exitpick .lines { margin: 0; }
   .exitgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .exitgrid p { margin: 0; }
+  body.compact .exitgrid .lines .l { height: 30px; }
   .glossary { margin: 4px 0 0; padding-left: 18px; }
   .glossary li { margin-bottom: 1px; }
   .lead { margin: 4px 0 2px; }
@@ -78,7 +80,7 @@
 
   <div class="panel">
     <strong>Everyone is a party member AND a leader.</strong> Steps 1–2 you're the leader; in Step 3 you switch and play an AI agent for your team's card; in Step 4 you're the leader again.
-    An AI agent does a whole job, step by step, on its own — and if your card leaves something out, the agent just guesses and keeps going. So the leader checks, using the loop:
+    An AI agent does a whole job, step by step, on its own — and if your card leaves something out, the agent usually fills the gap with a guess and keeps going. So the leader checks, using the loop:
     <strong>QUEST CARD → ROLES → CHECK THE LOOT → SHIP IT or RUN IT BACK.</strong>
     <p style="margin:4px 0 0"><strong>Party</strong> = your team of 3; a <strong>party member</strong> does one job. <strong>Roles</strong> = who does which slice. <strong>Quest card</strong> = the job, written down in four parts. <strong>Loot</strong> = the finished work. <strong>SHIP IT</strong> = finished and correct, send it. <strong>RUN IT BACK</strong> = do it again.</p>
   </div>
@@ -88,36 +90,38 @@
     <tr><td class="tick"></td><td style="width:3in"><strong>GAME NIGHT PAGE</strong> — a one-page flyer that gets grades 6–8 to show up</td><td class="tick"></td><td><strong>CLASS MAGAZINE, ISSUE #1</strong> — the plan for the first issue of a magazine your class makes</td></tr>
   </table>
 
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 2 — Write the Quest Card (ONE per team; everyone copies it)</h2>
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 2 — Write the Quest Card (ONE per team)</h2>
+  <p style="margin:0 0 4px">One person writes all four parts — the <strong>card-holder</strong>. The other two copy <strong>GOAL</strong> and <strong>DONE LOOKS LIKE</strong> onto their own sheets.</p>
   <table class="brief">
-    <tr><td style="width:1.5in"><strong>GOAL</strong><br>What does winning mean?</td><td><div class="write"></div></td></tr>
-    <tr><td><strong>WHAT WE KNOW</strong><br>Who is it for, and what does the team already have?</td><td><div class="write"></div></td></tr>
-    <tr><td><strong>RULES OF THE RUN</strong><br>Limits: length, tone, deadline</td><td><div class="write"></div></td></tr>
-    <tr><td><strong>DONE LOOKS LIKE</strong><br>The exact thing handed back</td><td><div class="write"></div></td></tr>
+    <tr><td style="width:1.5in"><strong>GOAL</strong><br>What does winning mean?</td><td><div class="write"><div class="l"></div><div class="l"></div><div class="l"></div></div></td></tr>
+    <tr><td><strong>WHAT WE KNOW</strong><br>Who is it for, and what does the team already have?</td><td><div class="write"><div class="l"></div><div class="l"></div><div class="l"></div></div></td></tr>
+    <tr><td><strong>RULES OF THE RUN</strong><br>Limits: length, tone, deadline</td><td><div class="write"><div class="l"></div><div class="l"></div><div class="l"></div></div></td></tr>
+    <tr><td><strong>DONE LOOKS LIKE</strong><br>The exact thing handed back</td><td><div class="write"><div class="l"></div><div class="l"></div><div class="l"></div></div></td></tr>
   </table>
-
-  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 3 — Role Cards (take one each)</h2>
-  <p><strong>Now switch: for 8 minutes YOU play an AI agent.</strong> Do your role's job SILENTLY on a blank sheet of paper — <strong>not this worksheet.</strong> No questions. When the teacher calls 4 minutes, the Critic reads the Planner's list. At 8: <strong>pass that blank sheet one seat left; keep this worksheet</strong> — you're the leader again.</p>
-  <div class="rolecards">
-    <div class="panel"><div class="rolename">Planner</div>0–4 min: number the steps. If the card doesn't say, don't guess — write <strong>"NOT ON THE CARD."</strong> 4–8 min: add a time guess to each step; star the one most likely to go wrong.</div>
-    <div class="panel"><div class="rolename">Scout</div>List every fact the quest needs. Mark each <strong>✓</strong> (we know it for sure — say how) or <strong>?</strong> (needs checking — say where).</div>
-    <div class="panel"><div class="rolename">Critic</div>0–4 min: write 2 things the audience on the card cares about. When the teacher calls 4 minutes, read the Planner's list and write 3 upgrades. <strong>"Make it better" is banned.</strong></div>
-  </div>
 
   <div class="footer"><span>Lead Your AI Squad — Run the Quest</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
 
-<div class="page">
+<div class="page page2">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
+  <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 3 — Role Cards (take one each)</h2>
+  <p><strong>Now switch: for 8 minutes YOU play an AI agent.</strong> Do your role's job SILENTLY on a blank sheet of paper — <strong>not this worksheet.</strong> No questions. When the teacher calls 4 minutes, the Critic reads the Planner's list.
+    <br><strong>Seats and the swap:</strong> Sit in a triangle. The Scout sits on the Planner's left; the Critic sits on the Scout's left. Every paper moves one seat to its owner's left — the Planner's plan goes to the Scout, the Scout's questions go to the Critic, the Critic's list goes to the Planner. Keep this worksheet: at 8 minutes you're the leader again.</p>
+  <div class="rolecards">
+    <div class="panel"><div class="rolename">Planner</div>0–4 min: number the steps. If the card doesn't say, don't guess — write <strong>"NOT ON THE CARD."</strong> 4–8 min: add a time guess to each step; star the one most likely to go wrong.</div>
+    <div class="panel"><div class="rolename">Scout</div>0–4 min: list every fact the quest needs. Mark each <strong>✓</strong> (we know it for sure — say how) or <strong>?</strong> (needs checking — say where). 4–8 min: turn every <strong>?</strong> into the one question you'd ask, in writing.</div>
+    <div class="panel"><div class="rolename">Critic</div>0–4 min: write 2 things the audience on the card cares about. 4–8 min: read the Planner's list and write 3 upgrades. <strong>"Make it better" is banned.</strong></div>
+  </div>
+
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Step 4 — Leader Review: Check the Loot</h2>
-  <p>You're the leader again; the paper in your hands is the loot. Read it like your name is on it — because it is. For each row, mark one box: <strong>SHIP IT</strong> (finished and correct — send it) or <strong>RUN IT BACK</strong> (do it again).
+  <p>You're the leader again; the paper in your hands is the loot. Read it like your name is on it — because it is. For each row, mark one box: <strong>SHIP IT</strong> (finished and correct — send it) or <strong>RUN IT BACK</strong> (do it again). Quote one line of evidence for the row you mark RUN IT BACK, then write KEEP and FIX below. <strong>Last 60 seconds:</strong> hand the paper back and read your FIX line to its owner.
     <br><strong>Party member I'm reviewing:</strong> <span class="blank wide"></span> &nbsp; <strong>Their role:</strong> <span class="blank"></span></p>
   <table class="checkrubric">
     <tr><th>Check</th><th>Evidence (quote it or point to it)</th><th>SHIP IT</th><th>RUN IT BACK</th></tr>
-    <tr class="oneof"><td><strong>ACCURACY</strong> — facts match the card? Every ✓ says how we know?</td><td><div class="write"></div></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr class="oneof"><td><strong>TASTE</strong> — right audience and tone for the card, or could it be for anyone at all?</td><td><div class="write"></div></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr class="oneof"><td><strong>DONE-NESS</strong> — everything the card asked for is here?</td><td><div class="write"></div></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td><strong>ACCURACY</strong> — facts match the card? Every ✓ says how we know?</td><td><div class="write"><div class="l"></div><div class="l"></div></div></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td><strong>TASTE</strong> — right audience and tone for the card, or could it be for anyone at all?</td><td><div class="write"><div class="l"></div><div class="l"></div></div></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td><strong>DONE-NESS</strong> — everything the card asked for is here?</td><td><div class="write"><div class="l"></div><div class="l"></div></div></td><td class="tick"></td><td class="tick"></td></tr>
   </table>
 
   <p class="lead"><strong>The run-it-back note</strong> — even great work gets one. Be specific enough that nobody has to guess.</p>
@@ -126,27 +130,33 @@
     <div><p><strong>FIX</strong> (the exact change + why it matters):</p><div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div></div>
   </div>
 
+  <div class="footer"><span>Lead Your AI Squad — Run the Quest</span><span>© Future Skills Series</span><span>2</span></div>
+</div>
+
+<div class="page page3">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
+
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#checkbadge"/></svg> Exit Ticket — Quest Card for a Real Task</h2>
   <p><strong>1.</strong> Write a quest card for one real task in YOUR life this week (a study plan, a chore list, a team flyer):</p>
   <table class="exitcard">
-    <tr><td><strong>GOAL</strong><div class="write"></div></td><td><strong>WHAT WE KNOW</strong><div class="write"></div></td></tr>
-    <tr><td><strong>RULES OF THE RUN</strong><div class="write"></div></td><td><strong>DONE LOOKS LIKE</strong><div class="write"></div></td></tr>
+    <tr><td><strong>GOAL</strong><div class="write"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div></td><td><strong>WHAT WE KNOW</strong><div class="write"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div></td></tr>
+    <tr><td><strong>RULES OF THE RUN</strong><div class="write"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div></td><td><strong>DONE LOOKS LIKE</strong><div class="write"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div></td></tr>
   </table>
   <div class="exitgrid">
     <div>
       <p><strong>2.</strong> Which role gets it first? Check one, then write why:</p>
-      <table class="exitpick"><tr><td class="tick"></td><td class="opt">Planner</td><td class="tick"></td><td class="opt">Scout</td><td class="tick"></td><td class="opt">Critic</td></tr></table>
-      <div class="lines"><div class="l"></div></div>
+      <table class="exitpick"><tr class="oneof"><td class="tick"></td><td class="opt">Planner</td><td class="tick"></td><td class="opt">Scout</td><td class="tick"></td><td class="opt">Critic</td></tr></table>
+      <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
     </div>
     <div>
-      <p><strong>3.</strong> Which check would it fail first? Check one, then write what you'd look for:</p>
-      <table class="exitpick"><tr><td class="tick"></td><td class="opt">Accuracy</td><td class="tick"></td><td class="opt">Taste</td><td class="tick"></td><td class="opt">Done-ness</td></tr></table>
-      <div class="lines"><div class="l"></div></div>
+      <p><strong>3.</strong> Which check would it most likely fail? Check one, then write what you'd look for:</p>
+      <table class="exitpick"><tr class="oneof"><td class="tick"></td><td class="opt">Accuracy</td><td class="tick"></td><td class="opt">Taste</td><td class="tick"></td><td class="opt">Done-ness</td></tr></table>
+      <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
     </div>
   </div>
 
   <div class="callout" style="margin-bottom:0"><strong>The leader rule:</strong> if wrong facts ship, the leader said yes to it — the name on the quest is YOURS.</div>
 
-  <div class="footer"><span>Lead Your AI Squad — Run the Quest</span><span>© Future Skills Series</span><span>2</span></div>
+  <div class="footer"><span>Lead Your AI Squad — Run the Quest</span><span>© Future Skills Series</span><span>3</span></div>
 </div>
 </body></html>
