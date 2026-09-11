@@ -4,19 +4,22 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
-  .page h2 { margin: 8px 0 4px; }
-  .page p { margin: 0 0 5px; }
-  .page .panel { padding: 8px 12px; margin: 6px 0; }
-  .page .panel p { margin: 0 0 4px; }
+  body.compact { font-size: 10.2pt; line-height: 1.31; }
+  .page h2 { margin: 6px 0 3px; }
+  .page p { margin: 0 0 4px; }
+  .page .panel { padding: 7px 12px; margin: 5px 0; }
+  .page .panel p { margin: 0 0 3px; }
   .page .panel p:last-child { margin: 0; }
-  .page .callout { margin: 6px 0; }
-  .page ul { margin: 2px 0 6px; }
-  .keytable { font-size: 9.5pt; margin: 4px 0; }
-  body.compact .keytable td { padding: 2px 7px; }
+  .page .callout { margin: 5px 0; }
+  .page ul { margin: 2px 0 4px; }
+  .keytable { font-size: 9pt; margin: 3px 0; }
+  body.compact .keytable td { padding: 1px 5px; }
   .page .callout:last-of-type { margin-bottom: 0; }
-  .smallnote { font-size: 9.5pt; color: #3A3A4E; }
-  .standards { font-size: 10pt; }
-  .standards li { margin-bottom: 4px; }
+  .page .lastblock { margin-bottom: 0 !important; }
+  .smallnote { font-size: 9pt; color: #3A3A4E; }
+  .standards { font-size: 9.5pt; }
+  .keytable td.markc { font-size: 8.5pt; vertical-align: top; }
+  .standards li { margin-bottom: 2px; }
 </style>
 </head>
 <body class="line-ai compact">
@@ -87,22 +90,26 @@
 
   <h2>Answer Key — The Three Drafts (grouped by draft)</h2>
   <table class="keytable">
-    <tr><th style="width:11%">Draft</th><th style="width:37%">Planted error</th><th>The true fact</th></tr>
-    <tr><td>#1 Priya</td><td>"Astronauts first landed on the Moon in 1959"</td><td>The first crewed Moon landing was Apollo 11, in <strong>1969</strong>. (Pushback to expect: the uncrewed probe <em>Luna 2</em> reached the Moon in 1959 — but no astronauts landed. "Astronauts landed" is still false.)</td></tr>
+    <tr><th style="width:9%">Draft</th><th style="width:21%">Mark C (the claims to check)</th><th style="width:30%">What the desk should catch</th><th>The true fact</th></tr>
+    <tr><td>#1 Priya</td><td rowspan="3" class="markc">the 1959 landing date · &ldquo;produces its own light&rdquo; · twelve people by 1972 · &ldquo;brightest thing in the night sky&rdquo;</td><td>"Astronauts first landed on the Moon in 1959"</td><td>The first crewed landing was Apollo 11, in <strong>1969</strong>. (Expect pushback: the uncrewed probe <em>Luna 2</em> reached the Moon in 1959 — but no astronauts landed.)</td></tr>
     <tr><td>#1 Priya</td><td>"the Moon… produces its own light"</td><td>The Moon makes no light of its own — it <strong>reflects sunlight</strong>.</td></tr>
-    <tr><td>#1 Priya</td><td>Ending: "the brightest thing in the night sky"</td><td><strong>True claim, false reason.</strong> The Moon IS the brightest night-sky object — but because it reflects sunlight, not because it makes light. The argument breaks even though the ending is right. Verdict: <strong>FIX</strong>.</td></tr>
-    <tr><td>#2 Theo</td><td>"Mount Everest… rises in the Andes range in South America"</td><td>Everest is in the <strong>Himalayas, in Asia</strong>. The Andes are in South America.</td></tr>
+    <tr><td>#1 Priya</td><td>Ending: "the brightest thing in the night sky"</td><td><strong>True claim, false reason.</strong> The Moon IS the brightest — but because it reflects sunlight. The argument breaks even though the ending is right. Verdict: <strong>FIX</strong>.</td></tr>
+    <tr><td>#2 Theo</td><td rowspan="3" class="markc">Everest in the Andes · Australia's capital · the Pacific as largest ocean · the three-continent ending</td><td>"Mount Everest… rises in the Andes range"</td><td>Everest is in the <strong>Himalayas, in Asia</strong>. The Andes are in South America.</td></tr>
     <tr><td>#2 Theo</td><td>"Australia's capital city is Sydney"</td><td>The capital is <strong>Canberra</strong>, not Sydney — a classic mix-up.</td></tr>
-    <tr><td>#2 Theo</td><td>Ending: "record-holders sit on three continents: Africa, South America, and Asia"</td><td>Once Everest moves back to Asia, South America holds none of the passage's records, so the ending no longer follows. Verdict: <strong>FIX</strong>.</td></tr>
-    <tr><td>#3 Marcus</td><td>"Thomas Edison invented the telephone in 1876"</td><td><strong>Alexander Graham Bell</strong> patented the telephone in 1876. Edison's fame rests on the phonograph and practical electric lighting.</td></tr>
-    <tr><td>#3 Marcus</td><td>Quote: "The telephone is the finest of all my inventions."</td><td><strong>Fabricated</strong> — written for this exercise; it has no source. AI can generate real-sounding quotes nobody said. No traceable source = no print.</td></tr>
-    <tr><td>#3 Marcus</td><td>Ending: "Edison's record makes him the most important inventor of the 1800s"</td><td>An opinion propped up by a false fact (Edison did not invent the telephone) and an invented quote. Strip those and the claim is unsupported. Verdict: <strong>KILL</strong> the ending; the true phonograph and Wright brothers facts survive.</td></tr>
+    <tr><td>#2 Theo</td><td>Ending: "record-holders sit on three continents"</td><td>Once Everest moves back to Asia, South America holds none of the passage's records, so the ending no longer follows. Verdict: <strong>FIX</strong>.</td></tr>
+    <tr><td>#3 Marcus</td><td rowspan="3" class="markc">Edison and the telephone, 1876 · the Edison quote · the phonograph as first to record and play back · the Wright brothers, 1903</td><td>"Thomas Edison invented the telephone in 1876"</td><td><strong>Alexander Graham Bell</strong> patented the telephone in 1876. Edison's fame rests on the phonograph and practical electric lighting.</td></tr>
+    <tr><td>#3 Marcus</td><td>Quote: "The telephone is the finest of all my inventions."</td><td><strong>Fabricated</strong> — written for this exercise; it has no source. AI generates real-sounding quotes nobody said. No traceable source = no print.</td></tr>
+    <tr><td>#3 Marcus</td><td>Ending: "the most important inventor of the 1800s"</td><td>An opinion propped up by a false fact (Edison did not invent the telephone) and an invented quote. Strip those and it is unsupported. Verdict: <strong>KILL</strong> the ending; the true phonograph and Wright facts survive.</td></tr>
   </table>
-  <p class="smallnote"><em>True claims, safe to confirm:</em> #1 — the Moon is Earth's only natural satellite; Neil Armstrong walked first; by 1972, twelve people had walked on the Moon (six Apollo landings). #2 — the Pacific is the largest ocean; the Nile flows north through Egypt and is one of the world's longest rivers; seven continents (seven in the model US schools use); Asia is the largest. #3 — the phonograph (1877) was the first machine to both record and play back sound; the Wright brothers made the first sustained, controlled powered flights in 1903 near Kitty Hawk, North Carolina — the widely accepted record (rival "first flight" claims exist, so a desk that marks it C is doing the job; confirm and print).</p>
+  
 
-  <h2>Verdict Guidance + Exemplar Note</h2>
-  <div class="callout">Draft #1 — <strong>FIX</strong> (topic holds; correct the date and the light claim). Draft #2 — <strong>FIX</strong> (correct the range and the capital). Draft #3 — <strong>KILL the ending, keep the true facts</strong> (headline claim false, supporting quote fabricated). No draft earns RUN today; tell the class that's realistic. A well-argued FIX on #3 ("rewrite it about Bell") earns credit for evidence — then ask: is that a fix, or a new story? Score the evidence, not the stamp.<br>
-  <strong>Exemplar note to Priya (proficient):</strong> "Two things are wrong: astronauts landed in 1969, not 1959, and the Moon doesn't make light — it reflects sunlight. Second source: NASA's Apollo 11 page. Your ending still stands (it IS the brightest), but the reason has to change." Partial: one error named, no second source. No credit: a stamp with no evidence.</div>
+  <h2>Verdict Guidance + Exemplar Notes</h2>
+  <div class="callout">Draft #1 — correct stamp: <strong>FIX</strong> (topic holds; correct the date and the light claim). Draft #2 — correct stamp: <strong>FIX</strong> (correct the range and the capital). Draft #3 — <strong>Correct stamp: KILL (the headline claim and its quote both fail). A defended FIX earns partial credit.</strong> No draft earns RUN today; tell the class that's realistic. Score the evidence, not the stamp.<br>
+  <strong>Exemplar notes (proficient — each fits the four lines the student gets):</strong><br>
+  <em>To Priya:</em> "Wrong: astronauts landed in 1969, not 1959, and the Moon reflects light. Check NASA's Apollo 11 page. Ending stands, reason fails."<br>
+  <em>To Theo:</em> "Wrong: Everest is in the Himalayas in Asia, and Australia's capital is Canberra. Check an atlas. The three-continent ending falls."<br>
+  <em>To Marcus:</em> "Wrong: Bell invented the telephone, and that Edison quote has no source. Check an encyclopedia. The ending has nothing left."<br>
+  Partial: one error named, no second source. No credit: a stamp with no evidence.</div>
 
   <div class="footer"><span>Hallucination Hunters — Teacher Guide</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
@@ -110,19 +117,21 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
+  <p class="smallnote"><em>The three drafts, continued — true claims, safe to confirm:</em> #1 — the Moon is Earth's only natural satellite; Neil Armstrong walked first; by 1972, twelve people had walked on the Moon. #2 — the Pacific is the largest ocean; the Nile flows north through Egypt and is one of the world's longest rivers; seven continents (seven in the model US schools use); Asia is the largest. #3 — the phonograph (1877) was the first machine to both record and play back sound; the Wright brothers made the first sustained, controlled powered flights in 1903 near Kitty Hawk, North Carolina — the widely accepted record (rival claims exist, so a desk that marks it C is doing the job).</p>
+
   <h2>Key — &ldquo;Second source: where I&rsquo;d check it&rdquo; column</h2>
   <p class="smallnote">The ISTE 1.3.b item. Full credit: a specific KIND of source, independent of the draft and of the AI. Partial: "look it up online." No credit: asked the AI again; "Google" with no site named; the draft itself.</p>
   <table class="keytable">
     <tr><th style="width:11%">Draft</th><th style="width:48%">Acceptable second sources</th><th>What fails</th></tr>
     <tr><td>#1 Moon</td><td>A space-agency page (NASA) on Apollo 11 or the Moon; an encyclopedia entry "Moon"; a science textbook's astronomy chapter.</td><td>"Ask the AI if it's sure"; a video that repeats the claim; "Google" with no site named.</td></tr>
     <tr><td>#2 Records</td><td>An atlas or globe; an encyclopedia entry on Everest or Australia; a geography textbook; the Australian government's own site.</td><td>A quiz site that copied the claim; a friend who "knows"; the draft itself.</td></tr>
-    <tr><td>#3 Inventions</td><td>An encyclopedia entry on Bell, Edison, or the telephone; a museum site (Smithsonian); a history textbook. For the quote: a collection of Edison's writings or a quotation reference — nothing turns up, so it has no source.</td><td>"It's in quotation marks, so it's real"; asking the AI "did Edison say this?"</td></tr>
+    <tr><td>#3 Inventions</td><td>An encyclopedia entry on Bell, Edison, or the telephone; a museum site (Smithsonian); a history textbook. For the quote: a quotation reference or a collection of Edison's writings — nothing turns up, so it has no source.</td><td>"It's in quotation marks, so it's real"; asking the AI "did Edison say this?"</td></tr>
   </table>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Exit Ticket Key</h2>
   <div class="panel">
-    <p><strong>#1 — How can AI sound 100% sure and still be wrong?</strong> Full credit names the mechanism: AI predicts the <em>likely next words</em>; it doesn't check them against anything. Confidence is a writing style, not evidence. Accept "it guesses what sounds right" or "it's a smooth talker, not a fact-checker." Partial credit: "it makes mistakes" with no why.</p>
-    <p><strong>#2 — A real checkable claim + a second source that is NOT where they first saw it.</strong> Full credit names a claim with a name, date, number, place, or quote in it AND a specific second source ("the NASA site, not the video that made the claim"; "the team's official schedule"; "a news site that didn't copy the first one"). Partial: "Google it" with no source named — push back: "Google shows you ten sources. Which one, and why that one?" No credit: "ask the AI again."</p>
+    <p><strong>#1 — How can AI sound 100% sure and still be wrong?</strong> Full credit names the mechanism: AI predicts the <em>likely next words</em> and never checks them. Confidence is a writing style, not evidence. Accept "it guesses what sounds right" or "it's a smooth talker, not a fact-checker." Partial credit: "it makes mistakes" with no why.</p>
+    <p><strong>#2 — A real checkable claim + a second source that is NOT where they first saw it.</strong> Full credit names a claim with a name, date, number, place, or quote in it AND a specific second source ("the NASA site, not the video that made the claim"; "a news site that didn't copy the first one"). Partial: "Google it" with no source named — push back: "Google shows you ten sources. Which one, and why that one?" No credit: "ask the AI again."</p>
   </div>
 
   <h2>Full Standards Text</h2>
@@ -133,7 +142,7 @@
   </ul>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Thank You &amp; Terms of Use</h2>
-  <div class="panel">
+  <div class="panel lastblock">
     <p><strong>License:</strong> one teacher, their own classroom. Please don't post this file online or share it school-wide — point colleagues to the listing. <strong>Loved it?</strong> A quick review helps other teachers find it. <strong>Something off?</strong> Ask on the listing before reviewing — we fix fast.</p>
   </div>
   <div class="footer"><span>Hallucination Hunters — Teacher Guide</span><span>© Future Skills Series</span><span>3</span></div>

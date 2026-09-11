@@ -20,6 +20,10 @@
 //     - { type: compare,  title, left: { heading, text }, right: { heading, text }, minutes, notes }
 //     - { type: list,     title, items: [..], minutes, notes }                      # ≤ 6 items
 //     - { type: closer,   statement, sub, notes }
+//   Any slide may carry `verbatim: true`. It skips the CONTENT character cap for that slide only
+//   (the geometric overflow gate below still runs, and is the real guard). Allowed ONLY on a slide
+//   that reproduces an assessed student item word for word — a paraphrased exit-ticket question on
+//   the board is a different question from the one on the worksheet.
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
@@ -117,13 +121,18 @@ export async function buildSlides(p, distDir, outPath, page = null) {
     if (deck.kicker) S.text(String(deck.kicker).toUpperCase(), { x: M, y: 1.15, w: tw, h: 0.3, fontSize: 11, bold: true, color: C.muted, charSpacing: 3 });
     S.text(short, { x: M, y: 1.5, w: tw, h: 1.5, fontSize: fit(short, tw, 1.5, 40, 28, true), bold: true, color: 'FFFFFF', valign: 'middle' });
     if (deck.subtitle) S.text(deck.subtitle, { x: M, y: 3.1, w: tw, h: 1.0, fontSize: fit(deck.subtitle, tw, 1.0, 15, 12), color: C.ink });
-    const chips = [`Grades ${String(meta.grades || '6–8').replace('-', '–')}`, `${meta.minutes || 45}-min lesson`, 'No prep · No devices needed'];
-    let cx = M; for (const c of chips) { const w = Math.max(1.05, c.length * 0.085 + 0.35); pill(S, c, cx, 4.35, w); cx += w + 0.15; }
+    // The cover already prints the grade / minutes / no-prep chips: repeating them beside the
+    // thumbnail put every one of them on the slide twice. Only a coverless deck needs the row.
+    if (!cover) {
+      const chips = [`Grades ${String(meta.grades || '6–8').replace('-', '–')}`, `${meta.minutes || 45}-min lesson`, 'No prep · No devices needed'];
+      let cx = M; for (const c of chips) { const w = Math.max(1.05, c.length * 0.085 + 0.35); pill(S, c, cx, 4.35, w); cx += w + 0.15; }
+    }
   }
 
   // Content limits from docs/ANTI_SLOP.md — checked up front so the failure names the slide
   const tooLong = [];
   deck.slides.forEach((s, i) => {
+    if (s.verbatim) return;   // reproduces an assessed student item word for word — length is not ours to cut
     const n = i + 2, over = (label, t, max) => { if (t && String(t).length > max) tooLong.push(`slide ${n} ${label}: ${String(t).length} chars > ${max}`); };
     if (s.type === 'cards') { const max = (s.items || []).length >= 4 ? 90 : 140; (s.items || []).forEach((it, j) => { over(`card ${j + 1} text`, it.text, max); over(`card ${j + 1} name`, it.name, 24); }); }
     if (s.type === 'list') { if ((s.items || []).length > 6) tooLong.push(`slide ${n}: ${s.items.length} bullets > 6`); (s.items || []).forEach((t, j) => over(`item ${j + 1}`, t, 110)); }

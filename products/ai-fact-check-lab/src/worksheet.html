@@ -1,20 +1,20 @@
 <!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="../../../brand/templates/print.css">
 <style>
-  td.logslot { height: 40px; border: 1px solid #C9C9D6; }
+  td.logslot { height: 36px; border: 1px solid #C9C9D6; }
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
-  .draft p { line-height: 1.8; margin: 0 !important; }
-  .worktable td { height: 40px; }
-  .page h2 { margin: 8px 0 4px; }
-  .page p { margin: 0 0 6px; }
-  .page .panel { padding: 8px 12px; margin: 6px 0; }
-  .page .callout { margin: 6px 0; }
-  .page table { margin: 4px 0; }
-  body.compact .lines .l { height: 28px; }
+  .draft p { line-height: 1.72; margin: 0 !important; }
+  .worktable td { height: 36px; }
+  .page h2 { margin: 6px 0 3px; }
+  .page p { margin: 0 0 5px; }
+  .page .panel { padding: 7px 12px; margin: 5px 0; }
+  .page .callout { margin: 5px 0; }
+  .page table { margin: 3px 0; }
+  body.compact .lines .l { height: 26px; }
   .blank { display: inline-block; border-bottom: 1.5px solid #B9B9C9; min-width: 200px; height: 16px; vertical-align: bottom; }
   .blank.short { min-width: 90px; }
-  .verdicttable { margin: 6px 0 2px !important; }
+  .verdicttable { margin: 4px 0 2px !important; }
   .verdicttable td { height: 34px; padding: 4px 6px; border: 1px solid #C9C9D6; font-size: 10.5pt; vertical-align: middle; }
   td.tick { width: 34px; text-align: center; }
   td.tick::before { content: ""; display: inline-block; width: 16px; height: 16px; border: 1.5px solid #14141F; border-radius: 3px; vertical-align: middle; }
@@ -22,7 +22,8 @@
   .panel ul.method { margin: 2px 0 0 18px; padding: 0; } .method li { margin: 0 0 1px; }
   .frame { font-size: 9.5pt; color: #55556B; margin: 2px 0 0 !important; }
   .gloss { font-size: 10.5pt; color: #3A3A4E; margin: 2px 0 4px !important; }
-  .helpers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .lastblock { margin-bottom: 0 !important; }
+  .helpers { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
   .helpers p { margin: 0 0 3px !important; font-size: 10.5pt; }
   .helpers ul { margin: 2px 0 0 16px; padding: 0; font-size: 10.5pt; }
   .helpers li { margin: 0 0 2px; }
@@ -64,7 +65,7 @@
 
   <div class="panel">
     <p><strong>A note from Deja, the editor of The Comet, the school paper:</strong> "You're on the fact team. Three writers used an AI helper. Remember: AI guesses the most likely words — it does not check them — so it can be completely wrong and still sound sure. No story gets printed until you check it."</p>
-    <p class="gloss"><strong>Desk words:</strong> run = it gets printed &nbsp;·&nbsp; clear = it passes the check &nbsp;·&nbsp; log = write it down &nbsp;·&nbsp; second source = a place to check that is NOT where you first saw the claim &nbsp;·&nbsp; "the ending still stands" = it is still true once the facts are fixed &nbsp;·&nbsp; stamp = your verdict box (RUN, FIX, or KILL) — check one</p>
+    <p class="gloss"><strong>Desk words:</strong> run = it gets printed &nbsp;·&nbsp; clear = it passes the check &nbsp;·&nbsp; log = write it down &nbsp;·&nbsp; second source = a place to check that is NOT where you first saw the claim &nbsp;·&nbsp; "the ending still stands" = it is still true once the facts are fixed &nbsp;·&nbsp; stamp = your verdict box (RUN, FIX, or KILL) — check one &nbsp;·&nbsp; column = one writer's regular story</p>
     <p style="margin-top:6px; margin-bottom:0"><strong>Your method, every draft:</strong></p>
     <ul class="method">
       <li><strong>1. UNDERLINE</strong> every checkable claim (names, dates, numbers, places, quotes).</li>
@@ -72,16 +73,16 @@
       <li><strong>3. LATERAL-READ</strong> — leave the draft. Log a second source that could confirm each C.</li>
       <li><strong>4. VERDICT</strong> — check a stamp, give your evidence, and say if the writer's ending still stands.</li>
     </ul>
+    <p class="gloss" style="margin-top:4px">On the typeable PDF you can't underline. Copy each claim you'd CHECK into the table, and put your S-claims in the last row.</p>
   </div>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #1 — Priya's Science Column, &ldquo;Moon Facts&rdquo;</h2>
   <div class="panel draft">
     <p>The Moon is Earth's only natural satellite. Astronauts first landed on the Moon in 1959, and Neil Armstrong was the first person to walk on its surface. By 1972, twelve people had walked on the Moon. On a clear night the Moon seems to shine because it produces its own light — which is why it's the brightest thing in the night sky.</p>
   </div>
+  <p class="cue"><strong>Log your two riskiest claims</strong> — the two that would hurt The Comet most if they are wrong.</p>
   <table class="worktable">
     <tr><th style="width:55%">Claim I marked C (check)</th><th>Second source: where I'd check it</th></tr>
-    <tr><td class="logslot"></td><td class="logslot"></td></tr>
-    <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="logslot"></td><td class="logslot"></td></tr>
   </table>
@@ -89,8 +90,8 @@
     <tr class="oneof"><td class="tick"></td><td><strong>RUN</strong> — clean, print it</td><td class="tick"></td><td><strong>FIX</strong> — correct it, then print</td><td class="tick"></td><td><strong>KILL</strong> — cut the story</td></tr>
   </table>
   <p class="cue"><strong>Note to Priya</strong> — what's wrong, your second source, and does her ending still stand?</p>
-  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
-  <p class="frame"><strong>Need a start?</strong> Two things are wrong: ______ and ______. I would check ______. Your ending [still stands / does not stand] because ______.</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  <p class="frame"><strong>Need a start?</strong> What's wrong: ______. I would check ______.</p>
 
   <div class="footer"><span>Hallucination Hunters — The Fact Desk</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -99,7 +100,7 @@
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #2 — Theo's Quiz Page, &ldquo;World Records Corner&rdquo;</h2>
-  <p class="gloss"><strong>Same method:</strong> underline the checkable claims · C = check it, S = safe · log a second source (NOT where you first saw it) · check a stamp and write your note.</p>
+  <p class="gloss"><strong>Same method:</strong> underline · mark C or S · log a second source · check a stamp · write your note.</p>
   <div class="panel draft">
     <p>The Pacific Ocean is the largest ocean on Earth. The Nile River flows north through Egypt and is one of the longest rivers in the world. The tallest mountain above sea level is Mount Everest, which rises in the Andes range in South America. Earth has seven continents, and the largest is Asia. Australia's capital city is Sydney. Put it together and the record-holders sit on three continents: Africa, South America, and Asia.</p>
   </div>
@@ -114,10 +115,10 @@
     <tr class="oneof"><td class="tick"></td><td><strong>RUN</strong> — clean, print it</td><td class="tick"></td><td><strong>FIX</strong> — correct it, then print</td><td class="tick"></td><td><strong>KILL</strong> — cut the story</td></tr>
   </table>
   <p class="cue"><strong>Note to Theo</strong> — what's wrong, your second source, and does his ending still stand?</p>
-  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
-  <p class="frame"><strong>Need a start?</strong> Two things are wrong: ______ and ______. I would check ______. Your ending [still stands / does not stand] because ______.</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  <p class="frame"><strong>Need a start?</strong> What's wrong: ______. I would check ______.</p>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Desk Helpers — use these on Draft #3 (and to check #2)</h2>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Desk Helpers — use these on both drafts</h2>
   <div class="panel helpers">
     <div>
       <p><strong>RANK: which claims get a C?</strong></p>
@@ -146,7 +147,7 @@
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Draft #3 — Marcus's Feature, &ldquo;The Invention Issue&rdquo;</h2>
-  <p class="gloss"><strong>Same method:</strong> underline the checkable claims · C = check it, S = safe · log a second source (NOT where you first saw it) · check a stamp and write your note.</p>
+  <p class="gloss"><strong>Same method:</strong> underline · mark C or S · log a second source · check a stamp · write your note.</p>
   <div class="panel draft">
     <p>Thomas Edison invented the telephone in 1876. As Edison put it, "The telephone is the finest of all my inventions." The next year, in 1877, Edison invented the phonograph — the first machine that could both record and play back sound. A generation later, the Wright brothers made the first successful powered airplane flights in 1903, near Kitty Hawk, North Carolina. Edison's record makes him the most important inventor of the 1800s.</p>
   </div>
@@ -161,16 +162,16 @@
     <tr class="oneof"><td class="tick"></td><td><strong>RUN</strong> — clean, print it</td><td class="tick"></td><td><strong>FIX</strong> — correct it, then print</td><td class="tick"></td><td><strong>KILL</strong> — cut the story</td></tr>
   </table>
   <p class="cue"><strong>Note to Marcus</strong> — what's wrong, your second source, and does his ending still stand?</p>
-  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
-  <p class="frame"><strong>Need a start?</strong> Two things are wrong: ______ and ______. I would check ______. Your ending [still stands / does not stand] because ______.</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  <p class="frame"><strong>Need a start?</strong> What's wrong: ______. I would check ______.</p>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Exit Ticket — Last Check</h2>
   <p><strong>1.</strong> In your own words: how can AI sound 100% sure and still be wrong?</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
   <p><strong>2.</strong> Name one checkable claim (a name, date, number, place, or quote) you saw online this week — or one you expect to see. Where would you check it? Name a second source that is NOT the place you first saw it (a textbook, an encyclopedia, a different website).</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
-  <div class="callout"><strong>Desk rule to keep:</strong> smooth is not the same as true. Before you repeat it, post it, or hand it in — check it.</div>
+  <div class="callout lastblock"><strong>Desk rule to keep:</strong> smooth is not the same as true. Before you repeat it, post it, or hand it in — check it.</div>
 
   <div class="footer"><span>Hallucination Hunters — The Fact Desk</span><span>© Future Skills Series</span><span>3</span></div>
 </div>

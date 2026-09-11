@@ -30,8 +30,8 @@ slides:
     items:
       - { label: 1, name: UNDERLINE, text: "Every checkable claim: names, dates, numbers, places, quotes." }
       - { label: 2, name: RANK, text: "You can't check everything. Would it hurt if wrong? Mark C. Everybody knows it? Mark S." }
-      - { label: 3, name: LATERAL-READ, text: "Leave the passage. Verify each CHECK claim against a second, independent source." }
-      - { label: 4, name: VERDICT, text: "RUN (clean) · FIX (correct it, then run) · KILL (the core claim fails — cut the story)." }
+      - { label: 3, name: LATERAL-READ, text: "Leave the passage. Name a second, independent source that could confirm it." }
+      - { label: 4, name: VERDICT, text: "RUN (clean) · FIX (correct it, then print) · KILL (the core claim fails — cut the story)." }
     notes: "Write the four steps on the board as you go. Model steps 1–2 on the warm-up paragraph: underline \"eight planets,\" \"Venus,\" \"Mars,\" \"Saturn,\" \"eight minutes\" — then rank. Which claims would embarrass the paper most if wrong? Those get CHECK."
   - type: compare
     title: "What counts as a check?"
@@ -46,15 +46,15 @@ slides:
     minutes: 21
     title: "Activity — The Fact Desk at The Comet"
     items:
-      - { minutes: 7, name: "Round 1", text: "Partners work Draft #1 (Priya's Moon column) together: underline, mark C or S, log where you'd check, check a verdict box, write the note." }
-      - { minutes: 10, name: "Round 2", text: "One partner leads Draft #2 (Theo's quiz page), the other Draft #3 (Marcus's invention story). At \"Swap!\" double-check each other, then check a stamp." }
-      - { minutes: 4, name: "Verdicts out loud", text: "Per draft, one desk per stamp announces its verdict plus its best evidence. Everyone else adds a tally mark on the board." }
-    notes: "Deja's note is at the top of the worksheet: no story gets printed until the desk checks it. Play the editor, not the answer key — when a desk asks \"is this one true?\", answer \"that's a checkable claim — where's your second source?\" Keep deadline energy: \"Presses roll in five!\" ANSWER KEY (notes only): #1 — first crewed Moon landing was 1969, not 1959 (pushback to expect: the uncrewed probe Luna 2 reached the Moon in 1959 — credit it, but \"astronauts landed\" is still false); the Moon reflects sunlight, it makes none of its own; its ending (brightest night-sky object) is true for the wrong reason. Verdict FIX. #2 — Everest is in the Himalayas in Asia, not the Andes; Australia's capital is Canberra, not Sydney; the three-continents ending no longer follows. Verdict FIX. #3 — Alexander Graham Bell patented the telephone in 1876, not Edison; the Edison quote is fabricated for this exercise and has no source. Verdict KILL. No draft earns RUN today — tell the class that's realistic. Call \"Swap!\" at the 7-minute mark of Round 2. Early finishers: the Extension — write a smooth passage with one planted error and trade. Support: Drafts #1–2 only, hint \"each draft hides two false facts (plus a shaky ending).\""
+      - { minutes: 7, name: "Round 1", text: "Draft #1 (Priya's Moon column) together, each on your OWN sheet: underline, mark C or S, log your two riskiest claims, stamp it, write the note." }
+      - { minutes: 10, name: "Round 2", text: "Partner A leads Draft #2, Partner B leads Draft #3 — each on your own sheet (6 min). Swap: add one claim they missed (2). Owners stamp and note (2)." }
+      - { minutes: 4, name: "Verdicts out loud", text: "Per draft, one desk per stamp gives its verdict and best evidence. Then hands up — your teacher tallies the room on the board." }
+    notes: "Deja's note is at the top of the worksheet: no story gets printed until the desk checks it. Draft #2 is Theo's quiz page; Draft #3 is Marcus's invention feature. Play the editor, not the answer key — when a desk asks \"is this one true?\", answer \"that's a checkable claim — where's your second source?\" Keep deadline energy: \"Presses roll in five!\" ANSWER KEY (notes only): #1 — first crewed Moon landing was 1969, not 1959 (pushback to expect: the uncrewed probe Luna 2 reached the Moon in 1959 — credit it, but \"astronauts landed\" is still false); the Moon reflects sunlight, it makes none of its own; its ending (brightest night-sky object) is true for the wrong reason. Verdict FIX. #2 — Everest is in the Himalayas in Asia, not the Andes; Australia's capital is Canberra, not Sydney; the three-continents ending no longer follows. Verdict FIX. #3 — Alexander Graham Bell patented the telephone in 1876, not Edison; the Edison quote is fabricated for this exercise and has no source. Verdict KILL. No draft earns RUN today — tell the class that's realistic. Call the swap at the 6-minute mark of Round 2: sheets cross the desk, each partner adds one claim the owner missed, then sheets go straight back. Early finishers: the Extension — write a smooth passage with one planted error and trade. Support: Drafts #1–2 only, hint \"each draft hides two false facts (plus a shaky ending).\""
   - type: list
     title: "Stamp It — Desk Rules"
     items:
       - "RUN — clean. Every CHECK claim confirmed by a second, independent source."
-      - "FIX — correct it, then run. Does the writer's big conclusion still stand once the facts are fixed?"
+      - "FIX — correct it, then print. Does the writer's big conclusion still stand once the facts are fixed?"
       - "KILL — the core claim fails. Cut the story."
       - "A quote is a claim. No traceable source, no print."
       - "Back every stamp with evidence: the claim, the fix, the second source."
@@ -69,12 +69,13 @@ slides:
     notes: "Expect the fabricated quote in Draft #3 to be named hardest — many students treat quotation marks as proof. Why is a fabricated quote more dangerous than a wrong date? A date is easy to check; a quote borrows a real person's credibility."
   - type: list
     minutes: 4
+    verbatim: true   # both items are the worksheet's exit questions word for word (assessed items)
     title: "Exit Ticket — Last Check"
     items:
       - "1.  In your own words: how can AI sound 100% sure and still be wrong?"
-      - "2.  A claim you saw online this week — or one you expect to see — and a second source NOT where you saw it."
+      - "2.  Name one checkable claim (a name, date, number, place, or quote) you saw online this week — or one you expect to see. Where would you check it? Name a second source that is NOT the place you first saw it (a textbook, an encyclopedia, a different website)."
     notes: "Bottom of the worksheet. Collect; the Teacher Guide has the scoring key. Full credit on #1 names the mechanism (predicts likely words, doesn't check them). Full credit on #2 names a specific second source — \"Google it\" gets the push-back: \"Google shows you ten sources. Which one, and why that one?\""
   - type: closer
     statement: "Smooth is not the same as true."
-    sub: "Desk rule to keep: before you repeat it, post it, or hand it in — clear it. The desk is a habit, not a job."
+    sub: "Desk rule to keep: before you repeat it, post it, or hand it in — check it. The desk is a habit, not a job."
     notes: "Close on this. Next in the unit: Teach AI Your Taste (Lesson 4 — in the unit bundle, or sold separately) — using AI as an editor on your own writing without letting it take over."

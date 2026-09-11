@@ -62,10 +62,11 @@ slides:
     notes: "ANSWER (not on the slide): from what got collected — and what didn't (1 min). \"Did someone do this on purpose?\" Usually not — teams collect the data that's easiest to get, and easy data leans toward whoever is already over-represented. No villain required — which is why good AI teams audit their playlists before shipping. If asked \"isn't AI creative, though?\": it can mash up playlist patterns into new combos, but it can't mash up a genre it has never heard."
   - type: list
     minutes: 5
+    verbatim: true   # items are the worksheet's exit questions word for word (assessed items)
     title: "Exit Ticket"
     items:
       - "1.  Finish the chain: INPUT → ______ → OUTPUT. In your own words, what does an AI do with its playlist?"
-      - "2.  A homework-helper AI only knows football examples. Use the word playlist: what happened, who's left out?"
+      - "2.  A school's new AI homework helper explains everything with football examples — never anything else. Using the word playlist, explain what probably happened, and who it doesn't serve well."
       - "3.  One gap your partner spotted, and the idea YOU added to it."
     notes: "Bottom of worksheet p.2. Collect; exemplars are in the Teacher Guide p.2. KEY #1: PATTERNS — the AI studies its playlist, learns what usually goes with what, and predicts. Assesses ISTE 1.1.d. KEY #2: whoever filled its playlist used football examples, so football patterns are all it can serve; students whose interests never made the playlist get worse help. Assesses CSTA 2-IC-21 — look for WHO gets worse help, not just \"needs more songs.\" KEY #3: a real gap in the student's own words that names a person or a request, plus the idea they added; not \"more songs,\" and a gap with no add is not accepted. Assesses SL.6.1 (building on a partner's idea)."
   - type: closer

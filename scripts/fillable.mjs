@@ -41,11 +41,13 @@ async function measureFields(page) {
       const group = wrap ? 'oneof' + [...document.querySelectorAll('.oneof')].indexOf(wrap) : null;
       push(pg, r, top, { check, group });
     }
-    // Underscore runs in prose ("Name: ________") are write-ins too.
+    // Underscore runs in prose ("Name: ________") are write-ins too — unless they are PRINTED,
+    // as in a model sentence the student reads ("Need a start? What's wrong: ______."). Those live
+    // in a `.frame`, or in any subtree marked `data-nofill`: an example, not a blank to fill.
     for (const pg of pages) {
       const walker = document.createTreeWalker(pg, NodeFilter.SHOW_TEXT);
       for (let n = walker.nextNode(); n; n = walker.nextNode()) {
-        if (n.parentElement.closest('svg, .footer, .masthead')) continue;
+        if (n.parentElement.closest('svg, .footer, .masthead, .frame, [data-nofill]')) continue;
         const re = /_{3,}/g; let m;
         while ((m = re.exec(n.nodeValue))) {
           const rg = document.createRange(); rg.setStart(n, m.index); rg.setEnd(n, m.index + m[0].length);
