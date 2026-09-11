@@ -65,7 +65,7 @@ reusable template packs. So:
   what goes wrong) · Write the Rule (tradeoff grid → your 3-rule policy) · Who Pays for Free? · Unit Rate Receipt ·
   Percent Change Card · Copy, Style, or Person? · Source Check (who paid for this study?) · Permission Slip (what may an
   AI agent touch) · Risk Grid. Plus: a teacher script per frame, one rubric, a "how to pick a classroom-safe story" page,
-  and 6 dated WORKED EXAMPLES (labelled "Example · September 2026", every fact attributed "as reported by <outlet>,
+  and 4 dated WORKED EXAMPLES (labeled "Example · September 2026", every fact attributed "as reported by <outlet>,
   <date>", every number logged in products/<slug>/FACTS.md with the primary source and the date it was re-verified).
   Zero third-party text or images. Undated title. Examples get refreshed by updating the product (buyers receive
   updates), never sold as a series.
