@@ -61,3 +61,27 @@ most fixes take a day."
 a teacher acts on at a glance, which is what the numeral rule is for. "Copy, Style, or Person?" keeps its
 name (renaming a frame is forbidden and the name is in the listing); instead its first method step will say
 plainly that the student is deciding whether a work, a style, or a person is being copied.
+
+---
+## Applied and verified (2026-09-12)
+All nine products green, page/slide/deck counts unchanged everywhere, no page reflowed past a footer.
+The proofreader's own counts were low in two places: 17 instances of terminal punctuation outside a
+closing quote, not 11, and four paraphrases of the ai-taste-file Section 3 line, not three.
+
+**The 54-minute lesson plan is fixed.** ai-agent-intern's page-2 header is now "Direct Instruction (cont.)"
+with no minutes, and the printed figures sum to 45 against the 45 on the cover.
+
+**One finding declined, correctly, by the builder.** The hyphen in "standards 1-3" sits inside verbatim
+CCSS W.6.4 and W.6.5 text, and the registry carries the hyphen. Changing it would break character-identity
+with the registry and alter a quoted official standard. The proofreader was wrong to flag it; the rule
+against editing standards text outranks the house dash style.
+
+**One builder decision reversed by the lead.** The builder read "check their top C claims live" as a stray
+letter and cut the C. But C is this lesson's own taught vocabulary — students mark each claim C for check
+or S for safe, and the worksheet column is headed "CLAIM I MARKED C (CHECK)". "Top claims" is vaguer than
+what the lesson teaches. Both instances now read "check the claims they marked C", which uses the
+vocabulary the students were just given.
+
+**Extension approved:** the builder went beyond the named scope into slides.yaml for 15 strings, because
+corrected sentences are copied verbatim onto slides and ANTI_SLOP 18 forbids the surfaces diverging. One of
+those still carried the Frames 3-and-6 contradiction that this pass exists to kill. Right call.

@@ -33,7 +33,7 @@ slides:
   - type: question
     title: "Quick check"
     question: "A photo AI's playlist is almost all golden retrievers. A husky walks in — what's it going to call it?"
-    notes: "ANSWER (not on the slide): golden retriever — its best guess from its patterns. Gap in, gap out. What if a student says \"husky\"? \"Has this AI ever seen one? It can only pick from the patterns it has.\" Transition: \"Hand out Playlist Check; pairs up.\" Point to the grey box at the top of page 1: Partner A is the App, Partner B is the Caller."
+    notes: "ANSWER (not on the slide): golden retriever — its best guess from its patterns. Gap in, gap out. What if a student says \"husky\"? \"Has this AI ever seen one? It can only pick from the patterns it has.\" Transition: \"Hand out Playlist Check; pairs up.\" Point to the gray box at the top of page 1: Partner A is the App, Partner B is the Caller."
   - type: steps
     minutes: 20
     title: "Activity — Playlist Check"

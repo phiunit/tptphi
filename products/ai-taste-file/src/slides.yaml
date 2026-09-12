@@ -13,7 +13,7 @@ slides:
       - "Two people download the same app on the same day."
       - "A month later: one feed is all horror edits, the other is all cooking videos."
       - "The app didn't guess. How did it learn?"
-    notes: "Take 2–3 answers. Land on: every like, skip, rewatch and follow is a signal. You taught it your taste — and the more precisely you signal, the better the feed serves you. Your feed is your taste, written down in likes and skips. WHAT IF a student says 'my feed is random': 'Random is a signal too — what do you skip in the first second? That's a like in reverse.' Nobody raises a hand? Name your own feed first."
+    notes: "Take 2–3 answers. Land on: every like, skip, rewatch, and follow is a signal. You taught it your taste — and the more precisely you signal, the better the feed serves you. Your feed is your taste, written down in likes and skips. WHAT IF a student says 'my feed is random': 'Random is a signal too — what do you skip in the first second? That's a like in reverse.' Nobody raises a hand? Name your own feed first."
   - type: question
     title: "Here's the other side"
     question: "An AI doesn't know your taste unless you tell it, or it has saved notes about you. So how does it learn?"
