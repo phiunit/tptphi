@@ -65,7 +65,13 @@ One slop moment kills trust in the whole store. These rules are enforced, not as
     files, and those copies go stale the moment a child is re-rendered alone — silently, because
     every other gate still passes. `npm run validate` now compares each packed copy against the
     child's current file and names the child. Re-render the bundle after changing any lesson in it.
-20. `npm run render` and `npm run validate` both green before a product's status moves
+20. **Photocopy-safe is a measurement, not an adjective.** Anything a student writes on, and any
+    border that carries structure, must survive a hard threshold at 40% luminance with low toner —
+    which means darker than about #6E6E86, and #4B4B60 for write-in lines. Gold is a fill inside a
+    dark outline, never type on white (it measures 1.83:1 and vanishes on every copy). Tint alone
+    may never be the only boundary of a region. Test by rendering the page, converting to greyscale
+    and thresholding; do not judge by eye on a bright screen.
+21. `npm run render` and `npm run validate` both green before a product's status moves
     to `rendered` — no exceptions, including "tiny" copy edits (they reflow pages).
 20. Visually inspect the cover PNG and every document page screenshot after ANY change.
 

@@ -61,3 +61,19 @@ BEFORE (INCLUDES as a 130-word run-on) → AFTER:
 > • Slide deck, 11 slides (.pptx). Teacher script and answer keys in the speaker notes.
 > • Support, Extension, ELL and no-device variants.
 > Zero prep. Print it tonight, teach it tomorrow.
+
+## Naming a component (decided 2026-09-12, after the copyedit gauntlet)
+A component is **lowercase in prose** and title case **only where the words are the printed name of a
+thing on the page** — a section heading, a frame title, a cover kicker. So: "write your quest card" in a
+sentence, "Quest Card" as the heading of the box the student writes in. The proofread found quest card,
+taste file, role card, task board and fact desk each spelled up to three ways, twice within a single page.
+
+Fixed forms: **tradeoff** (one word), page references as **p.1** (no space), straight quotation marks
+everywhere, terminal punctuation **inside** the closing quote (US style), and the serial comma always.
+
+## Terms of use, one block
+Six teacher guides carried four wordings. This is the block, verbatim:
+
+> Your purchase (or free download) grants ONE teacher a license for their own classroom. Share the store
+> link, not the file. Questions or a problem with this resource? Ask on the listing before leaving a
+> review — most fixes take a day.
