@@ -7,7 +7,8 @@
   .whatif { border-left: 3px solid #5B4DFF; padding: 1px 10px; margin: 1px 0 1px; color: #33334A; font-style: italic; }
   .whatif strong { color: #5B4DFF; font-style: normal; }
   .say { margin: 0 0 2px; }
-  body.compact .p2 .panel { padding: 5px 10px; margin: 3px 0; }
+  /* 4px, not 5: .panel now carries a 1px hairline that must not cost vertical space */
+  body.compact .p2 .panel { padding: 4px 9px; margin: 3px 0; }
   body.compact .p2 .whatif { margin: 0; }
   body.compact .p2 h2 { margin: 4px 0 2px; }
   body.compact .p2 p { margin-bottom: 3px; }

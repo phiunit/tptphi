@@ -63,3 +63,26 @@ signal. The toner argument is a large share of a small number.
 
 This is the change I would most want made across the line. Everything else we fixed this week affects how
 well a lesson teaches; this one decides whether the paper a student is handed has lines on it.
+
+---
+## Fix applied and verified (2026-09-12)
+One `--rule` token plus three siblings replaced 34 hardcoded light values across 19 product files and the
+shared template. Verified by re-running the copier simulation, not by eye on a screen:
+
+| page | surviving rules at 40% + toner-low, before → after |
+|---|---|
+| ai-boring-work worksheet p2 | 0 → 20 |
+| ai-fact-check-lab worksheet p1 | 1 → 47 |
+| ai-prompting-101 worksheet p1 | 0 → 5 |
+| ai-taste-file worksheet p1 | 0 → 4 |
+| news-desk-frames frames p2 | 0 → 8 |
+
+**A correction to my own ruling.** I specified `--struct: #6E6E86` for table structure. It measures
+luminance 112.7 and a 40% threshold cuts at 102, so it failed the rule I had just written. The builder
+applied the value as decided and flagged the measurement rather than silently changing it, which is the
+behaviour I want. `--struct` is now `#4B4B60` (luminance 77, clears the cut by 5.3 even under low toner).
+Visual hierarchy between a write-in line and a table border now comes from **weight** — 1.25pt against
+0.75pt — because weight survives thresholding and lightness does not.
+
+Residual, accepted: the gold kicker (`#7A5200`) and the violet masthead rule still drop under low toner.
+Both are decorative; page identity now rides on the footer page number, which is bold `#14141F`.

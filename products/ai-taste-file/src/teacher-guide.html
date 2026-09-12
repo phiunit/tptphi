@@ -6,8 +6,9 @@
   h2 svg { flex: 0 0 auto; }
   .page h2 { margin: 8px 0 4px; }
   .page p { margin: 0 0 5px; }
-  .page .panel { padding: 7px 12px; margin: 5px 0; }
-  body.compact .page .panel { padding: 6px 11px; margin: 4px 0; }
+  /* 1px tighter all round: .panel now carries a hairline that must not cost layout space */
+  .page .panel { padding: 6px 11px; margin: 5px 0; }
+  body.compact .page .panel { padding: 5px 10px; margin: 4px 0; }
   body.compact .page h2 { margin: 5px 0 3px; }
   .page .panel p { margin: 0 0 4px; }
   .page .panel p:last-child { margin: 0; }

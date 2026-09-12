@@ -4,6 +4,12 @@
 :root {
   --ink: #14141F; --paper: #fff; --violet: #5B4DFF; --gold: #FFB020;
   --teal: #0FA3A3; --red: #E5484D; --panel: #F2F2F7; --line: var(--violet);
+  /* Print-survival palette — measured against a 40% copier threshold with low toner.
+     --rule (lum 77) for anything a student writes on; --struct (lum 77) for table
+     structure — both clear a 40% copier threshold; hierarchy comes from weight
+     (1.25pt vs 0.75pt), not from lightness, because weight survives thresholding; --goldink (6.92:1) wherever gold would otherwise be type or a bare
+     stroke on white. Gold FILLS inside dark outlines stay --gold. */
+  --rule: #4B4B60; --struct: #4B4B60; --goldink: #7A5200; --headink: #2E2A7A;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
@@ -31,8 +37,8 @@ h1 { font-size: 25pt; font-weight: 700; letter-spacing: -0.03em; margin: 0 0 4px
   border-radius: 4px; background: linear-gradient(to bottom, var(--line), var(--gold)); }
 .titleblock h1 { margin: 0; }
 .titleblock .kicker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9pt;
-  letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin: 0 0 2px; }
-h2 { font-size: 12.5pt; font-weight: 700; margin: 12px 0 5px; color: var(--line); text-transform: uppercase; letter-spacing: 1px;
+  letter-spacing: 2.5px; text-transform: uppercase; color: var(--goldink); margin: 0 0 2px; }
+h2 { font-size: 12.5pt; font-weight: 700; margin: 12px 0 5px; color: var(--headink); text-transform: uppercase; letter-spacing: 1px;
   display: flex; align-items: center; gap: 8px; }
 h2::after { content: ""; flex: 1; height: 2px; border-radius: 2px;
   background: linear-gradient(to right, var(--line), transparent 70%); opacity: 0.35; }
@@ -40,24 +46,33 @@ h3 { font-size: 11.5pt; font-weight: 700; margin: 12px 0 4px; }
 p { margin: 0 0 8px; }
 .sub { font-size: 11pt; color: #55556B; margin-bottom: 14px; }
 
-.panel { background: var(--panel); border-radius: 10px; padding: 10px 13px; margin: 8px 0; }
-.callout { border-left: 4px solid var(--gold); background: #FFF8EA; padding: 9px 13px; border-radius: 0 8px 8px 0; margin: 8px 0; }
+/* Padding trimmed 1px on every side so the new 1px hairline costs no space in either
+   axis — it must not shrink the content box and force an extra wrapped line. */
+.panel { background: var(--panel); border: 1px solid var(--struct); border-radius: 10px; padding: 9px 12px; margin: 8px 0; }
+.callout { border-left: 4px solid var(--goldink); background: #FFF8EA; padding: 9px 13px; border-radius: 0 8px 8px 0; margin: 8px 0; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
 table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10pt; }
 th { text-align: left; background: var(--ink); color: #fff; padding: 6px 9px; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.5px; }
-td { padding: 6px 9px; border-bottom: 1px solid #DDDDE6; vertical-align: top; }
+td { padding: 6px 9px; border-bottom: 0.75pt solid var(--struct); vertical-align: top; }
+/* Grid-style tables the student fills in: full cell borders, not just a baseline. */
+.worktable td, table.fill td, .card td { border: 0.75pt solid var(--struct); }
 
 ul, ol { margin: 3px 0 8px; padding-left: 20px; }
 li { margin-bottom: 2px; }
 
 /* Student write-in lines */
-.lines .l { border-bottom: 1.5px solid #B9B9C9; height: 26px; }
-.writebox { border: 1.5px solid #B9B9C9; border-radius: 8px; min-height: 80px; padding: 8px; }
+.lines .l { border-bottom: 1.25pt solid var(--rule); height: 26px; }
+.writebox { border: 1.25pt solid var(--rule); border-radius: 8px; min-height: 80px; padding: 8px; }
+/* Inline fill-in-the-blank. 1.25pt is the floor, never thin it in a product override:
+   a dropped blank turns "Task __ belongs in __ because __" into "Task belongs in because". */
+.blank { display: inline-block; border-bottom: 1.25pt solid var(--rule); vertical-align: bottom; }
 
 .footer { position: absolute; bottom: 0.35in; left: 0.7in; right: 0.7in;
-  display: flex; justify-content: space-between; font-size: 8pt; color: #8A8AA0;
-  border-top: 1px solid #DDDDE6; padding-top: 6px; }
+  display: flex; justify-content: space-between; font-size: 8.5pt; color: #55556B;
+  border-top: 0.75pt solid var(--struct); padding-top: 6px; }
+/* The page number is what a teacher needs after a paper jam — it must survive a copy. */
+.footer span:last-child { font-weight: 700; color: var(--ink); }
 
 /* Standards chips */
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
@@ -77,7 +92,7 @@ body.compact .page { padding: 0.55in 0.65in 0.85in; }
 body.compact h2 { margin: 9px 0 4px; font-size: 12pt; }
 body.compact h3 { margin: 8px 0 3px; }
 body.compact p { margin: 0 0 6px; }
-body.compact .panel { padding: 8px 11px; margin: 6px 0; }
+body.compact .panel { padding: 7px 10px; margin: 6px 0; }
 body.compact .callout { padding: 7px 11px; margin: 6px 0; }
 body.compact table { margin: 5px 0; font-size: 9.5pt; }
 body.compact th, body.compact td { padding: 4px 7px; }
