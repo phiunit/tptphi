@@ -61,7 +61,11 @@ One slop moment kills trust in the whole store. These rules are enforced, not as
     answered only one of them. If a gate stops you copying it, fix the gate.
 
 ## Process
-19. `npm run render` and `npm run validate` both green before a product's status moves
+19. **A bundle is only as fresh as its last render.** Its zip ships copies of its children's
+    files, and those copies go stale the moment a child is re-rendered alone — silently, because
+    every other gate still passes. `npm run validate` now compares each packed copy against the
+    child's current file and names the child. Re-render the bundle after changing any lesson in it.
+20. `npm run render` and `npm run validate` both green before a product's status moves
     to `rendered` — no exceptions, including "tiny" copy edits (they reflow pages).
 20. Visually inspect the cover PNG and every document page screenshot after ANY change.
 

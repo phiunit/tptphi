@@ -1,6 +1,8 @@
 // Pre-upload checklist: every product must have complete metadata + rendered assets.
 // Usage: npm run validate [-- <product-slug>]
 import fs from 'node:fs';
+import os from 'node:os';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { parse } from 'yaml';
 import { listProducts, ROOT } from './lib.mjs';
@@ -83,7 +85,7 @@ for (const p of listProducts(process.argv[2])) {
   const maxStd = p.meta.bundle_of ? 12 : 5; // a bundle lists the union of its children's anchors
   if (Array.isArray(p.meta.standards) && (p.meta.standards.length < 3 || p.meta.standards.length > maxStd))
     errs.push(`${p.meta.standards.length} standards (rule: 3-5 real, taught-and-assessed codes)`);
-  errs.push(...checkStandards(p.meta), ...checkGuideText(p), ...checkStatus(p), ...checkRetired(p), ...checkIncludes(p), ...checkFacts(p));
+  errs.push(...checkStandards(p.meta), ...checkGuideText(p), ...checkStatus(p), ...checkRetired(p), ...checkIncludes(p), ...checkFacts(p), ...checkBundleFresh(p));
   const dist = path.join(p.dir, 'dist');
   const distFiles = fs.existsSync(dist) ? fs.readdirSync(dist) : [];
   if (!distFiles.some(f => f.endsWith('.pdf'))) errs.push('no rendered PDF in dist/ (run npm run render)');
@@ -108,6 +110,52 @@ function checkIncludes(p) {
     if (!fs.existsSync(path.join(distDir, base))) errs.push(`includes: "${base}" is promised but missing from dist/`);
     else if (zip && !zipList.includes(base)) errs.push(`includes: "${base}" is missing from the zip`);
   }
+  return errs;
+}
+
+// A bundle ships copies of its children's files. Those copies go stale the moment a child is
+// re-rendered on its own, and nothing else would notice: the bundle's own gates all pass while its
+// zip quietly hands the buyer last week's worksheet. Compare each packed copy against the child's
+// current file byte for byte, and name the child that needs the bundle re-rendered.
+function checkBundleFresh(p) {
+  const kids = Array.isArray(p.meta.bundle_of) ? p.meta.bundle_of : [];
+  if (!kids.length) return [];
+  const distDir = path.join(p.dir, 'dist');
+  const zip = fs.existsSync(distDir) ? fs.readdirSync(distDir).find(f => f.endsWith('.zip')) : null;
+  if (!zip) return [`bundle: no zip in dist/ — run "npm run render -- ${p.meta.slug || path.basename(p.dir)}"`];
+  const zipPath = path.join(distDir, zip);
+  let names = [];
+  try { names = _exec('unzip', ['-Z1', zipPath]).toString().split('\n').map(n => n.trim()).filter(Boolean); }
+  catch { return ['bundle: could not read the zip manifest']; }
+
+  // Every child file the bundle packs, indexed by basename -> the child's live path.
+  const live = new Map();
+  for (const slug of kids) {
+    const kidDist = path.join(path.dirname(p.dir), slug, 'dist');
+    if (!fs.existsSync(kidDist)) { continue; }
+    for (const f of fs.readdirSync(kidDist)) {
+      if (/\.(pdf|pptx)$/.test(f) && !/ - Preview\.pdf$/.test(f)) live.set(f, { slug, file: path.join(kidDist, f) });
+    }
+  }
+
+  const errs = []; const stale = new Set(); let checked = 0;
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'bundlefresh-'));
+  try {
+    for (const name of names) {
+      const base = path.basename(name);
+      const src = live.get(base); if (!src) continue;
+      try { _exec('unzip', ['-o', '-j', zipPath, name, '-d', tmp]); } catch { continue; }
+      const packed = path.join(tmp, base);
+      if (!fs.existsSync(packed)) continue;
+      checked++;
+      const a = crypto.createHash('sha1').update(fs.readFileSync(packed)).digest('hex');
+      const b = crypto.createHash('sha1').update(fs.readFileSync(src.file)).digest('hex');
+      if (a !== b) stale.add(`${src.slug}/${base}`);
+    }
+  } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
+
+  if (!checked) errs.push('bundle: the zip packs none of its children\'s files — check the render');
+  for (const s of [...stale].sort()) errs.push(`bundle: packed copy of "${s}" is stale — re-render the bundle after changing a child`);
   return errs;
 }
 
