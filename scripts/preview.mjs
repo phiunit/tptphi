@@ -22,7 +22,9 @@ for (const p of listProducts(process.argv[2])) {
   if (Array.isArray(p.meta.preview_pages) && p.meta.preview_pages.length) {
     // product.yaml may name the sample pages (review PNG basenames, e.g. "worksheet-p2"): the default picks
     // page 1 of each document, which is not always the page that sells the lesson.
-    samples = p.meta.preview_pages.map(n => path.join(rev, String(n).replace(/\.png$/, '') + '.png'));
+    // "worksheet-p2" is this product's own page; "ai-boring-work/worksheet-p1" is a child's (bundles).
+    samples = p.meta.preview_pages.map(n => { const [a, b] = String(n).replace(/\.png$/, '').split('/');
+      return b ? path.join(p.dir, '..', a, 'dist', 'review', b + '.png') : path.join(rev, a + '.png'); });
     const missing = samples.filter(f => !fs.existsSync(f));
     if (missing.length) throw new Error(`${p.slug}: preview_pages names ${missing.map(f => path.basename(f)).join(', ')}, not found in dist/review/`);
   } else if (p.meta.bundle_of) {

@@ -108,7 +108,7 @@ function checkIncludes(p) {
     const m = String(raw).match(/^\s*([^()]*?\.(pdf|pptx))\b/); if (!m) continue; // items may carry a "(what it is)" gloss
     const base = path.basename(m[1].trim());
     if (!fs.existsSync(path.join(distDir, base))) errs.push(`includes: "${base}" is promised but missing from dist/`);
-    else if (zip && !zipList.includes(base)) errs.push(`includes: "${base}" is missing from the zip`);
+    else if (zip && !zipList.some(n => { const b = path.basename(n.trim()); return b === base || b === 'START HERE - ' + base; })) errs.push(`includes: "${base}" is missing from the zip`);
   }
   return errs;
 }

@@ -3,9 +3,11 @@
 // Usage: npm run render [-- <product-slug>]
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 import { launch, listProducts, PRODUCTS_DIR } from './lib.mjs';
 import { makeFillable } from './fillable.mjs';
 import { PDFDocument } from 'pdf-lib';
+import { parse } from 'yaml';
 import { buildSlides } from './slides.mjs';
 
 const slug = process.argv[2];
@@ -152,7 +154,28 @@ for (const p of listProducts(slug)) {
   for (const z of fs.readdirSync(distDir).filter(f => f.endsWith('.zip'))) fs.rmSync(path.join(distDir, z));
   const lesson = (p.meta.short_name || String(p.meta.title).split(':')[0]).trim().replace(/[\\/:*?"<>|]/g, '');
   const zipPath = path.join(distDir, `${lesson} (Future Skills).zip`);
-  try { execFileSync('zip', ['-q', '-j', zipPath, ...pdfs]); console.log('ZIP ', path.relative(process.cwd(), zipPath)); }
+  try {
+    if (p.meta.bundle_of) {
+      // A bundle buyer opens one zip with ~30 files. Flat and alphabetical, the lessons came out scrambled
+      // (bundle judge, 2026-09-23). Give it the shape of the unit: the overview first, marked START HERE,
+      // then one folder per lesson in teaching order.
+      const stage = fs.mkdtempSync(path.join(os.tmpdir(), 'bundlezip-'));
+      for (const f of fs.readdirSync(distDir).filter(f => /\.(pdf|pptx)$/.test(f) && !/ - Preview\.pdf$/.test(f)))
+        fs.copyFileSync(path.join(distDir, f), path.join(stage, (/ - Unit Overview\.pdf$/.test(f) ? 'START HERE - ' : '') + f));
+      p.meta.bundle_of.forEach((child, i) => {
+        const cd = path.join(PRODUCTS_DIR, child, 'dist'); if (!fs.existsSync(cd)) return;
+        const cm = parse(fs.readFileSync(path.join(PRODUCTS_DIR, child, 'product.yaml'), 'utf8'));
+        const name = (cm.short_name || String(cm.title).split(':')[0]).trim().replace(/[\\/:*?"<>|]/g, '');
+        const folder = path.join(stage, `Lesson ${i + 1} - ${name}`); fs.mkdirSync(folder);
+        for (const f of fs.readdirSync(cd).filter(f => /\.(pdf|pptx)$/.test(f) && !/ - Preview\.pdf$/.test(f))) fs.copyFileSync(path.join(cd, f), path.join(folder, f));
+      });
+      execFileSync('zip', ['-q', '-r', zipPath, '.'], { cwd: stage });
+      fs.rmSync(stage, { recursive: true, force: true });
+    } else {
+      execFileSync('zip', ['-q', '-j', zipPath, ...pdfs]);
+    }
+    console.log('ZIP ', path.relative(process.cwd(), zipPath));
+  }
   catch (e) { console.warn('zip skipped (is `zip` installed?):', e.message.split('\n')[0]); }
 }
 await browser.close();
