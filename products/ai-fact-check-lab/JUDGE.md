@@ -3,7 +3,7 @@ Judged: 2026-09-04 · docs/JUDGE.md gauntlet + docs/gauntlet/PLAN.md (D1–D9, L
 
 ## Verdict: PASS
 `npm run audit -- ai-fact-check-lab` GREEN (render → validate → readability FK 6.1 → judge → preview). Fillable PDF: 49 fields,
-all render with typed values. Deck content gate passes (RANK card 87 chars; compare 81/110; lists ≤ 98). Minutes 6+10+21+4+4 = 45
+all render with typed values. Deck content gate passes (MARK card 87 chars; compare 81/110; lists ≤ 98). Minutes 6+10+21+4+4 = 45
 in the plan and 6+3+7+21+4+4 = 45 in the deck.
 
 ## What changed since v2 (gauntlet round 1, critics L3 / student #17–24 / buyer #4–5)

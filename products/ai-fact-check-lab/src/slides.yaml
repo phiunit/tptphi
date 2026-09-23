@@ -29,10 +29,10 @@ slides:
     title: "The Fact-Desk Method"
     items:
       - { label: 1, name: UNDERLINE, text: "Every checkable claim: names, dates, numbers, places, quotes." }
-      - { label: 2, name: RANK, text: "Would it hurt if wrong? Mark C. Low risk? Mark S. \"Everybody knows it\" is not a reason." }
+      - { label: 2, name: MARK, text: "Would it hurt if wrong? Mark C. Low risk? Mark S. \"Everybody knows it\" is not a reason." }
       - { label: 3, name: LATERAL-READ, text: "Leave the passage. Name a second, independent source that could confirm it." }
       - { label: 4, name: VERDICT, text: "RUN (clean) · FIX (correct it, then print) · KILL (core claim fails, cut the story)." }
-    notes: "The method (7 min). Walk the four steps. On RANK: \"You can't check everything. Would it hurt if wrong? That's a C. Low risk means not a record, not a number, and the ending doesn't need it. That's an S. 'Everybody knows it' is not a reason.\" Then advance: you model steps 1 and 2 on the next slide."
+    notes: "The method (7 min). Walk the four steps. On MARK: \"You can't check everything. Would it hurt if wrong? That's a C. Low risk means not a record, not a number, and the ending doesn't need it. That's an S. 'Everybody knows it' is not a reason.\" Then advance: you model steps 1 and 2 on the next slide."
   - type: list
     title: "The warm-up, corrected"
     items:
@@ -56,7 +56,7 @@ slides:
       - "A quote is a claim. No traceable source, no print."
       - "Back every stamp with evidence: the claim, the fix, the second source."
       - "Partner A is the partner whose first name comes first in the alphabet."
-    notes: "Show this while sheets go out, then advance to the rounds. Two failure modes to watch for. The trusting desk clears everything (\"it sounded right\"): send them back to step 1. The paranoid desk kills everything (\"it's all suspicious\"): that's what RANK is for. Score the evidence, not the stamp."
+    notes: "Show this while sheets go out, then advance to the rounds. Two failure modes to watch for. The trusting desk clears everything (\"it sounded right\"): send them back to step 1. The paranoid desk kills everything (\"it's all suspicious\"): that's what MARK is for. Score the evidence, not the stamp."
   - type: steps
     minutes: 21
     title: "Activity — The Fact Desk at The Comet"
