@@ -21,7 +21,7 @@ if (slug) {
     for (const step of steps) run(step, p.slug);
   }
 }
-console.log(`\nAUDIT GREEN — ${steps.join(' → ')} → ship check in ${Math.round((Date.now() - t0) / 1000)}s`);
+console.log(`\nAUDIT GREEN — ${steps.join(' → ')} in ${Math.round((Date.now() - t0) / 1000)}s`);
 
 function run(step, s) {
   console.log(`\n══ ${step}${s ? ' ' + s : ''} ══`);

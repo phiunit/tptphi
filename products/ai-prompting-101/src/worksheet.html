@@ -2,7 +2,13 @@
 <link rel="stylesheet" href="../../../brand/templates/print.css">
 <style>
   .writebox { min-height: 92px; }
-  .writebox.short { min-height: 72px; }
+  /* four 25px writing lines: three ruled inside the box, the box's own bottom edge is the fourth.
+     The rules are pseudo-elements, so this is still one empty .writebox and the fillable lays one
+     multiline field over it. */
+  .writebox.ruled { min-height: 0; height: 100px; position: relative; }
+  .writebox.ruled::before, .writebox.ruled::after { content: ""; position: absolute; left: 12px; right: 12px; }
+  .writebox.ruled::before { top: 24px; height: 50px; border-top: 1.25pt solid var(--rule); border-bottom: 1.25pt solid var(--rule); }
+  .writebox.ruled::after { top: 49px; border-top: 1.25pt solid var(--rule); }
   .lines .l { height: 24px; }
   .blank { display: inline-block; border-bottom: 1.25pt solid var(--rule); min-width: 76px; height: 18px; vertical-align: bottom; }
   .blank.wide { min-width: 170px; }
@@ -57,26 +63,25 @@
 
   <div class="panel">
     <strong>The genie's one rule:</strong> it grants exactly what you SAID — never what you MEANT.
-    A <strong>cursed wish</strong> is one the genie can twist. A <strong>genie-proof</strong> wish can't be twisted.
-    Genie-proof every wish with all three <strong>P.R.O.</strong> parts:
+    A <strong>cursed wish</strong> can be twisted. A <strong>genie-proof</strong> wish can't, because it has all three <strong>P.R.O.</strong> parts:
     <ul>
       <li><strong>P — Purpose:</strong> what you want + who it's for</li>
-      <li><strong>R — Requirements:</strong> the rules (at least 2) — length, tone, format, what to include or leave out</li>
+      <li><strong>R — Requirements:</strong> at least 2 rules, like length, tone, format, or what to include or leave out</li>
       <li><strong>O — Output:</strong> what the finished answer should look like (a list? a table? a paragraph?)</li>
     </ul>
   </div>
 
   <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #1 — Amara's Space Poster</h2>
-  <p>Amara's science poster is due Friday. She typed <em>"tell me about space"</em> — and got 40 pages on the history of NASA. Rewrite her wish so the genie can't get it wrong. Use P, R, and O:</p>
-  <div class="writebox"></div>
+  <p>Amara's science poster is due Friday. She typed <em>"tell me about space."</em> The genie handed her 40 pages on the history of NASA. Rewrite her wish so the genie can't twist it. Use P, R, and O:</p>
+  <div class="writebox ruled"></div>
 
   <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #2 — Mateo's Headphone Fund</h2>
-  <p>Mateo gets $15 a week and wants $120 headphones. He typed <em>"help me save money"</em> — the genie answered: "Stop buying things." Rewrite his wish. Use P, R, and O:</p>
-  <div class="writebox"></div>
+  <p>Mateo gets $15 a week and wants $120 headphones. He typed <em>"help me save money."</em> The genie answered: "Stop buying things." Rewrite his wish. Use P, R, and O:</p>
+  <div class="writebox ruled"></div>
 
   <h2><svg class="wishbadge" viewBox="12 2 92 82"><use href="#lamp"/></svg> Cursed Wish #3 — Yuki's Hero Story</h2>
-  <p>Yuki wants an anime-style story for the class magazine. She typed <em>"make a story about a hero"</em> — the genie wrote: "Once there was a hero. The end." Rewrite her wish. Use P, R, and O:</p>
-  <div class="writebox"></div>
+  <p>Yuki wants an anime-style story for the class magazine. She typed <em>"make a story about a hero."</em> The genie wrote: "Once there was a hero. The end." Rewrite her wish. Use P, R, and O:</p>
+  <div class="writebox ruled"></div>
 
   <div class="footer"><span>How to Talk to AI — Cursed Wish Repair Shop</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -85,7 +90,7 @@
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
   <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#sparkle"/></svg> Be the Worst Genie Ever — Break Your Partner's Wishes</h2>
-  <p><strong>Swap sheets with your partner.</strong> You are now their genie: grant the exact words, not what they meant. Say your twist out loud to your partner, then check the boxes. Write your best one below. Then swap back.</p>
+  <p><strong>Swap sheets with your partner.</strong> Now you are their genie. Partner A is the partner whose first name comes first in the alphabet. Partner A goes first: ✓ every part each wish has, then try to twist it out loud. Can't twist it? ✓ Genie test. Then it's Partner B's turn. Write your sneakiest twist, then swap back.</p>
   <table class="check">
     <tr><th>Genie-Proof Checklist</th><th>Wish 1</th><th>Wish 2</th><th>Wish 3</th></tr>
     <tr><td><strong>P</strong> — Says what they want AND who it's for?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
@@ -93,21 +98,21 @@
     <tr><td><strong>O</strong> — Says what the finished answer should look like?</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
     <tr><td><svg width="15" height="15" viewBox="0 0 24 24" style="vertical-align:-2px"><use href="#sparkle"/></svg> <strong>Genie test</strong> — You tried to twist it and couldn't? (✓ = genie-proof)</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
   </table>
-  <p><strong>Your best (sneakiest) twist:</strong> which wish, and exactly what would the genie hand back?</p>
+  <p><strong>Your sneakiest twist:</strong> which wish, and what exactly would the genie hand back?</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <div class="exit">
   <h2><svg width="26" height="26" viewBox="0 0 24 24"><use href="#sparkle"/></svg> Exit Ticket — Last Check <span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:10pt; color:#55556B;">(your own sheet)</span></h2>
-  <p><strong>1.</strong> Write one genie-proof prompt you could really use this week for another class. Use all three parts: P, R, and O.</p>
-  <div class="writebox short"></div>
+  <p><strong>1.</strong> Write one genie-proof prompt you could really use this week for another class. Use P, R, and O.</p>
+  <div class="writebox ruled"></div>
   <p>Now put your hand over everything after your first five words. If that was the whole wish, what would the genie hand back? One sentence:</p>
   <div class="lines"><div class="l"></div></div>
-  <p><strong>2.</strong> Genies are tricksters: AI can grant your wish with made-up facts — and sound totally sure. Here is the genie's answer to a repaired wish about black holes:</p>
-  <div class="genie"><strong>Genie:</strong> Here are facts for your black hole poster. A black hole is a place in space where gravity pulls so hard that even light can't escape. Scientists took the first-ever photo of a black hole in 2009, and the biggest black holes sit in the middle of galaxies — including ours.</div>
-  <p>Which sentence would you double-check, and where — a real source (a textbook, a science website, a librarian…)?</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <p><strong>2.</strong> Genies are tricksters. AI can grant your wish with made-up facts and sound totally sure. Here is the genie's answer to a repaired wish about black holes:</p>
+  <div class="genie"><strong>Genie:</strong> Here are facts for your black hole poster. A black hole is a place in space where gravity pulls so hard that even light can't escape. Scientists took the first-ever photo of a black hole in 2009. Giant black holes sit in the middle of most big galaxies, including ours.</div>
+  <p>Underline the sentence you would double-check. Where would you check it? Name a real source, like a textbook, a science website, or a librarian:</p>
+  <div class="lines"><div class="l"></div></div>
 
-  <div class="callout"><strong>Be honest with yourself:</strong> If the genie does your homework, your name is on a wish you never earned — and you'd know it. Use AI to think WITH you, not FOR you.</div>
+  <div class="callout"><strong>Be honest with yourself:</strong> If the genie does your homework, your name is on work you didn't do — and you'd know it. Use AI to think WITH you, not FOR you.</div>
   </div>
 
   <div class="footer"><span>How to Talk to AI — Cursed Wish Repair Shop</span><span>© Future Skills Series</span><span>2</span></div>

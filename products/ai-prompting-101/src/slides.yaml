@@ -2,22 +2,23 @@
 # Teacher script lives in the speaker notes; students see only what's on the slide.
 # Minute chips: 8 + 10 + 20 + 1 + 6 = 45 (the trickster rule is the first minute of the plan's 7-min Exit block).
 kicker: The Literal Genie Lesson
-subtitle: "AI is a literal genie: it grants exactly what you SAID, not what you meant. Today you learn to write wishes it can't twist."
+subtitle: "AI is a literal genie: it grants exactly what you SAID, not what you MEANT. Today you learn to write wishes it can't twist."
 notes: "Open on this slide while students settle. Worksheet: Cursed Wish Repair Shop, one per student (2 pages). Deck follows the lesson plan block for block; minute chips top-right match it."
 slides:
   - type: hook
     minutes: 8
     title: "Warm-Up — The Worst Genie Ever"
-    headline: "I am a genie. I grant wishes EXACTLY as worded. Who's first?"
+    headline: "I grant wishes EXACTLY as worded. Who's first?"
     lines:
       - "\"I wish I was rich.\"  →  \"Done. Your name is now Rich.\""
       - "\"I wish for a million dollars.\"  →  \"Granted — one million dollars, in play money.\""
       - "\"I wish school was over.\"  →  \"Granted. The school building is now over... there.\""
-    notes: "Take 3–4 wishes from the class and ruin every one, cheerfully. Three improv moves cover any wish: (1) take a word literally — 'rich' becomes a name; (2) fill the missing detail badly — money becomes play money; (3) grant it in the least useful form — a story becomes 'Once there was a hero. The end.' Stay in character; the genie is never mean, just literal. WHAT IF a wish is inappropriate: 'The genie doesn't grant that one. Next wish.' Nobody volunteers? Wish first yourself: 'I wish for a snack' → 'Granted: one grain of rice.' Then advance to the question."
+      - "\"I wish I was the best gamer alive.\"  →  \"Granted. You are now the only gamer alive.\""
+    notes: "Take 3–4 wishes from the class and ruin every one, cheerfully. Three improv moves cover any wish: (1) take a word literally ('rich' becomes a name); (2) fill the missing detail badly (money becomes play money); (3) grant it in the least useful form (a story becomes 'Once there was a hero. The end.'). Stay in character. The genie is never mean, just literal. WHAT IF a wish is inappropriate: 'The genie doesn't grant that one. Next wish.' Nobody volunteers? Wish first yourself: 'I wish for a snack' → 'Granted: one grain of rice.' Then advance to the question."
   - type: question
     title: "Whose fault was that?"
-    question: "The genie's — or the wish?"
-    notes: "Take two or three answers (the answer — the wish — stays off the slide until they say it). Then the bridge: \"AI works like that genie. It doesn't know what you MEANT. It only knows what you SAID. A good AI job goes human, AI, human: you start it with the wish, the genie does the middle, and you check what comes back. Today you get good at both human parts.\" TRANSITION: \"So how do you write a wish a genie can't twist? Lawyers figured this out a long time ago.\""
+    question: "The genie's, or the wish's?"
+    notes: "Take two or three answers. The answer (the wish's) stays off the slide until they say it. Then the bridge: \"AI works like that genie. It can't see what you MEANT. It only sees what you SAID, and it guesses the rest. A good AI job goes human, AI, human: you start it with the wish, the genie does the middle, and you check what comes back. Today you get good at both human parts.\" TRANSITION: \"So how do you write a wish a genie can't twist? You leave it no wiggle room.\""
   - type: cards
     minutes: 10
     title: "Parts of a Genie-Proof Wish"
@@ -25,47 +26,46 @@ slides:
       - { label: P, name: Purpose, text: "What you want + who it's for. \"Explain photosynthesis to a 6th grader\" beats \"explain photosynthesis.\"" }
       - { label: R, name: Requirements, text: "The rules: length, tone, format, include / leave out. This is what stops the genie from twisting your wish." }
       - { label: O, name: Output, text: "What should the finished answer look like? A list? A paragraph? A table? A plan?" }
-    notes: "Script: \"Lawyers make contracts genie-proof with clauses. Strong prompts have three parts.\" Write P.R.O. on the board as you go. P: \"Who is this for and what do you actually want?\" R: \"The rules — this is the part most people skip, and it's the part that stops the twist.\" O: \"What does done look like? A list, a table, a paragraph?\" Then advance: \"Let's fix one together.\""
+    notes: "Script: \"Every genie-proof wish has three parts.\" Write P.R.O. on the board as you go. P: \"Who is this for and what do you actually want?\" R: \"The rules. Most people skip this part, and it's the part that stops the twist.\" O: \"What does done look like? A list, a table, a paragraph?\" Then advance: \"Let's fix one together.\""
   - type: compare
     title: "Watch one get fixed"
     left: { heading: "CURSED WISH", text: "\"help with my history essay\"" }
     right: { heading: "GENIE-PROOF P.R.O. PROMPT", text: "\"I'm writing a 7th grade history essay on the printing press. Give me 3 thesis statements and 2 pieces of evidence for each, as a bullet list. Don't write it for me.\"" }
-    notes: "Build the right-hand prompt on the board one part at a time, naming each: Purpose (7th grade history essay, printing press), Requirements (3 theses, 2 pieces of evidence each, don't write it), Output (bullet list). With devices: run the right-hand prompt live. WHAT IF someone says it's too long: count it — three sentences. \"Three sentences now, or forty pages of NASA history later. Your call.\""
+    notes: "Build the right-hand prompt on the board one part at a time, naming each: Purpose (7th grade history essay, printing press), Requirements (3 theses, 2 pieces of evidence each, don't write it), Output (bullet list). With devices: run the right-hand prompt live. WHAT IF someone says it's too long: count it. Three sentences. \"Three sentences now, or a pile of junk to dig through later. Your call.\""
   - type: quote
     quote: "AI is your editor, not your ghostwriter."
-    sub: "A ghostwriter writes the whole thing for you and lets you put your name on it. An editor gives a second opinion on YOUR work. See the last sentence — \"don't write it for me.\""
-    notes: "Say it plainly and move on; the 'Be honest with yourself' box on the worksheet repeats it. TRANSITION: \"Your turn. Page 1: three kids typed cursed wishes. Fix all three — every part, P, R, and O, every time. Solo. Ten minutes.\""
+    sub: "An editor gives a second opinion on YOUR work. A ghostwriter writes the whole thing and lets you put your name on it. Remember how that prompt ended: \"Don't write it for me.\""
+    notes: "Script: \"AI is your editor, not your ghostwriter. An editor gives a second opinion on YOUR work. A ghostwriter writes the whole thing and lets you put your name on it. Remember how that prompt ended: Don't write it for me.\" Say it plainly and move on; the 'Be honest with yourself' box on the worksheet comes back to it. TRANSITION: \"Your turn. Page 1: three kids typed cursed wishes. Fix all three. Every wish gets P, R, and O. Solo. Ten minutes.\""
   - type: steps
     minutes: 20
     title: "Activity — Cursed Wish Repair Shop"
     items:
-      - { minutes: 10, name: "Repair", text: "Solo. Fix Amara's, Mateo's, and Yuki's cursed wishes on page 1 — all three parts, P, R, and O, every time." }
-      - { minutes: 7, name: "Break it", text: "Swap sheets. Be the Worst Genie Ever on page 2 of your partner's sheet: say each twist out loud, check the boxes, write your best one. Swap back." }
-      - { minutes: 3, name: "Showcase", text: "Two or three before-and-afters read aloud. With devices: run the best one live and say what came out right and what came out wrong." }
-    notes: "REPAIR: circulate; read a stuck student's repair aloud in a genie voice. WHAT IF the same repair three times: \"What does Mateo need that Yuki doesn't? A plan is not a story — O has to change.\" Finished early → Extension (a wish that can't be genie-proofed in 50 words). TRANSITION at 10 min: \"Pens down. Swap sheets. You are now the Worst Genie Ever, and page 2 is where you do your damage.\" BREAK IT: put the next slide up. WHAT IF a partner checks every box: make them say the twist out loud — no twist, the ✓ stands. SWAP BACK: \"Sheets back with their owners. Genies, point at the ONE wish you could NOT twist. That's the one we want to hear.\" SHOWCASE: 2–3 pairs. WHAT IF the live AI answer is bad: \"Which part of the wish let it do that?\" Add a rule, run it again. Then: \"Your OWN sheet, bottom of page 2. Before you write, one more rule about genies.\""
+      - { minutes: 10, name: "Repair", text: "Solo. Fix Amara's, Mateo's, and Yuki's cursed wishes on page 1. Every wish gets P, R, and O." }
+      - { minutes: 7, name: "Break it", text: "Swap sheets. Partner A goes first: ✓ the parts, then twist each wish out loud. Then Partner B. Write your sneakiest twist. Swap back." }
+      - { minutes: 3, name: "Showcase", text: "Two or three before-and-afters read aloud. With devices: run one live instead of the third reading." }
+    notes: "REPAIR: circulate; read a stuck student's repair aloud in a genie voice. WHAT IF the same repair three times: \"What does Mateo need that Yuki doesn't?\" A plan is not a story, so the O part has to change. Finished early → Extension, on the back of page 2 (a wish that can't be genie-proofed in under 50 words). TRANSITION at 10 min: \"Pens down. Swap sheets. You are now the Worst Genie Ever, and page 2 is where you do your damage. Partner A is the partner whose first name comes first in the alphabet. Partner A goes first.\" BREAK IT: put the next slide up. Partner A goes first, about 3 minutes: for each of B's wishes, A puts a ✓ under every part it has on the Genie-Proof Checklist, then twists it out loud to B. Then B does the same for A. Both write their sneakiest twist on the sheet they hold, and sheets go back. A wish that twists needs more rules. WHAT IF a partner puts a ✓ in every box without trying: make them say the twist out loud. No twist? The ✓ stands. A twist? Cross out the Genie-test ✓ and write the twist. Trio: sheets pass to the left, and each genie reads the twists to the sheet's owner. SWAP BACK: \"Sheets back with their owners. Genies, point at the ONE wish on your partner's sheet you could NOT twist. That's the one we want to hear.\" SHOWCASE: 2–3 pairs. WHAT IF the live AI answer is bad: \"Which part of the wish let it do that?\" The class adds a rule. Run it again only if you have the minute. Then: \"Your OWN sheet, bottom of page 2. Before you write, one more rule about genies.\""
   - type: list
     title: "Genie-Proof Checklist"
     items:
       - "P — Says what they want AND who it's for?"
       - "R — Gives at least 2 rules (length, tone, format, include / leave out)?"
       - "O — Says what the finished answer should look like?"
-      - "Genie test — you tried to twist it and couldn't? ✓ = genie-proof"
-    notes: "Leave this up during Break it. Students score their PARTNER's three wishes on the partner's sheet. Exemplar repairs to compare against — Amara: \"I'm a 7th grader making a one-page science poster about black holes, due Friday. Give me 5 amazing facts, each under 20 words, written so a 5th grader could get it. No math formulas.\" Mateo: \"I'm 12 and get $15 a week. I want $120 headphones in 10 weeks. Make a simple weekly savings plan as a table, and give 2 tips for not spending it on snacks.\" Yuki: \"Write the opening paragraph (max 100 words) of an anime-style story about a shy kid whose sketchbook drawings come to life. Mysterious tone, end on a cliffhanger.\" Sneakiest-twist key: a twist counts if it obeys every word. Amara — no 'under 20 words' → each fact is a page. Mateo — no time limit → a 40-year plan, 6 cents a week. Yuki — no length → one sentence again."
+      - "Genie test — You tried to twist it and couldn't? (✓ = genie-proof)"
+    notes: "Leave this up during Break it. Students score their PARTNER's three wishes on the partner's sheet: a ✓ under every part a wish has, and a Genie-test ✓ only if they tried a twist out loud and it failed. Exemplar repairs to compare against. Amara: \"I'm a 7th grader making a one-page science poster about black holes, due Friday. Give me 5 amazing facts, each under 20 words, written so a 5th grader could get it. No math formulas.\" Mateo: \"I'm 12 and get $15 a week. I want $120 headphones in 10 weeks. Make a simple weekly savings plan as a table, and give 2 tips for not spending it on snacks.\" Yuki: \"Write the opening paragraph (max 100 words) of an anime-style story about a shy kid whose sketchbook drawings come to life. Mysterious tone, end on a cliffhanger.\" SNEAKIEST-TWIST KEY: a twist counts only if it obeys every word of the wish. Take a rule out, and the genie gets this. Amara: drop 'under 20 words' → each fact is a page. Mateo: drop 'in 10 weeks' → a 40-year plan, 6 cents a week. Yuki: drop 'max 100 words' → one sentence again."
   - type: quote
     minutes: 1
     quote: "Genies are tricksters."
-    sub: "AI can grant your wish with made-up facts — and sound completely sure. Anything checkable — a name, a date, a number — gets checked somewhere real before you use it."
-    notes: "First minute of the plan's 7-min Exit Ticket block; sheets are back with their owners. Script: \"Genies are tricksters. AI can grant your wish with made-up facts, and sound sure. Anything checkable — a name, a date, a number — gets checked somewhere real before you use it.\" This rule is what Exit Ticket #2 assesses (ISTE 1.3.b). Do NOT reveal which sentence in the printed genie answer is wrong."
+    sub: "AI can grant your wish with made-up facts and sound totally sure. A name, a date, a number: if you can check it, check it somewhere real before you use it."
+    notes: "First minute of the plan's 7-min Exit Ticket block; sheets are back with their owners. Script: \"Genies are tricksters. AI can grant your wish with made-up facts and sound totally sure. A name, a date, a number: if you can check it, check it somewhere real before you use it.\" This rule is what Exit Ticket #2 assesses (ISTE 1.3.b). Do NOT reveal which sentence in the printed genie answer is wrong."
   - type: list
     minutes: 6
     title: "Exit Ticket — Last Check (your own sheet, page 2)"
+    verbatim: true
     items:
-      - "1.  Write one genie-proof prompt you could really use this week for another class — P, R, and O."
-      - "     Then cover all but your first five words: if that was the whole wish, what would the genie hand back?"
-      - "2.  Read the genie's black-hole answer. Which sentence would you double-check?"
-      - "     Write that sentence — and where you would check it (a real source)."
-    notes: "Solo, 6 minutes. Collect. KEY — Exit #1: any prompt with P, R, and O present and specific; part two is proficient if it shows the short prompt lets the genie choose (\"it would explain what 6th grade math is\"). Exit #2: the planted fact is \"first-ever photo of a black hole in 2009\" — false; the Event Horizon Telescope image of M87's black hole was released in April 2019. Proficient = names that sentence AND a real source to check it (science textbook, NASA's website, a librarian). Accept a student who flags another sentence as checkable — spotting a checkable claim is the skill. Not accepted: \"I'd check it on AI.\" WHAT IF \"it all sounds right\": \"Which sentence has a number or a date in it? Start there.\""
+      - "1. Write one genie-proof prompt you could really use this week for another class. Use P, R, and O. Now put your hand over everything after your first five words. If that was the whole wish, what would the genie hand back? One sentence."
+      - "2. Read the genie's answer on your sheet. Underline the sentence you would double-check. Where would you check it? Name a real source, like a textbook, a science website, or a librarian."
+    notes: "Solo, 6 minutes. The questions are copied word for word from page 2. Collect. KEY. Exit #1: any prompt with P, R, and O present and specific. Part two is proficient if it shows the short prompt lets the genie choose (\"the genie would explain what 6th grade math is\"). Exit #2: the one false claim is \"Scientists took the first-ever photo of a black hole in 2009.\" The Event Horizon Telescope image of M87's black hole was released in April 2019. Proficient = underlines that sentence AND names a real source (science textbook, NASA's website, a librarian). Also proficient: underlines another checkable sentence and names a real source for it; spotting a checkable claim is the skill. Developing: a sentence, no real source. Not accepted: \"I'd check it on AI.\" WHAT IF \"it all sounds right\": \"Which sentence has a number or a date in it? Start there.\""
   - type: closer
     statement: "Use AI to think WITH you, not FOR you."
-    sub: "Be honest with yourself: if the genie does your homework, your name is on a wish you never earned — and you'd know it."
-    notes: "Close on this. This lesson stands alone. Next in the unit: What's in the Playlist? (Lesson 2 — in the unit bundle, or sold separately) — where an AI's answers even come from."
+    sub: "Be honest with yourself: If the genie does your homework, your name is on work you didn't do — and you'd know it."
+    notes: "Close on this. This lesson stands alone. Next in the unit: What's in the Playlist? (Lesson 2, sold separately). It asks where an AI's answers come from in the first place."
