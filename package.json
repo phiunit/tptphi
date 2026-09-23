@@ -17,7 +17,8 @@
     "fillable": "node scripts/fillable.mjs",
     "slides": "node scripts/slides.mjs",
     "audit": "node scripts/audit.mjs",
-    "shipcheck": "node scripts/shipcheck.mjs"
+    "shipcheck": "node scripts/shipcheck.mjs",
+    "widows": "node scripts/widows.mjs"
   },
   "dependencies": {
     "pdf-lib": "^1.17.1",

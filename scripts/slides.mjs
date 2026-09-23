@@ -62,7 +62,7 @@ function recorder(sl) {
       const style = `left:${px(o.x)};top:${px(o.y)};width:${px(o.w)};height:${px(o.h)};font-size:${o.fontSize || 18}pt;color:#${o.color || C.ink};` +
         `font-weight:${o.bold ? 700 : 400};font-style:${o.italic ? 'italic' : 'normal'};text-align:${o.align || 'left'};letter-spacing:${(o.charSpacing || 0) * 0.75}pt;justify-content:${jc}`;
       const inner = Array.isArray(text)
-        ? `<ul>${text.map(r => `<li style="margin-bottom:${(r.options && r.options.paraSpaceAfter) || 0}pt">${esc(r.text)}</li>`).join('')}</ul>`
+        ? `<ul${text.every(r => r.options && r.options.bullet === false) ? ' class="nb"' : ''}>${text.map(r => `<li style="margin-bottom:${(r.options && r.options.paraSpaceAfter) || 0}pt">${esc(r.text)}</li>`).join('')}</ul>`
         : esc(text).replace(/\n/g, '<br>');
       out.push(`<div class="t" style="${style}">${inner}</div>`);
     },
@@ -207,7 +207,10 @@ export async function buildSlides(p, distDir, outPath, page = null) {
         break;
       }
       case 'list': {
-        const items = (s.items || []).map((t, i, a) => ({ text: String(t), options: { bullet: { code: '25A0' }, breakLine: i < a.length - 1, paraSpaceAfter: 8 } }));
+        // Items that carry their own numbers ("1. …", as an exit ticket must, to match the worksheet) get no
+        // bullet glyph — otherwise the slide prints "■ 1." and the list reads as bullet-and-number twice.
+        const numbered = (s.items || []).length > 0 && (s.items || []).every(t => /^\s*\d+\.\s/.test(String(t)));
+        const items = (s.items || []).map((t, i, a) => ({ text: String(t), options: { bullet: numbered ? false : { code: '25A0' }, breakLine: i < a.length - 1, paraSpaceAfter: 8 } }));
         const size = fit((s.items || []).join('\n'), bw - 0.4, bodyH, 18, 12);
         S.text(items, { x: M + 0.1, y: top, w: bw - 0.2, h: bodyH, fontSize: size, color: C.ink });
         break;
@@ -230,7 +233,7 @@ export async function buildSlides(p, distDir, outPath, page = null) {
     for (const old of fs.readdirSync(reviewDir).filter(f => /^slide-\d+\.png$/.test(f))) fs.rmSync(path.join(reviewDir, old));
     const html = `<!doctype html><meta charset="utf-8"><style>
       body{margin:0;background:#000} .slide{position:relative;width:960px;height:540px;overflow:hidden;font-family:Arial,"Liberation Sans",sans-serif}
-      .t{position:absolute;display:flex;flex-direction:column;line-height:1.2;white-space:pre-wrap} .t ul{margin:0;padding-left:1.1em} .t li{list-style:square}
+      .t{position:absolute;display:flex;flex-direction:column;line-height:1.2;white-space:pre-wrap} .t ul{margin:0;padding-left:1.1em} .t li{list-style:square} .t ul.nb{padding-left:0} .t ul.nb li{list-style:none}
     </style>${twins.map(S => `<div class="slide">${S.html()}</div>`).join('\n')}`;
     const tmp = path.join(reviewDir, '.slides.html'); fs.writeFileSync(tmp, html);
     await page.setViewportSize({ width: 960, height: 540 });
