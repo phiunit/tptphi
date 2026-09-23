@@ -91,7 +91,7 @@ export async function buildSlides(p, distDir, outPath, page = null) {
   if (!fs.existsSync(yml)) return null;
   const deck = parse(fs.readFileSync(yml, 'utf8'));
   const meta = p.meta;
-  const lineName = LINE[meta.line] || 'Future Skills';
+  const lineName = deck.line || LINE[meta.line] || 'Future Skills';   // deck.line: a product whose pages carry their own line name (News Desk)
   const caption = `FUTURE SKILLS · ${lineName.toUpperCase()}`;
   const short = deck.title || meta.short_name || String(meta.title).split(':')[0].trim(); // deck.title: display form (e.g. keeps a "?" the filename drops)
   const pres = new pptxgen();

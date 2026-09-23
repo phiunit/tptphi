@@ -53,7 +53,7 @@ for (const p of listProducts(process.argv[2])) {
   const bundleFiles = (p.meta.bundle_of || []).reduce((n, slug) => {
     const d = path.join(p.dir, '..', slug, 'dist');
     return n + (fs.existsSync(d) ? fs.readdirSync(d).filter(f => /( - (Lesson Plan|Worksheet|Worksheet \(Fillable\)|Teacher Guide)\.pdf|\.pptx)$/.test(f)).length : 0);
-  }, distFiles.filter(f => / - Unit Overview\.pdf$/.test(f)).length);
+  }, distFiles.filter(f => /\.(pdf|pptx)$/.test(f) && !/ - Preview\.pdf$/.test(f)).length); // the bundle's own files: overview, capstone sheet and its fillable
   const band = p.meta.bundle_of
     ? `FULL DOWNLOAD: ${p.meta.bundle_of.length} LESSONS · ${bundleFiles} FILES`
     : `FULL DOWNLOAD: ${parts.join(' · ')}`;
@@ -64,7 +64,7 @@ for (const p of listProducts(process.argv[2])) {
     *{margin:0;box-sizing:border-box} body{width:8.5in}
     .pg{width:8.5in;height:11in;position:relative;page-break-after:always;overflow:hidden;background:#fff}
     .pg:last-child{page-break-after:auto} .pg img{width:8.5in;height:11in;display:block}
-    .tag{position:absolute;top:.3in;right:.3in;background:#FFB020;color:#14141F;font:700 11pt 'Space Grotesk',Arial,sans-serif;padding:4px 12px;border-radius:99px;letter-spacing:1px}
+    .tag{position:absolute;top:.07in;left:50%;transform:translateX(-50%);background:#FFB020;color:#14141F;font:700 11pt 'Space Grotesk',Arial,sans-serif;padding:4px 12px;border-radius:99px;letter-spacing:1px}
     .band{position:absolute;left:-2in;right:-2in;top:46%;transform:rotate(-24deg);background:rgba(255,176,32,.35);color:#14141F;
       font:700 22px 'Space Grotesk',sans-serif;letter-spacing:1.5px;text-align:center;padding:14px 0;text-transform:uppercase}
     .band span{display:inline-block;white-space:nowrap}
