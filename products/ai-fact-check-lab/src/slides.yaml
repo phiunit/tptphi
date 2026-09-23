@@ -2,80 +2,86 @@
 # Teacher script lives in the speaker notes; students see only what's on the slide.
 # The planted errors (warm-up + the three drafts) live ONLY in notes — never on a slide.
 kicker: The Fact Desk Lesson
-subtitle: "AI predicts likely words, not checked ones — so it can be completely wrong in a totally confident voice. Today you're the fact desk: nothing runs until you clear it."
-notes: "Open on this slide while students settle. Worksheet: The Fact Desk, one per student. Fully unplugged — devices only add."
+subtitle: "AI predicts likely words, and it doesn't always check them. It can be completely wrong and sound totally sure. Today you're the fact desk: nothing gets printed until you clear it."
+notes: "Open on this slide while students settle. One Fact Desk worksheet per student. No devices needed."
 slides:
   - type: hook
     minutes: 6
     title: "Warm-Up — The Story That Almost Ran"
     headline: "This is going in tomorrow's paper. Print it?"
     lines:
-      - "Listen once, like an editor. No notes yet — just your first feeling."
+      - "Listen once, like an editor. No notes yet, just your first feeling."
       - "Vote: PRINT IT / HOLD IT"
       - "Then we find out what the room missed."
-    notes: "Read this aloud, smooth and confident, like a news anchor: \"Our solar system has eight planets orbiting one star, the Sun. The closest planet to the Sun is Venus, which is also the hottest. Mars is called the Red Planet because rusty iron dust covers its surface. Saturn is famous for its rings — it is the only planet in our solar system that has them. Sunlight takes about eight minutes to reach Earth.\" Then ask for the vote: \"This is going in tomorrow's paper. Print it?\" Most classes vote print. Do NOT reveal yet — advance to the question slide. If the room votes HOLD, ask which sentence they doubt — most name Saturn and miss Venus. If a kid names Venus instantly: \"Hold that — write it down. We vote first, then we check.\""
+    notes: "Read this aloud, smooth and confident, like a news anchor: \"Our solar system has eight planets orbiting one star, the Sun. The closest planet to the Sun is Venus, which is also the hottest. Mars is called the Red Planet because rusty iron dust covers its surface. Saturn is famous for its rings — it is the only planet in our solar system that has them. Sunlight takes about eight minutes to reach Earth.\" Then call the vote: \"This is going in tomorrow's paper. Print it?\" Most classes vote print. Don't reveal yet. Advance to the question slide.\nIF THE ROOM VOTES HOLD: ask which sentence they doubt. Most name Saturn and miss Venus. \"One doubt is a start. The desk finds BOTH.\"\nIF A KID NAMES VENUS INSTANTLY: \"Write it down. We vote first, then we check.\" The second error usually slips past anyway."
   - type: question
     title: "Two of those sentences were false."
     question: "Which two — and why did the whole thing sound true?"
-    sub: "Smooth is not the same as true. That paragraph was written to sound like an expert."
-    notes: "Reveal: Mercury is closest to the Sun (Venus really is the hottest — the half-truth makes it slippery), and Saturn isn't alone: Jupiter, Uranus, and Neptune have faint rings too. Bridge: \"That paragraph sounded right because it was SMOOTH, not because it was TRUE. AI talks like that all the time — it predicts likely words, it doesn't check them. Today you're the fact desk: nothing runs until you clear it.\""
+    sub: "Name the sentence first. Then say what made you believe it."
+    notes: "REVEAL: Mercury is closest to the Sun (Venus really is the hottest — the half-truth is what makes it slippery), and Saturn isn't alone: Jupiter, Uranus, and Neptune have faint rings too.\nBRIDGE: \"That sounded right because it was SMOOTH, not because it was TRUE. AI predicts likely words, and it doesn't always check them. So it can sound exactly like that. Today you're the fact desk: nothing gets printed until you clear it.\""
   - type: quote
     minutes: 3
     quote: "AI is autocomplete with confidence."
     sub: "It predicts the next likely word, like your phone guessing your next text. When the likely words aren't true, it says the wrong thing in the same confident voice. That's a hallucination."
-    notes: "Why it happens (3 min). Say the quote, then the sub. If your class did the genie lesson: same trickster, new disguise. If someone asks \"so is AI always wrong?\": \"No — it's right a lot. That's what makes it dangerous: you can't tell by the tone. So we check.\""
+    notes: "Why it happens (3 min). CLASS AUTOCOMPLETE FIRST (1 min): \"Finish my sentence. Twinkle, twinkle, little…\" (Star.) \"Bulls get mad when they see the color…\" (Red.) \"You just did what AI does: you picked the likely word. The first one was right. The second wasn't. Bulls can't see red well; it's the moving cape.\"\nTHEN: say the quote, then the line under it.\nIF YOUR CLASS DID LESSON 1: \"The genie gives you what you SAID. Autocomplete gives you what's LIKELY. Neither one promises what's TRUE.\"\nIF SOMEONE ASKS \"SO IS AI ALWAYS WRONG?\": \"No, it's right a lot. That's the danger: you can't tell by the tone.\"\nIF A STUDENT SAYS \"MY AI SHOWS LINKS\": \"Good. Click one. A link counts as a second source only if you open it and it says the same thing.\""
   - type: cards
     minutes: 7
     title: "The Fact-Desk Method"
     items:
       - { label: 1, name: UNDERLINE, text: "Every checkable claim: names, dates, numbers, places, quotes." }
-      - { label: 2, name: RANK, text: "You can't check everything. Would it hurt if wrong? Mark C. Everybody knows it? Mark S." }
+      - { label: 2, name: RANK, text: "Would it hurt if wrong? Mark C. Low risk? Mark S. \"Everybody knows it\" is not a reason." }
       - { label: 3, name: LATERAL-READ, text: "Leave the passage. Name a second, independent source that could confirm it." }
-      - { label: 4, name: VERDICT, text: "RUN (clean) · FIX (correct it, then print) · KILL (the core claim fails — cut the story)." }
-    notes: "Write the four steps on the board as you go. Model steps 1–2 on the warm-up paragraph: underline \"eight planets,\" \"Venus,\" \"Mars,\" \"Saturn,\" \"eight minutes\" — then rank. Which claims would embarrass the paper most if wrong? Those get CHECK."
+      - { label: 4, name: VERDICT, text: "RUN (clean) · FIX (correct it, then print) · KILL (core claim fails, cut the story)." }
+    notes: "The method (7 min). Walk the four steps. On RANK: \"You can't check everything. Would it hurt if wrong? That's a C. Low risk means not a record, not a number, and the ending doesn't need it. That's an S. 'Everybody knows it' is not a reason.\" Then advance: you model steps 1 and 2 on the next slide."
+  - type: list
+    title: "The warm-up, corrected"
+    items:
+      - "Our solar system has eight planets orbiting one star, the Sun."
+      - "The closest planet to the Sun is Mercury (not Venus). Venus is the hottest."
+      - "Mars is called the Red Planet because rusty iron dust covers its surface."
+      - "Saturn is famous for its rings. Jupiter, Uranus, and Neptune have faint ones."
+      - "Sunlight takes about eight minutes to reach Earth."
+    notes: "MODEL STEPS 1 AND 2 OUT LOUD (still inside the 7-minute method block). Underline five claims: eight planets, Mercury closest, Venus hottest, rusty iron dust, eight minutes. Then mark each one, thinking aloud: \"Eight planets: a number. C. Mercury closest: a record word. C. Venus hottest: a record. C. Rusty iron dust: not a record, not a number, nothing leans on it. S. Eight minutes: a number. C.\" Then: \"Four C's out of five. That's normal for a science paragraph. Now which one would embarrass the paper most if it were wrong? Check that one first.\""
   - type: compare
-    title: "What counts as a check?"
+    title: "Don't ask the suspect if they're innocent."
     left: { heading: "NOT A CHECK", text: "Asking the same AI \"Are you sure?\" Same source, same guess, same confident voice." }
-    right: { heading: "LATERAL READING", text: "Leave the answer. Open a second, independent source — encyclopedia, textbook, a new search tab. Does it agree?" }
-    notes: "Students' instinct is to ask the AI again. Name it as the trap before the activity. With devices: show a new search tab for one CHECK claim from the warm-up."
-  - type: quote
-    quote: "Don't ask the suspect if they're innocent."
-    sub: "Asking the same AI \"are you sure?\" is not a check. LEAVE the answer, open a second, independent source. That's lateral reading."
-    notes: "Say it plainly and move on. This is the line students quote back all year."
+    right: { heading: "LATERAL READING", text: "Leave the answer. Open a second, independent source: an encyclopedia, a textbook, a new search tab. Does it agree?" }
+    notes: "Say the title line, then: \"Asking the same AI 'are you sure?' is not a check. LEAVE the answer and open a second, independent source. That's lateral reading.\" Students' instinct is to ask the AI again, so name it as the trap before the activity. This is the line they quote back all year. With devices: open a new search tab for one C claim from the warm-up.\nIF A STUDENT SAYS \"I'D JUST GOOGLE IT\": \"Google shows you ten sources. Which one, and why that one? Name it. That's the log.\"\nHAND-OUT: \"Pair up. Worksheets out. Deja's note is at the top of page 1. Draft #1 together, seven minutes.\""
+  - type: list
+    title: "Stamp It — Desk Rules"
+    items:
+      - "RUN — clean. Every C claim confirmed by a second, independent source."
+      - "FIX — correct it, then print. Does the writer's big conclusion still stand once the facts are fixed?"
+      - "KILL — the core claim fails. Cut the story. Draw a big X across the draft."
+      - "A quote is a claim. No traceable source, no print."
+      - "Back every stamp with evidence: the claim, the fix, the second source."
+      - "Partner A is the partner whose first name comes first in the alphabet."
+    notes: "Show this while sheets go out, then advance to the rounds. Two failure modes to watch for. The trusting desk clears everything (\"it sounded right\"): send them back to step 1. The paranoid desk kills everything (\"it's all suspicious\"): that's what RANK is for. Score the evidence, not the stamp."
   - type: steps
     minutes: 21
     title: "Activity — The Fact Desk at The Comet"
     items:
-      - { minutes: 7, name: "Round 1", text: "Draft #1 (Priya's Moon column) together, each on your OWN sheet: underline, mark C or S, log your two riskiest claims, stamp it, write the note." }
-      - { minutes: 10, name: "Round 2", text: "Partner A leads Draft #2, Partner B leads Draft #3 — each on your own sheet (6 min). Swap: add one claim they missed (2). Owners stamp and note (2)." }
-      - { minutes: 4, name: "Verdicts out loud", text: "Per draft, one desk per stamp gives its verdict and best evidence. Then hands up — your teacher tallies the room on the board." }
-    notes: "Deja's note is at the top of the worksheet: no story gets printed until the desk checks it. Draft #2 is Theo's quiz page; Draft #3 is Marcus's invention feature. Play the editor, not the answer key — when a desk asks \"is this one true?\", answer \"that's a checkable claim — where's your second source?\" Keep deadline energy: \"Presses roll in five!\" ANSWER KEY (notes only): #1 — first crewed Moon landing was 1969, not 1959 (pushback to expect: the uncrewed probe Luna 2 reached the Moon in 1959 — credit it, but \"astronauts landed\" is still false); the Moon reflects sunlight, it makes none of its own; its ending (brightest night-sky object) is true for the wrong reason. Verdict FIX. #2 — Everest is in the Himalayas in Asia, not the Andes; Australia's capital is Canberra, not Sydney; the three-continents ending no longer follows. Verdict FIX. #3 — Alexander Graham Bell patented the telephone in 1876, not Edison; the Edison quote is fabricated for this exercise and has no source. Verdict KILL. No draft earns RUN today — tell the class that's realistic. Call the swap at the 6-minute mark of Round 2: sheets cross the desk, each partner adds one claim the owner missed, then sheets go straight back. Early finishers: the Extension — write a smooth passage with one planted error and trade. Support: Drafts #1–2 only, hint \"each draft hides two false facts (plus a shaky ending).\""
-  - type: list
-    title: "Stamp It — Desk Rules"
-    items:
-      - "RUN — clean. Every CHECK claim confirmed by a second, independent source."
-      - "FIX — correct it, then print. Does the writer's big conclusion still stand once the facts are fixed?"
-      - "KILL — the core claim fails. Cut the story."
-      - "A quote is a claim. No traceable source, no print."
-      - "Back every stamp with evidence: the claim, the fix, the second source."
-    notes: "Leave this up during both rounds. Watch for the two failure modes: the trusting desk clears everything (\"it sounded right\") — send them back to step 1; the paranoid desk kills everything (\"it's all sus\") — that's what RANK is for. Score the evidence, not the stamp."
+      - { minutes: 7, name: "Round 1", text: "Draft #1 (Priya's Moon column) together, each on your OWN sheet: underline, mark C or S, log your two riskiest claims, pick a stamp, write the note." }
+      - { minutes: 10, name: "Round 2", text: "Partner A: Draft #2. Partner B: Draft #3. Stamp and note on your own sheet (6 min). Swap, add a claim they missed (2 min). Swap back and fix (2 min)." }
+      - { minutes: 4, name: "Verdicts out loud", text: "Draft by draft, hands up for RUN, FIX, or KILL while your teacher tallies. Then one desk per stamp gives its best evidence." }
+    notes: "SCRIPT: Deja's note is at the top of the worksheet: no story gets printed until the desk checks it. Play the editor, not the answer key. When a desk asks \"is this one true?\": \"That's a checkable claim. Where's your second source?\" Keep deadline energy: \"Presses roll in five!\"\nROUND CHANGE (at 7:00): \"Round change. Partner A is the partner whose first name comes first in the alphabet. A, take Theo's draft on page 2. B, take Marcus's on page 3. Six minutes, your own sheet. Stamp and note before the swap.\"\nSWAP (at 6:00 of Round 2): \"Swap sheets. Read your partner's log, add one claim they missed in an empty row, and hand it back.\" At 8:00: \"Take your sheet back. If the new claim changes your stamp or note, fix it.\" A desk of three: each person passes their sheet to the left, then sheets come straight back.\nVERDICTS: \"Pens down. Hands up for your stamps first, then I call on desks for evidence.\" Draft by draft, hands up for RUN, FIX, and KILL; tally one row per draft on the board. Then, for each stamp that got hands, one desk gives its stamp and best evidence: five or six desks in all.\nKEY #1 (Priya): the first crewed Moon landing was 1969, not 1959. Expect pushback: the uncrewed probe Luna 2 reached the Moon in 1959. Credit it, but \"astronauts landed\" is still false. The Moon reflects sunlight; it makes none of its own. The ending (brightest thing in the night sky) is true for the wrong reason. FIX.\nKEY #2 (Theo): Everest is in the Himalayas in Asia, not the Andes. Australia's capital is Canberra, not Sydney. The three-continent ending no longer follows. FIX.\nKEY #3 (Marcus): Alexander Graham Bell patented the telephone in 1876, not Edison. The Edison quote was written for this exercise and has no source. KILL.\nNO RUN TODAY: \"No RUN today, and that's the point. These came straight from an AI helper, and nobody had checked them yet.\"\nEARLY FINISHERS: the Extension. Write a smooth four-sentence passage with ONE planted error, or none at all. Trade. Your partner has to decide: RUN, FIX, or KILL.\nSUPPORT: Drafts #1–2 only. In Round 2, both partners take Draft #2 and swap as normal. Hint: \"Each draft hides two false facts, plus a shaky ending.\""
   - type: list
     minutes: 4
     title: "Debrief"
     items:
-      - "Which planted error was hardest to catch — and what made it slippery?"
-      - "Where else does confident-but-wrong show up? Feeds, group chats, AI homework helpers..."
+      - "Which planted error was hardest to catch, and what made it slippery?"
+      - "Where else does confident-but-wrong show up? Feeds, group chats, AI homework helpers…"
       - "What's your personal \"before I repeat it\" rule from now on?"
-    notes: "Expect the fabricated quote in Draft #3 to be named hardest — many students treat quotation marks as proof. Why is a fabricated quote more dangerous than a wrong date? A date is easy to check; a quote borrows a real person's credibility."
+    notes: "Expect the fake quote in Draft #3 to be named hardest. Lots of students treat quotation marks as proof. If nobody names it: \"Did anyone check the Edison quote? Why not?\" Then ask why a made-up quote is more dangerous than a wrong date. A date is easy to check; a quote borrows a real person's credibility.\nTRANSITION: \"Bottom of page 3: Last Check. Solo, four minutes. Two questions, then hand it in.\""
   - type: list
     minutes: 4
     verbatim: true   # both items are the worksheet's exit questions word for word (assessed items)
     title: "Exit Ticket — Last Check"
     items:
-      - "1.  In your own words: how can AI sound 100% sure and still be wrong?"
-      - "2.  Name one checkable claim (a name, date, number, place, or quote) you saw online this week — or one you expect to see. Where would you check it? Name a second source that is NOT the place you first saw it (a textbook, an encyclopedia, a different website)."
-    notes: "Bottom of the worksheet. Collect; the Teacher Guide has the scoring key. Full credit on #1 names the mechanism (predicts likely words, doesn't check them). Full credit on #2 names a specific second source — \"Google it\" gets the push-back: \"Google shows you ten sources. Which one, and why that one?\""
+      - "In your own words: how can AI sound 100% sure and still be wrong?"
+      - "Name one checkable claim (a name, date, number, place, or quote) you saw or heard this week. Name a second source where you would check it. It can't be the place you first saw or heard it."
+    notes: "Bottom of worksheet page 3. Collect; the Teacher Guide has the scoring key. Full credit on #1 names the mechanism: AI predicts likely words, and it doesn't always check them. Full credit on #2 names a specific second source. \"Google it\" earns partial credit and the push-back: \"Google shows you ten sources. Which one, and why that one?\""
   - type: closer
     statement: "Smooth is not the same as true."
-    sub: "Desk rule to keep: before you repeat it, post it, or hand it in — check it. The desk is a habit, not a job."
-    notes: "Close on this. Next in the unit: Teach AI Your Taste (Lesson 4 — in the unit bundle, or sold separately) — using AI as an editor on your own writing without letting it take over."
+    sub: "Desk rule to keep: before you repeat it, post it, or hand it in — check it. You don't need a desk to do this. You need the habit."
+    notes: "Close on this. Next in the unit: Teach AI Your Taste (Lesson 4, sold separately). Students use AI as an editor on their own writing without letting it take over."

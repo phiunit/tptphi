@@ -33,7 +33,7 @@ AI literacy, fact checking, media literacy, lateral reading, misinformation, cri
 ```
 
 **Description** — paste the `description:` block from `products/ai-fact-check-lab/product.yaml`
-(2473 chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
+(2570 chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
 
 
 ## Before you hit Publish
