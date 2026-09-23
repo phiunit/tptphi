@@ -40,7 +40,11 @@ for (const p of listProducts(process.argv[2])) {
   const parts = [];
   if (has(/ - Lesson Plan\.pdf$/)) parts.push('PLAN');
   if (has(/ - Worksheet\.pdf$/)) parts.push(has(/Fillable\)\.pdf$/) ? 'WORKSHEET + FILLABLE' : 'WORKSHEET');
+  // A frames pack's student pages are Frames, not a worksheet; the band said nothing about them at all.
+  const nFrames = (() => { try { const f = distFiles.find(f => / - Frames\.pdf$/.test(f)); return f ? (fs.readFileSync(path.join(p.dir, 'dist', f), 'latin1').match(/\/Type\s*\/Page[^s]/g) || []).length : 0; } catch { return 0; } })();
+  if (nFrames) parts.push(`${nFrames} FRAME${nFrames > 1 ? 'S' : ''}${has(/Frames \(Fillable\)\.pdf$/) ? ' + FILLABLE' : ''}`);
   if (has(/ - Teacher Guide\.pdf$/)) parts.push('GUIDE');
+  if (has(/ - Worked Examples\.pdf$/)) parts.push('EXAMPLES');
   if (has(/\.pptx$/)) parts.push('SLIDES');
   if (has(/ - Unit Overview\.pdf$/)) parts.push('UNIT OVERVIEW');
   // Bundle file count = every child's shipped PDFs + decks, plus the overview (what the buyer actually downloads).
