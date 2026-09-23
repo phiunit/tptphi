@@ -7,6 +7,7 @@ judge's directory and decoded by the lead afterward. A product whose rewrite doe
 | Product | Pairs | New wins | Old wins | Tie | Kept? |
 |---|---|---|---|---|---|
 | ai-prompting-101 (L1) | 17 | 15 | 0 | 2 | Yes |
+| ai-training-data-crate (L2) | 17 | 13 | 4 | 0 | Yes, with fixes |
 | ai-fact-check-lab (L3) | 20 | 17 | 1 | 2 | Yes |
 
 ## L1 notes
@@ -31,3 +32,12 @@ paragraph. The judge was comparing two different slides, but its reason was fair
 alone on a line. Fixed by shortening that bullet. The lead's first attempt also changed the speaker-notes
 reveal line, which is a word-for-word copy of the lesson plan's reveal; that was restored so the two still
 match, and only the slide bullet changed.
+
+## L2 notes
+13 of 17 changed pages won. Two of the four losses were the lead's own rulings and stand: slide 11 lost
+Exit #3 (it asked for what students had written two minutes earlier) and slide 2's AutoMix punchlines moved
+to the speaker notes (a joke read off the screen before the teacher performs it is a joke spent). A judge
+reading a static page cannot see either reason. The other two losses were real and are fixed: slide 5's pull
+quote is whole again, and the teacher guide's Gap Report model answer names all four students the playlist
+leaves out, as it did before the rewrite dropped Nia. Every orphaned word the judge found on the new side is
+reworded, and the new widow check reads zero for this product.

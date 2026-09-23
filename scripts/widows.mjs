@@ -27,6 +27,9 @@ for (const p of listProducts(slug)) {
         const words = [];
         const tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
         for (let n; (n = tw.nextNode());) { const re = /\S+/g; let m; while ((m = re.exec(n.data))) words.push([n, m.index, m.index + m[0].length, m[0]]); }
+        // Punctuation that lands in its own text node (")." after </strong>) is not a word; measure the real
+        // last word against the real word before it, or "fits)." alone on a line goes unseen.
+        for (let i = words.length - 1; i >= 0; i--) if (!/[\p{L}\p{N}]/u.test(words[i][3])) words.splice(i, 1);
         if (words.length < MIN) continue;
         const rect = w => { const r = document.createRange(); r.setStart(w[0], w[1]); r.setEnd(w[0], w[2]); const rs = r.getClientRects(); return rs[rs.length - 1]; };
         const a = rect(words[words.length - 2]), b = rect(words[words.length - 1]);

@@ -25,7 +25,7 @@ h1 span { color: #FFB020; }
 <div class="star" style="width:4px;height:4px;left:520px;top:120px"></div>
 <div class="star g" style="width:8px;height:8px;left:800px;top:330px"></div>
 <div class="star g" style="width:6px;height:6px;left:780px;top:440px"></div>
-<!-- art: a playlist card with three tracks and one empty slot (the gap), plus notes — fully inside the frame -->
+<!-- art: a playlist card with three tracks and one empty dashed slot marked "?" (the gap), plus notes — fully inside the frame -->
 <svg width="420" height="340" viewBox="0 0 420 340" style="position:absolute; right:36px; bottom:32px; z-index:1;">
   <g transform="translate(2,2) scale(1.08)">
     <rect x="34" y="26" width="248" height="276" rx="24" fill="#FFB020"/>
@@ -33,9 +33,8 @@ h1 span { color: #FFB020; }
       <line x1="72" y1="82" x2="244" y2="82"/><line x1="72" y1="130" x2="244" y2="130"/>
       <line x1="72" y1="178" x2="196" y2="178"/>
     </g>
-    <g stroke="#232345" stroke-width="11" stroke-linecap="round" stroke-dasharray="18 16">
-      <line x1="72" y1="238" x2="244" y2="238"/>
-    </g>
+    <rect x="72" y="212" width="172" height="54" rx="12" fill="none" stroke="#232345" stroke-width="7" stroke-dasharray="16 11"/>
+    <text x="158" y="254" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="44" fill="#232345">?</text>
     <g fill="#FFD27A">
       <circle cx="30" cy="44" r="12"/>
       <path d="M 42 44 V 10 L 58 6 V 36" fill="none" stroke="#FFD27A" stroke-width="7" stroke-linecap="round"/>

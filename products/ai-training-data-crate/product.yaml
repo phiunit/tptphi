@@ -24,29 +24,29 @@ description: |
 
   An AI is a music app and its training data is the playlist. It can only mix what is in the playlist.
 
-  In Playlist Check, your students become a recommendation AI and serve six classmates' requests plus one live one from one 12-song playlist.
+  In Playlist Check, your students become the app and serve seven song requests from one 12-song playlist.
 
-  You open as AutoMix, the one-playlist music app. Its whole library is 12 songs, all loud, all fast, all party. Ask it for study music, a slow last-dance song, or a song for grandma's birthday dinner. It serves a loud party track every time, with total confidence. Is the app broken, or is its playlist?
+  You open as AutoMix, the one-playlist music app. Its whole library is one kind of song: loud, fast party tracks. Your students ask for study music, a slow last-dance song, or a song for grandma's birthday dinner. You serve a loud party track every time, with total confidence ("Grandma loves bass drops, probably."). Is the app broken, or is its playlist?
 
-  That question is how students discover where AI bias actually comes from. Direct instruction breaks how AI learns into three moves: INPUT is the playlist, PATTERNS is the training, OUTPUT is the prediction. That is pattern prediction from examples, not magic. Pairs then work the request line and check a Fit box for every serve. They write a Playlist Gap Report naming who the app serves well and who it leaves out.
+  That question is how students discover where AI bias actually comes from. Direct instruction breaks how AI learns into three moves: INPUT is the playlist, PATTERNS is the training, OUTPUT is the prediction. No magic, just patterns from examples. Pairs then name the playlist's pattern, work the request line, and check a Fit box for every serve.
 
-  Next they practice repeat-then-add discussion, then Fix the Playlist by inventing the missing cards. AI bias usually comes from gaps in the data, not a villain in the code, and they find that out for themselves. The debrief maps their playlist gaps to real machine learning examples. Voice assistants and accents, photo tools and skin tone, one-vibe recommendation feeds. The exit ticket asks them to diagnose a brand-new lopsided AI using the word "playlist."
+  They write a gap report naming who the app serves well and who it leaves out. Next they say a partner's idea back before adding their own, then fix the playlist by inventing the cards it's missing. AI bias usually comes from gaps in the data, not a villain in the code, and they find that out for themselves. The debrief maps their gaps to real machine learning: voice assistants and accents, photo tools and skin tone, one-vibe recommendation feeds. The two-question exit ticket has them finish the input → patterns → output chain and diagnose a brand-new lopsided AI using the word "playlist."
 
   WHAT YOU GET
   • Lesson plan, 2 pages. Every block timed to 45 minutes, every transition scripted, a what-if under each.
-  • Playlist Check worksheet, 2 pages. 12 playlist cards built in, a request table with check boxes, the gap report, Fix the Playlist, and a 3-item exit ticket.
+  • Playlist Check worksheet, 2 pages. 12 playlist cards built in, a pattern line, a request table with check boxes, the gap report, Fix the Playlist, and a 2-item exit ticket.
   • Fillable worksheet PDF. Students type into it on Chromebooks and tablets.
-  • Teacher guide, 3 pages. A key or exemplar for every student item, AutoMix improv tips, the real-world debrief guide, and a when-it-goes-sideways list.
-  • Slide deck, 12 slides (.pptx). Teacher script and answer keys sit in the speaker notes. It opens in PowerPoint, Keynote or Google Slides.
-  • Support, Extension, ELL and no-device variants, written into the plan.
-  Fully unplugged. Students need no devices, and the projector for the deck is optional. Zero prep: print it tonight, teach it tomorrow.
+  • Teacher guide, 3 pages. A key or exemplar for every student item, AutoMix improv tips, the real-world debrief guide, an Extension key, and a when-it-goes-sideways list.
+  • Slide deck, 12 slides (.pptx). Teacher script and answer keys sit in the speaker notes. It opens in PowerPoint, Keynote, or Google Slides.
+  • Support, Extension, ELL, and no-device variants, written into the plan.
+  Fully unplugged. Students need no devices, and the projector for the deck is optional. Zero prep. Print it tonight, teach it tomorrow.
 
   Standards: CSTA 2-IC-21, ISTE 1.1.d, CCSS ELA SL.6.1.
 
   Lesson 2 of 6 in the AI Literacy unit. It stands alone, and the 6-lesson bundle saves 30%. Search the store for "AI Literacy Unit Bundle".
 includes:
   - "What's in the Playlist - Lesson Plan.pdf (scripted 45-minute lesson, 2 pages: timed blocks, written transitions, a what-if per activity; Support / Extension / ELL / no-device variants)"
-  - "What's in the Playlist - Worksheet.pdf (Playlist Check, 2 pages: 12 playlist cards, request table with Fit check boxes, gap report, Fix the Playlist, exit ticket)"
-  - "What's in the Playlist - Worksheet (Fillable).pdf (the same worksheet, typeable in any PDF viewer — Chromebooks, iPads, Preview, Acrobat)"
-  - "What's in the Playlist - Teacher Guide.pdf (key or exemplar for every student item incl. the exit ticket, AutoMix improv tips, real-world debrief guide, when-it-goes-sideways list, 3 pages)"
+  - "What's in the Playlist - Worksheet.pdf (Playlist Check, 2 pages: 12 playlist cards, pattern line, request table with Fit check boxes, gap report, Fix the Playlist, 2-item exit ticket)"
+  - "What's in the Playlist - Worksheet (Fillable).pdf (the same worksheet, typeable in most PDF viewers: Chrome, Preview, Acrobat)"
+  - "What's in the Playlist - Teacher Guide.pdf (key or exemplar for every student item incl. the exit ticket, AutoMix improv tips, real-world debrief guide, Extension key, when-it-goes-sideways list, 3 pages)"
   - "What's in the Playlist - Slides.pptx (projectable deck, 12 slides, one per lesson moment, teacher script and answer keys in the speaker notes; opens in PowerPoint, Keynote, Google Slides)"

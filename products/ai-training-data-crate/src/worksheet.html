@@ -3,16 +3,19 @@
 <style>
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   h2 svg { flex: 0 0 auto; }
-  body.compact h2 { margin: 6px 0 3px; }
+  body.compact h2 { margin: 4px 0 2px; }
   .blank { display: inline-block; border-bottom: 1.25pt solid var(--rule); min-width: 112px; }
   .blank.short { min-width: 62px; }
   .sub { white-space: nowrap; }
+  body.compact .sub { margin-bottom: 5px; }
+  body.compact .panel { margin: 4px 0; }
+  body.compact table.serve { margin: 3px 0 0; }
   .blank.wide { min-width: 250px; }
   .blank.live { display: block; height: 26px; margin-top: 2px; min-width: 0; }
   body.compact .lines .l { height: 26px; }
   .panel ul { margin: 3px 0 0; }
   .panel li { margin-bottom: 1px; }
-  td { padding: 4px 8px; }
+  body.compact td { padding: 3px 8px; }
   table.serve td { height: 35px; }
   table.serve th.tk { width: 62px; text-align: center; font-size: 7.5pt; line-height: 1.15; padding: 4px 3px; }
   td.tick { text-align: center; vertical-align: middle; }
@@ -24,9 +27,16 @@
   .card .t { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 9.5pt; }
   .card .g { font-size: 9pt; color: #3F3F52; }
   .addcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 2px 0; }
-  body.compact .addcard { min-height: 104px; padding: 5px 8px; }
-  .addcard .boxlabel { font-size: 8pt; color: #3F3F52; }
+  /* Five labeled 24px write-in lines per invented card (Title / Genre / Speed / Language / What it's for) */
+  .addcard { border: 1.25pt solid var(--rule); border-radius: 8px; padding: 0 8px 4px; }
+  .addcard .cl { display: flex; align-items: flex-end; gap: 5px; height: 24px; }
+  .addcard .cl .k { flex: 0 0 auto; font-size: 8pt; color: #3F3F52; padding-bottom: 2px; }
+  .addcard .cl .blank { flex: 1 1 auto; display: block; height: 22px; min-width: 0; }
+  .blank.chainblank { height: 23px; min-width: 150px; }
+  .blank.pat { height: 23px; min-width: 100px; }
+  .pattern { font-size: 9.5pt; margin: 2px 0 0; }
   body.compact .frame { font-size: 9pt; color: #6E6E85; margin: 0 0 1px; }
+  body.compact .q .frame { font-weight: 400; margin-left: 6px; }
   body.compact .q { margin-bottom: 3px; }
 </style>
 </head>
@@ -62,10 +72,10 @@
   </div>
 
   <div class="panel">
-    <strong>You are the AI.</strong> The playlist below is your <strong>training data</strong> — every song you have ever "heard." Work in pairs. <strong>Partner A is the App:</strong> you pick the song. <strong>Partner B is the Caller:</strong> you read each request out loud. Swap jobs after request #3. To <strong>serve</strong> a song means to pick a card and hand it over. Three rules:
+    <strong>You two take turns being the AI.</strong> The playlist below is its <strong>training data</strong>: every song it has ever "heard." Partner A is the partner whose first name comes first in the alphabet. <strong>Partner A starts as the App</strong> and picks the song. <strong>Partner B starts as the Caller</strong> and reads each request out loud. Swap jobs after request #3. To <strong>serve</strong> a song, point to a card and say its title. Three rules:
     <ul>
       <li><strong>Rule 1:</strong> Only serve cards from the playlist. No inventing songs mid-game.</li>
-      <li><strong>Rule 2:</strong> Never say no. Serve the closest card you've got — a music app always gives you <em>something</em>.</li>
+      <li><strong>Rule 2:</strong> Never say no. Serve the closest card you've got. A music app always gives you <em>something</em>.</li>
       <li><strong>Rule 3:</strong> Check ONE Fit box (Perfect / Kind of / Nothing) honestly, on your own sheet. Your check marks are your evidence for the Gap Report.</li>
     </ul>
   </div>
@@ -85,19 +95,19 @@
     <div class="card"><div class="t">Confetti Cannon</div><div class="g">Party Pop · Fast · Party</div></div>
     <div class="card"><div class="t">Cool Down (Kinda)</div><div class="g">Party Pop · Medium · Party</div></div>
   </div>
-  <p style="font-size:9pt; color:#55556B; margin:3px 0 0;"><strong>Hype</strong> = loud and exciting. Cut the cards apart, or just point. Notice anything about this playlist yet? Keep that idea for later.</p>
+  <p class="pattern"><span style="font-size:9pt; color:#55556B;"><strong>Hype</strong> = loud and exciting.</span> Read all 12 cards first. <strong>Every song I know is</strong> <span class="blank pat"></span> <strong>and</strong> <span class="blank pat"></span>.</p>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Serve the Caller</h2>
-  <p class="q" style="font-size:9.5pt;">Caller reads it. App names the best card. Both of you write the card and check ONE Fit box on your own sheet.</p>
+  <p class="q" style="font-size:9.5pt;">Caller reads the request. App names the best card. Both of you write the card and check ONE Fit box on your own sheet.</p>
   <table class="serve">
     <tr><th style="width:47%;">Request</th><th>Best card in your playlist</th><th class="tk">Perfect<br>fit</th><th class="tk">Kind of<br>fits</th><th class="tk">Nothing<br>fits</th></tr>
-    <tr><td>1. Priya needs a hype song for when the basketball team runs onto the court.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td>2. Nia wants something calm to study to before the math test.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td>3. Tomás wants a song in Spanish for his abuela's (grandma's) birthday dinner.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td>4. Keisha wants a slow song for the last dance at the 8th-grade dance. <em>(Swap jobs first!)</em></td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td>5. Malik wants a first song for his party — one that makes everyone jump at once.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td>6. Jordan wants a quiet guitar song for the talent-show sing-along.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr><td>7. Ask the pair next to you for ONE request. Write it:<span class="blank live"></span></td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td>1. Priya needs a hype song for when the basketball team runs onto the court.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td>2. Nia wants something calm to study to before the math test.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td>3. Tomás wants a song in Spanish for his abuela's (grandma's) birthday dinner.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td>4. Keisha wants a slow song for the last dance at the 8th-grade dance. <em>(Swap jobs first!)</em></td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td>5. Malik wants a first song for his party — one that makes everyone jump at once.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td>6. Jordan wants a quiet guitar song for a sing-along at the talent show.</td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td>7. The pair beside you makes up ONE request for your app. (The pair closer to the door goes first.) Write it:<span class="blank live"></span></td><td class="slot"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
   </table>
 
   <div class="footer"><span>What's in the Playlist? — Playlist Check</span><span>© Future Skills Series</span><span>1</span></div>
@@ -110,38 +120,34 @@
   <div class="grid2">
     <div>
       <p class="q"><strong>1. Who does this playlist serve really well?</strong> Name the people, not just the songs.</p>
-      <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+      <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
     </div>
     <div>
-      <p class="q"><strong>2. Who does it leave out — and what do they get served instead?</strong></p>
-      <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+      <p class="q"><strong>2. Who does it leave out? What do they get instead of what they asked for?</strong></p>
+      <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
     </div>
   </div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Repeat, Then Add</h2>
-  <p class="q">Before you say your own idea, say your partner's idea back to them. Then add to it.</p>
-  <p class="q" style="margin-top:2px;"><strong>One gap my partner noticed (in their words):</strong></p>
-  <p class="frame">Start with: "I heard you say…"</p>
+  <p class="q">Partner B goes first: name one person the playlist let down. Partner A says it back, then adds. Switch.</p>
+  <p class="q" style="margin-top:2px;"><strong>One gap my partner noticed (in their words):</strong><span class="frame">Start with: "I heard you say…"</span></p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
-  <p class="q" style="margin-top:2px;"><strong>What I'd add to their idea:</strong></p>
-  <p class="frame">Start with: "Building on that…"</p>
+  <p class="q" style="margin-top:2px;"><strong>What I'd add to their idea:</strong><span class="frame">Start with: "Building on that…"</span></p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Fix the Playlist</h2>
-  <p class="q">Invent new song cards that fix the biggest gaps — at least 2, all 3 if you can. Each card needs five parts: title · genre · speed · language · what it's for. The cards on page 1 never named a language; your cards do. Make them up! Every card should fix a DIFFERENT gap.</p>
+  <p class="q">Make up new cards that fix the biggest gaps: at least 2, each a DIFFERENT gap. Any language works!</p>
   <div class="addcards">
-    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · language · what it's for</div></div>
-    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · language · what it's for</div></div>
-    <div class="writebox addcard"><div class="boxlabel">Title · genre · speed · language · what it's for</div></div>
+    <div class="addcard"><div class="cl"><span class="k">Title</span><span class="blank"></span></div><div class="cl"><span class="k">Genre</span><span class="blank"></span></div><div class="cl"><span class="k">Speed</span><span class="blank"></span></div><div class="cl"><span class="k">Language</span><span class="blank"></span></div><div class="cl"><span class="k">What it's for</span><span class="blank"></span></div></div>
+    <div class="addcard"><div class="cl"><span class="k">Title</span><span class="blank"></span></div><div class="cl"><span class="k">Genre</span><span class="blank"></span></div><div class="cl"><span class="k">Speed</span><span class="blank"></span></div><div class="cl"><span class="k">Language</span><span class="blank"></span></div><div class="cl"><span class="k">What it's for</span><span class="blank"></span></div></div>
+    <div class="addcard"><div class="cl"><span class="k">Title</span><span class="blank"></span></div><div class="cl"><span class="k">Genre</span><span class="blank"></span></div><div class="cl"><span class="k">Speed</span><span class="blank"></span></div><div class="cl"><span class="k">Language</span><span class="blank"></span></div><div class="cl"><span class="k">What it's for</span><span class="blank"></span></div></div>
   </div>
 
   <h2><svg width="20" height="20" viewBox="0 0 24 24"><use href="#note"/></svg> Exit Ticket</h2>
-  <p class="q"><strong>1.</strong> Finish the chain: <strong>INPUT &#8594; ________________ &#8594; OUTPUT.</strong> In your own words, what does an AI actually do with its playlist (training data)?</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <p class="q"><strong>1.</strong> Finish the chain: <strong>INPUT &#8594; <span class="blank chainblank"></span> &#8594; OUTPUT.</strong> In your own words, what does an AI actually do with its playlist (training data)?</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
   <p class="q" style="margin-top:2px;"><strong>2.</strong> A school's new AI homework helper explains everything with football examples — never anything else. Using the word <em>playlist</em>, explain what probably happened, and who it doesn't serve well.</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
-  <p class="q" style="margin-top:2px;"><strong>3.</strong> One gap your partner spotted, and the idea YOU added to it.</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
   <div class="footer"><span>What's in the Playlist? — Playlist Check</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
