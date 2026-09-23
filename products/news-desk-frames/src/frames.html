@@ -12,7 +12,9 @@
   .sub { margin-bottom: 6px !important; }
   .blank { display: inline-block; border-bottom: 1.25pt solid var(--rule); min-width: 150px; height: 18px; vertical-align: bottom; }
   .blank.short { min-width: 90px; }
-  .blank.wide { min-width: 400px; }
+  .blank.wide { min-width: 600px; }
+  .blank.mid { min-width: 300px; }
+  .blank.date { min-width: 150px; }
   .blank.xwide { min-width: 470px; }
   .slot p { margin: 0 0 6px !important; }
   .slot p:last-child { margin-bottom: 0 !important; }
@@ -25,7 +27,7 @@
   .worktable td.num { width: 26px; text-align: center; vertical-align: middle; color: #55556B; font-weight: 700; }
   td.tick { width: 44px; text-align: center; vertical-align: middle !important; }
   td.tick::before { content: ""; display: inline-block; width: 16px; height: 16px; border: 1.5px solid #14141F; border-radius: 3px; vertical-align: middle; }
-  .verdicttable { margin: 6px 0 2px !important; }
+  .verdicttable { margin: 4px 0 2px !important; }
   .verdicttable td { height: 36px; padding: 4px 6px; border: 0.75pt solid var(--struct); font-size: 10.5pt; vertical-align: middle; }
   body.compact .lines .l { height: 26px; }
   .writebox { min-height: 96px; padding: 6px 9px; }
@@ -35,7 +37,7 @@
   .frame { font-size: 9.5pt; color: #55556B; margin: 2px 0 0 !important; }
   .gloss { font-size: 9.5pt; color: #3A3A4E; margin: 3px 0 0 !important; }
   .card { text-align: center; }
-  .card td { border: 0.75pt solid var(--struct); height: 56px; vertical-align: top; }
+  .card td { border: 0.75pt solid var(--struct); height: 44px; vertical-align: top; }
   .card th { text-align: center; }
   .sowhat h2 { margin-top: 6px; }
   h2 .q { text-transform: none; letter-spacing: 0; font-weight: 500; font-size: 10.5pt; color: #33334A; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -79,34 +81,34 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
-      <li><strong>UNDERLINE</strong> every claim you could check: names, dates, numbers, places, quotes.</li>
-      <li><strong>RANK</strong> them. Write <strong>C</strong> next to claims to CHECK. Write <strong>S</strong> next to SAFE ones everyone knows.</li>
+      <li><strong>UNDERLINE</strong> every claim you could check: names, dates, numbers, places, quotes. Story is a video? Write three things it shows or says, then underline those.</li>
+      <li><strong>MARK</strong> them. Write <strong>C</strong> next to claims to CHECK. Write <strong>S</strong> next to SAFE ones everyone knows.</li>
       <li><strong>LEAVE</strong> the story. Name a second source for each C. A second source is NOT where you first saw it.</li>
       <li><strong>VERDICT.</strong> Check one stamp. Give your evidence.</li>
     </ol>
   </div>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Claims I marked C</h2>
-  <table class="worktable h44">
+  <table class="worktable">
     <tr><th style="width:52%">Claim (copy it here)</th><th>Second source: where I'd check it</th></tr>
-    <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td></tr>
-    <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td></tr>
-    <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td></tr>
-    <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td></tr>
-    <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td></tr>
+    <tr><td class="logslot" style="height:43px"></td><td class="logslot"></td></tr>
+    <tr><td class="logslot" style="height:43px"></td><td class="logslot"></td></tr>
+    <tr><td class="logslot" style="height:43px"></td><td class="logslot"></td></tr>
+    <tr><td class="logslot" style="height:43px"></td><td class="logslot"></td></tr>
+    <tr><td class="logslot" style="height:43px"></td><td class="logslot"></td></tr>
   </table>
-  <p class="gloss"><strong>Counts as a second source:</strong> a textbook, an encyclopedia, a museum, or government site, a different outlet that did not copy the first. <strong>Does not count:</strong> asking the same AI again, or "I'd Google it" with no source named.</p>
+  <p class="gloss"><strong>Counts as a second source:</strong> a textbook, an encyclopedia, a museum or government site, or a different outlet that didn't copy the first. <strong>Does not count:</strong> asking the same AI again, or "I'd Google it" with no source named.</p>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Verdict</h2>
   <table class="verdicttable">
     <tr class="oneof"><td class="tick"></td><td><strong>RUN</strong> — it's clean, pass it on</td><td class="tick"></td><td><strong>FIX</strong> — correct it, then pass it on</td><td class="tick"></td><td><strong>KILL</strong> — don't repeat it</td></tr>
   </table>
-  <p class="cue"><strong>My evidence</strong> — what I found, and does the story's point still stand?</p>
+  <p class="cue"><strong>My evidence</strong> — what I found (or what I'd need to find). Does the story's main point still stand?</p>
   <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
   <div class="sowhat">
@@ -129,7 +131,7 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
@@ -178,15 +180,15 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
       <li><strong>THE QUESTION.</strong> What is the story trying to decide? Write it as a question.</li>
-      <li><strong>THREE RULES</strong> that could answer it. Make each one different: strict, loose, in the middle, or creative.</li>
+      <li><strong>THREE RULES</strong> that could answer it, each a different kind: strict, loose, in the middle, creative.</li>
       <li><strong>GRID</strong> each rule: who it helps, who it hurts, what it costs (money, time, or freedom).</li>
-      <li><strong>MAKE IT A POLICY</strong> — rules that go together. Could a school run all three at once? Fix the ones that collide, then number them 1, 2, 3.</li>
+      <li><strong>MAKE IT A POLICY.</strong> Fix any clash so the three rules work together. Then number them in the order they'd happen.</li>
       <li><strong>DEFEND ONE</strong> in three sentences: the rule, the reason, the proof.</li>
     </ol>
   </div>
@@ -196,17 +198,15 @@
 
   <table class="worktable">
     <tr><th style="width:34%">Rule</th><th>Who it helps</th><th>Who it hurts</th><th>What it costs</th></tr>
-    <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
-    <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
-    <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
+    <tr><td class="logslot" style="height:68px"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
+    <tr><td class="logslot" style="height:68px"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
+    <tr><td class="logslot" style="height:68px"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
   </table>
-
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> My 3-rule policy</h2>
-  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  <p class="cue"><strong>The fix I made</strong> so the rules don't clash: <span class="blank" style="min-width:420px"></span></p>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Defend one rule — three sentences</h2>
-  <p class="frame"><strong>Need a start?</strong> The rule is ______. It matters because ______. We know this works because ______.</p>
-  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  <p class="frame"><strong>Need a start?</strong> The rule is ______. It matters because ______. The story backs this up because ______.</p>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
   <div class="sowhat">
     <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> So what? <span class="q">Why does this matter to someone my age?</span></h2>
@@ -228,34 +228,36 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
-      <li><strong>NAME</strong> the free thing in the story. No free thing in it? Use a free app or site you already use. Who uses it? What does it cost to keep running?</li>
-      <li><strong>FIVE WAYS</strong> to pay the bills are in the grid. For each, write one gain and one loss for the people who use it.</li>
-      <li><strong>PICK ONE.</strong> Check the way you would choose if you ran it.</li>
-      <li><strong>SAY WHY</strong> in two lines. Name the loss you can live with.</li>
+      <li><strong>NAME</strong> the free thing and what it costs to run. None in the story? Use a free app, game, or site you use.</li>
+      <li><strong>SEVEN WAYS</strong> to pay the bills are in the grid. For each, write one gain and one loss for users.</li>
+      <li><strong>PICK ONE</strong> you would choose if you ran it. <strong>SAY WHY</strong> in three lines. Name the loss you can live with.</li>
     </ol>
   </div>
 
-  <p class="cue"><strong>The free thing:</strong> <span class="blank wide"></span></p>
+  <p class="cue"><strong>The free thing:</strong> <span class="blank" style="min-width:585px"></span></p>
+  <p class="cue"><strong>What it costs to run:</strong> <span class="blank" style="min-width:535px"></span></p>
 
   <div class="oneof">
   <table class="worktable">
     <tr><th style="width:32%">Way to pay the bills</th><th>One gain for users</th><th>One loss for users</th><th style="width:44px">Pick</th></tr>
-    <tr><td class="label" style="height:56px"><strong>Donations</strong> — people give money if they want to.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
-    <tr><td class="label" style="height:56px"><strong>Ads</strong> — companies pay to show you stuff.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
-    <tr><td class="label" style="height:56px"><strong>Membership</strong> — everyone pays a little each month.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
-    <tr><td class="label" style="height:56px"><strong>One sponsor</strong> — one company pays for it all.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
-    <tr><td class="label" style="height:56px"><strong>Sell it</strong> — a bigger company buys the whole thing.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
+    <tr><td class="label" style="height:45px"><strong>Donations</strong> — people give money if they want to.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
+    <tr><td class="label" style="height:45px"><strong>Ads</strong> — companies pay to show you stuff.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
+    <tr><td class="label" style="height:45px"><strong>Membership</strong> — everyone pays a little each month.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
+    <tr><td class="label" style="height:45px"><strong>Extras</strong> — free, but you can buy skins, upgrades, or bonus stuff.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
+    <tr><td class="label" style="height:45px"><strong>One sponsor</strong> — one company pays for it all.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
+    <tr><td class="label" style="height:45px"><strong>Taxes</strong> — the government pays, with tax money from everyone.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
+    <tr><td class="label" style="height:45px"><strong>Bigger owner</strong> — a big company buys it and pays its bills.</td><td class="logslot"></td><td class="logslot"></td><td class="tick"></td></tr>
   </table>
   </div>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Why I picked it</h2>
   <p class="frame"><strong>Need a start?</strong> I'd pick ______ because the gain is ______. I can live with the loss because ______.</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
   <div class="sowhat">
     <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> So what? <span class="q">Why does this matter to someone my age?</span></h2>
@@ -277,19 +279,19 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
-      <li><strong>THREE OPTIONS</strong> from the story, or, if the story names fewer, the plans for one app you already use. Write the price and how much you get for each.</li>
-      <li><strong>PICK THE UNIT:</strong> one hour, one month, one gigabyte, one slice. Same unit for all three.</li>
+      <li><strong>THREE OPTIONS</strong> from the story. Story has fewer? Use three plans or bundles from an app or game you know. Write the price and how much you get for each.</li>
+      <li><strong>PICK THE UNIT:</strong> one hour, one month, one gigabyte, one in-game coin. Same unit for all three.</li>
       <li><strong>COST PER UNIT</strong> = price ÷ amount. Show your math.</li>
       <li><strong>MATCH</strong> each person below to the best option for them. Say why.</li>
     </ol>
   </div>
 
-  <p class="cue"><strong>One unit =</strong> <span class="blank"></span> &nbsp;&nbsp; (one hour, one month, one gigabyte…)</p>
+  <p class="cue"><strong>One unit =</strong> <span class="blank"></span> &nbsp;&nbsp; (one hour, one month, one coin…)</p>
   <table class="worktable">
     <tr><th style="width:34%">Option</th><th>Price</th><th>How much you get</th><th>Cost per unit</th></tr>
     <tr><td class="logslot" style="height:44px"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
@@ -303,7 +305,7 @@
     <tr><th style="width:40%">Person</th><th style="width:22%">Best option</th><th>Why</th></tr>
     <tr><td class="label" style="height:44px">Uses it a little — a few times a month.</td><td class="logslot"></td><td class="logslot"></td></tr>
     <tr><td class="label" style="height:44px">Uses it most days after school.</td><td class="logslot"></td><td class="logslot"></td></tr>
-    <tr><td class="label" style="height:44px">Shares it with two friends or family members.</td><td class="logslot"></td><td class="logslot"></td></tr>
+    <tr><td class="label" style="height:44px">Shares one plan with two other people.</td><td class="logslot"></td><td class="logslot"></td></tr>
   </table>
 
   <div class="sowhat">
@@ -326,43 +328,48 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
-      <li><strong>OLD and NEW</strong> price go on the card. Not in the story? Use an old and a new price you know: a game, a bus fare, a pair of shoes.</li>
+      <li><strong>OLD and NEW</strong> price go on the card. Not in the story? Use a price you know: a game, a bus fare.</li>
       <li><strong>DIFFERENCE</strong> = new − old.</li>
-      <li><strong>PERCENT CHANGE</strong> = difference ÷ old × 100. Round it.</li>
+      <li><strong>PERCENT CHANGE</strong> = difference ÷ old × 100. Round to the nearest whole percent.</li>
       <li><strong>HOURS OF WORK</strong> = new price ÷ pay per hour. Use a pay rate you could really earn.</li>
       <li><strong>SAVE-UP PLAN:</strong> split the new price over eight weeks. Say where each week's money comes from.</li>
     </ol>
+    <p class="gloss"><strong>Not a price?</strong> (jobs, players) Do steps 2–3. On the money lines, say what the change means for one person.</p>
   </div>
 
   <table class="card">
     <tr><th>Old price</th><th>New price</th><th>Difference (new − old)</th><th>Percent change</th></tr>
     <tr><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
   </table>
-  <div class="callout"><strong>Hours of work:</strong> at $<span class="blank short"></span> per hour, the new price is <span class="blank short"></span> hours of work.<br><strong>Show it:</strong> <span class="blank xwide"></span></div>
+  <p class="cue"><strong>Show it:</strong> <span class="blank short"></span> ÷ <span class="blank short"></span> × 100 = <span class="blank short"></span> %</p>
+  <table class="verdicttable">
+    <tr class="oneof"><td><strong>My call</strong> for someone my age:</td><td class="tick"></td><td><strong>BIG DEAL</strong></td><td class="tick"></td><td><strong>NOTICEABLE</strong></td><td class="tick"></td><td><strong>NO BIG DEAL</strong></td></tr>
+  </table>
+  <div class="callout"><strong>Hours of work:</strong> at $<span class="blank short"></span> an hour, that's <span class="blank short"></span> hours. &nbsp;<strong>Show it:</strong> <span class="blank" style="min-width:125px"></span></div>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Eight-week save-up plan</h2>
   <div class="grid2">
-    <table class="worktable">
+    <table class="worktable h34">
       <tr><th style="width:26%">Week</th><th>Save this week</th><th>Total so far</th></tr>
-      <tr><td class="label">1</td><td class="logslot" style="height:38px"></td><td class="logslot"></td></tr>
-      <tr><td class="label">2</td><td class="logslot" style="height:38px"></td><td class="logslot"></td></tr>
-      <tr><td class="label">3</td><td class="logslot" style="height:38px"></td><td class="logslot"></td></tr>
-      <tr><td class="label">4</td><td class="logslot" style="height:38px"></td><td class="logslot"></td></tr>
+      <tr><td class="label">1</td><td class="logslot" style="height:34px"></td><td class="logslot"></td></tr>
+      <tr><td class="label">2</td><td class="logslot" style="height:34px"></td><td class="logslot"></td></tr>
+      <tr><td class="label">3</td><td class="logslot" style="height:34px"></td><td class="logslot"></td></tr>
+      <tr><td class="label">4</td><td class="logslot" style="height:34px"></td><td class="logslot"></td></tr>
     </table>
-    <table class="worktable">
+    <table class="worktable h34">
       <tr><th style="width:26%">Week</th><th>Save this week</th><th>Total so far</th></tr>
-      <tr><td class="label">5</td><td class="logslot" style="height:38px"></td><td class="logslot"></td></tr>
-      <tr><td class="label">6</td><td class="logslot" style="height:38px"></td><td class="logslot"></td></tr>
-      <tr><td class="label">7</td><td class="logslot" style="height:38px"></td><td class="logslot"></td></tr>
-      <tr><td class="label">8</td><td class="logslot" style="height:38px"></td><td class="logslot"></td></tr>
+      <tr><td class="label">5</td><td class="logslot" style="height:34px"></td><td class="logslot"></td></tr>
+      <tr><td class="label">6</td><td class="logslot" style="height:34px"></td><td class="logslot"></td></tr>
+      <tr><td class="label">7</td><td class="logslot" style="height:34px"></td><td class="logslot"></td></tr>
+      <tr><td class="label">8</td><td class="logslot" style="height:34px"></td><td class="logslot"></td></tr>
     </table>
   </div>
-  <p class="cue"><strong>Where the money comes from</strong> each week (chores, a job, gifts, skipping something):</p>
+  <p class="cue"><strong>Money lines:</strong> where each week's money comes from (chores, a job, gifts, skipping something).</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <div class="sowhat">
@@ -385,21 +392,21 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
       <li><strong>A WORK</strong> is one thing someone made: a song, a drawing, a story. <strong>A STYLE</strong> is the way someone makes things: their look, their sound. <strong>A PERSON</strong> is someone's face, voice, or name.</li>
-      <li><strong>SORT</strong> each card. Check one box per row. Row 9: write what got copied in your story, then sort it.</li>
-      <li><strong>DRAW YOUR LINE.</strong> Which of these should be allowed? Where does it cross?</li>
+      <li><strong>SORT</strong> each row. Check one box per row. Row 9: write what got copied in your story, then sort it.</li>
+      <li><strong>DRAW YOUR LINE.</strong> Which kinds of copying are OK? Where does copying cross the line?</li>
     </ol>
   </div>
 
   <table class="worktable">
     <tr><th style="width:26px">#</th><th>What happened</th><th style="width:52px">Work</th><th style="width:52px">Style</th><th style="width:56px">Person</th></tr>
     <tr class="oneof"><td class="num">1</td><td class="label" style="height:34px">Traces a drawing line by line and posts it as their own.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
-    <tr class="oneof"><td class="num">2</td><td class="label" style="height:34px">Draws comics with the same big eyes and bold lines as a famous series.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
+    <tr class="oneof"><td class="num">2</td><td class="label" style="height:34px">Draws comics in the same anime style as a famous series: big eyes, bold lines.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
     <tr class="oneof"><td class="num">3</td><td class="label" style="height:34px">Uses a singer's real voice to make a song that singer never sang.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
     <tr class="oneof"><td class="num">4</td><td class="label" style="height:34px">Puts ten seconds of a hit song into a beat without asking.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
     <tr class="oneof"><td class="num">5</td><td class="label" style="height:34px">Writes a story with the same plot as a famous book. Only the names change.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td></tr>
@@ -432,15 +439,15 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
       <li><strong>WHO MADE THIS?</strong> A company, a group, one person, a news outlet?</li>
-      <li><strong>WHO PAID</strong> for it? Follow the money. If the story doesn't say, write "not stated" and say what that tells you.</li>
+      <li><strong>WHO PAID</strong> for it? Follow the money. Story doesn't say? Write "not stated," then say what that tells you.</li>
       <li><strong>WHAT DO THEY GAIN</strong> if you believe it?</li>
-      <li><strong>FIVE STATEMENTS</strong> from the story. For each, check one: a FACT the source shows, or an OPINION it wants you to hold.</li>
+      <li><strong>FIVE STATEMENTS</strong> from the story. Check one for each: a FACT you could check, or an OPINION the source pushes.</li>
       <li><strong>TRUST IT?</strong> Say why, or why not.</li>
     </ol>
   </div>
@@ -450,14 +457,14 @@
   <p class="cue"><strong>What they gain if I believe it:</strong> <span class="blank" style="min-width:380px"></span></p>
 
   <table class="worktable">
-    <tr><th>Statement from the story</th><th style="width:96px">Fact it shows</th><th style="width:110px">Opinion it implies</th></tr>
+    <tr><th>Statement from the story</th><th style="width:112px">Fact I could check</th><th style="width:112px">Opinion it pushes</th></tr>
     <tr class="oneof"><td class="logslot" style="height:42px"></td><td class="tick"></td><td class="tick"></td></tr>
     <tr class="oneof"><td class="logslot" style="height:42px"></td><td class="tick"></td><td class="tick"></td></tr>
     <tr class="oneof"><td class="logslot" style="height:42px"></td><td class="tick"></td><td class="tick"></td></tr>
     <tr class="oneof"><td class="logslot" style="height:42px"></td><td class="tick"></td><td class="tick"></td></tr>
     <tr class="oneof"><td class="logslot" style="height:42px"></td><td class="tick"></td><td class="tick"></td></tr>
   </table>
-  <p class="gloss"><strong>Fact</strong> = the source measured or counted it. <strong>Opinion</strong> = the source wants you to think it, without proof.</p>
+  <p class="gloss"><strong>Fact</strong> = you could check it and prove it true or false. <strong>Opinion</strong> = what the source wants you to believe. Nobody can prove it.</p>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> Would I trust it?</h2>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
@@ -482,28 +489,30 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
-      <li><strong>READ</strong> each thing an AI helper could do for you.</li>
+      <li><strong>READ</strong> each row. Rows 9 and 10: add two things the AI in your story could do (no AI? imagine one).</li>
       <li><strong>CHECK ONE:</strong> ALLOW (go ahead) · CHECK FIRST (ask me every time) · DENY (never).</li>
       <li data-nofill><strong>ONE-LINE REASON</strong> for each. "Because it could ______."</li>
       <li><strong>THE RISKY COMBO:</strong> find two rows that are fine alone but dangerous together.</li>
     </ol>
   </div>
 
-  <table class="worktable">
-    <tr><th>The AI helper could…</th><th style="width:50px">Allow</th><th style="width:58px">Check first</th><th style="width:50px">Deny</th><th style="width:30%">My reason</th></tr>
-    <tr class="oneof"><td class="label" style="height:40px">1. Read all my messages to find one.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
-    <tr class="oneof"><td class="label" style="height:40px">2. Delete photos it thinks are blurry.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
-    <tr class="oneof"><td class="label" style="height:40px">3. Send a message to a friend, as me.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
-    <tr class="oneof"><td class="label" style="height:40px">4. Buy something with a saved card.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
-    <tr class="oneof"><td class="label" style="height:40px">5. Change a password.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
-    <tr class="oneof"><td class="label" style="height:40px">6. Post to my account.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
-    <tr class="oneof"><td class="label" style="height:40px">7. Sort my photos into albums.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
-    <tr class="oneof"><td class="label" style="height:40px">8. Share my location with a contact.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+  <table class="worktable h36">
+    <tr><th style="width:26px">#</th><th style="width:34%">The AI helper could…</th><th style="width:50px">Allow</th><th style="width:58px; line-height:1.05">Check first</th><th style="width:50px">Deny</th><th>My reason: because it could…</th></tr>
+    <tr class="oneof"><td class="num">1</td><td class="label" style="height:36px">Read all my messages to find one.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">2</td><td class="label" style="height:36px">Delete photos it thinks are blurry.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">3</td><td class="label" style="height:36px">Send a message to a friend, as me.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">4</td><td class="label" style="height:36px">Buy something with a saved card.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">5</td><td class="label" style="height:36px">Change a password.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">6</td><td class="label" style="height:36px">Post to my account.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">7</td><td class="label" style="height:36px">Sort my photos into albums.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">8</td><td class="label" style="height:36px">Share my location with a contact.</td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">9</td><td class="logslot" style="height:36px"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
+    <tr class="oneof"><td class="num">10</td><td class="logslot" style="height:36px"></td><td class="tick"></td><td class="tick"></td><td class="tick"></td><td class="logslot"></td></tr>
   </table>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#minimag"/></svg> The risky combo</h2>
@@ -530,15 +539,15 @@
   </div>
   <div class="panel slot">
     <p><strong>Story:</strong> <span class="blank wide"></span></p>
-    <p><strong>Where I saw it:</strong> <span class="blank"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank short"></span></p>
+    <p><strong>Where I saw it:</strong> <span class="blank mid"></span> &nbsp;&nbsp; <strong>Date:</strong> <span class="blank date"></span></p>
   </div>
   <div class="panel">
     <p class="mhead"><strong>The method</strong></p>
     <ol class="method">
       <li><strong>FIVE THINGS</strong> worth protecting: from the story, or your own phone, game saves, bike, account.</li>
-      <li><strong>RATE</strong> 1 to 3. Cost to replace: 1 = cheap, 3 = expensive. How bad if gone: 1 = annoying, 3 = disaster.</li>
+      <li><strong>RATE</strong> 1 to 3. Cost to replace: 1&nbsp;=&nbsp;cheap or easy, 3&nbsp;=&nbsp;expensive or impossible. How bad if it's gone: 1&nbsp;=&nbsp;annoying, 3&nbsp;=&nbsp;disaster.</li>
       <li><strong>SCORE</strong> = cost × how bad. The highest score gets protected first.</li>
-      <li><strong>SPEND 10 COINS.</strong> Buy two protections from the menu. Some pairs cost more than 10, so you can't have both. Say why those two.</li>
+      <li><strong>SPEND 10 COINS.</strong> Buy two protections for your top-scoring things. Some pairs cost more than 10. Say why those two.</li>
     </ol>
   </div>
 
@@ -551,7 +560,7 @@
     <tr><td class="logslot" style="height:34px"></td><td class="logslot"></td><td class="logslot"></td><td class="logslot"></td></tr>
   </table>
 
-  <p class="cue"><strong>Protection menu</strong> — you have 10 coins. Buy two. Not every pair fits.</p>
+  <p class="cue"><strong>Protection menu</strong> — you have 10 coins. Buy two.</p>
   <div class="grid2" style="grid-template-columns: 1.15fr 1fr">
     <table class="worktable" style="margin:0">
       <tr><th style="width:44px">Buy</th><th>Protection</th><th style="width:58px">Coins</th></tr>
@@ -559,7 +568,7 @@
       <tr><td class="tick"></td><td class="label" style="height:34px">A lock or a passcode.</td><td class="label">3</td></tr>
       <tr><td class="tick"></td><td class="label" style="height:34px">Someone you trust keeps an eye on it.</td><td class="label">5</td></tr>
       <tr><td class="tick"></td><td class="label" style="height:34px">A backup copy kept somewhere else.</td><td class="label">7</td></tr>
-      <tr><td class="tick"></td><td class="label" style="height:34px">Insurance: pay a little now, get paid back if it's lost.</td><td class="label">9</td></tr>
+      <tr><td class="tick"></td><td class="label" style="height:34px">Insurance: pay now, get money back if it's lost or stolen.</td><td class="label">9</td></tr>
     </table>
     <div class="writebox" style="min-height:72px"><div class="boxlabel">Why these two? And what did you leave unprotected?</div></div>
   </div>

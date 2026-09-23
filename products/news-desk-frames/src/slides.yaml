@@ -1,9 +1,10 @@
+line: "News Desk"   # masthead matches the frame pages
 # Projectable deck for News Desk Day — 12 slides: title (auto), the routine, one per frame.
 # Teacher script and the strong-answer cue live in the speaker notes; students see the frame's method.
-# Minute chip appears only on the routine slide (45); the 25-minute bell-ringer variant is in its notes.
+# Minute chip appears only on the routine slide (45); the 25-minute bell-ringer is in its notes.
 kicker: The News Desk Pack
 title: News Desk Frames
-subtitle: "Any story. Ten ways to think it through. Pick a frame, run the numbered method, then say why it matters to someone your age."
+subtitle: "You're on the news desk. Nothing runs until you check it. Pick a frame, run the numbered steps, then say why it matters to someone your age."
 notes: "Open on this slide while students settle. One frame per student (Frames PDF; the typeable copy for devices). Show the headline only, take three questions from the room, name the frame. Then advance to the routine slide. Slides 3–12 are one per frame: leave the frame you're running on screen while students work; the method on the slide matches the method on their page."
 slides:
   - type: steps
@@ -11,19 +12,19 @@ slides:
     title: "News Desk Day — The Routine"
     items:
       - { minutes: 5, name: "Open — headline only", text: "Read the headline and nothing else. What question does it make you want to ask? Three answers, then we name the frame." }
-      - { minutes: 10, name: "Read — mark it up", text: "Read once. Underline every claim you could check. Circle words you don't know. Retell it to a partner in one sentence." }
-      - { minutes: 20, name: "Frame — run the method", text: "Solo 12: steps in order, top box first. Pair-check 8: swap, read their evidence, ask one question, fix one thing. So what? last." }
+      - { minutes: 10, name: "Read — mark it up", text: "Read once. Underline every claim you could check. Circle words you don't know. Retell it to your partner in one sentence. Partner A goes first." }
+      - { minutes: 20, name: "Frame — run the method", text: "Solo 12: steps in order, top box first. Pair-check 8: swap, read their evidence, ask one question (Partner A first), fix one thing. So what? last." }
       - { minutes: 10, name: "Share-out — one line each", text: "Your call and the evidence behind it. Tally on the board. The story changes every week. The method doesn't." }
-    notes: "Blocks match the lesson plan: 5 + 10 + 20 + 10 = 45. Transitions: 'Frames out. Top box first: the story, where you saw it, the date. Then we read.' · 'Story down. Frame up. Method steps in order, number one first.' · 'Swap frames with your partner. Read their evidence, not their answer. Ask one question they can't dodge.' · 'Pens down. Share-out is one line each: your call, and the evidence behind it.' BELL-RINGER, 25 MINUTES: Open 2 (headline, one question, you name the frame) · Read 5 (you read the story aloud once; one volunteer retells) · Frame 15 (solo, no pair-check, So what? last) · Share-out 3 (three volunteers). For a bell-ringer run Frames 1, 2, 4, 7, 8, or 9; Frames 3, 6, and 10 are the long ones. On those three run solo 16 and pair-check 4 instead of 12 and 8. Collect frames; the So what? lines are the exit ticket, scored with the rubric (Teacher Guide p.4)."
+    notes: "Blocks match the lesson plan: 5 + 10 + 20 + 10 = 45. Partner A = the partner whose first name comes first in the alphabet; Partner B asks second. Transitions: 'Frames out. Top box first: the story, where you saw it, the date. Then we read.' · 'Story down. Frame up. Method steps in order — number one first, and don't skip to the boxes.' · 'Swap frames. Read their evidence, not their answer. Alphabet-first partner asks first, then switch. Ask one question they can't dodge.' · 'Pens down. Frames face up. Share-out is one line each: your call, and the evidence behind it.' BELL-RINGER, 25 MINUTES: Open 2 (headline, one question, you name the frame) · Read 5 (you read the story aloud once; one volunteer retells) · Frame 15 (solo, no pair-check, So what? last) · Share-out 3 (three volunteers). For a bell-ringer, run Frames 1, 2, 7, 8, or 9. Frames 3 and 4 carry the most writing, and Frames 6 and 10 the most math. On those four, run solo 16 and pair-check 4. Collect frames; the So what? lines are the exit ticket, scored with the rubric (Teacher Guide p.4)."
   - type: list
     title: "Frame 1 · Fact Desk — Is it true?"
     items:
-      - "UNDERLINE every claim you could check: a name, a date, a number, a place, a quote."
-      - "RANK them. C = check it. S = safe, everyone knows it."
-      - "LEAVE the story. Name a second source for each C. Not where you first saw it."
+      - "UNDERLINE every claim you could check: a name, a date, a number, a place, a quote. Video? List what it says."
+      - "MARK them. C = check it. S = safe, everyone knows it."
+      - "LEAVE the story. Name a second source for each C. It can't be where you first saw it."
       - "VERDICT: RUN, FIX, or KILL. Give your evidence."
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'Underline anything with a name, a date, a number, a place, or a quote in it. If it can be checked, it's a claim.' · 'A second source is not where you first saw it. Same video, same account, same AI: doesn't count.' · 'The stamp is the easy part. Your evidence is the grade.' STRONG ANSWER: three or more claims copied exactly, each with a specific kind of second source (a museum site, an encyclopedia entry, the team's own schedule), one stamp, and an evidence line that says whether the story's point still stands. 'I'd Google it' earns nothing; 'I'd Google it and open the university's own page' earns credit. Counts as a second source: a textbook, an encyclopedia, a museum, or government site, a different outlet that did not copy the first."
+    notes: "Script: 'Underline anything with a name, a date, a number, a place, or a quote in it. If it can be checked, it's a claim.' · 'A second source is not where you first saw it. Same video, same account, same AI: doesn't count.' · 'The stamp is the easy part. Your evidence is the grade.' STRONG ANSWER: three or more claims copied exactly, each with a specific kind of second source (a museum site, an encyclopedia entry, the team's own schedule), one stamp, and an evidence line that says whether the story's point still stands. 'I'd Google it' earns nothing; 'I'd Google it and open the university's own page' earns credit. Counts as a second source: a textbook, an encyclopedia, a museum or government site, or a different outlet that didn't copy the first. NO DEVICES: read the story aloud, then read the second outlet's opening lines aloud. That is the room's second source."
   - type: list
     title: "Frame 2 · The Trade — Who wins, who loses?"
     items:
@@ -38,75 +39,74 @@ slides:
     title: "Frame 3 · Write the Rule — What should the rule be?"
     items:
       - "THE QUESTION the story is trying to decide. Write it as a question."
-      - "THREE RULES that could answer it: strict, loose, in the middle, or creative."
+      - "THREE RULES that could answer it, each a different kind: strict, loose, in the middle, creative."
       - "GRID each rule: who it helps, who it hurts, what it costs."
-      - "MAKE IT A POLICY: could a school run all three at once? Number them 1, 2, 3."
+      - "MAKE IT A POLICY. Fix any clash so the three rules work together. Then number them in the order they'd happen."
       - "DEFEND ONE in three sentences: the rule, the reason, the proof."
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'We're not deciding who was right. We're writing the rule we'd want.' · 'Three rules that are actually different. If two of yours would do the same thing, you have two.' · 'A policy is rules that go together. Could a school run all three of yours at once?' STRONG ANSWER: a real yes-or-no or how-much question; three rules in three different shapes (strict, loose, in the middle, creative); every grid cell filled, including a cost in money, time, or freedom; three rules that don't collide, numbered 1 to 3; a three-sentence defense whose proof sentence points at the story or the grid, never at 'everyone knows'. Sentence frame for Support: The rule is ______. It matters because ______. We know this works because ______."
+    notes: "Script: 'We're not deciding who was right. We're writing the rule we'd want.' · 'Three rules that are actually different. If two of yours would do the same thing, you have two.' · 'A policy is rules that work together. Could the people in charge use all three of yours?' STRONG ANSWER: a real yes-or-no or how-much question; three rules in three different shapes (strict, loose, in the middle, creative); every grid cell filled, including a cost in money, time, or freedom; three rules that don't clash, numbered in the order they'd happen, and a fix line that says what changed; a three-sentence defense whose proof sentence points at the story or the grid, never at 'everyone knows'. Sentence frame for Support: The rule is ______. It matters because ______. The story backs this up because ______."
   - type: list
     title: "Frame 4 · Who Pays for Free? — If it's free, who pays?"
     items:
-      - "NAME the free thing — in the story, or one you use. What does it cost to keep running?"
-      - "FIVE WAYS to pay the bills are in the grid: donations, ads, membership, one sponsor, sell it."
+      - "NAME the free thing and what it costs to run. None in the story? Use a free app, game, or site you use."
+      - "SEVEN WAYS to pay the bills: donations, ads, membership, extras, one sponsor, taxes, bigger owner."
       - "For each way: one gain and one loss for the people who use it."
       - "PICK ONE. The way you'd choose if you ran it."
-      - "SAY WHY in two lines. Name the loss you can live with."
+      - "SAY WHY in three lines. Name the loss you can live with."
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'Free means someone else is paying. Find them.' · 'Every row has a loss. If a way to pay looks perfect, you've missed the loss.' · 'Pick the loss you can live with, not the one that sounds nice.' STRONG ANSWER: running costs named (servers, the people who keep it up); a gain and a loss in all five rows, written from the user's side; one pick; a why that names the loss and says why it's bearable. Watch for 'Ads: no loss.' The loss is attention, tracking and slower pages."
+    notes: "Script: 'Free means someone else is paying. Find them.' · 'Every row has a loss. If a way to pay looks perfect, you've missed the loss.' · 'Pick the loss you can live with, not the one that sounds nice.' STRONG ANSWER: running costs named (servers, the people who keep it up); a gain and a loss in all seven rows, written from the user's side; one pick; a why that names the loss and says why it's bearable. Watch for 'Ads: no loss.' The loss is attention, tracking, and slower pages. The seven ways: donations, ads, membership, extras (skins, upgrades), one sponsor, taxes, bigger owner."
   - type: list
     title: "Frame 5 · Unit Rate Receipt — Which deal is really cheaper?"
     items:
-      - "THREE OPTIONS from the story, or the plans for one app you already use. Price and amount."
-      - "PICK THE UNIT: one hour, one month, one gigabyte. Same unit for all."
+      - "THREE OPTIONS from the story. Fewer? Use three plans or bundles from an app or game you know."
+      - "PICK THE UNIT: one hour, one month, one gigabyte, one in-game coin. Same unit for all three."
       - "COST PER UNIT = price ÷ amount. Show your math."
       - "MATCH each person to the best option for them. Say why."
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'The sticker price is what they want you to compare. Cost per unit is what you actually pay.' · 'Same unit for all three, or the math is a lie.' · 'Cheapest per unit isn't always best. Best for whom?' STRONG ANSWER: the unit is named once and used three times; the division is shown for each option and rounded to cents; each of the three people is matched with a reason that uses the numbers (the light user would pay for hours they never use). Accept a calculator. Don't accept an answer with no unit on it."
+    notes: "Script: 'The sticker price is what they want you to compare. Cost per unit is what you actually pay.' · 'Same unit for all three, or the math is a lie.' · 'Cheapest per unit isn't always best. Best for whom?' STRONG ANSWER: the unit is named once and used three times; the division is shown for each option and rounded to cents; each of the three people is matched with a reason that uses the numbers (the light user would pay for hours they never use). Accept a calculator. Don't accept an answer with no unit on it. PRACTICE PRICES (made up): a music app at $6 for 1 month, $60 for 12 months, or $15 a month for a 3-person family plan = $6.00, $5.00, $5.00 per person per month."
   - type: list
     title: "Frame 6 · Percent Change Card — How big is the change, really?"
     items:
-      - "OLD and NEW price go on the card — from the story, or two prices you know."
+      - "OLD and NEW price go on the card. Not in the story? Use a price you know."
       - "DIFFERENCE = new − old."
-      - "PERCENT CHANGE = difference ÷ old × 100. Round it."
+      - "PERCENT CHANGE = difference ÷ old × 100. Round to the nearest whole percent. Then make your call."
       - "HOURS OF WORK = new price ÷ your pay per hour, at a rate you could really earn."
       - "SAVE-UP PLAN: eight weeks. Where does each week's money come from?"
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'Difference divided by the OLD price. Old is the whole; you're finding what part of it changed.' · 'Now turn it into hours. Money is time you already spent.' · 'Eight weeks. Where does each week's money come from? Somewhere is not a place.' STRONG ANSWER: a correct percent with the division shown and rounded; a pay rate they could really earn (chores, babysitting, a first job) and the hours it implies; eight weekly amounts that add up to the new price; sources for the money that aren't 'my parents' every week. This is the CCSS Math 7.RP.A.3 item: the percent change is computed, not guessed. With devices, a calculator checks the division."
+    notes: "Script: 'Difference divided by the OLD price. Old is the whole; you're finding what part of it changed.' · 'Now turn it into hours. How long would you have to work for this?' · 'Eight weeks. Where does each week's money come from? Somewhere is not a place.' STRONG ANSWER: a correct percent with the division shown and rounded; one call checked; a pay rate they could really earn (chores, babysitting, a first job) and the hours it implies; eight weekly amounts that add up to the new price; money sources that aren't 'my parents' every week. This is the CCSS Math 7.RP.A.3 item: the percent is computed, not guessed. If the number isn't a price (jobs, players), the money lines say what the change means for one person. With devices, a calculator checks the division."
   - type: list
     title: "Frame 7 · Copy, Style, or Person? — What got copied?"
     items:
-      - "A WORK is one thing someone made. A STYLE is the way they make things. A PERSON is a face, voice or name."
-      - "SORT each card: work, style or person. One box per row."
-      - "ROW 9: write what got copied in your story, then sort it."
-      - "DRAW YOUR LINE. Which should be allowed? Where does it cross?"
+      - "A WORK is one thing someone made. A STYLE is the way they make things. A PERSON is a face, voice, or name."
+      - "SORT each row: work, style, or person. Row 9: write what got copied in your story, then sort it."
+      - "DRAW YOUR LINE. Which kinds of copying are OK? Where does copying cross the line?"
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'A work is a thing. A style is a way. A person is a who.' · 'The big-eyes comic is a style. The traced drawing is a work. Same pencil, different rule.' · 'Your line has to survive your own story. Sort row 9, then test your line on it.' STRONG ANSWER, sort key: 1 work · 2 style · 3 person · 4 work · 5 work · 6 person · 7 style · 8 work (a dance routine is a work; the talent show is the allowed kind of copying). Accept a defended 'style' on rows 5 and 8. Row 9 holds the story's own copying, sorted. The line says when copying is fine (learning, credit, making your own new thing) and where it crosses (a person's voice, face, or name; a whole work sold as yours)."
+    notes: "Script: 'A work is a thing. A style is a way. A person is a who.' · 'Tracing a drawing copies a work. Drawing like someone copies a style. Same pencil, different rule.' · 'Your line has to survive your own story. Sort row 9, then test your line on it.' STRONG ANSWER, sort key: 1 work · 2 style · 3 person · 4 work · 5 work · 6 person · 7 style · 8 work (a dance routine is a work; the talent show is the allowed kind of copying). Accept a defended 'style' on rows 5 and 8. Row 9 holds the story's own copying, sorted. The line says when copying is fine (learning, credit, making your own new thing) and where it crosses (a person's voice, face, or name; a whole work sold as yours)."
   - type: list
     title: "Frame 8 · Source Check — Who's telling me this, and why?"
     items:
       - "WHO MADE THIS? A company, a group, one person, a news outlet?"
-      - "WHO PAID for it? Follow the money. Story doesn't say? Write \"not stated\"."
+      - "WHO PAID for it? Follow the money. Story doesn't say? Write \"not stated,\" then say what that tells you."
       - "WHAT DO THEY GAIN if you believe it?"
-      - "FIVE STATEMENTS from the story: a FACT the source shows, or an OPINION it wants you to hold?"
+      - "FIVE STATEMENTS from the story. Check one for each: a FACT you could check, or an OPINION the source pushes."
       - "TRUST IT? Say why, or why not."
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'A source can be telling the truth and still be selling you something.' · 'Who paid for the study is the first fact about the study.' · 'A fact is measured. An opinion is wanted. Which is this sentence?' STRONG ANSWER: maker and payer are specific (the company's own report; a group funded by the industry it studies); the gain is concrete (more users, a better price, a friendlier rule); five statements copied, with at least one fact and one opinion among them; a trust line that says 'trust the count, question the conclusion' rather than a flat yes or no."
+    notes: "Script: 'A source can be telling the truth and still be selling you something.' · 'Who paid for the study is the first fact about the study.' · 'A fact can be checked. An opinion is wanted. Which is this sentence?' STRONG ANSWER: maker and payer are specific (the company's own report; a group funded by the industry it studies); the gain is concrete (more users, a better price, a friendlier rule); five statements copied, with at least one fact and one opinion among them; a trust line that says 'trust the count, question the conclusion' rather than a flat yes or no."
   - type: list
     title: "Frame 9 · Permission Slip — What may an AI helper do on its own?"
     items:
-      - "READ each thing an AI helper could do for you."
+      - "READ each row. Rows 9 and 10: add two things the AI in your story could do (no AI? imagine one)."
       - "CHECK ONE: ALLOW (go ahead) · CHECK FIRST (ask me every time) · DENY (never)."
       - "ONE-LINE REASON for each: \"Because it could ______.\""
       - "THE RISKY COMBO: two rows that are fine alone but dangerous together."
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'Allow is for things you can undo. Deny is for things you can't.' · 'Because it could ______. Finish the sentence or you haven't got a reason.' · 'Two rows that are harmless alone. Together, what could they do?' STRONG ANSWER: every row checked, with a reason that names the harm (could spend money I can't get back; could read something private); deleting, paying, passwords, and location land on Check first or Deny; the combo is two specific rows and a chain (read my messages + send as me = it answers a private message before I've seen it)."
+    notes: "Script: 'Allow is for things you can undo. Can't undo it? Then it's Check first or Deny.' · 'Because it could ______. Finish the sentence or you haven't got a reason.' · 'Two rows that are harmless alone. Together, what could they do?' STRONG ANSWER: rows 9 and 10 come from the story; every row checked, with a reason that names the harm (could spend money I can't get back; could read something private); deleting, paying, passwords, and location land on Check first or Deny; the combo is two specific rows and a chain (read my messages + send as me = it answers a private message as me)."
   - type: list
     title: "Frame 10 · Risk Grid — What would hurt most to lose?"
     items:
       - "FIVE THINGS worth protecting: from the story, or your own phone, game saves, bike, account."
-      - "RATE 1 to 3: cost to replace, and how bad if it's gone."
+      - "RATE 1 to 3: cost to replace (cheap or easy → expensive or impossible), and how bad if it's gone."
       - "SCORE = cost × how bad. The highest score gets protected first."
-      - "SPEND 10 COINS on two protections. Not every pair fits. Say why those two."
+      - "SPEND 10 COINS on two protections for your top scores. Some pairs cost more than 10. Say why those two."
       - "SO WHAT? Two lines: why does this matter to someone your age?"
-    notes: "Script: 'You can't protect everything. That's the point of the grid.' · 'Cheap to replace but a disaster to lose still scores high. Rate both.' · '10 coins, two protections, and not every pair fits. What did you leave unprotected, and can you live with that?' STRONG ANSWER: five things with honest ratings (a phone: cost 3, bad 3, score 9; a water bottle: 1 × 1); protections bought for the top scores and inside the budget (a passcode plus a backup copy is 3 + 7, exactly the 10 coins; a backup plus insurance is 16 and cannot be bought); a sentence naming what stays unprotected and why that's acceptable. Close the deck here: 'The story changes every week. The method doesn't.' Collect frames; the So what? lines are the exit ticket."
+    notes: "Script: 'You can't protect everything. That's the point of the grid.' · 'Cheap to buy isn't the same as easy to replace. A game save costs nothing, and you can't buy it back. Rate both.' · 'Ten coins, two protections, and not every pair fits. What did you leave unprotected, and can you live with that?' STRONG ANSWER: five things with honest ratings (a phone: cost 3, bad 3, score 9; a water bottle: 1 × 1); protections bought for the top scores and inside the budget (a passcode plus a backup copy is 3 + 7, exactly the 10 coins; a backup plus insurance is 16 and cannot be bought); a sentence naming what stays unprotected and why that's acceptable. Close the deck here: 'The story changes every week. The method doesn't.' Collect frames; the So what? lines are the exit ticket."
