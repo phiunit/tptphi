@@ -33,7 +33,7 @@ AI literacy, artificial intelligence, AI agents, project based learning, collabo
 ```
 
 **Description** — paste the `description:` block from `products/ai-agent-intern/product.yaml`
-(2459 chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
+(2837 chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
 
 
 ## Before you hit Publish

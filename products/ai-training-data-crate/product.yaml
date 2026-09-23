@@ -3,6 +3,7 @@ short_name: "What's in the Playlist?"
 line: ai
 grades: "6-8"
 price_usd: 4
+retired_terms: [DJ, DJs]   # the DJ-crate analogy became the playlist; keep it retired here
 status: rendered
 resource_types: [Lesson, Worksheets, Activities, Printables]
 tags:

@@ -10,6 +10,7 @@ judge's directory and decoded by the lead afterward. A product whose rewrite doe
 | ai-training-data-crate (L2) | 17 | 13 | 4 | 0 | Yes, with fixes |
 | ai-fact-check-lab (L3) | 20 | 17 | 1 | 2 | Yes |
 | ai-taste-file (L4) | 19 | 19 | 0 | 0 | Yes |
+| ai-agent-intern (L6) | 18 | 17 | 1 | 0 | Yes |
 
 ## L1 notes
 The judge's own headline was "neither side wins across the board" — which is what a correctly blind judge
@@ -56,3 +57,10 @@ builder fitted each heading on its own. The builder now sets one heading size pe
 
 The listing title changed to "AI Writing Feedback: Peer Editing & Revision | Middle School 6-8 | No Prep" —
 peer editing is what the lesson is and a phrase ELA teachers search. Catalog synced.
+
+## L6 notes
+17 of 18 won, and every error the judge found sat on the old pages. It named the planted fact without
+knowing which side was new: "A has the 'plant the cursed amulet' secret job and the reveal that leads into
+the exit ticket, so the review has a planted fake fact to catch; B drops it." The one loss was slide 9, whose
+steps had become vaguer than the worksheet ("a line and a box in every row"); rewritten by the lead to say
+who writes the card and that each paper goes back to its owner with the FIX line read aloud.
