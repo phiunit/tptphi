@@ -2,7 +2,7 @@
   "name": "phi-unit-tpt",
   "version": "0.1.0",
   "private": true,
-  "description": "Phi Unit Teaches the Future — TPT product factory: curriculum generation, print-ready rendering, and listing upload assist.",
+  "description": "Phi Unit Teaches the Future \u2014 TPT product factory: curriculum generation, print-ready rendering, and listing upload assist.",
   "type": "module",
   "scripts": {
     "render": "node scripts/render.mjs",
@@ -16,7 +16,8 @@
     "preview": "node scripts/preview.mjs",
     "fillable": "node scripts/fillable.mjs",
     "slides": "node scripts/slides.mjs",
-    "audit": "node scripts/audit.mjs"
+    "audit": "node scripts/audit.mjs",
+    "shipcheck": "node scripts/shipcheck.mjs"
   },
   "dependencies": {
     "pdf-lib": "^1.17.1",

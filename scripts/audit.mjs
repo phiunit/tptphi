@@ -7,7 +7,7 @@
 import { spawnSync } from 'node:child_process';
 
 const slug = process.argv[2];
-const steps = ['render', 'validate', 'readability', 'judge', 'preview'];
+const steps = ['render', 'validate', 'readability', 'judge', 'preview', 'shipcheck'];
 const t0 = Date.now();
 if (slug) {
   for (const step of steps) run(step, slug);
@@ -21,7 +21,7 @@ if (slug) {
     for (const step of steps) run(step, p.slug);
   }
 }
-console.log(`\nAUDIT GREEN — ${steps.join(' → ')} in ${Math.round((Date.now() - t0) / 1000)}s`);
+console.log(`\nAUDIT GREEN — ${steps.join(' → ')} → ship check in ${Math.round((Date.now() - t0) / 1000)}s`);
 
 function run(step, s) {
   console.log(`\n══ ${step}${s ? ' ' + s : ''} ══`);
