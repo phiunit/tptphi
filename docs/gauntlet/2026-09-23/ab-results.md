@@ -9,6 +9,7 @@ judge's directory and decoded by the lead afterward. A product whose rewrite doe
 | ai-prompting-101 (L1) | 17 | 15 | 0 | 2 | Yes |
 | ai-training-data-crate (L2) | 17 | 13 | 4 | 0 | Yes, with fixes |
 | ai-fact-check-lab (L3) | 20 | 17 | 1 | 2 | Yes |
+| ai-taste-file (L4) | 19 | 19 | 0 | 0 | Yes |
 
 ## L1 notes
 The judge's own headline was "neither side wins across the board" — which is what a correctly blind judge
@@ -41,3 +42,17 @@ reading a static page cannot see either reason. The other two losses were real a
 quote is whole again, and the teacher guide's Gap Report model answer names all four students the playlist
 leaves out, as it did before the rewrite dropped Nia. Every orphaned word the judge found on the new side is
 reworded, and the new widow check reads zero for this product.
+
+## L4 notes
+A clean sweep, 19 of 19. The judge preferred the redrawn cover without knowing which was which: the old one
+(a struck line with a replacement written above it) pictured ghostwriting, the thing this lesson forbids; the
+new one is a liked card beside the student's page with a note flag pointing at one line. The worked example
+now leaves an un-noted sentence alone and says why ("Two notes means two fixes, not a makeover"), where the
+old one rewrote every sentence and broke the lesson's own rule.
+
+Two new-side errors, both fixed by the lead: slide 8 said "Copy your draft below" on a projected slide (now
+"onto page 3"), and slide 4's first card heading printed smaller than the other two because the shared slide
+builder fitted each heading on its own. The builder now sets one heading size per row of cards, for every deck.
+
+The listing title changed to "AI Writing Feedback: Peer Editing & Revision | Middle School 6-8 | No Prep" —
+peer editing is what the lesson is and a phrase ELA teachers search. Catalog synced.

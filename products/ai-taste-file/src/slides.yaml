@@ -1,9 +1,11 @@
 # Projectable deck for the lesson plan — every slide is a moment in the 45 minutes.
 # Teacher script lives in the speaker notes; students see only what's on the slide.
 # Minute chips: 6 + 6 + 10 + 18 + 5 = 45 (match the lesson plan block for block).
+# title: a no-break space between "Your" and "Taste" keeps the cover's line break ("Teach AI / Your Taste").
+title: "Teach AI Your Taste"
 kicker: The Revision Lesson
 subtitle: "Your For-You Page didn't guess your taste — you taught it, one like at a time. Today you write your taste down on one page, then use it to make YOUR OWN writing better."
-notes: "Open on this slide while students settle. Worksheet: My Taste File + The Editor's Chair, 3 pages, one per student. Deck follows the lesson plan block for block; minute chips top-right match it."
+notes: "Open on this slide while students settle. Worksheet: My Taste File, The Editor's Chair, and Revise & Last Check, 3 pages, one per student. The deck follows the lesson plan block for block; the minute chips top-right match it."
 slides:
   - type: hook
     minutes: 6
@@ -13,30 +15,30 @@ slides:
       - "Two people download the same app on the same day."
       - "A month later: one feed is all horror edits, the other is all cooking videos."
       - "The app didn't guess. How did it learn?"
-    notes: "Take 2–3 answers. Land on: every like, skip, rewatch, and follow is a signal. You taught it your taste — and the more precisely you signal, the better the feed serves you. Your feed is your taste, written down in likes and skips. WHAT IF a student says 'my feed is random': 'Random is a signal too — what do you skip in the first second? That's a like in reverse.' Nobody raises a hand? Name your own feed first."
+    notes: "Any feed counts: YouTube, a music app, even a game store's \"recommended\" row. Take 2–3 answers. Land on: every like, skip, rewatch, and follow is a signal. Nobody guessed. You taught it. Your feed is your taste, written down in likes and skips. WHAT IF a student says 'my feed is random': \"Random is a signal too. What do you skip in the first second? That's a like in reverse.\" Nobody raises a hand? Name your own feed first."
   - type: question
     title: "Here's the other side"
-    question: "An AI doesn't know your taste unless you tell it, or it has saved notes about you. So how does it learn?"
-    notes: "ANSWER (say it, don't show it): the same way the feed did — you teach it. Bridge, verbatim: \"Here's the other side. An AI doesn't know your taste unless you tell it, or it has saved notes about you. Today you write your taste down on one page, and then you use it to make YOUR OWN writing better.\" TRANSITION: \"So what happens when the editor knows nothing about you? Watch.\""
+    question: "An AI doesn't know your taste unless you tell it, or it has saved notes about you. So what do you hand it?"
+    notes: "ANSWER (say it, don't show it): your taste, written down. You teach it, the same way you taught the feed. Bridge, verbatim: \"Here's the other side. An AI doesn't know your taste unless you tell it, or it has saved notes about you. Today you write yours down on one page, then use it to make YOUR OWN writing better.\" TRANSITION: \"So what happens when your editor knows nothing about you? Let's see.\""
   - type: cards
     minutes: 6
     title: "Generic In, Generic Out"
     items:
-      - { label: 1, name: "Generic in, generic out", text: "Ask \"give me feedback on my paragraph\" and you get notes for a generic writer: \"add detail.\" True for anyone, useful to no one." }
+      - { label: 1, name: "Generic in, generic out", text: "Ask \"give me feedback on my paragraph\" and you usually get notes for a generic writer: \"add detail.\" True for anyone, useful to no one." }
       - { label: 2, name: "The Taste File", text: "One page: your tone, formats, pet peeves, one \"so me\" sentence. Hand it to any editor and the notes finally fit YOU." }
       - { label: 3, name: "The editor loop", text: "YOU draft → editor gives notes → YOU revise. The human does the writing at both ends." }
-    notes: "Three beats, in order. Beat 2, if your class did the genie lesson: the taste file is your Requirements, written once so you never retype them. Beat 3 — say it plainly: \"AI is your editor, not your ghostwriter.\" Then advance to watch one get fixed."
+    notes: "Three beats, in order. Beat 2, if your class did Lesson 1, How to Talk to AI: the taste file is the R in P.R.O., written down once. Beat 3: say it plainly, once. \"AI is your editor, not your ghostwriter.\" Then advance: which note could you use?"
   - type: cards
-    title: "Watch one get fixed"
+    title: "Which note could you use?"
     items:
-      - { name: "The draft (look at 2)", text: "1. \"Hello and welcome to my channel!\"\n2. \"I enjoy various hobbies such as gaming and cooking.\"\n3. \"I upload content on a regular basis.\"" }
+      - { name: "Draft: watch sentence 2", text: "1. \"Hello and welcome to my channel!\"\n2. \"I enjoy various hobbies such as gaming and cooking.\"\n3. \"I upload content on a regular basis.\"" }
       - { name: "Generic note", text: "\"Make it more interesting.\"" }
-      - { name: "Taste-file note", text: "\"Your taste file says funny and blunt — sentence 2 sounds like a homework robot. Say it like you'd text it.\"" }
-    notes: "Read the draft aloud first, then both notes. Ask: which note could you actually act on? The generic note fits any writer. The taste-file note names sentence 2 and points at the writer's own file — that's the whole difference. WHAT IF 'the AI I use already knows me': 'Some tools do save notes about you. A fresh chat usually doesn't — and either way, a taste file is the fastest way to make sure the notes fit.'"
+      - { name: "Taste-file note", text: "\"Section 1 says funny and blunt — sentence 2 sounds like a homework robot. Say it like you'd text a friend.\"" }
+    notes: "Read the draft aloud first, then both notes. Ask: which one could you actually act on? The generic note fits any writer. The taste-file note names a section AND a sentence. That's the whole difference. WHAT IF 'the AI I use already knows me': \"Some tools save notes about you. A fresh chat usually doesn't. Either way, the file makes sure the notes fit.\""
   - type: quote
     quote: "AI is your editor, not your ghostwriter."
     sub: "An editor gives notes on YOUR writing. A ghostwriter writes it for you."
-    notes: "Say it plainly: a ghostwriter writes it for you and lets you put your name on it. Today, nobody in this room is a ghostwriter — not a partner, not an AI. Then move on. TRANSITION: \"Page 1. Your taste, written down — five sections, ten minutes, solo. Nobody swaps anything yet.\""
+    notes: "Say it once: a ghostwriter writes it for you and lets you put your name on it. Today nobody in this room is a ghostwriter, not a partner and not an AI. Then move on. TRANSITION: \"Page 1. Your taste, written down — five sections, ten minutes, solo. Nobody swaps yet.\""
   - type: list
     minutes: 10
     title: "Activity 1 — Build Your Taste File"
@@ -45,47 +47,48 @@ slides:
       - "Section 2 — How I Like It: check every format you actually enjoy reading."
       - "Section 3 — Pet Peeves: \"Editor, never ______.\" Write two."
       - "Section 4 — So Me / Not Me: your weekend in your voice, then as a robot, a textbook, or a fancy poet."
-      - "Section 5 — What I'm Into Right Now: the feel of the music, shows and games you like."
-    notes: "Solo on worksheet page 1. Circulate and push for specifics: \"quiet\" beats \"good\"; \"don't make me sound like a textbook\" beats \"be nice.\" WHAT IF stuck on So Me: \"Read me the last text you sent a friend. That's your voice.\" Minute 8: two volunteers read a So Me sentence — the class hears how different real taste sounds. TRANSITION: \"Flip to page 2. Three to four sentences: the About Me for a channel or profile you'd really make. Match your taste file. Solo — five minutes.\""
+      - "Section 5 — What I'm Into Right Now: music, shows, and games. Give the feel, not the name."
+    notes: "Solo on worksheet page 1. Circulate and push for specifics: \"quiet\" beats \"good\"; \"don't make me sound like a textbook\" beats \"be nice.\" WHAT IF stuck on So Me: \"Read me the last text you sent a friend. That's your voice.\" Still stuck? Read Jaylen's pair aloud: \"Saturday I made the world's saddest pancake and ate it anyway.\" / \"On Saturday I prepared a breakfast item that did not meet expectations.\" Minute 8: two volunteers read a So Me sentence, so the class hears how different real taste sounds. TRANSITION: \"Flip to page 2. Three to four sentences: the About Me for a channel or profile you'd really make. Match your taste file. Solo — five minutes.\""
   - type: steps
     minutes: 18
     title: "Activity 2 — The Editor's Chair"
     items:
       - { minutes: 5, name: "Draft it yourself", text: "Solo, page 2, Step 1. 3–4 sentences: the About Me for a channel or profile you'd really make. No AI, no partner." }
       - { minutes: 7, name: "Editor's notes", text: "Swap ALL pages. Read THEIR taste file, then write 2 notes on THEIR page 2 — each names a section. No rewriting. Then talk for 2 minutes." }
-      - { minutes: 6, name: "Revise it yourself", text: "Swap back. Rewrite only the sentences your notes point at, plus enough around them to make it read. Star (*) every change." }
-    notes: "DRAFT — WHAT IF 'I don't have a channel': \"The one you WOULD make — a game name, a team, a club, a pet's account.\" TRANSITION: \"Pens down. Swap ALL your pages with your partner. You are now their editor — and page 1 is the only thing you're allowed to know about them.\" NOTES (4 min writing): put the next slide up. WHAT IF the editor rewrites: \"You're the editor. Hand the pen back.\" No section number: \"Which section? No section, no note.\" With devices: run Step 2 once on YOUR projected account — one volunteer's taste file and draft in the copy-ready prompt (Teacher Guide) — and the class checks whether each note names a section. Students never need an account. TRANSITION after the 4 minutes of writing: \"Speaker 1, you are the editor first — read your two notes out loud. Writers, one question.\" At the one-minute call: \"Switch. Speaker 2 runs the same minute.\" Then: \"Swap back. Page 3 — your draft, your pen. Star every change.\""
+      - { minutes: 6, name: "Revise it yourself", text: "Copy your draft onto page 3. Change only the sentences your notes point at, plus any word that has to change with them. Star (*) every change." }
+    notes: "DRAFT — WHAT IF 'I don't have a channel': \"The one you WOULD make — a game name, a team, a club, a pet's account.\" TRANSITION: \"Pens down. Swap ALL your pages with your partner. You're their editor now — and page 1 is the only thing you're allowed to know about them.\" NOTES, by the clock: 0:00 swap (30 s) · 0:30 write 2 notes (4 min; put the next slide up) · 4:30 read the turn order aloud, Speaker 1's minute · 5:30 Speaker 2's minute · 6:30 swap back (30 s). WHAT IF the editor rewrites: \"You're the editor. Hand the pen back.\" No section number: \"Which section? No section, no note.\" Typing? Partners swap Chromebooks, not sheets; notes go in the Note 1 and Note 2 fields. With devices: run Step 2 once on YOUR projected account, with one volunteer's taste file and draft in the copy-ready prompt (Teacher Guide). The class checks that each note names a section. Students never need an account. TRANSITION at 4:30: \"Pens down. Speaker 1, you're the editor first. Writers, one question.\" At 5:30: \"Switch. Speaker 2, you're the editor now.\" At 6:30: \"Swap back. Page 3 — your draft, your pen. Star every change.\" REVISE: read the Step 3 line aloud, word for word."
   - type: compare
     title: "What a good note looks like"
     left: { heading: "WRITES IT FOR YOU (REJECT)", text: "\"Make it funnier. Say: 'Welcome to my chaotic channel!'\"" }
     right: { heading: "EDITOR'S NOTE (ACCEPT)", text: "\"Section 3 says no textbook voice — 'I enjoy various hobbies' is textbook voice. Which hobby, said your way?\"" }
-    notes: "Leave this up while editors write. Three rules: use only the taste file, exactly 2 notes, notes not rewrites. The second the editor writes a sentence, they've become a ghostwriter. Second exemplar pair for the board if needed — reject: \"It's good. Maybe add more.\" accept: \"Section 2 says short and punchy — sentence 3 is 22 words. Which half matters?\""
+    notes: "Leave this up while editors write. Three rules: use only the taste file, exactly 2 notes, notes not rewrites. The second the editor writes a sentence, they've become a ghostwriter. A second pair for the board if needed. Reject: \"It's good. Maybe add more.\" Accept: \"Section 2 says short and punchy — sentence 3 is 22 words. Which half matters?\""
   - type: list
     title: "Talk it through — 2 minutes"
     items:
       - "Speaker 1 is the partner whose first name comes first in the alphabet."
       - "Speaker 1 is the editor for the first minute: read your two notes out loud."
       - "Writer: ask ONE question."
-      - "Then switch — Speaker 2 runs the same minute."
+      - "Editor: answer from THEIR taste file — never your own taste."
+      - "Then switch: Speaker 2 is the editor for minute two."
       - "Then swap sheets back."
-    notes: "This is the SL.6.1 moment, and the turn order is what makes it one: every student reads notes aloud AND asks a question. Same text is printed on worksheet page 2, with the two question frames — \"Which sentence?\" or \"What would fit?\" Sample 3–4 pairs: listen for the answer to cite a section (\"Section 3 says no textbook words\"), not the editor's own taste (\"I'd just make it funnier\"). WHAT IF a pair can't tell who is Speaker 1: \"Whose name starts closer to A?\" WHAT IF the writer argues back: \"Ask which sentence, not whether.\" Both check checklist row 4 on page 3 afterwards."
+    notes: "This is the SL.6.1 moment, and the turn order is what makes it one: every student reads notes aloud AND asks a question. The same text is printed on worksheet page 2, with the two question frames: \"Which sentence?\" or \"What would fit?\" Sample 3–4 pairs. Listen for an answer that cites a section (\"Section 3 says no textbook voice\"), not the editor's own taste (\"I'd just make it funnier\"). WHAT IF two partners have the same first letter: \"Check the second letter.\" Same name? \"Whoever sits nearer the door goes first.\" WHAT IF the writer argues back: \"Ask which sentence, not whether.\" Both check checklist row 4 on page 3 afterwards."
   - type: list
-    title: "Editor's Loop Checklist"
+    title: "Editor Loop Checklist"
     items:
       - "I wrote the first draft myself — no AI, no copying."
-      - "Each note names a taste-file section and says what to change — not \"make it better.\""
-      - "I rewrote it myself and starred every change."
-      - "We talked it through: notes read aloud, one question, an answer from my taste file."
-    notes: "Page 3, after the revision. Students check all four before the Last Check. Rows 1 and 3 verify the human at both ends (own draft, own revision — check against the handwriting and the stars); row 4 verifies the talk you sampled. WHAT IF a student changed nothing: \"Your editor pointed at section 3. Read that section out loud. Now change one sentence to match it.\" TRANSITION: \"Checklist — four checks. Then the Last Check at the bottom: three answers, your own words, five minutes.\""
+      - "My editor's notes each named a section and said what to change, not \"make it better.\""
+      - "I made the changes myself and starred every one."
+      - "My editor read both notes aloud, I asked one question, and they answered from my taste file."
+    notes: "Page 3, after the revision. Students check all four before the Last Check. Rows 1 and 3 check the human at both ends (own draft, own revision; check against the handwriting and the stars). Row 4 checks the talk you sampled. WHAT IF a student changed nothing: \"Your editor pointed at Section 3. Read it out loud. Now change one sentence to match it.\" TRANSITION: \"Four checks. Then the Last Check: three answers, your own words, five minutes. Short is fine on #1.\""
   - type: list
     minutes: 5
     title: "Last Check — page 3, your own sheet"
     items:
-      - "The one word or phrase you changed: old → new."
-      - "It fits my taste file because… (name the section)."
+      - "The one word or phrase you changed (old → new):"
+      - "The new version fits my taste file because (name the section):"
       - "Why would the note \"make it better\" NOT have helped you?"
-    notes: "Solo, 5 minutes. Collect. KEY — #1: names one word or phrase and gives it both ways, old → new (\"I made it funnier\" without the words = redo). #2: names a section and the match: \"Section 1 says blunt; the new line is blunt.\" #3 (Objective 1): proficient = \"make it better\" names no sentence and no direction — better for whom? — while the real note named a section and a sentence. Jaylen exemplar: \"'I enjoy various hobbies' → 'I lose at games and cook worse.' Section 3 says no textbook words. 'Make it better' doesn't say what's wrong or what better means for ME.\" WHAT IF \"I made it better\": \"Which word changed? Write the old word and the new one.\""
+    notes: "Solo, 5 minutes. Collect. KEY — #1: names one word or phrase and gives it both ways, old → new (\"I made it funnier\" without the words = redo). #2: names a section and the match: \"Section 1 says blunt; the new line is blunt.\" #3 (Objective 1): proficient = \"make it better\" names no sentence and no direction (better for whom?), while the real note named a section and a sentence. Jaylen exemplar: #1 \"'I enjoy various hobbies such as gaming and cooking' → 'I lose at games and cook worse.'\" #2 \"Section 3 says no textbook voice; Section 1 says funny and blunt.\" #3 \"'Make it better' doesn't say what's wrong or what better means for ME. The note that named Section 3 told me which sentence and why.\" WHAT IF \"I made it better\": \"Which word changed? Write the old word and the new one.\""
   - type: closer
     statement: "You draft. The editor gives notes. You revise."
-    sub: "A good AI job runs human → AI → human: you draft, the AI gives the notes, you revise. Write your taste down precisely and every editor — app, AI, or human — finally serves YOU."
-    notes: "Close on this. Next in the unit: Robots Do the Boring Work (Lesson 5 — in the unit bundle, or sold separately). This lesson stands alone either way."
+    sub: "A good AI job runs human → AI → human: you draft, the AI gives the notes, you revise. Your feed needed a month of likes to learn you. Your editor needed one page."
+    notes: "Close on this. Next in the unit: Robots Do the Boring Work (Lesson 5, sold separately). This lesson stands alone either way."

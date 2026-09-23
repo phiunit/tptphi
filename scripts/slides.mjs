@@ -175,11 +175,14 @@ export async function buildSlides(p, distDir, outPath, page = null) {
       }
       case 'cards': {
         const items = s.items || [], gap = 0.25, cw = (bw - gap * (items.length - 1)) / items.length;
+        // One heading size per slide: fitting each card's name on its own made a long heading visibly
+        // smaller than its neighbours, which reads as a mistake on a row of equal cards.
+        const nameSize = Math.min(...items.map(it => fit(it.name || '', cw - 0.5, 0.5, 17, 11, true)));
         items.forEach((it, i) => {
           const x = M + i * (cw + gap);
           S.shape('roundRect', { x, y: top, w: cw, h: bodyH, rectRadius: 0.14, fill: { color: C.card }, line: { color: C.card, width: 0 } });
           if (it.label) circle(S, String(it.label), x + 0.25, top + 0.25, 0.55);
-          S.text(it.name || '', { x: x + 0.25, y: top + 0.95, w: cw - 0.5, h: 0.5, fontSize: fit(it.name || '', cw - 0.5, 0.5, 17, 11, true), bold: true, color: C.gold, valign: 'middle' });
+          S.text(it.name || '', { x: x + 0.25, y: top + 0.95, w: cw - 0.5, h: 0.5, fontSize: nameSize, bold: true, color: C.gold, valign: 'middle' });
           S.text(it.text || '', { x: x + 0.25, y: top + 1.5, w: cw - 0.5, h: bodyH - 1.75, fontSize: fit(it.text || '', cw - 0.5, bodyH - 1.85, 14, 10), color: C.ink });
         });
         break;

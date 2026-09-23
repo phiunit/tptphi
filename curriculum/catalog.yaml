@@ -16,7 +16,7 @@ products:
   - { slug: ai-training-data-crate,  line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 2,
       title: "How AI Works Lesson: Training Data & Bias | Middle School 6-8 | No Prep" }
   - { slug: ai-taste-file,           line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 4,
-      title: "AI Writing Feedback Lesson: Revision Activity | Middle School 6-8 | No Prep" }
+      title: "AI Writing Feedback: Peer Editing & Revision | Middle School 6-8 | No Prep" }
   - { slug: ai-boring-work,          line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 5,
       title: "AI and Future Jobs Lesson: Automation Tradeoffs | Middle School 6-8 | No Prep" }
   - { slug: ai-agent-intern,         line: ai,           priority: 1, status: rendered, price: 4, unit: ai-literacy-1, lesson: 6,

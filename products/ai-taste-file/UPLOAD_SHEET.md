@@ -1,9 +1,9 @@
 # Upload Sheet — Teach AI Your Taste
 Generated from product.yaml. Fields in TPT "Add new product" order.
 
-**Title** (75 chars — TPT max ~80)
+**Title** (74 chars — TPT max ~80)
 ```
-AI Writing Feedback Lesson: Revision Activity | Middle School 6-8 | No Prep
+AI Writing Feedback: Peer Editing & Revision | Middle School 6-8 | No Prep
 ```
 
 **Price:** $4.00
@@ -33,7 +33,7 @@ AI literacy, artificial intelligence, revision, writing feedback, peer editing, 
 ```
 
 **Description** — paste the `description:` block from `products/ai-taste-file/product.yaml`
-(2472 chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
+(2468 chars; TPT shows only the first ~2 lines before "read more" — the first three lines must be filter line → hook → do line (docs/COPY.md).)
 
 
 ## Before you hit Publish

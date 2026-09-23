@@ -37,8 +37,11 @@
       <rect x="70" y="30" width="44" height="60" rx="5" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
       <rect x="79" y="44" width="26" height="4" rx="2" fill="#14141F"/>
       <rect x="79" y="55" width="26" height="4" rx="2" fill="#14141F"/>
-      <path d="M 76 60 L 108 53" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <path d="M 87 76 L 92 68 L 97 76" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="88" y="66" width="18" height="4" rx="2" fill="#14141F"/>
+      <rect x="79" y="77" width="22" height="4" rx="2" fill="#14141F"/>
+      <!-- the editor's note: a margin flag pointing at one line (it points; it never rewrites) -->
+      <path d="M 60 61 L 80 61 L 86 68 L 80 75 L 60 75 Q 57 75 57 72 L 57 64 Q 57 61 60 61 Z" fill="#fff" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
+      <text x="70" y="72" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="10" fill="#14141F">§3</text>
       <!-- the like-heart, drawn last so nothing clips it -->
       <path transform="translate(-15 4)" d="M 66 62 C 57 55, 53 50, 53 45 C 53 41, 56 39, 59 39 C 61.5 39, 64 41, 66 44 C 68 41, 70.5 39, 73 39 C 76 39, 79 41, 79 45 C 79 50, 75 55, 66 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
     </g>
@@ -53,7 +56,7 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">The Revision Lesson · Lesson 4 of 6</div><h1>Teach AI Your Taste</h1></div>
-      <p class="sub">Your For-You Page didn't guess your taste — you taught it, one like at a time. Unless you tell it (or it has saved notes about you), an AI doesn't know yours. Students write theirs down in a one-page Taste File, then draft, get two notes, and revise. 45 min; stands alone.</p>
+      <p class="sub">Your For-You Page didn't guess your taste — you taught it, one like at a time. An AI doesn't know your taste unless you tell it, or it has saved notes about you. Students write theirs in a one-page taste file, then draft, get two notes, and revise. 45 min; stands alone.</p>
     </div>
     <svg class="art" width="100" height="75" viewBox="2 8 116 86"><use href="#feedcard"/></svg>
   </div>
@@ -61,14 +64,14 @@
   <h2>At a Glance</h2>
   <table>
     <tr><th>Time</th><th>Materials</th><th>Tech needed</th><th>Prep</th></tr>
-    <tr><td>45 min</td><td>Worksheet, 3 pages, 1 per student (a typeable PDF copy is included) · Slides (optional; script in the notes) · board or projector · Teacher Guide (worked example, AI prompt) · pens</td><td>None — fully unplugged. Optional: projector; one AI tool on the teacher's screen for Step 2</td><td>Print worksheets. That's it.</td></tr>
+    <tr><td>45 min</td><td>Worksheet, 3 pages, 1 per student (plus a typeable PDF copy) · pens · Slides (optional; the script is in the notes) · a board or projector · Teacher Guide (key and AI prompt)</td><td>None — fully unplugged. Optional: a projector and one AI tool on your own screen for the Step 2 demo</td><td>Print worksheets. That's it.</td></tr>
   </table>
 
   <h2>Objectives — students can</h2>
   <ul>
     <li>Explain why vague input gets vague feedback — from an app, an AI, or a person. <em>(Last Check #3)</em></li>
     <li>Build a <strong>taste file</strong>: a one-page style guide an editor can actually use. <em>(Worksheet p.1, Sections 1–5)</em></li>
-    <li>Run the <strong>editor loop</strong> — draft, two specific notes, revise — the human writing at both ends. <em>(Steps 1–3, Last Check #1–2)</em></li>
+    <li>Run the <strong>editor loop</strong>: draft it, get two specific notes, revise it yourself. <em>(Steps 1–3, Last Check #1–2)</em></li>
   </ul>
 
   <h2>Standards Alignment <span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:9.5pt; color:#55556B;">(full text + taught/assessed in the Teacher Guide)</span></h2>
@@ -78,19 +81,19 @@
 
   <h2><svg width="18" height="17" viewBox="0 0 24 22"><use href="#heart"/></svg> Warm-Up — The Algorithm Knows You (6 min)</h2>
   <div class="panel">
-    <p>Open: <strong>"Raise your hand if your feed knows you a little too well."</strong> Then: "Two people download the same app on the same day. A month later one feed is all horror edits, the other all cooking videos. The app didn't guess — <strong>how did it learn?</strong>" Take 2–3 answers. Land on: every like, skip, rewatch, and follow is a signal. You <em>taught</em> it your taste.</p>
+    <p>Open: <strong>"Raise your hand if your feed knows you a little too well."</strong> (Any feed counts: YouTube, a music app, even a game store's "recommended" row.) Then: "Two people download the same app on the same day. A month later one feed is all horror edits, the other all cooking videos. The app didn't guess — <strong>how did it learn?</strong>" Take 2–3 answers. Land on: every like, skip, rewatch, and follow is a signal. Nobody guessed. You <em>taught</em> it.</p>
   </div>
   <div class="callout"><strong>Bridge:</strong> "Here's the other side. An AI doesn't know your taste unless you tell it, or it has saved notes about you. Today you write yours down on one page, then use it to make YOUR OWN writing better."</div>
-  <p class="whatif"><strong>What if</strong> "my feed is random"? "Random is a signal too — what do you skip in the first second?" Nobody raises a hand? Name your own feed first.</p>
-  <p class="say"><strong>Transition:</strong> "So what happens when the editor knows nothing about you? Watch."</p>
+  <p class="whatif"><strong>What if</strong> "my feed is random"? "Random is a signal too. What do you skip in the first second? That's a like in reverse." Nobody raises a hand? Name your own feed first.</p>
+  <p class="say"><strong>Transition:</strong> "So what happens when your editor knows nothing about you? Let's see."</p>
 
   <h2>Direct Instruction — Generic In, Generic Out (6 min)</h2>
   <div class="panel">
-    <p><strong>1 — Generic in, generic out.</strong> "Give me feedback on my paragraph" gets notes for a generic writer: "add detail." True for anyone, useful to no one.</p>
-    <p><strong>2 — The taste file.</strong> One page: tone, formats, pet peeves, one "so me" sentence. Hand it to any editor and the notes finally fit YOU. <em>(If your class did the genie lesson: it's your Requirements, written once.)</em></p>
-    <p><strong>3 — The editor loop.</strong> <strong>YOU draft → editor gives notes → YOU revise.</strong> Say it plainly: <em>"AI is your editor, not your ghostwriter."</em></p>
+    <p><strong>1 — Generic in, generic out.</strong> Ask "give me feedback on my paragraph" and you usually get notes for a generic writer: "add detail." True for anyone, useful to no one.</p>
+    <p><strong>2 — The taste file.</strong> One page: tone, formats, pet peeves, one "so me" sentence. Hand it to any editor and the notes finally fit YOU. <em>(If your class did Lesson 1, How to Talk to AI: it's the R in P.R.O., written down once.)</em></p>
+    <p><strong>3 — The editor loop.</strong> <strong>YOU draft → editor gives notes → YOU revise.</strong> <em>"AI is your editor, not your ghostwriter."</em></p>
   </div>
-  <p><strong>Watch one get fixed</strong> — on the board: "Make it more interesting" vs. "Your taste file says <em>funny and blunt</em> — sentence 2 sounds like a homework robot. Say it like you'd text it." Ask which note they could act on.</p>
+  <p><strong>Which note could you use?</strong> On the board: "Make it more interesting" vs. "Section 1 says <em>funny and blunt</em> — sentence 2 sounds like a homework robot. Say it like you'd text a friend." Ask which one they could act on.</p>
   <p class="whatif"><strong>What if</strong> "the AI I use already knows me"? "Some tools save notes about you. A fresh chat usually doesn't. Either way, the file makes sure the notes fit."</p>
   <p class="say"><strong>Transition:</strong> "Page 1. Your taste, written down — five sections, ten minutes, solo. Nobody swaps yet."</p>
 
@@ -102,11 +105,11 @@
 
   <h2>Activity 1 — Build Your Taste File (10 min)</h2>
   <ol>
-    <li>Solo, worksheet page 1, in order: <strong>S1</strong> check 3 tone words + one of their own · <strong>S2</strong> check formats · <strong>S3</strong> two pet peeves · <strong>S4</strong> So Me / Not Me (their weekend in their voice, then as a robot, a textbook, or a fancy poet) · <strong>S5</strong> what they're into right now.</li>
+    <li>Solo, worksheet page 1, in order: <strong>S1</strong> 3 tone words + one of their own · <strong>S2</strong> formats · <strong>S3</strong> two pet peeves · <strong>S4</strong> So Me / Not Me · <strong>S5</strong> what they're into right now.</li>
     <li>Circulate and push for specifics: "quiet" beats "good"; "don't make me sound like a textbook" beats "be nice."</li>
     <li>Minute 8: two volunteers read a So Me sentence — the class hears how different real taste sounds.</li>
   </ol>
-  <p class="whatif"><strong>What if</strong> a student is stuck on So Me? "Read me the last text you sent a friend. That's your voice." <strong>Finished early?</strong> Extension below.</p>
+  <p class="whatif"><strong>What if</strong> a student is stuck on So Me? "Read me the last text you sent a friend. That's your voice." Still stuck? Read Jaylen's pancake pair aloud (Teacher Guide p.1). <strong>Finished early?</strong> Extension below.</p>
   <p class="say"><strong>Transition:</strong> "Flip to page 2. Three to four sentences: the About Me for a channel or profile you'd really make. Match your taste file. Solo — five minutes."</p>
 
   <h2>Activity 2 — The Editor's Chair (18 min)</h2>
@@ -114,24 +117,24 @@
     <li><strong>Draft (5 min):</strong> Solo, page 2, Step 1. No AI, no partner.
       <div class="whatif"><strong>What if</strong> "I don't have a channel"? "The one you WOULD make — a game name, a team, a club, a pet's account."</div>
       <em>Transition:</em> "Pens down. Swap ALL your pages with your partner. You're their editor now — and page 1 is the only thing you're allowed to know about them."</li>
-    <li><strong>Editor's notes (7 min):</strong> Swap = 30 seconds, count it down. Editors read the partner's taste file, then write exactly <strong>2 notes</strong> on the partner's page 2, each naming a section, no rewriting (4 min). Then the <strong>2-minute talk</strong> — the turn order is printed on page 2; read it out before they start: <em>"Speaker 1 is the partner whose first name comes first in the alphabet. Speaker 1 is the editor for the first minute: read your two notes out loud. Writer: ask ONE question. Then switch — Speaker 2 runs the same minute. Then swap sheets back."</em> Swap back = 30 seconds. <em>With devices:</em> run Step 2 once on YOUR projected account — one volunteer's taste file and draft in the copy-ready prompt (Teacher Guide); the class checks that each note names a section. Students never need an account.
-      <div class="whatif"><strong>What if</strong> the editor starts rewriting? "You're the editor. Hand the pen back." No section number? "Which section? No section, no note." A pair can't tell who is Speaker 1? "Whose name starts closer to A?"</div>
-      <em>Transition (pens down after the 4 minutes of writing):</em> "Speaker 1, you're the editor first — read your two notes out loud. Writers, one question." <em>At the one-minute call:</em> "Switch. Speaker 2 runs the same minute." <em>Then:</em> "Swap back. Page 3 — your draft, your pen. Star every change."</li>
-    <li><strong>Revise (6 min):</strong> Students rewrite their own draft on page 3. Say it: <em>"Rewrite only the sentences your notes point at, plus enough around them to make it read."</em> Star (*) every change, then check all four checklist rows. The editor never touches it.
-      <div class="whatif"><strong>What if</strong> a student changes nothing? "Your editor pointed at section 3. Read it out loud. Now change one sentence to match it."</div>
-      <em>Transition:</em> "Four checks. Then the Last Check at the bottom: three answers, your own words, five minutes."</li>
+    <li><strong>Editor's notes (7 min):</strong> <strong>0:00</strong> Swap ALL pages; count down 30 seconds. · <strong>0:30</strong> Editors write exactly <strong>2 notes</strong> on the partner's page 2, each naming a section, no rewriting (4 min). · <strong>4:30</strong> Read the turn order aloud; Speaker 1's minute. · <strong>5:30</strong> Speaker 2's minute. · <strong>6:30</strong> Swap back (30 s). The turn order, as printed on page 2: <em>"Speaker 1 is the partner whose first name comes first in the alphabet. Speaker 1 is the editor for the first minute: read your two notes out loud. Writer: ask ONE question. Editor: answer from THEIR taste file — never your own taste. Then switch: Speaker 2 is the editor for minute two. Then swap sheets back."</em> <em>With devices:</em> run Step 2 once on YOUR projected account with one volunteer's file (prompt in the Teacher Guide); the class checks that each note names a section. <em>Typing?</em> Partners swap Chromebooks, not sheets.
+      <div class="whatif"><strong>What if</strong> the editor starts rewriting? "You're the editor. Hand the pen back." No section number? "Which section? No section, no note." Same first letter? "Check the second letter." Same name? "Whoever sits nearer the door goes first." Odd number? One trio, A→B→C (Teacher Guide p.2).</div>
+      <em>Transition at 4:30:</em> "Pens down. Speaker 1, you're the editor first. Writers, one question." <em>At 5:30:</em> "Switch. Speaker 2, you're the editor now." <em>At 6:30:</em> "Swap back. Page 3 — your draft, your pen. Star every change."</li>
+    <li><strong>Revise (6 min):</strong> Page 3, solo. Say it: <em>"Copy your draft below. Change only the sentences your notes point at, plus any word that has to change with them. Star (*) every change."</em> Then they tick all four checklist rows.
+      <div class="whatif"><strong>What if</strong> a student changes nothing? "Your editor pointed at Section 3. Read it out loud. Now change one sentence to match it."</div>
+      <em>Transition:</em> "Four checks. Then the Last Check: three answers, your own words, five minutes. Short is fine on #1."</li>
   </ol>
 
   <h2>Last Check — Exit Ticket (5 min)</h2>
-  <p>Bottom of page 3, solo: <strong>#1</strong> the one word or phrase they changed (old → new); <strong>#2</strong> why it fits their taste file, naming the section; <strong>#3</strong> why the note "make it better" would NOT have helped them (Objective 1). Collect; key in the Teacher Guide.</p>
+  <p>Bottom of page 3, solo. Printed word for word: <strong>#1</strong> "The one word or phrase you changed (old → new):" <strong>#2</strong> "The new version fits my taste file because (name the section):" <strong>#3</strong> "Why would the note "make it better" NOT have helped you?" (Objective 1). Collect; the key is in the Teacher Guide.</p>
   <p class="whatif"><strong>What if</strong> a student writes "I made it better"? "Which word changed? Write the old word and the new one."</p>
 
   <h2>Differentiation</h2>
   <ul>
-    <li><strong>Support:</strong> Extra tone words, a note frame, and a revision frame (Teacher Guide). One pet peeve and one note are fine.</li>
-    <li><strong>Extension:</strong> The anti-taste-file — three notes for the voice you never want to sound like.</li>
+    <li><strong>Support:</strong> Extra tone words, a note frame, and a revision frame (Teacher Guide). One pet peeve and one note count as done.</li>
+    <li><strong>Extension (back of page 3):</strong> write an anti-taste file: three lines about a voice they'd hate to sound like ("ten exclamation points," "words nobody says out loud"). Then one sentence in that voice, for laughs.</li>
     <li><strong>ELL:</strong> Tone words double as vocabulary; home-language words welcome in the taste file; the talk's two question frames are printed on the sheet.</li>
-    <li><strong>No-device classrooms:</strong> Built in — the partner IS the AI, and the taste file is the only thing the editor is allowed to know about them. Skip the "with devices" line; nothing else changes.</li>
+    <li><strong>No-device classrooms:</strong> Built in. The partner IS the AI. Skip the "with devices" line; nothing else changes.</li>
   </ul>
 
   <div class="footer"><span>Teach AI Your Taste — Lesson Plan</span><span>© Future Skills Series</span><span>2</span></div>

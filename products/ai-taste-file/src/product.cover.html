@@ -25,21 +25,29 @@ h1 span { color: #FFB020; }
 <div class="star" style="width:4px;height:4px;left:560px;top:140px"></div>
 <div class="star g" style="width:8px;height:8px;left:790px;top:400px"></div>
 <div class="star" style="width:5px;height:5px;left:760px;top:560px"></div>
-<div class="star g" style="width:6px;height:6px;left:380px;top:900px"></div>
-<!-- Art: ONE object — a page carrying the editor's mark: one line struck through, the replacement
-     written above it, a caret touching the struck line. Page is 300px wide (35% of the 850px frame),
-     fully inside the frame, below the chip row. -->
-<svg width="260" height="330" viewBox="0 0 260 330" style="position:absolute; right:64px; bottom:44px; z-index:1;">
-  <!-- the page -->
-  <rect x="8" y="8" width="244" height="314" rx="20" fill="#fff" opacity="0.16"/>
-  <rect x="8" y="8" width="244" height="314" rx="20" fill="none" stroke="#FFB020" stroke-width="12"/>
-  <!-- the replacement, written above the line -->
-  <rect x="62" y="92" width="136" height="22" rx="11" fill="#FFB020"/>
-  <!-- the old line, struck through -->
-  <rect x="66" y="150" width="128" height="20" rx="10" fill="#FFD27A"/>
-  <path d="M 44 182 L 216 138" fill="none" stroke="#FFB020" stroke-width="9" stroke-linecap="round"/>
-  <!-- the caret, apex touching the struck line -->
-  <path d="M 100 222 L 130 172 L 160 222" fill="none" stroke="#FFB020" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<div class="star g" style="width:6px;height:6px;left:150px;top:960px"></div>
+<!-- Art: the lesson's analogy in one object — the feed card with its like-heart (the taste you taught the app)
+     beside YOUR page, where the editor's note is a margin flag ("§3") pointing at one line. Nothing is
+     crossed out and no new words are written over yours: a note points, it never rewrites.
+     Fully inside the frame, below the chip row. -->
+<svg width="470" height="300" viewBox="0 0 470 300" style="position:absolute; right:60px; bottom:48px; z-index:1;">
+  <!-- the feed card -->
+  <rect x="6" y="46" width="186" height="150" rx="24" fill="#fff" opacity="0.16"/>
+  <rect x="6" y="46" width="186" height="150" rx="24" fill="none" stroke="#FFB020" stroke-width="10"/>
+  <rect x="34" y="84" width="92" height="16" rx="8" fill="#FFD27A"/>
+  <rect x="34" y="114" width="124" height="16" rx="8" fill="#FFD27A"/>
+  <!-- your page -->
+  <rect x="236" y="8" width="226" height="284" rx="22" fill="#fff" opacity="0.16"/>
+  <rect x="236" y="8" width="226" height="284" rx="22" fill="none" stroke="#FFB020" stroke-width="10"/>
+  <rect x="300" y="58" width="124" height="14" rx="7" fill="#fff" opacity="0.55"/>
+  <rect x="300" y="108" width="136" height="16" rx="8" fill="#FFD27A"/>
+  <rect x="300" y="160" width="116" height="14" rx="7" fill="#fff" opacity="0.55"/>
+  <rect x="300" y="208" width="130" height="14" rx="7" fill="#fff" opacity="0.55"/>
+  <!-- the editor's note: a margin flag pointing at one line -->
+  <path d="M 196 82 L 270 82 Q 279 82 284 89 L 300 116 L 284 143 Q 279 150 270 150 L 196 150 Q 184 150 184 138 L 184 94 Q 184 82 196 82 Z" fill="#FFB020" stroke="#14141F" stroke-width="5" stroke-linejoin="round"/>
+  <text x="238" y="131" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="42" fill="#14141F">§3</text>
+  <!-- the like-heart, drawn last so nothing clips it -->
+  <path transform="translate(116 158) scale(3.1)" d="M 12 21 C 5 15, 1 10, 1 6 C 1 2.5, 3.5 1, 6 1 C 8.5 1, 11 3, 12 5.5 C 13 3, 15.5 1, 18 1 C 20.5 1, 23 2.5, 23 6 C 23 10, 19 15, 12 21 Z" fill="#FFB020" stroke="#14141F" stroke-width="1.8" stroke-linejoin="round"/>
 </svg>
 <div class="brand">Future Skills Series</div>
 <div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Lesson 4 of 6</span></div>

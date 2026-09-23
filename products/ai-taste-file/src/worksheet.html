@@ -15,6 +15,7 @@
   body.compact .page1 .panel { padding: 7px 12px; }
   body.compact .writebox { min-height: 84px; }
   body.compact .writebox.tall { min-height: 160px; }
+  body.compact .writebox.tall.revise { min-height: 136px; }
   .pairgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   body.compact .pairgrid .writebox { min-height: 84px; }
   .grid2 { gap: 14px; align-items: start; }
@@ -33,7 +34,7 @@
 </head>
 <body class="line-ai compact">
 
-<!-- Shared art: line-art feed card with a like-heart, a page with an editor's mark, a star -->
+<!-- Shared art: line-art feed card with a like-heart, a page with a margin-flag note, a star -->
 <svg width="0" height="0" style="position:absolute">
   <defs>
     <g id="feedcard">
@@ -45,8 +46,11 @@
       <rect x="70" y="30" width="44" height="60" rx="5" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
       <rect x="79" y="44" width="26" height="4" rx="2" fill="#14141F"/>
       <rect x="79" y="55" width="26" height="4" rx="2" fill="#14141F"/>
-      <path d="M 76 60 L 108 53" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
-      <path d="M 87 76 L 92 68 L 97 76" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="88" y="66" width="18" height="4" rx="2" fill="#14141F"/>
+      <rect x="79" y="77" width="22" height="4" rx="2" fill="#14141F"/>
+      <!-- the editor's note: a margin flag pointing at one line (it points; it never rewrites) -->
+      <path d="M 60 61 L 80 61 L 86 68 L 80 75 L 60 75 Q 57 75 57 72 L 57 64 Q 57 61 60 61 Z" fill="#fff" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
+      <text x="70" y="72" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="10" fill="#14141F">§3</text>
       <!-- the like-heart, drawn last so nothing clips it -->
       <path transform="translate(-15 4)" d="M 66 62 C 57 55, 53 50, 53 45 C 53 41, 56 39, 59 39 C 61.5 39, 64 41, 66 44 C 68 41, 70.5 39, 73 39 C 76 39, 79 41, 79 45 C 79 50, 75 55, 66 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
     </g>
@@ -71,7 +75,7 @@
 
   <div class="panel">
     <strong>Your For-You Page didn't guess your taste</strong> (what you like and how you like it) — <strong>you taught the app, one like at a time.</strong>
-    An AI doesn't know your taste unless you tell it, or it has saved notes about you. So write yours down in the five <strong>sections</strong> below. Your <strong>editor</strong> (the partner who gives you notes on your writing) may know ONLY what's on this page.
+    An AI doesn't know your taste unless you tell it, or it has saved notes about you. So write yours down in the five <strong>sections</strong> below. Your <strong>editor</strong> (the partner who gives you notes) can use ONLY what's on this page.
   </div>
 
   <div class="grid2">
@@ -101,7 +105,7 @@
   </div>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 3 — Pet Peeves (things you hate)</h2>
-  <p>Finish it two ways. (Example: "Editor, never make me sound like a textbook.")</p>
+  <p>Finish this sentence two ways. (Example: "Editor, never make me sound like a textbook.")</p>
   <p class="peeve"><strong>1.</strong> Editor, never <span class="blank wide"></span></p>
   <p class="peeve"><strong>2.</strong> Editor, never <span class="blank wide"></span></p>
 
@@ -113,7 +117,7 @@
   </div>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Section 5 — What I'm Into Right Now</h2>
-  <p>Music, shows, games — the feel of what you like right now ("fast anime-style battles," "sad songs on repeat"):</p>
+  <p>Music, shows, and games. Give the feel, not the name ("fast anime-style battles," "sad songs on repeat"):</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
 
   <div class="footer"><span>Teach AI Your Taste — My Taste File</span><span>© Future Skills Series</span><span>1</span></div>
@@ -122,23 +126,23 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
   <div class="titleblock"><div class="kicker">Student Session · Page 2 of 3</div><h1>The Editor's Chair</h1></div>
-  <p class="sub">The loop: <strong>YOU draft → your editor gives notes → YOU revise.</strong> Two roles: the <strong>Writer</strong> is you, on your own sheet. The <strong>Editor</strong> is your partner playing the AI (or a real AI): reads your taste file, gives 2 notes, never rewrites.</p>
+  <p class="sub">The loop: <strong>YOU draft → your editor gives notes → YOU revise.</strong> You are the <strong>writer</strong>. Your <strong>editor</strong> is your partner, playing the AI. They read your taste file, give 2 notes, and never rewrite.</p>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Step 1 — Draft It Yourself</h2>
   <p>Write 3–4 sentences: the <strong>About Me</strong> for a channel or profile page you would really make. Make it match your taste file. No AI, no partner.</p>
   <div class="writebox tall"></div>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Step 2 — The Editor's Notes</h2>
-  <p><strong>Swap sheets with your partner — all pages.</strong> You are now the EDITOR for their draft. Read THEIR taste file (page 1). Read THEIR draft. Then write 2 notes on THEIR sheet, in the boxes below. Each note names a taste-file section (1–5) and says what doesn't match it. Notes, not rewrites — never write their sentence for them. <em>With devices:</em> your teacher types one taste file and draft into an AI on the big screen, and the class checks its 2 notes.</p>
+  <p><strong>Swap ALL pages with your partner.</strong> Now you are the EDITOR. (1) Read their taste file on page 1. (2) Read their draft. (3) Write 2 notes in the boxes below. Each note names a section (1–5) and says what doesn't match it. Notes only. Never write their sentence for them.</p>
+  <p><em>A good note sounds like this:</em> "Section 1 says <em>funny and blunt</em> — sentence 2 sounds like a homework robot. Say it like you'd text a friend."</p>
   <p><strong>Note 1</strong> — points at taste-file section # <span class="blank short"></span></p>
   <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
   <p><strong>Note 2</strong> — points at taste-file section # <span class="blank short"></span></p>
   <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
   <h2><svg width="17" height="16" viewBox="0 0 24 22"><use href="#heart"/></svg> Then Talk — 2 Minutes</h2>
-  <div class="talk frame"><strong>Take turns. One of you talks first, then the other.</strong>
-  Speaker 1 is the partner whose first name comes first in the alphabet. Speaker 1 is the editor for the first minute: read your two notes out loud. Writer: ask ONE question. Then switch — Speaker 2 runs the same minute. Then swap sheets back.
-  <br><strong>Your one question</strong> is "Which sentence?" or "What would fit?" <strong>Your answer</strong> uses only their taste file — never your own taste.</div>
+  <div class="talk frame">Speaker 1 is the partner whose first name comes first in the alphabet. Speaker 1 is the editor for the first minute: read your two notes out loud. Writer: ask ONE question. Editor: answer from THEIR taste file — never your own taste. Then switch: Speaker 2 is the editor for minute two. Then swap sheets back.
+  <br><strong>The writer's question:</strong> "Which sentence?" or "What would fit?"</div>
 
   <div class="footer"><span>Teach AI Your Taste — The Editor's Chair</span><span>© Future Skills Series</span><span>2</span></div>
 </div>
@@ -149,24 +153,24 @@
   <p class="sub">Sheets swapped back? Good. From here on, this page is yours — your draft, your pen.</p>
 
   <h2><svg width="20" height="19" viewBox="0 0 24 24"><use href="#star"/></svg> Step 3 — Revise It Yourself</h2>
-  <p>Rewrite your draft below. <strong>Rewrite only the sentences your notes point at, plus enough around them to make it read.</strong> Star (*) every change you made. Your editor does not write a single word for you.</p>
-  <div class="writebox tall"></div>
+  <p>Copy your draft below. <strong>Change only the sentences your notes point at, plus any word that has to change with them.</strong> Star (*) every change. Your editor does not write a single word for you.</p>
+  <div class="writebox tall revise"></div>
 
   <table class="check list">
-    <tr><th>Editor's Loop Checklist — the loop, done right</th><th>✓</th></tr>
+    <tr><th>Editor Loop Checklist</th><th>✓</th></tr>
     <tr><td>I wrote the first draft myself — no AI, no copying.</td><td class="tick"></td></tr>
-    <tr><td>Each note names a taste-file section and says what to change — not "make it better."</td><td class="tick"></td></tr>
-    <tr><td>I rewrote it myself and starred every change.</td><td class="tick"></td></tr>
-    <tr><td>We talked it through: my editor read both notes out loud, I asked one question, and they answered from my taste file.</td><td class="tick"></td></tr>
+    <tr><td>My editor's notes each named a section and said what to change, not "make it better."</td><td class="tick"></td></tr>
+    <tr><td>I made the changes myself and starred every one.</td><td class="tick"></td></tr>
+    <tr><td>My editor read both notes aloud, I asked one question, and they answered from my taste file.</td><td class="tick"></td></tr>
   </table>
 
   <h2><svg width="20" height="19" viewBox="0 0 24 24"><use href="#star"/></svg> Last Check</h2>
   <p><strong>1.</strong> The one word or phrase you changed (old → new):</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
-  <p><strong>2.</strong> It fits my taste file because (name the section):</p>
+  <p><strong>2.</strong> The new version fits my taste file because (name the section):</p>
   <div class="lines"><div class="l"></div><div class="l"></div></div>
   <p><strong>3.</strong> Why would the note "make it better" NOT have helped you?</p>
-  <div class="lines"><div class="l"></div><div class="l"></div></div>
+  <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
 
   <div class="callout"><strong>Be honest with yourself:</strong> if the editor writes your sentence, your name is on words you never wrote — and you'd know it. Your draft, your pen, your taste.</div>
 
