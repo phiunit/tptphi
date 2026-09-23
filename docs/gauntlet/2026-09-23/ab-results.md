@@ -12,6 +12,9 @@ judge's directory and decoded by the lead afterward. A product whose rewrite doe
 | ai-taste-file (L4) | 19 | 19 | 0 | 0 | Yes |
 | ai-boring-work (L5) | 17 | 16 | 0 | 1 | Yes |
 | ai-agent-intern (L6) | 18 | 17 | 1 | 0 | Yes |
+| news-desk-frames | 33 | 29 | 2 | 2 | Yes, with fixes |
+| news-desk-frame-free | 2 | 1 | 1 | 0 | Yes, with fixes |
+| bundle-ai-line | 3 | 2 | 1 | 0 | Yes, with fixes |
 
 ## L1 notes
 The judge's own headline was "neither side wins across the board" — which is what a correctly blind judge
@@ -80,3 +83,16 @@ method list's numbers hang outside the text into the panel's padding, and the sh
 all eleven student frames. Before the border, the numbers sat on a tint and nobody could see the collision.
 Fixed by indenting the list with padding, which nothing overrides. A marker-to-border measurement across the
 other products found no other list inside a bordered box closer than 16px.
+
+## News Desk and bundle notes
+News Desk pack: 29 of 33 won. The shuffled letters read 16 to 15, a coin flip; decoded, every hanging step
+number, every "AI Literacy" masthead and every content contradiction the judge found was on the old pages.
+The two losses were slides 2 and 6, where the new text had turned into shorthand; sent back for plain steps.
+The free frame's page won and its teacher guide lost (a pair-check written as one run-on line); sent back.
+
+Bundle: only three of its pages existed before the pass to compare. The new cover and the new "Six Days at a
+Glance" page both won — the judge checked the 480-page class copy count and it holds. The new page of six covers
+lost: the mini covers were unreadable at print size and Lesson 1's FREE badge confused a paid buyer. Rebuilt with
+each cover beside what students do and its standards, and a caption explaining the badge. The day-by-day board
+cells were also printing "edItor gIves" — Space Grotesk Bold at 8.5pt drops the dot on a lowercase i — now set in
+the body font.

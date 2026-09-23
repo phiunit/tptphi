@@ -4,8 +4,28 @@
   .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .headrow svg.art { flex: 0 0 auto; margin-top: 2px; }
   h2 svg { flex: 0 0 auto; }
-  table.map th:first-child, table.map td:first-child { width: 26px; text-align: center; }
-  table.map td { font-size: 9.5pt; }
+  table.days td { font-size: 9.5pt; padding: 4px 6px; line-height: 1.3; }
+  table.days th { font-size: 8pt; padding: 4px 6px; }
+  table.days td:first-child { width: 190px; }
+  table.days td:nth-child(2) { width: 176px; }
+  table.days td:nth-child(3) { width: 160px; }
+  table.days .job { display: block; font-style: italic; font-size: 8.5pt; color: #55556B; }
+  table.pace td:first-child { width: 190px; }
+  table.days .n { display: block; font-size: 8pt; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--goldink); }
+  .board { font-weight: 700; font-size: 9pt; }
+  .count { margin: 4px 0 0; font-size: 10pt; }
+  /* the covers page: six lesson covers, small, each with what students do and its standards */
+  .covers { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; margin: 8px 0 6px; }
+  .les { display: flex; gap: 12px; align-items: flex-start; }
+  .les img { flex: 0 0 112px; width: 112px; aspect-ratio: 850 / 1100; border: 0.75pt solid var(--struct); border-radius: 6px; }
+  .les .n { display: block; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 8pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--goldink); }
+  .les strong { display: block; font-size: 11pt; margin-bottom: 3px; }
+  .les p { margin: 0 0 5px; font-size: 10pt; line-height: 1.35; }
+  .les p.codes { font-size: 8.5pt; font-weight: 700; color: var(--headink); }
+  p.note { font-size: 9.5pt; color: #55556B; }
+  table.key td { font-size: 9pt; padding: 3px 7px; }
+  table.key td:first-child { width: 132px; }
+  table.std td:first-child { width: 190px; }
 </style>
 </head>
 <body class="line-ai compact">
@@ -26,35 +46,27 @@
   <div class="headrow">
     <div>
       <div class="titleblock"><div class="kicker">Unit Overview &amp; Pacing Guide</div><h1>AI Literacy Unit</h1></div>
-      <p class="sub">Six 45-minute lessons. No prep, no devices required. Teach them in order for the full arc, or pull any single lesson — each one stands alone.</p>
+      <p class="sub">Six 45-minute lessons that run on paper. No prep, and no student ever needs an AI account. Teach them in order, or pull any one. Each lesson stands alone.</p>
     </div>
     <svg class="art" width="112" height="82" viewBox="10 4 104 90"><use href="#map"/></svg>
   </div>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> The Unit at a Glance</h2>
-  <table class="map">
-    <tr><th>#</th><th>Lesson</th><th>Students learn to…</th><th>The hook</th></tr>
-    <tr><td>1</td><td><strong>How to Talk to AI</strong></td><td>Write prompts a literal AI can't twist (P.R.O.)</td><td>AI is a literal genie</td></tr>
-    <tr><td>2</td><td><strong>What's in the Playlist?</strong></td><td>Explain how AI learns; find bias in a dataset</td><td>Training data is a playlist</td></tr>
-    <tr><td>3</td><td><strong>Hallucination Hunters</strong></td><td>Fact-check AI output; lateral-read claims</td><td>A newsroom fact desk</td></tr>
-    <tr><td>4</td><td><strong>Teach AI Your Taste</strong></td><td>Use AI for feedback, then revise their own work</td><td>Your For-You Page</td></tr>
-    <tr><td>5</td><td><strong>Robots Do the Boring Work</strong></td><td>Argue automation tradeoffs; think about future jobs</td><td>A studio task board</td></tr>
-    <tr><td>6</td><td><strong>Lead Your AI Squad</strong></td><td>Brief a team, assign roles, check the work (capstone)</td><td>You're the party leader</td></tr>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> Six Days at a Glance</h2>
+  <table class="days">
+    <tr><th>Lesson and human job</th><th>On the board</th><th>Groups</th><th>Print each · Set up</th></tr>
+    <tr><td><span class="n">Day 1</span><strong>How to Talk to AI</strong><span class="job">Human job: both</span></td><td><span class="board">P.R.O.</span> (Purpose, Requirements, Output)</td><td>Solo, then swap sheets</td><td>2 pages, no setup</td></tr>
+    <tr><td><span class="n">Day 2</span><strong>What's in the Playlist?</strong><span class="job">Human job: the check</span></td><td><span class="board">INPUT → PATTERNS → OUTPUT</span></td><td>Pairs (App and Caller); the next pair calls in request #7</td><td>2 pages, no setup</td></tr>
+    <tr><td><span class="n">Day 3</span><strong>Hallucination Hunters</strong><span class="job">Human job: the check</span></td><td><span class="board">UNDERLINE → RANK → LATERAL-READ → VERDICT</span></td><td>Pairs (fact desks), then solo drafts and a swap</td><td>3 pages + a board tally</td></tr>
+    <tr><td><span class="n">Day 4</span><strong>Teach AI Your Taste</strong><span class="job">Human job: both</span></td><td><span class="board">YOU draft → editor gives notes → YOU revise</span></td><td>Solo, then partners swap all pages</td><td>3 pages, no setup</td></tr>
+    <tr><td><span class="n">Day 5</span><strong>Robots Do the Boring Work</strong><span class="job">Human job: the start</span></td><td><span class="board">AUTOMATE · AUGMENT · KEEP&nbsp;HUMAN</span></td><td>Pairs, then groups of 4</td><td>2 pages + Defense Rubric<br>(Teacher Guide p.3)</td></tr>
+    <tr><td><span class="n">Day 6</span><strong>Lead Your AI Squad</strong><span class="job">Human job: both</span></td><td><span class="board">QUEST CARD → ROLES → CHECK THE LOOT → SHIP IT or RUN IT BACK</span></td><td>Teams of 3, set ahead</td><td>3 pages + 1 scrap sheet<br>Don't staple p.1</td></tr>
+    <tr><td><span class="n">After Lesson 6</span><strong>My AI Rules</strong><span class="job">Human job: both, in real life</span></td><td>One question per lesson</td><td>Solo, 15 minutes</td><td>1 page, no setup</td></tr>
   </table>
+  <p class="count"><strong>Copy count:</strong> 15 worksheet pages per student for the six lessons (2 + 2 + 3 + 3 + 2 + 3), plus 1 page for My AI Rules. For a class of 30, that is 480 pages and 30 scrap sheets.</p>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> The Through-Line</h2>
-  <div class="callout"><strong>Human → AI → Human.</strong> A good AI job has two human parts: a person starts it (the prompt) and a person ends it (the check). Those two jobs are the whole skill, and they transfer to every AI tool your students will ever touch. Lesson 1 trains the start; Lesson 3 trains the check; Lessons 2, 4, 5 and 6 each show where the human at each end has to step in — the gap in the playlist, the taste file you hand over, the call only a person makes, the loot only the leader checks.
-  <br><br><strong>The honesty policy, in one sentence students remember:</strong> AI is your editor, not your ghostwriter.</div>
-
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> Pacing Options</h2>
-  <table>
-    <tr><th>If you have…</th><th>Do this</th></tr>
-    <tr><td>Six class periods</td><td>One lesson per day, in order. The capstone lands on day 6.</td></tr>
-    <tr><td>Six weeks (one period/week)</td><td>One lesson per week. Open each with a 2-minute recall: "what were the two human jobs?"</td></tr>
-    <tr><td>Three block periods</td><td>Pair them: 1+2 (how to talk to it / how it thinks), 3+4 (check it / shape it), 5+6 (decide what it does / lead it).</td></tr>
-    <tr><td>One period, ever</td><td>Lesson 1 alone delivers the highest-value skill. Lesson 3 if your focus is media literacy.</td></tr>
-    <tr><td>A sub tomorrow</td><td>Lesson 3 — the sub reads a paragraph aloud, calls a vote, and hands out the fact desk. Zero devices, zero prep.</td></tr>
-  </table>
+  <div class="callout"><strong>Human → AI → Human.</strong> A good AI job has two human parts. A person starts it (the prompt), and a person ends it (the check). Lesson 1 trains both, and Lesson 3 goes deep on the check. Those two jobs carry over to whatever AI tool your students pick up next.
+  <br><br><strong>The honesty policy, in one sentence students can remember:</strong> AI is your editor, not your ghostwriter.</div>
 
   <div class="footer"><span>AI Literacy Unit — Overview &amp; Pacing Guide</span><span>© Future Skills Series</span><span>1</span></div>
 </div>
@@ -62,38 +74,85 @@
 <div class="page">
   <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> Standards Across the Unit</h2>
-  <p>Each lesson's teacher guide prints where its standards are <strong>taught</strong> and where they're <strong>assessed</strong>. Full verbatim text lives in each guide.</p>
-  <table>
-    <tr><th>Lesson</th><th>Anchor standards</th></tr>
-    <tr><td>1 · How to Talk to AI</td><td>ISTE 1.5.c · ISTE 1.3.b · CCSS ELA W.6.4</td></tr>
-    <tr><td>2 · What's in the Playlist?</td><td>CSTA 2-IC-21 · ISTE 1.1.d · CCSS ELA SL.6.1</td></tr>
-    <tr><td>3 · Hallucination Hunters</td><td>CCSS ELA RI.6.8 · ISTE 1.3.b · ISTE 1.3.d</td></tr>
-    <tr><td>4 · Teach AI Your Taste</td><td>CCSS ELA W.6.5 · ISTE 1.1.c · CCSS ELA SL.6.1</td></tr>
-    <tr><td>5 · Robots Do the Boring Work</td><td>CSTA 2-IC-20 · CCSS ELA SL.6.4 · ISTE 1.3.d</td></tr>
-    <tr><td>6 · Lead Your AI Squad</td><td>ISTE 1.5.c · ISTE 1.7.c · CCSS ELA W.6.4</td></tr>
-  </table>
-
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> What's in Every Lesson</h2>
-  <div class="grid2">
-    <div class="panel"><strong>For you</strong>
-      <ul><li>Scripted plan with timed blocks that total 45 minutes</li><li>Teacher guide: a key for every student item, exemplars, what-ifs</li><li>Standards with taught/assessed evidence</li><li>Support, extension, and ELL variants</li></ul></div>
-    <div class="panel"><strong>For students</strong>
-      <ul><li>2- to 3-page worksheet with honest write-in space</li><li>A real activity — partners, roles, and something to defend</li><li>An exit ticket that measures the objectives</li><li>Reading level checked to the middle-school range</li></ul></div>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> All Six Lessons</h2>
+  <div class="covers">
+    <div class="les"><img src="../../ai-prompting-101/dist/How%20to%20Talk%20to%20AI%20-%20Cover.png" alt="Lesson 1 cover"><div><span class="n">Lesson 1</span><strong>How to Talk to AI</strong><p>Repair three cursed wishes with P.R.O., then twist a partner's.</p><p class="codes">ISTE&nbsp;1.5.c · ISTE&nbsp;1.3.b · CCSS&nbsp;ELA&nbsp;W.6.4</p></div></div>
+    <div class="les"><img src="../../ai-training-data-crate/dist/What's%20in%20the%20Playlist%20-%20Cover.png" alt="Lesson 2 cover"><div><span class="n">Lesson 2</span><strong>What's in the Playlist?</strong><p>Play a one-playlist music app, then report who it let down.</p><p class="codes">CSTA&nbsp;2-IC-21 · ISTE&nbsp;1.1.d · CCSS&nbsp;ELA&nbsp;SL.6.1</p></div></div>
+    <div class="les"><img src="../../ai-fact-check-lab/dist/Hallucination%20Hunters%20-%20Cover.png" alt="Lesson 3 cover"><div><span class="n">Lesson 3</span><strong>Hallucination Hunters</strong><p>Run the school paper's fact desk: rank claims, name a second source, stamp RUN, FIX, or KILL.</p><p class="codes">CCSS&nbsp;ELA&nbsp;RI.6.8 · ISTE&nbsp;1.3.b · ISTE&nbsp;1.3.d</p></div></div>
+    <div class="les"><img src="../../ai-taste-file/dist/Teach%20AI%20Your%20Taste%20-%20Cover.png" alt="Lesson 4 cover"><div><span class="n">Lesson 4</span><strong>Teach AI Your Taste</strong><p>Write a taste file, give a partner two notes, then revise their own draft.</p><p class="codes">CCSS&nbsp;ELA&nbsp;W.6.5 · ISTE&nbsp;1.1.c · CCSS&nbsp;ELA&nbsp;SL.6.1</p></div></div>
+    <div class="les"><img src="../../ai-boring-work/dist/Robots%20Do%20the%20Boring%20Work%20-%20Cover.png" alt="Lesson 5 cover"><div><span class="n">Lesson 5</span><strong>Robots Do the Boring Work</strong><p>Sort 12 studio tasks, then defend one trade out loud.</p><p class="codes">CSTA&nbsp;2-IC-20 · CCSS&nbsp;ELA&nbsp;SL.6.4 · ISTE&nbsp;1.3.d</p></div></div>
+    <div class="les"><img src="../../ai-agent-intern/dist/Lead%20Your%20AI%20Squad%20-%20Cover.png" alt="Lesson 6 cover"><div><span class="n">Lesson 6</span><strong>Lead Your AI Squad</strong><p>Write a quest card, play the AI squad, then check the loot.</p><p class="codes">ISTE&nbsp;1.5.c · ISTE&nbsp;1.7.c · CCSS&nbsp;ELA&nbsp;W.6.4</p></div></div>
   </div>
+  <p class="note">Lesson 1 is also free on its own (that's its FREE badge); it's included here. Each teacher guide prints the full text of its standards, and where each one is taught and assessed.</p>
 
-  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> Running It With No Devices</h2>
-  <p>Every lesson is designed to work on paper. In Lessons 1, 2, 4, and 6 the <em>students and teacher play the AI</em> — which is often the better lesson, because a human being deliberately literal is funnier and more memorable than a chatbot. Where devices help, each plan says exactly what they add.</p>
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> In Every Lesson Folder</h2>
+  <p>Five files: Lesson Plan, Worksheet, Worksheet (Fillable), Teacher Guide, and Slides.</p>
+  <ul>
+    <li>2-page scripted plan, every block timed to 45 minutes, with a what-if under each block</li>
+    <li>2- to 3-page worksheet, checked at grade 8.5 reading level or below, plus a fillable copy</li>
+    <li>3-page teacher guide: a key or exemplar for every student item, and a standards map</li>
+    <li>11- to 13-slide deck, with the script and keys in the speaker notes</li>
+    <li>Support, Extension, ELL, and no-device variants, written into every plan</li>
+  </ul>
+
+  <div class="footer"><span>AI Literacy Unit — Overview &amp; Pacing Guide</span><span>© Future Skills Series</span><span>2</span></div>
+</div>
+
+<div class="page">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
 
   <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> Before You Start</h2>
   <ul>
-    <li><strong>Set your class AI rule out loud on day one.</strong> "AI is your editor, not your ghostwriter" is the whole policy; Lesson 1's teacher guide has the discussion guide (three questions with answers).</li>
-    <li><strong>You don't need to be an AI expert.</strong> Every plan gives you the lines. If a student asks something you can't answer, the honest answer — "let's check that" — is the lesson.</li>
-    <li><strong>Expect the fact-checking lesson to be the sticky one.</strong> Students remember catching the machine being wrong.</li>
+    <li><strong>Say your class AI rule out loud on day one.</strong> "AI is your editor, not your ghostwriter" is the whole policy. Lesson 1's teacher guide has a three-question talk to go with it.</li>
+    <li><strong>You don't need to be an AI expert.</strong> Every plan gives you the lines. If a student asks something you can't answer, say "Let's check that." That honest answer is the lesson.</li>
+    <li><strong>Expect the fact-checking lesson to stick.</strong> Students remember the story they almost printed.</li>
   </ul>
 
-  <div class="callout"><strong>Thank you.</strong> A review helps other teachers find this unit, and following the store gets you new Future Skills drops the day they land — money and risk, entrepreneurship, and game design are on the way. Something off? Leave a question on the listing before a review; we fix fast.</div>
 
-  <div class="footer"><span>AI Literacy Unit — Overview &amp; Pacing Guide</span><span>© Future Skills Series</span><span>2</span></div>
+
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> Pacing Options</h2>
+  <table class="pace">
+    <tr><th>If you have…</th><th>Do this</th></tr>
+    <tr><td>Six class periods</td><td>One lesson a day, in order. The capstone lands on day 6.</td></tr>
+    <tr><td>Six weeks, one period a week</td><td>One lesson a week. Spend the first 2 minutes of each warm-up on one recall: "What were the two human jobs?"</td></tr>
+    <tr><td>Three block periods</td><td>Pair them: 1+2 (how to talk to it / how it thinks), 3+4 (check it / shape it), 5+6 (decide what it does / lead it).</td></tr>
+    <tr><td>One period, ever</td><td>Teach Lesson 1. It's the skill they'll use most. Media literacy focus? Teach Lesson 3.</td></tr>
+    <tr><td>A sub tomorrow</td><td>Lesson 3. Every block is scripted: the sub reads one paragraph aloud, calls a vote, then follows the plan. No devices, no prep.</td></tr>
+  </table>
+
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> Routines That Repeat</h2>
+  <p>Teach these once, and they carry through all six days.</p>
+  <ul>
+    <li><strong>Who goes first:</strong> the partner whose first name comes first in the alphabet. Lessons 1–3 call that person Partner A, Lessons 4–5 call them Speaker 1, and Lesson 6 uses the same rule to pick who holds the quest card. Same first letter? Check the second letter.</li>
+    <li><strong>Uneven numbers:</strong> every plan says how to run one trio (on day 6, a team of 4 or 2).</li>
+    <li><strong>Every lesson ends solo:</strong> an exit ticket you collect. Some worksheets call it the Last Check; it's the same routine. The keys are in each teacher guide.</li>
+    <li><strong>The callbacks:</strong> Lessons 2, 3, 4, and 6 each reach back to Lesson 1's genie or P.R.O. Each one is an optional aside, so a class that skipped Lesson 1 can skip it too.</li>
+  </ul>
+
+  <div class="footer"><span>AI Literacy Unit — Overview &amp; Pacing Guide</span><span>© Future Skills Series</span><span>3</span></div>
+</div>
+
+<div class="page">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
+
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> Running It With No Devices</h2>
+  <p>Every lesson runs on paper. In Lessons 1, 2, 4, and 6, <em>the students and you play the AI</em>. That is often the better lesson: a classmate playing a twisty genie or a one-playlist app is funnier than a chatbot, and easier to catch. Where devices help, each plan says what they add. Any AI tool a plan mentions runs on your projected screen, never on a student account.</p>
+
+
+  <h2><svg width="18" height="18" viewBox="0 0 24 24"><use href="#star"/></svg> My AI Rules — End of Unit</h2>
+  <p>One page, one question per lesson; it sits next to this overview in the download. Give it the day after Lesson 6, about 15 minutes, solo. Score each row: <strong>Got it</strong> = the lesson's move, used on something real in the student's life. <strong>Getting there</strong> = the move is there, but it could fit anyone. <strong>Not yet</strong> = it only repeats the lesson's words, or the row is blank.</p>
+  <table class="key">
+    <tr><th>Row</th><th>A "Got it" answer</th></tr>
+    <tr><td>1 · The genie</td><td>"I'm in 7th grade science, studying cells. Make me 5 quiz questions, one per line, with the answers underneath. Use only words from my notes."</td></tr>
+    <tr><td>2 · The playlist</td><td>"A music app trained mostly on English songs could leave out my cousin. She'd ask for cumbia."</td></tr>
+    <tr><td>3 · The fact desk</td><td>"A friend said a new game drops Friday. I'd check the game company's own site."</td></tr>
+    <tr><td>4 · The taste file</td><td>"No textbook voice. Say it like I'd text a friend."</td></tr>
+    <tr><td>5 · The task board</td><td>"Coaching my little brother before his first game. He needs someone who knows him."</td></tr>
+    <tr><td>6 · The squad</td><td>"The facts. I'd look for a name, date, or number that isn't on our quest card."</td></tr>
+  </table>
+
+  <div class="callout"><strong>Thank you.</strong> A review helps other teachers find this unit. Follow the store to hear when new Future Skills lessons land; money, entrepreneurship, and game design lessons are in the works. Questions or a problem? Ask on the listing before leaving a review — most fixes take a day.</div>
+
+  <div class="footer"><span>AI Literacy Unit — Overview &amp; Pacing Guide</span><span>© Future Skills Series</span><span>4</span></div>
 </div>
 </body></html>

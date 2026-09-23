@@ -1,0 +1,155 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../../brand/templates/print.css">
+<style>
+  .headrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  .blank { display: inline-block; border-bottom: 1.25pt solid var(--rule); min-width: 76px; height: 18px; vertical-align: bottom; }
+  .blank.wide { min-width: 170px; }
+  .lines .l { height: 24px; }
+  .rule { display: flex; gap: 12px; align-items: flex-start; margin: 8px 0 0; }
+  .rule .icon { flex: 0 0 46px; width: 46px; height: 40px; margin-top: 2px; }
+  .rule .body { flex: 1; }
+  .rule .body h3 { margin: 0 0 1px; font-size: 11pt; }
+  .rule .body h3 span { font-family: 'Space Grotesk', sans-serif; font-size: 8.5pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--goldink); margin-left: 6px; }
+  .rule .body p { margin: 0; }
+  h2 svg { flex: 0 0 auto; }
+</style>
+</head>
+<body class="line-ai compact">
+
+<!-- The six lesson icons, as each lesson's own worksheet draws them -->
+<svg width="0" height="0" style="position:absolute"><defs>
+  <g id="rules">
+    <rect x="18" y="10" width="88" height="78" rx="11" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+    <g stroke="#14141F" stroke-width="3.2" stroke-linecap="round">
+      <line x1="38" y1="30" x2="90" y2="30"/><line x1="38" y1="48" x2="90" y2="48"/><line x1="38" y1="66" x2="74" y2="66"/>
+    </g>
+    <g fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 24 30 L 27 33 L 32 26"/><path d="M 24 48 L 27 51 L 32 44"/><path d="M 24 66 L 27 69 L 32 62"/>
+    </g>
+    <circle cx="100" cy="14" r="9" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+  </g>
+  <g id="lamp">
+    <path d="M 34 62 Q 60 49 86 62 Q 79 78 60 78 Q 41 78 34 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 38 59 Q 26 51 20 41 Q 29 38 37 43 Q 44 48 49 55 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 51 56 Q 60 52 69 56 L 66 61 Q 60 58 54 61 Z" fill="#14141F"/>
+    <circle cx="60" cy="49" r="3.5" fill="#14141F"/>
+    <path d="M 86 62 Q 99 55 96 45 Q 94 39 88 40" fill="none" stroke="#14141F" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 22 38 C 18 30, 28 27, 26 19 C 24 12, 32 8, 36 12" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="39" cy="9" r="2.5" fill="#FFB020" stroke="#14141F" stroke-width="1.5"/>
+  </g>
+  <g id="playlist">
+    <rect x="20" y="10" width="88" height="78" rx="12" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+    <g stroke="#14141F" stroke-width="3.4" stroke-linecap="round">
+      <line x1="36" y1="30" x2="92" y2="30"/><line x1="36" y1="46" x2="92" y2="46"/><line x1="36" y1="62" x2="74" y2="62"/>
+    </g>
+    <circle cx="34" cy="72" r="8.5" fill="#FFB020" stroke="#14141F" stroke-width="3"/>
+    <path d="M 42.5 72 V 50 L 62 46 V 66" fill="none" stroke="#14141F" stroke-width="3.2" stroke-linecap="round"/>
+    <circle cx="53.5" cy="66" r="8.5" fill="#FFB020" stroke="#14141F" stroke-width="3"/>
+  </g>
+  <g id="magnifier">
+    <rect x="6" y="10" width="54" height="68" rx="5" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+    <line x1="15" y1="24" x2="51" y2="24" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="15" y1="36" x2="51" y2="36" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="15" y1="48" x2="42" y2="48" stroke="#7A5200" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="15" y1="60" x2="51" y2="60" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="66" cy="50" r="22" fill="#FFF8EA" stroke="#14141F" stroke-width="4"/>
+    <line x1="55" y1="50" x2="77" y2="50" stroke="#7A5200" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 82 66 L 95 79" stroke="#14141F" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 82 66 L 95 79" stroke="#FFB020" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <g id="tastefile">
+    <rect x="6" y="12" width="74" height="56" rx="10" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+    <rect x="17" y="25" width="30" height="5" rx="2.5" fill="#14141F"/>
+    <rect x="17" y="36" width="40" height="5" rx="2.5" fill="#14141F"/>
+    <rect x="70" y="30" width="44" height="60" rx="5" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
+    <rect x="79" y="44" width="26" height="4" rx="2" fill="#14141F"/>
+    <rect x="79" y="55" width="26" height="4" rx="2" fill="#14141F"/>
+    <rect x="88" y="66" width="18" height="4" rx="2" fill="#14141F"/>
+    <rect x="79" y="77" width="22" height="4" rx="2" fill="#14141F"/>
+    <path d="M 60 61 L 80 61 L 86 68 L 80 75 L 60 75 Q 57 75 57 72 L 57 64 Q 57 61 60 61 Z" fill="#fff" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="70" y="72" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="10" fill="#14141F">§3</text>
+    <path transform="translate(-15 4)" d="M 66 62 C 57 55, 53 50, 53 45 C 53 41, 56 39, 59 39 C 61.5 39, 64 41, 66 44 C 68 41, 70.5 39, 73 39 C 76 39, 79 41, 79 45 C 79 50, 75 55, 66 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <g id="board">
+    <rect x="10" y="20" width="100" height="58" rx="9" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+    <line x1="43" y1="26" x2="43" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="77" y1="26" x2="77" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+    <rect x="19" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+    <rect x="19" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+    <rect x="52" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+    <rect x="85" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+    <rect x="85" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+    <rect x="85" y="60" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+    <rect x="20" y="3" width="26" height="14" rx="5" fill="#fff" stroke="#14141F" stroke-width="2.5"/>
+    <circle cx="28" cy="10" r="2" fill="#14141F"/><circle cx="38" cy="10" r="2" fill="#14141F"/>
+    <circle cx="98" cy="8" r="4" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+  </g>
+  <g id="squad">
+    <circle cx="18" cy="48" r="9" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+    <path d="M 4 84 Q 4 62 18 62 Q 32 62 32 84 Z" fill="#F6F6FA" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="46" cy="48" r="9" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+    <path d="M 32 84 Q 32 62 46 62 Q 60 62 60 84 Z" fill="#F6F6FA" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="78" cy="34" r="11" fill="#FFB020" stroke="#14141F" stroke-width="3"/>
+    <path d="M 61 84 Q 61 50 78 50 Q 95 50 95 84 Z" fill="#FFB020" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="86" y="56" width="22" height="16" rx="3" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+    <line x1="91" y1="62" x2="103" y2="62" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="91" y1="67" x2="99" y2="67" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</defs></svg>
+
+<div class="page">
+  <div class="masthead"><span class="unit">Future Skills · AI Literacy</span><span class="grade">Grades 6–8</span></div>
+  <div class="headrow">
+    <div>
+      <div class="titleblock"><div class="kicker">End of Unit</div><h1>My AI Rules</h1></div>
+      <p class="sub">Name: <span class="blank wide"></span>&nbsp; Class: <span class="blank"></span>&nbsp; Date: <span class="blank"></span></p>
+    </div>
+    <svg width="112" height="82" viewBox="10 4 104 90"><use href="#rules"/></svg>
+  </div>
+
+  <div class="panel">
+    <strong>Six lessons, six rules.</strong> Write each one for your real life, in your own words. Stuck? Look back at that lesson's sheet.
+    <strong>P.R.O.</strong> means Purpose, Requirements, Output. Your <strong>taste file</strong> lists how you like to sound.
+  </div>
+
+  <div class="rule"><svg class="icon" viewBox="12 2 92 82"><use href="#lamp"/></svg><div class="body">
+    <h3>The genie <span>Lesson 1</span></h3>
+    <p>Write one P.R.O. prompt you could really use next week. Give it at least two rules.</p>
+    <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  </div></div>
+
+  <div class="rule"><svg class="icon" viewBox="14 6 100 86"><use href="#playlist"/></svg><div class="body">
+    <h3>The playlist <span>Lesson 2</span></h3>
+    <p>Pick an app you use. Who could its playlist leave out? What would they ask for?</p>
+    <div class="lines"><div class="l"></div><div class="l"></div><div class="l"></div></div>
+  </div></div>
+
+  <div class="rule"><svg class="icon" viewBox="2 6 100 78"><use href="#magnifier"/></svg><div class="body">
+    <h3>The fact desk <span>Lesson 3</span></h3>
+    <p>Write one thing you heard this week that you would check. Where would you check it?</p>
+    <div class="lines"><div class="l"></div><div class="l"></div></div>
+  </div></div>
+
+  <div class="rule"><svg class="icon" viewBox="2 8 116 86"><use href="#tastefile"/></svg><div class="body">
+    <h3>The taste file <span>Lesson 4</span></h3>
+    <p>Write one line an editor should always know about how YOU sound.</p>
+    <div class="lines"><div class="l"></div><div class="l"></div></div>
+  </div></div>
+
+  <div class="rule"><svg class="icon" viewBox="0 0 120 88"><use href="#board"/></svg><div class="body">
+    <h3>The task board <span>Lesson 5</span></h3>
+    <p>Name one task you would never hand to a robot. Why does it need a person?</p>
+    <div class="lines"><div class="l"></div><div class="l"></div></div>
+  </div></div>
+
+  <div class="rule"><svg class="icon" viewBox="0 20 112 68"><use href="#squad"/></svg><div class="body">
+    <h3>The squad <span>Lesson 6</span></h3>
+    <p>Your AI squad hands back its work. What is the first thing you check, and why?</p>
+    <div class="lines"><div class="l"></div><div class="l"></div></div>
+  </div></div>
+
+  <div class="callout"><strong>The rule under all six:</strong> you start the job, AI does the middle, and you check what comes back.</div>
+
+  <div class="footer"><span>AI Literacy Unit — My AI Rules</span><span>© Future Skills Series</span><span>1</span></div>
+</div>
+</body></html>

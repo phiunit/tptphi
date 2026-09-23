@@ -28,17 +28,20 @@ standards:
 description: |
   NO STUDENT AI ACCOUNTS NEEDED. All six 45-minute lessons run on paper.
 
-  Your students already use AI. This unit teaches them to use it well, question what comes back, and see how it works underneath.
+  Your students already use AI. This unit teaches the two human jobs in any good AI task. A person starts it clearly, and a person checks what comes back.
 
   Six AI literacy lessons, ready to teach the morning you buy them. Run one a day for six class periods, or one a week for six weeks. The unit works in districts that restrict student AI use or student devices. Where devices are allowed, each plan says exactly what they add.
 
   THE ARC
-  Lesson 1. How to Talk to AI. Students write prompts that can't be twisted.
-  Lesson 2. What's in the Playlist? They discover how AI learns and where bias comes from.
-  Lesson 3. Hallucination Hunters. They fact-check AI output like a newsroom.
-  Lesson 4. Teach AI Your Taste. They teach AI their own voice, then revise their own writing.
-  Lesson 5. Robots Do the Boring Work. They argue the tradeoffs of automation and future jobs.
-  Lesson 6. Lead Your AI Squad. They run a team of AI helpers in a capstone that reuses every skill.
+  Lesson 1. How to Talk to AI. AI is a literal genie. Students write wishes it can't twist.
+  Lesson 2. What's in the Playlist? Students play a music app with a one-vibe playlist, then find where bias comes from.
+  Lesson 3. Hallucination Hunters. They run the fact desk at the school paper. Nothing prints until they clear it.
+  Lesson 4. Teach AI Your Taste. They write a taste file, get two notes from a partner playing the AI, then revise their own writing.
+  Lesson 5. Robots Do the Boring Work. They run a recording studio, decide which tasks go to AI, and defend the trade out loud.
+  Lesson 6. Lead Your AI Squad. They write a quest card, play the AI squad in silence, and check the loot. The capstone reuses the prompt and the check.
+
+  THE LESSONS TALK TO EACH OTHER
+  Lesson 2 opens where the genie left off. Lesson 3 sets the genie next to autocomplete: one gives you what you said, the other gives you what's likely. Lesson 4's taste file is the R in P.R.O., written down once. Lesson 6 grows P.R.O. into a four-part quest card. All six pick who goes first the same way, so nobody argues about who starts. Every callback is an optional aside, so each lesson still works alone.
 
   WHAT YOU GET, FOR ALL SIX LESSONS
   • Lesson plan, 2 pages. Every block timed to 45 minutes, every transition scripted.
@@ -46,21 +49,26 @@ description: |
   • Fillable worksheet PDF. Students type into it on Chromebooks and tablets.
   • Teacher guide, 3 pages. An answer key or exemplar for every student item.
   • Slide deck, 11 to 13 slides (.pptx). Teacher script and keys sit in the speaker notes.
-  • Support, Extension, ELL and fully unplugged variants, written into every plan.
-  • Unit Overview and Pacing Guide, 2 pages.
-  That is 31 files in the download. Zero prep: print it tonight, teach it tomorrow.
+  • Support, Extension, ELL, and fully unplugged variants, written into every plan.
+
+  PLUS, FOR THE WHOLE UNIT
+  • Unit overview and pacing guide, 4 pages. Six days at a glance with print counts, all six covers, the routines that repeat, and a standards map.
+  • My AI Rules, 1 page, plus a fillable copy. One end-of-unit question per lesson, with a key and a 3-level scale in the overview.
+  That is 33 files in the download, with one folder per lesson. Zero prep. Print it tonight, teach it tomorrow.
 
   THE THROUGH-LINE
-  A good AI job runs human to AI to human. A person starts it with the prompt. A person ends it with the check. That transfers to every AI tool your students will ever touch. And the honesty policy is one sentence they remember: AI is your editor, not your ghostwriter.
+  A good AI job runs human to AI to human. A person starts it with the prompt. A person ends it with the check. The two jobs carry over to whatever AI tool your students pick up next. And the honesty policy is one sentence they can remember: AI is your editor, not your ghostwriter.
 
-  Standards: ISTE 1.5.c, ISTE 1.3.b, CSTA 2-IC-20, CSTA 2-IC-21, CCSS ELA W.6.4, W.6.5, RI.6.8, SL.6.1, SL.6.4. Every teacher guide prints where its standards are taught and where they are assessed, so the unit survives an admin review.
+  Standards: ISTE 1.5.c, ISTE 1.3.b, CSTA 2-IC-20, CSTA 2-IC-21, CCSS ELA W.6.4, W.6.5, RI.6.8, SL.6.1, SL.6.4. Individual lessons also cite ISTE 1.1.c, 1.1.d, 1.3.d, and 1.7.c. Every teacher guide prints where its standards are taught and where they are assessed, so the unit survives an admin review.
 
   $14 buys all six middle school AI lessons. The five paid lessons cost $20 on their own, so you save 30%. Lesson 1 is free on its own if you want to try the unit first.
 includes:
-  - "Lesson 1: How to Talk to AI (prompting - The Literal Genie)"
-  - "Lesson 2: What's in the Playlist? (how AI learns + bias)"
+  - "Lesson 1: How to Talk to AI (prompting: the literal genie)"
+  - "Lesson 2: What's in the Playlist? (how AI learns, and bias)"
   - "Lesson 3: Hallucination Hunters (fact-checking AI)"
-  - "Lesson 4: Teach AI Your Taste (feedback + revision)"
-  - "Lesson 5: Robots Do the Boring Work (AI + future jobs)"
+  - "Lesson 4: Teach AI Your Taste (feedback and revision)"
+  - "Lesson 5: Robots Do the Boring Work (AI and future jobs)"
   - "Lesson 6: Lead Your AI Squad (AI agents capstone)"
-  - "Unit Overview + Pacing Guide (printable)"
+  - "Unit Overview and Pacing Guide (4 pages, printable)"
+  - "My AI Rules (end-of-unit student sheet, printable and fillable)"
+preview_pages: [unit-overview-p1, unit-overview-p2, ai-boring-work/worksheet-p1, ai-agent-intern/worksheet-p1]

@@ -21,30 +21,120 @@ h1 span { color: #FFB020; }
 .sub { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; margin-top: 26px; line-height: 1.15; color: #FFFFFF; position: relative; z-index: 2; max-width: 730px; }
 .badge { position: absolute; top: 46px; right: 46px; background: #FFB020; color: #14141F; font-family: 'Space Grotesk', sans-serif; font-weight: 700;
   font-size: 30px; padding: 18px 26px; border-radius: 20px; transform: rotate(6deg); z-index: 3; white-space: nowrap; }
+/* The six lesson icons are drawn for a 90px worksheet header; on the cover they are read at thumbnail size,
+   so every outline is thickened here (presentation attributes lose to CSS). */
+.art [stroke-width="3.5"], .art [stroke-width="3.4"], .art [stroke-width="3.2"], .art [stroke-width="3"] { stroke-width: 5.5; }
+.art [stroke-width="2.5"] { stroke-width: 4.2; } .art [stroke-width="2"] { stroke-width: 3.6; } .art [stroke-width="1.5"] { stroke-width: 3; }
+.art [stroke-width="4"] { stroke-width: 6; } .art [stroke-width="4.5"], .art [stroke-width="5"] { stroke-width: 7; } .art [stroke-width="9"] { stroke-width: 12; }
 </style></head><body>
 <div class="star g" style="width:10px;height:10px;left:690px;top:230px"></div>
 <div class="star" style="width:4px;height:4px;left:560px;top:140px"></div>
 <div class="star g" style="width:8px;height:8px;left:790px;top:400px"></div>
 <div class="star" style="width:5px;height:5px;left:760px;top:560px"></div>
-<div class="star g" style="width:6px;height:6px;left:560px;top:980px"></div>
-<!-- Art: six lesson books rising like steps — five in the light tint, the sixth (the capstone) in gold with its
-     title lines in ink. Solid fills only, fully inside the frame (bottom-right). -->
-<svg width="380" height="300" viewBox="0 0 380 300" style="position:absolute; right:48px; bottom:42px; z-index:1;">
-  <g stroke="#14141F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="8"   y="150" width="84" height="120" rx="12" fill="#FFD27A"/>
-    <rect x="58"  y="130" width="84" height="140" rx="12" fill="#FFD27A"/>
-    <rect x="108" y="110" width="84" height="160" rx="12" fill="#FFD27A"/>
-    <rect x="158" y="90"  width="84" height="180" rx="12" fill="#FFD27A"/>
-    <rect x="208" y="70"  width="84" height="200" rx="12" fill="#FFD27A"/>
-    <rect x="258" y="50"  width="92" height="220" rx="12" fill="#FFB020"/>
-    <line x1="282" y1="92"  x2="326" y2="92"/><line x1="282" y1="120" x2="326" y2="120"/><line x1="282" y1="148" x2="312" y2="148"/>
+<!-- Art: the six lessons as six books on one shelf, rising in teaching order. Each book carries the icon its
+     own worksheet prints (lamp, playlist, magnifier, taste file, task board, squad) and its lesson number; the
+     capstone is the gold one. Light tint and gold fills, ink outlines, fully inside the frame. -->
+<svg class="art" width="730" height="300" viewBox="0 0 730 300" style="position:absolute; left:60px; bottom:40px; z-index:1;">
+  <defs>
+    <g id="lamp">
+      <path d="M 34 62 Q 60 49 86 62 Q 79 78 60 78 Q 41 78 34 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M 38 59 Q 26 51 20 41 Q 29 38 37 43 Q 44 48 49 55 Z" fill="#FFB020" stroke="#14141F" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M 51 56 Q 60 52 69 56 L 66 61 Q 60 58 54 61 Z" fill="#14141F"/>
+      <circle cx="60" cy="49" r="3.5" fill="#14141F"/>
+      <path d="M 86 62 Q 99 55 96 45 Q 94 39 88 40" fill="none" stroke="#14141F" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M 22 38 C 18 30, 28 27, 26 19 C 24 12, 32 8, 36 12" fill="none" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="39" cy="9" r="2.5" fill="#FFB020" stroke="#14141F" stroke-width="1.5"/>
+    </g>
+    <g id="playlist">
+      <rect x="20" y="10" width="88" height="78" rx="12" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+      <g stroke="#14141F" stroke-width="3.4" stroke-linecap="round">
+        <line x1="36" y1="30" x2="92" y2="30"/><line x1="36" y1="46" x2="92" y2="46"/><line x1="36" y1="62" x2="74" y2="62"/>
+      </g>
+      <circle cx="34" cy="72" r="8.5" fill="#FFB020" stroke="#14141F" stroke-width="3"/>
+      <path d="M 42.5 72 V 50 L 62 46 V 66" fill="none" stroke="#14141F" stroke-width="3.2" stroke-linecap="round"/>
+      <circle cx="53.5" cy="66" r="8.5" fill="#FFB020" stroke="#14141F" stroke-width="3"/>
+    </g>
+    <g id="magnifier">
+      <rect x="6" y="10" width="54" height="68" rx="5" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+      <line x1="15" y1="24" x2="51" y2="24" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <line x1="15" y1="36" x2="51" y2="36" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <line x1="15" y1="48" x2="42" y2="48" stroke="#7A5200" stroke-width="4.5" stroke-linecap="round"/>
+      <line x1="15" y1="60" x2="51" y2="60" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="66" cy="50" r="22" fill="#FFF8EA" stroke="#14141F" stroke-width="4"/>
+      <line x1="55" y1="50" x2="77" y2="50" stroke="#7A5200" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 82 66 L 95 79" stroke="#14141F" stroke-width="9" stroke-linecap="round"/>
+      <path d="M 82 66 L 95 79" stroke="#FFB020" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+    <g id="tastefile">
+      <rect x="6" y="12" width="74" height="56" rx="10" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+      <rect x="17" y="25" width="30" height="5" rx="2.5" fill="#14141F"/>
+      <rect x="17" y="36" width="40" height="5" rx="2.5" fill="#14141F"/>
+      <rect x="70" y="30" width="44" height="60" rx="5" fill="#FFB020" stroke="#14141F" stroke-width="3.5"/>
+      <rect x="79" y="44" width="26" height="4" rx="2" fill="#14141F"/>
+      <rect x="79" y="55" width="26" height="4" rx="2" fill="#14141F"/>
+      <rect x="88" y="66" width="18" height="4" rx="2" fill="#14141F"/>
+      <rect x="79" y="77" width="22" height="4" rx="2" fill="#14141F"/>
+      <path d="M 60 61 L 80 61 L 86 68 L 80 75 L 60 75 Q 57 75 57 72 L 57 64 Q 57 61 60 61 Z" fill="#fff" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
+      <text x="70" y="72" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="10" fill="#14141F">§3</text>
+      <path transform="translate(-15 4)" d="M 66 62 C 57 55, 53 50, 53 45 C 53 41, 56 39, 59 39 C 61.5 39, 64 41, 66 44 C 68 41, 70.5 39, 73 39 C 76 39, 79 41, 79 45 C 79 50, 75 55, 66 62 Z" fill="#FFB020" stroke="#14141F" stroke-width="2.5" stroke-linejoin="round"/>
+    </g>
+    <g id="board">
+      <rect x="10" y="20" width="100" height="58" rx="9" fill="#fff" stroke="#14141F" stroke-width="3.5"/>
+      <line x1="43" y1="26" x2="43" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <line x1="77" y1="26" x2="77" y2="72" stroke="#14141F" stroke-width="3" stroke-linecap="round"/>
+      <rect x="19" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="19" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="52" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="30" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="45" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="85" y="60" width="16" height="9" rx="3" fill="#FFB020" stroke="#14141F" stroke-width="2.5"/>
+      <rect x="20" y="3" width="26" height="14" rx="5" fill="#fff" stroke="#14141F" stroke-width="2.5"/>
+      <circle cx="28" cy="10" r="2" fill="#14141F"/><circle cx="38" cy="10" r="2" fill="#14141F"/>
+      <circle cx="98" cy="8" r="4" fill="#FFB020" stroke="#14141F" stroke-width="2"/>
+    </g>
+    <g id="squad">
+      <circle cx="18" cy="48" r="9" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+      <path d="M 4 84 Q 4 62 18 62 Q 32 62 32 84 Z" fill="#F6F6FA" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="46" cy="48" r="9" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+      <path d="M 32 84 Q 32 62 46 62 Q 60 62 60 84 Z" fill="#F6F6FA" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="78" cy="34" r="11" fill="#FFB020" stroke="#14141F" stroke-width="3"/>
+      <path d="M 61 84 Q 61 50 78 50 Q 95 50 95 84 Z" fill="#FFB020" stroke="#14141F" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="86" y="56" width="22" height="16" rx="3" fill="#F6F6FA" stroke="#14141F" stroke-width="3"/>
+      <line x1="91" y1="62" x2="103" y2="62" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="91" y1="67" x2="99" y2="67" stroke="#14141F" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <!-- six books, 108 wide, 16 apart, rising 20px a step; the shelf is the gold bar underneath -->
+  <g stroke="#14141F" stroke-width="7" stroke-linejoin="round">
+    <rect x="4"   y="104" width="108" height="178" rx="14" fill="#FFD27A"/>
+    <rect x="128" y="84"  width="108" height="198" rx="14" fill="#FFD27A"/>
+    <rect x="252" y="64"  width="108" height="218" rx="14" fill="#FFD27A"/>
+    <rect x="376" y="44"  width="108" height="238" rx="14" fill="#FFD27A"/>
+    <rect x="500" y="24"  width="108" height="258" rx="14" fill="#FFD27A"/>
+    <rect x="624" y="4"   width="102" height="278" rx="14" fill="#FFB020"/>
   </g>
-  <rect x="0" y="270" width="372" height="14" rx="7" fill="#FFB020"/>
+  <!-- each book's icon, 92px wide, sitting in the top of its book -->
+  <!-- the capstone's label plate, so the gold leader still reads against a gold book -->
+  <rect x="632" y="26" width="86" height="66" rx="12" fill="#FFD27A" stroke="#14141F" stroke-width="5"/>
+  <g class="icons">
+    <svg x="13"  y="118" width="90" height="82" viewBox="12 2 92 82"><use href="#lamp"/></svg>
+    <svg x="139" y="100" width="86" height="76" viewBox="14 6 100 86"><use href="#playlist"/></svg>
+    <svg x="263" y="80"  width="86" height="72" viewBox="2 6 100 78"><use href="#magnifier"/></svg>
+    <svg x="387" y="62"  width="86" height="66" viewBox="2 8 116 86"><use href="#tastefile"/></svg>
+    <svg x="511" y="42"  width="86" height="64" viewBox="0 0 120 88"><use href="#board"/></svg>
+    <svg x="636" y="34"  width="78" height="50" viewBox="0 20 112 68"><use href="#squad"/></svg>
+  </g>
+  <!-- lesson numbers, low on each spine -->
+  <g font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="50" fill="#14141F" text-anchor="middle">
+    <text x="58" y="264">1</text><text x="182" y="264">2</text><text x="306" y="264">3</text>
+    <text x="430" y="264">4</text><text x="554" y="264">5</text><text x="675" y="264">6</text>
+  </g>
+  <rect x="0" y="282" width="730" height="14" rx="7" fill="#FFB020"/>
 </svg>
 <div class="badge">SAVE 30%</div>
 <div class="brand">Future Skills Series</div>
-<div class="chipline" style="margin-top:14px"><span class="chip">AI Literacy · Complete Unit</span></div>
-<div class="kicker">The Whole Course</div>
+<div class="chipline" style="margin-top:14px"><span class="chip">Plans · Worksheets · Guides · Slides</span></div>
+<div class="kicker">Six Days, One Skill</div>
 <h1>AI Literacy<br><span>Unit</span></h1>
 <p class="sub">A good AI job starts<br>and ends with a human.</p>
 <div class="chipline"><span class="chip solid">Grades 6–8</span><span class="chip">6 × 45-min lessons</span><span class="chip">No prep · No devices needed</span></div>
