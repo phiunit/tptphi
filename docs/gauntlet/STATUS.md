@@ -54,6 +54,13 @@ Updated 2026-09-05 08:20 UTC by the lead.
 - NEXT on News Desk: a blind critic pass on the pack (frames, LP, TG, examples, deck, listing) before it leaves draft.
 - Status stays `draft` (catalog + yaml) until every FACTS.md line is verified — validate blocks `rendered` while PENDING.
 
+### Opus 5.5 writing pass (started 2026-09-23) — PLAN.md "OPUS 5.5 WRITING PASS"
+- Baseline renders snapshotted for the blind A/B before any edit.
+- Judges done for L1, L2, L3 (docs/gauntlet/2026-09-23/judge-*.md, lead rulings appended). Rewriters running for all three.
+- Found by the L1 judge and fixed by the lead: five of nine products had NO preview PDF, because render wipes a stale preview and nothing noticed when it was not rebuilt. New `npm run shipcheck`, now the audit's last step, requires a preview newer than every file it depicts (9d7e549).
+- Unit-wide rulings: one turn-order sentence for every peer step ("Partner A is the partner whose first name comes first in the alphabet"); one hedged AI-mechanism sentence per lesson, reused on every surface.
+- Next: judges for L4, L5, L6, the bundle, and News Desk; then rewriters; then blind A/B per product.
+
 ## Open (needs a decision or a human)
 - HUMAN GATE (Phi): TPT bundle with a $0 child — confirm at upload; fallback is the bundle zip (already packs all six).
 - HUMAN GATE (Phi): open each .pptx in real PowerPoint/Keynote once before upload (LibreOffice unavailable here).
