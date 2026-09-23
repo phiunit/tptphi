@@ -54,16 +54,26 @@ Updated 2026-09-05 08:20 UTC by the lead.
 - NEXT on News Desk: a blind critic pass on the pack (frames, LP, TG, examples, deck, listing) before it leaves draft.
 - Status stays `draft` (catalog + yaml) until every FACTS.md line is verified — validate blocks `rendered` while PENDING.
 
-### Opus 5.5 writing pass (started 2026-09-23) — PLAN.md "OPUS 5.5 WRITING PASS"
-- Baseline renders snapshotted for the blind A/B before any edit.
-- Judges done for L1, L2, L3 (docs/gauntlet/2026-09-23/judge-*.md, lead rulings appended). Rewriters running for all three.
-- Found by the L1 judge and fixed by the lead: five of nine products had NO preview PDF, because render wipes a stale preview and nothing noticed when it was not rebuilt. New `npm run shipcheck`, now the audit's last step, requires a preview newer than every file it depicts (9d7e549).
-- Unit-wide rulings: one turn-order sentence for every peer step ("Partner A is the partner whose first name comes first in the alphabet"); one hedged AI-mechanism sentence per lesson, reused on every surface.
-- Next: judges for L4, L5, L6, the bundle, and News Desk; then rewriters; then blind A/B per product.
+### Opus 5.5 writing pass (2026-09-23) — DONE. Results: docs/gauntlet/2026-09-23/ab-results.md
+- Every product judged blind, rewritten, then proven by a blind A/B against its own pre-pass renders. All nine kept.
+  L1 15–0 · L2 13–4 · L3 17–1 · L4 19–0 · L5 16–0 · L6 17–1 · News Desk 29–2 · free frame 1–1 · bundle 2–1
+  (pages new–old, ties omitted). Every page that lost was fixed or was a lead ruling kept on purpose.
+- Biggest content changes: L1's exit ticket can no longer be passed by accident; L2 finds the pattern instead of
+  picking it, and drops a redundant exit item; L3's "everybody knows it, mark it safe" rule removed; L4's cover no
+  longer pictures ghostwriting; L5's Defend It numbered with a named Speaker 1 and the DJ BPM story; L6 plants one
+  invented fact per team so the leader has something to catch; News Desk frames engineered to take any story.
+- Unit-wide: one turn-order rule; one hedged jobs sentence; MARK not RANK across L3 and News Desk.
+- New gates and tools: `npm run shipcheck` (preview must exist and be current — five products had none),
+  `npm run widows` (62 stranded words line-wide → 0), preview_pages per product (incl. a child's page for bundles),
+  bundle zip in lesson folders with START HERE, numbered slide lists without bullets, one card-heading size per
+  slide, deck `line:` override, PREVIEW tag moved off the Grades chip, "DJ" retired only in L2.
+- Regression the pass found in my own earlier work: the print pass's new panel border ran through the News Desk
+  step numbers. Fixed.
 
 ## Open (needs a decision or a human)
 - HUMAN GATE (Phi): TPT bundle with a $0 child — confirm at upload; fallback is the bundle zip (already packs all six).
 - HUMAN GATE (Phi): open each .pptx in real PowerPoint/Keynote once before upload (LibreOffice unavailable here).
+- DECISION (Phi): cite grade 7 and 8 CCSS equivalents alongside the grade 6 codes (e.g. RI.7.8, RI.8.8)? Every lesson cites grade-6 codes while selling to 6–8; a line-wide call, not a per-lesson patch.
 - Round 3 in progress (see Agreed). Remaining critics: L2, L3, L4, L6.
 - HUMAN GATE (Phi): FACTS.md verification for news-desk-frames worked examples before status `rendered`; "about the author" line decision (STRATEGY.md News desk).
 - BUNDLE STALENESS (found 2026-09-11, brief in PLAN.md): the bundle's zip holds copies of its children's PDFs and is only refreshed when the bundle renders, so every slug-scoped child fix rots it silently. Confirmed: the zip carries L6's old 2-page worksheet against a 3-page standalone. Needs a validate gate plus a re-render, after the running builders land.
