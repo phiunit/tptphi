@@ -19,7 +19,13 @@ for (const p of listProducts(process.argv[2])) {
   };
   const pick = (dir, base) => path.join(dir, base + '-p1.png');
   let samples;
-  if (p.meta.bundle_of) {
+  if (Array.isArray(p.meta.preview_pages) && p.meta.preview_pages.length) {
+    // product.yaml may name the sample pages (review PNG basenames, e.g. "worksheet-p2"): the default picks
+    // page 1 of each document, which is not always the page that sells the lesson.
+    samples = p.meta.preview_pages.map(n => path.join(rev, String(n).replace(/\.png$/, '') + '.png'));
+    const missing = samples.filter(f => !fs.existsSync(f));
+    if (missing.length) throw new Error(`${p.slug}: preview_pages names ${missing.map(f => path.basename(f)).join(', ')}, not found in dist/review/`);
+  } else if (p.meta.bundle_of) {
     // A bundle previews its children: a student page, a plan page, a guide page, then the unit overview.
     const child = slug => path.join(p.dir, '..', slug, 'dist', 'review');
     const tgLast = lastOf(child('ai-prompting-101'), 'teacher-guide');
