@@ -4,6 +4,7 @@ line: ai
 grades: "6-8"
 price_usd: 4
 status: rendered
+preview_pages: [worksheet-p1, lesson-plan-p1, worksheet-p2]
 resource_types: [Lesson, Worksheets, Activities, Printables]
 tags:
   - AI literacy
@@ -22,23 +23,23 @@ standards:
 description: |
   NO STUDENT AI ACCOUNTS NEEDED. This lesson runs on paper.
 
-  Your students are already asking whether AI will take all the jobs. This lesson answers honestly.
+  Your class runs a recording studio that just got an AI assistant.
 
-  Pairs run Big Dream Studio, sorting 12 studio tasks into what AI does, what it helps with, and what it never touches.
+  Pairs sort 12 studio tasks into what AI does, what it helps with, and what it never touches.
 
-  The honest frame comes first, hedged the way a middle schooler deserves. AI takes over tasks, not whole jobs, and nobody can promise the final count. Every automation choice has a winner, a loser and a way it could go wrong. That frame turns a scary headline about future jobs into a thinking problem.
+  Your students are already asking whether AI will take all the jobs. This lesson starts with the honest version. So far, AI mostly takes over tasks, not whole jobs, and nobody can promise the final count. Every automation choice has a winner, a loser, and a way it could go wrong. That turns a scary headline about future jobs into a thinking problem. It is career exploration that starts from tasks, not job titles.
 
-  Big Dream Studio is a small recording studio with too much to do. On The Studio Task Board, pairs sort tasks like booking reminder texts and a rough first mix. Others are harder, like coaching a nervous first-time singer or agreeing on a price. They sort into three columns. AUTOMATE is boring and repeating, so hand it to AI. AUGMENT means the human decides and AI helps. KEEP HUMAN covers coaching, taste, and being there for someone.
+  Big Dream Studio is a small recording studio with too much to do. On The Studio Task Board, some tasks look easy, like session reminder texts or backing up 300 audio files. Others are harder, like coaching a nervous first-time singer or agreeing on a price. Three columns hold them. AUTOMATE is boring and repeating, so hand it to AI. AUGMENT means a human decides and AI helps. KEEP HUMAN covers coaching, taste, and being there for someone.
 
-  Students then write the trade behind 2 of their choices, naming who wins, who loses something, and what could go wrong. They defend one out loud with a claim frame while the listening pair scores eyes, voice and pace. The exit ticket runs the same three columns on a job someone in their life really has. It is career exploration that starts from tasks, not job titles.
+  Students then write the trade behind two of their choices, naming who wins, who loses something, and what could go wrong. Each student defends one choice out loud with a claim frame, and a listener from the other pair scores eyes, voice, and pace. The exit ticket runs the same three columns on a job someone in their life really has.
 
   WHAT YOU GET
   • Lesson plan, 2 pages. Every block timed to 45 minutes, every transition scripted, a what-if under each.
-  • The Studio Task Board worksheet, 2 pages with exit ticket. Real write-in space on every part.
+  • The Studio Task Board worksheet, 2 pages with exit ticket. Write-in space on every part, sized to the model answers.
   • Fillable worksheet PDF. Students type into it on Chromebooks and tablets.
-  • Teacher guide, 3 pages. The sort key for all 12 tasks, a worked trade card, a worked claim, and the listener-strip key. Plus the Defense Rubric, an exit-ticket exemplar, discussion moves, and a when-it-goes-sideways list.
-  • Slide deck, 12 slides (.pptx). Teacher script and keys sit in the speaker notes. It opens in PowerPoint, Keynote or Google Slides.
-  • Support, Extension, ELL and no-device variants, written into the plan.
+  • Teacher guide, 3 pages. The sort key for all 12 tasks, a worked trade card, a worked claim, and the listener-strip key. Plus the Defense Rubric, an exit-ticket exemplar, discussion moves, and a when-it-goes-sideways list, including what to say when a parent's job comes up.
+  • Slide deck, 12 slides (.pptx). Teacher script and keys sit in the speaker notes. It opens in PowerPoint, Keynote, or Google Slides.
+  • Support, Extension, ELL, and no-device variants, written into the plan.
   Zero prep: print it tonight, teach it tomorrow.
 
   Standards: CSTA 2-IC-20, CCSS ELA SL.6.4, ISTE 1.3.d.
@@ -47,6 +48,6 @@ description: |
 includes:
   - "Robots Do the Boring Work - Lesson Plan.pdf (scripted 45-minute lesson: timed blocks, written transitions, a what-if under every block; Support / Extension / ELL / no-device variants)"
   - "Robots Do the Boring Work - Worksheet.pdf (The Studio Task Board, 2 pages, with exit ticket)"
-  - "Robots Do the Boring Work - Worksheet (Fillable).pdf (the same worksheet, typeable in any PDF viewer — Chromebooks, iPads, Preview, Acrobat)"
+  - "Robots Do the Boring Work - Worksheet (Fillable).pdf (the same worksheet, typeable in most PDF viewers (Chromebooks, iPads, Preview, Acrobat))"
   - "Robots Do the Boring Work - Teacher Guide.pdf (sort key for all 12 tasks, worked trade card and claim, listener-strip key, Defense Rubric, exit-ticket exemplar, discussion moves, when-it-goes-sideways list, full standards text)"
   - "Robots Do the Boring Work - Slides.pptx (projectable deck, one slide per lesson moment, teacher script and keys in the speaker notes; opens in PowerPoint, Keynote, Google Slides)"

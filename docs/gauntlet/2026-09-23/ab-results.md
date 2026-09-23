@@ -10,6 +10,7 @@ judge's directory and decoded by the lead afterward. A product whose rewrite doe
 | ai-training-data-crate (L2) | 17 | 13 | 4 | 0 | Yes, with fixes |
 | ai-fact-check-lab (L3) | 20 | 17 | 1 | 2 | Yes |
 | ai-taste-file (L4) | 19 | 19 | 0 | 0 | Yes |
+| ai-boring-work (L5) | 17 | 16 | 0 | 1 | Yes |
 | ai-agent-intern (L6) | 18 | 17 | 1 | 0 | Yes |
 
 ## L1 notes
@@ -64,3 +65,18 @@ knowing which side was new: "A has the 'plant the cursed amulet' secret job and 
 the exit ticket, so the review has a planted fake fact to catch; B drops it." The one loss was slide 9, whose
 steps had become vaguer than the worksheet ("a line and a box in every row"); rewritten by the lead to say
 who writes the card and that each paper goes back to its owner with the FIX line read aloud.
+
+## L5 notes
+16 of 17 won, one tie (the cover's mic versus a raised hand), none lost. The judge's raw letters read 9 to 7,
+which looked close; decoded, it was a sweep, and every stranded word it listed was on the old pages. It picked
+the new Defend It for exactly the reasons the rulings named: a separate writing step, a rule for who speaks
+first, a working plan for odd numbers, and "every word clear" instead of "voice to the back wall" for two kids
+at one desk. The BPM story, told about DJs, was on the winning side of the lesson plan.
+
+## A regression the print pass caused, found by the News Desk judge
+The print fix gave every `.panel` a hairline border so it survives a photocopier. In the News Desk frames the
+method list's numbers hang outside the text into the panel's padding, and the shared template's
+`body.compact ol` rule zeroes the list's left margin, so the new border ran straight through "1." to "4." on
+all eleven student frames. Before the border, the numbers sat on a tint and nobody could see the collision.
+Fixed by indenting the list with padding, which nothing overrides. A marker-to-border measurement across the
+other products found no other list inside a bordered box closer than 16px.
