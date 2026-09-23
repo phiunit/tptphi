@@ -499,3 +499,33 @@ Two jobs, in this order, one builder, files `scripts/validate.mjs` and `products
    line already reads "2 to 3 pages", so L6 going to three pages needs no copy change — verify, do not assume.
 Report: the gate's error message on a deliberately stale zip, then the passing run, the file count, and the
 per-child page counts inside the refreshed zip next to the standalone ones.
+
+# OPUS 5.5 WRITING PASS (lead decisions, 2026-09-23)
+Phi's ask: proof-read and redo the writing across everything built so far, and run a fresh judge to find
+what else can improve. Baseline renders snapshotted (scratchpad/opus55/baseline) before any edit, for the
+blind A/B that closes the pass.
+
+## Order
+1. **Judge** (read-only, blind, fresh context) per product: L1–L6, bundle, News Desk (pack + free).
+   Two lenses — the writing, sentence by sentence, and anything else a buyer would notice between a
+   four-star and a five-star review. Reports land in docs/gauntlet/2026-09-23/judge-<slug>.md.
+2. **Rewriter** per product, working from its judge report plus its own line-by-line pass.
+3. **Blind A/B**: shuffled before/after pairs per product; a judge who does not know which is which picks
+   the better page and says why. A product whose rewrite does not win reverts.
+4. Non-writing findings from the judges are adjudicated by the lead and built separately.
+
+## What the rewrite may not touch (every earlier round's work depends on these)
+- Standards codes and text: character-identical to curriculum/standards-registry.yaml.
+- Any sentence that appears on more than one surface (turn-order protocols, exit-ticket items, the
+  keeper rules, the through-line sentence): change it on every surface or on none. ANTI_SLOP 18.
+- Worked-example statements tied to a FACTS.md line: the claim may not change; the ledger must still
+  match statement for statement.
+- Minutes, page counts, slide counts, write-in sizes, the print palette. Readability ≤ 8.5 on student pages.
+- Canonical blocks: terms of use, COPY.md's filter line "NO STUDENT AI ACCOUNTS NEEDED".
+- Names of products, frames, characters, and files.
+
+## What good looks like
+The voice in corpus/VOICE.md and brand/BRAND.md: a cool teacher, not a textbook. Culture carries the
+concept, it never decorates. Teacher lines a teacher would actually say out loud. Student pages warm,
+direct, kid-world words, no business jargon. Short sentences. No press-release register, no AI-tell
+phrasing, no hedging what is in the file. Fun first, per Phi's own line: "fun should be top priority really."
